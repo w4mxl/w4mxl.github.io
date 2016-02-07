@@ -3,9 +3,9 @@
   <title><![CDATA[Wml'Blog]]></title>
   
   <link href="/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2016-01-10T11:55:01.050Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="https://w4mxl.github.io/"/>
+  <updated>2016-02-07T10:31:50.117Z</updated>
+  <id>https://w4mxl.github.io/</id>
   
   <author>
     <name><![CDATA[Wml]]></name>
@@ -15,24 +15,615 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="http://yoursite.com/2016/01/10/hello-world/"/>
-    <id>http://yoursite.com/2016/01/10/hello-world/</id>
-    <published>2016-01-10T11:55:01.050Z</published>
-    <updated>2016-01-10T11:55:01.050Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <title><![CDATA[写在2015年三十]]></title>
+    <link href="https://w4mxl.github.io/2016/02/07/write-in-the-end-of-2015/"/>
+    <id>https://w4mxl.github.io/2016/02/07/write-in-the-end-of-2015/</id>
+    <published>2016-02-07T00:07:00.000Z</published>
+    <updated>2016-02-07T10:31:50.117Z</updated>
+    <content type="html"><![CDATA[<p>一年又要过去了，以前说『又大了一岁』，现在说『又老了一岁』。</p>
+<p>在上完今年最后一个工作日（02.05），在快回到家的时候，我走进了一个尚在营业的理发店，将头发全染成了蓝色。到家后，当然，我妈肯定给了我一顿骂，还好有我爸给我打圆场，说「挺好的啊」。(^_^)ノ</p>
+<p>说到写年终总结国内人无外乎在两个时间点，一是元旦前，一是年节前。我猜选择后者的往往是有拖延症的。  (¬_¬)</p>
+<h2 id="u5DE5_u4F5C_u548C_u5B66_u4E60"><a href="#u5DE5_u4F5C_u548C_u5B66_u4E60" class="headerlink" title="工作和学习"></a>工作和学习</h2><p>15年3月回了上海，加入贝联，贝联是做母婴服务的移动互联网企业，进去的时候公司刚创办一年，14年公司主要是在全国很多妇幼医院中铺设HOS WI-FI作为入口。</p>
+<p>而15年（我进去的时候 ），公司着力于摸索打造出一个全新产品，这个过程中种种原因，不可避免地被做了很多试错的app，好在开发这些app中调研和使用了一些新技术，更好在下半年公司总算找到了一个较明确的发展方向。<br>作为移动端负责人，15年我们4个小伙伴相处欢乐，被黑常有，嬉笑怒骂常有，再回头看是有不少回忆的。</p>
+<p>这年在blog上有写了15篇的跟技术相关的博文，虽然数量不多质量不深，对我来说也实属不易。新一年会更注重将自己平时所学总结写成blog文章，也会再将这些总结分享给技术部的小伙伴。</p>
+<p>这一年我的英语有进步很多，跟朋友同事说话过程中，说着说着脑子里就会冒出要说出中文词对应的英文词，这感觉还蛮奇怪的。我想这大概也是这一年看的很多东西都是英文，用的Windows/OS X是英文，每天工作用的IDE是英文，看YouTube视频，WWDC和GooglI/O，Twitter时间线，查看的文档、star/fork 的github项目多数也是英文，我虽然还是觉得中文最屌，英文阅读能力渐有提高也是受益良多。</p>
+<h2 id="u751F_u6D3B"><a href="#u751F_u6D3B" class="headerlink" title="生活"></a>生活</h2><p>这一年生活中最大的事件是装修房子。从前期搜罗大量装修素材、效果图，到施工，挑选地板家电家具等，对于一个选择困难症兼细节强迫症的人来说确实累，可是看着房子一点点呈现出心里想好的样子，也真是快乐。</p>
+<p>自从搬进新家后，我每天去公司上班的单程时间变成了1小时50分钟，倒地铁+步行。路程看起来虽远，其实我并没有觉得很累，相反因为一路上可以拥有少有的整段时间做自己喜欢的事情，或用overcast听一集播客，或用网易云音乐听歌，或用kindle读书，干这些事的过程常常让以往平淡的早晨变有热情，以至于坐过站也是有发生的。</p>
+<p>今年跟往年不一样，多了很多时间跟父母一起。朝夕相处后才更懂得亲情的温暖，那种温暖不浓烈 ，给我以踏实和长久感。</p>
+<p>还有我跟她，我们一起越来越好，越来越懂，以至常常发生些神奇的默契。今年「南京-上海」，或她来或我往，高铁来回不记得坐了多少趟。这一年我们有两次旅行，一次是清明假期的苏州，一次是国庆去了香港。年后她就要辞掉南京的工作来上海和我一起了，那会是我们恋爱中崭新阶段，亦是她职业生涯中的一个崭新阶段，期盼已久。</p>
+<hr>
+<p>新年愿望：</p>
+<ul>
+<li>学习，写多点东西</li>
+<li>婚前瘦到75KG</li>
+<li>和她去台湾</li>
+</ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.]]>
+    <![CDATA[<p>一年又要过去了，以前说『又大了一岁』，现在说『又老了一岁』。</p>
+<p>在上完今年最后一个工作日（02.05），在快回到家的时候，我走进了一个尚在营业的理发店，将头发全染成了蓝色。到家后，当然，我妈肯定给了我一顿骂，还好有我爸给我打圆场，说「挺好的啊」。(^_^)ノ</]]>
     </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Nexus 6 首次折腾（含调整屏幕色温）]]></title>
+    <link href="https://w4mxl.github.io/2016/01/21/my-struggle-of-nexus6/"/>
+    <id>https://w4mxl.github.io/2016/01/21/my-struggle-of-nexus6/</id>
+    <published>2016-01-21T07:12:00.000Z</published>
+    <updated>2016-02-07T10:49:49.992Z</updated>
+    <content type="html"><![CDATA[<p>15年的黑五( 2015.11.27)，在美国亚马逊海淘了一台 Nexus 6，当时看到促销价 $ 199.99 心里乐滋滋的，终于不会想到后来竟还有55刀的转运费，更有被税后需补缴18.5刀税。此机到手价实为：199.99＋55＋18.5 ＝ 273.49 刀，转成人民币大约是 ¥1800。不过这价格能买到亲儿子我已经很满意。</p>
+<p> 翘首以待了一个多月，在2016.01.18终于摸到真机。期间此货也算「开心的」在路上垮了个年。拆箱开机，屏幕上的保护膜明显很多气泡，更重要的是那屏幕暖的啊 =_=||，实在接受不能，于是开始搞屏幕色温。</p>
+<p>一番谷歌之后收获了两种解决方案：</p>
+<ul>
+<li>刷带屏幕色温调节功能的第三方ROM，如CM</li>
+<li>刷能调节屏幕色温的内核</li>
+</ul>
+<p>最终我的搞法是刷<a href="http://forum.xda-developers.com/nexus-6/development/rom-chroma-01-11-2015-t3000003" target="_blank" rel="external">Chroma ROM</a>(一个基于AOSP的第三方ROM)，然后再刷<a href="http://forum.xda-developers.com/nexus-6/orig-development/kernel-franco-kernel-r1-t2987173" target="_blank" rel="external">Franco Kernel</a>(可以调节屏幕色温的内核)。<br>我的大致流程是：(<a href="http://forum.xda-developers.com/nexus-6/general/how-to-nexus-6-one-beginners-guide-t2948481" target="_blank" rel="external">这里有更详细的</a>)</p>
+<ol>
+<li>Unlock The Bootloader</li>
+<li>Install TWRP recovery</li>
+<li>Flash CHROMA ROM (include SuperSU )</li>
+<li>Flash Franco Kernel</li>
+<li>Install <a href="http://downloads.codefi.re/savoca/kcal" target="_blank" rel="external">KCAL app</a></li>
+</ol>
+<p>我的KCAL配置(参考xda上):<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">R &#183; 230&#10;G &#183; 222&#10;B &#183; 253&#10;Sat &#183; 40&#10;Val &#183; 135&#10;Con &#183; 120</span><br></pre></td></tr></table></figure></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>15年的黑五( 2015.11.27)，在美国亚马逊海淘了一台 Nexus 6，当时看到促销价 $ 199.99 心里乐滋滋的，终于不会想到后来竟还有55刀的转运费，更有被税后需补缴18.5刀税。此机到手价实为：199.99＋55＋18.5 ＝ 273.49 刀，转成人民币]]>
+    </summary>
+    
+      <category term="nexus" scheme="https://w4mxl.github.io/tags/nexus/"/>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[装修答卷:搭建一个家的美好]]></title>
+    <link href="https://w4mxl.github.io/2015/12/23/make-a-nice-house/"/>
+    <id>https://w4mxl.github.io/2015/12/23/make-a-nice-house/</id>
+    <published>2015-12-23T02:36:00.000Z</published>
+    <updated>2016-01-23T08:50:20.221Z</updated>
+    <content type="html"><![CDATA[<p>房子坐落在昆山花桥，22楼的一个3室(主卧、次卧、书房)1厅1厨2卫的房子。<br>装修从今年9.16号正式开工。<br>前期的装修是半包出去的，所谓的半包是指水电工、木工、油漆工是请来的，但是他们用到的所有所需材料都是我们去家具城亲自买回来。<br>铺建水电路、卫生间瓷砖、吊顶、做橱柜、鞋柜等等这些前期工作大概花了一个月时间。<br>后期的装修主要是添置家具和软装。<br>好了，开启上图模式，末尾分享这次装修中的一些些经验。</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1eziz6t3tfmj21w01w0nmd.jpg" alt=""><br><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1ezj5pzy3epj22c0340x6p.jpg" alt=""><br><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eziz6vi7vpj22c03401ky.jpg" alt=""><br>▲ 客厅</p>
+<p><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1eziz6un3avj21w01w0ts5.jpg" alt=""><br><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1ezj5q5eb08j22c0340npd.jpg" alt=""><br>▲ 吧台</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1eziz6tw7qpj21w01w0qq4.jpg" alt=""><br><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1ezj5q84dw9j22c03407wi.jpg" alt=""><br>▲ 餐厅</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eziz6dbqf7j22c02c0qv5.jpg" alt=""><br><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1ezj5q125irj22c02c07wh.jpg" alt=""><br><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1eziz68ndnoj22c02c0kjl.jpg" alt=""><br><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eziz667pfzj22c02c07wh.jpg" alt=""><br><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1eziz6708kmj22c02c07wh.jpg" alt=""><br><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1eziz6am0o4j22c02c0hdt.jpg" alt=""><br>▲ 书房兼客房</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1ezj5q3hbgpj22c0340u0x.jpg" alt=""><br>▲ 卫生间2</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1ezj5pxsey4j22c0340kjl.jpg" alt=""><br><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eziz6bbahxj22c02c0u0x.jpg" alt=""><br>▲ 主卧</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eziz6re28sj22c02c0qv5.jpg" alt=""><br>▲ JW &amp; 种植多肉</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eziz6n7ojhj22c02c0b29.jpg" alt=""><br>▲ 可旋转电视支架，满足了吃饭的时候家人可以看电视</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eziz6ievnxj22c02c0b29.jpg" alt=""><br><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1eziz6hf0hqj22c02c0e81.jpg" alt=""><br><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1eziz6clddnj22c02c0x6p.jpg" alt=""><br>▲ 阳台</p>
+<hr>
+<p>我为房子简单的绘制了户型图。如下。</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1eziz6wukiaj21160oq0yl.jpg" alt=""></h2><p><strong>装修中的一些经验</strong></p>
+<ul>
+<li><em>前期排插座尽可能的多排几个，且很多插座用带开关的更合适</em></li>
+<li><em>卫生间的洗脸台水龙头最好是抽拉式的</em></li>
+<li><em>家电家具网购要比实体店便宜好多。我90%的家具、电器都是网淘的</em></li>
+<li><em>选择地板</em><br>实木地板、实木多层、强化地板的区别:<br>实木地板的优点：<br>1、 档次高，采用纯实木板材，价格也是最高的<br>2、 环保高，天然木材不含甲醛<br>实木地板的缺点：<br>1、 表面油漆不耐磨，比较娇嫩，每2个月保养一次<br>2、 色差严重，不能接受色差的客户请勿购买<br>3、 不能用于地暖，地热加温后会变形</li>
+</ul>
+<p>实木多层地板的优点：<br>1、 跟实木外观一样，档次高，一般光看表面是看不出差别的<br>2、 环保程度高，达到E0级别，远远低于强化地板的甲醛含量<br>3、 适用于地暖，地暖不变形，无味道<br>4、 不怕水，泡水后不变形<br>实木多层地板的缺点：<br>1、 表面油漆不耐磨，比较娇嫩，每2个月保养一次<br>2、 色差严重，不能接受色差的客户请勿购买<br>3、 硬度低，有东西掉到地上会产生坑，有宝宝的家庭慎用。</p>
+<p>强化复合地板的优点：<br>1、 表面是人造金刚石（三氧化二铝），高耐磨，不需要打理<br>2、 表面花纹采用印刷纸，无色差<br>3、 可以适用于地暖，不变形，地暖客户最高采用E0级地板<br>4、 硬度高，远远高于实木地板。普通磕碰和磨损是无痕迹的。<br>强化复合地板的缺点：<br>1、 木纤维必须要用到胶，所以强化地板肯定有甲醛</p>
+<p>综上所述：<br>实木地板：适合经济富足，平时有专人打理的客户。<br>实木多层地板：适合对环保要求高，但是家里比较爱惜地面的家庭。<br>强化复合地板：适合要求经济实惠，平时也没空保养的家庭。如果家里有宝宝，因为宝宝会乱丢东西砸到地板，最好还是选强化地板。<br>当确定好哪种类型的地板后，选择款式阶段，如果是网购地板，最好是能从店铺中选择几个样板快递到手上实际感受后决定选那种。</p>
+<p>搭建一个家是2015年我投入心思最多的一件事，个中滋味，意犹未尽。<br>wml. 于2015年末</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>房子坐落在昆山花桥，22楼的一个3室(主卧、次卧、书房)1厅1厨2卫的房子。<br>装修从今年9.16号正式开工。<br>前期的装修是半包出去的，所谓的半包是指水电工、木工、油漆工是请来的，但是他们用到的所有所需材料都是我们去家具城亲自买回来。<br>铺建水电路、卫生间瓷砖]]>
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[使用 Google Wallet 在 Google Play 上购买付费应用]]></title>
+    <link href="https://w4mxl.github.io/2015/12/14/Buy-an-app-from-GooglePlay-by-Google-Wallet/"/>
+    <id>https://w4mxl.github.io/2015/12/14/Buy-an-app-from-GooglePlay-by-Google-Wallet/</id>
+    <published>2015-12-14T10:12:00.000Z</published>
+    <updated>2016-01-13T16:08:21.259Z</updated>
+    <content type="html"><![CDATA[<p>今天终于把”在 Google Play 上购买付费应用”折腾成功，过程纪录如下</p>
+<p>1.准备<br>信用卡：因为我自己无信用卡，是借用同事的交行VISA信用卡<br>Google 账号：Google 账号并且已经激活了 Google Wallet 服务<br>VPN：目前一直用的是 <a href="https://txs.li/" target="_blank" rel="external">txs</a><br>当然还要有一台 Android 设备</p>
+<p>2.操作<br>1) 通过浏览器访问 Google Wallet，地址是<a href="https://wallet.google.com/" target="_blank" rel="external">https://wallet.google.com/</a><br>2) 点击付款方式菜单项，添加一张信用卡。在表单中依次输入信用卡号码、有效期、CVC 码并填写帐单地址。<strong>注意:</strong>地区选择香港 HK，街道地址填大陆地址，手机号码用＋86的中国手机号，点击保存按钮即可<br><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eyzo8sbs73j20vy102tbz.jpg" alt=""></p>
+<p>3) 通过使用 VPN 在 Google Play 商店购买商品<br>4) 购买成功后，可以在 Google Wallet 的交易菜单项中找到交易纪录的条目<br><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eyzobghm6wj20t6090mxv.jpg" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>今天终于把”在 Google Play 上购买付费应用”折腾成功，过程纪录如下</p>
+<p>1.准备<br>信用卡：因为我自己无信用卡，是借用同事的交行VISA信用卡<br>Google 账号：Google 账号并且已经激活了 Google Wallet 服务<br>VP]]>
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[2015.12.07]]></title>
+    <link href="https://w4mxl.github.io/2015/12/07/Life's/2015-12-07/"/>
+    <id>https://w4mxl.github.io/2015/12/07/Life's/2015-12-07/</id>
+    <published>2015-12-07T13:55:00.000Z</published>
+    <updated>2016-01-23T08:53:31.992Z</updated>
+    <content type="html"><![CDATA[<p>1.很久一段时间没来这里更新文章，原因一是从9.16号开始装修房子，几乎一整个心都推入进去，没有二</p>
+<p>2.今天更新，是因为读inoreader里subscribe的文章，看到VICE拍了一部纪录片《触手可及》，关于陈冠希，看了后想抽烟</p>
+<p>3.听爸爸的话，上周末从网络上查老黄历定了搬家的日子，12.12号 9:00-10:59<br><img src="http://ww3.sinaimg.cn/mw690/62ed8609jw1eyrggzk0isj206u146dht.jpg" width="80"><br>(难道淘宝双12日子也是算过的。笑cry)</p>
+<p>4.今天收到京东众筹于10.15号买的咕咕WiFi无线热敏打印机。从极客之选上第一眼看到咕咕WiFi无线热敏打印机的模样就爱上了。无它。上手试用了一下，酷酷的<br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1eyrgock4erj21hd1hc7ci.jpg" alt=""><br><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1eyrgobvk1dj21hd1hcqh6.jpg" alt=""></p>
+<p>ps.待搬进新房后要写两篇文章 1.关于这段时间装修心得 2.咕咕的使用体验<br>pss.冠希的《战争》确实好听</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>1.很久一段时间没来这里更新文章，原因一是从9.16号开始装修房子，几乎一整个心都推入进去，没有二</p>
+<p>2.今天更新，是因为读inoreader里subscribe的文章，看到VICE拍了一部纪录片《触手可及》，关于陈冠希，看了后想抽烟</p>
+<p>3.听爸爸的]]>
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[学习过的Android开源项目汇总]]></title>
+    <link href="https://w4mxl.github.io/2015/08/30/Android/%E5%AD%A6%E4%B9%A0%E8%BF%87%E7%9A%84Android%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%E6%B1%87%E6%80%BB/"/>
+    <id>https://w4mxl.github.io/2015/08/30/Android/学习过的Android开源项目汇总/</id>
+    <published>2015-08-30T09:36:00.000Z</published>
+    <updated>2016-01-13T15:23:20.727Z</updated>
+    <content type="html"><![CDATA[<p>利用周末整理下之前工作中、学习中使用过的 Android 开源项目，通过整理好之后，能每周抽出些时间去对这些开源项目的源码进行解析，以期通过这种方式能更深层次的学习这些优秀的 Android 开源项目。</p>
+<p><strong>View 篇</strong></p>
+<ul>
+<li><p>Android-ConvenientBanner<br>项目描述:通用的广告栏控件，让你轻松实现广告头效果。支持无限循环，可以设置自动翻页和时间(而且非常智能，手指触碰则暂停翻页，离开自动开始翻页。你也可以设置在界面onPause的时候不进行自动翻页，onResume之后继续自动翻页)，并且提供多种翻页特效。 对比其他广告栏控件，大多都需要对源码进行改动才能加载网络图片，或者帮你集成不是你所需要的图片缓存库。而这个库能让有代码洁癖的你欢喜，不需要对库源码进行修改你就可以使用任何你喜欢的网络图片库进行配合。<br>项目地址:<a href="https://github.com/saiwu-bigkoo/Android-ConvenientBanner" target="_blank" rel="external">https://github.com/saiwu-bigkoo/Android-ConvenientBanner</a><br>项目效果:<br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1evkt6q7j62g20bd0hykjq.gif" alt=""></p>
+</li>
+<li><p>Android ViewPagerIndicator<br>项目描述: 配合 ViewPager 使用的 Indicator，支持各种位置和样式<br>项目地址: <a href="https://github.com/JakeWharton/ViewPagerIndicator" target="_blank" rel="external">https://github.com/JakeWharton/ViewPagerIndicator</a><br>项目效果:<br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1evkurq6dl3j20no0gok0a.jpg" alt="">  </p>
+</li>
+<li><p>MVCHelper<br>项目描述: 实现下拉刷新，滚动底部自动加载更多，分页加载，自动切换显示网络失败布局，暂无数据布局，支持任意view，支持切换主流下拉刷新框架，真正的android MVC架构,refresh,loadmore<br>项目地址: <a href="https://github.com/LuckyJayce/MVCHelper" target="_blank" rel="external">https://github.com/LuckyJayce/MVCHelper</a><br>demo地址: <a href="https://github.com/LuckyJayce/MVCHelper/blob/master/raw/MVCHelper_Demo.apk?raw=true" target="_blank" rel="external">Demo APK</a></p>
+</li>
+<li><p>EmojiChat<br>项目描述: 一个聊天界面，包括从网络下载大表情并使用，图片发送，文字发送，Emoji表情发送，自定义表情键盘，Emoji表情键盘，仿QQ功能键盘等等……<br>项目地址: <a href="https://github.com/kymjs/EmojiChat" target="_blank" rel="external">https://github.com/kymjs/EmojiChat</a><br>项目效果:<br><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1evkv3kl160j205k09wq43.jpg" alt=""></p>
+</li>
+<li><p>Emojicon<br>项目描述: Emojicon 是一个用于在 TextView, EditText (like WhatsApp) 显示 emoji 表情的开源库。<br>项目地址: <a href="https://github.com/rockerhieu/emojicon" target="_blank" rel="external">https://github.com/rockerhieu/emojicon</a><br>项目效果:<br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1evkvbd2w7lj20b00ibjss.jpg" alt="">  </p>
+</li>
+<li><p>Material<br>项目描述: MaterialLibrary is an Open Source Android library that back-port Material Design components to pre-Lolipop Android.<br>项目地址: <a href="https://github.com/rey5137/material" target="_blank" rel="external">https://github.com/rey5137/material</a><br>demo地址: <a href="https://play.google.com/store/apps/details?id=com.rey.material.demo" target="_blank" rel="external">https://play.google.com/store/apps/details?id=com.rey.material.demo</a></p>
+</li>
+<li><p>SwipeMenuListView<br>项目描述: A swipe menu for ListView.<br>项目地址: <a href="https://github.com/baoyongzhang/SwipeMenuListView" target="_blank" rel="external">https://github.com/baoyongzhang/SwipeMenuListView</a><br>项目效果:<br><img src="http://ww3.sinaimg.cn/mw690/62ed8609jw1evkvipk41sg20ar0i146f.gif" alt=""></p>
+</li>
+<li><p>PhotoCrop<br>项目描述: A Library which can be used to crop images in Android similar to Facebook and Telegram<br>项目地址: <a href="https://github.com/albinmathew/PhotoCrop" target="_blank" rel="external">https://github.com/albinmathew/PhotoCrop</a><br>项目效果:<br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1evkwzqlb3oj20a00hsdjw.jpg" alt=""></p>
+</li>
+<li><p>RoundedImageView<br>项目描述: A fast ImageView (and Drawable) that supports rounded corners (and ovals or circles) based on the original <a href="http://www.curious-creature.org/2012/12/11/android-recipe-1-image-with-rounded-corners/" target="_blank" rel="external">example from Romain Guy</a>. RoundedImageView is a full superset of <a href="https://github.com/hdodenhof/CircleImageView" target="_blank" rel="external">CircleImageView</a> (which is actually just a subset based on this lib) with many more advanced features like support for ovals, rounded rectangles, ScaleTypes and TileModes.<br>项目地址: <a href="https://github.com/vinc3m1/RoundedImageView" target="_blank" rel="external">https://github.com/vinc3m1/RoundedImageView</a><br>项目效果:<br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1evkxf8ngpoj208c0etn2e.jpg" alt=""><br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1evkxf7h5m4j208c0etq81.jpg" alt=""></p>
+</li>
+<li><p>CircleImageView<br>项目描述: A fast circular ImageView perfect for profile images. This is based on <a href="https://github.com/vinc3m1/RoundedImageView" target="_blank" rel="external">RoundedImageView from Vince Mi</a> which itself is based <a href="http://www.curious-creature.org/2012/12/11/android-recipe-1-image-with-rounded-corners/" target="_blank" rel="external">on techniques recommended by Romain Guy</a>.<br>项目地址: <a href="https://github.com/hdodenhof/CircleImageView" target="_blank" rel="external">https://github.com/hdodenhof/CircleImageView</a><br>项目效果:<br><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1evkxjr8znvj20f00qotat.jpg" alt="">  </p>
+</li>
+<li><p>ASimpleCache<br>项目描述: ASimpleCache 是一个为android制定的 轻量级的 开源缓存框架。轻量到只有一个java文件（由十几个类精简而来）。<br>项目地址: <a href="https://github.com/yangfuhai/ASimpleCache" target="_blank" rel="external">https://github.com/yangfuhai/ASimpleCache</a></p>
+</li>
+<li><p>Logger<br>项目描述: Simple, pretty and powerful logger for android<br>项目地址: <a href="https://github.com/orhanobut/logger" target="_blank" rel="external">https://github.com/orhanobut/logger</a><br>项目效果:<br><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1evkxpqa492j20uk0smafu.jpg" alt=""></p>
+</li>
+<li><p>LeakCanary<br>项目描述: Android 和 Java 内存泄露检测。<br>项目地址: <a href="https://github.com/square/leakcanary" target="_blank" rel="external">https://github.com/square/leakcanary</a><br>项目demo: <a href="https://github.com/liaohuqiu/leakcanary-demo" target="_blank" rel="external">https://github.com/liaohuqiu/leakcanary-demo</a><br>项目效果:<br><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1evkynk1l3ij20jg0a4ac1.jpg" alt=""></p>
+</li>
+<li><p>Android ViewBadger<br>项目描述: A simple way to “badge” any given Android view at runtime without having to cater for it in layout.<br>项目地址: <a href="https://github.com/jgilfelt/android-viewbadger" target="_blank" rel="external">https://github.com/jgilfelt/android-viewbadger</a><br>项目效果:<br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1evkyrta511j20a00h476e.jpg" alt=""></p>
+</li>
+<li><p>pinned-section-listview<br>项目描述: Easy to use ListView with pinned sections for Android 2.1 and higher. Pinned section is a header view which sticks to the top of the list until at least one item of that section is visible.<br>项目地址: <a href="https://github.com/beworker/pinned-section-listview" target="_blank" rel="external">https://github.com/beworker/pinned-section-listview</a><br>项目效果:<br><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1evkyvpsit5j20660abaae.jpg" alt=""></p>
+</li>
+<li><p>Dynamicbox<br>项目描述: DynamicBox is a library which inflates custom layouts to indicate :loading content、show an exception or even a custom view.<br>项目地址:  <a href="https://github.com/medyo/dynamicbox" target="_blank" rel="external">https://github.com/medyo/dynamicbox</a></p>
+</li>
+<li><p>Sweet Alert Dialog<br>项目描述: Android版的SweetAlert，清新文艺，快意灵动的甜心弹框<br>项目地址: <a href="https://github.com/pedant/sweet-alert-dialog" target="_blank" rel="external">https://github.com/pedant/sweet-alert-dialog</a><br>项目效果:<br><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1evkze1hmwig20al0h5age.gif" alt=""></p>
+</li>
+</ul>
+<p>( 未完… )</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>利用周末整理下之前工作中、学习中使用过的 Android 开源项目，通过整理好之后，能每周抽出些时间去对这些开源项目的源码进行解析，以期通过这种方式能更深层次的学习这些优秀的 Android 开源项目。</p>
+<p><strong>View 篇</strong></p>
+]]>
+    </summary>
+    
+      <category term="OpenSource" scheme="https://w4mxl.github.io/tags/OpenSource/"/>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Android setEmptyview]]></title>
+    <link href="https://w4mxl.github.io/2015/08/22/Android-setEmptyview/"/>
+    <id>https://w4mxl.github.io/2015/08/22/Android-setEmptyview/</id>
+    <published>2015-08-22T14:25:00.000Z</published>
+    <updated>2016-01-13T16:12:28.962Z</updated>
+    <content type="html"><![CDATA[<h3 id="1-__u4ECB_u7ECD"><a href="#1-__u4ECB_u7ECD" class="headerlink" title="1. 介绍"></a>1. 介绍</h3><p>使用 listview、gridview 等列表形式的 view 时，如果后台server返回的数据为空，通常我们需要为页面增加 empty view （俗称空页面），使得页面显示起来更友好，这个时候就用到了 setEmptyView() 方法。</p>
+<p><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1evbrvuo1swj21bu0getbn.jpg" alt=""><br>▲ setEmptyView() 是 AdapterView 中的一个方法，而我们常用到的ExpandableListView, GridView, ListView等都是继承之 AdapterView 的，可以直接调用 setEmptyView() 方法。</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1evbrvv8pg2j20u603gmxh.jpg" alt=""><br>▲ setEmptyView() 官方描述</p>
+<h3 id="2-__u4F7F_u7528_u65B9_u6CD5"><a href="#2-__u4F7F_u7528_u65B9_u6CD5" class="headerlink" title="2. 使用方法"></a>2. 使用方法</h3><p>下面以一个简单实例的描述 setEmptyview() 的两种常见的使用方法。<br><img src="http://ww3.sinaimg.cn/mw690/62ed8609jw1evbs5rbzblj20lc0zk751.jpg" width="250"><br>▲ 实例的最终效果。“暂无常用回答哦”这个 TextView 就是我们设定好的 empty view 。</p>
+<p><strong>方法一</strong><br>如果页面是继承 ListActivity，只要在布局文件中这样:<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">&lt;ListView android:id="@id/android:list".../&gt; </span><br><span class="line">&lt;TextView </span><br><span class="line">    android:id="@id/android:empty </span><br><span class="line">    android:text="暂无常用回答哦"</span><br><span class="line">    .../&gt;</span><br><span class="line">...</span><br></pre></td></tr></table></figure></p>
+<p>这样当列表为空时就会自动显示这个 TextView 了。</p>
+<p>如果页面不是继承 ListActivity 的话，<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">&lt;ListView android:id="@+id/list".../&gt; </span><br><span class="line">&lt;TextView </span><br><span class="line">    android:id="@+id/empty </span><br><span class="line">    android:text="暂无常用回答哦"</span><br><span class="line">    .../&gt;</span><br><span class="line">...</span><br><span class="line">ListView listView = (ListView)findViewById(R.id.list);</span><br><span class="line">listView.setEmptyView(findViewById(R.id.empty));</span><br></pre></td></tr></table></figure></p>
+<p><strong>方法二</strong><br>setEmptyView()这个方法是有限制的，这个 empty view 必须在当前的 View hierarchy 的节点上，所以需要把empty view 添加到当前的 View hierarchy 的节点上。布局文件中不作额外配置，在页面中实现如下:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">TextView emptyView = <span class="keyword">new</span> TextView(activity);</span><br><span class="line">emptyView.setLayoutParams(<span class="keyword">new</span> LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));</span><br><span class="line">emptyView.setText(<span class="string">"暂无常用回答哦"</span>);</span><br><span class="line">emptyView.setVisibility(View.GONE);</span><br><span class="line">((ViewGroup) list.getParent()).addView(emptyView);</span><br><span class="line">list.setEmptyView(emptyView);</span><br></pre></td></tr></table></figure></p>
+<p>同理，如果 empty view 不简单是一个 TextView 而是其他一个较复杂的自定义 View，则可以通过 inflate:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">View emptyView = View.inflate(R.layout.empty_view, <span class="keyword">null</span>);</span><br><span class="line">emptyView.setVisibility(View.GONE);</span><br><span class="line">((ViewGroup) list.getParent()).addView(emptyView);</span><br><span class="line">list.setEmptyView(emptyView);</span><br></pre></td></tr></table></figure></p>
+<h3 id="3-__u5C3E_u5DF4"><a href="#3-__u5C3E_u5DF4" class="headerlink" title="3. 尾巴"></a>3. 尾巴</h3><p>ViewStub 在很多时候也是可以实现我们空页面的需求，在页面中的数据不是动态变化的情况下，使用 ViewStub 也是不错的选择。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="1-__u4ECB_u7ECD"><a href="#1-__u4ECB_u7ECD" class="headerlink" title="1. 介绍"></a>1. 介绍</h3><p>使用 listview、gridview 等列表形式的 view 时，如果后]]>
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Fragment 重叠(重影)问题]]></title>
+    <link href="https://w4mxl.github.io/2015/08/17/fragment-overlay-problem'/"/>
+    <id>https://w4mxl.github.io/2015/08/17/fragment-overlay-problem'/</id>
+    <published>2015-08-17T01:41:00.000Z</published>
+    <updated>2016-01-13T16:13:41.017Z</updated>
+    <content type="html"><![CDATA[<p>在最近做的项目中，遇到了 Fragment 重叠的问题。具体的情况是，app 需要在多个 Fragment 间切换，并且保存每个 Fragment 的状态。官方的方法是使用 replace() 来替换 Fragment，但是 replace() 的调用会导致 Fragment 的 onCreteView() 被调用，所以切换界面时会无法保存当前的状态。因此一般采用 add()、hide()与 show()配合，来达到保存 Fragment 的状态。</p>
+<p>正常情况下显示是对的，现象发生在我切换到其他的app，操作一会之后，再回到当前的app，有一定几率会出现 Fragment 重叠的现象。</p>
+<p>可以通过下面的方式进行手动重现这个BUG:<br>1.手机的 “设置” - “开发者选项” - 打开”不保留活动”(主要用于模拟Activity被及时回收)<br>2.把 app 切换到后台，再重新打开，通过点按不同的 tab 来切换 Fragment<br><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1ev5ds1gancj20lc0zkgnp.jpg" width="200"><br>▲ 重现 Fragment 的重叠</p>
+<p>起初我以为是我在使用add()、hide() 、show() 切换 Fragment 的时候有什么地方使用的不对，尝试去解决重叠的 bug，无果后，还是通过 google 找出了原因和解决方案。</p>
+<h4 id="u539F_u56E0"><a href="#u539F_u56E0" class="headerlink" title="原因"></a>原因</h4><p>使用 Fragment 的状态保存，当系统内存不足，Fragment 的宿主 Activity 回收的时候，Fragment 的实例并没有随之被回收。Activity 被系统回收时，会主动调用 onSaveInstance() 方法来保存视图层（View Hierarchy），所以当 Activity 通过导航再次被重建时，之前被实例化过的 Fragment 依然会出现在 Activity 中，此时的 FragmentTransaction 中的相当于又再次 add 了 fragment 进去的，hide()和show()方法对之前保存的fragment已经失效了。综上这些因素导致了多个Fragment重叠在一起。</p>
+<h4 id="u89E3_u51B3"><a href="#u89E3_u51B3" class="headerlink" title="解决"></a>解决</h4><p><strong>方案一:</strong><br>1.给每个 Fragment 加一个 Tag<br>2.在 onCreate(Bundle savedInstanceState) 中判断 Bundle savedInstanceState 是否不为空<br>3.不为空则进行 find Tag，重新给几个 frament 赋值<br>这样子仍是对之前保存的 fragment 操作，成功解决了重叠的问题。</p>
+<p><strong>方案二:</strong><br>Activity 中的 onSaveInstanceState() 里面有一句<em>super.onSaveInstanceState(outState);</em>，Google 对于这句话的解释是 “Always call the superclass so it can save the view hierarchy state”，大概意思是“总是执行这句代码来调用父类去保存视图层的状态”。通过注释掉这句话，这样主 Activity 因为种种原因被回收的时候就不会保存之前的 fragment state，也可以成功解决重叠的问题。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>在最近做的项目中，遇到了 Fragment 重叠的问题。具体的情况是，app 需要在多个 Fragment 间切换，并且保存每个 Fragment 的状态。官方的方法是使用 replace() 来替换 Fragment，但是 replace() 的调用会导致 Fragmen]]>
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Apple Watch 使用感受]]></title>
+    <link href="https://w4mxl.github.io/2015/08/02/experience-of-apple-watch/"/>
+    <id>https://w4mxl.github.io/2015/08/02/experience-of-apple-watch/</id>
+    <published>2015-08-02T09:32:00.000Z</published>
+    <updated>2016-01-18T14:47:31.237Z</updated>
+    <content type="html"><![CDATA[<p>我向来喜欢科技产品，热衷尝试新奇的事物，但这并不代表我会随随便便成为一款新产品的用户。</p>
+<p>从知道 apple 要做 apple watch 这款产品，到发布、再到开发购买，我的 RSS 订阅中就没间断的出现有关它的文章。随着这些文章的阅读，评测视频的观看，我逐渐了解 apple watch，在它身上发现到契合我自身需求的功能，这也让我在清楚知道这是 apple watch 的第一代产品，它一定还有很大提升空间的意识下依然决定要购买。</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609jw1euoidewazbj21w01w01kx.jpg" width="460"><br>▲ apple watch 开箱前</p>
+<p>虽然之前 apple watch 的照片、视频已经360度无死角的观察过，等拿到手的那一瞬间还是惊艳其美，欣喜如狂。轻轻的撕掉屏幕上面的保护膜，看着那晶莹通透的表盘醉了一脸。</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1euoidlgw6aj21w02iohdt.jpg" width="460"><br>▲ apple watch 首次佩戴</p>
+<p>下面说说就我上手 apple watch 22天后的使用感受。其中感受最明显的其实只有两点，这两点也正是当初促使我决定购买它的原因或者也可以说是我希望 apple watch 能通过这两点能让自己的生活有所改变。</p>
+<h4 id="u4E00-_u5065_u8EAB_u8FD0_u52A8"><a href="#u4E00-_u5065_u8EAB_u8FD0_u52A8" class="headerlink" title="一.健身运动"></a>一.健身运动</h4><p><strong>每小时站立提醒</strong><br>如果 apple watch 检测到你在一个小时的前50分钟都坐着时，它就会通过 Taptic Engine 来震动提醒你该起身动一下了。要知道，久坐和久站都不利于身体健康，都能引发一系列的职业病。</p>
+<p><strong>鼓励运动</strong><br>通过在 apple watch 上“健身活动”app设置好每日的活动、锻炼和站立目标，当你在完成到某个进度它会鼓励你做得好继续；当你完成了当日得整体目标时，它也会鼓励你，如果做得出色甚至会得到一块特别的“奖章”。</p>
+<p><strong>健身数据记录</strong><br>借助 apple watch 上“健身”app，可以跟踪自己喜欢的健身运动（我目前常用得是户外跑步、户外步行、户外单车和室内跑步），在健身期间获得关于里程碑的提醒，以及在完成健身后获得详细的摘要。每次运动后，这些数据也都会同步到iPhone上“健康”app上。</p>
+<h4 id="u4E8C-_u901A_u77E5_u63D0_u9192"><a href="#u4E8C-_u901A_u77E5_u63D0_u9192" class="headerlink" title="二.通知提醒"></a>二.通知提醒</h4><p><strong>设定通知</strong><br>以前工作每次iPhone收到通知都会响一声或者震动提醒你有新通知。因为不放心都会点亮屏幕查看、处理。而往往一点亮屏幕，除了最新的那条，很可能又被其他的通知引到解锁做一大堆其他的事情。</p>
+<p>拿到 apple watch 后，第一件重要的事就是设定好通知。只将重要的通知推送设置到 apple Watch，而其他不重要的就让它们留在手机上。只要我的 apple Watch 不震动，我就知道这不是重要通知，无需拿出手机来看。而手机上的相对不重要的通知等空闲时间统一再查看。推送到 apple Watch 的通知，比如QQ、微信等瞟一眼知道内容，不重要就过了，重要再选择回复或者处理即可。这样使用下来，我发现大大减少了我拿起手机的次数，工作效率是有一定提升的。</p>
+<p><strong>Taptic Engine</strong><br>我认为Taptic Engine 是 Apple Watch 上最酷的功能之一，使用感受非常奇妙，当它提醒你站立的时候，会急促的震一下，像是有人敦促你该起身了；收到QQ等通知时，清脆的一声「叮」和震两下，像是有人碰了你胳膊两下，提醒你看通知；当你输错秘密的时候，它会左右动两下，像是在摇头否定。总之用文字表达起来实在无力，只能称之呼神奇。</p>
+<p><em>最后，我想说 apple watch 是我喜欢并且真正需要的科技产品，用久了就会发现，它以一种平平淡淡的方式却又非常真切地改变着我的生活。我同样希望自己可以将拥有的其他电子产品也能发挥它们的真正可以发挥的能力，让自己或者别人的生活更加精彩，我想这才是喜欢科技产品的真正意义。</em></p>
+<hr>
+<p><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1euoid9xmtmj20hs0vkwgd.jpg" width="250"><br>▲ 拿到 apple watch 前，有时会打开iPhone上的“apple watch” app看一眼</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1euoidmlunwj208o0au74l.jpg" width="250"><br>▲ 我用的表盘样式</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1euoidq42wej208o0auwfd.jpg" width="250"><br>▲ 每小时的站立提醒</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1euoidn7st1j208o0aut9r.jpg" width="250"><br>▲ 完成每小时站立的鼓励</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1eup4mhdo54j208o0aumxv.jpg" width="250"><br>▲ 每天的站立情况总览</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eup4mi1ufrj208o0auab0.jpg" width="250"><br>▲ 每天健身活动情况总览</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1euoidobvkqj208o0au75p.jpg" width="250"><br>▲ 有时你会欣喜的发现获得了一个奖章</p>
+<p><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1eup4miedapj208o0auq3i.jpg" width="250"><br>▲ apple watch 上的训练app</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eup4mipqiaj208o0au74k.jpg" width="250"><br>▲ 当选择好上面的某个活动后可以在此设定活动目标</p>
+<p><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1euoidowzxfj208o0augmk.jpg" width="250"><br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1euoidpj9yuj208o0au3zk.jpg" width="250"><br>▲ 可以在 apple watch 控制媒体播放，比如骑车上下班的时候</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1euojmh7ntrj20hs0vk0wo.jpg" width="250"><br>▲ 使用 apple watch 这段时间来的运动量明显增加</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1euojmi2btyj20hs0vkgo5.jpg" width="250"><br>▲ 奖章系统，很喜欢这设计 </p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>我向来喜欢科技产品，热衷尝试新奇的事物，但这并不代表我会随随便便成为一款新产品的用户。</p>
+<p>从知道 apple 要做 apple watch 这款产品，到发布、再到开发购买，我的 RSS 订阅中就没间断的出现有关它的文章。随着这些文章的阅读，评测视频的观看，我逐渐]]>
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[曲径宣布关闭]]></title>
+    <link href="https://w4mxl.github.io/2015/07/31/goodbye-qujin/"/>
+    <id>https://w4mxl.github.io/2015/07/31/goodbye-qujin/</id>
+    <published>2015-07-30T16:00:00.000Z</published>
+    <updated>2016-01-18T15:13:56.937Z</updated>
+    <content type="html"><![CDATA[<p>就说这几天曲径用的怎么不顺畅，在用曲径一年多时间内，一直用着挺稳定的。大爱它的智能分流。<br>没想到还是给查了水表！！还是给查了水表！！查了水表！！</p>
+<p>谢谢你，曲径，在过去的那些欢畅的日子里有你。<br>好走 ❤️ …</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1eul8x570emj211c0wa0z8.jpg" alt=""><br>▲ 曲径官网公告</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>就说这几天曲径用的怎么不顺畅，在用曲径一年多时间内，一直用着挺稳定的。大爱它的智能分流。<br>没想到还是给查了水表！！还是给查了水表！！查了水表！！</p>
+<p>谢谢你，曲径，在过去的那些欢畅的日子里有你。<br>好走 ❤️ …</p>
+<p><img src="htt]]>
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[在冬天和奶奶一起晒太阳]]></title>
+    <link href="https://w4mxl.github.io/2015/07/21/Life's/%E5%9C%A8%E5%86%AC%E5%A4%A9%E5%92%8C%E5%A5%B6%E5%A5%B6%E4%B8%80%E8%B5%B7%E6%99%92%E5%A4%AA%E9%98%B3/"/>
+    <id>https://w4mxl.github.io/2015/07/21/Life's/在冬天和奶奶一起晒太阳/</id>
+    <published>2015-07-21T13:46:00.000Z</published>
+    <updated>2016-01-18T14:57:00.910Z</updated>
+    <content type="html"><![CDATA[<p>《在冬天和奶奶一起晒太阳》是赵照《大经厂》专辑中的一首歌。是上周在网易云音乐中，无意看到这歌名听起来的。好听。下载到手机后，这几天下班骑车回家都会听，听起来是有感觉的。</p>
+<p>上周六回了趟扬州，奶奶目前是待在扬州大伯家里的。毕业后的这3年，前面两年多因为在北京和深圳，离扬州老家路途远，每年能见到奶奶的次数也就一两次。除了隔两周给她去个电话，一个人在外有时虽然常会想她，也是没有什么办法。现在在上海了，离扬州相对近了好多，想她了就可以用周末过去看看她。</p>
+<p>以前小时候，我就跟奶奶还有爷爷待在老家里。冬天晌午，阳光暖洋洋的照在身上，吃午饭的点到了，我就会跟爷爷抬那个很大的宽板凳到院子里，当桌子用。然后再去厨房帮奶奶把菜端放到这个“桌子”上。再然后爷爷就会说，林，帮我去房间里倒泡的人参酒，杯子小半杯哦。每当这会儿，奶奶就会一旁小声叨叨说，酒有什么好喝的，天天喝都喝不够的。待酒菜都就绪了，三人便围坐在阳光下慢慢的吃，慢慢的说话。这是一段多么美好的时光。</p>
+<p>上周六进大伯门刚看到奶奶的时候，奶奶是坐在客厅阳台脸朝着窗外的，当她听到屋内动静转头见到是我来了的时候，我能明显的看到她的脸上表情转为喜悦的过程。我放下牛奶，握握她的手，跟她讲话。她好像比上次4月18号见到她的时候精神了些，那时候她生病，讲一会儿话我就能听到她的喘声。现在好了，看到她健康着，我很开心。</p>
+<p>我希望奶奶除了保持健康，我更希望她生活中能再多些快乐…  </p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609jw1euashrp4d1j217g17g47i.jpg" alt=""><br>▲ 奶奶 2015/7/18</p>
+<p><iframe height="498" width="510" src="http://player.youku.com/embed/XNTAyNDUwMTUy" frameborder="0" allowfullscreen></iframe><br>▲ 赵照 釜辰:《当你老了》,《在冬天和奶奶一起晒太阳》,《慢慢的》</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>《在冬天和奶奶一起晒太阳》是赵照《大经厂》专辑中的一首歌。是上周在网易云音乐中，无意看到这歌名听起来的。好听。下载到手机后，这几天下班骑车回家都会听，听起来是有感觉的。</p>
+<p>上周六回了趟扬州，奶奶目前是待在扬州大伯家里的。毕业后的这3年，前面两年多因为在北京和深圳]]>
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[用户头像－拍照、选择＋裁剪]]></title>
+    <link href="https://w4mxl.github.io/2015/07/19/Android/%E7%94%A8%E6%88%B7%E5%A4%B4%E5%83%8F%EF%BC%8D%E6%8B%8D%E7%85%A7%E3%80%81%E9%80%89%E6%8B%A9%EF%BC%8B%E8%A3%81%E5%89%AA/"/>
+    <id>https://w4mxl.github.io/2015/07/19/Android/用户头像－拍照、选择＋裁剪/</id>
+    <published>2015-07-19T13:52:00.000Z</published>
+    <updated>2016-01-13T16:14:14.508Z</updated>
+    <content type="html"><![CDATA[<p>一般做 app，只要存在用户系统，跑不了都会有设置用户头像的需求。设置用户头像一般都提供拍照和从相册选择两种方式，得到图片后，让用户对图片进行裁剪，然后上传服务器。</p>
+<p>关于拍照和从相册选取，都是向系统发送特定的 Intent，唤起对应的系统程序，然后在onActivityResult 里面，获取我们的图片数据。关于图像裁剪，一般有两种方式，第一种是我们可以直接利用系统提供的裁剪功能，实现图像的裁剪。另外一种是自己处理，比如利用一些第三方的开源项目，如<a href="https://github.com/edmodo/cropper" target="_blank" rel="external">cropper</a> 和 <a href="https://github.com/jdamcd/android-crop" target="_blank" rel="external">android-crop</a>，来完成我们的需求。</p>
+<p>以前做过的项目中碰到设置用户头像这个需求，裁剪都是用的上面说到的第一种方式，即通过 Intent intent = new Intent(“com.android.camera.action.CROP”); 语句来调用系统的裁剪功能，但是自从推出 android lollipop(5.0) 之后，用之前的那套代码会有 bug，通过 stackoverflow 了解到因为 “Camera’s crop activity doesn’t return anything for onActivityResult() method. ”。所以这次项目中尝试选择了第二方式来解决这个问题。</p>
+<h3 id="1-_u6309_u8BBE_u8BA1_u5B8C_u6210_u4ECE_u5E95_u90E8_u5F39_u51FA_u9009_u62E9_u5BF9_u8BDD_u6846"><a href="#1-_u6309_u8BBE_u8BA1_u5B8C_u6210_u4ECE_u5E95_u90E8_u5F39_u51FA_u9009_u62E9_u5BF9_u8BDD_u6846" class="headerlink" title="1.按设计完成从底部弹出选择对话框"></a>1.按设计完成从底部弹出选择对话框</h3><p><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eu8f8qo62ij20lc0zkwfy.jpg" width="400"><br>▲ 最终完成效果如上</p>
+<p>MeInfoActivity.java 中对应的代码:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="annotation">@OnClick</span>(R.id.rl_set_head)</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setHeadImage</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    CustomDialog.showSetPicDialog(activity, <span class="keyword">new</span> CustomDialog.OnDialogTakePic() &#123;</span><br><span class="line">        <span class="annotation">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">()</span> </span>&#123;<span class="comment">// 拍照</span></span><br><span class="line">            actionProfilePic(Constants.IntentExtras.ACTION_CAMERA);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;, <span class="keyword">new</span> CustomDialog.OnDialogSelectPic() &#123;</span><br><span class="line">        <span class="annotation">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">()</span> </span>&#123;<span class="comment">// 本地图片</span></span><br><span class="line">            actionProfilePic(Constants.IntentExtras.ACTION_GALLERY);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="2-_u5B9E_u73B0_u5934_u50CF_u7684_u9009_u62E9_28_u62CD_u7167_29_u53CA_u88C1_u526A"><a href="#2-_u5B9E_u73B0_u5934_u50CF_u7684_u9009_u62E9_28_u62CD_u7167_29_u53CA_u88C1_u526A" class="headerlink" title="2.实现头像的选择(拍照)及裁剪"></a>2.实现头像的选择(拍照)及裁剪</h3><p>MeInfoActivity.java 中对应的代码:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">actionProfilePic</span><span class="params">(String action)</span> </span>&#123;</span><br><span class="line">    Intent intent = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, ImageCropActivity.class);</span><br><span class="line">    intent.putExtra(<span class="string">"ACTION"</span>, action);</span><br><span class="line">    intent.putExtra(<span class="string">"FROM"</span>, <span class="string">"MeInfoActivity"</span>);</span><br><span class="line">    startActivityForResult(intent, REQUEST_CODE_UPDATE_PIC);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="annotation">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onActivityResult</span><span class="params">(<span class="keyword">int</span> requestCode, <span class="keyword">int</span> resultCode, Intent result)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (requestCode == REQUEST_CODE_UPDATE_PIC) &#123;</span><br><span class="line">        <span class="keyword">if</span> (resultCode == RESULT_OK) &#123;</span><br><span class="line">            String imagePath = result.getStringExtra(Constants.IntentExtras.IMAGE_PATH);</span><br><span class="line">            showCroppedImage(imagePath);</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (resultCode == RESULT_CANCELED) &#123;</span><br><span class="line"></span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            String errorMsg = result.getStringExtra(ImageCropActivity.ERROR_MSG);</span><br><span class="line">            Toast.makeText(<span class="keyword">this</span>, errorMsg, Toast.LENGTH_LONG).show();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在 MeInfoActivity.java 中只是按照用户的选择发出相对应的 action，选择、拍照、裁剪的响应都是放到 ImageCropActivity.java 中处理的。<br>ImageCropActivity.java 中对应的代码我是参见的开源项目，<a href="https://github.com/albinmathew/PhotoCrop/blob/master/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Falbinmathew%2Fsamples%2Fphotocrop%2FImageCropActivity.java" target="_blank" rel="external">地址</a>。</p>
+<h3 id="3-_u5C06_u88C1_u526A_u540E_u7684_u672C_u5730_u56FE_u7247_u4E0A_u4F20_u5230_u670D_u52A1_u5668"><a href="#3-_u5C06_u88C1_u526A_u540E_u7684_u672C_u5730_u56FE_u7247_u4E0A_u4F20_u5230_u670D_u52A1_u5668" class="headerlink" title="3.将裁剪后的本地图片上传到服务器"></a>3.将裁剪后的本地图片上传到服务器</h3><p>通常上传 app 本地文件(如图片)到后台 server，需要 app 开发人员与后台接口人员定义一种方式。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>一般做 app，只要存在用户系统，跑不了都会有设置用户头像的需求。设置用户头像一般都提供拍照和从相册选择两种方式，得到图片后，让用户对图片进行裁剪，然后上传服务器。</p>
+<p>关于拍照和从相册选取，都是向系统发送特定的 Intent，唤起对应的系统程序，然后在onAct]]>
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Activity的启动模式]]></title>
+    <link href="https://w4mxl.github.io/2015/07/08/activity-launchMode/"/>
+    <id>https://w4mxl.github.io/2015/07/08/activity-launchMode/</id>
+    <published>2015-07-08T00:34:00.000Z</published>
+    <updated>2016-01-13T16:15:48.693Z</updated>
+    <content type="html"><![CDATA[<p>在实际项目中我们应该根据特定的需求为每个 Activity 指定适当的启动模式。这里根据个人理解和实际开发中的经验，做些总结。有四种启动模式，分别是 standard 、singleTop 、singleTask 和singleInstance 。可以在 AndroidManifest.xml 中通过给 &lt;activity&gt; 对应的标签指定 android:launchMode 属性来设置启动模式。</p>
+<p><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1etx2yevlj4j218y0kw795.jpg" alt=""></p>
+<p>为了介绍清这四种启动模式，我们应该先清楚下面两个概念: task、taskAffinity。</p>
+<blockquote>
+<p>task</p>
+</blockquote>
+<p>task 是一组相互关联的 activity 的集合，存在于一个称为 back stack 的 “First In Last Out” 的栈结构中，控制着界面的跳转和返回。task 是可以跨应用的，有的 Activity，虽然不在同一个 app 中，但为了保持用户操作的连贯性，把他们放在同一个 task 中。例如，在我们的应用中的一个Activity A中点击发送邮件，会启动邮件程序的一个Activity B 来发送邮件，这两个 activity 是存在于不同app中的，但是被系统放在一个 task 中，这样当发送完邮件后，用户按 back 键返回，可以返回到原来的 Activity A 中，这样就确保了用户体验。</p>
+<blockquote>
+<p>taskAffinity</p>
+</blockquote>
+<p>taskAffinity 是 Activity 的一个属性。它的作用是用来描述不同 Activity 之间的亲密关系。默认情况下（在  manifest 中没有对 Activity 的 android:taskAffinity 进行配置），Activity 的这个属性就等于 Application 指明的 taskAffinity，如果 Application 也没有指明，那么该 taskAffinity 的值就等于包名。而 Task 也有自己的 affinity 属性，它的值等于它的根 Activity 的 taskAffinity 的值。我们可以通过为 activity 设置不同的 taskAffinity 属性给 app 中的 activity 分组，也可以把不同的 app 中的 activity 的 taskAffinity 设置成相同的值。为一个 activity 的 taskAffinity 设置一个空字符串，表明这个 activity 不属于任何 task。</p>
+<h4 id="standard__u6A21_u5F0F"><a href="#standard__u6A21_u5F0F" class="headerlink" title="standard 模式"></a>standard 模式</h4><p>activity 的默认启动模式。activity A 设定为 standard 模式（不做任何设置默认就是 standard），即可以被多次实例化，在同一个 task 中可以存在多个 activity A 的实例，每个实例都会处理一个 Intent 对象。例，Activity A 的启动模式为 standard，并且A已经启动，在A中再次启动 Activity A，即调用startActivity(new Intent(this，A.class))，会在A的上面再次启动一个A的实例，即当前的桟中的状态为A –&gt; A。</p>
+<h4 id="singleTop__u6A21_u5F0F"><a href="#singleTop__u6A21_u5F0F" class="headerlink" title="singleTop 模式"></a>singleTop 模式</h4><p>字面上<strong>“顶部只能有一个”</strong>。例，activity A 设定为 singleTop 模式后，并且A的一个实例已经存在于栈顶中，那么再调用 startActivity(new Intent(this，A.class)) 启动A时，不会再次创建A的实例，而是重用原来的实例，并且调用原来实例的 onNewIntent() 方法。这时任务桟中还是只有一个A的实例。如果 activity A 的一个实例已经存在于任务桟中，但是不在桟顶，那么再次调用的行为和 standard 模式相同，还会创建出一个实例。</p>
+<h4 id="singleTask__u6A21_u5F0F"><a href="#singleTask__u6A21_u5F0F" class="headerlink" title="singleTask 模式"></a>singleTask 模式</h4><p>字面上<strong>“只容许有一个包含该 Activity 实例的 task 存在”</strong>。使用 singleTop 模式可以很好的解决重复创建栈顶活动的问题。但是上面也说到，如果这个活动(activity)并没有处于栈顶的位置，还是会出现同一活动多个实例的现象。而 singleTask 模式正好就可以对上述问题就行补充解决。不过这里要注意的是，下面说的结论跟前面提到的概念:taskAffinity 就有关系了。例，以 activity A(standard模式)启动 activity B(singleTask模式)来说，</p>
+<ol>
+<li>当A和B的 taskAffinity 相同时(没有显式的指明该Activity的taskAffinity)，A要启动B活动时，<em>并不会启动新的task</em>，系统首先会在默认返回栈中检查是否存在B活动的实例，如果发现已经存在则直接使用该实例，会调用B的 onNewIntent()方法，并把在这个活动之上的所有活动统统出栈，如果没有发现就会创建一个新的B活动实例。</li>
+<li>当A和B的 taskAffinity 不同时，A要启动B活动时，<em>会有新的task</em>，系统首先会在新的task中检查是否存在B活动的实例，如果发现已经存在则直接使用该实例，会调用B的 onNewIntent() 方法，并把在这个活动之上的所有活动统统出栈，如果没有发现就会将新的B活动实例添加到新的task中。<h4 id="singleInstance__u6A21_u5F0F"><a href="#singleInstance__u6A21_u5F0F" class="headerlink" title="singleInstance 模式"></a>singleInstance 模式</h4>字面上<strong>“任意时刻只允许存在唯一的 Activity 实例”</strong>。设定为 singleInstance 模式的 Activity 会启用一个新的 task(返回栈)来管理这个活动。<strong>该 task 只能容纳该 Activity 实例，不会再添加其他的 Activity 实例</strong>。如果该 Activity 实例已经存在于某个 task，则直接跳转到该 task。<br>它与 singleTask 有相同之处，也有不同之处。<br><strong>相同:</strong>任意时刻，最多只允许存在一个实例。<br><strong>不同:</strong></li>
+</ol>
+<ul>
+<li>singleTask 受 android:taskAffinity 属性的影响，而 singleInstance 不受 android:taskAffinity 的影响。</li>
+<li>singleTask 所在的 task 中能有其它的 Activity，而 singleInstance 的 task 中不能有其他 Activity。</li>
+<li>当跳转到 singleTask 类型的 Activity，并且该 Activity 实例已经存在时，会删除该 Activity 所在 task 中位于该 Activity 之上的全部 Activity 实例；而跳转到 singleInstance 类型的 Activity，并且该 Activity 已经存在时，不需要删除其他 Activity，因为它所在的 task 只有该 Activity 唯一一个 Activity 实例。</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>在实际项目中我们应该根据特定的需求为每个 Activity 指定适当的启动模式。这里根据个人理解和实际开发中的经验，做些总结。有四种启动模式，分别是 standard 、singleTop 、singleTask 和singleInstance 。可以在 AndroidMa]]>
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Intent的Flag属性]]></title>
+    <link href="https://w4mxl.github.io/2015/07/06/Intent-Flag/"/>
+    <id>https://w4mxl.github.io/2015/07/06/Intent-Flag/</id>
+    <published>2015-07-06T12:03:00.000Z</published>
+    <updated>2016-01-13T16:14:59.094Z</updated>
+    <content type="html"><![CDATA[<p>这篇是想接着上篇<a href="http://wml.farbox.com/post/activity-launchMode" target="_blank" rel="external">「Activity的启动模式」</a>，从实际需求场景的出发介绍下Intent与启动模式相关的Flag使用。(注:并为将所有 Flag 介绍完全，因为有些我没实际用过可能还没有理解足够深刻，只写个人实际使用过并觉得理解到位了的，后续会补充)</p>
+<h3 id="u5E38_u89C1_u9700_u6C42_u573A_u666F"><a href="#u5E38_u89C1_u9700_u6C42_u573A_u666F" class="headerlink" title="常见需求场景"></a>常见需求场景</h3><p><strong>需求1:</strong></p>
+<blockquote>
+<p>前提: 下面的 Activity A B C D 都没有显式的指明launchMode 和 taskAffinity 属性。</p>
+</blockquote>
+<p>已经启动了四个 Activity: A，B，C和D。在 D Activity里，我们想要跳到 B Activity，同时希望C Activity finish掉。<br><strong>实现:</strong>: FLAG_ACTIVITY_CLEAR_TOP<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Intent intent = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, B.class);</span><br><span class="line">intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);<span class="comment">// D Activity</span></span><br><span class="line">startActivity(intent);</span><br></pre></td></tr></table></figure></p>
+<p><strong>结果:</strong><br>D、C、B Activity 依次调用各自的 onDestroy 方法出栈 －&gt; B Activity 重新启动(onCreate)<br>栈中为: A B</p>
+<hr>
+<p><strong>需求2:</strong><br>在需求1的基础上，只是不想重新再创建一个新的B Activity，而是重用原来的实例。<br><strong>实现:</strong>: Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Intent intent = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, B.class);</span><br><span class="line"><span class="comment">// intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);// D Activity</span></span><br><span class="line">intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);<span class="comment">// D Activity</span></span><br><span class="line">startActivity(intent);</span><br></pre></td></tr></table></figure></p>
+<p><strong>结果:</strong><br>依次，C onDestroy -&gt; B Activity onNewIntent onRestart -&gt; D onDestroy<br>栈中为: A B</p>
+<hr>
+<p><strong>需求3:</strong></p>
+<blockquote>
+<p>前提: 下面的 Activity A B C D 都没有显式的指明 launchMode 和 taskAffinity 属性。</p>
+</blockquote>
+<p>已经启动了四个Activity：A，B，C和D。在D Activity里，想再启动一个Actvity B，但不变成A,B,C,D,B，而是希望是A,C,D,B。<br><strong>实现:</strong>: Intent.FLAG_ACTIVITY_REORDER_TO_FRONT<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Intent intent = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, B.class);</span><br><span class="line">intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);<span class="comment">// D Activity</span></span><br><span class="line">startActivity(intent);</span><br></pre></td></tr></table></figure></p>
+<p><strong>结果:</strong><br>依次，B Activity onNewIntent onRestart<br>栈中为: A C D B</p>
+<hr>
+<h3 id="u5176_u4ED6_u5E38_u89C1_FLAG__u8BF4_u660E"><a href="#u5176_u4ED6_u5E38_u89C1_FLAG__u8BF4_u660E" class="headerlink" title="其他常见 FLAG 说明"></a>其他常见 FLAG 说明</h3><p><strong>FLAG_ACTIVITY_NO_HISTORY</strong><br>例如现在栈情况为：A B C。C 通过 intent 跳转到 D，这个intent添加 FLAG_ACTIVITY_NO_HISTORY 标志，则此时界面显示D的内容，如果此时D中又跳转到E，栈的情况变为: A B C E，此时按返回键会回到C，因为D根本就没有被压入栈中。</p>
+<p><strong>FLAG_ACTIVITY_NEW_TASK</strong><br>例如现在栈1的情况是：A B C。C 通过intent跳转到 D，并且这个 intent 添加了 FLAG_ACTIVITY_NEW_TASK 标 记，如果 D 这个 Activity 在 Manifest.xml 中的声明中添加了 Task affinity，并且和栈1的 affinity 不同，系统首先会查找有没有和 D 的 Task affinity 相同的 task 栈存在，如果有存在，将 D 压入那个栈，如果不存在则会新建一个 D 的 affinity 的栈将其压入。如果 D 的 Task affinity 默认没有设置，或者和栈1的 affinity 相同，则会把其压入栈1，变成：A B C D，这样就和不加 FLAG_ACTIVITY_NEW_TASK 标记效果是一样的了。</p>
+<p><strong>FLAG_ACTIVITY_NO_ANIMATION</strong><br>这个标志将阻止系统进入下一个 Activity 时应用 Acitivity 迁移动画。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>这篇是想接着上篇<a href="http://wml.farbox.com/post/activity-launchMode" target="_blank" rel="external">「Activity的启动模式」</a>，从实际需求场景的出发介绍下Intent与启]]>
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[记一次下厨]]></title>
+    <link href="https://w4mxl.github.io/2015/07/05/record-a-cook/"/>
+    <id>https://w4mxl.github.io/2015/07/05/record-a-cook/</id>
+    <published>2015-07-05T03:59:00.000Z</published>
+    <updated>2016-01-18T15:13:56.703Z</updated>
+    <content type="html"><![CDATA[<h3 id="u4E0B_u53A8_u8D77_u56E0"><a href="#u4E0B_u53A8_u8D77_u56E0" class="headerlink" title="下厨起因"></a>下厨起因</h3><p>雯这周因为过敏，左眼红肿，身体其他地方也出现了些问题，本来应该是不大的事，全因起初那医生诊后说她是得了湿疹开了很多药给她，徒增了她很多担惊，加上去医院挂号就诊取药楼层之间来回跑，打电话给我的时候无助委屈的都快哭了。我因为不放心，买了周五晚上海至南京的高铁。她周六上午是要上班的，我就跟她说我来给她做顿午饭，秀下厨艺。</p>
+<h3 id="u8D2D_u4E70_u98DF_u6599"><a href="#u8D2D_u4E70_u98DF_u6599" class="headerlink" title="购买食料"></a>购买食料</h3><p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1ets7vabw5oj21w01w0npd.jpg" alt=""></p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1ets7v5pyqqj21w01w07vq.jpg" alt=""></p>
+<p>打算给她做两个菜: 西红柿青椒炒蛋 + 鱼头豆腐汤。其实因为我自己之前烧菜次数屈指可数，实无厨艺可秀。为了做好这两道菜Google了下菜谱，了解步骤和注意事项。</p>
+<h3 id="u7B2C_u4E00_u9053_u83DC_3A__u897F_u7EA2_u67FF_u9752_u6912_u7092_u86CB"><a href="#u7B2C_u4E00_u9053_u83DC_3A__u897F_u7EA2_u67FF_u9752_u6912_u7092_u86CB" class="headerlink" title="第一道菜: 西红柿青椒炒蛋"></a>第一道菜: 西红柿青椒炒蛋</h3><p>做法:</p>
+<ol>
+<li>西红柿、青椒洗净，切成块；葱、蒜切小片</li>
+<li>将4个鸡蛋磕入碗内，用筷子搅匀</li>
+<li>锅内加油适量烧热，倒入蛋液，炒好盛进盘子</li>
+<li>底锅另加油烧热，爆葱花蒜香，然后倒入西红柿炒至粘软</li>
+<li>放入青椒稍炒片刻，加些许盐、味精，再倒入先前炒好的鸡蛋</li>
+<li>翻炒均匀，用香醋烹一下，出锅即成</li>
+</ol>
+<p>成果如下:</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1ets7v2r7xxj21w01w04qp.jpg" alt=""></p>
+<h3 id="u7B2C_u4E8C_u9053_u83DC_3A__u9C7C_u5934_u8C46_u8150_u6C64"><a href="#u7B2C_u4E8C_u9053_u83DC_3A__u9C7C_u5934_u8C46_u8150_u6C64" class="headerlink" title="第二道菜: 鱼头豆腐汤"></a>第二道菜: 鱼头豆腐汤</h3><p>做法:</p>
+<ol>
+<li>鱼头洗净斩半(在这块费了我很大力气才搞定，应该买鱼头时让师傅切两半的)</li>
+<li>锅内放油烧热，鱼头连同姜片、葱段一起放入锅内煎，煎至鱼头双面呈微黄色</li>
+<li>注入水，以没过鱼头为宜，加盖大火煮15分钟左右，汤呈奶白色</li>
+<li>3过程中，把嫩豆腐切成小块；香菇、香菜、小葱洗净切成段</li>
+<li>3完成时，把切好的豆腐放进锅内，在煮5分钟左右，然后加入香菇，香菜和葱段</li>
+<li>最后加入适量的盐、香油调味即可</li>
+</ol>
+<p><strong>注意点:</strong></p>
+<ul>
+<li>鱼头一定要煎过后再用来熬汤，这样熬出来的汤才白白的 </li>
+<li>豆腐不要下得太早，太早下会把豆腐煮烂 </li>
+<li>水量要一次加足，中途加水会冲淡鱼汤的浓度 </li>
+</ul>
+<p>成果如下:</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1ets7utthqkj21w01w0x1x.jpg" alt=""></p>
+<p>最后再加上下面2个买来的熟菜，一顿午饭就有了 :)<br>雯回来后，看到这，终于是给了夸赞的。 8)</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1ets7uzv7t8j21w01w07wh.jpg" alt=""></p>
+<p><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1ets7uwx78pj21w01w0qta.jpg" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="u4E0B_u53A8_u8D77_u56E0"><a href="#u4E0B_u53A8_u8D77_u56E0" class="headerlink" title="下厨起因"></a>下厨起因</h3><p>雯这周因为过敏，左眼红肿，身体其他地方也出现了些]]>
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[赵雷的MV《理想》]]></title>
+    <link href="https://w4mxl.github.io/2015/07/03/Life's/%E8%B5%B5%E9%9B%B7%E7%9A%84MV%E3%80%8A%E7%90%86%E6%83%B3%E3%80%8B/"/>
+    <id>https://w4mxl.github.io/2015/07/03/Life's/赵雷的MV《理想》/</id>
+    <published>2015-07-03T14:23:00.000Z</published>
+    <updated>2016-01-18T15:16:34.644Z</updated>
+    <content type="html"><![CDATA[<p>分享赵雷的MV《理想》，以前这首歌也一直听，昨夜里敲罢代码，在网易云音乐里看到这首MV，喜欢。</p>
+<iframe height="498" width="510" src="http://player.youku.com/embed/XODI2NTcyMjg4" frameborder="0" allowfullscreen></iframe>
+
+
+<p><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1etpypxuwe1j20vk0hsjrv.jpg" alt=""></p>
+<blockquote>
+<p>昨晚mv看第二遍时又末尾了截的图</p>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>分享赵雷的MV《理想》，以前这首歌也一直听，昨夜里敲罢代码，在网易云音乐里看到这首MV，喜欢。</p>
+<iframe height="498" width="510" src="http://player.youku.com/embed/XODI2NTcyMjg4" fr]]>
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[友盟-"用户反馈"的集成和UI自定义]]></title>
+    <link href="https://w4mxl.github.io/2015/06/28/Android/%E5%8F%8B%E7%9B%9F-%E7%94%A8%E6%88%B7%E5%8F%8D%E9%A6%88%E7%9A%84%E9%9B%86%E6%88%90%E5%92%8CUI%E8%87%AA%E5%AE%9A%E4%B9%89/"/>
+    <id>https://w4mxl.github.io/2015/06/28/Android/友盟-用户反馈的集成和UI自定义/</id>
+    <published>2015-06-28T11:58:00.000Z</published>
+    <updated>2016-01-13T15:27:10.957Z</updated>
+    <content type="html"><![CDATA[<h3 id="1-__u5BF9_u6BD4"><a href="#1-__u5BF9_u6BD4" class="headerlink" title="1. 对比"></a>1. 对比</h3><p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1etk3hqcje6j20lc0zkq5i.jpg" width="250"></p>
+<blockquote>
+<p>注: 友盟用户反馈SDK中默认的用户反馈页，功能大而全(联系方式可以选择电话、QQ、邮箱;用户可以用发送语音反馈;可发图片;回复后推送消息给用户…)，可这设计实在是丑到没朋友，且友盟集成的方式很难在原基础上对UI进行自定义…</p>
+</blockquote>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609jw1etk2r6ohbrj20lc0zktah.jpg" width="250">  <img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1etk2r62351j20lc0zkaav.jpg" width="250"> </p>
+<blockquote>
+<p>注: app中”用户反馈”功能常见的页面是长这个样子的: 图1 截自大众点评   图2 截自豆瓣FM</p>
+</blockquote>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1etk2r5d49oj20lc0zk0uz.jpg" width="250"></p>
+<blockquote>
+<p><strong>注: “联系方式 (EditText) ＋ 反馈内容 (EditText) ＋ 发送 (Button)”这种意见反馈实现起来很简单，也满足大部分app的反馈的需求了，可目前在做的项目因为产品定位上需要，希望对用户的反馈的及时性还是高一点好，所以集成了友盟的意见反馈(它提供了一个后台回复平台)，且对原始页面进行UI自定义，初步样式如上</strong></p>
+</blockquote>
+<h3 id="2-_u96C6_u6210_28_u53EA_u4ECB_u7ECDAndroid_Studio_u65B9_u5F0F_29"><a href="#2-_u96C6_u6210_28_u53EA_u4ECB_u7ECDAndroid_Studio_u65B9_u5F0F_29" class="headerlink" title="2.集成(只介绍Android Studio方式)"></a>2.集成(只介绍Android Studio方式)</h3><p>1) 一贯的申请开发者账号，注册应用，下载SDK、Demo<br>2) 在应用对应module下的build.gradle文件中添加:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">repositories &#123;</span><br><span class="line">        <span class="comment">// others</span></span><br><span class="line">        jcenter()</span><br><span class="line">        maven &#123; url <span class="string">"https://raw.githubusercontent.com/umeng/mvn-repo-umeng/master/repository"</span> &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">dependencies &#123;</span><br><span class="line">    <span class="comment">// others</span></span><br><span class="line">    compile <span class="string">'com.umeng:fb:5.3.0'</span></span><br><span class="line">    compile <span class="string">'com.android.support:support-v4:21.+'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>3) “AndroidManifest.xml”, 在<application>标签中添加对应的Activity, APPKEY, 和权限，注意替换其中的”YOUR_APP_KEY” 和”Channel ID”。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;manifest&gt;</span><br><span class="line">    // others</span><br><span class="line">    &lt;uses-permission android:name="android.permission.INTERNET"/&gt;</span><br><span class="line">    &lt;uses-permission android:name="android.permission.READ_PHONE_STATE"/&gt;</span><br><span class="line">    &lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/&gt;</span><br><span class="line">    &lt;uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /&gt;</span><br><span class="line">    &lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /&gt;</span><br><span class="line">    &lt;application&gt;</span><br><span class="line">        // others</span><br><span class="line">        &lt;activity</span><br><span class="line">            android:name=".x.me.FeedBackActivity"</span><br><span class="line">            android:screenOrientation="portrait"/&gt;</span><br><span class="line">        &lt;meta-data</span><br><span class="line">        android:value="YOUR_APP_KEY"</span><br><span class="line">        android:name="UMENG_APPKEY"/&gt;</span><br><span class="line">        &lt;meta-data</span><br><span class="line">        android:value="Channel ID"</span><br><span class="line">        android:name="UMENG_CHANNEL"/&gt;</span><br><span class="line">    &lt;/application&gt;</span><br><span class="line">&lt;/manifest&gt;</span><br></pre></td></tr></table></figure></application></p>
+<p>4) 自定义页面布局、参照开发文档和官方demo实现页面功能</p>
+<blockquote>
+<p>这里不细讲实现细节了，待当前项目完成后我将我的意见反馈模块抽出来做成demo放到github上，看demo会更清楚</p>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="1-__u5BF9_u6BD4"><a href="#1-__u5BF9_u6BD4" class="headerlink" title="1. 对比"></a>1. 对比</h3><p><img src="http://ww4.sinaimg.cn/mw690/]]>
+    </summary>
+    
+      <category term="友盟" scheme="https://w4mxl.github.io/tags/%E5%8F%8B%E7%9B%9F/"/>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[「Replace」 by Zee Young]]></title>
+    <link href="https://w4mxl.github.io/2015/06/18/%E3%80%8CReplace%E3%80%8D-by-Zee-Young/"/>
+    <id>https://w4mxl.github.io/2015/06/18/「Replace」-by-Zee-Young/</id>
+    <published>2015-06-18T03:18:00.000Z</published>
+    <updated>2016-01-14T16:43:44.080Z</updated>
+    <content type="html"><![CDATA[<p><img src="https://d13yacurqjgara.cloudfront.net/users/384313/screenshots/2067564/replace.gif" alt=""></p>
+<p> <a href="https://dribbble.com/shots/2067564-Replace?list=users&amp;offset=0" target="_blank" rel="external">「Replace」</a> BY <a href="https://dribbble.com/zeeyoung" target="_blank" rel="external">@Zee Young</a>  </p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="https://d13yacurqjgara.cloudfront.net/users/384313/screenshots/2067564/replace.gif" alt=""></p>
+<p> <a href="https://dribbble.c]]>
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[ScrollView下嵌套 ListView(GridView) 冲突导致显示不全的问题]]></title>
+    <link href="https://w4mxl.github.io/2015/06/17/Android/ScrollView%E4%B8%8B%E5%B5%8C%E5%A5%97%20ListView(GridView)%20%E5%86%B2%E7%AA%81%E5%AF%BC%E8%87%B4%E6%98%BE%E7%A4%BA%E4%B8%8D%E5%85%A8%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>https://w4mxl.github.io/2015/06/17/Android/ScrollView下嵌套 ListView(GridView) 冲突导致显示不全的问题/</id>
+    <published>2015-06-17T03:35:00.000Z</published>
+    <updated>2016-01-13T16:16:36.186Z</updated>
+    <content type="html"><![CDATA[<h2 id="u95EE_u9898_u63CF_u8FF0"><a href="#u95EE_u9898_u63CF_u8FF0" class="headerlink" title="问题描述"></a>问题描述</h2><p>为了满足功能需求，界面布局中常常需要用到 ScrollView 下嵌套 ListView(GridView) 的情况，ScrollView 可以滚动，而 ListView(GridView) 只作数据展示不能滚动。而写完调试时会发现，ListView(GridView) 只显示了一行数据，自身滚动后能看到剩余数据。原因是ScrollView 中嵌套 ListView(GridView)，无法正确的计算ListView(GridView)的高度。</p>
+<h2 id="u89E3_u51B3_u65B9_u6CD5_u4E00"><a href="#u89E3_u51B3_u65B9_u6CD5_u4E00" class="headerlink" title="解决方法一"></a>解决方法一</h2><p>原理:<code>setAdapter后，获取到每一项item的高度，再动态设置listview或者gridview的高度。</code><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> * 解决scrollview 嵌套 gridview</span><br><span class="line"> *</span><br><span class="line"> * <span class="doctag">@param</span> gridView</span><br><span class="line"> * <span class="doctag">@param</span> columns  gridview的列数</span><br><span class="line"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">setGridViewHeightBasedOnChildren</span><span class="params">(GridView gridView, <span class="keyword">int</span> columns)</span> </span>&#123;</span><br><span class="line">    ListAdapter listAdapter = gridView.getAdapter();</span><br><span class="line">    <span class="keyword">if</span> (listAdapter == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> totalHeight = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> count = listAdapter.getCount();</span><br><span class="line">    View listItem = listAdapter.getView(<span class="number">0</span>, <span class="keyword">null</span>, gridView);</span><br><span class="line">    listItem.measure(<span class="number">0</span>, <span class="number">0</span>);</span><br><span class="line">    totalHeight = listItem.getMeasuredHeight() + <span class="number">9</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> yu = count % columns;</span><br><span class="line"></span><br><span class="line">    ViewGroup.LayoutParams params = gridView.getLayoutParams();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (yu &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        params.height = (count - yu) / columns * (totalHeight + <span class="number">9</span>) + totalHeight;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        params.height = count / columns * totalHeight + (count / columns - <span class="number">1</span>) * <span class="number">9</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    gridView.setLayoutParams(params);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * 解决scrollview 嵌套 listview</span><br><span class="line"> *</span><br><span class="line"> * <span class="doctag">@param</span> listView</span><br><span class="line"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">setListViewHeightBasedOnChildren</span><span class="params">(ListView listView)</span> </span>&#123;</span><br><span class="line">    ListAdapter listAdapter = listView.getAdapter();</span><br><span class="line">    <span class="keyword">if</span> (listAdapter == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> totalHeight = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> count = listAdapter.getCount();</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; count; i++) &#123;</span><br><span class="line">        View listItem = listAdapter.getView(i, <span class="keyword">null</span>, listView);</span><br><span class="line">        listItem.measure(<span class="number">0</span>, <span class="number">0</span>);</span><br><span class="line">        totalHeight += listItem.getMeasuredHeight();</span><br><span class="line">    &#125;</span><br><span class="line">    ViewGroup.LayoutParams params = listView.getLayoutParams();</span><br><span class="line">    params.height = totalHeight + (listView.getDividerHeight() * (count - <span class="number">1</span>));</span><br><span class="line">    <span class="comment">// listView.getDividerHeight()获取子项间分隔符占用的高度</span></span><br><span class="line">    <span class="comment">// params.height最后得到整个ListView完整显示需要的高度</span></span><br><span class="line">    listView.setLayoutParams(params);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>此方法需要注意:<br>一、是Adapter中getView方法返回的View的必须由LinearLayout组成，因为只有LinearLayout才有measure()方法。<br>二、有时是需要手动把ScrollView滚动至最顶端。</p>
+<h2 id="u89E3_u51B3_u65B9_u6CD5_u4E8C"><a href="#u89E3_u51B3_u65B9_u6CD5_u4E8C" class="headerlink" title="解决方法二"></a>解决方法二</h2><p>原理:<code>重写 ListView、GridView 的 onMeasure 方法</code><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyListView</span> <span class="keyword">extends</span> <span class="title">ListView</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MyListView</span><span class="params">(Context context)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(context);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onMeasure</span><span class="params">(<span class="keyword">int</span> widthMeasureSpec, <span class="keyword">int</span> heightMeasureSpec)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> expandSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE &gt;&gt; <span class="number">2</span>,</span><br><span class="line">                MeasureSpec.AT_MOST);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">super</span>.onMeasure(widthMeasureSpec, expandSpec);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125; </span><br><span class="line">- - - - - - - -</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyGridView</span> <span class="keyword">extends</span> <span class="title">GridView</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MyGridView</span><span class="params">(Context paramContext, AttributeSet paramAttributeSet)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(paramContext, paramAttributeSet);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onMeasure</span><span class="params">(<span class="keyword">int</span> widthMeasureSpec, <span class="keyword">int</span> heightMeasureSpec)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> expandSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE &gt;&gt; <span class="number">2</span>,MeasureSpec.AT_MOST);</span><br><span class="line">        <span class="keyword">super</span>.onMeasure(widthMeasureSpec, expandSpec);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>修改xml布局文件，代码中不用改动:<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;xx..MyGridView(MyListView)</span><br><span class="line">    xxx</span><br><span class="line">    xxx</span><br><span class="line">&lt;/xx..MyGridView(MyListView)&gt;</span><br></pre></td></tr></table></figure></p>
+<p>这种方法虽然能够显示完整，但是ListView(GridView)边缘滑动仍会有阴影，如果需要去掉边缘滑动阴影（这些效果耗内存）:<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android:overScrollMode="never"</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>此方法更详细的理论分析可以参见:<br><a href="http://blog.csdn.net/aqswde35025/article/details/41863203" target="_blank" rel="external">http://blog.csdn.net/aqswde35025/article/details/41863203</a></p>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="u95EE_u9898_u63CF_u8FF0"><a href="#u95EE_u9898_u63CF_u8FF0" class="headerlink" title="问题描述"></a>问题描述</h2><p>为了满足功能需求，界面布局中常常需要用到 Scr]]>
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[使用SparseArray替代HashMap]]></title>
+    <link href="https://w4mxl.github.io/2015/06/14/Android/%5BAndroid%E5%BA%94%E7%94%A8%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%5D%E4%BD%BF%E7%94%A8SparseArray%E6%9B%BF%E4%BB%A3HashMap/"/>
+    <id>https://w4mxl.github.io/2015/06/14/Android/[Android应用性能优化]使用SparseArray替代HashMap/</id>
+    <published>2015-06-14T05:51:00.000Z</published>
+    <updated>2016-01-13T14:57:24.193Z</updated>
+    <content type="html"><![CDATA[<p>今天在用 Android Studio &gt; Analyze &gt; Inspect Code 对目前项目进行检查后给出了很多优化建议，其中一类是关于用SparseArray替代HashMap的。</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1et3lvdgva1j213s058gn1.jpg" alt=""><br>图1:意思是说用SparseArray<e>来替代，以获取更好性能</e></p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1et3lvcylsgj20yy05sjsk.jpg" alt=""><br>图2:图1问题对应的实际代码块</p>
+<p>老实说我之前开发中用HashMap比较多，还真没用过SparseArray，当看到建议后就去google了解它。</p>
+<blockquote>
+<p>SparseArray是android里为<interger,object>这样的Hashmap而专门写的类，目的是提高效率，其核心是折半查找函数（binarySearch）。</interger,object></p>
+</blockquote>
+<p>我这里就结合我自己项目说下当我知道了SparseArray优势后是怎么用SparseArray替代HashMap的。至于SparseArray更具体的原理介绍网络上写的很好的已经很多，比如<a href="http://liuzhichao.com/p/832.html" target="_blank" rel="external">这篇</a>。</p>
+<h4 id="u4FEE_u6539_u4E4B_u524D_28HosBuildingFloorAdapter-java_29_uFF1A"><a href="#u4FEE_u6539_u4E4B_u524D_28HosBuildingFloorAdapter-java_29_uFF1A" class="headerlink" title="修改之前(HosBuildingFloorAdapter.java)："></a>修改之前(HosBuildingFloorAdapter.java)：</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">HashMap&lt;Integer, String&gt; hashMap;<span class="comment">//buildingId、buildingName的捆绑</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Adapter构造方法中对hashMap实例化</span></span><br><span class="line">hashMap =  <span class="keyword">new</span> HashMap&lt;Integer, String&gt;();</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; buildings; i++) &#123;</span><br><span class="line">    hashMap.put(buildingListEntities.get(i).getBuildingId(), buildingListEntities.get(i).getBuildingName());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Adapter的getHeaderView中取值</span></span><br><span class="line"><span class="keyword">for</span> (Map.Entry&lt;Integer, String&gt; entry : hashMap.entrySet()) &#123;</span><br><span class="line">    <span class="keyword">if</span> (floorListEntities.get(position).getBuildingId() == entry.getKey()) &#123;</span><br><span class="line">        holder.text.setText(entry.getValue());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="u4FEE_u6539_u4E4B_u540E_3A"><a href="#u4FEE_u6539_u4E4B_u540E_3A" class="headerlink" title="修改之后:"></a>修改之后:</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">SparseArray&lt;String&gt; stringSparseArray;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Adapter构造方法中对stringSparseArray实例化</span></span><br><span class="line">stringSparseArray = <span class="keyword">new</span> SparseArray&lt;&gt;();</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; buildings; i++) &#123;</span><br><span class="line">    stringSparseArray.put(buildingListEntities.get(i).getBuildingId(), buildingListEntities.get(i).getBuildingName());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Adapter的getHeaderView中取值</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; stringSparseArray.size(); i++) &#123;</span><br><span class="line">    <span class="keyword">int</span> key = stringSparseArray.keyAt(i);</span><br><span class="line">    <span class="keyword">if</span> (floorListEntities.get(position).getBuildingId() == key) &#123;</span><br><span class="line">        holder.text.setText(stringSparseArray.get(key));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <summary type="html">
+    <![CDATA[<p>今天在用 Android Studio &gt; Analyze &gt; Inspect Code 对目前项目进行检查后给出了很多优化建议，其中一类是关于用SparseArray替代HashMap的。</p>
+<p><img src="http://ww3.sinaimg]]>
+    </summary>
+    
+      <category term="Android应用性能优化" scheme="https://w4mxl.github.io/tags/Android%E5%BA%94%E7%94%A8%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
     
   </entry>
   
