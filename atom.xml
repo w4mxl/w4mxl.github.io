@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="https://w4mxl.github.io/"/>
-  <updated>2016-02-07T10:31:50.117Z</updated>
+  <updated>2016-03-31T16:18:37.972Z</updated>
   <id>https://w4mxl.github.io/</id>
   
   <author>
@@ -13,6 +13,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[在 Nexus 6 上 FLASH Android N]]></title>
+    <link href="https://w4mxl.github.io/2016/03/10/flash-N-to-nexus6/"/>
+    <id>https://w4mxl.github.io/2016/03/10/flash-N-to-nexus6/</id>
+    <published>2016-03-10T03:07:24.000Z</published>
+    <updated>2016-03-31T16:18:37.972Z</updated>
+    <content type="html"><![CDATA[<p>今天 Google 较之往年提前2个月发布了 Android N 的开发者预览版，按耐不住，折腾起来。</p>
+<p>同时 <a href="https://www.google.com/android/beta" target="_blank" rel="external">Android Beta Program</a> 也被发布。通过注册这个预览体验项目来获取 Android N 。后续还可以通过 OTA 的方式来获取更新，再也不必像过去必须通过刷机的方式来获得了。在此之前，开发者想要安装预览版，必须要解锁 OEM 和 bootloader ，然后再刷入镜像。</p>
+<p>可是当我 enrolled 我的 Nexus 6(在用的固件是 Pure Nexus) 手机后，等了好一会并没有收到推送！索性还是换我之前比较熟悉的刷固件的方式！</p>
+<h2 id="u4E0B_u8F7D_u56FA_u4EF6"><a href="#u4E0B_u8F7D_u56FA_u4EF6" class="headerlink" title="下载固件"></a>下载固件</h2><p>之前 Nexus 6 正式版的固件下载地方是<a href="https://developers.google.com/android/nexus/images#shamu" target="_blank" rel="external">这里</a>。不过这次发布的预览版的固件是在<a href="https://dl.google.com/dl/android/aosp/shamu-mmb29v-factory-0b4a53f0.tgz" target="_blank" rel="external">这里</a>。</p>
+<h2 id="u5F00_u59CB_u5237_u673A"><a href="#u5F00_u59CB_u5237_u673A" class="headerlink" title="开始刷机"></a>开始刷机</h2><p><code>惯例，刷机前先备份好手机上个人重要数据！！！！</code></p>
+<p>起初我按照原来刷正式包的过程刷的：  </p>
+<ol>
+<li>adb reboot bootloader  </li>
+<li>Execute the <code>flash-all</code> script  </li>
+</ol>
+<p>报错了！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">archive does not contain &#39;boot.sig&#39;&#10;archive does not contain &#39;recovery.sig&#39;&#10;...</span><br></pre></td></tr></table></figure>
+<p>后面在 XDA 论坛找到了针对此预览版固件正确的输入步骤：  </p>
+<pre><code>Boot into TWRP to wipe cache, dalvik, data (not internal storage/SD) and system. 
+
+Reboot to bootloader and flash the following:
+   fastboot flash bootloader &lt;insert bootloader img name&gt;
+   fastboot reboot-bootloader
+
+   fastboot flash radio &lt;insert radio img name&gt;
+   fastboot reboot-bootloader
+
+   fastboot flash system system.img
+   fastboot flash vendor vendor.img
+   fastboot flash boot boot.img // OR // fastboot flash boot &lt;insert name of unecrypt boot.img&gt;
+   fastboot flash cache cache.img
+   fastboot reboot
+</code></pre><p>最后是随手拍的几张图：</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1f1swp8qa8sj22c02c0npd.jpg" alt=""></p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1f1swp5iemsj22c02c0x6p.jpg" alt=""></p>
+<p><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1f1swpdm5xrj22c02c01ky.jpg" alt=""></p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1f1swpgnw1vj22c02c01ky.jpg" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>今天 Google 较之往年提前2个月发布了 Android N 的开发者预览版，按耐不住，折腾起来。</p>
+<p>同时 <a href="https://www.google.com/android/beta" target="_blank" rel="external]]>
+    </summary>
+    
+      <category term="nexus" scheme="https://w4mxl.github.io/tags/nexus/"/>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[写在2015年三十]]></title>
@@ -53,7 +103,7 @@
     <link href="https://w4mxl.github.io/2016/01/21/my-struggle-of-nexus6/"/>
     <id>https://w4mxl.github.io/2016/01/21/my-struggle-of-nexus6/</id>
     <published>2016-01-21T07:12:00.000Z</published>
-    <updated>2016-02-07T10:49:49.992Z</updated>
+    <updated>2016-02-08T02:42:44.391Z</updated>
     <content type="html"><![CDATA[<p>15年的黑五( 2015.11.27)，在美国亚马逊海淘了一台 Nexus 6，当时看到促销价 $ 199.99 心里乐滋滋的，终于不会想到后来竟还有55刀的转运费，更有被税后需补缴18.5刀税。此机到手价实为：199.99＋55＋18.5 ＝ 273.49 刀，转成人民币大约是 ¥1800。不过这价格能买到亲儿子我已经很满意。</p>
 <p> 翘首以待了一个多月，在2016.01.18终于摸到真机。期间此货也算「开心的」在路上垮了个年。拆箱开机，屏幕上的保护膜明显很多气泡，更重要的是那屏幕暖的啊 =_=||，实在接受不能，于是开始搞屏幕色温。</p>
 <p>一番谷歌之后收获了两种解决方案：</p>
@@ -69,7 +119,7 @@
 <li>Flash Franco Kernel</li>
 <li>Install <a href="http://downloads.codefi.re/savoca/kcal" target="_blank" rel="external">KCAL app</a></li>
 </ol>
-<p>我的KCAL配置(参考xda上):<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">R &#183; 230&#10;G &#183; 222&#10;B &#183; 253&#10;Sat &#183; 40&#10;Val &#183; 135&#10;Con &#183; 120</span><br></pre></td></tr></table></figure></p>
+<p>我的KCAL配置(参考xda上):<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">R · <span class="number">230</span></span><br><span class="line">G · <span class="number">222</span></span><br><span class="line">B · <span class="number">253</span></span><br><span class="line">Sat · <span class="number">40</span></span><br><span class="line">Val · <span class="number">135</span></span><br><span class="line">Con · <span class="number">120</span></span><br></pre></td></tr></table></figure></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>15年的黑五( 2015.11.27)，在美国亚马逊海淘了一台 Nexus 6，当时看到促销价 $ 199.99 心里乐滋滋的，终于不会想到后来竟还有55刀的转运费，更有被税后需补缴18.5刀税。此机到手价实为：199.99＋55＋18.5 ＝ 273.49 刀，转成人民币]]>
@@ -563,7 +613,7 @@
     <link href="https://w4mxl.github.io/2015/06/18/%E3%80%8CReplace%E3%80%8D-by-Zee-Young/"/>
     <id>https://w4mxl.github.io/2015/06/18/「Replace」-by-Zee-Young/</id>
     <published>2015-06-18T03:18:00.000Z</published>
-    <updated>2016-01-14T16:43:44.080Z</updated>
+    <updated>2016-01-18T14:47:31.331Z</updated>
     <content type="html"><![CDATA[<p><img src="https://d13yacurqjgara.cloudfront.net/users/384313/screenshots/2067564/replace.gif" alt=""></p>
 <p> <a href="https://dribbble.com/shots/2067564-Replace?list=users&amp;offset=0" target="_blank" rel="external">「Replace」</a> BY <a href="https://dribbble.com/zeeyoung" target="_blank" rel="external">@Zee Young</a>  </p>
 ]]></content>
@@ -595,33 +645,6 @@
     <summary type="html">
     <![CDATA[<h2 id="u95EE_u9898_u63CF_u8FF0"><a href="#u95EE_u9898_u63CF_u8FF0" class="headerlink" title="问题描述"></a>问题描述</h2><p>为了满足功能需求，界面布局中常常需要用到 Scr]]>
     </summary>
-    
-      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[使用SparseArray替代HashMap]]></title>
-    <link href="https://w4mxl.github.io/2015/06/14/Android/%5BAndroid%E5%BA%94%E7%94%A8%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%5D%E4%BD%BF%E7%94%A8SparseArray%E6%9B%BF%E4%BB%A3HashMap/"/>
-    <id>https://w4mxl.github.io/2015/06/14/Android/[Android应用性能优化]使用SparseArray替代HashMap/</id>
-    <published>2015-06-14T05:51:00.000Z</published>
-    <updated>2016-01-13T14:57:24.193Z</updated>
-    <content type="html"><![CDATA[<p>今天在用 Android Studio &gt; Analyze &gt; Inspect Code 对目前项目进行检查后给出了很多优化建议，其中一类是关于用SparseArray替代HashMap的。</p>
-<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1et3lvdgva1j213s058gn1.jpg" alt=""><br>图1:意思是说用SparseArray<e>来替代，以获取更好性能</e></p>
-<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1et3lvcylsgj20yy05sjsk.jpg" alt=""><br>图2:图1问题对应的实际代码块</p>
-<p>老实说我之前开发中用HashMap比较多，还真没用过SparseArray，当看到建议后就去google了解它。</p>
-<blockquote>
-<p>SparseArray是android里为<interger,object>这样的Hashmap而专门写的类，目的是提高效率，其核心是折半查找函数（binarySearch）。</interger,object></p>
-</blockquote>
-<p>我这里就结合我自己项目说下当我知道了SparseArray优势后是怎么用SparseArray替代HashMap的。至于SparseArray更具体的原理介绍网络上写的很好的已经很多，比如<a href="http://liuzhichao.com/p/832.html" target="_blank" rel="external">这篇</a>。</p>
-<h4 id="u4FEE_u6539_u4E4B_u524D_28HosBuildingFloorAdapter-java_29_uFF1A"><a href="#u4FEE_u6539_u4E4B_u524D_28HosBuildingFloorAdapter-java_29_uFF1A" class="headerlink" title="修改之前(HosBuildingFloorAdapter.java)："></a>修改之前(HosBuildingFloorAdapter.java)：</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">HashMap&lt;Integer, String&gt; hashMap;<span class="comment">//buildingId、buildingName的捆绑</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Adapter构造方法中对hashMap实例化</span></span><br><span class="line">hashMap =  <span class="keyword">new</span> HashMap&lt;Integer, String&gt;();</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; buildings; i++) &#123;</span><br><span class="line">    hashMap.put(buildingListEntities.get(i).getBuildingId(), buildingListEntities.get(i).getBuildingName());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Adapter的getHeaderView中取值</span></span><br><span class="line"><span class="keyword">for</span> (Map.Entry&lt;Integer, String&gt; entry : hashMap.entrySet()) &#123;</span><br><span class="line">    <span class="keyword">if</span> (floorListEntities.get(position).getBuildingId() == entry.getKey()) &#123;</span><br><span class="line">        holder.text.setText(entry.getValue());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="u4FEE_u6539_u4E4B_u540E_3A"><a href="#u4FEE_u6539_u4E4B_u540E_3A" class="headerlink" title="修改之后:"></a>修改之后:</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">SparseArray&lt;String&gt; stringSparseArray;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Adapter构造方法中对stringSparseArray实例化</span></span><br><span class="line">stringSparseArray = <span class="keyword">new</span> SparseArray&lt;&gt;();</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; buildings; i++) &#123;</span><br><span class="line">    stringSparseArray.put(buildingListEntities.get(i).getBuildingId(), buildingListEntities.get(i).getBuildingName());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Adapter的getHeaderView中取值</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; stringSparseArray.size(); i++) &#123;</span><br><span class="line">    <span class="keyword">int</span> key = stringSparseArray.keyAt(i);</span><br><span class="line">    <span class="keyword">if</span> (floorListEntities.get(position).getBuildingId() == key) &#123;</span><br><span class="line">        holder.text.setText(stringSparseArray.get(key));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    <summary type="html">
-    <![CDATA[<p>今天在用 Android Studio &gt; Analyze &gt; Inspect Code 对目前项目进行检查后给出了很多优化建议，其中一类是关于用SparseArray替代HashMap的。</p>
-<p><img src="http://ww3.sinaimg]]>
-    </summary>
-    
-      <category term="Android应用性能优化" scheme="https://w4mxl.github.io/tags/Android%E5%BA%94%E7%94%A8%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
     
       <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
     
