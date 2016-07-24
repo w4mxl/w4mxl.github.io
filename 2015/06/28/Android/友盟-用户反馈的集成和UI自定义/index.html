@@ -27,18 +27,57 @@
 
 
 
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
 
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Menlo:300,300italic,400,400italic,700,700italic|mononoki:300,300italic,400,400italic,700,700italic|mononoki:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="友盟," />
@@ -47,12 +86,10 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="Wml'Blog" type="application/atom+xml" />
 
 
 
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -89,7 +126,7 @@
 <meta property="og:image" content="http://ww3.sinaimg.cn/mw690/62ed8609jw1etk2r6ohbrj20lc0zktah.jpg">
 <meta property="og:image" content="http://ww2.sinaimg.cn/mw690/62ed8609jw1etk2r62351j20lc0zkaav.jpg">
 <meta property="og:image" content="http://ww4.sinaimg.cn/mw690/62ed8609jw1etk2r5d49oj20lc0zk0uz.jpg">
-<meta property="og:updated_time" content="2016-01-13T15:27:10.957Z">
+<meta property="og:updated_time" content="2016-01-13T15:27:10.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="友盟-"用户反馈"的集成和UI自定义">
 <meta name="twitter:description" content="1. 对比
@@ -103,6 +140,7 @@
 
 
 注: “联系方式 (EditText)">
+<meta name="twitter:image" content="http://ww4.sinaimg.cn/mw690/62ed8609jw1etk3hqcje6j20lc0zkq5i.jpg">
 
 
 
@@ -110,7 +148,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     scheme: 'Pisces',
-    sidebar: '[object Object]',
+    sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -119,6 +157,11 @@
     }
   };
 </script>
+
+
+
+
+  <link rel="canonical" href="https://w4mxl.github.io/2015/06/28/Android/友盟-用户反馈的集成和UI自定义/"/>
 
   <title> 友盟-"用户反馈"的集成和UI自定义 | Wml'Blog </title>
 </head>
@@ -138,6 +181,10 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
+
+
+
+
 
 
 
@@ -176,13 +223,13 @@
   
 
   
-    <ul id="menu" class="menu ">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -192,7 +239,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -202,7 +249,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -212,15 +259,13 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
         </li>
       
 
-      
-      
       
     </ul>
   
@@ -320,6 +365,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -331,7 +378,7 @@
       
 
       
-        <h3 id="1-__u5BF9_u6BD4"><a href="#1-__u5BF9_u6BD4" class="headerlink" title="1. 对比"></a>1. 对比</h3><p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1etk3hqcje6j20lc0zkq5i.jpg" width="250"></p>
+        <h3 id="1-对比"><a href="#1-对比" class="headerlink" title="1. 对比"></a>1. 对比</h3><p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1etk3hqcje6j20lc0zkq5i.jpg" width="250"></p>
 <blockquote>
 <p>注: 友盟用户反馈SDK中默认的用户反馈页，功能大而全(联系方式可以选择电话、QQ、邮箱;用户可以用发送语音反馈;可发图片;回复后推送消息给用户…)，可这设计实在是丑到没朋友，且友盟集成的方式很难在原基础上对UI进行自定义…</p>
 </blockquote>
@@ -343,12 +390,26 @@
 <blockquote>
 <p><strong>注: “联系方式 (EditText) ＋ 反馈内容 (EditText) ＋ 发送 (Button)”这种意见反馈实现起来很简单，也满足大部分app的反馈的需求了，可目前在做的项目因为产品定位上需要，希望对用户的反馈的及时性还是高一点好，所以集成了友盟的意见反馈(它提供了一个后台回复平台)，且对原始页面进行UI自定义，初步样式如上</strong></p>
 </blockquote>
-<h3 id="2-_u96C6_u6210_28_u53EA_u4ECB_u7ECDAndroid_Studio_u65B9_u5F0F_29"><a href="#2-_u96C6_u6210_28_u53EA_u4ECB_u7ECDAndroid_Studio_u65B9_u5F0F_29" class="headerlink" title="2.集成(只介绍Android Studio方式)"></a>2.集成(只介绍Android Studio方式)</h3><p>1) 一贯的申请开发者账号，注册应用，下载SDK、Demo<br>2) 在应用对应module下的build.gradle文件中添加:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">repositories &#123;</span><br><span class="line">        <span class="comment">// others</span></span><br><span class="line">        jcenter()</span><br><span class="line">        maven &#123; url <span class="string">"https://raw.githubusercontent.com/umeng/mvn-repo-umeng/master/repository"</span> &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">dependencies &#123;</span><br><span class="line">    <span class="comment">// others</span></span><br><span class="line">    compile <span class="string">'com.umeng:fb:5.3.0'</span></span><br><span class="line">    compile <span class="string">'com.android.support:support-v4:21.+'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>3) “AndroidManifest.xml”, 在<application>标签中添加对应的Activity, APPKEY, 和权限，注意替换其中的”YOUR_APP_KEY” 和”Channel ID”。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;manifest&gt;</span><br><span class="line">    // others</span><br><span class="line">    &lt;uses-permission android:name="android.permission.INTERNET"/&gt;</span><br><span class="line">    &lt;uses-permission android:name="android.permission.READ_PHONE_STATE"/&gt;</span><br><span class="line">    &lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/&gt;</span><br><span class="line">    &lt;uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /&gt;</span><br><span class="line">    &lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /&gt;</span><br><span class="line">    &lt;application&gt;</span><br><span class="line">        // others</span><br><span class="line">        &lt;activity</span><br><span class="line">            android:name=".x.me.FeedBackActivity"</span><br><span class="line">            android:screenOrientation="portrait"/&gt;</span><br><span class="line">        &lt;meta-data</span><br><span class="line">        android:value="YOUR_APP_KEY"</span><br><span class="line">        android:name="UMENG_APPKEY"/&gt;</span><br><span class="line">        &lt;meta-data</span><br><span class="line">        android:value="Channel ID"</span><br><span class="line">        android:name="UMENG_CHANNEL"/&gt;</span><br><span class="line">    &lt;/application&gt;</span><br><span class="line">&lt;/manifest&gt;</span><br></pre></td></tr></table></figure></application></p>
+<h3 id="2-集成-只介绍Android-Studio方式"><a href="#2-集成-只介绍Android-Studio方式" class="headerlink" title="2.集成(只介绍Android Studio方式)"></a>2.集成(只介绍Android Studio方式)</h3><p>1) 一贯的申请开发者账号，注册应用，下载SDK、Demo<br>2) 在应用对应module下的build.gradle文件中添加:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">repositories &#123;</div><div class="line">        <span class="comment">// others</span></div><div class="line">        jcenter()</div><div class="line">        maven &#123; url <span class="string">"https://raw.githubusercontent.com/umeng/mvn-repo-umeng/master/repository"</span> &#125;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">dependencies &#123;</div><div class="line">    <span class="comment">// others</span></div><div class="line">    compile <span class="string">'com.umeng:fb:5.3.0'</span></div><div class="line">    compile <span class="string">'com.android.support:support-v4:21.+'</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>3) “AndroidManifest.xml”, 在<application>标签中添加对应的Activity, APPKEY, 和权限，注意替换其中的”YOUR_APP_KEY” 和”Channel ID”。<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">&lt;manifest&gt;</div><div class="line">    // others</div><div class="line">    &lt;uses-permission android:name="android.permission.INTERNET"/&gt;</div><div class="line">    &lt;uses-permission android:name="android.permission.READ_PHONE_STATE"/&gt;</div><div class="line">    &lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/&gt;</div><div class="line">    &lt;uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /&gt;</div><div class="line">    &lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /&gt;</div><div class="line">    &lt;application&gt;</div><div class="line">        // others</div><div class="line">        &lt;activity</div><div class="line">            android:name=".x.me.FeedBackActivity"</div><div class="line">            android:screenOrientation="portrait"/&gt;</div><div class="line">        &lt;meta-data</div><div class="line">        android:value="YOUR_APP_KEY"</div><div class="line">        android:name="UMENG_APPKEY"/&gt;</div><div class="line">        &lt;meta-data</div><div class="line">        android:value="Channel ID"</div><div class="line">        android:name="UMENG_CHANNEL"/&gt;</div><div class="line">    &lt;/application&gt;</div><div class="line">&lt;/manifest&gt;</div></pre></td></tr></table></figure></application></p>
 <p>4) 自定义页面布局、参照开发文档和官方demo实现页面功能</p>
 <blockquote>
 <p>这里不细讲实现细节了，待当前项目完成后我将我的意见反馈模块抽出来做成demo放到github上，看demo会更清楚</p>
 </blockquote>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
 
       
     </div>
@@ -453,47 +514,46 @@
             </a>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">4</span>
-              <span class="site-state-item-name">分类</span>
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
               </a>
-          </div>
+            </div>
+          
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">10</span>
-              <span class="site-state-item-name">标签</span>
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">标签</span>
               </a>
-          </div>
+            </div>
+          
 
         </nav>
 
         
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
 
         <div class="links-of-author motion-element">
           
             
               <span class="links-of-author-item">
-                <a href="https://github.com/w4mxl" target="_blank">
+                <a href="https://github.com/w4mxl" target="_blank" title="GitHub">
                   
-                    <i class="fa fa-globe"></i> github
+                    <i class="fa fa-fw fa-github"></i>
                   
+                  GitHub
                 </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="https://twitter.com/w4mxl" target="_blank">
+                <a href="https://twitter.com/w4mxl" target="_blank" title="Twitter">
                   
-                    <i class="fa fa-globe"></i> twitter
+                    <i class="fa fa-fw fa-twitter"></i>
                   
+                  Twitter
                 </a>
               </span>
             
@@ -503,27 +563,20 @@
         
         
 
-        <div class="links-of-author motion-element">
-          
-        </div>
+        
+        
 
       </section>
 
       
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc-indicator-top post-toc-indicator">
-            <i class="fa fa-angle-double-up"></i>
-          </div>
           <div class="post-toc">
             
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-__u5BF9_u6BD4"><span class="nav-number">1.</span> <span class="nav-text">1. 对比</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-_u96C6_u6210_28_u53EA_u4ECB_u7ECDAndroid_Studio_u65B9_u5F0F_29"><span class="nav-number">2.</span> <span class="nav-text">2.集成(只介绍Android Studio方式)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-对比"><span class="nav-number">1.</span> <span class="nav-text">1. 对比</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-集成-只介绍Android-Studio方式"><span class="nav-number">2.</span> <span class="nav-text">2.集成(只介绍Android Studio方式)</span></a></li></ol></div>
             
-          </div>
-          <div class="post-toc-indicator-bottom post-toc-indicator">
-            <i class="fa fa-angle-double-down"></i>
           </div>
         </section>
       
@@ -543,7 +596,7 @@
   &copy; 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-next-heart fa fa-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Wml</span>
 </div>
@@ -559,220 +612,85 @@
   </a>
 </div>
 
+        
 
-
+        
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
 
   
 
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
 
   
 
 
 
+  
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
+  
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
+  
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.0"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.0.0"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
 
 
 
   
   
-<script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.0"></script>
 
-<script type="text/javascript" id="sidebar.toc.highlight">
-  $(document).ready(function () {
-    var tocSelector = '.post-toc';
-    var $tocSelector = $(tocSelector);
-    var activeCurrentSelector = '.active-current';
 
-    $tocSelector
-      .on('activate.bs.scrollspy', function () {
-        var $currentActiveElement = $(tocSelector + ' .active').last();
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
 
-        removeCurrentActiveClass();
-        $currentActiveElement.addClass('active-current');
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
 
-        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
-      })
-      .on('clear.bs.scrollspy', function () {
-        removeCurrentActiveClass();
-      });
 
-    function removeCurrentActiveClass () {
-      $(tocSelector + ' ' + activeCurrentSelector)
-        .removeClass(activeCurrentSelector.substring(1));
-    }
 
-    function processTOC () {
-      getTOCMaxHeight();
-      toggleTOCOverflowIndicators();
-    }
-
-    function getTOCMaxHeight () {
-      var height = $('.sidebar').height() -
-                   $tocSelector.position().top -
-                   $('.post-toc-indicator-bottom').height();
-
-      $tocSelector.css('height', height);
-
-      return height;
-    }
-
-    function toggleTOCOverflowIndicators () {
-      tocOverflowIndicator(
-        '.post-toc-indicator-top',
-        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
-      );
-
-      tocOverflowIndicator(
-        '.post-toc-indicator-bottom',
-        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
-      )
-    }
-
-    $(document).on('sidebar.motion.complete', function () {
-      processTOC();
-    });
-
-    $('body').scrollspy({ target: tocSelector });
-    $(window).on('resize', function () {
-      if ( $('.sidebar').hasClass('sidebar-active') ) {
-        processTOC();
-      }
-    });
-
-    onScroll($tocSelector);
-
-    function onScroll (element) {
-      element.on('mousewheel DOMMouseScroll', function (event) {
-          var oe = event.originalEvent;
-          var delta = oe.wheelDelta || -oe.detail;
-
-          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-          event.preventDefault();
-
-          toggleTOCOverflowIndicators();
-      });
-    }
-
-    function tocOverflowIndicator (indicator, action) {
-      var $indicator = $(indicator);
-      var opacity = action === 'show' ? 1 : 0;
-      $indicator.velocity ?
-        $indicator.velocity('stop').velocity({
-          opacity: opacity
-        }, { duration: 100 }) :
-        $indicator.stop().animate({
-          opacity: opacity
-        }, 100);
-    }
-
-  });
-</script>
-
-<script type="text/javascript" id="sidebar.nav">
-  $(document).ready(function () {
-    var html = $('html');
-    var TAB_ANIMATE_DURATION = 200;
-    var hasVelocity = $.isFunction(html.velocity);
-
-    $('.sidebar-nav li').on('click', function () {
-      var item = $(this);
-      var activeTabClassName = 'sidebar-nav-active';
-      var activePanelClassName = 'sidebar-panel-active';
-      if (item.hasClass(activeTabClassName)) {
-        return;
-      }
-
-      var currentTarget = $('.' + activePanelClassName);
-      var target = $('.' + item.data('target'));
-
-      hasVelocity ?
-        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
-          target
-            .velocity('stop')
-            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
-            .addClass(activePanelClassName);
-        }) :
-        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
-          currentTarget.hide();
-          target
-            .stop()
-            .css({'opacity': 0, 'display': 'block'})
-            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
-              currentTarget.removeClass(activePanelClassName);
-              target.addClass(activePanelClassName);
-            });
-        });
-
-      item.siblings().removeClass(activeTabClassName);
-      item.addClass(activeTabClassName);
-    });
-
-    $('.post-toc a').on('click', function (e) {
-      e.preventDefault();
-      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
-      var offset = $(targetSelector).offset().top;
-      hasVelocity ?
-        html.velocity('stop').velocity('scroll', {
-          offset: offset  + 'px',
-          mobileHA: false
-        }) :
-        $('html, body').stop().animate({
-          scrollTop: offset
-        }, 500);
-    });
-
-    // Expand sidebar on post detail page by default, when post has a toc.
-    NexT.motion.middleWares.sidebar = function () {
-      var $tocContent = $('.post-toc-content');
-
-      if (CONFIG.sidebar === 'post') {
-        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          NexT.utils.displaySidebar();
-        }
-      }
-    };
-  });
-</script>
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
 
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
 
 
 
@@ -797,16 +715,20 @@
 
   
     
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
   
 
 
 
 
 
+
   
   
 
   
+
   
 
   
@@ -840,6 +762,14 @@
 
             $(element).find(COUNT_CONTAINER_REF).text(time);
           }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
         })
         .fail(function (object, error) {
           console.log("Error: " + error.code + " " + error.message);
@@ -870,6 +800,12 @@
             });
           } else {
             var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
             newcounter.set("title", title);
             newcounter.set("url", url);
             newcounter.set("time", 1);
@@ -902,6 +838,7 @@
 
 
 
+  
 
 </body>
 </html>

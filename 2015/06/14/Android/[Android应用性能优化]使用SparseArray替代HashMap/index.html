@@ -27,18 +27,57 @@
 
 
 
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
 
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Menlo:300,300italic,400,400italic,700,700italic|mononoki:300,300italic,400,400italic,700,700italic|mononoki:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Android应用性能优化," />
@@ -47,12 +86,10 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="Wml'Blog" type="application/atom+xml" />
 
 
 
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -73,13 +110,14 @@
 老实说我之前开发中用HashMap比较多，还真没用过SparseArray，当看到建议后就去googl">
 <meta property="og:image" content="http://ww3.sinaimg.cn/mw690/62ed8609gw1et3lvdgva1j213s058gn1.jpg">
 <meta property="og:image" content="http://ww3.sinaimg.cn/mw690/62ed8609gw1et3lvcylsgj20yy05sjsk.jpg">
-<meta property="og:updated_time" content="2016-01-13T14:57:24.193Z">
+<meta property="og:updated_time" content="2016-01-13T14:57:24.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用SparseArray替代HashMap">
 <meta name="twitter:description" content="今天在用 Android Studio &amp;gt; Analyze &amp;gt; Inspect Code 对目前项目进行检查后给出了很多优化建议，其中一类是关于用SparseArray替代HashMap的。
 图1:意思是说用SparseArray来替代，以获取更好性能
 图2:图1问题对应的实际代码块
 老实说我之前开发中用HashMap比较多，还真没用过SparseArray，当看到建议后就去googl">
+<meta name="twitter:image" content="http://ww3.sinaimg.cn/mw690/62ed8609gw1et3lvdgva1j213s058gn1.jpg">
 
 
 
@@ -87,7 +125,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     scheme: 'Pisces',
-    sidebar: '[object Object]',
+    sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -96,6 +134,11 @@
     }
   };
 </script>
+
+
+
+
+  <link rel="canonical" href="https://w4mxl.github.io/2015/06/14/Android/[Android应用性能优化]使用SparseArray替代HashMap/"/>
 
   <title> 使用SparseArray替代HashMap | Wml'Blog </title>
 </head>
@@ -115,6 +158,10 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
+
+
+
+
 
 
 
@@ -153,13 +200,13 @@
   
 
   
-    <ul id="menu" class="menu ">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -169,7 +216,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -179,7 +226,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -189,15 +236,13 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
         </li>
       
 
-      
-      
       
     </ul>
   
@@ -297,6 +342,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -316,8 +363,22 @@
 <p>SparseArray是android里为<interger,object>这样的Hashmap而专门写的类，目的是提高效率，其核心是折半查找函数（binarySearch）。</interger,object></p>
 </blockquote>
 <p>我这里就结合我自己项目说下当我知道了SparseArray优势后是怎么用SparseArray替代HashMap的。至于SparseArray更具体的原理介绍网络上写的很好的已经很多，比如<a href="http://liuzhichao.com/p/832.html" target="_blank" rel="external">这篇</a>。</p>
-<h4 id="u4FEE_u6539_u4E4B_u524D_28HosBuildingFloorAdapter-java_29_uFF1A"><a href="#u4FEE_u6539_u4E4B_u524D_28HosBuildingFloorAdapter-java_29_uFF1A" class="headerlink" title="修改之前(HosBuildingFloorAdapter.java)："></a>修改之前(HosBuildingFloorAdapter.java)：</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">HashMap&lt;Integer, String&gt; hashMap;<span class="comment">//buildingId、buildingName的捆绑</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Adapter构造方法中对hashMap实例化</span></span><br><span class="line">hashMap =  <span class="keyword">new</span> HashMap&lt;Integer, String&gt;();</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; buildings; i++) &#123;</span><br><span class="line">    hashMap.put(buildingListEntities.get(i).getBuildingId(), buildingListEntities.get(i).getBuildingName());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Adapter的getHeaderView中取值</span></span><br><span class="line"><span class="keyword">for</span> (Map.Entry&lt;Integer, String&gt; entry : hashMap.entrySet()) &#123;</span><br><span class="line">    <span class="keyword">if</span> (floorListEntities.get(position).getBuildingId() == entry.getKey()) &#123;</span><br><span class="line">        holder.text.setText(entry.getValue());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="u4FEE_u6539_u4E4B_u540E_3A"><a href="#u4FEE_u6539_u4E4B_u540E_3A" class="headerlink" title="修改之后:"></a>修改之后:</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">SparseArray&lt;String&gt; stringSparseArray;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Adapter构造方法中对stringSparseArray实例化</span></span><br><span class="line">stringSparseArray = <span class="keyword">new</span> SparseArray&lt;&gt;();</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; buildings; i++) &#123;</span><br><span class="line">    stringSparseArray.put(buildingListEntities.get(i).getBuildingId(), buildingListEntities.get(i).getBuildingName());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Adapter的getHeaderView中取值</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; stringSparseArray.size(); i++) &#123;</span><br><span class="line">    <span class="keyword">int</span> key = stringSparseArray.keyAt(i);</span><br><span class="line">    <span class="keyword">if</span> (floorListEntities.get(position).getBuildingId() == key) &#123;</span><br><span class="line">        holder.text.setText(stringSparseArray.get(key));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="修改之前-HosBuildingFloorAdapter-java-："><a href="#修改之前-HosBuildingFloorAdapter-java-：" class="headerlink" title="修改之前(HosBuildingFloorAdapter.java)："></a>修改之前(HosBuildingFloorAdapter.java)：</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">HashMap&lt;Integer, String&gt; hashMap;<span class="comment">//buildingId、buildingName的捆绑</span></div><div class="line"></div><div class="line"><span class="comment">// Adapter构造方法中对hashMap实例化</span></div><div class="line">hashMap =  <span class="keyword">new</span> HashMap&lt;Integer, String&gt;();</div><div class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; buildings; i++) &#123;</div><div class="line">    hashMap.put(buildingListEntities.get(i).getBuildingId(), buildingListEntities.get(i).getBuildingName());</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// Adapter的getHeaderView中取值</span></div><div class="line"><span class="keyword">for</span> (Map.Entry&lt;Integer, String&gt; entry : hashMap.entrySet()) &#123;</div><div class="line">    <span class="keyword">if</span> (floorListEntities.get(position).getBuildingId() == entry.getKey()) &#123;</div><div class="line">        holder.text.setText(entry.getValue());</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="修改之后"><a href="#修改之后" class="headerlink" title="修改之后:"></a>修改之后:</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">SparseArray&lt;String&gt; stringSparseArray;</div><div class="line"></div><div class="line"><span class="comment">// Adapter构造方法中对stringSparseArray实例化</span></div><div class="line">stringSparseArray = <span class="keyword">new</span> SparseArray&lt;&gt;();</div><div class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; buildings; i++) &#123;</div><div class="line">    stringSparseArray.put(buildingListEntities.get(i).getBuildingId(), buildingListEntities.get(i).getBuildingName());</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// Adapter的getHeaderView中取值</span></div><div class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; stringSparseArray.size(); i++) &#123;</div><div class="line">    <span class="keyword">int</span> key = stringSparseArray.keyAt(i);</div><div class="line">    <span class="keyword">if</span> (floorListEntities.get(position).getBuildingId() == key) &#123;</div><div class="line">        holder.text.setText(stringSparseArray.get(key));</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
       
     </div>
 
@@ -421,47 +482,46 @@
             </a>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">4</span>
-              <span class="site-state-item-name">分类</span>
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
               </a>
-          </div>
+            </div>
+          
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">10</span>
-              <span class="site-state-item-name">标签</span>
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">标签</span>
               </a>
-          </div>
+            </div>
+          
 
         </nav>
 
         
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
 
         <div class="links-of-author motion-element">
           
             
               <span class="links-of-author-item">
-                <a href="https://github.com/w4mxl" target="_blank">
+                <a href="https://github.com/w4mxl" target="_blank" title="GitHub">
                   
-                    <i class="fa fa-globe"></i> github
+                    <i class="fa fa-fw fa-github"></i>
                   
+                  GitHub
                 </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="https://twitter.com/w4mxl" target="_blank">
+                <a href="https://twitter.com/w4mxl" target="_blank" title="Twitter">
                   
-                    <i class="fa fa-globe"></i> twitter
+                    <i class="fa fa-fw fa-twitter"></i>
                   
+                  Twitter
                 </a>
               </span>
             
@@ -471,27 +531,20 @@
         
         
 
-        <div class="links-of-author motion-element">
-          
-        </div>
+        
+        
 
       </section>
 
       
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc-indicator-top post-toc-indicator">
-            <i class="fa fa-angle-double-up"></i>
-          </div>
           <div class="post-toc">
             
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#u4FEE_u6539_u4E4B_u524D_28HosBuildingFloorAdapter-java_29_uFF1A"><span class="nav-number">1.</span> <span class="nav-text">修改之前(HosBuildingFloorAdapter.java)：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u4FEE_u6539_u4E4B_u540E_3A"><span class="nav-number">2.</span> <span class="nav-text">修改之后:</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#修改之前-HosBuildingFloorAdapter-java-："><span class="nav-number">1.</span> <span class="nav-text">修改之前(HosBuildingFloorAdapter.java)：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改之后"><span class="nav-number">2.</span> <span class="nav-text">修改之后:</span></a></li></ol></div>
             
-          </div>
-          <div class="post-toc-indicator-bottom post-toc-indicator">
-            <i class="fa fa-angle-double-down"></i>
           </div>
         </section>
       
@@ -511,7 +564,7 @@
   &copy; 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-next-heart fa fa-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Wml</span>
 </div>
@@ -527,220 +580,85 @@
   </a>
 </div>
 
+        
 
-
+        
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
 
   
 
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
 
   
 
 
 
+  
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
+  
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
+  
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.0"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.0.0"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
 
 
 
   
   
-<script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.0"></script>
 
-<script type="text/javascript" id="sidebar.toc.highlight">
-  $(document).ready(function () {
-    var tocSelector = '.post-toc';
-    var $tocSelector = $(tocSelector);
-    var activeCurrentSelector = '.active-current';
 
-    $tocSelector
-      .on('activate.bs.scrollspy', function () {
-        var $currentActiveElement = $(tocSelector + ' .active').last();
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
 
-        removeCurrentActiveClass();
-        $currentActiveElement.addClass('active-current');
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
 
-        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
-      })
-      .on('clear.bs.scrollspy', function () {
-        removeCurrentActiveClass();
-      });
 
-    function removeCurrentActiveClass () {
-      $(tocSelector + ' ' + activeCurrentSelector)
-        .removeClass(activeCurrentSelector.substring(1));
-    }
 
-    function processTOC () {
-      getTOCMaxHeight();
-      toggleTOCOverflowIndicators();
-    }
-
-    function getTOCMaxHeight () {
-      var height = $('.sidebar').height() -
-                   $tocSelector.position().top -
-                   $('.post-toc-indicator-bottom').height();
-
-      $tocSelector.css('height', height);
-
-      return height;
-    }
-
-    function toggleTOCOverflowIndicators () {
-      tocOverflowIndicator(
-        '.post-toc-indicator-top',
-        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
-      );
-
-      tocOverflowIndicator(
-        '.post-toc-indicator-bottom',
-        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
-      )
-    }
-
-    $(document).on('sidebar.motion.complete', function () {
-      processTOC();
-    });
-
-    $('body').scrollspy({ target: tocSelector });
-    $(window).on('resize', function () {
-      if ( $('.sidebar').hasClass('sidebar-active') ) {
-        processTOC();
-      }
-    });
-
-    onScroll($tocSelector);
-
-    function onScroll (element) {
-      element.on('mousewheel DOMMouseScroll', function (event) {
-          var oe = event.originalEvent;
-          var delta = oe.wheelDelta || -oe.detail;
-
-          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-          event.preventDefault();
-
-          toggleTOCOverflowIndicators();
-      });
-    }
-
-    function tocOverflowIndicator (indicator, action) {
-      var $indicator = $(indicator);
-      var opacity = action === 'show' ? 1 : 0;
-      $indicator.velocity ?
-        $indicator.velocity('stop').velocity({
-          opacity: opacity
-        }, { duration: 100 }) :
-        $indicator.stop().animate({
-          opacity: opacity
-        }, 100);
-    }
-
-  });
-</script>
-
-<script type="text/javascript" id="sidebar.nav">
-  $(document).ready(function () {
-    var html = $('html');
-    var TAB_ANIMATE_DURATION = 200;
-    var hasVelocity = $.isFunction(html.velocity);
-
-    $('.sidebar-nav li').on('click', function () {
-      var item = $(this);
-      var activeTabClassName = 'sidebar-nav-active';
-      var activePanelClassName = 'sidebar-panel-active';
-      if (item.hasClass(activeTabClassName)) {
-        return;
-      }
-
-      var currentTarget = $('.' + activePanelClassName);
-      var target = $('.' + item.data('target'));
-
-      hasVelocity ?
-        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
-          target
-            .velocity('stop')
-            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
-            .addClass(activePanelClassName);
-        }) :
-        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
-          currentTarget.hide();
-          target
-            .stop()
-            .css({'opacity': 0, 'display': 'block'})
-            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
-              currentTarget.removeClass(activePanelClassName);
-              target.addClass(activePanelClassName);
-            });
-        });
-
-      item.siblings().removeClass(activeTabClassName);
-      item.addClass(activeTabClassName);
-    });
-
-    $('.post-toc a').on('click', function (e) {
-      e.preventDefault();
-      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
-      var offset = $(targetSelector).offset().top;
-      hasVelocity ?
-        html.velocity('stop').velocity('scroll', {
-          offset: offset  + 'px',
-          mobileHA: false
-        }) :
-        $('html, body').stop().animate({
-          scrollTop: offset
-        }, 500);
-    });
-
-    // Expand sidebar on post detail page by default, when post has a toc.
-    NexT.motion.middleWares.sidebar = function () {
-      var $tocContent = $('.post-toc-content');
-
-      if (CONFIG.sidebar === 'post') {
-        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          NexT.utils.displaySidebar();
-        }
-      }
-    };
-  });
-</script>
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
 
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
 
 
 
@@ -765,16 +683,20 @@
 
   
     
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
   
 
 
 
 
 
+
   
   
 
   
+
   
 
   
@@ -808,6 +730,14 @@
 
             $(element).find(COUNT_CONTAINER_REF).text(time);
           }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
         })
         .fail(function (object, error) {
           console.log("Error: " + error.code + " " + error.message);
@@ -838,6 +768,12 @@
             });
           } else {
             var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
             newcounter.set("title", title);
             newcounter.set("url", url);
             newcounter.set("time", 1);
@@ -870,6 +806,7 @@
 
 
 
+  
 
 </body>
 </html>

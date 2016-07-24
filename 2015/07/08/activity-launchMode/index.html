@@ -27,18 +27,57 @@
 
 
 
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
 
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Menlo:300,300italic,400,400italic,700,700italic|mononoki:300,300italic,400,400italic,700,700italic|mononoki:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -47,12 +86,10 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="Wml'Blog" type="application/atom+xml" />
 
 
 
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -66,10 +103,11 @@
 <meta property="og:site_name" content="Wml'Blog">
 <meta property="og:description" content="在实际项目中我们应该根据特定的需求为每个 Activity 指定适当的启动模式。这里根据个人理解和实际开发中的经验，做些总结。有四种启动模式，分别是 standard 、singleTop 、singleTask 和singleInstance 。可以在 AndroidManifest.xml 中通过给 &amp;lt;activity&amp;gt; 对应的标签指定 android:launchMode 属性来">
 <meta property="og:image" content="http://ww2.sinaimg.cn/mw690/62ed8609jw1etx2yevlj4j218y0kw795.jpg">
-<meta property="og:updated_time" content="2016-01-13T16:15:48.693Z">
+<meta property="og:updated_time" content="2016-01-13T16:15:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Activity的启动模式">
 <meta name="twitter:description" content="在实际项目中我们应该根据特定的需求为每个 Activity 指定适当的启动模式。这里根据个人理解和实际开发中的经验，做些总结。有四种启动模式，分别是 standard 、singleTop 、singleTask 和singleInstance 。可以在 AndroidManifest.xml 中通过给 &amp;lt;activity&amp;gt; 对应的标签指定 android:launchMode 属性来">
+<meta name="twitter:image" content="http://ww2.sinaimg.cn/mw690/62ed8609jw1etx2yevlj4j218y0kw795.jpg">
 
 
 
@@ -77,7 +115,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     scheme: 'Pisces',
-    sidebar: '[object Object]',
+    sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -86,6 +124,11 @@
     }
   };
 </script>
+
+
+
+
+  <link rel="canonical" href="https://w4mxl.github.io/2015/07/08/activity-launchMode/"/>
 
   <title> Activity的启动模式 | Wml'Blog </title>
 </head>
@@ -105,6 +148,10 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
+
+
+
+
 
 
 
@@ -143,13 +190,13 @@
   
 
   
-    <ul id="menu" class="menu ">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -159,7 +206,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -169,7 +216,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -179,15 +226,13 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
         </li>
       
 
-      
-      
       
     </ul>
   
@@ -287,6 +332,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -309,18 +356,32 @@
 <p>taskAffinity</p>
 </blockquote>
 <p>taskAffinity 是 Activity 的一个属性。它的作用是用来描述不同 Activity 之间的亲密关系。默认情况下（在  manifest 中没有对 Activity 的 android:taskAffinity 进行配置），Activity 的这个属性就等于 Application 指明的 taskAffinity，如果 Application 也没有指明，那么该 taskAffinity 的值就等于包名。而 Task 也有自己的 affinity 属性，它的值等于它的根 Activity 的 taskAffinity 的值。我们可以通过为 activity 设置不同的 taskAffinity 属性给 app 中的 activity 分组，也可以把不同的 app 中的 activity 的 taskAffinity 设置成相同的值。为一个 activity 的 taskAffinity 设置一个空字符串，表明这个 activity 不属于任何 task。</p>
-<h4 id="standard__u6A21_u5F0F"><a href="#standard__u6A21_u5F0F" class="headerlink" title="standard 模式"></a>standard 模式</h4><p>activity 的默认启动模式。activity A 设定为 standard 模式（不做任何设置默认就是 standard），即可以被多次实例化，在同一个 task 中可以存在多个 activity A 的实例，每个实例都会处理一个 Intent 对象。例，Activity A 的启动模式为 standard，并且A已经启动，在A中再次启动 Activity A，即调用startActivity(new Intent(this，A.class))，会在A的上面再次启动一个A的实例，即当前的桟中的状态为A –&gt; A。</p>
-<h4 id="singleTop__u6A21_u5F0F"><a href="#singleTop__u6A21_u5F0F" class="headerlink" title="singleTop 模式"></a>singleTop 模式</h4><p>字面上<strong>“顶部只能有一个”</strong>。例，activity A 设定为 singleTop 模式后，并且A的一个实例已经存在于栈顶中，那么再调用 startActivity(new Intent(this，A.class)) 启动A时，不会再次创建A的实例，而是重用原来的实例，并且调用原来实例的 onNewIntent() 方法。这时任务桟中还是只有一个A的实例。如果 activity A 的一个实例已经存在于任务桟中，但是不在桟顶，那么再次调用的行为和 standard 模式相同，还会创建出一个实例。</p>
-<h4 id="singleTask__u6A21_u5F0F"><a href="#singleTask__u6A21_u5F0F" class="headerlink" title="singleTask 模式"></a>singleTask 模式</h4><p>字面上<strong>“只容许有一个包含该 Activity 实例的 task 存在”</strong>。使用 singleTop 模式可以很好的解决重复创建栈顶活动的问题。但是上面也说到，如果这个活动(activity)并没有处于栈顶的位置，还是会出现同一活动多个实例的现象。而 singleTask 模式正好就可以对上述问题就行补充解决。不过这里要注意的是，下面说的结论跟前面提到的概念:taskAffinity 就有关系了。例，以 activity A(standard模式)启动 activity B(singleTask模式)来说，</p>
+<h4 id="standard-模式"><a href="#standard-模式" class="headerlink" title="standard 模式"></a>standard 模式</h4><p>activity 的默认启动模式。activity A 设定为 standard 模式（不做任何设置默认就是 standard），即可以被多次实例化，在同一个 task 中可以存在多个 activity A 的实例，每个实例都会处理一个 Intent 对象。例，Activity A 的启动模式为 standard，并且A已经启动，在A中再次启动 Activity A，即调用startActivity(new Intent(this，A.class))，会在A的上面再次启动一个A的实例，即当前的桟中的状态为A –&gt; A。</p>
+<h4 id="singleTop-模式"><a href="#singleTop-模式" class="headerlink" title="singleTop 模式"></a>singleTop 模式</h4><p>字面上<strong>“顶部只能有一个”</strong>。例，activity A 设定为 singleTop 模式后，并且A的一个实例已经存在于栈顶中，那么再调用 startActivity(new Intent(this，A.class)) 启动A时，不会再次创建A的实例，而是重用原来的实例，并且调用原来实例的 onNewIntent() 方法。这时任务桟中还是只有一个A的实例。如果 activity A 的一个实例已经存在于任务桟中，但是不在桟顶，那么再次调用的行为和 standard 模式相同，还会创建出一个实例。</p>
+<h4 id="singleTask-模式"><a href="#singleTask-模式" class="headerlink" title="singleTask 模式"></a>singleTask 模式</h4><p>字面上<strong>“只容许有一个包含该 Activity 实例的 task 存在”</strong>。使用 singleTop 模式可以很好的解决重复创建栈顶活动的问题。但是上面也说到，如果这个活动(activity)并没有处于栈顶的位置，还是会出现同一活动多个实例的现象。而 singleTask 模式正好就可以对上述问题就行补充解决。不过这里要注意的是，下面说的结论跟前面提到的概念:taskAffinity 就有关系了。例，以 activity A(standard模式)启动 activity B(singleTask模式)来说，</p>
 <ol>
 <li>当A和B的 taskAffinity 相同时(没有显式的指明该Activity的taskAffinity)，A要启动B活动时，<em>并不会启动新的task</em>，系统首先会在默认返回栈中检查是否存在B活动的实例，如果发现已经存在则直接使用该实例，会调用B的 onNewIntent()方法，并把在这个活动之上的所有活动统统出栈，如果没有发现就会创建一个新的B活动实例。</li>
-<li>当A和B的 taskAffinity 不同时，A要启动B活动时，<em>会有新的task</em>，系统首先会在新的task中检查是否存在B活动的实例，如果发现已经存在则直接使用该实例，会调用B的 onNewIntent() 方法，并把在这个活动之上的所有活动统统出栈，如果没有发现就会将新的B活动实例添加到新的task中。<h4 id="singleInstance__u6A21_u5F0F"><a href="#singleInstance__u6A21_u5F0F" class="headerlink" title="singleInstance 模式"></a>singleInstance 模式</h4>字面上<strong>“任意时刻只允许存在唯一的 Activity 实例”</strong>。设定为 singleInstance 模式的 Activity 会启用一个新的 task(返回栈)来管理这个活动。<strong>该 task 只能容纳该 Activity 实例，不会再添加其他的 Activity 实例</strong>。如果该 Activity 实例已经存在于某个 task，则直接跳转到该 task。<br>它与 singleTask 有相同之处，也有不同之处。<br><strong>相同:</strong>任意时刻，最多只允许存在一个实例。<br><strong>不同:</strong></li>
+<li>当A和B的 taskAffinity 不同时，A要启动B活动时，<em>会有新的task</em>，系统首先会在新的task中检查是否存在B活动的实例，如果发现已经存在则直接使用该实例，会调用B的 onNewIntent() 方法，并把在这个活动之上的所有活动统统出栈，如果没有发现就会将新的B活动实例添加到新的task中。<h4 id="singleInstance-模式"><a href="#singleInstance-模式" class="headerlink" title="singleInstance 模式"></a>singleInstance 模式</h4>字面上<strong>“任意时刻只允许存在唯一的 Activity 实例”</strong>。设定为 singleInstance 模式的 Activity 会启用一个新的 task(返回栈)来管理这个活动。<strong>该 task 只能容纳该 Activity 实例，不会再添加其他的 Activity 实例</strong>。如果该 Activity 实例已经存在于某个 task，则直接跳转到该 task。<br>它与 singleTask 有相同之处，也有不同之处。<br><strong>相同:</strong>任意时刻，最多只允许存在一个实例。<br><strong>不同:</strong></li>
 </ol>
 <ul>
 <li>singleTask 受 android:taskAffinity 属性的影响，而 singleInstance 不受 android:taskAffinity 的影响。</li>
 <li>singleTask 所在的 task 中能有其它的 Activity，而 singleInstance 的 task 中不能有其他 Activity。</li>
 <li>当跳转到 singleTask 类型的 Activity，并且该 Activity 实例已经存在时，会删除该 Activity 所在 task 中位于该 Activity 之上的全部 Activity 实例；而跳转到 singleInstance 类型的 Activity，并且该 Activity 已经存在时，不需要删除其他 Activity，因为它所在的 task 只有该 Activity 唯一一个 Activity 实例。</li>
 </ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
 
       
     </div>
@@ -419,47 +480,46 @@
             </a>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">4</span>
-              <span class="site-state-item-name">分类</span>
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
               </a>
-          </div>
+            </div>
+          
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">10</span>
-              <span class="site-state-item-name">标签</span>
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">标签</span>
               </a>
-          </div>
+            </div>
+          
 
         </nav>
 
         
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
 
         <div class="links-of-author motion-element">
           
             
               <span class="links-of-author-item">
-                <a href="https://github.com/w4mxl" target="_blank">
+                <a href="https://github.com/w4mxl" target="_blank" title="GitHub">
                   
-                    <i class="fa fa-globe"></i> github
+                    <i class="fa fa-fw fa-github"></i>
                   
+                  GitHub
                 </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="https://twitter.com/w4mxl" target="_blank">
+                <a href="https://twitter.com/w4mxl" target="_blank" title="Twitter">
                   
-                    <i class="fa fa-globe"></i> twitter
+                    <i class="fa fa-fw fa-twitter"></i>
                   
+                  Twitter
                 </a>
               </span>
             
@@ -469,27 +529,20 @@
         
         
 
-        <div class="links-of-author motion-element">
-          
-        </div>
+        
+        
 
       </section>
 
       
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc-indicator-top post-toc-indicator">
-            <i class="fa fa-angle-double-up"></i>
-          </div>
           <div class="post-toc">
             
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#standard__u6A21_u5F0F"><span class="nav-number">1.</span> <span class="nav-text">standard 模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#singleTop__u6A21_u5F0F"><span class="nav-number">2.</span> <span class="nav-text">singleTop 模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#singleTask__u6A21_u5F0F"><span class="nav-number">3.</span> <span class="nav-text">singleTask 模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#singleInstance__u6A21_u5F0F"><span class="nav-number">4.</span> <span class="nav-text">singleInstance 模式</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#standard-模式"><span class="nav-number">1.</span> <span class="nav-text">standard 模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#singleTop-模式"><span class="nav-number">2.</span> <span class="nav-text">singleTop 模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#singleTask-模式"><span class="nav-number">3.</span> <span class="nav-text">singleTask 模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#singleInstance-模式"><span class="nav-number">4.</span> <span class="nav-text">singleInstance 模式</span></a></li></ol></div>
             
-          </div>
-          <div class="post-toc-indicator-bottom post-toc-indicator">
-            <i class="fa fa-angle-double-down"></i>
           </div>
         </section>
       
@@ -509,7 +562,7 @@
   &copy; 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-next-heart fa fa-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Wml</span>
 </div>
@@ -525,220 +578,85 @@
   </a>
 </div>
 
+        
 
-
+        
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
 
   
 
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
 
   
 
 
 
+  
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
+  
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
+  
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.0"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.0.0"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
 
 
 
   
   
-<script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.0"></script>
 
-<script type="text/javascript" id="sidebar.toc.highlight">
-  $(document).ready(function () {
-    var tocSelector = '.post-toc';
-    var $tocSelector = $(tocSelector);
-    var activeCurrentSelector = '.active-current';
 
-    $tocSelector
-      .on('activate.bs.scrollspy', function () {
-        var $currentActiveElement = $(tocSelector + ' .active').last();
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
 
-        removeCurrentActiveClass();
-        $currentActiveElement.addClass('active-current');
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
 
-        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
-      })
-      .on('clear.bs.scrollspy', function () {
-        removeCurrentActiveClass();
-      });
 
-    function removeCurrentActiveClass () {
-      $(tocSelector + ' ' + activeCurrentSelector)
-        .removeClass(activeCurrentSelector.substring(1));
-    }
 
-    function processTOC () {
-      getTOCMaxHeight();
-      toggleTOCOverflowIndicators();
-    }
-
-    function getTOCMaxHeight () {
-      var height = $('.sidebar').height() -
-                   $tocSelector.position().top -
-                   $('.post-toc-indicator-bottom').height();
-
-      $tocSelector.css('height', height);
-
-      return height;
-    }
-
-    function toggleTOCOverflowIndicators () {
-      tocOverflowIndicator(
-        '.post-toc-indicator-top',
-        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
-      );
-
-      tocOverflowIndicator(
-        '.post-toc-indicator-bottom',
-        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
-      )
-    }
-
-    $(document).on('sidebar.motion.complete', function () {
-      processTOC();
-    });
-
-    $('body').scrollspy({ target: tocSelector });
-    $(window).on('resize', function () {
-      if ( $('.sidebar').hasClass('sidebar-active') ) {
-        processTOC();
-      }
-    });
-
-    onScroll($tocSelector);
-
-    function onScroll (element) {
-      element.on('mousewheel DOMMouseScroll', function (event) {
-          var oe = event.originalEvent;
-          var delta = oe.wheelDelta || -oe.detail;
-
-          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-          event.preventDefault();
-
-          toggleTOCOverflowIndicators();
-      });
-    }
-
-    function tocOverflowIndicator (indicator, action) {
-      var $indicator = $(indicator);
-      var opacity = action === 'show' ? 1 : 0;
-      $indicator.velocity ?
-        $indicator.velocity('stop').velocity({
-          opacity: opacity
-        }, { duration: 100 }) :
-        $indicator.stop().animate({
-          opacity: opacity
-        }, 100);
-    }
-
-  });
-</script>
-
-<script type="text/javascript" id="sidebar.nav">
-  $(document).ready(function () {
-    var html = $('html');
-    var TAB_ANIMATE_DURATION = 200;
-    var hasVelocity = $.isFunction(html.velocity);
-
-    $('.sidebar-nav li').on('click', function () {
-      var item = $(this);
-      var activeTabClassName = 'sidebar-nav-active';
-      var activePanelClassName = 'sidebar-panel-active';
-      if (item.hasClass(activeTabClassName)) {
-        return;
-      }
-
-      var currentTarget = $('.' + activePanelClassName);
-      var target = $('.' + item.data('target'));
-
-      hasVelocity ?
-        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
-          target
-            .velocity('stop')
-            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
-            .addClass(activePanelClassName);
-        }) :
-        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
-          currentTarget.hide();
-          target
-            .stop()
-            .css({'opacity': 0, 'display': 'block'})
-            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
-              currentTarget.removeClass(activePanelClassName);
-              target.addClass(activePanelClassName);
-            });
-        });
-
-      item.siblings().removeClass(activeTabClassName);
-      item.addClass(activeTabClassName);
-    });
-
-    $('.post-toc a').on('click', function (e) {
-      e.preventDefault();
-      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
-      var offset = $(targetSelector).offset().top;
-      hasVelocity ?
-        html.velocity('stop').velocity('scroll', {
-          offset: offset  + 'px',
-          mobileHA: false
-        }) :
-        $('html, body').stop().animate({
-          scrollTop: offset
-        }, 500);
-    });
-
-    // Expand sidebar on post detail page by default, when post has a toc.
-    NexT.motion.middleWares.sidebar = function () {
-      var $tocContent = $('.post-toc-content');
-
-      if (CONFIG.sidebar === 'post') {
-        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          NexT.utils.displaySidebar();
-        }
-      }
-    };
-  });
-</script>
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
 
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
 
 
 
@@ -763,16 +681,20 @@
 
   
     
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
   
 
 
 
 
 
+
   
   
 
   
+
   
 
   
@@ -806,6 +728,14 @@
 
             $(element).find(COUNT_CONTAINER_REF).text(time);
           }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
         })
         .fail(function (object, error) {
           console.log("Error: " + error.code + " " + error.message);
@@ -836,6 +766,12 @@
             });
           } else {
             var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
             newcounter.set("title", title);
             newcounter.set("url", url);
             newcounter.set("time", 1);
@@ -868,6 +804,7 @@
 
 
 
+  
 
 </body>
 </html>

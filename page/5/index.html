@@ -27,18 +27,57 @@
 
 
 
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
 
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Menlo:300,300italic,400,400italic,700,700italic|mononoki:300,300italic,400,400italic,700,700italic|mononoki:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -47,12 +86,10 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="Wml'Blog" type="application/atom+xml" />
 
 
 
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -75,7 +112,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     scheme: 'Pisces',
-    sidebar: '[object Object]',
+    sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -84,6 +121,11 @@
     }
   };
 </script>
+
+
+
+
+  <link rel="canonical" href="https://w4mxl.github.io/page/5/"/>
 
   <title> Wml'Blog </title>
 </head>
@@ -103,6 +145,10 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
+
+
+
+
 
 
 
@@ -143,13 +189,13 @@
   
 
   
-    <ul id="menu" class="menu ">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -159,7 +205,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -169,7 +215,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -179,15 +225,13 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
         </li>
       
 
-      
-      
       
     </ul>
   
@@ -204,17 +248,6 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
-
-    
-
-    
-    
-      
-      
-
-      
-    
-
     
       
 
@@ -301,6 +334,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -314,18 +349,27 @@
       
         
           
-          在很久很久以前，算了，其实就是刚过去的这个周末，他们一行五人约好同去深圳的西涌海滩露营。五人中三男两女。两枚女孩：Yue长的清秀生性活泼；Lin内敛恬静细致体贴。男惯性省略。
-深圳北站-&gt;（2小时大巴）南澳-&gt;（半小时包车）西涌海滩。
-西涌海滩，久负盛名，风光旖旎，一见倾心。
-Mu带头找
-          ...
+            <p><del>在很久很久以前，</del>算了，<br>其实就是刚过去的这个周末，<br>他们一行五人约好同去深圳的西涌海滩露营。<br>五人中三男两女。<br>两枚女孩：Yue长的清秀生性活泼；Lin内敛恬静细致体贴。<br>男惯性省略。</p>
+<p>深圳北站-&gt;<em>（2小时大巴）</em>南澳-&gt;<em>（半小时包车）</em>西涌海滩。</p>
+<p>西涌海滩，久负盛名，风光旖旎，一见倾心。</p>
+<p>Mu带头找了块相对人少的地儿停下，眼睛觊觎着大海。<br>Yue很有经验的搭好一顶帐篷后，Mu就迫不及待进去换了泳裤冲进海里。<br>相继的大家都下海玩耍起来，如鱼得水。<br>是日阳光明媚，海面倒映后波光粼粼，背着光看，美的简直不谈了。</p>
+<p>期间他们上岸补充了些水和食物后，稍稍休息了下又下海。<br>傍晚时分，吹吹海风，吃吃烧烤，身心脾胃皆惬意。<br>“没有哪样东西会比食物更能恰如其分的安慰人心，如果有，那就是爱”<br>所以伴随着夜幕，他们五人围坐在一起边吃边交流感情，谈笑风生。</p>
+<p>前面忘了交代，那两个女孩，一个是Mu同去的朋友的老婆，<br>另一个是Mu同去朋友的未婚妻。<br>所以事实是两对人含情脉脉忘我投入的交流感情，而Mu纯粹是带着感情交流。<br>他们友善的问Mu说你一个人会不会感到孤独。赶紧找个女朋友吧！<br>Mu只好诚恳的告诉他们说：<br><em>谢谢，别担心我。你们追求的是美人，而我追求的是美人鱼！</em><br>说完，一头扎进大海，游向深处…</p>
+<p>翌日，天刚亮，海滩喇叭传来急促播报声：“下面广播一条通知…”</p>
+<p><img src="/image/图/一个悲伤的故事01.JPG" alt=""><br><img src="/image/图/一个悲伤的故事02.JPG" width="480"></p>
+<p><em>PS.这故事缩到一句话讲完应该是：浪子，你何时泊岸？</em></p>
+<p>注：这是一个故事，且并未发生事故。所以别担心。只是世间的故事，多半是没有后来的。</p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2014/08/25/a-sad-story/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -428,6 +472,8 @@ Mu带头找
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -441,16 +487,49 @@ Mu带头找
       
         
           
-          一. 简单介绍二. 应用场景三. 安装使用
-##简单介绍　Pushbullet是为数不多的跨平台应用中一款简单实用型应用。我已经不记得是从什么时候从哪里了解到这个工具的。不过从我的app使用记录中可以查到最早的一条推送日期是2013-04-01，当时是把电脑上的一条笔记推送到我的米1上的。过程中我曾
-          ...
+            <p>一. 简单介绍<br>二. 应用场景<br>三. 安装使用</p>
+<p>##简单介绍　<br>Pushbullet是为数不多的跨平台应用中一款简单实用型应用。我已经不记得是从什么时候从哪里了解到这个工具的。不过从我的app使用记录中可以查到最早的一条推送日期是2013-04-01，当时是把电脑上的一条笔记推送到我的米1上的。过程中我曾将早期版本升级后出现的bug发邮件反馈给Pushbullet开发者Ryan，他也很快答复说下个版本更新会将bug修复。<br>　　<br>简单来说通过使用Pushbullet，1.可以将文字、图片、链接、小文件从电脑即时推送到手机，反之亦可。2.在电脑端接收查看android手机端的app通知。3.android端跟windows电脑端，一端复制内容后，另一端直接即时粘贴。（8.21新版本添加的实用功能）<br><img src="/image/图/Pushbullet001.png" width="320"></p>
+<center>▲ 第一次使用 Pushbullet 推送</center>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2014/08/25/Pushbullet-introduce/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+<p>##应用场景</p>
+<ul>
+<li><strong>应用场景一：从电脑推送文字、图片、链接、文件到手机</strong></li>
+</ul>
+<p>比如我们在电脑上有个地址想发到手机上，然后方便出门后随时查看。通过下面的方式就可以很快完成。如果你不是使用的Chrome或者Firefox浏览器，也可以通过安装Pushbullet的windows版本（mac osx以后会推出）来非常方便的实现这个需求。甚至可以将电脑中某个小文件右键直接发送到手机上。</p>
+<p>还记得在北京面试工作的那段时间，我就常常会将电脑上收到的面试通知邮件中公司详细地址、乘车路线、联系电话等有用信息，用Pushbullet推送到手机上备用。（有时也用手机端邮件app，只是离线使用不是很方便）<br><img src="/image/图/Pushbullet002.png" alt=""></p>
+<center>▲ 使用电脑端 Pushbullet 应用推送给手机</center><br><img src="/image/图/Pushbullet003.png" alt=""><br><center>▲ 使用Chrome Pushbullet 插件推送给手机</center><br><div style="clear: both;"><br><img src="/image/图/Pushbullet004.png" width="320" imageanchor="1" style="float:left;margin: 0 1em;"><br><img src="/image/图/Pushbullet005.png" width="320" imageanchor="1" style="margin: 0 1em;"><br></div><br><br><img src="/image/图/Pushbullet006.png" alt=""><br><img src="/image/图/Pushbullet007.png" width="320"><br><br><br><em> <strong>应用场景二：从手机推送文字、图片、链接、文件到电脑</strong><br><br>比如想讲手机上拍摄的一张照片保存到电脑上而手边刚好没有数据线，这时在手机端用用Pushbullet推送就能很好的解决这个需求。<br><br>在手机端选择一张图片推送之后，Pushbullet会先将图片上传到Amazon S3云存储服务器上，然后用浏览器在Pushbullet网页端下载下来就可以查看了。<br><div style="clear: both;"><br><img src="/image/图/Pushbullet008.png" width="320" imageanchor="1" style="float:left;margin: 0 1em;"><br><img src="/image/图/Pushbullet009.png" width="320" imageanchor="1" style="margin: 0 1em;"><br></div><br><img src="/image/图/Pushbullet010.png" width="320"><br><img src="/image/图/Pushbullet011.png" alt="">
+
+</em> <strong>应用场景三：从电脑端接收查看android手机端的app通知</strong><br>除了在设备之间推送指定的内容外，Pushbullet还可以在电脑上接收android手机收到的app、短信、电话等的通知。当我们在电脑前，手机开了静音或者不在手边，不用解锁手机也可以在电脑屏幕上看到手机的各类通知。<br><img src="/image/图/Pushbullet012.png" alt=""><br><center>▲ 手机端音乐切换的通知被显示在电脑上</center>
+
+<ul>
+<li><strong>应用场景四：电脑端和手机端，一端复制内容后，另一端直接即时粘贴</strong><br>这是最近一次更新后添加的超级好用的功能。在新版的Pushbullet Android App 与 WIndows 软件之间，实现了复制、粘贴的跨设备即时推送同步，在电脑复制的內容，你可以立刻在手机上粘贴，反之亦可！让你感觉就好像是在同一台设备间操作一样，体验很棒。<br><img src="/image/图/Pushbullet013.png" width="320"><br><img src="/image/图/Pushbullet014.png" alt=""><center>▲ 手机端复制一段文本，电脑端立刻可以粘贴</center>
+
+</li>
+</ul>
+<p>##安装使用</p>
+<ul>
+<li>安裝 Windows 电脑版的Pushbullet：<a href="https://update.pushbullet.com/pb_install.exe" target="_blank" rel="external">Windows电脑版下载</a>，安装好之后用google账号登录后基本不需要额外设置即可以了。</li>
+<li>安装 android 版的Pushbullet app：<a href="https://play.google.com/store/apps/details?id=com.pushbullet.android" target="_blank" rel="external">Pushbullet Android 下载</a>，第一次启动时根据app 向导打开是否允许通知同步的选项，然后在Pushbullet的设置 - 高级设置中，开启 Universal copy &amp; paste 选项。</li>
+</ul>
+<div style="clear: both;"><br><img src="/image/图/Pushbullet016.png" width="320" imageanchor="1" style="float:left;margin: 0 1em;"><br><img src="/image/图/Pushbullet015.png" width="320" imageanchor="1" style="margin: 0 1em;"><br></div>
+
+<ul>
+<li><a href="https://itunes.apple.com/us/app/pushbullet/id810352052" target="_blank" rel="external">Pushbullet ios 下载</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/pushbullet/chlffgpmiacpedhhbkiomidkjlcfhogd" target="_blank" rel="external">Pushbullet Chrome 下载</a></li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/pushbullet/" target="_blank" rel="external">Pushbullet Firefox 下载</a></li>
+</ul>
+<p><em>ps.因为GFW的存在，想要流畅并优雅的使用 Pushbullet，常常还得走VPN</em></p>
+
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -553,6 +632,8 @@ Mu带头找
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -566,16 +647,26 @@ Mu带头找
       
         
           
-          　　后会无期和锤子手机都是打从他俩有意做这件事开始就关注着。当你一心关注着什么的时候，是必有喜怒哀乐伴随。
-　　锤子手机发布后，老罗在微博不停有形形色色的口仗，最近他发的几条微博都机智的在宣扬锤子手机的同时几多帮着造势后会无期。私底下老罗跟韩寒是多年好友。稍微留心也可以看到，锤子手机量产版发布之后，
-          ...
+            <p>　　后会无期和锤子手机都是打从他俩有意做这件事开始就关注着。当你一心关注着什么的时候，是必有喜怒哀乐伴随。</p>
+<p>　　锤子手机发布后，老罗在微博不停有形形色色的口仗，最近他发的几条微博都机智的在宣扬锤子手机的同时几多帮着造势后会无期。私底下老罗跟韩寒是多年好友。稍微留心也可以看到，锤子手机量产版发布之后，韩寒发的后会无期的微博尾巴有几条是来自Smartisan T1，这软广的含金量简直不谈了。</p>
+<p>　　后来想了想，老罗会做锤子手机，韩寒会拍后会无期，它们我都特别喜欢，他们俩私交很好，（老罗跟柴静也私交很好，柴静《看见》发布会时还特意邀罗胖子上台发了言），这些之间好像隐约有什么联系。然后我才意识到这大概就是前人说的物以类聚人以群分吧。雷军做小米，11年我入米1也算是抢购中的第一批人，玩MIUI热情到每周刷两次机。可是米1之后我个人没再买过任何小米的东西，当然不是小米做的东西不好了，是我不再喜欢这家公司而已。雷军跟老罗都是极聪明的人，可他们做手机面向的受众，准确的说是目标消费群体，是有很大区别且定位准确的，小米卖到火，锤子叫好不叫座其实是可以预见到的。像老罗那种对产品认真到偏执的人，是宁愿完美货卖不火也不会肯卖火平庸货的。当然完美货卖不火显然是不科学的，通常只是时间问题。好像chrome跟IE。</p>
+<p>　　后会无期里有袁泉。她饰演的刘莺莺说“喜欢就会放肆，但爱就是克制”，听过都不会忘。她跟冯绍峰演的那段戏你会不会也跟我一样觉得很完美。我想说的是她进韩寒后会无期剧组，跟小四让杨幂演小时代一样合适到爆，只是我对前者爱的深沉，后者厌的很深。韩寒拍后会无期，演员陈柏霖、袁泉、王珞丹、钟汉良、贾樟柯等，小四拍小时代，演员杨幂、柯震东、郭采洁等，前面的演员不会乱入后面的剧组，后面的也不会被韩寒请来演，好合适。</p>
+<p>　　锤子手机是5.20号看完发布会当天夜里下单预定的，因为手机品质把控严格产能不足至今尚未到手，可我一点不抱怨。后会无期7.24号上映当天下了班去看的，一心满足，也幸运那场影院工作人员能耐心等到片尾曲结束后才扫场关灯，让我如愿听完朴树的平凡之路。我想海报被撤换前还会去影院多看一遍，也许能得未曾有。</p>
+<p>　　老罗说：我不是为了输赢，我就是认真。<br>　　锤粉回：你只管认真，我们帮你赢。</p>
+<p>　　哎，满满的都是爱…</p>
+<p><img src="/image/图/关于后会无期、锤子手机一些杂感01.jpg" alt=""><br>PS.我觉得把旗袍穿好的女子不能再美丽了</p>
+<p><em>更新：</em><br><img src="/image/图/关于后会无期、锤子手机一些杂感02.jpg" alt=""></p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2014/08/01/about-the-continent-and smartisan-phone/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -678,6 +769,8 @@ Mu带头找
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -691,19 +784,21 @@ Mu带头找
       
         
           
-          打开下app，发现30公里了想下楼奖自己一个红豆冰发现楼下超市已打烊
-默默地摸摸自己的肚子不禁想起了他们俩
-
-###更新：2014年8月18日 星期一
+            <p>打开下app，发现30公里了<br>想下楼奖自己一个红豆冰<br>发现楼下超市已打烊</p>
+<p>默默地摸摸自己的肚子<br>不禁想起了他们俩</p>
+<p><img src="/image/图/running01.png" width="320"><br><img src="/image/图/running02.png" width="320"><br><img src="/image/图/running03.jpg" alt=""><br><img src="/image/图/running04.jpg" alt=""></p>
+<p>###<em>更新：2014年8月18日 星期一</em><br><img src="/image/图/running05.png" width="320"></p>
 
           
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2014/07/16/Life's/running/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -806,6 +901,8 @@ Mu带头找
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -819,16 +916,57 @@ Mu带头找
       
         
           
-          2014/6/16 更新：
-由于种种原因（懂的人懂的），最近Google在华的服务被屏蔽的更彻底更无下限了。GoAgent也近乎不能用，一片红黄。不过难不倒我，我已经在goagent客户端local\proxy.ini中加入了些可用的ip地址（已测试可用），同时可以下载此hosts文件，将其中内容复
-          ...
+            <p>2014/6/16 更新：</p>
+<p>由于种种原因（懂的人懂的），最近Google在华的服务被屏蔽的更彻底更无下限了。GoAgent也近乎不能用，一片红黄。不过难不倒我，我已经在goagent客户端local\proxy.ini中加入了些可用的ip地址（已测试可用），同时可以下载此<a href="http://pan.baidu.com/s/1pJx48kV" target="_blank" rel="external">hosts文件</a>，将其中内容复制到你的”C:\Windows\System32\drivers\etc\hosts”同名文件的末尾。这样就又可以愉快的科学上网了。</p>
+<hr>
+<p>众所周知，在中国，因为<a href="http://zh.wikipedia.org/zh-cn/防火长城" target="_blank" rel="external">GFW</a>的存在，很多站点不是你我想访问就能自由访问的。每当我看到网页上出现“无法显示此网页”的时候，一边打开goagent，一边会下意识念叨着“FUCK GFW!”。一直希望能把自己使用 chrome + goagent 科学上网的经验写成一篇简单明了的教程，为更多人所知。</p>
+<h3 id="Step-1-申请Google-App-Engine账号"><a href="#Step-1-申请Google-App-Engine账号" class="headerlink" title="Step 1 - 申请Google App Engine账号"></a><strong>Step 1 - 申请Google App Engine账号</strong></h3><p>打开<a href="http://appengine.google.com/" title="http://appengine.google.com/" target="_blank" rel="external">http://appengine.google.com/</a>，输入你的Gmail账号、密码登录（如果还没有Gmail邮箱请先去申请一个）。成功登录后，点击下图中的Create Application进入下一步。</p>
+<p><img src="/image/图/chrome_goagent_01.png" alt=""></p>
+<h3 id="Step-2-通过短信验证你的账号"><a href="#Step-2-通过短信验证你的账号" class="headerlink" title="Step 2 - 通过短信验证你的账号"></a><strong>Step 2 - 通过短信验证你的账号</strong></h3><p><img src="/image/图/chrome_goagent_02.jpg" alt=""></p>
+<p>需要短信验证才可以进行下一步操作，Country and Carrier（国家和运营商）处选择Other，Mobile Number（手机号码）处填写你的个人手机号码号码，格式为+8613912345678</p>
+<h3 id="Step-3-将手机收到的验证码输入并发送"><a href="#Step-3-将手机收到的验证码输入并发送" class="headerlink" title="Step 3 - 将手机收到的验证码输入并发送"></a><strong>Step 3 - 将手机收到的验证码输入并发送</strong></h3><p><img src="/image/图/chrome_goagent_03.jpg" alt=""></p>
+<p>你将会收到谷歌发给你的短信，短信内容大致为：Google App Engine：<strong>**</strong>（6位数字）。验证成功后，就可以进入下一步。</p>
+<h3 id="Step-4-创建一个属于你的Application"><a href="#Step-4-创建一个属于你的Application" class="headerlink" title="Step 4 - 创建一个属于你的Application"></a><strong>Step 4 - 创建一个属于你的Application</strong></h3><p><img src="/image/图/chrome_goagent_04.png" alt=""></p>
+<p>&gt;</p>
+<ol>
+<li>输入一个Application ID，允许使用英文字母和短横杆；</li>
+<li>点击Check Available，检查一下是否可用；</li>
+<li>输入Application名称，这里可以随便填；</li>
+<li>勾选I accept these terms，即接受协议；</li>
+<li>最后Creat Application</li>
+</ol>
+<p>当你看到以下画面，说明你已经成功创建一个 Application</p>
+<p><img src="/image/图/chrome_goagent_05.png" alt=""></p>
+<h3 id="Step-5-下载并配置GoAgent客户端"><a href="#Step-5-下载并配置GoAgent客户端" class="headerlink" title="Step 5 - 下载并配置GoAgent客户端"></a><strong>Step 5 - 下载并配置GoAgent客户端</strong></h3><p>&gt;</p>
+<ol>
+<li>下载goagent客户端（<a href="http://pan.baidu.com/s/190yiq" target="_blank" rel="external">点击下载</a>）,解压到某个目录</li>
+<li>双击server\uploader.bat（Windows 7或Windows 8用户最好以管理员身份运行），根据提示依次输入你的appid和Gmail帐号，密码。确定输入后回车确认即可。</li>
+<li>上一步提示上传成功后，修改local\proxy.ini中的[gae]下的appid=你最初申请的appid(多appid请用|隔开)，即前面创建Application所设定的Application ID，如我设定的mxl1989；</li>
+</ol>
+<p><img src="/image/图/chrome_goagent_06.png" alt=""></p>
+<p><img src="/image/图/chrome_goagent_07.png" alt=""></p>
+<h3 id="Step-6-在chrome浏览器中安装并配置Proxy-SwitchySharp扩展"><a href="#Step-6-在chrome浏览器中安装并配置Proxy-SwitchySharp扩展" class="headerlink" title="Step 6 - 在chrome浏览器中安装并配置Proxy SwitchySharp扩展"></a><strong>Step 6 - 在chrome浏览器中安装并配置Proxy SwitchySharp扩展</strong></h3><p>&gt;</p>
+<ol>
+<li>在chrome浏览器中安装<a href="https://chrome.google.com/webstore/detail/dpplabbmogkhghncfbfdeeokoefdjegm" target="_blank" rel="external">SwitchySharp</a>扩展</li>
+<li>安装之后浏览器就会自动弹出Switchy Sharp的配置界面，点击【导入/导出】-&gt;【从文件恢复】。在弹窗中定位到之前下载的goagent的local/SwitchyOptions.bak,然后导入</li>
+</ol>
+<p><img src="/image/图/chrome_goagent_08.png" alt=""><br><img src="/image/图/chrome_goagent_09.png" alt=""></p>
+<p><strong>Finally，当你需要科学上网(Fan/Qiang)的时候，先运行goagent客户端中local/goagent.exe，然后在chrome浏览器中，点击小地球的图标，选择”GoAgent”代理，就可以了。</strong></p>
+<p><img src="/image/图/chrome_goagent_10.png" alt=""></p>
+<blockquote>
+<p>GoAgent主站：<a href="https://code.google.com/p/goagent/" title="https://code.google.com/p/goagent/" target="_blank" rel="external">https://code.google.com/p/goagent/</a><br>goagent客户端3.1.18[6.16新]（<a href="http://pan.baidu.com/s/190yiq" target="_blank" rel="external">百度网盘下载</a>）</p>
+</blockquote>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2014/06/15/FUCK-GFW!/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -931,6 +1069,8 @@ Mu带头找
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -944,20 +1084,42 @@ Mu带头找
       
         
           
-           
+            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=28481105&auto=0&height=66"></iframe> 
 
-有感觉。喜欢。 《机器灵 砍菜刀》  演唱、作词、作曲 张卫 
+<h2 id="有感觉。喜欢。"><a href="#有感觉。喜欢。" class="headerlink" title="有感觉。喜欢。 "></a>有感觉。喜欢。 </h2><p>《机器灵 砍菜刀》  演唱、作词、作曲 张卫 </p>
+<blockquote>
+<p>是不是一个人太久了 总觉得时间在翻倍的过<br>我不知道自己在找什么 只觉得丢了很多<br>星星还是那颗星星 但被霾遮住了光明<br>我怀念狗屁不通的光阴 最初的节奏你听 </p>
+<p>二八二五六 二八二五七 二八二九三十一<br>三八三五六 三八三五七 三八三九四十一 </p>
+<p>你知道我有多想回到老家活泥巴<br>再邀子那些光腚伙家去坑里逮青蛙<br>给俺爷爷卷袋烟叶 听俺奶奶拉拉呱<br>他们这一代人没有文化但是很伟大 </p>
+<p>我想不起来那台黑白电视演哩啥<br>也想不起来鞠萍姐姐当年说哩话<br>我找不到我跳房子踢哩那片瓦<br>谁知道我哩弹球和票夹都放哪里啦 </p>
+<p>一个沙坑一个秋千俺就能玩一天<br>饿了爬到树上摘点槐花吃点榆钱<br>马泡有多香 桑葚有多甜<br>溜溜菶菶架戏台 再抓把黑添添 </p>
+<p>谁捅了马蜂窝谁被蛰哩疙瘩多<br>谁晚上尿了床白天就得少玩火<br>谁骑着大梁自行车 扎过麦秸垛<br>谁哩作业最多谁就捞不着一起唱儿歌 </p>
+<p>机器灵 砍菜刀 恁那边哩紧俺挑<br>挑谁吧 挑 挑的那个人已经回家了<br>机器灵 砍菜刀 恁那边哩紧俺挑<br>挑谁吧 挑 挑的那个人已经回家了 </p>
+<p>我想俺姐姐分给我哩那块糖疙瘩<br>我很后悔当年为啥老是欺负她<br>现在我有了外甥还在欺负她<br>我说老姐啊老姐 你真的辛苦啦 </p>
+<p>每天放学俺爸爸都会骑车接我回家<br>他说谁能多吃饭就给谁买贴画<br>偶尔老师也会叫他去学校谈谈话<br>他回来打了我一巴掌自己也哭啦 </p>
+<p>俺妈妈给我打哩毛衣总是有点大<br>直到长大我才明白那是因为啥<br>她的委屈都在心里不善于表达<br>但我知道她最牵挂哩就是俺姐弟俩 </p>
+<p>其实我很想看爸爸妈妈再吵一次架<br>但94年哩全家福往后不再有啦<br>爸爸 妈妈 姐姐 你们都在干嘛<br>我想你们 更想回咱以前那个家 </p>
+<p>机器灵 砍菜刀 恁那边哩紧俺挑<br>挑谁吧 挑 挑的那个人回不去家了<br>机器灵 砍菜刀 恁那边哩紧俺挑<br>挑谁吧 挑 挑的那个人回不去家了 </p>
+<p>我多想和俺老表再一起逃节课<br>去蒙山商场打游戏机一直打到饿<br>抽哩第一口烟应该是两毛钱哩飞鸽<br>喝哩第一口酒是不是兰陵我不记得 </p>
+<p>我踩着张家斌哩肩膀爬过几次墙头<br>和赵顺去工地上偷过几个钳口<br>在体育场拜把子磕过几个响头<br>看看以前哩合影 造型 儿哩也 全是非主流 </p>
+<p>在路边听我和君耀唱歌哩人成群结队<br>他们说俺俩玩音乐 但俺俩是为了漏味<br>有人看俺不愤儿是为了争小闺女<br>想想那些屁事 哎呦 真是味儿 </p>
+<p>能弥补失去哩童年莫过于咱们哩初恋<br>那时候什么都不图只是一味的想和她见面<br>看着她哩照片 感觉每天都是晴天<br>那些上课传过哩纸条现在只能在心里默念<br>机器灵 砍菜刀 恁那边哩紧俺挑<br>挑谁吧 挑 挑的那个已经长大了<br>机器灵 砍菜刀 恁那边哩紧俺挑<br>挑谁吧 挑 挑的那个已经长大了 </p>
+<p>我写了这么多不是想歌颂我哩童年<br>只是想把咱80后的回忆翻出来做个意见<br>给亲情留个纪念 还爱情一次祭奠<br>对兄弟说声抱歉 挥手向青春告别 </p>
+<p>在传统教育和独立之间迷惘着寻找出路<br>我们扮演了改革开放哩宠儿尴尬哩幸福<br>你有多久没对着自己哩眼睛好好哩认个错<br>那么接下来让咱们一起对号入座 </p>
+<p>有多少人为了眼前放弃自己的明天<br>有多少人为了明天又在扼杀今天<br>有多少人为了今天寄生给了欺骗<br>又有多少人欺骗只为换取一丝尊严<br>有多少人为了尊严却活在别人胯下<br>有多少人活在胯下只为养活一家<br>有多少人为了一家老小四海为家<br>有多少人漂泊日夜思念朋友和爸妈<br>有多少人指手画脚的给别人讲着道理<br>有多少人讲完道理自己却不讲道义<br>有多少人纹着道义却出卖自己的兄弟<br>有多少人从你的兄弟变成了你的凶器<br>有多少人付出总是很难得到回报<br>有多少人面对镜子留着眼泪微笑<br>有多少人笑着在暴雨中疯狂奔跑 </p>
+<p>有多少人为了名利戴上了冰凉哩手铐<br>有多少人为了苟活背叛了最初的理想<br>但坚持了理想的却又混不到车房<br>有多少人为了车房要还一辈子外账<br>他还了外账也是拆了东墙补上了西墙<br>有多少人的婚姻没有出现过裂缝<br>嘴上骂着小三自己却破坏别人的家庭<br>有多少人的亲朋好友被钱给逼疯<br>他却无动于衷的在夜总会里晃着筛盅<br>有多少的通讯设备安装了无数功能<br>但总是和最亲最近的人无法沟通<br>有多少人多少事其实我们都懂<br>但懂的太多最后智商却变成了狗熊<br>有多少人听到这里听着听着累了<br>有多少人听到这里听着听着哭了<br>有多少的故事我们永远回不去了<br>有多少思念的人在天堂听着<br>机器灵 砍菜刀 恁那边哩紧俺挑<br>挑谁吧 挑 挑的那个人已经不见了 </p>
+</blockquote>
 
-是不是一个人太久了 总觉得时间在翻倍的过我不知道自己在找什么 只觉得丢了很多星星还是那颗星星 但被霾遮住了光明我怀念狗屁不通的光阴 最初的节奏你听 
-二八二五六 二八二五七 二八二九三十一三八三五六 三八三五七 三八三九四十一 
-          ...
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2014/04/29/机器灵-砍菜刀/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1060,6 +1222,8 @@ Mu带头找
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -1073,18 +1237,20 @@ Mu带头找
       
         
           
-          想乌衣年少爱耍马后炮台球乒乓玩得跳
-时至今 南北跑年年代码敲日日衣服小
-
+            <p>想乌衣年少<br>爱耍马后炮<br>台球乒乓玩得跳</p>
+<p>时至今 南北跑<br>年年代码敲<br>日日衣服小</p>
+<p><img src="/image/图/忆.jpg" alt=""></p>
 
           
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2014/04/23/Life's/忆/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1187,6 +1353,8 @@ Mu带头找
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -1200,19 +1368,69 @@ Mu带头找
       
         
           
-          想多了解点深圳来的，泡了下知乎，不觉就是几个钟头。于凌晨，一头亢奋和一脸忧伤。
-亢奋是更加意识到未来可以多美好，忧伤是不明了要做多少未来才能美好…
-以下摘录于知乎上的两个问题和部分答案，深有感触，整理下(较长，自用，感兴趣的朋友推荐由链接移步知乎读原文)。
+            <p>想多了解点深圳来的，泡了下知乎，不觉就是几个钟头。于凌晨，一头亢奋和一脸忧伤。</p>
+<p>亢奋是更加意识到未来可以多美好，忧伤是不明了要做多少未来才能美好…</p>
+<p>以下摘录于知乎上的两个问题和部分答案，深有感触，整理下(较长，自用，感兴趣的朋友推荐由链接移步知乎读原文)。</p>
+<hr>
+<p>###问题一：<a href="http://www.zhihu.com/question/19565587" target="_blank" rel="external">比较北京、上海、杭州、广州、深圳，哪里的生存压力更大？</a></p>
+<p>回答者，<strong><a href="http://www.zhihu.com/people/satanzhangdi" target="_blank" rel="external">张迪</a>：</strong><br>一说北京和广州的比较吧。我是地道的小乡镇家庭，靠读书出来工作的。</p>
+<p>在北京，不敢随便买衣服，贵。广州，我靠，专卖店随便进去，即便贵，也就几百块。在北京太多地方衣服价格保底几千的，让人都没有勇气上去看一眼。广州周边都是轻工业基地，东西普遍不贵。</p>
+<p>在北京，买房 不敢想。当时在网易工作，就和女朋友商量着要不要一辈子租房子好了。后来辞职来到广州，一个同样差不多经历的同事，让我着手准备两年后开始付首付买房子。</p>
+<p>在北京，可以吃到很多天南地北的东西但是这一般都在豪华的饭店里，平时是不敢常去消费的。而一般消费的地方，比如人均50的地方，基本吃不到什么好的东西。广州就不一样了，30–50的人均消费空间很大，有很多吃的，很多当地的饭店什么的，都很平民化的价格，但是做的很精致。消费很爽。</p>
+<p>北京太大，地铁直到半径有限，有太多地铁站的真空带。广州相对比较少。</p>
+<p>北上杭都是孤零零的城市。广州附近有东莞啊佛山啊中山啊江门啊，这些城市的经济发展都不错。总觉得养老有地方。地铁直通佛山，去其他地方还有城轨。那个城轨，坐起来感觉特别像动漫中新干线的感觉，特别美好！</p>
+<p>………………………………………………分割线2013.8.11更新………………………………………</p>
+<p>最近打算买房，贴点实际感受上来。</p>
+<p>我大学室友手握老爸的100w，在北京不敢买房。他给我算了笔帐，稍微能住的，1小时内到公司的（东四十条桥），300万，20年还，月付超1w5。（媒体工资一个月就万把块的事儿）。我在广州，四十万首付，半小时内的二手房还是一批批的。月付6000多，两口子公积金扣了，比租房子还便宜。</p>
+<p>再者，我同事中，工作两三年后靠自己买房的一批批，在北京你敢想么。。。。。（只说媒体这一行的收入和房价比情况）</p>
+<p>ps：关于北京和广州租房的对比。<br>北京，单人一个房间，四环，2000多。广州，人均1000肯定能搞定。</p>
+<p>但是北京牛逼人多啊，机会多啊，更上进啊，走哪儿都是牛逼哄哄的人啊，租个房子，碰到的房东不是中石油的什么经理，就是北大核物理专业毕业的老头老太太哇。武大的简历完全不敢拿出来看啊，满大街那些个机构的名儿，听听都屌爆了啊。牛逼哄哄的大事都在这里搞定的有木有啊。跟个校友吃饭，一问尼玛以前是赵&amp;zi &amp;yang的小弟哇，现在央行下属企业老总啊。。。尼玛啊。。。。。</p>
+<p>北京是一个适合奋斗的地方。广州是一个适合生活的地方。over。</p>
+<p>再看广州，每天都是房子老婆孩子哪家甜品店新开了不错啊什么地方泡温泉团购只要两百啊白云上山有个菜市场都是直接从地里拔的新鲜咱们爬个山顺带买个菜啊吉之岛又打折了你不知道哇什么你要买第三套房了哦第四套你就辞职专心当包租婆了哇尼玛都又要换车上次那辆太土了可是你才开了三年好不好等着开放二胎四十岁前再生一个？</p>
+<hr>
+<p>明棗花 回复 张迪（作者）<br>我觉得你们说的都没错，但是最终目的还是生活啊</p>
+<p>2014-03-24</p>
+<hr>
+<p>张迪（作者） 回复 明棗花<br>如果你跟那些人到中年，钱已经不是问题的人谈谈，你会发现他们对于获取成就感和影响力的渴望是那么的高。但是因为不再年轻，很多现实的顾虑，导致大多数人也就是空想而已。可能我太年轻的缘故吧，但是我固执的认为，那种为了家人过得好的生活，和实现梦想是完全不同的两条道路。</p>
+<p>当然，钱是首要解决的一个问题。如同某个答案所说的，如果你盯着一百万的年薪目标，那么你可能永远达不到这个目标，但是如果你把目标放在在某个领域有所成就上，那么100万作为附带价值出现的可能性却很高。</p>
+<p>还有一个故事可以分享下，可能有些心灵鸡汤。但是对我影响很大。</p>
+<p>哥哥和弟弟。</p>
+<p>哥哥从小就学习成绩很棒，全才。弟弟不爱学习，喜欢玩喜欢看漫画，喜欢到处走动。家人疼爱哥哥，对其寄予了很高的期望，对弟弟则一直不乏批评。哥哥后来一路高歌进入牛逼哄哄的经融专业，毕业后去了牛逼哄哄的公司，后来成为老伴赚了很多很多钱。而弟弟则自己到处流浪，无所成就，画自己喜欢的画。突然有一天，40岁的哥哥卖掉公司，选择离开自己的家庭。他对弟弟说，“从小到大，我最羡慕的就是你。因为你没有负担全家人的期待，可以跟随自己的心灵做自己的喜欢的事情。而我到现在，终于完成了家人的期待，我也应该为自己活一回了。但是我没有多积累，怎么为自己活一把，还很迷茫。”</p>
+<p>大概如此。</p>
+<p>2014-03-24</p>
+<hr>
+<p>###问题二：<a href="http://www.zhihu.com/question/21078649" target="_blank" rel="external">广州和深圳是怎么跻身北上广深之列的？</a></p>
+<p>回答者，<strong><a href="http://www.zhihu.com/people/jun-lin-29" target="_blank" rel="external">君临</a>：</strong></p>
+<p>为什么广州/深圳能够晋身为一线城市，而天津、重庆、苏州这些GDP相近的城市不能？<br>首先我们要明白，一线城市的标准是什么。<br>肯定不是GDP，也不是政治层级。<br>在我看来，一线城市，和二线的区别就是：在重要的产业经济领域内，是否具有全国性的影响力。<br>比如说，北京是政治文化中心，上海是经济金融中心，而各地省会就仅仅是各省的经济中心，或者华东、华北、东北、华中等区域的中心。</p>
+<p>首先看广州，广州是广东的省会，华南地区的经济政治文化中心。但是如果仅仅是这样的话，广州的地位和武汉、沈阳、成都就没有什么分别了。<br>广州最大的优势是：这里是中国的商业中心。什么？不是上海吗？还真不是。<br>广州有一个外号，“黑人之都”，说的是广州目前生活有30万非洲黑人。这些黑人为什么来广州，而不是去上海？因为广州是中国商品的贸易中心，在这里，他们能够一站式采购到销往亚非拉地区的绝大部分商品。<br>对外：广交会，又名中国进出口商品交易会，每年两次，万商云集。<br>对内：遍布广州大街小巷的批发集市，衣服鞋袜、五金日杂，无数的商品从沿海的加工厂汇集到这里，然后批发到内陆的二线、三线、四线城市。对于仍然处于劳动密集型产业阶段的中国制造来说，广州的中转贸易中心的地位是不可取代的。</p>
+<p>然后看深圳，深圳的gdp老四的位置已经岌岌可危，又不是直辖市，很多人就不服气了。但是在我看来，即使未来天津、重庆、苏州的GDP统统超过，深圳的一线城市地位依然牢固。<br>因为深圳是中国的科技产业中心。深圳就是中国的硅谷。什么？不是北京吗？还真不是。<br>深圳有中国最大的互联网企业腾讯，有中国最大的通讯制造商华为和中兴，有中国最大的新能源汽车企业比亚迪，有中国最大的手机触摸屏制造商欧菲光，有中国最大的医疗器械企业迈瑞，有中国最大的激光器械企业大族激光……有A股上市公司中最多的民营科技企业。<br>由于深圳的创业风气，创业板的金融支持，在IT制造业领域内的强大产业生态，在迈向产业升级的中国经济地图中，深圳的地位是无可取代的。</p>
+<p>北京，政治文化中心；上海，经济金融中心；广州，商业贸易中心；深圳，科技创新中心。这就是北上广深位居一线城市的主要竞争力所在。<br>————————<br>深圳VS北京<br>最常见的说法是，北京中关村是中国的硅谷。<br>北京的科技企业集中在两个领域——<br>一派是以联想和小米为代表的PC和手机企业，他们的竞争力体现在品牌、渠道和营销，技术上并无过人之处。<br>联想和小米，就是美国的惠普和戴尔的翻版。惠普和联想都是通过终端渠道的广泛覆盖实现规模优势，戴尔通过电话直销渠道崛起，小米通过互联网直销渠道崛起，缩短供应链获得成本优势，内涵上是一样的。因此，他们只有科技之名，并不能体现北京科技产业的实力。</p>
+<p>另一派是名声在外的互联网企业。<br>百度、奇虎、新浪、搜狐、优酷、爱奇异、京东、当当、人人、搜房、汽车之家、易车、58同城、去哪儿、蚂蜂窝、完美世界、智联招聘、豆瓣、知乎、美团、拉手、窝窝团等等。<br>数量非常多，但是我们细细分析就会发现，除了京东、当当、完美世界这三家属于电商和游戏的企业以外，数量众多的企业几乎都是新媒体企业。<br>新浪搜狐等门户网站抢的是报纸的生意，优酷爱奇艺等视频网站抢的是电视台的生意，搜房汽车之家易车蚂蜂窝等垂直媒体抢的是杂志的生意，智联招聘58同城抢的是分类信息广告的生意，人人豆瓣知乎抢的是社区投递广告的生意，美团拉手窝窝团抢的是促销传单的生意，百度和去哪儿是信息入口，抢的是其他所有媒体的生意，奇虎虽然是安全平台，但主要收入也是靠网址导航和搜索，抢的是百度的生意。<br>是的，北京90%以上的互联网企业，其商业模式都是建立在广告之上的，统称为新媒体企业。即使数量再多，也不过是互联网媒体产业生态上的瓜和藤。<br>他们之所以集中在北京，那是因为北京是新华社、CCTV、人民日报的基地，有人脉、有信息源，更适合媒体企业的发展，这不正说明北京是文化中心吗？<br>（有朋友说，百度是媒体，难道谷歌也是媒体吗？我的观点是：如果谷歌只有搜索引擎，那她就只是媒体企业，但谷歌还有安卓操作系统，移动互联网的底层平台。这是百度和谷歌的根本区别。）</p>
+<p>相比起来，深圳无疑更适合科技企业的发展，包括东莞、广州在内的整个珠江湾区，<br>拥有以腾讯、迅雷、网易、YY、UCweb、GO桌面、唯品会为代表的互联网非媒体产业，着重构建互联网产品底层平台，通过娱乐、电商、增值服务收费等方式实现价值创新；<br>拥有以华为、中兴、酷派、OPPO、魅族、全志、台电、昂达、TPlink、欧菲光、莱宝高科、华星光电、德赛电池、欣旺达、长盈精密为代表的智能手机和硬件科技产业，代表中国在海外参与全球产业竞争；<br>拥有以比亚迪为代表的新能源汽车企业，在现代工业的皇冠——汽车产业向新能源和智能化升级上实现长远布局。</p>
+<p>硅谷之所以为美国的科技创新中心，因为这里有苹果的智能手机，谷歌的移动操作系统，特斯拉的电动车。<br>深圳之所以为中国的科技创新中心，因为这里有华为的海思芯片，腾讯的移动社交平台，比亚迪的电动车。<br>他们代表着现代科技产业三大领域：IT硬件创新，移动互联网，新能源智能汽车的最顶尖水平。<br>深圳和硅谷最像的地方就在于：这里远离政治中心，这里离自由更近。<br>有些人要说到深圳缺乏知名大学。事实上，在美国，最知名的大学是哈佛和麻省理工，他们在东海岸的波士顿，那里也是国防军工企业的集中地，离华盛顿很近。而在硅谷兴起的1960年代，斯坦福大学只是一座二流大学，在美国大学排行榜中甚至进不了20名，远远不如今日的地位。<br>对于科技研发创新来说，自由公平的竞争环境才是最重要的土壤。</p>
+<p>2014-01-06</p>
+<hr>
+<p>回答者，<strong><a href="http://www.zhihu.com/people/imlaputa" target="_blank" rel="external">imLaputa</a>：</strong><br>一楼已经说的很详细了，稍微补充点资料大家看看吧<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">只想说决定一个城市经济活力的不是央企，不是国企，不是中石油中石化更不是ccav之流~</div></pre></td></tr></table></figure></p>
+<p>1、深圳，中国四大一线城市之一，仅次于上海、北京、广州，经济总量全国第四、称中国第四城。<br>2、2012年，中国城市人才竞争力，深圳居榜首，北京、上海为其次 。<br>3、目前，200米以上的摩天大楼深圳有46座，全国排第三，仅次于香港58座、上海51座。<br>6、深圳和上海是中国仅有的两个证券交易所所在的城市，2013年，深交所的全球IPO集资额仅低于香港，位居全球第二 。<br>7、深圳宽达198米的深南大道，绿化全国最好。是两边写字楼最多、楼宇最高，名副其实的中华第一景观大道 。（这个198米宽有点夸张，但双向6车道+中间一个宽达2-3车道的绿化带（不是种点花花草草的绿化带，是里面还种着各种树的绿化带，真的是树。。很多地方完全看不见对面车道的车，跟小树林一样，第一次看到的时候觉得好奇葩，但是真的很漂亮。） 我在中国基本没看见过，，国外不知道。。。）<br>8、深圳的国贸大厦，曾创造两个之最：一是90年代中国最高的大厦；二是迄今为止在中国建设速度最快、3天一层楼，深圳人称此为深圳速度，并为此感到自豪.<br>10、深圳有中国最好的银行：招商银行；深圳有中国最好的保险公司：中国平安；深圳有中国最牛的房地产公司：万科、金地、华润、招商和华侨城。深圳有中国最具竞争力的IT公司：华为和中兴 ；深圳有中国最大的主题公园区：华侨城（锦绣中华、民俗村、欢乐谷、世界之窗）；深圳有中国最大的互联网公司：腾讯 ；深圳有中国最大物流公司：顺丰；深圳有中国最大的几个电视机公司：康佳和创维；深圳有中国最大的高尔夫球场：观澜湖；深圳有中国最大的电子代工商：富士康。<br>11、深圳，目前汽车总量200万，仅次于北京.<br>12、深圳有64%的城市绿化率，在中国仅次于海南三亚.<br>13、深圳有1100万人口，目前的人口密度直逼香港和东京 。<br>14、在深圳，8个人里面就有一个创业者，为中国创业氛围和环境最好的城市 。<br>15、深圳常住人口平均年龄29岁，是中国中平均年龄最年轻的城市。<br>16、深圳人的平均睡觉时间5.8小时，在中国城市中睡眠时间最短。<br>18、深圳的人均消费，目前全国最高，每月人均消费额达5200元。<br>19、深圳西冲的海滩，是中国最美的八大海滩之一，水质清澈、沙滩柔软，让人流连忘返。</p>
+<p>2013-12-09</p>
+<hr>
+<p>##我自己，<br><strong>北京</strong>：12年毕业后去的，再差三个月就两年了。从很早时候就喜欢北京了，去北京工作之前，到北京玩过两次。中意那里的文化、古韵，和人文味道。在那里这一年多，我有看到很多，学到很多。</p>
+<p><strong>深圳</strong>：公司项目上的机缘，上个月底（2014.3）来了深圳，因为待的时间还不长感受还不深。不过项目周期还蛮长的，所以后面还会在这里待挺久，工作之余，可以好好感受。</p>
+<p><strong>上海</strong>：因为父母一直是在上海做生意很多年了，也换过很多地方，小时候每年的寒暑假都会到上海跟他们待一段时间。在上海有到处跑。他们平时或生意上跟人打交道，我也耳濡目染。虽然毕业后他们极力想我在上海找份工作然后一切都方便水到渠成，我也没能如其所愿，一意去了北京。</p>
+<p><strong>广州</strong>：自问何时是广州？我想到那时我应该不会再忧伤了吧</p>
+<p>OVER </p>
+<p><img src="/image/图/何时是广州.jpg" alt=""></p>
 
-###问题一：比较北京、上海、杭州、广州
-          ...
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2014/04/20/传奇之宫崎骏/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1315,6 +1533,8 @@ Mu带头找
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -1328,20 +1548,22 @@ Mu带头找
       
         
           
-          不知是少年明智亦或是糊涂决心踏上走南闯北的路
-只是心里明明白白的舍不得，北京别过了，北京
-
-##匍匐文_随处春山
-近处的群山，远方的海匍匐着巨大的身形只为让渺小的事物不虚此行。
+            <p>不知是少年明智<br>亦或是糊涂<br>决心踏上走南闯北的路</p>
+<p>只是心里明明白白的舍不得，北京<br>别过了，北京</p>
+<hr>
+<p>##匍匐<br><strong>文_随处春山</strong></p>
+<p>近处的群山，远方的海<br>匍匐着巨大的身形<br>只为<br>让渺小的事物不虚此行。</p>
 
           
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2014/03/30/2014.3.29-北京晴、深圳阴/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1444,6 +1666,8 @@ Mu带头找
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -1457,18 +1681,27 @@ Mu带头找
       
         
           
-          想出去走走，看了眼地铁站点图，换好鞋子拿上耳机。
-出门时心想着去动物园的，可没走到地铁站心里就反悔了。我是喜欢动物，但是还是受不了看到他们被关在里面被外面另外一种动物隔笼玩弄的样子。这跟我喜欢孩子，受不了他们老被困在教室里一样。有些动物，我以为圈养他们是有罪的。
-那去哪儿呢。
-地铁载着还没想好目的地
-          ...
+            <p>想出去走走，看了眼地铁站点图，换好鞋子拿上耳机。</p>
+<p>出门时心想着去动物园的，可没走到地铁站心里就反悔了。我是喜欢动物，但是还是受不了看到他们被关在里面被外面另外一种动物隔笼玩弄的样子。这跟我喜欢孩子，受不了他们老被困在教室里一样。有些动物，我以为圈养他们是有罪的。</p>
+<p>那去哪儿呢。</p>
+<p>地铁载着还没想好目的地的我，径直往他的目的地行驶着…</p>
+<p>在我看到地铁站点图上，四号线安河桥北站时，我知道了此行我要去哪儿了。</p>
+<p>之前有下载宋冬野那个胖子的《安河桥北》专辑来听，里面的安河桥很好听，是我喜欢的；关忆北，我也喜欢；董小姐也收在其中。莫名想去看看胖子言及的安河桥，看看“安河桥下清澈的水”。（那些以地名命名的歌我都好喜欢，像小西口、钟鼓楼、霞飞路87号、安河桥…）</p>
+<p>地铁载着已和他有一样目的地的我继续向前行驶着，《安河桥北》专辑开始循环一遍遍播着。心里一下就明亮了。</p>
+<p>安河桥北，在北五环，地铁四号线北边终点站。</p>
+<p>当我走出地铁，看到的情景跟北京城里已经很不一样了，不再是车水马龙，也不会高楼林立。是那种看着安稳的景况。我买了个冷饮，好借故问老板安河桥怎么走，老板热心告知后，我开始往他指引的方向走去…</p>
+<p><img src="/image/图/安河桥01.jpg" alt="安河桥"><br><img src="/image/图/安河桥02.jpg" alt="安河桥"></p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2014/03/09/Life's/安河桥/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1486,7 +1719,6 @@ Mu带头找
 
 
     
-
   </section>
 
   
@@ -1537,47 +1769,46 @@ Mu带头找
             </a>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">4</span>
-              <span class="site-state-item-name">分类</span>
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
               </a>
-          </div>
+            </div>
+          
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">10</span>
-              <span class="site-state-item-name">标签</span>
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">标签</span>
               </a>
-          </div>
+            </div>
+          
 
         </nav>
 
         
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
 
         <div class="links-of-author motion-element">
           
             
               <span class="links-of-author-item">
-                <a href="https://github.com/w4mxl" target="_blank">
+                <a href="https://github.com/w4mxl" target="_blank" title="GitHub">
                   
-                    <i class="fa fa-globe"></i> github
+                    <i class="fa fa-fw fa-github"></i>
                   
+                  GitHub
                 </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="https://twitter.com/w4mxl" target="_blank">
+                <a href="https://twitter.com/w4mxl" target="_blank" title="Twitter">
                   
-                    <i class="fa fa-globe"></i> twitter
+                    <i class="fa fa-fw fa-twitter"></i>
                   
+                  Twitter
                 </a>
               </span>
             
@@ -1587,9 +1818,8 @@ Mu带头找
         
         
 
-        <div class="links-of-author motion-element">
-          
-        </div>
+        
+        
 
       </section>
 
@@ -1610,7 +1840,7 @@ Mu带头找
   &copy; 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-next-heart fa fa-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Wml</span>
 </div>
@@ -1626,59 +1856,81 @@ Mu带头找
   </a>
 </div>
 
+        
 
-
+        
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
 
   
 
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
 
   
 
 
 
+  
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
+  
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
+  
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.0"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.0.0"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
 
 
 
   
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
 
 
 
@@ -1703,16 +1955,20 @@ Mu带头找
 
   
     
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
   
 
 
 
 
 
+
   
   
 
   
+
   
 
   
@@ -1746,6 +2002,14 @@ Mu带头找
 
             $(element).find(COUNT_CONTAINER_REF).text(time);
           }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
         })
         .fail(function (object, error) {
           console.log("Error: " + error.code + " " + error.message);
@@ -1776,6 +2040,12 @@ Mu带头找
             });
           } else {
             var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
             newcounter.set("title", title);
             newcounter.set("url", url);
             newcounter.set("time", 1);
@@ -1808,6 +2078,7 @@ Mu带头找
 
 
 
+  
 
 </body>
 </html>

@@ -27,18 +27,57 @@
 
 
 
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
 
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Menlo:300,300italic,400,400italic,700,700italic|mononoki:300,300italic,400,400italic,700,700italic|mononoki:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -47,12 +86,10 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="Wml'Blog" type="application/atom+xml" />
 
 
 
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -75,7 +112,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     scheme: 'Pisces',
-    sidebar: '[object Object]',
+    sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -84,6 +121,11 @@
     }
   };
 </script>
+
+
+
+
+  <link rel="canonical" href="https://w4mxl.github.io/page/12/"/>
 
   <title> Wml'Blog </title>
 </head>
@@ -103,6 +145,10 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
+
+
+
+
 
 
 
@@ -143,13 +189,13 @@
   
 
   
-    <ul id="menu" class="menu ">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -159,7 +205,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -169,7 +215,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -179,15 +225,13 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
         </li>
       
 
-      
-      
       
     </ul>
   
@@ -204,17 +248,6 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
-
-    
-
-    
-    
-      
-      
-
-      
-    
-
     
       
 
@@ -301,6 +334,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -314,15 +349,25 @@
       
         
           
-          是下午在上离散数学的课间知道AI（艾弗森）自己声明退役的，第二节离散课上的都思想不怎么集中。NBA不该让他退役的，没有理由让一个球坛巨星在他尚且年盛气旺时就抛弃他，何况这人是AI。一个如此血气方刚又如此可爱的AI，你怎么就决定要离开了呢？！舍不得你走啊。 冥冥之中我觉得你一定还会回来的，从你的退役声
-          ...
+            <p>是下午在上离散数学的课间知道AI（艾弗森）自己声明退役的，第二节离散课上的都思想不怎么集中。NBA不该让他退役的，没有理由让一个球坛巨星在他尚且年盛气旺时就抛弃他，何况这人是AI。一个如此血气方刚又如此可爱的AI，你怎么就决定要离开了呢？！舍不得你走啊。 冥冥之中我觉得你一定还会回来的，从你的退役声明里显露出你的不舍，而你亦知我们这些爱你的球迷的不舍，还有你那些NBA里的铁哥们。</p>
+<p>AI的退役声明(译文）：</p>
+<p>献给所有热爱我的球迷：<br>我现在想要宣布我退役的计划。我一直以为，当我离开赛场的时候，那肯定是因为我无法再帮助球队拿下比赛的胜利了。然而现在却不是这种情况。<br>我现在仍然对比赛有着很深的热爱，我渴望上场打球，我仍然有很多心愿没有达成，我一直坚信自己仍然能够打出很好的水平。<br>现在离开比赛会让我有更多的时间陪伴我的妻子和孩子。我虽然在篮球场上获得了很多荣誉，但却从来没有时间去回报我的家人，这也许是对他们一个最好的回报。能够一直和家人在一起对我来说就是最好的礼物，我一直期盼着这一天的到来。<br>我想感谢一直支持我的赞助公司，他们整个职业生涯都给了我很大的支持，无论是我职业生涯的高潮还是低估，他们都一直支持着我。我已经享受了13个非常美妙的赛季，我很感激我在NBA经历的一切。<br>我退役的消息我想先让世界各地的球迷知道，这些球迷整个职业生涯都在支持着我。没有你们的支持，就没有今天的艾弗森。你们应该知道，我是打心底里感激你们的。谢谢！<br>然后我还要感谢迈克-乔丹、魔术师约翰逊、伊赛亚-托马斯、查尔斯-巴克利和拉里-伯德，是他们给了我打篮球的动力。<br>我要感谢我的母亲，是他在背后一直支持着我打到了今天，他一直鼓励着我前进。当然还有我的家人和我的朋友，他们从我一开始打球就一直支持着我。谢谢你们！<br>我要感谢我高中的教练迈克-贝利，还有我大学的教练约翰-桑普森，还有我在76人时的教练拉里-布朗，还有其他所有帮助过我的教练、队友、球队高层，他们在我的职业生涯中给我提供了很大的帮助，也谢谢你们！<br>而且我要特别感谢一下孟菲斯的人们。我没能为灰熊队打上一场真正的主场比赛，但是我想让你们知道，我是多么感激你们能够给我穿上灰熊战袍的这个机会，我要感谢灰熊队的高层，感谢这个城市给我的支持。我希望孟菲斯灰熊在本赛季后面的比赛中能够取得真正的成功。<br>最后，我要感谢我最热爱的城市：费城。在穿着76人队服比赛的日子里，我真的留下了很多非常美好的回忆。我要对费城的球迷说一声感谢。你们欢呼的声音对我来说永远是一种音乐。<br>上帝保佑所有人！</p>
+<p>阿伦-艾弗森</p>
+<p><img src="/image/图/艾弗森，我觉得你一定还会回来的01.jpg" alt=""><br><img src="/image/图/艾弗森，我觉得你一定还会回来的02.jpg" alt=""><br><img src="/image/图/艾弗森，我觉得你一定还会回来的03.jpg" alt=""></p>
+<p>（在费城76人的快乐时光）</p>
+<p>最后，回味一下AI未完的NBA神奇数据：<br>     四次联盟得分王（98-99，00-01，01-02，04-05）<br>　　七次成为联盟赛季场均出战时间最多球员（98-99，01-04，05-08）<br>　　三次联盟抢断王（00-03）<br>　　10次NBA全明星成员<br>　　两次全明星赛MVP（2001，2005）<br>　　2000-01赛季NBA常规赛MVP<br>　　三次NBA赛季最佳阵容第一队<br>　　三次NBA赛季最佳阵容第二队<br>　　一次NBA赛季最佳阵容第三队<br>　　另外他也在NBA历史记录册上多处留下了自己的名字：<br>　　罚球总命中数历史第10<br>　　罚球总出手数历史地14<br>　　运动战总进球数历史第23<br>　　运动战总出手数历史第12<br>　　总出战时间历史第38<br>　　总助攻数历史第36<br>　　总抢断数历史第12<br>　　总得分历史第17<br>　　场均得分历史第6<br>　　场均出战时间历史第4<br>　　场均抢断次数历史第6<br>（数据由meatfight统计）</p>
+<p><a href="espn.go.com/video/clip">espn.go.com/video/clip</a>这是ESPN采访史蒂芬-史密斯视频地址，交代了一些AI退役的具体情况。</p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2009/11/26/艾弗森，我觉得你一定还会回来的/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -425,6 +470,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -438,16 +485,19 @@
       
         
           
-          《夏天的尾巴》的影子在我小小的心里投射出暖暖的一塊，看了很多遍，還是會再看，那方綠綠的綠水稻田和藍藍的藍天，那斷斷續續的慢節拍的吉他插曲，那洋溢著搖滾氣息的熱心阿月、叛逆小子陳懷鈞、搞笑的“屎殼郎”、和有些些靦腆的林文莉，和那有個尾巴就能自找樂子的夏天。
-在豆瓣上看到很多《夏天的尾巴》的影評，許多朋
-          ...
+            <p>《夏天的尾巴》的影子在我小小的心里投射出暖暖的一塊，看了很多遍，還是會再看，那方綠綠的綠水稻田和藍藍的藍天，那斷斷續續的慢節拍的吉他插曲，那洋溢著搖滾氣息的熱心阿月、叛逆小子陳懷鈞、搞笑的“屎殼郎”、和有些些靦腆的林文莉，和那有個尾巴就能自找樂子的夏天。</p>
+<p>在豆瓣上看到很多《夏天的尾巴》的影評，許多朋友都說“我們大陸絕對拍不出這樣好的青春片”，大陸導演太“深刻”，喜歡“以很深的主題來立意”，呵呵，雖然我對他們的這些說法不是深以為然，但在內地的確沒看到這種皆碑的好片。亦或是我看片太少，眼光太拙。<br>PS.望荐。分享=快乐+快乐。</p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2009/11/20/《夏天的尾巴》的影子/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -550,6 +600,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -563,15 +615,20 @@
       
         
           
-          22:25 2009-11-5首先，我不太懂，为什么在最后“我”先说明克里斯下狠劲上到了大学，之后当上了执业律师而后又要说克里斯是在好心劝架的情况下被意外杀害？！(有谁能告诉我？！）He was stabbed in the throat.He died almost instantly.Altho
-          ...
+            <p>22:25 2009-11-5<br>首先，<br>我不太懂，为什么在最后“我”先说明克里斯下狠劲上到了大学，之后当上了执业律师而后又要说克里斯是在好心劝架的情况下被意外杀害？！(有谁能告诉我？！）<br>He was stabbed in the throat.He died almost instantly.<br>Although I hadn’t seen him in more than ten years,I know I’ll miss him forever.<br>I never had any friends later on like the ones I had when I was twelve.<br>Jesus,doed anyone?</p>
+<p><img src="/image/图/观《伴我同行》01.jpg" alt=""></p>
+<p>这段话，是整部片子的点睛。<br>我们都是这样，那些小时候玩的很铁的哥们，渐渐地大了、疏远了，成了我们生命中的过客，这是难免的。而更多的朋友则是跟路上的行人一样，一闪即逝。有些人I’ll miss them forever，有些人会在我的回忆里留下一段虽短但足够清晰地影像。而我想，当若干年以后，在我老的没剩下一颗牙齿，我也能靠着对这世界的回忆咀嚼出甜甜的味来。<br>Lastly，我祝愿所有“在路上”的朋友能高唱着自己谱的人生之曲厚道的走下去…</p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2009/11/05/观《伴我同行》/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -674,6 +731,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -687,15 +746,21 @@
       
         
           
-          19:55 2009-11-2LG，明天你生日，happy birthday！= =提到你生日，莫名有些愧意。想想，即便是对你最痴情的最热火朝天的喜欢的那几年我也没好好的为你好过生日，没送过你什么难忘的礼物。后来看的小说多了，才知是我那时只顾对你“好”，不懂得恋爱时“坏”比“好”更好的道理了。谁叫我
-          ...
+            <p>19:55 2009-11-2<br>LG，明天你生日，happy birthday！<br>= =<br>提到你生日，莫名有些愧意。想想，即便是对你最痴情的最热火朝天的喜欢的那几年我也没好好的为你好过生日，没送过你什么难忘的礼物。后来看的小说多了，才知是我那时只顾对你“好”，不懂得恋爱时“坏”比“好”更好的道理了。谁叫我是个“好”孩子呢(^o^)！其实倘若我没去想会影响到各自的学习，也会风尘仆仆的骑单车翘课载你去看电影吧；倘若不是我怕你再也不理我还怕被人看到，大概也会面红耳赤的去牵住你的手在学校的小操场一圈一圈的溜达吧， 。。。大概很多都会有的吧，可是为什么现在我使劲去回忆也还是白茫茫一片，很像这两天徐州早晨的天空。。。。现在扯这些真是很有些大言不惭。</p>
+<p>天凉了，注意自己身体。其实，不管我们怎样，那段时光都不变了，像被烙在奴隶脸上的伤注定一辈子留着。</p>
+<p>晚上我会回宿舍用吉他弹happy birthday给你听，不知你能否听到？！</p>
+<p>木</p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2009/11/02/Happy-Birthday/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -798,6 +863,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -811,17 +878,71 @@
       
         
           
-          0:03 2009-10-18《悲恋三人行》 （泰国）FAH YU NUM 悲伤而执着的三个人、、、
-13:09 2009-10-18“如果我不写作，我会屠杀全世界的” 杜拉斯
-21:21 2009-10-23贾樟柯—《小武》、《三峡好人》《小武》看过了，后者下载没成功。贾这两部片子是前几天雪小禅在
-          ...
+            <p>0:03 2009-10-18<br>《悲恋三人行》 （泰国）<br>FAH YU NUM 悲伤而执着的三个人、、、</p>
+<p>13:09 2009-10-18<br>“如果我不写作，我会屠杀全世界的” 杜拉斯</p>
+<p>21:21 2009-10-23<br>贾樟柯—《小武》、《三峡好人》<br>《小武》看过了，后者下载没成功。贾这两部片子是前几天雪小禅在做客腾讯谈她的新书《啊，青春》时偶然听到的。我喜欢去看或去读自己喜欢的人喜欢的电影或书的，大概就是爱屋及乌吧，既然雪小禅很看好贾的影片，那我觉得贾也应该很合我的口味的吧。</p>
+<p>看《小武》，觉得贾真是有些特别，视角很底层、焦点对准小人物是片子给人的直接感受，而更深些的内容我能体会到些许，只是没有语言的再表达能力。</p>
+<p>其实我自己一直觉得小人物才是我们整个社会的“大家”，“大众”，就像是金字塔的底层是它的根一样。小人物才该得到更大更多更广泛的关注，他们的生活质量和幸福程度才是这个社会的最佳评判标准，而不能一味的把镜头都对准那些明星、大腕儿，甚至连他们的私生活都不放过悉数曝光。有那个必要吗？！该关注的不关注，不用关注的拼了命的捕捉，不是很可笑又很让人觉得可惜吗？！</p>
+<p>09胡润IT富豪榜<br>（前五位）</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">（亿元）</th>
+<th style="text-align:left">姓名</th>
+<th style="text-align:center">公司</th>
+<th style="text-align:left">行业</th>
+<th style="text-align:center">总部</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">239</td>
+<td style="text-align:left">马化腾</td>
+<td style="text-align:center">腾讯</td>
+<td style="text-align:left">即时通讯 门户网站 在线游戏 C2C</td>
+<td style="text-align:center">广东</td>
+</tr>
+<tr>
+<td style="text-align:center">175</td>
+<td style="text-align:left">丁磊</td>
+<td style="text-align:center">网易</td>
+<td style="text-align:left">门户网站 在线游戏</td>
+<td style="text-align:center">广东</td>
+</tr>
+<tr>
+<td style="text-align:center">150</td>
+<td style="text-align:left">李彦宏</td>
+<td style="text-align:center">百度</td>
+<td style="text-align:left">搜索引擎</td>
+<td style="text-align:center">北京</td>
+</tr>
+<tr>
+<td style="text-align:center">150</td>
+<td style="text-align:left">陈天桥家族</td>
+<td style="text-align:center">盛大网络</td>
+<td style="text-align:left">互动娱乐</td>
+<td style="text-align:center">上海</td>
+</tr>
+<tr>
+<td style="text-align:center">100</td>
+<td style="text-align:left">王传福</td>
+<td style="text-align:center">比亚迪</td>
+<td style="text-align:left">充电电池 手机零部件</td>
+<td style="text-align:center">广东</td>
+</tr>
+</tbody>
+</table>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2009/10/24/“杂”文/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -924,6 +1045,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -937,15 +1060,21 @@
       
         
           
-          他是傻子，他总是笑嘻嘻，对谁都是。明明不是他烧了钢琴，被老师、同学误解，妈妈受屈，他也不说出是善书。看到她回来，他喜悦地忘记了掉了鞋。她对他说永远不要再见到你，他就躲在暗处看她，被她发现就害怕的一直说“对不起、对不起”，十几年没忘。她第一次上台钢琴表演，不知所措的愣了，只有他会帮她，以他的方式。看到
-          ...
+            <p>他是傻子，他总是笑嘻嘻，对谁都是。明明不是他烧了钢琴，被老师、同学误解，妈妈受屈，他也不说出是善书。看到她回来，他喜悦地忘记了掉了鞋。她对他说永远不要再见到你，他就躲在暗处看她，被她发现就害怕的一直说“对不起、对不起”，十几年没忘。她第一次上台钢琴表演，不知所措的愣了，只有他会帮她，以他的方式。看到她弹了，笑；看到她在阳台上，笑；终于等到她回来了，笑。她跟他说可以见他，他开心极了，绕着整个镇子雀跃，开心的对老者鞠躬说“你好”。他早上起来第一件事是要做早餐给妹妹，要盖上很多层才能保温。她给他一双鞋，他开心的在院子里转圈，雪地里，一圈一圈，他太开心。母亲说，你是我留给妹妹的最好的礼物，他懂了，他要把妹妹照顾好，不管怎样也要。他相信她的钢琴声能唤出星星，让爸爸妈妈出来，他说你的琴声会让世界更美好、更可爱。他也知道去为善书挡那几块砖头，要不就善书就不能给妹妹换肾了，他知道。他从不撒谎。他要死了，他说妈妈我害怕，他是怕妹妹没人照顾，他怕妹妹剩一个人。</p>
+<p>这就是我刚才看的韩国电影《傻瓜》里的傻子成荣，可是傻子有什么不好，傻子才能爱一个人爱得那么完全彻底不顾一切，他不懂爱，却爱的最是好，我们不能。傻子才能整天的嘴角挂着笑，从不管别人怎么看自己，觉得开心就直接笑就跳，我们不能。傻子才能完全用心在要做的事上，等她、做早餐给妹妹、做三明治攒钱，因为他没我们聪明，他不知道分心。</p>
+<p>我老家的村里也有个傻子，村里人都叫他小龙。他也老是会笑，没什么手艺，一直帮着家里人种田和做体力活。村里人都说他好，因为不论哪家有什么大的体力活，老头儿老奶奶叫他，他都会笑着跑过来帮忙做好，事完了还是笑着走开。小时侯我们几个屁孩常常没大没小的跟他闹，他全不在意，还是笑着跟我们一起。后来我有问过奶奶他的事，奶奶说了些，可我现在只记得奶奶说过他跟我爸爸是同年生的，其他的都忘了。到高中以后，我就按月才回家里一趟，很多次在要到家的路上就会看到他，他还是照常笑，我会朝他喊“小龙啊”，然后过去摸摸他的手，他就笑得更厉害了，我还常傻傻的问他吃过没，好像个大人似的，现在想来挺搞笑的。我突然想到，有可能拍《傻瓜》的导演以前村里也有一个这样的傻瓜，这样一个也让他久久难忘的人，他是在用他最熟悉的方式来阐释他村里的那个傻瓜。</p>
+<p>如果真是这样，那我想对导演说，你拍得真好。xiexie.</p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2009/10/17/《傻瓜》ba-bo？！/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1048,6 +1177,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -1061,15 +1192,19 @@
       
         
           
-          这周过的好快啊，每天忙停当了瞄一眼手机都过零点。然后就懒得上来了，在桌面的记事本里快而简单的写上两句，爬上床了。习惯了上床后打开手机上的UCWEB，每次它都会很贴心的显示一句：木小浪，夜深了，请注意休息。可睡觉总还是要在我看完在上面RSS订阅的博客和IT类新闻更新之后才安心的。呵呵，好像每天都会这样
-          ...
+            <p>这周过的好快啊，每天忙停当了瞄一眼手机都过零点。然后就懒得上来了，在桌面的记事本里快而简单的写上两句，爬上床了。习惯了上床后打开手机上的UCWEB，每次它都会很贴心的显示一句：木小浪，夜深了，请注意休息。可睡觉总还是要在我看完在上面RSS订阅的博客和IT类新闻更新之后才安心的。呵呵，好像每天都会这样，有些事。有些事就是这样，一次就爱上了，就像邂逅了一个不错的女孩以后。</p>
+<p>（记事本上的这周）<br><img src="/image/图/好快，这周01.jpg" alt=""></p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2009/10/16/好快，这周/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1172,6 +1307,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -1185,15 +1322,18 @@
       
         
           
-          总是一次又一次不小心走进悲伤的森林以为已经沉睡的恋情又在午夜里惊醒总是不知不觉地想起你惊慌失措的眼睛就算已经远走的背影依然靠在我怀里孤孤单单一个人走在丽影双双的街头忘了我在找什么等待明天还是往回走总是在失去以后才想再拥有如果时光能够倒流夜空那幕烟火映在你的心里是否触痛尘封的记忆总是在离别以后才想再回
-          ...
+            <p>总是一次又一次不小心<br>走进悲伤的森林<br>以为已经沉睡的恋情<br>又在午夜里惊醒<br>总是不知不觉地想起你<br>惊慌失措的眼睛<br>就算已经远走的背影<br>依然靠在我怀里<br>孤孤单单一个人<br>走在丽影双双的街头<br>忘了我在找什么<br>等待明天还是往回走<br>总是在失去以后<br>才想再拥有<br>如果时光能够倒流<br>夜空那幕烟火<br>映在你的心里<br>是否触痛尘封的记忆<br>总是在离别以后<br>才想再回头<br>不管重新等待多寂寞<br>夜空那幕烟火<br>映在我的心底<br>是无穷无尽的永久<br>总是一次又一次不小心<br>走进悲伤的森林<br>以为已经沉睡的恋情<br>又在午夜里惊醒<br>总是不知不觉地想起你<br>惊慌失措的眼睛<br>就算已经远走的背影<br>依然靠在我怀里<br>孤孤单单一个人<br>走在丽影双双的街头<br>忘了我在找什么<br>等待明天还是往回走<br>总是在失去以后<br>才想再拥有<br>如果时光能够倒流<br>夜空那幕烟火<br>映在你的心里<br>是否触痛尘封的记忆<br>总是在离别以后<br>才想再回头<br>不管重新等待多寂寞<br>夜空那幕烟火映在我的心底<br>是无穷无尽的永久<br>夜空那幕烟火<br>映在我的心底<br>是无穷无尽的永久</p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2009/10/10/烟火-吴奇隆/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1296,6 +1436,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -1309,15 +1451,25 @@
       
         
           
-          前天看了吉赛贝.托纳多雷的《THE LEGEND OF 1900》，后来在豆瓣电影里稍微了解了一下这位影人，这才知道他的诸多不凡，是位很了不起的人。在这个过程中，又知道了他还有另外两部叫好叫座的电影，一是《天堂电影院》，两外一部是《西西里的美丽传说》。前者是第62届奥斯卡最佳外语片奖得主，当然它还有
-          ...
+            <p>前天看了吉赛贝.托纳多雷的《THE LEGEND OF 1900》，后来在豆瓣电影里稍微了解了一下这位影人，这才知道他的诸多不凡，是位很了不起的人。在这个过程中，又知道了他还有另外两部叫好叫座的电影，一是《天堂电影院》，两外一部是《西西里的美丽传说》。前者是第62届奥斯卡最佳外语片奖得主，当然它还有很多很多其他的电影奖项，不过我现在说不上来了。</p>
+<p>今天下午找到时间把《天堂电影院》看了，说再多的赞美的话也不能锦上添花，索性就不说吧！对于有口皆碑的东西，徒添评论倒显得繁赘。</p>
+<p><img src="/image/图/天堂电影院01.jpg" alt=""></p>
+<p><strong>艾弗多（爷爷）：</strong><br>不准回来，<br>不准想我们，<br>不准回头，不准写信，<br>想家时要熬住，忘了我们，<br>要是你失败逃回来，<br>就别想来见我，懂吗？</p>
+<p><strong>多多：</strong><br>谢谢！你为我做的一切！</p>
+<p><strong>艾弗多（爷爷）：</strong><br>要热爱你的工作，<br>就像小时候，<br>热爱放映机。</p>
+<p>ps.看到这段时让我一下想起了两首诗：<br>一是老毛的，<br>男儿立志出乡关，学不成名誓不还；埋骨何须桑梓地，人生无处不青山！<br>再一是周恩来的，<br>大江歌罢掉头东，邃密群科济世穷。面壁十年图破壁，难酬蹈海亦英雄。<br>（高中时老邰每节语文课之前都要我们背诵这首，很想念老邰！）</p>
+<p><img src="/image/图/天堂电影院02.jpg" alt=""><br>多多在艾弗多（爷爷）葬礼时还是回来了</p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2009/10/07/电影院/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1420,6 +1572,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -1433,15 +1587,18 @@
       
         
           
-          今天看了《THE LEGEND OF 1900》（超不喜欢那个中译名），上午看了遍，下午又看了遍。刚去了豆瓣才知道自己有多菜，人这部电影1998就出来了，我这才发现这个宝。尽管这样，还是压抑不住想过来SHOW一下:-D。 也算是给看过的回味回味。这就是我今天想大肆说的电影THE LEGEND OF 
-          ...
+            <p>今天看了《THE LEGEND OF 1900》（超不喜欢那个中译名），上午看了遍，下午又看了遍。刚去了豆瓣才知道自己有多菜，人这部电影1998就出来了，我这才发现这个宝。尽管这样，还是压抑不住想过来SHOW一下:-D。 也算是给看过的回味回味。<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）01.jpg" alt=""><br>这就是我今天想大肆说的电影THE LEGEND OF 1900（中译为《海上钢琴师》，个人感觉这名译的太烂了，连原名中Legend这层含义都没阐释到，跟《西游记》被翻译成Journey to the West(英文版)大概是一个道理。<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）02.jpg" alt=""><br>剧作者：GIUSEPPE TORNATORE 吉赛贝.托纳多雷（意大利），去豆瓣看了知道他还有三部曲中还有两部，找机会看<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）03.jpg" alt=""><br>改编自：小说《Novecento》（《新世纪》）作者：ALESSANDRO BARICCO 阿列山德罗.巴里科<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）04.jpg" alt=""><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）05.jpg" alt=""><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）06.jpg" alt=""><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）07.jpg" alt=""><br>因为这，我都对去美国有憧憬了！！！<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）08.jpg" alt=""><br>就因为丹尼的即兴，有了“1990” ，然后开始了传奇<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）09.jpg" alt=""><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）10.jpg" alt=""><br>像船一样的摇篮随着这艘大船，荡啊荡，我们的1900要睡觉了<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）11.jpg" alt=""><br>1900的钢琴天赋崭露头角，孩子的天真、琴音的跳跃，真不可思议<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）12.jpg" alt=""><br>我一听到就喷笑，得到了丹尼的真传啊( ^_^ )，听老外说Fuck听一次笑一次，这次还是从个孩子嘴里说出来，帅<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）13.jpg" alt=""><br>美吧，真想把这段视频剪切下粘过来：船在大海中剧烈的摇晃，钢琴跟着在大厅里飘荡，而琴声就这么神奇的缓缓的流淌出来。。。。<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）14.jpg" alt=""><br>他不只为头等舱的人演奏<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）15.jpg" alt=""><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）16.jpg" alt=""><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）17.jpg" alt=""><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）18.jpg" alt=""><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）19.jpg" alt=""><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）19.5.jpg" alt=""><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）20.jpg" alt=""><br>斗琴开始了，也是全片的经典。…|| ||<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）21.jpg" alt=""><br>全场惊呆！！！<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）22.jpg" alt=""><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）23.jpg" alt=""><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）24.jpg" alt=""><br>这三张可以看作是1900的成长历程照 （this is all)</p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2009/10/05/THE-LEGEND-OF-1900（海上钢琴师）/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1459,7 +1616,6 @@
 
 
     
-
   </section>
 
   
@@ -1510,47 +1666,46 @@
             </a>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">4</span>
-              <span class="site-state-item-name">分类</span>
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
               </a>
-          </div>
+            </div>
+          
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">10</span>
-              <span class="site-state-item-name">标签</span>
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">标签</span>
               </a>
-          </div>
+            </div>
+          
 
         </nav>
 
         
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
 
         <div class="links-of-author motion-element">
           
             
               <span class="links-of-author-item">
-                <a href="https://github.com/w4mxl" target="_blank">
+                <a href="https://github.com/w4mxl" target="_blank" title="GitHub">
                   
-                    <i class="fa fa-globe"></i> github
+                    <i class="fa fa-fw fa-github"></i>
                   
+                  GitHub
                 </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="https://twitter.com/w4mxl" target="_blank">
+                <a href="https://twitter.com/w4mxl" target="_blank" title="Twitter">
                   
-                    <i class="fa fa-globe"></i> twitter
+                    <i class="fa fa-fw fa-twitter"></i>
                   
+                  Twitter
                 </a>
               </span>
             
@@ -1560,9 +1715,8 @@
         
         
 
-        <div class="links-of-author motion-element">
-          
-        </div>
+        
+        
 
       </section>
 
@@ -1583,7 +1737,7 @@
   &copy; 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-next-heart fa fa-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Wml</span>
 </div>
@@ -1599,59 +1753,81 @@
   </a>
 </div>
 
+        
 
-
+        
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
 
   
 
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
 
   
 
 
 
+  
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
+  
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
+  
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.0"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.0.0"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
 
 
 
   
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
 
 
 
@@ -1676,16 +1852,20 @@
 
   
     
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
   
 
 
 
 
 
+
   
   
 
   
+
   
 
   
@@ -1719,6 +1899,14 @@
 
             $(element).find(COUNT_CONTAINER_REF).text(time);
           }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
         })
         .fail(function (object, error) {
           console.log("Error: " + error.code + " " + error.message);
@@ -1749,6 +1937,12 @@
             });
           } else {
             var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
             newcounter.set("title", title);
             newcounter.set("url", url);
             newcounter.set("time", 1);
@@ -1781,6 +1975,7 @@
 
 
 
+  
 
 </body>
 </html>

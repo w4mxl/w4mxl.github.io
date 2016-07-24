@@ -27,18 +27,57 @@
 
 
 
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
 
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Menlo:300,300italic,400,400italic,700,700italic|mononoki:300,300italic,400,400italic,700,700italic|mononoki:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -47,12 +86,10 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="Wml'Blog" type="application/atom+xml" />
 
 
 
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -75,7 +112,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     scheme: 'Pisces',
-    sidebar: '[object Object]',
+    sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -84,6 +121,11 @@
     }
   };
 </script>
+
+
+
+
+  <link rel="canonical" href="https://w4mxl.github.io/page/6/"/>
 
   <title> Wml'Blog </title>
 </head>
@@ -103,6 +145,10 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
+
+
+
+
 
 
 
@@ -143,13 +189,13 @@
   
 
   
-    <ul id="menu" class="menu ">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -159,7 +205,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -169,7 +215,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -179,15 +225,13 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
         </li>
       
 
-      
-      
       
     </ul>
   
@@ -204,17 +248,6 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
-
-    
-
-    
-    
-      
-      
-
-      
-    
-
     
       
 
@@ -301,6 +334,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -314,16 +349,22 @@
       
         
           
-          　　很快的，北京冬了。想来，在北京跟朋友们之间好像就没说到过秋。这儿秋好似读者原创版两篇长文中间夹杂的诗从，你不经意也就翻过去了。倘若有心读之，亦觉得很美。红枫黄叶，秋风起之，摇摇曳曳，肆意斑斓。
-　　来北京一年多了，一天天看，一天天感受。最近发现自己想追求的东西有点变化了，那些看到的人做事，谈论有
-          ...
+            <p>　　很快的，北京冬了。想来，在北京跟朋友们之间好像就没说到过秋。这儿秋好似读者原创版两篇长文中间夹杂的诗从，你不经意也就翻过去了。倘若有心读之，亦觉得很美。红枫黄叶，秋风起之，摇摇曳曳，肆意斑斓。</p>
+<p>　　来北京一年多了，一天天看，一天天感受。最近发现自己想追求的东西有点变化了，那些看到的人做事，谈论有些会给我以影响，让我觉得以前那些不敢想或没想过的事，自己努努力也是可以去做到的。以前是跟着现在慢慢是自己走着，想挖掘自己更多，也相信可以发掘出来，以便做出一些事情。只是自己常常还是会焦虑，陷进一个个问题，可以潜心交谈的人不多，需要一点点自救。</p>
+<p>　　上周末朋友 从昆山来北京玩，率性的一个人，周五请假飞过来，周日高铁回。尽管我提前告知了北京已冷，带厚衣，还是冷得出乎她的薄外套的料想。按先前说好的，带她去她倾心想去玩的，陪她吃她想吃的。她话不多，相比我倒成大话精了，为了打破长时间沉默，我开头说些无关痛痒的话。多有照顾不周。</p>
+<p>　　11.11，就算有些意义的话，也该是寂寞的一个日子，硬生生被taobao带头搞成全民购物狂欢节。呵呵，到时看订阅的又该数据满天飞了。不谈。</p>
+<p><img src="/image/图/很快的，北京冬了.jpg" alt=""><br><em>PS.还是你们好，总是陪着我</em></p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2013/11/12/Life's/很快的，北京冬了/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -426,6 +467,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -439,18 +482,20 @@
       
         
           
+            <center><br><iframe height="498" width="510" src="http://player.youku.com/embed/XNTc1MjE3NjIw" frameborder="0" allowfullscreen></iframe><br></center>
+
+<p><em>觉得好震撼</em></p>
+
           
-
-觉得好震撼
-
-          
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2013/06/28/Hello-Burj-Khalifa,Hello-World/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -553,6 +598,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -566,16 +613,22 @@
       
         
           
-          　　03年，他读初一。记得那年非典肆虐。举国恐慌。那时信息传播速度还远没现在迅捷。当小镇百姓都开始下意识抢购醋和板蓝根时，可想而知，非典已然相当严重了。
-　　不记得是谁呼吁的了，或许是语文老师或许是学校，让学生给在外地的亲人写一封信，贴邮票的那种，大致是普及一下他们知道的非典预防知识和注意事项等。他
-          ...
+            <p>　　03年，他读初一。记得那年非典肆虐。举国恐慌。那时信息传播速度还远没现在迅捷。当小镇百姓都开始下意识抢购醋和板蓝根时，可想而知，非典已然相当严重了。</p>
+<p>　　不记得是谁呼吁的了，或许是语文老师或许是学校，让学生给在外地的亲人写一封信，贴邮票的那种，大致是普及一下他们知道的非典预防知识和注意事项等。他记得那时他给父亲写了一封，挺长的，就像写一篇话题作文，傻傻很可爱。没想到的是，在上海的父亲还给他回了信。他是拿着信溜到学校的乒乓球台上读的，信的内容他多半印象模糊了，可是那段关于他名字的叙述印象深刻。父亲信里说，那年给他起名，本应依照家族谱以“金”字起，但是父亲没这样，取名“木林”，说独木难成林，然又是木又是林，日后便定能有所作为了。可他怎么也想不起来父亲为什么会在那封信里说起取名的事。</p>
+<p>　　一晃，这小子，今天已满二十四岁了。</p>
+<p>　　一路走来，他得到过许多人的帮助，他常提醒自己定要记得和回报。父亲不言一语的殷殷期许，他常以此激励自己要一直前行。</p>
+<p>　　一路走来，平坦坎坷。想来最让他欣慰的是，小时候做过的梦，他还在做。</p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2013/05/01/独木难成林/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -678,6 +731,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -691,17 +746,30 @@
       
         
           
-          xx，你好。
-　　想起以这种方式跟你说点什么时，我马上就不能安心敲代码了。心里开始码字，手也移开键盘迅速打开了手机上的便签。
-　　和你是那么久的朋友了，虽然这么些年和你聊的次数加起来都屈指可数（脚拇指也算的话），但自以为每次聊我们都是实诚的，推心置腹。去年忘了哪一天看到你签名变成“开始幸福生活”，为
-          ...
+            <p>xx，你好。</p>
+<p>　　想起以这种方式跟你说点什么时，我马上就不能安心敲代码了。心里开始码字，手也移开键盘迅速打开了手机上的便签。</p>
+<p>　　和你是那么久的朋友了，虽然这么些年和你聊的次数加起来都屈指可数（脚拇指也算的话），但自以为每次聊我们都是实诚的，推心置腹。去年忘了哪一天看到你签名变成“开始幸福生活”，为你开心，没问什么，你好就好，无需打扰。</p>
+<p>　　年前搞的小学同学十年聚会，你一个人来，想着好久没见，吃完饭有时间跟你聊聊，可是那天不自觉酒喝多，等到了KTV时一个人自顾自睡着了，到散场才被他们叫醒。我也奇了怪了，在KTV包间里他们连番上阵马不停蹄犬牙交错鬼哭狼嚎的，我是怎么睡的着的  :)，哎，怪只怪我那管睡眠的中枢神经，粗线条太壮硕。跟才子好不容易攒这么些人一起，我愣是给浪费了。</p>
+<p>　　直到回北京的前一天晚上，找到机会约你出来聊聊。你的幸福，竟跟我猜想的大相径庭。</p>
+<p>　　你在谈恋爱，我却没有看到或听出有那种恋爱着人的快乐。你说这些天的事情很烦。你说到了谈婚论嫁时就各种问题冒出来。你说在一起也就是过日子而已。你说就算真结婚了也不一定是多爱他。你说你已根本不相信有什么真正的爱情。你说“跟你说你也不会明白”…</p>
+<p>　　“我理解你的，但是…”，我几番努力，试图向你阐释我以为的爱情该是怎样怎样，你不该怎样怎样时，你示意我说的你都明白，但已然不再相信。我们争论，都觉得自己没错，已经没办法说服对方。争论显然是徒劳的。</p>
+<p>　　再后来，你笑着说，我说得那么好的样子，想要看看日后跟我结婚的女孩会是怎样的人。我笑说好，用事实让你相信是有美好的爱情的。</p>
+<p>　　我们不再多说，时间秒秒走过…</p>
+<p>　　后来我明白，我们彼时毕竟不在同一境地，我们嘴上都说理解，其实理解个毛，两个五毛不是一块。但我心里总是有个疙瘩。我写着这些给你，甲乙双方共勉，我也想明白了，实在没有必要想着去改变别人什么。你会走你的路，我有我的要走。至于幸福，冷暖自知。</p>
+<p>　　林夕写过一句歌词，我当作我对爱情的底线，“ 爱上一个人，一定要让她相信，这世界多么美好。 ”。就算是要我改变不美好的事实！只是觉得我现在不够好，是时候去做个更好的人。</p>
+<p>　　附，三毛的 <a href="http://soul.cn.yahoo.com/ypen/20120205/845777_1.html" target="_blank" rel="external">《一个男孩子的爱情》</a><br>　　xx，我的朋友，愿有人如是爱你。 </p>
+<p>wml<br>2013/3/22 17:12                                                                                            </p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2013/03/22/Life's/写给xx的一封信/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -804,6 +872,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -817,18 +887,29 @@
       
         
           
-          2013.2.23 星期六，跟“山海经户外”的六七十个朋友一起徒步了明十三陵。
-这是我来北京半年多，第一次跟这么多人一起出行。跟往常一个人走有些不一样，现在想也没什么不一样。
-有些人是第一次，一看就是菜鸟，就像我。后来看，无知无畏，他们也走完了十三个陵，走足二十二公里。
-有些人是老手，出行包里通常都
-          ...
+            <p>2013.2.23 星期六，跟“山海经户外”的六七十个朋友一起徒步了明十三陵。</p>
+<p>这是我来北京半年多，第一次跟这么多人一起出行。跟往常一个人走有些不一样，现在想也没什么不一样。</p>
+<p>有些人是第一次，一看就是菜鸟，就像我。后来看，无知无畏，他们也走完了十三个陵，走足二十二公里。</p>
+<p>有些人是老手，出行包里通常都要带着手电，羽绒服，干粮，自助锅…似乎没什么突发情况能让他们措手不及。</p>
+<p>有些人是一对，徒步成了遛弯。</p>
+<p>有些人是夫妻俩，或许是因为共同爱好走到了一起。一路上，你帮我，我帮你，看到的都是爱意。</p>
+<p>多数时间我跟着一个估摸着有五十多岁的一个老驴友后面，听碰面的人叫他南哥。他的装备塞满了背包，动作麻利，走南闯北过的样子。</p>
+<p>一路上，带着的中南海抽掉了一排，走过的树一排排，山一排排。</p>
+<p>大概是因为我干净无几的历史知识，这次徒步明十三陵，跟十三陵好像没什么关系。这有什么关系，玩的是徒步。 ：)</p>
+<p>路上听他们背十三陵的名字、说陵的故事，皇帝的奇闻轶事或历史事迹，有兴趣的我侧耳听听，没感觉的就走开。</p>
+<p>不是不喜欢物质，我喜欢自由。</p>
+<p><img src="/image/图/走，明十三陵01.png" alt=""><br><img src="/image/图/走，明十三陵02.jpg" alt=""><br><img src="/image/图/走，明十三陵03.jpg" alt=""><br><img src="/image/图/走，明十三陵04.jpg" alt=""><br><img src="/image/图/走，明十三陵05.jpg" alt=""><br><img src="/image/图/走，明十三陵06.jpg" alt=""></p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2013/02/25/走，明十三陵/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -931,6 +1012,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -944,20 +1027,32 @@
       
         
           
-          两首歌，近日一直听，还是想听。一首自勉；一首期望。想说：你好，别来无恙。
+            <p>两首歌，近日一直听，<br>还是想听。<br>一首自勉；一首期望。<br>想说：<br>你好，别来无恙。</p>
+<embed src="http://www.xiami.com/widget/557147_385438/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent">
 
+<h2 id="荒冢-by零点乐队"><a href="#荒冢-by零点乐队" class="headerlink" title="荒冢-by零点乐队"></a><em>荒冢-by零点乐队</em></h2><p>不知道我身在哪里<br>我生下以后会不会哭泣<br>不知道我要去哪里<br>我唱着没有祖国的歌谣</p>
+<p>我不知道你生在何处<br>你死的时候有没有人哭<br>我不知道你要去何处<br>你的墓碑指向苍凉的天空</p>
+<p><em>你走的时候唱着出塞歌谣<br>你青春年少不怕山水迢迢<br>你长发迎风对着天空狂笑<br>你的父老兄弟也为你骄傲</em></p>
+<p>可是你流浪<br>可曾找到要去的地方<br>你流浪<br>何处是梦里故乡</p>
+<p><embed src="http://www.xiami.com/widget/557147_377412/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></p>
+<h2 id="当爱已成往事-by张国荣"><a href="#当爱已成往事-by张国荣" class="headerlink" title="当爱已成往事  by张国荣"></a><em>当爱已成往事  by张国荣</em></h2><p>往事不要再提<br>人生已多风雨<br>纵然记忆抹不去<br>爱与恨都还在心里</p>
+<p>真的要断了过去<br>让明天好好继续<br>你就不要再苦苦追问我的消息</p>
+<p>爱情它是个难题<br>让人目眩神迷<br>忘了痛或许可以<br>忘了你却太不容易</p>
+<p>你不曾真的离去<br>你始终在我心里<br>我对你仍有爱意<br>我对自己无能为力</p>
+<p>因为我仍有梦<br>依然将你放在我心中<br>总是容易被往事打动<br>总是为了你心痛</p>
+<p>别留恋岁月中<br>我无意的柔情万种<br>不要问我是否再相逢<br>不要管我是否言不由衷</p>
+<p>为何你不懂<br>只要有爱就有痛<br>有一天你会知道<br>人生没有我并不会不同<br>人生已经太匆匆<br>我好害怕总是泪眼朦胧<br>忘了我就没有痛<br>将往事留在风中</p>
 
-荒冢-by零点乐队不知道我身在哪里我生下以后会不会哭泣不知道我要去哪里我唱着没有祖国的歌谣
-我不知道你生在何处你死的时候有没有人哭我不知道你要去何处你的墓碑指向苍凉的天空
-你走的时候唱着出塞歌谣你青春年少不怕山水迢迢你长发
-          ...
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2013/02/21/Life's/你好，别来无恙/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1060,6 +1155,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -1073,16 +1170,35 @@
       
         
           
-          　　回首，纯粹是我个人对过往不舍的絮叨。
-　　上次写回首还是08年，刹那间，四年光阴就这么悄然溜走了。这让我想起了今年夏天大家一起忙活毕业设计论文时，有段话被N多人用过，是这样说的，“岁月荏苒，光阴如梭。四年的大学生活让我学到很多很多…”。 - , -  。四年，还挺漫长的时间，我就琢磨，到底都用这
-          ...
+            <p>　　回首，纯粹是我个人对过往不舍的絮叨。</p>
+<p>　　上次写回首还是08年，刹那间，四年光阴就这么悄然溜走了。这让我想起了今年夏天大家一起忙活毕业设计论文时，有段话被N多人用过，是这样说的，“岁月荏苒，光阴如梭。四年的大学生活让我学到很多很多…”。 - , -  。四年，还挺漫长的时间，我就琢磨，到底都用这些时光做了什么？（好像要从“回首2012”变成“回首过去的四年”了 =_,= ）</p>
+<p>　　08年，于我，是结束是开始；12年，于我，又是一个结束和开始。</p>
+<p>　　08年夏，彼时进大学的心情，现在想来还是有点复杂的，对录取了我的这所大学有种不太满意，同时又不可抑止的对大学未知的生活有太多畅想。总体上那时的我，刚脱离了高中挤压式枯燥学习生活，还是满怀自由的乐天的开心的。后来四年的大学生活，用事实告诉我，当年那个夏天的太多畅想，就像日后一个少男对一个未曾谋面的少女的太多畅想一样，都是我单方面想多了。</p>
+<p>　　我挺想为我的大学生活写点什么的，可是想来想去，那么糊涂的就过来了，又有什么值得一写呢～不甘心又想了想，有几点我自己觉得还挺有意思的。</p>
+<p>　　1. 刚入学那会儿，自己对学校ｘｘ会ｘｘ组织不感冒，却为了有点文艺青年范报了学校吉他社。开始大伙都是学那几首入门曲子，生日歌、丁香花、童年…。几个月后，他们都能弹很多歌了，而我还是只会那几首。琴艺未见长进，倒是认识了些对音乐特别热爱的朋友，和他们接触多了还挺有意思的。后来跟其中一个朋友在徐州一个挺偏远的吉他工厂淘了一批吉他，我开淘宝店卖，他靠熟人卖，好像赚了一笔小钱。</p>
+<p>　　2. 徐州消费水平低，很多人都知道或者听说过。好像是大一哪天，我用3块5在路边买了份午饭，吃了一半，搁桌上没舍得扔，晚饭将剩下的一半给吃了。其实这事我早就忘了，也没什么，大一在路边买饭，正常都是3、4、5快的样子，只是后来此事被同屋四年的舍友大黄拿来嘲讽过我好几次，就留下了印象，想来挺好玩的。</p>
+<p>　　3. 大一大二利用周末打了很多临时工，二十出头的男孩，血气方刚，也不知是为了什么或者证明什么。通常活累且薪酬少的可怜，到周末还是奋不顾身求中介给活干。这些过程中交际到的一些人事，耳濡目染，对天朝社会也徒添了不少认识。有很多学生到周末出来打工，据我观察了解，大多数是为了给家里减轻负担，自己挣生活费，他们都看着特别独立，尤其是比我大的一些姐姐，干活特别利落，从没想过偷懒，也乐于帮像我这些粗手粗脚新来的。对这些，我是挺感慨的。快过年了，我祝福他们以后都好。我是相信，用不用我祝福他们以后的生活也一定会很好的。因为独立的人是可以掌握生活而不被生活奴役的。</p>
+<p>　　4. 走进编程的世界。“程序员”一词从我知道是什么意思之后，它在我心里就有了美感，就像我最开始喜欢一个姑娘的感觉一样。当初填志愿所有的专业栏我都写的“计算机科学与技术”，大有非此专业录取不读之势。后来在大学里陆续学习了不少编程技术，也自学了一些自己喜欢的，但是我得承认和坦白的是，我学的并不刻苦，每天也没用很多时间在写代码上。状态反复，一段时间很用心学，一段时间又丢下忙了别的。学贵坚持，我大学里，学业不精是有原因和应该自我反思的。如今混在IT行业，做android开发。我那时喜欢且学的算是不错的java知识对我后来学习android还是有很大帮助的。我要感谢一个老师，大学期间他曾给过我很多帮助，学习上生活上都有。我有一把学校机房旁边房间的钥匙，就是他让我配的。那个小房间连通机房，我随时可以出入，有过一段时间我就睡在里面，那是一段相当惬意的日子，只有我知。谢谢你，胡局新老师，谢谢你曾给过我的帮助。就像小学里的余爱顺老师、徐德广老师，初中里的梁星坚老师，高中的钟崇纪老师，是我学生时代给过我很多帮助的人，是我此生都该感谢的人。</p>
+<p>　　5. 喜欢跑步。大学里我是经常到操场跑步的。徐州地大天蓝，让我想跑。记得大一参加校运动会跑一万米还拿到奖留了影。你知道，一个优点不突出的人，有点料，总是不忘拿来抖的，就像我这样。后来常在下午吃晚饭前去跑步，每次跑步时抬腿甩臂都很骄傲。徐州地上虽然总是不干净，但是天上总是让我看着特别舒服，大大方方的蓝。夏末午后，我看完书或者打完DOTA去操场跑步，太阳把光集中照我身上，全身是汗我还狂追着太阳跑。我爱广阔天地任我一个人乱闯的狂想，心里特别豪迈，像游戏里的英雄，想到逐日的夸父。</p>
+<p>　　6. DOTA。  -  。 - ，你要是不知道它是什么玩意儿，那我也不想解释给你听。我是被大黄、蔡老板带上DOTA之路的，从菜鸟到说别人菜鸟，过程只有体内分泌的肾上腺素知道。我做事容易上头，玩DOTA也没例外，不尽兴不停，尽兴了停不了。Icefrog勾勒出的英雄世界，跟金庸古龙梁羽生的武侠世界一样，对我来说都是不能亵玩的，当真会带着一种霸气，无畏，和侠义。停，这不能说太多，因为可说的太多。</p>
+<p>　　操蛋，不是回首2012吗，都瞎扯了些什么。好吧，我错了。￢_￢  。</p>
+<p>　　2012，我有两件事自认做的相当对，一是因为对移动互联网喜欢和看好，从大学主学的JAVAEE转到移动互联网开发。二是，因为自小喜欢北京，就来了北京。</p>
+<p>　　2013，我要做的事挺多的，也作了些自己的打算，都需我亲力亲为，踏实做好。人总是容易说的特别漂亮，做的奇差无比。警告自己注意。</p>
+<p>　　今天立春，北京还是欢喜的下着雪，再过几日就要到的蛇年是我本命年。<br>　　<br>　　给不认识我的朋友说明一下，我不是12岁喔，是24岁。╮ (╯﹏╰）╭貌似是个冷笑话。</p>
+<p>　　不久前在一篇文章中读到一句话，这样说，“ 在我们还是单纯的孩子的时候，我们疯狂的想要长大，而当我们变得老练，圆滑之后，又开始后悔自己懂事太早，入世太快。 ” 我想说的是，我们都曾是涕泗横飞的单纯孩子，生气了就握拳头动手，话不投机就走，豪爽霸气不废话。时至今日，大了，许多人事需我们担当。但无论生活艰难还是优异，都别丢了纯真，失了棱角，都硬气别软别怂别圆滑。你我都不想日后自己老了后悔。还是趁年少，try more，好有料老了躺摇椅上跟儿孙唠。</p>
+<p>　　顺祝亲朋好友们，蛇年行大运，开心每一天。</p>
+<p>　　然后呢，然后就没有然后了。</p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2013/02/05/Life's/回首2012/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1185,6 +1301,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -1198,17 +1316,27 @@
       
         
           
-          昨天和朋友一起包了个面包车从学校搬到城南校区附近租住屋里。在那里进行暑假的复习。
-我们四个人，两间相邻的屋子。房东是叔叔、阿姨和他们两岁大的孩子，我喜欢他，分他半个西瓜。事实上，孩子我都喜欢。
-屋子没有独立卫生间，但有网可以上考研论坛，有太阳能可以洗澡，有窗子可以照进阳光，偶尔还有鸡鸣狗叫，所以很好
-          ...
+            <p>昨天和朋友一起包了个面包车从学校搬到城南校区附近租住屋里。在那里进行暑假的复习。</p>
+<p>我们四个人，两间相邻的屋子。房东是叔叔、阿姨和他们两岁大的孩子，我喜欢他，分他半个西瓜。事实上，孩子我都喜欢。</p>
+<p>屋子没有独立卫生间，但有网可以上考研论坛，有太阳能可以洗澡，有窗子可以照进阳光，偶尔还有鸡鸣狗叫，所以很好。</p>
+<p>昨天上午搬完，中午四人下了馆子，买点日用品，两个徐州本地人先回家几天。</p>
+<p>今天上午和我一间的连云港的雕兄也坐火车回去几天，现在这里就剩下我。。。PS.我是7号-17号和同学在无锡中软国际实习，学校安排的10天项目实习。之后从无锡坐高铁去了上海，在爸妈那待了一周，被爸妈恶补，23号从上海回的学校，让妈弄了十几个粽子+烤鸡翅+红烧肉带回学校解舍友馋。</p>
+<p>现在我坐在房间里，旁边放着一堆书，看看，想想，会有类似高三的感觉。。。这循环真他妈好玩。不好玩的是我还是没能如愿在北京。我想在北京自己做事情，做自己想做的事情。</p>
+<p>海子说，姐姐，今夜我不关心人类，我只想你…</p>
+<p>浪子说，今夜我不关心人类，我只想北京。</p>
+<p>后几月，尽努力，希如愿！</p>
+<p>记：xp前几天分享了《星空》，我看了，知道你当时看了会难过，希望你不难过。</p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2011/06/26/类似高三的感觉/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1311,6 +1439,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -1324,16 +1454,25 @@
       
         
           
-          这次想过来打点字是因为晚上看非诚勿扰[无聊时我最爱干的事]时被一男的所选择的生活方式所触动，是叫郭大浩的40岁的真男人_他因小时候看到的一个短报道触动，后立志以骑单车的方式环游世界，现今已经去了90多个国家。如果你也有触动到，那我想表达什么你懂的。。。
-小时候，。。。我是想说，那时侯读书里读到别人在
-          ...
+            <p>这次想过来打点字是因为晚上看非诚勿扰[无聊时我最爱干的事]时被一男的所选择的生活方式所触动，是叫郭大浩的40岁的真男人_他因小时候看到的一个短报道触动，后立志以骑单车的方式环游世界，现今已经去了90多个国家。如果你也有触动到，那我想表达什么你懂的。。。</p>
+<p>小时候，。。。我是想说，那时侯读书里读到别人在世界上行走，写下他们那些个感受，我真是羡慕的一塌糊涂，也萌，也在小心里对自己说自己有能力了也那么干，[你知道我要说“可是”了，所以我就省了不说了]。我想说，到现在，我们没像小时候愿想的那种种去干的原因有N个，但结果只一个，我们没那样干。就他妈这么真实！别逼着自己问为什么。也许若干年以后，或者就是某天，我们一个激动就真的踏上了小时候期想上的路_其实我们早就有了上面那个能力的。又或许若干年年年…以后，当我们想起小时候想的xx想法时，除了纠结，就是旧结。</p>
+<p>我不想想了，好高骛远这厮不是个好东西，做好每件想做、该做的小事才是正儿八经靠谱的。小时候我曾想过的xx想法，JUST DO IT也许最好。</p>
+<p>非诚勿扰这期中的李诗娴，就是跟前面提到的郭大浩走了，狠狠的祝福李诗娴和大浩同志一路幸福。李诗娴，她想法、见解，我一直很同道。所以很挺她的。她虽然已经都博士了，但一点不’呆’，她还说她也平时也不爱学习的，快考试了才特认真_(我知道，她玩幽默呢)，她也说到她智商有161，很神奇。。。我记得牛顿是195，达尔文165，一般普通人是100左右。</p>
+<p>PS.写这篇文字之前，到小北的空间看了两篇文章，第二篇《 我想你了，你却不知道……》，让我想到一下XP同学，小北的感受我不知道我是否感同身受，不过还是祝福你。。。你最后那句亮了。XP。。。</p>
+<p>我也许能又像刚刚认识你的时候，把你当成一个无足轻重的人。。。(这句话也是从小北的那文里偷来)</p>
+<p><img src="/image/图/那些航海环行的少年01.jpg" alt=""><br><em>上面这是我好久以前在青年文摘电子版里读到截下的，刚在文件夹里找了好久才找到。</em></p>
+<p><img src="/image/图/有些人真的不一样01.jpg" alt=""><br><em>这是我在找上面那张照片时顺看到的，是很久以前读小北文章看到后保存的，我也不知为什么想贴这里，算是各自鼓励吧。。。：)</em></p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2011/06/05/有些人真的不一样/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1436,6 +1575,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -1449,15 +1590,20 @@
       
         
           
-          近两天闲暇时狠读了些韩寒久远以前的博文，起先是打算从后向前一篇篇来的，读得兴起时被标题牵着走。原来他文字一向犀利，很多时候，读他的文章，像是看着一个战士拿着那种带刺刀的抢，他总不爱一枪毙命玩完，他更喜欢刀刀见血。（PS.相比我就寒不了，我DOTA时总爱首选火枪_意识里还是爱枪那种子弹出来的快感，而看
-          ...
+            <p>近两天闲暇时狠读了些韩寒久远以前的博文，起先是打算从后向前一篇篇来的，读得兴起时被标题牵着走。原来他文字一向犀利，很多时候，读他的文章，像是看着一个战士拿着那种带刺刀的抢，他总不爱一枪毙命玩完，他更喜欢刀刀见血。（PS.相比我就寒不了，我DOTA时总爱首选火枪_意识里还是爱枪那种子弹出来的快感，而看到血魔就很厌恶）。他言语还从不避讳，当然避讳就非他了，其实他也爱伪避讳，私下里则肆意讽刺。政府官员、AV女优、央视、业内…兴至即来。最让我HIGH的是读到真相，那些被险恶用心之人或遮蔽或美化起来的真相。他笑着把丑陋揭开在众目之下，你不得不酣畅淋漓，拍手称快。老实说，他把疤揭开后能产生什么神奇效果，我不得而知，但我深谙，如果没人这么做，那么那些疤或许哪天致了癌，将来会死人的！他至少让我们知道了些真相！</p>
+<p>所以，至此说声谢谢！</p>
+<p>也许，我们这个地处温带的大国，再寒寒就不寒了！</p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2011/05/20/寒寒就不寒了/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1475,7 +1621,6 @@
 
 
     
-
   </section>
 
   
@@ -1526,47 +1671,46 @@
             </a>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">4</span>
-              <span class="site-state-item-name">分类</span>
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
               </a>
-          </div>
+            </div>
+          
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">10</span>
-              <span class="site-state-item-name">标签</span>
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">标签</span>
               </a>
-          </div>
+            </div>
+          
 
         </nav>
 
         
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
 
         <div class="links-of-author motion-element">
           
             
               <span class="links-of-author-item">
-                <a href="https://github.com/w4mxl" target="_blank">
+                <a href="https://github.com/w4mxl" target="_blank" title="GitHub">
                   
-                    <i class="fa fa-globe"></i> github
+                    <i class="fa fa-fw fa-github"></i>
                   
+                  GitHub
                 </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="https://twitter.com/w4mxl" target="_blank">
+                <a href="https://twitter.com/w4mxl" target="_blank" title="Twitter">
                   
-                    <i class="fa fa-globe"></i> twitter
+                    <i class="fa fa-fw fa-twitter"></i>
                   
+                  Twitter
                 </a>
               </span>
             
@@ -1576,9 +1720,8 @@
         
         
 
-        <div class="links-of-author motion-element">
-          
-        </div>
+        
+        
 
       </section>
 
@@ -1599,7 +1742,7 @@
   &copy; 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-next-heart fa fa-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Wml</span>
 </div>
@@ -1615,59 +1758,81 @@
   </a>
 </div>
 
+        
 
-
+        
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
 
   
 
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
 
   
 
 
 
+  
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
+  
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
+  
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.0"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.0.0"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
 
 
 
   
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
 
 
 
@@ -1692,16 +1857,20 @@
 
   
     
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
   
 
 
 
 
 
+
   
   
 
   
+
   
 
   
@@ -1735,6 +1904,14 @@
 
             $(element).find(COUNT_CONTAINER_REF).text(time);
           }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
         })
         .fail(function (object, error) {
           console.log("Error: " + error.code + " " + error.message);
@@ -1765,6 +1942,12 @@
             });
           } else {
             var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
             newcounter.set("title", title);
             newcounter.set("url", url);
             newcounter.set("time", 1);
@@ -1797,6 +1980,7 @@
 
 
 
+  
 
 </body>
 </html>

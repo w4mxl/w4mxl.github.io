@@ -27,18 +27,57 @@
 
 
 
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
 
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Menlo:300,300italic,400,400italic,700,700italic|mononoki:300,300italic,400,400italic,700,700italic|mononoki:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -47,12 +86,10 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="Wml'Blog" type="application/atom+xml" />
 
 
 
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -75,7 +112,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     scheme: 'Pisces',
-    sidebar: '[object Object]',
+    sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -84,6 +121,11 @@
     }
   };
 </script>
+
+
+
+
+  <link rel="canonical" href="https://w4mxl.github.io/"/>
 
   <title> Wml'Blog </title>
 </head>
@@ -103,6 +145,10 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
+
+
+
+
 
 
 
@@ -143,13 +189,13 @@
   
 
   
-    <ul id="menu" class="menu ">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -159,7 +205,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -169,7 +215,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -179,15 +225,13 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
         </li>
       
 
-      
-      
       
     </ul>
   
@@ -204,21 +248,6 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
-
-    
-
-    
-    
-      
-      
-        
-        
-        
-      
-
-      
-    
-
     
       
 
@@ -305,6 +334,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -318,16 +349,49 @@
       
         
           
-          今天 Google 较之往年提前2个月发布了 Android N 的开发者预览版，按耐不住，折腾起来。
-同时 Android Beta Program 也被发布。通过注册这个预览体验项目来获取 Android N 。后续还可以通过 OTA 的方式来获取更新，再也不必像过去必须通过刷机的方式来获得了。
-          ...
+            <p>今天 Google 较之往年提前2个月发布了 Android N 的开发者预览版，按耐不住，折腾起来。</p>
+<p>同时 <a href="https://www.google.com/android/beta" target="_blank" rel="external">Android Beta Program</a> 也被发布。通过注册这个预览体验项目来获取 Android N 。后续还可以通过 OTA 的方式来获取更新，再也不必像过去必须通过刷机的方式来获得了。在此之前，开发者想要安装预览版，必须要解锁 OEM 和 bootloader ，然后再刷入镜像。</p>
+<p>可是当我 enrolled 我的 Nexus 6(在用的固件是 Pure Nexus) 手机后，等了好一会并没有收到推送！索性还是换我之前比较熟悉的刷固件的方式！</p>
+<h2 id="下载固件"><a href="#下载固件" class="headerlink" title="下载固件"></a>下载固件</h2><p>之前 Nexus 6 正式版的固件下载地方是<a href="https://developers.google.com/android/nexus/images#shamu" target="_blank" rel="external">这里</a>。不过这次发布的预览版的固件是在<a href="https://dl.google.com/dl/android/aosp/shamu-mmb29v-factory-0b4a53f0.tgz" target="_blank" rel="external">这里</a>。</p>
+<h2 id="开始刷机"><a href="#开始刷机" class="headerlink" title="开始刷机"></a>开始刷机</h2><p><code>惯例，刷机前先备份好手机上个人重要数据！！！！</code></p>
+<p>起初我按照原来刷正式包的过程刷的：  </p>
+<ol>
+<li>adb reboot bootloader  </li>
+<li>Execute the <code>flash-all</code> script  </li>
+</ol>
+<p>报错了！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">archive does not contain &apos;boot.sig&apos;</div><div class="line">archive does not contain &apos;recovery.sig&apos;</div><div class="line">...</div></pre></td></tr></table></figure>
+<p>后面在 XDA 论坛找到了针对此预览版固件正确的输入步骤：  </p>
+<pre><code>Boot into TWRP to wipe cache, dalvik, data (not internal storage/SD) and system. 
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/03/10/flash-N-to-nexus6/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+Reboot to bootloader and flash the following:
+   fastboot flash bootloader &lt;insert bootloader img name&gt;
+   fastboot reboot-bootloader
+
+   fastboot flash radio &lt;insert radio img name&gt;
+   fastboot reboot-bootloader
+
+   fastboot flash system system.img
+   fastboot flash vendor vendor.img
+   fastboot flash boot boot.img // OR // fastboot flash boot &lt;insert name of unecrypt boot.img&gt;
+   fastboot flash cache cache.img
+   fastboot reboot
+</code></pre><p>最后是随手拍的几张图：</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1f1swp8qa8sj22c02c0npd.jpg" alt=""></p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1f1swp5iemsj22c02c0x6p.jpg" alt=""></p>
+<p><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1f1swpdm5xrj22c02c01ky.jpg" alt=""></p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1f1swpgnw1vj22c02c01ky.jpg" alt=""></p>
+
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -430,6 +494,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -443,17 +509,35 @@
       
         
           
-          一年又要过去了，以前说『又大了一岁』，现在说『又老了一岁』。
-在上完今年最后一个工作日（02.05），在快回到家的时候，我走进了一个尚在营业的理发店，将头发全染成了蓝色。到家后，当然，我妈肯定给了我一顿骂，还好有我爸给我打圆场，说「挺好的啊」。(^_^)ノ
-说到写年终总结国内人无外乎在两个时间点，一
-          ...
+            <p>一年又要过去了，以前说『又大了一岁』，现在说『又老了一岁』。</p>
+<p>在上完今年最后一个工作日（02.05），在快回到家的时候，我走进了一个尚在营业的理发店，将头发全染成了蓝色。到家后，当然，我妈肯定给了我一顿骂，还好有我爸给我打圆场，说「挺好的啊」。(^_^)ノ</p>
+<p>说到写年终总结国内人无外乎在两个时间点，一是元旦前，一是年节前。我猜选择后者的往往是有拖延症的。  (¬_¬)</p>
+<h2 id="工作和学习"><a href="#工作和学习" class="headerlink" title="工作和学习"></a>工作和学习</h2><p>15年3月回了上海，加入贝联，贝联是做母婴服务的移动互联网企业，进去的时候公司刚创办一年，14年公司主要是在全国很多妇幼医院中铺设HOS WI-FI作为入口。</p>
+<p>而15年（我进去的时候 ），公司着力于摸索打造出一个全新产品，这个过程中种种原因，不可避免地被做了很多试错的app，好在开发这些app中调研和使用了一些新技术，更好在下半年公司总算找到了一个较明确的发展方向。<br>作为移动端负责人，15年我们4个小伙伴相处欢乐，被黑常有，嬉笑怒骂常有，再回头看是有不少回忆的。</p>
+<p>这年在blog上有写了15篇的跟技术相关的博文，虽然数量不多质量不深，对我来说也实属不易。新一年会更注重将自己平时所学总结写成blog文章，也会再将这些总结分享给技术部的小伙伴。</p>
+<p>这一年我的英语有进步很多，跟朋友同事说话过程中，说着说着脑子里就会冒出要说出中文词对应的英文词，这感觉还蛮奇怪的。我想这大概也是这一年看的很多东西都是英文，用的Windows/OS X是英文，每天工作用的IDE是英文，看YouTube视频，WWDC和GooglI/O，Twitter时间线，查看的文档、star/fork 的github项目多数也是英文，我虽然还是觉得中文最屌，英文阅读能力渐有提高也是受益良多。</p>
+<h2 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h2><p>这一年生活中最大的事件是装修房子。从前期搜罗大量装修素材、效果图，到施工，挑选地板家电家具等，对于一个选择困难症兼细节强迫症的人来说确实累，可是看着房子一点点呈现出心里想好的样子，也真是快乐。</p>
+<p>自从搬进新家后，我每天去公司上班的单程时间变成了1小时50分钟，倒地铁+步行。路程看起来虽远，其实我并没有觉得很累，相反因为一路上可以拥有少有的整段时间做自己喜欢的事情，或用overcast听一集播客，或用网易云音乐听歌，或用kindle读书，干这些事的过程常常让以往平淡的早晨变有热情，以至于坐过站也是有发生的。</p>
+<p>今年跟往年不一样，多了很多时间跟父母一起。朝夕相处后才更懂得亲情的温暖，那种温暖不浓烈 ，给我以踏实和长久感。</p>
+<p>还有我跟她，我们一起越来越好，越来越懂，以至常常发生些神奇的默契。今年「南京-上海」，或她来或我往，高铁来回不记得坐了多少趟。这一年我们有两次旅行，一次是清明假期的苏州，一次是国庆去了香港。年后她就要辞掉南京的工作来上海和我一起了，那会是我们恋爱中崭新阶段，亦是她职业生涯中的一个崭新阶段，期盼已久。</p>
+<hr>
+<p>新年愿望：</p>
+<ul>
+<li>学习，写多点东西</li>
+<li>婚前瘦到75KG</li>
+<li>和她去台湾</li>
+</ul>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/02/07/write-in-the-end-of-2015/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -556,6 +640,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -569,15 +655,33 @@
       
         
           
-          15年的黑五( 2015.11.27)，在美国亚马逊海淘了一台 Nexus 6，当时看到促销价 $ 199.99 心里乐滋滋的，终于不会想到后来竟还有55刀的转运费，更有被税后需补缴18.5刀税。此机到手价实为：199.99＋55＋18.5 ＝ 273.49 刀，转成人民币大约是 ¥1800。不过这
-          ...
+            <p>15年的黑五( 2015.11.27)，在美国亚马逊海淘了一台 Nexus 6，当时看到促销价 $ 199.99 心里乐滋滋的，终于不会想到后来竟还有55刀的转运费，更有被税后需补缴18.5刀税。此机到手价实为：199.99＋55＋18.5 ＝ 273.49 刀，转成人民币大约是 ¥1800。不过这价格能买到亲儿子我已经很满意。</p>
+<p> 翘首以待了一个多月，在2016.01.18终于摸到真机。期间此货也算「开心的」在路上垮了个年。拆箱开机，屏幕上的保护膜明显很多气泡，更重要的是那屏幕暖的啊 =_=||，实在接受不能，于是开始搞屏幕色温。</p>
+<p>一番谷歌之后收获了两种解决方案：</p>
+<ul>
+<li>刷带屏幕色温调节功能的第三方ROM，如CM</li>
+<li>刷能调节屏幕色温的内核</li>
+</ul>
+<p>最终我的搞法是刷<a href="http://forum.xda-developers.com/nexus-6/development/rom-chroma-01-11-2015-t3000003" target="_blank" rel="external">Chroma ROM</a>(一个基于AOSP的第三方ROM)，然后再刷<a href="http://forum.xda-developers.com/nexus-6/orig-development/kernel-franco-kernel-r1-t2987173" target="_blank" rel="external">Franco Kernel</a>(可以调节屏幕色温的内核)。<br>我的大致流程是：(<a href="http://forum.xda-developers.com/nexus-6/general/how-to-nexus-6-one-beginners-guide-t2948481" target="_blank" rel="external">这里有更详细的</a>)</p>
+<ol>
+<li>Unlock The Bootloader</li>
+<li>Install TWRP recovery</li>
+<li>Flash CHROMA ROM (include SuperSU )</li>
+<li>Flash Franco Kernel</li>
+<li>Install <a href="http://downloads.codefi.re/savoca/kcal" target="_blank" rel="external">KCAL app</a></li>
+</ol>
+<p>我的KCAL配置(参考xda上):<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">R · <span class="number">230</span></div><div class="line">G · <span class="number">222</span></div><div class="line">B · <span class="number">253</span></div><div class="line">Sat · <span class="number">40</span></div><div class="line">Val · <span class="number">135</span></div><div class="line">Con · <span class="number">120</span></div></pre></td></tr></table></figure></p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/01/21/my-struggle-of-nexus6/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -680,6 +784,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -693,15 +799,40 @@
       
         
           
-          房子坐落在昆山花桥，22楼的一个3室(主卧、次卧、书房)1厅1厨2卫的房子。装修从今年9.16号正式开工。前期的装修是半包出去的，所谓的半包是指水电工、木工、油漆工是请来的，但是他们用到的所有所需材料都是我们去家具城亲自买回来。铺建水电路、卫生间瓷砖、吊顶、做橱柜、鞋柜等等这些前期工作大概花了一个月
-          ...
+            <p>房子坐落在昆山花桥，22楼的一个3室(主卧、次卧、书房)1厅1厨2卫的房子。<br>装修从今年9.16号正式开工。<br>前期的装修是半包出去的，所谓的半包是指水电工、木工、油漆工是请来的，但是他们用到的所有所需材料都是我们去家具城亲自买回来。<br>铺建水电路、卫生间瓷砖、吊顶、做橱柜、鞋柜等等这些前期工作大概花了一个月时间。<br>后期的装修主要是添置家具和软装。<br>好了，开启上图模式，末尾分享这次装修中的一些些经验。</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1eziz6t3tfmj21w01w0nmd.jpg" alt=""><br><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1ezj5pzy3epj22c0340x6p.jpg" alt=""><br><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eziz6vi7vpj22c03401ky.jpg" alt=""><br>▲ 客厅</p>
+<p><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1eziz6un3avj21w01w0ts5.jpg" alt=""><br><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1ezj5q5eb08j22c0340npd.jpg" alt=""><br>▲ 吧台</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1eziz6tw7qpj21w01w0qq4.jpg" alt=""><br><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1ezj5q84dw9j22c03407wi.jpg" alt=""><br>▲ 餐厅</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eziz6dbqf7j22c02c0qv5.jpg" alt=""><br><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1ezj5q125irj22c02c07wh.jpg" alt=""><br><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1eziz68ndnoj22c02c0kjl.jpg" alt=""><br><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eziz667pfzj22c02c07wh.jpg" alt=""><br><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1eziz6708kmj22c02c07wh.jpg" alt=""><br><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1eziz6am0o4j22c02c0hdt.jpg" alt=""><br>▲ 书房兼客房</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1ezj5q3hbgpj22c0340u0x.jpg" alt=""><br>▲ 卫生间2</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1ezj5pxsey4j22c0340kjl.jpg" alt=""><br><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eziz6bbahxj22c02c0u0x.jpg" alt=""><br>▲ 主卧</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eziz6re28sj22c02c0qv5.jpg" alt=""><br>▲ JW &amp; 种植多肉</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eziz6n7ojhj22c02c0b29.jpg" alt=""><br>▲ 可旋转电视支架，满足了吃饭的时候家人可以看电视</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eziz6ievnxj22c02c0b29.jpg" alt=""><br><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1eziz6hf0hqj22c02c0e81.jpg" alt=""><br><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1eziz6clddnj22c02c0x6p.jpg" alt=""><br>▲ 阳台</p>
+<hr>
+<p>我为房子简单的绘制了户型图。如下。</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1eziz6wukiaj21160oq0yl.jpg" alt=""></h2><p><strong>装修中的一些经验</strong></p>
+<ul>
+<li><em>前期排插座尽可能的多排几个，且很多插座用带开关的更合适</em></li>
+<li><em>卫生间的洗脸台水龙头最好是抽拉式的</em></li>
+<li><em>家电家具网购要比实体店便宜好多。我90%的家具、电器都是网淘的</em></li>
+<li><em>选择地板</em><br>实木地板、实木多层、强化地板的区别:<br>实木地板的优点：<br>1、 档次高，采用纯实木板材，价格也是最高的<br>2、 环保高，天然木材不含甲醛<br>实木地板的缺点：<br>1、 表面油漆不耐磨，比较娇嫩，每2个月保养一次<br>2、 色差严重，不能接受色差的客户请勿购买<br>3、 不能用于地暖，地热加温后会变形</li>
+</ul>
+<p>实木多层地板的优点：<br>1、 跟实木外观一样，档次高，一般光看表面是看不出差别的<br>2、 环保程度高，达到E0级别，远远低于强化地板的甲醛含量<br>3、 适用于地暖，地暖不变形，无味道<br>4、 不怕水，泡水后不变形<br>实木多层地板的缺点：<br>1、 表面油漆不耐磨，比较娇嫩，每2个月保养一次<br>2、 色差严重，不能接受色差的客户请勿购买<br>3、 硬度低，有东西掉到地上会产生坑，有宝宝的家庭慎用。</p>
+<p>强化复合地板的优点：<br>1、 表面是人造金刚石（三氧化二铝），高耐磨，不需要打理<br>2、 表面花纹采用印刷纸，无色差<br>3、 可以适用于地暖，不变形，地暖客户最高采用E0级地板<br>4、 硬度高，远远高于实木地板。普通磕碰和磨损是无痕迹的。<br>强化复合地板的缺点：<br>1、 木纤维必须要用到胶，所以强化地板肯定有甲醛</p>
+<p>综上所述：<br>实木地板：适合经济富足，平时有专人打理的客户。<br>实木多层地板：适合对环保要求高，但是家里比较爱惜地面的家庭。<br>强化复合地板：适合要求经济实惠，平时也没空保养的家庭。如果家里有宝宝，因为宝宝会乱丢东西砸到地板，最好还是选强化地板。<br>当确定好哪种类型的地板后，选择款式阶段，如果是网购地板，最好是能从店铺中选择几个样板快递到手上实际感受后决定选那种。</p>
+<p>搭建一个家是2015年我投入心思最多的一件事，个中滋味，意犹未尽。<br>wml. 于2015年末</p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/23/make-a-nice-house/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -804,6 +935,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -817,17 +950,21 @@
       
         
           
-          今天终于把”在 Google Play 上购买付费应用”折腾成功，过程纪录如下
-1.准备信用卡：因为我自己无信用卡，是借用同事的交行VISA信用卡Google 账号：Google 账号并且已经激活了 Google Wallet 服务VPN：目前一直用的是 txs当然还要有一台 Android 设备
+            <p>今天终于把”在 Google Play 上购买付费应用”折腾成功，过程纪录如下</p>
+<p>1.准备<br>信用卡：因为我自己无信用卡，是借用同事的交行VISA信用卡<br>Google 账号：Google 账号并且已经激活了 Google Wallet 服务<br>VPN：目前一直用的是 <a href="https://txs.li/" target="_blank" rel="external">txs</a><br>当然还要有一台 Android 设备</p>
+<p>2.操作<br>1) 通过浏览器访问 Google Wallet，地址是<a href="https://wallet.google.com/" target="_blank" rel="external">https://wallet.google.com/</a><br>2) 点击付款方式菜单项，添加一张信用卡。在表单中依次输入信用卡号码、有效期、CVC 码并填写帐单地址。<strong>注意:</strong>地区选择香港 HK，街道地址填大陆地址，手机号码用＋86的中国手机号，点击保存按钮即可<br><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eyzo8sbs73j20vy102tbz.jpg" alt=""></p>
+<p>3) 通过使用 VPN 在 Google Play 商店购买商品<br>4) 购买成功后，可以在 Google Wallet 的交易菜单项中找到交易纪录的条目<br><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eyzobghm6wj20t6090mxv.jpg" alt=""></p>
 
-          ...
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/14/Buy-an-app-from-GooglePlay-by-Google-Wallet/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -930,6 +1067,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -943,17 +1082,22 @@
       
         
           
-          1.很久一段时间没来这里更新文章，原因一是从9.16号开始装修房子，几乎一整个心都推入进去，没有二
-2.今天更新，是因为读inoreader里subscribe的文章，看到VICE拍了一部纪录片《触手可及》，关于陈冠希，看了后想抽烟
-3.听爸爸的话，上周末从网络上查老黄历定了搬家的日子，12.12号
-          ...
+            <p>1.很久一段时间没来这里更新文章，原因一是从9.16号开始装修房子，几乎一整个心都推入进去，没有二</p>
+<p>2.今天更新，是因为读inoreader里subscribe的文章，看到VICE拍了一部纪录片《触手可及》，关于陈冠希，看了后想抽烟</p>
+<p>3.听爸爸的话，上周末从网络上查老黄历定了搬家的日子，12.12号 9:00-10:59<br><img src="http://ww3.sinaimg.cn/mw690/62ed8609jw1eyrggzk0isj206u146dht.jpg" width="80"><br>(难道淘宝双12日子也是算过的。笑cry)</p>
+<p>4.今天收到京东众筹于10.15号买的咕咕WiFi无线热敏打印机。从极客之选上第一眼看到咕咕WiFi无线热敏打印机的模样就爱上了。无它。上手试用了一下，酷酷的<br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1eyrgock4erj21hd1hc7ci.jpg" alt=""><br><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1eyrgobvk1dj21hd1hcqh6.jpg" alt=""></p>
+<p>ps.待搬进新房后要写两篇文章 1.关于这段时间装修心得 2.咕咕的使用体验<br>pss.冠希的《战争》确实好听</p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/07/Life's/2015-12-07/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1056,6 +1200,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -1069,18 +1215,56 @@
       
         
           
-          利用周末整理下之前工作中、学习中使用过的 Android 开源项目，通过整理好之后，能每周抽出些时间去对这些开源项目的源码进行解析，以期通过这种方式能更深层次的学习这些优秀的 Android 开源项目。
-View 篇
+            <p>利用周末整理下之前工作中、学习中使用过的 Android 开源项目，通过整理好之后，能每周抽出些时间去对这些开源项目的源码进行解析，以期通过这种方式能更深层次的学习这些优秀的 Android 开源项目。</p>
+<p><strong>View 篇</strong></p>
+<ul>
+<li><p>Android-ConvenientBanner<br>项目描述:通用的广告栏控件，让你轻松实现广告头效果。支持无限循环，可以设置自动翻页和时间(而且非常智能，手指触碰则暂停翻页，离开自动开始翻页。你也可以设置在界面onPause的时候不进行自动翻页，onResume之后继续自动翻页)，并且提供多种翻页特效。 对比其他广告栏控件，大多都需要对源码进行改动才能加载网络图片，或者帮你集成不是你所需要的图片缓存库。而这个库能让有代码洁癖的你欢喜，不需要对库源码进行修改你就可以使用任何你喜欢的网络图片库进行配合。<br>项目地址:<a href="https://github.com/saiwu-bigkoo/Android-ConvenientBanner" target="_blank" rel="external">https://github.com/saiwu-bigkoo/Android-ConvenientBanner</a><br>项目效果:<br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1evkt6q7j62g20bd0hykjq.gif" alt=""></p>
+</li>
+<li><p>Android ViewPagerIndicator<br>项目描述: 配合 ViewPager 使用的 Indicator，支持各种位置和样式<br>项目地址: <a href="https://github.com/JakeWharton/ViewPagerIndicator" target="_blank" rel="external">https://github.com/JakeWharton/ViewPagerIndicator</a><br>项目效果:<br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1evkurq6dl3j20no0gok0a.jpg" alt="">  </p>
+</li>
+<li><p>MVCHelper<br>项目描述: 实现下拉刷新，滚动底部自动加载更多，分页加载，自动切换显示网络失败布局，暂无数据布局，支持任意view，支持切换主流下拉刷新框架，真正的android MVC架构,refresh,loadmore<br>项目地址: <a href="https://github.com/LuckyJayce/MVCHelper" target="_blank" rel="external">https://github.com/LuckyJayce/MVCHelper</a><br>demo地址: <a href="https://github.com/LuckyJayce/MVCHelper/blob/master/raw/MVCHelper_Demo.apk?raw=true" target="_blank" rel="external">Demo APK</a></p>
+</li>
+<li><p>EmojiChat<br>项目描述: 一个聊天界面，包括从网络下载大表情并使用，图片发送，文字发送，Emoji表情发送，自定义表情键盘，Emoji表情键盘，仿QQ功能键盘等等……<br>项目地址: <a href="https://github.com/kymjs/EmojiChat" target="_blank" rel="external">https://github.com/kymjs/EmojiChat</a><br>项目效果:<br><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1evkv3kl160j205k09wq43.jpg" alt=""></p>
+</li>
+<li><p>Emojicon<br>项目描述: Emojicon 是一个用于在 TextView, EditText (like WhatsApp) 显示 emoji 表情的开源库。<br>项目地址: <a href="https://github.com/rockerhieu/emojicon" target="_blank" rel="external">https://github.com/rockerhieu/emojicon</a><br>项目效果:<br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1evkvbd2w7lj20b00ibjss.jpg" alt="">  </p>
+</li>
+<li><p>Material<br>项目描述: MaterialLibrary is an Open Source Android library that back-port Material Design components to pre-Lolipop Android.<br>项目地址: <a href="https://github.com/rey5137/material" target="_blank" rel="external">https://github.com/rey5137/material</a><br>demo地址: <a href="https://play.google.com/store/apps/details?id=com.rey.material.demo" target="_blank" rel="external">https://play.google.com/store/apps/details?id=com.rey.material.demo</a></p>
+</li>
+<li><p>SwipeMenuListView<br>项目描述: A swipe menu for ListView.<br>项目地址: <a href="https://github.com/baoyongzhang/SwipeMenuListView" target="_blank" rel="external">https://github.com/baoyongzhang/SwipeMenuListView</a><br>项目效果:<br><img src="http://ww3.sinaimg.cn/mw690/62ed8609jw1evkvipk41sg20ar0i146f.gif" alt=""></p>
+</li>
+<li><p>PhotoCrop<br>项目描述: A Library which can be used to crop images in Android similar to Facebook and Telegram<br>项目地址: <a href="https://github.com/albinmathew/PhotoCrop" target="_blank" rel="external">https://github.com/albinmathew/PhotoCrop</a><br>项目效果:<br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1evkwzqlb3oj20a00hsdjw.jpg" alt=""></p>
+</li>
+<li><p>RoundedImageView<br>项目描述: A fast ImageView (and Drawable) that supports rounded corners (and ovals or circles) based on the original <a href="http://www.curious-creature.org/2012/12/11/android-recipe-1-image-with-rounded-corners/" target="_blank" rel="external">example from Romain Guy</a>. RoundedImageView is a full superset of <a href="https://github.com/hdodenhof/CircleImageView" target="_blank" rel="external">CircleImageView</a> (which is actually just a subset based on this lib) with many more advanced features like support for ovals, rounded rectangles, ScaleTypes and TileModes.<br>项目地址: <a href="https://github.com/vinc3m1/RoundedImageView" target="_blank" rel="external">https://github.com/vinc3m1/RoundedImageView</a><br>项目效果:<br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1evkxf8ngpoj208c0etn2e.jpg" alt=""><br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1evkxf7h5m4j208c0etq81.jpg" alt=""></p>
+</li>
+<li><p>CircleImageView<br>项目描述: A fast circular ImageView perfect for profile images. This is based on <a href="https://github.com/vinc3m1/RoundedImageView" target="_blank" rel="external">RoundedImageView from Vince Mi</a> which itself is based <a href="http://www.curious-creature.org/2012/12/11/android-recipe-1-image-with-rounded-corners/" target="_blank" rel="external">on techniques recommended by Romain Guy</a>.<br>项目地址: <a href="https://github.com/hdodenhof/CircleImageView" target="_blank" rel="external">https://github.com/hdodenhof/CircleImageView</a><br>项目效果:<br><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1evkxjr8znvj20f00qotat.jpg" alt="">  </p>
+</li>
+<li><p>ASimpleCache<br>项目描述: ASimpleCache 是一个为android制定的 轻量级的 开源缓存框架。轻量到只有一个java文件（由十几个类精简而来）。<br>项目地址: <a href="https://github.com/yangfuhai/ASimpleCache" target="_blank" rel="external">https://github.com/yangfuhai/ASimpleCache</a></p>
+</li>
+<li><p>Logger<br>项目描述: Simple, pretty and powerful logger for android<br>项目地址: <a href="https://github.com/orhanobut/logger" target="_blank" rel="external">https://github.com/orhanobut/logger</a><br>项目效果:<br><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1evkxpqa492j20uk0smafu.jpg" alt=""></p>
+</li>
+<li><p>LeakCanary<br>项目描述: Android 和 Java 内存泄露检测。<br>项目地址: <a href="https://github.com/square/leakcanary" target="_blank" rel="external">https://github.com/square/leakcanary</a><br>项目demo: <a href="https://github.com/liaohuqiu/leakcanary-demo" target="_blank" rel="external">https://github.com/liaohuqiu/leakcanary-demo</a><br>项目效果:<br><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1evkynk1l3ij20jg0a4ac1.jpg" alt=""></p>
+</li>
+<li><p>Android ViewBadger<br>项目描述: A simple way to “badge” any given Android view at runtime without having to cater for it in layout.<br>项目地址: <a href="https://github.com/jgilfelt/android-viewbadger" target="_blank" rel="external">https://github.com/jgilfelt/android-viewbadger</a><br>项目效果:<br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1evkyrta511j20a00h476e.jpg" alt=""></p>
+</li>
+<li><p>pinned-section-listview<br>项目描述: Easy to use ListView with pinned sections for Android 2.1 and higher. Pinned section is a header view which sticks to the top of the list until at least one item of that section is visible.<br>项目地址: <a href="https://github.com/beworker/pinned-section-listview" target="_blank" rel="external">https://github.com/beworker/pinned-section-listview</a><br>项目效果:<br><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1evkyvpsit5j20660abaae.jpg" alt=""></p>
+</li>
+<li><p>Dynamicbox<br>项目描述: DynamicBox is a library which inflates custom layouts to indicate :loading content、show an exception or even a custom view.<br>项目地址:  <a href="https://github.com/medyo/dynamicbox" target="_blank" rel="external">https://github.com/medyo/dynamicbox</a></p>
+</li>
+<li><p>Sweet Alert Dialog<br>项目描述: Android版的SweetAlert，清新文艺，快意灵动的甜心弹框<br>项目地址: <a href="https://github.com/pedant/sweet-alert-dialog" target="_blank" rel="external">https://github.com/pedant/sweet-alert-dialog</a><br>项目效果:<br><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1evkze1hmwig20al0h5age.gif" alt=""></p>
+</li>
+</ul>
+<p>( 未完… )</p>
 
-Android-ConvenientBanner项目描述:通用的广告栏控件，让你
-          ...
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/08/30/Android/学习过的Android开源项目汇总/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1183,6 +1367,8 @@ Android-ConvenientBanner项目描述:通用的广告栏控件，让你
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -1196,16 +1382,27 @@ Android-ConvenientBanner项目描述:通用的广告栏控件，让你
       
         
           
-          1. 介绍使用 listview、gridview 等列表形式的 view 时，如果后台server返回的数据为空，通常我们需要为页面增加 empty view （俗称空页面），使得页面显示起来更友好，这个时候就用到了 setEmptyView() 方法。
-▲ setEmptyView() 是 Ad
-          ...
+            <h3 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1. 介绍"></a>1. 介绍</h3><p>使用 listview、gridview 等列表形式的 view 时，如果后台server返回的数据为空，通常我们需要为页面增加 empty view （俗称空页面），使得页面显示起来更友好，这个时候就用到了 setEmptyView() 方法。</p>
+<p><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1evbrvuo1swj21bu0getbn.jpg" alt=""><br>▲ setEmptyView() 是 AdapterView 中的一个方法，而我们常用到的ExpandableListView, GridView, ListView等都是继承之 AdapterView 的，可以直接调用 setEmptyView() 方法。</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1evbrvv8pg2j20u603gmxh.jpg" alt=""><br>▲ setEmptyView() 官方描述</p>
+<h3 id="2-使用方法"><a href="#2-使用方法" class="headerlink" title="2. 使用方法"></a>2. 使用方法</h3><p>下面以一个简单实例的描述 setEmptyview() 的两种常见的使用方法。<br><img src="http://ww3.sinaimg.cn/mw690/62ed8609jw1evbs5rbzblj20lc0zk751.jpg" width="250"><br>▲ 实例的最终效果。“暂无常用回答哦”这个 TextView 就是我们设定好的 empty view 。</p>
+<p><strong>方法一</strong><br>如果页面是继承 ListActivity，只要在布局文件中这样:<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">...</div><div class="line">&lt;ListView android:id="@id/android:list".../&gt; </div><div class="line">&lt;TextView </div><div class="line">    android:id="@id/android:empty </div><div class="line">    android:text="暂无常用回答哦"</div><div class="line">    .../&gt;</div><div class="line">...</div></pre></td></tr></table></figure></p>
+<p>这样当列表为空时就会自动显示这个 TextView 了。</p>
+<p>如果页面不是继承 ListActivity 的话，<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">...</div><div class="line">&lt;ListView android:id="@+id/list".../&gt; </div><div class="line">&lt;TextView </div><div class="line">    android:id="@+id/empty </div><div class="line">    android:text="暂无常用回答哦"</div><div class="line">    .../&gt;</div><div class="line">...</div><div class="line">ListView listView = (ListView)findViewById(R.id.list);</div><div class="line">listView.setEmptyView(findViewById(R.id.empty));</div></pre></td></tr></table></figure></p>
+<p><strong>方法二</strong><br>setEmptyView()这个方法是有限制的，这个 empty view 必须在当前的 View hierarchy 的节点上，所以需要把empty view 添加到当前的 View hierarchy 的节点上。布局文件中不作额外配置，在页面中实现如下:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">TextView emptyView = <span class="keyword">new</span> TextView(activity);</div><div class="line">emptyView.setLayoutParams(<span class="keyword">new</span> LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));</div><div class="line">emptyView.setText(<span class="string">"暂无常用回答哦"</span>);</div><div class="line">emptyView.setVisibility(View.GONE);</div><div class="line">((ViewGroup) list.getParent()).addView(emptyView);</div><div class="line">list.setEmptyView(emptyView);</div></pre></td></tr></table></figure></p>
+<p>同理，如果 empty view 不简单是一个 TextView 而是其他一个较复杂的自定义 View，则可以通过 inflate:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">View emptyView = View.inflate(R.layout.empty_view, <span class="keyword">null</span>);</div><div class="line">emptyView.setVisibility(View.GONE);</div><div class="line">((ViewGroup) list.getParent()).addView(emptyView);</div><div class="line">list.setEmptyView(emptyView);</div></pre></td></tr></table></figure></p>
+<h3 id="3-尾巴"><a href="#3-尾巴" class="headerlink" title="3. 尾巴"></a>3. 尾巴</h3><p>ViewStub 在很多时候也是可以实现我们空页面的需求，在页面中的数据不是动态变化的情况下，使用 ViewStub 也是不错的选择。</p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/08/22/Android-setEmptyview/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1308,6 +1505,8 @@ Android-ConvenientBanner项目描述:通用的广告栏控件，让你
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -1321,15 +1520,24 @@ Android-ConvenientBanner项目描述:通用的广告栏控件，让你
       
         
           
-          在最近做的项目中，遇到了 Fragment 重叠的问题。具体的情况是，app 需要在多个 Fragment 间切换，并且保存每个 Fragment 的状态。官方的方法是使用 replace() 来替换 Fragment，但是 replace() 的调用会导致 Fragment 的 onCreteVi
-          ...
+            <p>在最近做的项目中，遇到了 Fragment 重叠的问题。具体的情况是，app 需要在多个 Fragment 间切换，并且保存每个 Fragment 的状态。官方的方法是使用 replace() 来替换 Fragment，但是 replace() 的调用会导致 Fragment 的 onCreteView() 被调用，所以切换界面时会无法保存当前的状态。因此一般采用 add()、hide()与 show()配合，来达到保存 Fragment 的状态。</p>
+<p>正常情况下显示是对的，现象发生在我切换到其他的app，操作一会之后，再回到当前的app，有一定几率会出现 Fragment 重叠的现象。</p>
+<p>可以通过下面的方式进行手动重现这个BUG:<br>1.手机的 “设置” - “开发者选项” - 打开”不保留活动”(主要用于模拟Activity被及时回收)<br>2.把 app 切换到后台，再重新打开，通过点按不同的 tab 来切换 Fragment<br><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1ev5ds1gancj20lc0zkgnp.jpg" width="200"><br>▲ 重现 Fragment 的重叠</p>
+<p>起初我以为是我在使用add()、hide() 、show() 切换 Fragment 的时候有什么地方使用的不对，尝试去解决重叠的 bug，无果后，还是通过 google 找出了原因和解决方案。</p>
+<h4 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h4><p>使用 Fragment 的状态保存，当系统内存不足，Fragment 的宿主 Activity 回收的时候，Fragment 的实例并没有随之被回收。Activity 被系统回收时，会主动调用 onSaveInstance() 方法来保存视图层（View Hierarchy），所以当 Activity 通过导航再次被重建时，之前被实例化过的 Fragment 依然会出现在 Activity 中，此时的 FragmentTransaction 中的相当于又再次 add 了 fragment 进去的，hide()和show()方法对之前保存的fragment已经失效了。综上这些因素导致了多个Fragment重叠在一起。</p>
+<h4 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h4><p><strong>方案一:</strong><br>1.给每个 Fragment 加一个 Tag<br>2.在 onCreate(Bundle savedInstanceState) 中判断 Bundle savedInstanceState 是否不为空<br>3.不为空则进行 find Tag，重新给几个 frament 赋值<br>这样子仍是对之前保存的 fragment 操作，成功解决了重叠的问题。</p>
+<p><strong>方案二:</strong><br>Activity 中的 onSaveInstanceState() 里面有一句<em>super.onSaveInstanceState(outState);</em>，Google 对于这句话的解释是 “Always call the superclass so it can save the view hierarchy state”，大概意思是“总是执行这句代码来调用父类去保存视图层的状态”。通过注释掉这句话，这样主 Activity 因为种种原因被回收的时候就不会保存之前的 fragment state，也可以成功解决重叠的问题。</p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/08/17/fragment-overlay-problem'/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1432,6 +1640,8 @@ Android-ConvenientBanner项目描述:通用的广告栏控件，让你
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -1445,16 +1655,43 @@ Android-ConvenientBanner项目描述:通用的广告栏控件，让你
       
         
           
-          我向来喜欢科技产品，热衷尝试新奇的事物，但这并不代表我会随随便便成为一款新产品的用户。
-从知道 apple 要做 apple watch 这款产品，到发布、再到开发购买，我的 RSS 订阅中就没间断的出现有关它的文章。随着这些文章的阅读，评测视频的观看，我逐渐了解 apple watch，在它身上发
-          ...
+            <p>我向来喜欢科技产品，热衷尝试新奇的事物，但这并不代表我会随随便便成为一款新产品的用户。</p>
+<p>从知道 apple 要做 apple watch 这款产品，到发布、再到开发购买，我的 RSS 订阅中就没间断的出现有关它的文章。随着这些文章的阅读，评测视频的观看，我逐渐了解 apple watch，在它身上发现到契合我自身需求的功能，这也让我在清楚知道这是 apple watch 的第一代产品，它一定还有很大提升空间的意识下依然决定要购买。</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609jw1euoidewazbj21w01w01kx.jpg" width="460"><br>▲ apple watch 开箱前</p>
+<p>虽然之前 apple watch 的照片、视频已经360度无死角的观察过，等拿到手的那一瞬间还是惊艳其美，欣喜如狂。轻轻的撕掉屏幕上面的保护膜，看着那晶莹通透的表盘醉了一脸。</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1euoidlgw6aj21w02iohdt.jpg" width="460"><br>▲ apple watch 首次佩戴</p>
+<p>下面说说就我上手 apple watch 22天后的使用感受。其中感受最明显的其实只有两点，这两点也正是当初促使我决定购买它的原因或者也可以说是我希望 apple watch 能通过这两点能让自己的生活有所改变。</p>
+<h4 id="一-健身运动"><a href="#一-健身运动" class="headerlink" title="一.健身运动"></a>一.健身运动</h4><p><strong>每小时站立提醒</strong><br>如果 apple watch 检测到你在一个小时的前50分钟都坐着时，它就会通过 Taptic Engine 来震动提醒你该起身动一下了。要知道，久坐和久站都不利于身体健康，都能引发一系列的职业病。</p>
+<p><strong>鼓励运动</strong><br>通过在 apple watch 上“健身活动”app设置好每日的活动、锻炼和站立目标，当你在完成到某个进度它会鼓励你做得好继续；当你完成了当日得整体目标时，它也会鼓励你，如果做得出色甚至会得到一块特别的“奖章”。</p>
+<p><strong>健身数据记录</strong><br>借助 apple watch 上“健身”app，可以跟踪自己喜欢的健身运动（我目前常用得是户外跑步、户外步行、户外单车和室内跑步），在健身期间获得关于里程碑的提醒，以及在完成健身后获得详细的摘要。每次运动后，这些数据也都会同步到iPhone上“健康”app上。</p>
+<h4 id="二-通知提醒"><a href="#二-通知提醒" class="headerlink" title="二.通知提醒"></a>二.通知提醒</h4><p><strong>设定通知</strong><br>以前工作每次iPhone收到通知都会响一声或者震动提醒你有新通知。因为不放心都会点亮屏幕查看、处理。而往往一点亮屏幕，除了最新的那条，很可能又被其他的通知引到解锁做一大堆其他的事情。</p>
+<p>拿到 apple watch 后，第一件重要的事就是设定好通知。只将重要的通知推送设置到 apple Watch，而其他不重要的就让它们留在手机上。只要我的 apple Watch 不震动，我就知道这不是重要通知，无需拿出手机来看。而手机上的相对不重要的通知等空闲时间统一再查看。推送到 apple Watch 的通知，比如QQ、微信等瞟一眼知道内容，不重要就过了，重要再选择回复或者处理即可。这样使用下来，我发现大大减少了我拿起手机的次数，工作效率是有一定提升的。</p>
+<p><strong>Taptic Engine</strong><br>我认为Taptic Engine 是 Apple Watch 上最酷的功能之一，使用感受非常奇妙，当它提醒你站立的时候，会急促的震一下，像是有人敦促你该起身了；收到QQ等通知时，清脆的一声「叮」和震两下，像是有人碰了你胳膊两下，提醒你看通知；当你输错秘密的时候，它会左右动两下，像是在摇头否定。总之用文字表达起来实在无力，只能称之呼神奇。</p>
+<p><em>最后，我想说 apple watch 是我喜欢并且真正需要的科技产品，用久了就会发现，它以一种平平淡淡的方式却又非常真切地改变着我的生活。我同样希望自己可以将拥有的其他电子产品也能发挥它们的真正可以发挥的能力，让自己或者别人的生活更加精彩，我想这才是喜欢科技产品的真正意义。</em></p>
+<hr>
+<p><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1euoid9xmtmj20hs0vkwgd.jpg" width="250"><br>▲ 拿到 apple watch 前，有时会打开iPhone上的“apple watch” app看一眼</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1euoidmlunwj208o0au74l.jpg" width="250"><br>▲ 我用的表盘样式</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1euoidq42wej208o0auwfd.jpg" width="250"><br>▲ 每小时的站立提醒</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1euoidn7st1j208o0aut9r.jpg" width="250"><br>▲ 完成每小时站立的鼓励</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1eup4mhdo54j208o0aumxv.jpg" width="250"><br>▲ 每天的站立情况总览</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eup4mi1ufrj208o0auab0.jpg" width="250"><br>▲ 每天健身活动情况总览</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1euoidobvkqj208o0au75p.jpg" width="250"><br>▲ 有时你会欣喜的发现获得了一个奖章</p>
+<p><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1eup4miedapj208o0auq3i.jpg" width="250"><br>▲ apple watch 上的训练app</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eup4mipqiaj208o0au74k.jpg" width="250"><br>▲ 当选择好上面的某个活动后可以在此设定活动目标</p>
+<p><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1euoidowzxfj208o0augmk.jpg" width="250"><br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1euoidpj9yuj208o0au3zk.jpg" width="250"><br>▲ 可以在 apple watch 控制媒体播放，比如骑车上下班的时候</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1euojmh7ntrj20hs0vk0wo.jpg" width="250"><br>▲ 使用 apple watch 这段时间来的运动量明显增加</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1euojmi2btyj20hs0vkgo5.jpg" width="250"><br>▲ 奖章系统，很喜欢这设计 </p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/08/02/experience-of-apple-watch/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1472,7 +1709,6 @@ Android-ConvenientBanner项目描述:通用的广告栏控件，让你
 
 
     
-
   </section>
 
   
@@ -1523,47 +1759,46 @@ Android-ConvenientBanner项目描述:通用的广告栏控件，让你
             </a>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">4</span>
-              <span class="site-state-item-name">分类</span>
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
               </a>
-          </div>
+            </div>
+          
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">10</span>
-              <span class="site-state-item-name">标签</span>
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">标签</span>
               </a>
-          </div>
+            </div>
+          
 
         </nav>
 
         
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
 
         <div class="links-of-author motion-element">
           
             
               <span class="links-of-author-item">
-                <a href="https://github.com/w4mxl" target="_blank">
+                <a href="https://github.com/w4mxl" target="_blank" title="GitHub">
                   
-                    <i class="fa fa-globe"></i> github
+                    <i class="fa fa-fw fa-github"></i>
                   
+                  GitHub
                 </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="https://twitter.com/w4mxl" target="_blank">
+                <a href="https://twitter.com/w4mxl" target="_blank" title="Twitter">
                   
-                    <i class="fa fa-globe"></i> twitter
+                    <i class="fa fa-fw fa-twitter"></i>
                   
+                  Twitter
                 </a>
               </span>
             
@@ -1573,9 +1808,8 @@ Android-ConvenientBanner项目描述:通用的广告栏控件，让你
         
         
 
-        <div class="links-of-author motion-element">
-          
-        </div>
+        
+        
 
       </section>
 
@@ -1596,7 +1830,7 @@ Android-ConvenientBanner项目描述:通用的广告栏控件，让你
   &copy; 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-next-heart fa fa-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Wml</span>
 </div>
@@ -1612,59 +1846,81 @@ Android-ConvenientBanner项目描述:通用的广告栏控件，让你
   </a>
 </div>
 
+        
 
-
+        
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
 
   
 
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
 
   
 
 
 
+  
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
+  
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
+  
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.0"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.0.0"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
 
 
 
   
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
 
 
 
@@ -1689,16 +1945,20 @@ Android-ConvenientBanner项目描述:通用的广告栏控件，让你
 
   
     
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
   
 
 
 
 
 
+
   
   
 
   
+
   
 
   
@@ -1732,6 +1992,14 @@ Android-ConvenientBanner项目描述:通用的广告栏控件，让你
 
             $(element).find(COUNT_CONTAINER_REF).text(time);
           }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
         })
         .fail(function (object, error) {
           console.log("Error: " + error.code + " " + error.message);
@@ -1762,6 +2030,12 @@ Android-ConvenientBanner项目描述:通用的广告栏控件，让你
             });
           } else {
             var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
             newcounter.set("title", title);
             newcounter.set("url", url);
             newcounter.set("time", 1);
@@ -1794,6 +2068,7 @@ Android-ConvenientBanner项目描述:通用的广告栏控件，让你
 
 
 
+  
 
 </body>
 </html>

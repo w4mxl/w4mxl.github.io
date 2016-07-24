@@ -27,18 +27,57 @@
 
 
 
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
 
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Menlo:300,300italic,400,400italic,700,700italic|mononoki:300,300italic,400,400italic,700,700italic|mononoki:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -47,12 +86,10 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="Wml'Blog" type="application/atom+xml" />
 
 
 
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -75,7 +112,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     scheme: 'Pisces',
-    sidebar: '[object Object]',
+    sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -84,6 +121,11 @@
     }
   };
 </script>
+
+
+
+
+  <link rel="canonical" href="https://w4mxl.github.io/page/16/"/>
 
   <title> Wml'Blog </title>
 </head>
@@ -103,6 +145,10 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
+
+
+
+
 
 
 
@@ -143,13 +189,13 @@
   
 
   
-    <ul id="menu" class="menu ">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -159,7 +205,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -169,7 +215,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -179,15 +225,13 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
         </li>
       
 
-      
-      
       
     </ul>
   
@@ -204,17 +248,6 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
-
-    
-
-    
-    
-      
-      
-
-      
-    
-
     
       
 
@@ -301,6 +334,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -314,16 +349,21 @@
       
         
           
-          　　昨天就想到这儿来写点东西的，又想到今天下午的5000米比赛就推迟到现在来动笔了。我的5000米比赛原先是昨天下午的，因为天公不作美下起了大雨，大会才临时通知将昨天的赛程移到今天来。
-　　今天老天倒是很配合，温度适宜，空气里还夹杂着细细的微风，给人感觉很舒服。我是3点的比赛，2点开始检录。我一觉醒
-          ...
+            <p>　　昨天就想到这儿来写点东西的，又想到今天下午的5000米比赛就推迟到现在来动笔了。我的5000米比赛原先是昨天下午的，因为天公不作美下起了大雨，大会才临时通知将昨天的赛程移到今天来。</p>
+<p>　　今天老天倒是很配合，温度适宜，空气里还夹杂着细细的微风，给人感觉很舒服。我是3点的比赛，2点开始检录。我一觉醒来都1：50了，我赶紧拿上东西溜到操场。到那里时刚好检录了，我长嘘一口气，庆幸自己的好运。等到正式上了起跑线，我还是隐隐约约觉得小腿肚比平时僵硬，胸口也有些“起起伏伏”，咳，还是无法克制的紧张，不够淡定啊。随着一声枪响，我们40人左右就开始了12圈半的漫漫征途了。朋友的助威声，学院同学的加油声，和着操场有些亢奋的锣鼓声和音乐，让我比平时更加兴奋，紧张也慢慢没了。</p>
+<p>　　从比赛开始到强完跑道，我排在十几名的位置，我不敢立刻加速去超越，这是人所共知的长跑大忌。我试图缓缓的加速，几圈下来我感觉我越来越镇定，节奏也把握的不错。于是我开始超越，一个过去了，接着又一个，……到了第十圈我跑到了第五名，这时第四名还在我前面100米左右呢。我大口大口的喘着气，用里挥动双臂以加大向前的惯性。我拼命努力试图赶上他。每次在弯道我都缩短一些，再一些，加上他好像本人速度也有所稍降，到了第12圈时，我离他就大概10米了。我在最后两百米竭尽全身力气往前狂奔，我什么疼痛度忘了，我只是冲，单纯的就像彼时光光溜溜的天空。还好，我在里终点线两米左右超过了他，硬生生的把他的第四名占为己有了。然后我急忙问拿水给我的朋友第一名超了我有多远，他告诉我有一圈多。我听了，在心里无可奈何的一笑，那家伙是人类吗，真么能跑，真服了。在后来知道，那人前两天10000米也是第一，去年也是两项第一，是大三的。这样我心里稍微平衡了些。</p>
+<p>　　回去后，朋友们对我交的成绩单很满意。L还对我说他很以我为傲，说我以这样的速度竟然还能跑这么远，很强。我听了很开心。其实他不知道，5000米跑多了也就那么回事，没他以为的神奇。班长还打电话告诉我，第四名有50块钱的奖励还外加证书呢。<br>　　<br>　　这样的结果我已经很开心了。觉得一切都值了！</p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2009/05/17/这样我已经很开心了/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -426,6 +466,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -439,23 +481,25 @@
       
         
           
-          一
-
-今夜我又梦见了我的儿时干净似鹅儿的毛雪儿般无染那是不眨眼的纯真人们都管我叫孩子！
-
-二
-
-流浪者啊你快告诉我埃及的天能有西藏的蓝吗北极是不是真的一点没有黑夜神农架飞着白色的乌鸦？….…..求求你求求你也带上我一起上路吧我想亲吻自然的脸颊久久的热热的吻着她
-
+            <p><code>一</code></p>
+<blockquote>
+<p>今夜我又梦见了我的儿时<br>干净似鹅儿的毛<br>雪儿般无染<br>那是不眨眼的纯真<br>人们都管我叫孩子！</p>
+</blockquote>
+<p><code>二</code></p>
+<blockquote>
+<p>流浪者啊<br>你快告诉我<br>埃及的天能有西藏的蓝吗<br>北极是不是真的一点没有黑夜<br>神农架飞着白色的乌鸦？<br>….<br>…..<br>求求你<br>求求你<br>也带上我一起上路吧<br>我想亲吻自然的脸颊<br>久久的<br>热热的<br>吻着她</p>
+</blockquote>
 
           
-
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2009/05/14/我的冰心体小诗/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -558,6 +602,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -571,15 +617,21 @@
       
         
           
-          　　下午急急忙忙下楼去观战10000米比赛，还好开始没多久。三十几个人围者操场一圈一圈，场面壮观的一塌糊涂，各个学院的观众为他们的运动员加油，狂喊。我还奇怪，怎么女生叫的比男生还激动，还蹦蹦跳跳。最让我就纳闷是，平时细声细语比志玲还志玲那些个女生也会不顾一切的声嘶力竭。好生羡慕那些在场上挥汗如雨的家
-          ...
+            <p>　　下午急急忙忙下楼去观战10000米比赛，还好开始没多久。三十几个人围者操场一圈一圈，场面壮观的一塌糊涂，各个学院的观众为他们的运动员加油，狂喊。我还奇怪，怎么女生叫的比男生还激动，还蹦蹦跳跳。最让我就纳闷是，平时细声细语比志玲还志玲那些个女生也会不顾一切的声嘶力竭。好生羡慕那些在场上挥汗如雨的家伙，我自己也是跑步的，正常练得都只是5000米，每每在最后200米冲刺后感觉重生。那种解脱超爽的，然后我就喜欢找一块地躺下，展开全身，盯着天望的时候会觉得它好像被什么拉扯过而淡些蓝了。可想而知，他们10000米下来会是怎样的平静的心情，尽管心还是以成倍的速度跳着。</p>
+<p>　　后天下午我也要参加5000米了，刚才还在跟舍友笑说看10000米比赛时我腿都抖了，安奈不住的小激动和小紧张。不过我想这些每个即将比赛的人都回有，就像快要高考时每个同学都紧张的要命，可是真正开考了不是一样奋笔疾书，哪里还来得及管得着紧张:-P。现在我挺期待后天的那场我自己的比赛，我要像个才入伍的小战士一样，什么也不顾的战斗到底。事实上我对那个第一名已经虎视眈眈好久了O(∩_∩)O哈哈~</p>
+<p>　　前几天在学校网站必读书目考试上报了两门：《约翰•克利斯朵夫》和《古文观止》，又下了些相关介绍在盘里，过会儿下线了先看看，明天准备到图书馆把书借到。这两本书都很不错的，一直没去读，期待着。</p>
+<p>　　期待着那些让我期待的美好…….</p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2009/05/13/有着盼头就好满足/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -682,6 +734,8 @@
                <span class="leancloud-visitors-count"></span>
               </span>
           
+
+          
         </div>
       </header>
     
@@ -695,16 +749,20 @@
       
         
           
-          　　老实说刚玩百阅时也有个小博客，只是那个太菜，不能算是。现在这个是真的开始，我玩真的了。有空就来写写东西，看看你们的文字，应该也会有泡杯茶在木椅上读《读者》类似的惬意吧。君子以同道为朋，路漫漫其修远兮，携手共进。
-　　明天是我们学校的运动会开幕，(^__^) 嘻嘻……我也是运动员哦。我报的是500
-          ...
+            <p>　　老实说刚玩百阅时也有个小博客，只是那个太菜，不能算是。现在这个是真的开始，我玩真的了。有空就来写写东西，看看你们的文字，应该也会有泡杯茶在木椅上读《读者》类似的惬意吧。君子以同道为朋，路漫漫其修远兮，携手共进。</p>
+<p>　　明天是我们学校的运动会开幕，(<em>^__^</em>) 嘻嘻……我也是运动员哦。我报的是5000米，星期五下午三点半，有点小紧张还有点小兴奋，就等着冲过终点线了…….</p>
+<p>　　对了，现在操场上10000米跑应该开比了，我得下楼去观观。</p>
 
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2009/05/13/5-13我的博客有了/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
         
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -722,7 +780,6 @@
 
 
     
-
   </section>
 
   
@@ -773,47 +830,46 @@
             </a>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">4</span>
-              <span class="site-state-item-name">分类</span>
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
               </a>
-          </div>
+            </div>
+          
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">10</span>
-              <span class="site-state-item-name">标签</span>
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">标签</span>
               </a>
-          </div>
+            </div>
+          
 
         </nav>
 
         
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
 
         <div class="links-of-author motion-element">
           
             
               <span class="links-of-author-item">
-                <a href="https://github.com/w4mxl" target="_blank">
+                <a href="https://github.com/w4mxl" target="_blank" title="GitHub">
                   
-                    <i class="fa fa-globe"></i> github
+                    <i class="fa fa-fw fa-github"></i>
                   
+                  GitHub
                 </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="https://twitter.com/w4mxl" target="_blank">
+                <a href="https://twitter.com/w4mxl" target="_blank" title="Twitter">
                   
-                    <i class="fa fa-globe"></i> twitter
+                    <i class="fa fa-fw fa-twitter"></i>
                   
+                  Twitter
                 </a>
               </span>
             
@@ -823,9 +879,8 @@
         
         
 
-        <div class="links-of-author motion-element">
-          
-        </div>
+        
+        
 
       </section>
 
@@ -846,7 +901,7 @@
   &copy; 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-next-heart fa fa-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Wml</span>
 </div>
@@ -862,59 +917,81 @@
   </a>
 </div>
 
+        
 
-
+        
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
 
   
 
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
 
   
 
 
 
+  
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
+  
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
+  
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.0"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.0.0"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
 
 
 
   
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.0"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
 
 
 
@@ -939,16 +1016,20 @@
 
   
     
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
   
 
 
 
 
 
+
   
   
 
   
+
   
 
   
@@ -982,6 +1063,14 @@
 
             $(element).find(COUNT_CONTAINER_REF).text(time);
           }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
         })
         .fail(function (object, error) {
           console.log("Error: " + error.code + " " + error.message);
@@ -1012,6 +1101,12 @@
             });
           } else {
             var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
             newcounter.set("title", title);
             newcounter.set("url", url);
             newcounter.set("time", 1);
@@ -1044,6 +1139,7 @@
 
 
 
+  
 
 </body>
 </html>
