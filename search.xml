@@ -4,6 +4,43 @@
   
     
     <entry>
+      <title><![CDATA[ScrollView 中嵌套 RecyclerView(ListView) 后的常见问题]]></title>
+      <url>https://w4mxl.github.io/2016/09/08/scrollView-nested-problems/</url>
+      <content type="html"><![CDATA[<h3 id="1-显示不全"><a href="#1-显示不全" class="headerlink" title="1. 显示不全"></a>1. 显示不全</h3><blockquote>
+<p>被嵌套的 RecyclerView(ListView) 显示不全，有多个 item，则只显示第一个。</p>
+</blockquote>
+<p>解决方法目前常见的有两种：</p>
+<ol>
+<li><del>动态计算 RecyclerView(ListView) 高度</del></li>
+<li>直接展示所有的 item，让其不滚动了 (推荐)</li>
+</ol>
+<a id="more"></a>
+<blockquote>
+<p>2 是嵌套 ListView 示例，嵌套 GridView等类似</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ScrollViewWithListView</span> <span class="keyword">extends</span> <span class="title">ListView</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">ScrollViewWithListView</span><span class="params">(android.content.Context context, android.util.AttributeSet attrs)</span> </span>&#123;</div><div class="line">        <span class="keyword">super</span>(context, attrs);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line">     * 设置不滚动</div><div class="line">     */</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onMeasure</span><span class="params">(<span class="keyword">int</span> widthMeasureSpec, <span class="keyword">int</span> heightMeasureSpec)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> expandSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE &gt;&gt; <span class="number">2</span>,</div><div class="line">                MeasureSpec.AT_MOST);</div><div class="line">        <span class="keyword">super</span>.onMeasure(widthMeasureSpec, expandSpec);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="2-自动滚动"><a href="#2-自动滚动" class="headerlink" title="2. 自动滚动"></a>2. 自动滚动</h3><p>场景1:</p>
+<blockquote>
+<p>ScrollView 中嵌套的组件 RecyclerView(ListView) 在内容加载之后，ScrollView 会自动下滚。</p>
+</blockquote>
+<p>解决方法：</p>
+<p>在 ScrollView 包裹的 LinearLayout 中添加：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">android:focusable="true"</div><div class="line">android:focusableInTouchMode="true"</div></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ScrollView</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></div><div class="line">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:scrollbars</span>=<span class="string">"none"</span>&gt;</div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">LinearLayout</span></span></div><div class="line">            <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">            <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></div><div class="line">            <span class="attr">android:orientation</span>=<span class="string">"vertical"</span></div><div class="line">            <span class="attr">android:focusable</span>=<span class="string">"true"</span></div><div class="line">            <span class="attr">android:focusableInTouchMode</span>=<span class="string">"true"</span>&gt;</div><div class="line">            ...</div><div class="line">            ...</div><div class="line">        <span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ScrollView</span>&gt;</span></div></pre></td></tr></table></figure>
+<p><a href="http://blog.csdn.net/icyfox_bupt/article/details/15026299" target="_blank" rel="external">更多描述请查看这篇</a></p>
+<p>场景2:</p>
+<blockquote>
+<p>在 1 的基础上, Fragment 中的 ScrollView 在初次加载会停留在顶部，可是切换到其它 Fragment 再切换回来的时候，又会自动下滚。</p>
+</blockquote>
+<p>解决方法：</p>
+<p>在 ScrollView 包裹的 LinearLayout 中多添加：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">android:focusableInTouchMode="true"</div></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ScrollView</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></div><div class="line">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:scrollbars</span>=<span class="string">"none"</span>&gt;</div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">LinearLayout</span></span></div><div class="line">            <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">            <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></div><div class="line">            <span class="attr">android:orientation</span>=<span class="string">"vertical"</span></div><div class="line">            <span class="attr">android:focusable</span>=<span class="string">"true"</span></div><div class="line">            <span class="attr">android:focusableInTouchMode</span>=<span class="string">"true"</span></div><div class="line">            <span class="attr">android:focusableInTouchMode</span>=<span class="string">"true"</span>&gt;</div><div class="line">            ...</div><div class="line">            ...</div><div class="line">        <span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ScrollView</span>&gt;</span></div></pre></td></tr></table></figure>
+<p><a href="http://stackoverflow.com/questions/9842494/how-to-prevent-a-scrollview-from-scrolling-to-a-webview-after-data-is-loaded" target="_blank" rel="external">是从这里知道的</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[在 Nexus 6 上 FLASH Android N]]></title>
       <url>https://w4mxl.github.io/2016/03/10/flash-N-to-nexus6/</url>
       <content type="html"><![CDATA[<p>今天 Google 较之往年提前2个月发布了 Android N 的开发者预览版，按耐不住，折腾起来。</p>
@@ -48,6 +85,7 @@ Reboot to bootloader and flash the following:
       <content type="html"><![CDATA[<p>一年又要过去了，以前说『又大了一岁』，现在说『又老了一岁』。</p>
 <p>在上完今年最后一个工作日（02.05），在快回到家的时候，我走进了一个尚在营业的理发店，将头发全染成了蓝色。到家后，当然，我妈肯定给了我一顿骂，还好有我爸给我打圆场，说「挺好的啊」。(^_^)ノ</p>
 <p>说到写年终总结国内人无外乎在两个时间点，一是元旦前，一是年节前。我猜选择后者的往往是有拖延症的。  (¬_¬)</p>
+<p>&lt;!—- more -—&gt;</p>
 <h2 id="工作和学习"><a href="#工作和学习" class="headerlink" title="工作和学习"></a>工作和学习</h2><p>15年3月回了上海，加入贝联，贝联是做母婴服务的移动互联网企业，进去的时候公司刚创办一年，14年公司主要是在全国很多妇幼医院中铺设HOS WI-FI作为入口。</p>
 <p>而15年（我进去的时候 ），公司着力于摸索打造出一个全新产品，这个过程中种种原因，不可避免地被做了很多试错的app，好在开发这些app中调研和使用了一些新技术，更好在下半年公司总算找到了一个较明确的发展方向。<br>作为移动端负责人，15年我们4个小伙伴相处欢乐，被黑常有，嬉笑怒骂常有，再回头看是有不少回忆的。</p>
 <p>这年在blog上有写了15篇的跟技术相关的博文，虽然数量不多质量不深，对我来说也实属不易。新一年会更注重将自己平时所学总结写成blog文章，也会再将这些总结分享给技术部的小伙伴。</p>
@@ -92,6 +130,7 @@ Reboot to bootloader and flash the following:
       <title><![CDATA[装修答卷:搭建一个家的美好]]></title>
       <url>https://w4mxl.github.io/2015/12/23/make-a-nice-house/</url>
       <content type="html"><![CDATA[<p>房子坐落在昆山花桥，22楼的一个3室(主卧、次卧、书房)1厅1厨2卫的房子。<br>装修从今年9.16号正式开工。<br>前期的装修是半包出去的，所谓的半包是指水电工、木工、油漆工是请来的，但是他们用到的所有所需材料都是我们去家具城亲自买回来。<br>铺建水电路、卫生间瓷砖、吊顶、做橱柜、鞋柜等等这些前期工作大概花了一个月时间。<br>后期的装修主要是添置家具和软装。<br>好了，开启上图模式，末尾分享这次装修中的一些些经验。</p>
+<p>&lt;!—- more -—&gt;</p>
 <p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1eziz6t3tfmj21w01w0nmd.jpg" alt=""><br><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1ezj5pzy3epj22c0340x6p.jpg" alt=""><br><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eziz6vi7vpj22c03401ky.jpg" alt=""><br>▲ 客厅</p>
 <p><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1eziz6un3avj21w01w0ts5.jpg" alt=""><br><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1ezj5q5eb08j22c0340npd.jpg" alt=""><br>▲ 吧台</p>
 <p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1eziz6tw7qpj21w01w0qq4.jpg" alt=""><br><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1ezj5q84dw9j22c03407wi.jpg" alt=""><br>▲ 餐厅</p>
@@ -619,6 +658,10 @@ Reboot to bootloader and flash the following:
       <url>https://w4mxl.github.io/2015/04/10/Life's/%E8%B4%AD%E4%B9%B0%E8%BF%87%E7%9A%84%E8%BD%AF%E4%BB%B6%E7%BA%AA%E5%BD%95/</url>
       <content type="html"><![CDATA[<p>买正版软件的心态养成，我是要感谢jbguide的，尤其是jailbreakhum。jbguide的每期播客和每篇文章，获益不少。</p>
 <a id="more"></a>
+<p>2016年08月31日<br>[iOS Cydia $ 0.99 USD] App Language Switcher</p>
+<p>2016年08月30日<br>[iOS Cydia $ 0.99 USD] FolderEnhancer</p>
+<p>2016年08月16日<br>[iOS Cydia $ 0.99 USD] MultiIconMover+</p>
+<p>2016年08月12日<br>[iOS Cydia $ 0.99 USD] ColorBanners<br>[iOS Cydia $ 1.99 USD] iKeywi 3</p>
 <p>2016年07月26日<br>[iOS App ¥28.00] Unread: RSS News Reader, Full Unlock - Discount Price</p>
 <p>2016年05月30日<br>[iOS App ¥6.00] MoneyWiz 2 - Personal Finance</p>
 <p>2016年05月25日<br>[iOS App ¥30.00] Reeder 3</p>
