@@ -293,8 +293,8 @@
             
               
                 
-                <a class="post-title-link" href="/2015/04/10/Life's/购买过的软件纪录/" itemprop="url">
-                  购买过的软件纪录
+                <a class="post-title-link" href="/2015/04/17/tips-of-Android-Studio/" itemprop="url">
+                  Android Studio 使用技巧(updating...)
                 </a>
               
             
@@ -307,8 +307,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-04-10T13:11:00+08:00" content="2015-04-10">
-              2015-04-10
+            <time itemprop="dateCreated" datetime="2015-04-17T00:00:00+08:00" content="2015-04-17">
+              2015-04-17
             </time>
           </span>
 
@@ -321,8 +321,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Life-s/" itemprop="url" rel="index">
-                    <span itemprop="name">Life's</span>
+                  <a href="/categories/Android/" itemprop="url" rel="index">
+                    <span itemprop="name">Android</span>
                   </a>
                 </span>
 
@@ -337,8 +337,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/04/10/Life's/购买过的软件纪录/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/04/10/Life's/购买过的软件纪录/" itemprop="commentsCount"></span>
+                <a href="/2015/04/17/tips-of-Android-Studio/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/04/17/tips-of-Android-Studio/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -348,7 +348,7 @@
 
           
           
-             <span id="/2015/04/10/Life's/购买过的软件纪录/" class="leancloud_visitors" data-flag-title="购买过的软件纪录">
+             <span id="/2015/04/17/tips-of-Android-Studio/" class="leancloud_visitors" data-flag-title="Android Studio 使用技巧(updating...)">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -371,12 +371,39 @@
 
       
         
-          <p>买正版软件的心态养成，我是要感谢jbguide的，尤其是jailbreakhum。jbguide的每期播客和每篇文章，获益不少。</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/04/10/Life's/购买过的软件纪录/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <p>Android Studio,从13年Google I/O发布后（还记得那时候翻墙在YouTube上看Google产品经理I/0现场演示Android Studio新特性，那黑色的theme[Darcula]，好酷），和它一路从早期开发者预览版、beta版、稳定版走来。开始很不稳定，每次一更新不出意外总遇到问题，然后只好不断通过google来填坑，再后来随着一版版更新，坑也填的差不多了，稳定版就发布了（2014/12/08），用起来也越来越顺手，说起来满满的都是爱。</p>
+<p>下面是我使用Android Studio过程中累计到一些技巧(工具)，希望通过这篇博客分享出来，如果你有其他关于Android Studio的使用上的技巧，也特别希望你能分享给我。</p>
+<h4 id="下面提到的工具安装方法"><a href="#下面提到的工具安装方法" class="headerlink" title="下面提到的工具安装方法"></a>下面提到的工具安装方法</h4><ol>
+<li>Android Studio:  <code>Preferences → Plugins → Browse repositories</code> 搜索工具的名字</li>
+<li>去工具的开源地址下载工具打好的zip包: <code>Preferences → Plugins → Install plugin from disk</code></li>
+</ol>
+<ul>
+<li>设置鼠标移到变量、方法、类等上弹出说明框。[在Settings(windows)或者Preferences(OSX)里搜索“show quick doc”]。如果你想只是在需要的时候查看，而它不想总是弹出，可以不设置上面的，通过快捷键 control + J(或者F1)调出。</li>
+</ul>
+<p><img src="/image/as_tip_show_quick_doc.png" alt=""></p>
+<p><img src="/image/as_tip_show_quick_doc_simple.png" alt=""></p>
+<ul>
+<li><a href="http://tmorcinek.github.io/android-codegenerator-plugin-intellij/" target="_blank" rel="external">Android Code Generator Plugin</a>。这个插件可以根据xml文件内容自动生成对应的java code，可生成的包括activity、fragment、adapter、menu等，具体使用可点进网站查看GIF动画演示。</li>
+</ul>
+<p><img src="/image/Android Code Generator Plugin.png" alt=""></p>
+<p><img src="/image/generate_activity.gif" alt=""></p>
+<ul>
+<li><a href="https://github.com/mcharmas/android-parcelable-intellij-plugin" target="_blank" rel="external">Android Parcelable code generator</a>。插件在github上的说明是：This tool generates an Android Parcelable implementation based on fields in the class.</li>
+</ul>
+<p><img src="/image/Android Parcelable code generator.png" alt=""></p>
+<p><img src="/image/Android Parcelable code generator_simple.png" alt=""></p>
+<ul>
+<li><a href="https://github.com/zzz40500/GsonFormat" target="_blank" rel="external">GsonFormat</a>。这是一个根据JSONObject格式的字符串,自动生成实体类参数的插件。实在是很方便好用。</li>
+</ul>
+<p><img src="/image/GsonFormat.png" alt=""></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><img src="/image/GsonFormat_simple.gif" alt=""></h2><p><code>更新: 2015/6/11</code></p>
+<ul>
+<li><a href="https://github.com/avast/android-butterknife-zelezny" target="_blank" rel="external">ButterKnife Zelezny</a>。<code>Android Studio plugin for generating ButterKnife injections from selected layout XML.</code></li>
+</ul>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1et09ls3nl5g20js0gfq8q.gif" alt=""></p>
+
+          
         
       
     </div>
