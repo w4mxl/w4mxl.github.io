@@ -4,8 +4,72 @@
   
     
     <entry>
+      <title><![CDATA[小米Max 换屏及刷国际版 Rom]]></title>
+      <url>https://w4mxl.github.io/2016/10/23/Life's/%E5%B0%8F%E7%B1%B3Max%20%E6%8D%A2%E5%B1%8F%E5%8F%8A%E5%88%B7%E5%9B%BD%E9%99%85%E7%89%88Rom/</url>
+      <content type="html"><![CDATA[<h3 id="背景介绍"><a href="#背景介绍" class="headerlink" title="背景介绍"></a>背景介绍</h3><p>这次折腾的这台小米Max是我父亲的。早两年我给他买的是一华为手机配一翻合式的保护套，稳稳当当用了两年多还不错。因为保护套用久后有点破烂了，上个月我就给他拿下来扔了。之后没多久的，啪，手机掉地上屏幕给摔碎了。</p>
+<p>今年父亲平时没啥事会出去开开 Uber 和滴滴，找补点事情做，4寸的华为机用来导航看着是有点累。刚好乘着这次碎屏事件想给他直接换一屏幕大点的手机。在一系列大屏手机中最后入了今天的主角小米Max配一钢化膜。可曾想，才用一个多月摔了两次，第一次侥幸是钢化膜裂了，第二次屏幕成功 big bang 。ヽ( ´ー｀)ノ</p>
+<a id="more"></a>
+<h3 id="换屏"><a href="#换屏" class="headerlink" title="换屏"></a>换屏</h3><p>大致 Google 了解了下小米Max的换屏成本：送小米售后换屏大概需要 ¥440，某宝单买屏幕总成 ¥150～400不等。最后，选择在某宝买了小米Max的屏幕总成，加运费 ¥258。选他家原因是，店家给在售的每种型号的屏幕都做了换屏教学视频并会赠送买家相应自己换屏需要的材料。提醒：某宝水深，选屏谨慎。</p>
+<p>2016.10.20  晚上11点左右开始自己动手拆机换屏，到完全换好大概花了1小时30分钟。效果不错，心满意足。</p>
+<p><img src="http://ww1.sinaimg.cn/large/006y8lVagw1f927suleeij31kw23u4qp.jpg" alt=""><br>换屏前</p>
+<p><img src="http://ww2.sinaimg.cn/large/006y8lVagw1f927tac4q3j31kw23uhdt.jpg" alt=""><br>换屏</p>
+<h3 id="刷Rom"><a href="#刷Rom" class="headerlink" title="刷Rom"></a>刷Rom</h3><p>MIUI 发展成 ADUI 由来已久了，虽然手机不是我在用，但是每次帮我父亲在上面弄点东西的时候，系统中随处可见的广告还是很难忍，小米全家桶对我父亲来说也几乎用不到。考虑刷个其他 Rom 给父亲用着舒服点。起先去 xda 论坛看了下，是有基于 android aosp 开发的原生型 Rom。不过有点担心太原生父亲用着不习惯，后来就决定给他刷 MIUI 国际版 Rom。国际版是完全告别了 ADUI 的称号，因为系统完全没广告。</p>
+<ol>
+<li>申请解锁 <a href="http://www.miui.com/unlock" target="_blank" rel="external">小米手机解锁申请页面</a> (大概10分钟后就收到解锁已经通过的短信)</li>
+<li>下载解锁工具 <a href="http://www.miui.com/unlock/done.html" target="_blank" rel="external">地址</a></li>
+<li>按照上面页面提示的步骤操作 （操作前要保证当前系统中登录上小米账号并且与申请解锁的账号一致）</li>
+<li>卡刷：<a href="http://en.miui.com/a-232.html" target="_blank" rel="external">http://en.miui.com/a-232.html</a> (卡刷教程看着更简单，但是实测后发现不行，会提示“更新包验证失败，无法正常更新”)</li>
+<li>线刷：<a href="http://en.miui.com/a-234.html" target="_blank" rel="external">http://en.miui.com/a-234.html</a> 注意线刷是要在windows电脑上操作的。然后按链接中的教程一步步走。（大体是，先下载安装Miflash刷机工具，再安装这个工具的时候，如果没pc上没安装过 .net framwork version 3.5 会提示要先安装。下载对应手机的线刷包（我下载的是 Xiaomi Mi Max 32GB Latest Global Stable Version Fastboot File Download ）。然后通过Miflash进行刷机就好了。）</li>
+<li>刷好之后手机会自动重启进入新系统。</li>
+<li>最后通过帖子<a href="http://en.miui.com/thread-318850-1-1.html，给手机换了思源黑体字体。" target="_blank" rel="external">http://en.miui.com/thread-318850-1-1.html，给手机换了思源黑体字体。</a></li>
+</ol>
+<p><img src="http://ww1.sinaimg.cn/large/006y8lVagw1f927up0vxdj30kv08hgmu.jpg" alt=""><br>刷机</p>
+<p><img src="http://ww3.sinaimg.cn/large/006y8lVagw1f927vgmpc7j31kw1kw1if.jpg" alt=""><br>最终成果</p>
+<p>：）</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[购买过的软件纪录]]></title>
+      <url>https://w4mxl.github.io/2016/10/12/Life's/%E8%B4%AD%E4%B9%B0%E8%BF%87%E7%9A%84%E8%BD%AF%E4%BB%B6%E7%BA%AA%E5%BD%95/</url>
+      <content type="html"><![CDATA[<p>买正版软件的心态养成，我是要感谢jbguide的，尤其是jailbreakhum。jbguide的每期播客和每篇文章，获益不少。</p>
+<p>TODO:<br>这些已购买的插件和 app 都是我特别喜欢或有需要才入的，对它们使用还算深度，后面想抽出时间来为其中一些优秀的写评测和使用感受。</p>
+<a id="more"></a>
+<p>2016年10月12日<br>[iOS Cydia $ 0.99 USD] QuickCenter</p>
+<p>2016年10月04日<br>[iOS Cydia $ 3.99 USD] Flex 2</p>
+<p>2016年09月26日<br>[Mac app $ 18 USD ( 原价 $ 36)] Keyboard Maestro</p>
+<p>2016年08月31日<br>[iOS Cydia $ 0.99 USD] App Language Switcher</p>
+<p>2016年08月30日<br>[iOS Cydia $ 0.99 USD] FolderEnhancer</p>
+<p>2016年08月16日<br>[iOS Cydia $ 0.99 USD] MultiIconMover+</p>
+<p>2016年08月12日<br>[iOS Cydia $ 0.99 USD] ColorBanners<br>[iOS Cydia $ 1.99 USD] iKeywi 3</p>
+<p>2016年07月26日<br>[iOS App ¥28.00] Unread: RSS News Reader, Full Unlock - Discount Price</p>
+<p>2016年05月30日<br>[iOS App ¥6.00] MoneyWiz 2 - Personal Finance</p>
+<p>2016年05月25日<br>[iOS App ¥30.00] Reeder 3</p>
+<p>2016年05月05日<br>[iOS App ¥1.00] Alto’s Adventure</p>
+<p>2016/02/07<br>[iOS App ¥12.00] 秒速记账(1SecMoney)</p>
+<p>2015年12月02日<br>[iOS App ¥1.00] The Earth by Tinybop</p>
+<p>2015/09/22<br>[iOS App ¥1.00] L欧路 英语 词典 Eudic 真人语音 增强版</p>
+<p>2015/09/14<br>[iOS App ¥1.00] Liveline(生命线), v1.6.0</p>
+<p>2015/08/15<br>[iOS App ¥12.00] Monument Valley, v2.3.0</p>
+<p>2015/07/17<br>[iOS App ¥1.00] 地狱边境 (LIMBO), v1.1.4<br>[iOS App ¥1.00] AirPano Travel Book, v2.2</p>
+<p>2015/07/16<br>[iOS Cydia $ 1.99 USD] Auxo Limited Edition</p>
+<p>2015/04/12<br>[iOS Cydia $ 4.99 USD] LockInfo 8</p>
+<p>2015/04/05<br>[iOS App ¥30.00] Tweetbot 3, v3.5.4</p>
+<p>2015/03/08<br>[iOS Cydia $ 2.99 USD] Springtomize3</p>
+<p>2015/02/02<br>[iOS Cydia $ 0.99 USD] Clean Lock</p>
+<p>2014/12/27<br>[iOS App ¥1.00] 榫卯, 榫卯完整版</p>
+<p>2014/12/19<br>[iOS App ¥18.00] Workflow: Powerful Automation Made Simple, v1.0.1</p>
+<p>2014/11/24<br>[iOS App ¥1.00] 家庭用药 - 专业版, v2.8.3<br>[iOS App ¥1.00] 航旅纵横PRO-官方航班动态、手机值机、机票, v1.2.0</p>
+<p>2014/11/21<br>[iOS App ¥1.00] 新概念英语2014最新版-英美全四册, v1.0</p>
+<blockquote>
+<p>created date : 2015-4-10 13:11</p>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[ScrollView 中嵌套 RecyclerView(ListView) 后的常见问题]]></title>
-      <url>https://w4mxl.github.io/2016/09/08/scrollView-nested-problems/</url>
+      <url>https://w4mxl.github.io/2016/09/07/scrollView-nested-problems/</url>
       <content type="html"><![CDATA[<h3 id="1-显示不全"><a href="#1-显示不全" class="headerlink" title="1. 显示不全"></a>1. 显示不全</h3><blockquote>
 <p>被嵌套的 RecyclerView(ListView) 显示不全，有多个 item，则只显示第一个。</p>
 </blockquote>
@@ -37,41 +101,6 @@
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">android:focusableInTouchMode="true"</div></pre></td></tr></table></figure>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ScrollView</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></div><div class="line">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:scrollbars</span>=<span class="string">"none"</span>&gt;</div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">LinearLayout</span></span></div><div class="line">            <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">            <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></div><div class="line">            <span class="attr">android:orientation</span>=<span class="string">"vertical"</span></div><div class="line">            <span class="attr">android:focusable</span>=<span class="string">"true"</span></div><div class="line">            <span class="attr">android:focusableInTouchMode</span>=<span class="string">"true"</span></div><div class="line">            <span class="attr">android:focusableInTouchMode</span>=<span class="string">"true"</span>&gt;</div><div class="line">            ...</div><div class="line">            ...</div><div class="line">        <span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ScrollView</span>&gt;</span></div></pre></td></tr></table></figure>
 <p><a href="http://stackoverflow.com/questions/9842494/how-to-prevent-a-scrollview-from-scrolling-to-a-webview-after-data-is-loaded" target="_blank" rel="external">是从这里知道的</a></p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[购买过的软件纪录]]></title>
-      <url>https://w4mxl.github.io/2016/08/31/Life's/%E8%B4%AD%E4%B9%B0%E8%BF%87%E7%9A%84%E8%BD%AF%E4%BB%B6%E7%BA%AA%E5%BD%95/</url>
-      <content type="html"><![CDATA[<p>买正版软件的心态养成，我是要感谢jbguide的，尤其是jailbreakhum。jbguide的每期播客和每篇文章，获益不少。</p>
-<p>TODO:<br>这些已购买的插件和 app 都是我特别喜欢或有需要才入的，对它们使用还算深度，后面想抽出时间来为其中一些优秀的写评测和使用感受。</p>
-<a id="more"></a>
-<p>2016年08月31日<br>[iOS Cydia $ 0.99 USD] App Language Switcher</p>
-<p>2016年08月30日<br>[iOS Cydia $ 0.99 USD] FolderEnhancer</p>
-<p>2016年08月16日<br>[iOS Cydia $ 0.99 USD] MultiIconMover+</p>
-<p>2016年08月12日<br>[iOS Cydia $ 0.99 USD] ColorBanners<br>[iOS Cydia $ 1.99 USD] iKeywi 3</p>
-<p>2016年07月26日<br>[iOS App ¥28.00] Unread: RSS News Reader, Full Unlock - Discount Price</p>
-<p>2016年05月30日<br>[iOS App ¥6.00] MoneyWiz 2 - Personal Finance</p>
-<p>2016年05月25日<br>[iOS App ¥30.00] Reeder 3</p>
-<p>2016年05月05日<br>[iOS App ¥1.00] Alto’s Adventure</p>
-<p>2016/02/07<br>[iOS App ¥12.00] 秒速记账(1SecMoney)</p>
-<p>2015年12月02日<br>[iOS App ¥1.00] The Earth by Tinybop</p>
-<p>2015/09/22<br>[iOS App ¥1.00] L欧路 英语 词典 Eudic 真人语音 增强版</p>
-<p>2015/09/14<br>[iOS App ¥1.00] Liveline(生命线), v1.6.0</p>
-<p>2015/08/15<br>[iOS App ¥12.00] Monument Valley, v2.3.0</p>
-<p>2015/07/17<br>[iOS App ¥1.00] 地狱边境 (LIMBO), v1.1.4<br>[iOS App ¥1.00] AirPano Travel Book, v2.2</p>
-<p>2015/07/16<br>[iOS Cydia $ 1.99 USD] Auxo Limited Edition</p>
-<p>2015/04/12<br>[iOS Cydia $ 4.99 USD] LockInfo 8</p>
-<p>2015/04/05<br>[iOS App ¥30.00] Tweetbot 3, v3.5.4</p>
-<p>2015/03/08<br>[iOS Cydia $ 2.99 USD] Springtomize3</p>
-<p>2015/02/02<br>[iOS Cydia $ 0.99 USD] Clean Lock</p>
-<p>2014/12/27<br>[iOS App ¥1.00] 榫卯, 榫卯完整版</p>
-<p>2014/12/19<br>[iOS App ¥18.00] Workflow: Powerful Automation Made Simple, v1.0.1</p>
-<p>2014/11/24<br>[iOS App ¥1.00] 家庭用药 - 专业版, v2.8.3<br>[iOS App ¥1.00] 航旅纵横PRO-官方航班动态、手机值机、机票, v1.2.0</p>
-<p>2014/11/21<br>[iOS App ¥1.00] 新概念英语2014最新版-英美全四册, v1.0</p>
-<blockquote>
-<p>created date : 2015-4-10 13:11</p>
-</blockquote>
 ]]></content>
     </entry>
     
