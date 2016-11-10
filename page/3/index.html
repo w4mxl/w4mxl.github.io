@@ -293,6 +293,454 @@
             
               
                 
+                <a class="post-title-link" href="/2015/07/06/Intent-Flag/" itemprop="url">
+                  Intent的Flag属性
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-07-06T20:03:00+08:00" content="2015-07-06">
+              2015-07-06
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Android/" itemprop="url" rel="index">
+                    <span itemprop="name">Android</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/07/06/Intent-Flag/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/07/06/Intent-Flag/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2015/07/06/Intent-Flag/" class="leancloud_visitors" data-flag-title="Intent的Flag属性">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>这篇是想接着上篇<a href="http://wml.farbox.com/post/activity-launchMode" target="_blank" rel="external">「Activity的启动模式」</a>，从实际需求场景的出发介绍下Intent与启动模式相关的Flag使用。(注:并为将所有 Flag 介绍完全，因为有些我没实际用过可能还没有理解足够深刻，只写个人实际使用过并觉得理解到位了的，后续会补充)</p>
+<h3 id="常见需求场景"><a href="#常见需求场景" class="headerlink" title="常见需求场景"></a>常见需求场景</h3><p><strong>需求1:</strong></p>
+<blockquote>
+<p>前提: 下面的 Activity A B C D 都没有显式的指明launchMode 和 taskAffinity 属性。</p>
+</blockquote>
+<p>已经启动了四个 Activity: A，B，C和D。在 D Activity里，我们想要跳到 B Activity，同时希望C Activity finish掉。<br><strong>实现:</strong>: FLAG_ACTIVITY_CLEAR_TOP<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Intent intent = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, B.class);</div><div class="line">intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);<span class="comment">// D Activity</span></div><div class="line">startActivity(intent);</div></pre></td></tr></table></figure></p>
+<p><strong>结果:</strong><br>D、C、B Activity 依次调用各自的 onDestroy 方法出栈 －&gt; B Activity 重新启动(onCreate)<br>栈中为: A B</p>
+<hr>
+<p><strong>需求2:</strong><br>在需求1的基础上，只是不想重新再创建一个新的B Activity，而是重用原来的实例。<br><strong>实现:</strong>: Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Intent intent = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, B.class);</div><div class="line"><span class="comment">// intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);// D Activity</span></div><div class="line">intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);<span class="comment">// D Activity</span></div><div class="line">startActivity(intent);</div></pre></td></tr></table></figure></p>
+<p><strong>结果:</strong><br>依次，C onDestroy -&gt; B Activity onNewIntent onRestart -&gt; D onDestroy<br>栈中为: A B</p>
+<hr>
+<p><strong>需求3:</strong></p>
+<blockquote>
+<p>前提: 下面的 Activity A B C D 都没有显式的指明 launchMode 和 taskAffinity 属性。</p>
+</blockquote>
+<p>已经启动了四个Activity：A，B，C和D。在D Activity里，想再启动一个Actvity B，但不变成A,B,C,D,B，而是希望是A,C,D,B。<br><strong>实现:</strong>: Intent.FLAG_ACTIVITY_REORDER_TO_FRONT<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Intent intent = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, B.class);</div><div class="line">intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);<span class="comment">// D Activity</span></div><div class="line">startActivity(intent);</div></pre></td></tr></table></figure></p>
+<p><strong>结果:</strong><br>依次，B Activity onNewIntent onRestart<br>栈中为: A C D B</p>
+<hr>
+<h3 id="其他常见-FLAG-说明"><a href="#其他常见-FLAG-说明" class="headerlink" title="其他常见 FLAG 说明"></a>其他常见 FLAG 说明</h3><p><strong>FLAG_ACTIVITY_NO_HISTORY</strong><br>例如现在栈情况为：A B C。C 通过 intent 跳转到 D，这个intent添加 FLAG_ACTIVITY_NO_HISTORY 标志，则此时界面显示D的内容，如果此时D中又跳转到E，栈的情况变为: A B C E，此时按返回键会回到C，因为D根本就没有被压入栈中。</p>
+<p><strong>FLAG_ACTIVITY_NEW_TASK</strong><br>例如现在栈1的情况是：A B C。C 通过intent跳转到 D，并且这个 intent 添加了 FLAG_ACTIVITY_NEW_TASK 标 记，如果 D 这个 Activity 在 Manifest.xml 中的声明中添加了 Task affinity，并且和栈1的 affinity 不同，系统首先会查找有没有和 D 的 Task affinity 相同的 task 栈存在，如果有存在，将 D 压入那个栈，如果不存在则会新建一个 D 的 affinity 的栈将其压入。如果 D 的 Task affinity 默认没有设置，或者和栈1的 affinity 相同，则会把其压入栈1，变成：A B C D，这样就和不加 FLAG_ACTIVITY_NEW_TASK 标记效果是一样的了。</p>
+<p><strong>FLAG_ACTIVITY_NO_ANIMATION</strong><br>这个标志将阻止系统进入下一个 Activity 时应用 Acitivity 迁移动画。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/07/05/record-a-cook/" itemprop="url">
+                  记一次下厨
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-07-05T11:59:00+08:00" content="2015-07-05">
+              2015-07-05
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Life-s/" itemprop="url" rel="index">
+                    <span itemprop="name">Life's</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/07/05/record-a-cook/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/07/05/record-a-cook/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2015/07/05/record-a-cook/" class="leancloud_visitors" data-flag-title="记一次下厨">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="下厨起因"><a href="#下厨起因" class="headerlink" title="下厨起因"></a>下厨起因</h3><p>雯这周因为过敏，左眼红肿，身体其他地方也出现了些问题，本来应该是不大的事，全因起初那医生诊后说她是得了湿疹开了很多药给她，徒增了她很多担惊，加上去医院挂号就诊取药楼层之间来回跑，打电话给我的时候无助委屈的都快哭了。我因为不放心，买了周五晚上海至南京的高铁。她周六上午是要上班的，我就跟她说我来给她做顿午饭，秀下厨艺。</p>
+<h3 id="购买食料"><a href="#购买食料" class="headerlink" title="购买食料"></a>购买食料</h3><p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1ets7vabw5oj21w01w0npd.jpg" alt=""></p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1ets7v5pyqqj21w01w07vq.jpg" alt=""></p>
+<p>打算给她做两个菜: 西红柿青椒炒蛋 + 鱼头豆腐汤。其实因为我自己之前烧菜次数屈指可数，实无厨艺可秀。为了做好这两道菜Google了下菜谱，了解步骤和注意事项。</p>
+<h3 id="第一道菜-西红柿青椒炒蛋"><a href="#第一道菜-西红柿青椒炒蛋" class="headerlink" title="第一道菜: 西红柿青椒炒蛋"></a>第一道菜: 西红柿青椒炒蛋</h3><p>做法:</p>
+<ol>
+<li>西红柿、青椒洗净，切成块；葱、蒜切小片</li>
+<li>将4个鸡蛋磕入碗内，用筷子搅匀</li>
+<li>锅内加油适量烧热，倒入蛋液，炒好盛进盘子</li>
+<li>底锅另加油烧热，爆葱花蒜香，然后倒入西红柿炒至粘软</li>
+<li>放入青椒稍炒片刻，加些许盐、味精，再倒入先前炒好的鸡蛋</li>
+<li>翻炒均匀，用香醋烹一下，出锅即成</li>
+</ol>
+<p>成果如下:</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1ets7v2r7xxj21w01w04qp.jpg" alt=""></p>
+<h3 id="第二道菜-鱼头豆腐汤"><a href="#第二道菜-鱼头豆腐汤" class="headerlink" title="第二道菜: 鱼头豆腐汤"></a>第二道菜: 鱼头豆腐汤</h3><p>做法:</p>
+<ol>
+<li>鱼头洗净斩半(在这块费了我很大力气才搞定，应该买鱼头时让师傅切两半的)</li>
+<li>锅内放油烧热，鱼头连同姜片、葱段一起放入锅内煎，煎至鱼头双面呈微黄色</li>
+<li>注入水，以没过鱼头为宜，加盖大火煮15分钟左右，汤呈奶白色</li>
+<li>3过程中，把嫩豆腐切成小块；香菇、香菜、小葱洗净切成段</li>
+<li>3完成时，把切好的豆腐放进锅内，在煮5分钟左右，然后加入香菇，香菜和葱段</li>
+<li>最后加入适量的盐、香油调味即可</li>
+</ol>
+<p><strong>注意点:</strong></p>
+<ul>
+<li>鱼头一定要煎过后再用来熬汤，这样熬出来的汤才白白的 </li>
+<li>豆腐不要下得太早，太早下会把豆腐煮烂 </li>
+<li>水量要一次加足，中途加水会冲淡鱼汤的浓度 </li>
+</ul>
+<p>成果如下:</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1ets7utthqkj21w01w0x1x.jpg" alt=""></p>
+<p>最后再加上下面2个买来的熟菜，一顿午饭就有了 :)<br>雯回来后，看到这，终于是给了夸赞的。 8)</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1ets7uzv7t8j21w01w07wh.jpg" alt=""></p>
+<p><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1ets7uwx78pj21w01w0qta.jpg" alt=""></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/07/03/Life's/赵雷的MV《理想》/" itemprop="url">
+                  赵雷的MV《理想》
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-07-03T22:23:00+08:00" content="2015-07-03">
+              2015-07-03
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Life-s/" itemprop="url" rel="index">
+                    <span itemprop="name">Life's</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/07/03/Life's/赵雷的MV《理想》/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/07/03/Life's/赵雷的MV《理想》/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2015/07/03/Life's/赵雷的MV《理想》/" class="leancloud_visitors" data-flag-title="赵雷的MV《理想》">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>分享赵雷的MV《理想》，以前这首歌也一直听，昨夜里敲罢代码，在网易云音乐里看到这首MV，喜欢。</p>
+<iframe height="498" width="510" src="http://player.youku.com/embed/XODI2NTcyMjg4" frameborder="0" allowfullscreen></iframe>
+
+
+<p><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1etpypxuwe1j20vk0hsjrv.jpg" alt=""></p>
+<blockquote>
+<p>昨晚mv看第二遍时又末尾了截的图</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2015/06/28/Android/友盟-用户反馈的集成和UI自定义/" itemprop="url">
                   友盟-"用户反馈"的集成和UI自定义
                 </a>
@@ -1252,426 +1700,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/05/09/my-movie/" itemprop="url">
-                  我的电影(no rank & updating)
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-05-09T13:13:00+08:00" content="2015-05-09">
-              2015-05-09
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Life-s/" itemprop="url" rel="index">
-                    <span itemprop="name">Life's</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/05/09/my-movie/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/05/09/my-movie/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2015/05/09/my-movie/" class="leancloud_visitors" data-flag-title="我的电影(no rank & updating)">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><a href="http://movie.douban.com/subject/25853727/" target="_blank" rel="external"><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1evzz4pmluyj20bo0godjh.jpg" title="破风" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/19994974/" target="_blank" rel="external"><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eugcmnlh6zj20b30goq6b.jpg" title="周恩来的四个昼夜" width="300"></a> <a href="http://movie.douban.com/subject/1293434/" target="_blank" rel="external"><img src="http://ww3.sinaimg.cn/mw690/62ed8609jw1evzz4nbyc2j20c90gognl.jpg" title="王牌对王牌 The Negotiator (1998)" width="300"></a> </p>
-<p><a href="http://movie.douban.com/subject/7065161/" target="_blank" rel="external"><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1es73n6rwwrj20bn0goq6s.jpg" title="鸣梁海战 명량 (2014)" width="300"></a> <a href="http://movie.douban.com/subject/25745752/" target="_blank" rel="external"><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1es73n6dlmbj20bw0go77c.jpg" title="左耳 (2015)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/1308807" target="_blank" rel="external"><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eryt4hsk9sj20bs0gojw4.jpg" title="哈尔的移动城堡 ハウルの動く城 (2004)" width="300"></a> <a href="http://movie.douban.com/subject/1293318/" target="_blank" rel="external"><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1eryt235jk8j20bn0gotcc.jpg" title="萤火虫之墓 火垂るの墓 (1988)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/1292056/" target="_blank" rel="external"><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1eryt23q2nnj20bk0goq6s.jpg" title="蝴蝶 Le Papillon (2002)" width="300"></a> <a href="http://movie.douban.com/subject/1291583/" target="_blank" rel="external"><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1eryt1xk5i3j20bq0go0vi.jpg" title="天空之城 天空の城ラピュタ (1986)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/1291828/" target="_blank" rel="external"><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eryt1x5l3oj20bp0gowhl.jpg" title="天堂电影院 Nuovo Cinema Paradiso (1988)" width="300"></a> <a href="http://movie.douban.com/subject/1291561/" target="_blank" rel="external"><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eryt1vm3ryj20bv0go428.jpg" title="千与千寻 千と千尋の神隠し (2001)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/3560787/" target="_blank" rel="external"><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eryt1w5fj2j20b90go0vh.jpg" title="回忆积木小屋 つみきのいえ (2008)" width="300"></a> <a href="http://movie.douban.com/subject/1303021/" target="_blank" rel="external"><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1eryt1yhym1j20bb0gotb5.jpg" title="小鞋子 بچههای آسمان (1997)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/3077680/" target="_blank" rel="external"><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eryt1uqqbtj20bo0gowhq.jpg" title="傻瓜 바보 (2008)" width="300"></a> <a href="http://movie.douban.com/subject/4009651/" target="_blank" rel="external"><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1eryt21meyuj20b40goq63.jpg" title="斗牛 (2009)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/2326212/" target="_blank" rel="external"><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eryt1wozv6j20bk0go0vl.jpg" title="夏天的尾巴 (2007)" width="300"></a> <a href="http://movie.douban.com/subject/3130190/" target="_blank" rel="external"><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eryt1y05i9j20bo0godje.jpg" title="宿命 숙명 (2008)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/3126186/" target="_blank" rel="external"><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eryt20kh7hj20bp0goad1.jpg" title="悲恋三人行 รัก|สาม|เศร้า (2008)" width="300"></a> <a href="http://movie.douban.com/subject/3442220/" target="_blank" rel="external"><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eryt226031j20ci0goacu.jpg" title="海豚湾 The Cove (2009)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/1292219/" target="_blank" rel="external"><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eryt1v9p2yj20bm0gotav.jpg" title="关于莉莉周的一切 リリイ·シュシュのすべて (2001)" width="300"></a> <a href="http://movie.douban.com/subject/4154555/" target="_blank" rel="external"><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eryt22nd10j208l0bxt8t.jpg" title="父亲 The Father (2009)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/1433360/" target="_blank" rel="external"><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1eryt24i31mj20bm0go0w0.jpg" title="雏菊 데이지 (2006)" width="300"></a> <a href="http://movie.douban.com/subject/1300303/" target="_blank" rel="external"><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eryt21590ij20bi0go42p.jpg" title="我是谁 我是誰 (1998)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/3792799/" target="_blank" rel="external"><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eryt1zh5qhj20bx0go76x.jpg" title="岁月神偷 歲月神偷 (2010)" width="300"></a> <a href="http://movie.douban.com/subject/4305436/" target="_blank" rel="external"><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1eryt1zz1v6j20bu0goq5d.jpg" title="志明与春娇 志明與春嬌 (2010)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/1478277/" target="_blank" rel="external"><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eryt2086m4j20bo0c9dgp.jpg" title="悲伤恋歌 슬픈연가 (2005)" width="300"></a> <a href="http://movie.douban.com/subject/4151110/" target="_blank" rel="external"><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eryt1ywvbpj20bw0gojuq.jpg" title="山楂树之恋 (2010)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/2131459/" target="_blank" rel="external"><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1erytpxk1cvj20b60gowgz.jpg" title="机器人总动员 WALL·E (2008)" width="300"></a> <a href="http://movie.douban.com/subject/5318669/" target="_blank" rel="external"><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1erytpy0ac3j20bs0go78n.jpg" title="转山 (2011)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/5044737/" target="_blank" rel="external"><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1erzjroew5zj20c90gotbu.jpg" title="我11 (2012)" width="300"></a> <a href="http://movie.douban.com/subject/1294963/" target="_blank" rel="external"><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1erzjrnwpekj20am0godih.jpg" title="一个都不能少 (1999)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/1292052/" target="_blank" rel="external"><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1erzjrnb997j20bd0godj9.jpg" title="肖申克的救赎 The Shawshank Redemption (1994)" width="300"></a> <a href="http://movie.douban.com/subject/1291546/" target="_blank" rel="external"><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1erzjrmu743j20bk0goadi.jpg" title="霸王别姬 (1993)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/1295644/" target="_blank" rel="external"><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1erzjrm5hi5j20b40gota5.jpg" title="这个杀手不太冷 Léon (1994)" width="300"></a> <a href="http://movie.douban.com/subject/1292063/" target="_blank" rel="external"><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1erzjrlsaggj20an0go770.jpg" title="美丽人生 La vita è bella (1997)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/6886518/" target="_blank" rel="external"><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1erzjrlnaqaj20bu0go0vu.jpg" title="柏林 베를린 (2013)" width="300"></a> <a href="http://movie.douban.com/subject/1292218/" target="_blank" rel="external"><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1erzjrkyhp9j20c70goq5v.jpg" title="中央车站 Central do Brasil (1998)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/1292434/" target="_blank" rel="external"><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1erzjrk50vgj20bs0gomyp.jpg" title="一一 (2000)" width="300"></a> <a href="http://movie.douban.com/subject/1292329/" target="_blank" rel="external"><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1erzjrjq1lxj20cm0go410.jpg" title="牯岭街少年杀人事件 牯嶺街少年殺人事件 (1991)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/1291818/" target="_blank" rel="external"><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1erzjrj9exdj20cq0go0vz.jpg" title="饮食男女 飲食男女 (1994)" width="300"></a> <a href="http://movie.douban.com/subject/1303037/" target="_blank" rel="external"><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1erzjrid2mtj20cb0gomzm.jpg" title="喜宴 (1993)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/2980609/" target="_blank" rel="external"><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1erzjrhxfqdj20ah0go41v.jpg" title="女拳霸 ช็อคโกแลต (2008)" width="300"></a> <a href="http://movie.douban.com/subject/6129693/" target="_blank" rel="external"><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1erzjrhj3duj20br0gogn4.jpg" title="我可能不会爱你 我可能不會愛你 (2011)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/5912992/" target="_blank" rel="external"><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1erzjrgv0baj20bo0go76y.jpg" title="熔炉 도가니 (2011)" width="300"></a> <a href="http://movie.douban.com/subject/1292950/" target="_blank" rel="external"><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1erzjrgacv9j20bv0gogog.jpg" title="新不了情 (1993)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/1301359/" target="_blank" rel="external"><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1erzjrfvorcj20b40extbk.jpg" title="五个扑水的少年 ウォーターボーイズ (2001)" width="300"></a> <a href="http://movie.douban.com/subject/21360417/" target="_blank" rel="external"><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1erzjrfa1r6j20bm0goq56.jpg" title="恐怖直播 더 테러 라이브 (2013)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/5919538/" target="_blank" rel="external"><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1erzjreioaoj20bn0go41f.jpg" title="只有你 오직 그대만 (2011)" width="300"></a> <a href="http://movie.douban.com/subject/1301912/" target="_blank" rel="external"><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1erzjrdzm8bj20c60go76y.jpg" title="秋天的童话 秋天的童話 (1987)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/1853160/" target="_blank" rel="external"><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1erzjrdku0wj20bp0go0wj.jpg" title="狗咬狗 (2006)" width="300"></a> <a href="http://movie.douban.com/subject/10810269/" target="_blank" rel="external"><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1erzjrd9ab4j20bm0goq5b.jpg" title="26年 26년 (2012)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/24743015/" target="_blank" rel="external"><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1erzjrcf6hpj20bm0gognl.jpg" title="哭泣的男人 우는 남자 (2014)" width="300"></a> <a href="http://movie.douban.com/subject/1304972/" target="_blank" rel="external"><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1erzjrbu2m8j20b90go77z.jpg" title="太极旗飘扬 태극기 휘날리며 (2004)" width="300"></a></p>
-<p><a href="http://movie.douban.com/subject/11516701/" target="_blank" rel="external"><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1erzjrbfkjoj20b40fkjst.jpg" title="再见金华站 (2011)" width="300"></a> <a href="http://movie.douban.com/subject/1301168/" target="_blank" rel="external"><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1erzjran9y3j20bm0godj8.jpg" title="卧虎藏龙 臥虎藏龍 (2000)" width="300"></a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/05/06/Combination-Lock-And-HotDog/" itemprop="url">
-                  [Combination Lock & HotDog] 密码页自定义
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-05-06T20:50:00+08:00" content="2015-05-06">
-              2015-05-06
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Jailbreak/" itemprop="url" rel="index">
-                    <span itemprop="name">Jailbreak</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/05/06/Combination-Lock-And-HotDog/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/05/06/Combination-Lock-And-HotDog/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2015/05/06/Combination-Lock-And-HotDog/" class="leancloud_visitors" data-flag-title="[Combination Lock & HotDog] 密码页自定义">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1eruvbdcpgdj20ku112dq6.jpg" width="300"><br><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eruv82lkk6j20ku1127ds.jpg" width="300"></p>
-<ul>
-<li><p>Combination Lock 插件安装后没有设置项，直接起效。通过转动轮盘选择密码数字，有点怀旧的感觉。最近刚上架cydia，好像还有点bug(转动时有时数字选不上，但是可以像原始那样使用直接点击数字的方式)，不过一点没影响我对它的喜欢。    </p>
-</li>
-<li><p>HotDog 插件安装后进入“setting”－&gt;“HotDog”，锁屏页、密码页大部分元素都是可以自定义的。如你所见，我则是将原先的“Touch ID or Enter Passcode”替换成了一句“如您是…”，我好想知道如果手机真丢了会不会有好心人给这个号码拨打电话 :)</p>
-</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/05/04/Life's/青年节清晨/" itemprop="url">
-                  青年节清晨
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-05-04T08:37:28+08:00" content="2015-05-04">
-              2015-05-04
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Life-s/" itemprop="url" rel="index">
-                    <span itemprop="name">Life's</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/05/04/Life's/青年节清晨/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/05/04/Life's/青年节清晨/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2015/05/04/Life's/青年节清晨/" class="leancloud_visitors" data-flag-title="青年节清晨">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1errzniojbdj21w01w0hdu.jpg" alt=""></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1717,7 +1745,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">156</span>
+              <span class="site-state-item-count">159</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
