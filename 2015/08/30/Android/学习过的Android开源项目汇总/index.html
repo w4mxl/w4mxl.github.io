@@ -141,7 +141,7 @@ Android-ConvenientBanner项目描述:通用的广告栏控件，让你轻松实�
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: 0,
+      userId: '0',
       author: '博主'
     }
   };
@@ -152,10 +152,11 @@ Android-ConvenientBanner项目描述:通用的广告栏控件，让你轻松实�
 
   <link rel="canonical" href="https://w4mxl.github.io/2015/08/30/Android/学习过的Android开源项目汇总/"/>
 
+
   <title> 学习过的Android开源项目汇总 | Wml'Blog </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
 
   
 
@@ -186,7 +187,7 @@ Android-ConvenientBanner项目描述:通用的广告栏控件，让你轻松实�
   <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
       <div class="header-inner"><div class="site-meta ">
   
 
@@ -304,7 +305,7 @@ Android-ConvenientBanner项目描述:通用的广告栏控件，让你轻松实�
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -532,7 +533,7 @@ Android-ConvenientBanner项目描述:通用的广告栏控件，让你轻松实�
       
 
       <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460"
                alt="Wml" />
@@ -635,7 +636,7 @@ Android-ConvenientBanner项目描述:通用的广告栏控件，让你轻松实�
 </div>
 
 <div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
@@ -803,29 +804,26 @@ Android-ConvenientBanner项目描述:通用的广告栏控件，让你轻松实�
                 if (this.value.trim().length > 1) {
                 // perform local searching
                 datas.forEach(function(data) {
-                    var isMatch = true;
+                    var isMatch = false;
                     var content_index = [];
                     var data_title = data.title.trim().toLowerCase();
                     var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                    var data_url = data.url;
+                    var data_url = decodeURIComponent(data.url);
                     var index_title = -1;
                     var index_content = -1;
                     var first_occur = -1;
                     // only match artiles with not empty titles and contents
-                    if(data_title != '' && data_content != '') {
+                    if(data_title != '') {
                         keywords.forEach(function(keyword, i) {
                             index_title = data_title.indexOf(keyword);
                             index_content = data_content.indexOf(keyword);
-                            if( index_title < 0 && index_content < 0 ){
-                                isMatch = false;
-                            } else {
-                                if (index_content < 0) {
-                                    index_content = 0;
-                                }
-                                if (i == 0) {
+                            if( index_title >= 0 || index_content >= 0 ){
+                                isMatch = true;
+								if (i == 0) {
                                     first_occur = index_content;
                                 }
-                            }
+                            } 
+							
                         });
                     }
                     // show search results
@@ -1001,6 +999,9 @@ Android-ConvenientBanner项目描述:通用的广告栏控件，让你轻松实�
 
 
   
+
+  
+
 
 </body>
 </html>
