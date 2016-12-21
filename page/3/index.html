@@ -294,6 +294,142 @@
             
               
                 
+                <a class="post-title-link" href="/2015/07/19/Android/用户头像－拍照、选择＋裁剪/" itemprop="url">
+                  用户头像－拍照、选择＋裁剪
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-07-19T21:52:00+08:00" content="2015-07-19">
+              2015-07-19
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Android/" itemprop="url" rel="index">
+                    <span itemprop="name">Android</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/07/19/Android/用户头像－拍照、选择＋裁剪/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/07/19/Android/用户头像－拍照、选择＋裁剪/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2015/07/19/Android/用户头像－拍照、选择＋裁剪/" class="leancloud_visitors" data-flag-title="用户头像－拍照、选择＋裁剪">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>一般做 app，只要存在用户系统，跑不了都会有设置用户头像的需求。设置用户头像一般都提供拍照和从相册选择两种方式，得到图片后，让用户对图片进行裁剪，然后上传服务器。</p>
+<p>关于拍照和从相册选取，都是向系统发送特定的 Intent，唤起对应的系统程序，然后在onActivityResult 里面，获取我们的图片数据。关于图像裁剪，一般有两种方式，第一种是我们可以直接利用系统提供的裁剪功能，实现图像的裁剪。另外一种是自己处理，比如利用一些第三方的开源项目，如<a href="https://github.com/edmodo/cropper" target="_blank" rel="external">cropper</a> 和 <a href="https://github.com/jdamcd/android-crop" target="_blank" rel="external">android-crop</a>，来完成我们的需求。</p>
+<p>以前做过的项目中碰到设置用户头像这个需求，裁剪都是用的上面说到的第一种方式，即通过 Intent intent = new Intent(“com.android.camera.action.CROP”); 语句来调用系统的裁剪功能，但是自从推出 android lollipop(5.0) 之后，用之前的那套代码会有 bug，通过 stackoverflow 了解到因为 “Camera’s crop activity doesn’t return anything for onActivityResult() method. ”。所以这次项目中尝试选择了第二方式来解决这个问题。</p>
+<h3 id="1-按设计完成从底部弹出选择对话框"><a href="#1-按设计完成从底部弹出选择对话框" class="headerlink" title="1.按设计完成从底部弹出选择对话框"></a>1.按设计完成从底部弹出选择对话框</h3><p><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eu8f8qo62ij20lc0zkwfy.jpg" width="400"><br>▲ 最终完成效果如上</p>
+<p>MeInfoActivity.java 中对应的代码:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@OnClick</span>(R.id.rl_set_head)</div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setHeadImage</span><span class="params">()</span> </span>&#123;</div><div class="line">    CustomDialog.showSetPicDialog(activity, <span class="keyword">new</span> CustomDialog.OnDialogTakePic() &#123;</div><div class="line">        <span class="meta">@Override</span></div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">()</span> </span>&#123;<span class="comment">// 拍照</span></div><div class="line">            actionProfilePic(Constants.IntentExtras.ACTION_CAMERA);</div><div class="line">        &#125;</div><div class="line">    &#125;, <span class="keyword">new</span> CustomDialog.OnDialogSelectPic() &#123;</div><div class="line">        <span class="meta">@Override</span></div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">()</span> </span>&#123;<span class="comment">// 本地图片</span></div><div class="line">            actionProfilePic(Constants.IntentExtras.ACTION_GALLERY);</div><div class="line">        &#125;</div><div class="line">    &#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="2-实现头像的选择-拍照-及裁剪"><a href="#2-实现头像的选择-拍照-及裁剪" class="headerlink" title="2.实现头像的选择(拍照)及裁剪"></a>2.实现头像的选择(拍照)及裁剪</h3><p>MeInfoActivity.java 中对应的代码:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">actionProfilePic</span><span class="params">(String action)</span> </span>&#123;</div><div class="line">    Intent intent = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, ImageCropActivity.class);</div><div class="line">    intent.putExtra(<span class="string">"ACTION"</span>, action);</div><div class="line">    intent.putExtra(<span class="string">"FROM"</span>, <span class="string">"MeInfoActivity"</span>);</div><div class="line">    startActivityForResult(intent, REQUEST_CODE_UPDATE_PIC);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="meta">@Override</span></div><div class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onActivityResult</span><span class="params">(<span class="keyword">int</span> requestCode, <span class="keyword">int</span> resultCode, Intent result)</span> </span>&#123;</div><div class="line">    <span class="keyword">if</span> (requestCode == REQUEST_CODE_UPDATE_PIC) &#123;</div><div class="line">        <span class="keyword">if</span> (resultCode == RESULT_OK) &#123;</div><div class="line">            String imagePath = result.getStringExtra(Constants.IntentExtras.IMAGE_PATH);</div><div class="line">            showCroppedImage(imagePath);</div><div class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (resultCode == RESULT_CANCELED) &#123;</div><div class="line"></div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            String errorMsg = result.getStringExtra(ImageCropActivity.ERROR_MSG);</div><div class="line">            Toast.makeText(<span class="keyword">this</span>, errorMsg, Toast.LENGTH_LONG).show();</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>在 MeInfoActivity.java 中只是按照用户的选择发出相对应的 action，选择、拍照、裁剪的响应都是放到 ImageCropActivity.java 中处理的。<br>ImageCropActivity.java 中对应的代码我是参见的开源项目，<a href="https://github.com/albinmathew/PhotoCrop/blob/master/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Falbinmathew%2Fsamples%2Fphotocrop%2FImageCropActivity.java" target="_blank" rel="external">地址</a>。</p>
+<h3 id="3-将裁剪后的本地图片上传到服务器"><a href="#3-将裁剪后的本地图片上传到服务器" class="headerlink" title="3.将裁剪后的本地图片上传到服务器"></a>3.将裁剪后的本地图片上传到服务器</h3><p>通常上传 app 本地文件(如图片)到后台 server，需要 app 开发人员与后台接口人员定义一种方式。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2015/07/08/activity-launchMode/" itemprop="url">
                   Activity的启动模式
                 </a>
@@ -1567,151 +1703,11 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/05/31/Volley-study/" itemprop="url">
-                  Volley study
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-05-31T21:59:00+08:00" content="2015-05-31">
-              2015-05-31
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Android/" itemprop="url" rel="index">
-                    <span itemprop="name">Android</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/05/31/Volley-study/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/05/31/Volley-study/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2015/05/31/Volley-study/" class="leancloud_visitors" data-flag-title="Volley study">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Volley 是 Android 开发中跟网络操作相关的一个开源库，这个库的官方介绍是：</p>
-<blockquote>
-<p>Volley is a library that makes networking for Android apps<br>easier and most importantly, faster.</p>
-</blockquote>
-<p>Android 几乎所有项目在开发中都会涉及到网络操作（基于 HTTP 协议发送和接收网络数据）。系统提供的通信方式有两种: HttpURLConnection 、HttpClient 。关于HttpURLConnection及HttpClient对比可见： <a href="http://android-developers.blogspot.com/2011/09/androids-http-clients.html" target="_blank" rel="external">Android’s HTTP Clients</a></p>
-<p>Android 网络通信相关的框架（开源库）有:<br>有轻量的<a href="http://loopj.com/android-async-http/" target="_blank" rel="external">android-async-http</a><br>Universal-Image-Loader<br>谷歌官方的<a href="https://android.googlesource.com/platform/frameworks/volley/" target="_blank" rel="external">volley</a>。集合了前面两个的优点。<br>Square提供的<a href="http://square.github.io/retrofit/" target="_blank" rel="external">Retrofit</a><br>基于Volley实现的http <a href="https://github.com/vince-styling/Netroid" target="_blank" rel="external">Netroid</a></p>
-<p>Volley 的使用可以简述为三步:<br>1.建一个请求队列对象<br>2.建一个请求对象 StringRuester、JsonRequest -&gt; JsonObjectRequest 和 JsonArrayRequest、ImageRequest<br>3.将请求对象add到请求队列中</p>
-<p>至于项目中volley的具体使用方法我就不在这里分步骤贴代码了。我推荐下面两个github开源实例，囊括了volley大部分使用方法，fork后仔细看代码学习下，就很好在自己的项目中上手volley了。<br><a href="https://github.com/ogrebgr/android_volley_examples" target="_blank" rel="external">ogrebgr/android_volley_examples</a><br><a href="https://github.com/smanikandan14/Volley-demo" target="_blank" rel="external">smanikandan14/Volley-demo</a></p>
-<blockquote>
-<p>计划</p>
-</blockquote>
-<p>我在之前项目使用volley的过程中，遇到过一些坑还有就是为了满足实际需求对volley库进行了增强，我后续会陆续整理添加到这篇博客中…</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/16/">16</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1752,7 +1748,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">160</span>
+              <span class="site-state-item-count">161</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
