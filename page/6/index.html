@@ -294,6 +294,140 @@
             
               
                 
+                <a class="post-title-link" href="/2014/10/27/Github中“Clone-in-Desktop”无效的解决办法/" itemprop="url">
+                  Github中 “Clone in Desktop” 无效的解决办法
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2014-10-27T19:48:01+08:00" content="2014-10-27">
+              2014-10-27
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/OSX/" itemprop="url" rel="index">
+                    <span itemprop="name">OSX</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2014/10/27/Github中“Clone-in-Desktop”无效的解决办法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2014/10/27/Github中“Clone-in-Desktop”无效的解决办法/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2014/10/27/Github中“Clone-in-Desktop”无效的解决办法/" class="leancloud_visitors" data-flag-title="Github中 “Clone in Desktop” 无效的解决办法">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h3><p><img src="/image/图/Make “Clone in Desktop” down01.png" width="180"></p>
+<p>在你想对Github中感兴趣的项目实践自己想法的时候，需要去“Clone in Desktop”，然后进行自己的code。当你第一次点击“Clone in Desktop”按钮，会跳转到Github for Mac的下载页面。当你下载、安装及登录好客户端之后，再去点“Clone in Desktop”发现还是同上，页面又跳转到Github for Mac的下载页面。
+　　</p>
+<h3 id="解决："><a href="#解决：" class="headerlink" title="解决："></a>解决：</h3><p>Google搜索一番之后，找到了<a href="https://help.github.com/articles/github-conduit" target="_blank" rel="external">这篇文章</a>。大体意思是，如果一切就绪你查看这个<a href="https://ghconduit.com:25035/status" target="_blank" rel="external">https://ghconduit.com:25035/status</a>，返回的json格式应该是：</p>
+<pre><code>{&quot;capabilities&quot;:[&quot;status&quot;,&quot;unique_id&quot;,&quot;url-parameter-filepath&quot;],&quot;running&quot;:true,&quot;server_version&quot;:&quot;5&quot;} 
+</code></pre><p>而当我点击的时候并没有返回这些，所以我试着把“127.0.0.1       ghconduit.com”添加到 private/etc/hosts 文件的末尾，保存之后，刷新页面（我用的chrome dev浏览器）发现还是不行。然后我打开Safari试了下（在没往hosts中添加“127.0.0.1       ghconduit.com”前也用Safari试过，是不行的），发现这下可以了正常把想要的项目“Clone in Desktop”了。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2014/08/25/a-sad-story/" itemprop="url">
                   一个悲伤的故事
                 </a>
@@ -1605,144 +1739,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2014/03/09/Life's/安河桥/" itemprop="url">
-                  安河桥
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2014-03-09T20:31:00+08:00" content="2014-03-09">
-              2014-03-09
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Life-s/" itemprop="url" rel="index">
-                    <span itemprop="name">Life's</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2014/03/09/Life's/安河桥/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2014/03/09/Life's/安河桥/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2014/03/09/Life's/安河桥/" class="leancloud_visitors" data-flag-title="安河桥">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>想出去走走，看了眼地铁站点图，换好鞋子拿上耳机。</p>
-<p>出门时心想着去动物园的，可没走到地铁站心里就反悔了。我是喜欢动物，但是还是受不了看到他们被关在里面被外面另外一种动物隔笼玩弄的样子。这跟我喜欢孩子，受不了他们老被困在教室里一样。有些动物，我以为圈养他们是有罪的。</p>
-<p>那去哪儿呢。</p>
-<p>地铁载着还没想好目的地的我，径直往他的目的地行驶着…</p>
-<p>在我看到地铁站点图上，四号线安河桥北站时，我知道了此行我要去哪儿了。</p>
-<p>之前有下载宋冬野那个胖子的《安河桥北》专辑来听，里面的安河桥很好听，是我喜欢的；关忆北，我也喜欢；董小姐也收在其中。莫名想去看看胖子言及的安河桥，看看“安河桥下清澈的水”。（那些以地名命名的歌我都好喜欢，像小西口、钟鼓楼、霞飞路87号、安河桥…）</p>
-<p>地铁载着已和他有一样目的地的我继续向前行驶着，《安河桥北》专辑开始循环一遍遍播着。心里一下就明亮了。</p>
-<p>安河桥北，在北五环，地铁四号线北边终点站。</p>
-<p>当我走出地铁，看到的情景跟北京城里已经很不一样了，不再是车水马龙，也不会高楼林立。是那种看着安稳的景况。我买了个冷饮，好借故问老板安河桥怎么走，老板热心告知后，我开始往他指引的方向走去…</p>
-<p><img src="/image/图/安河桥01.jpg" alt="安河桥"><br><img src="/image/图/安河桥02.jpg" alt="安河桥"></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1788,7 +1784,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">164</span>
+              <span class="site-state-item-count">165</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
