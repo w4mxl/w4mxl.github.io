@@ -1,0 +1,3208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Wml&#39;Blog</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://w4mxl.github.io/"/>
+  <updated>2017-03-02T11:10:03.000Z</updated>
+  <id>https://w4mxl.github.io/</id>
+  
+  <author>
+    <name>Wml</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>好奇心日报</title>
+    <link href="https://w4mxl.github.io/2017/03/02/qdaily/"/>
+    <id>https://w4mxl.github.io/2017/03/02/qdaily/</id>
+    <published>2017-03-02T09:40:06.000Z</published>
+    <updated>2017-03-02T11:10:03.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　&lt;a href=&quot;http://www.qdaily.com/&quot;&gt;好奇心日报&lt;/a&gt;，之前一直放在我的 RSS 订阅的 News 组里，地位同其它的如爱范儿、Engadget 等新闻媒体并无太大区别(可见我读 RSS 文章也并不用心的很)。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>播客客户端从Overcast换为Castro</title>
+    <link href="https://w4mxl.github.io/2017/02/28/podcast-client-from-overcast-to-castro/"/>
+    <id>https://w4mxl.github.io/2017/02/28/podcast-client-from-overcast-to-castro/</id>
+    <published>2017-02-28T08:10:53.000Z</published>
+    <updated>2017-02-28T09:33:10.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　前面听播客一直用的是 Overcast 客户端，简洁且功能强大。自从发现在 Overcast 上对喜欢且可能重复听的单集播客标记 Recommend (⭐️) 后，标⭐️只是能让 Twitter 上 follow 你的人看到你的推荐，而不能在客户端中找到对应的一个自己推
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>购买过的软件纪录</title>
+    <link href="https://w4mxl.github.io/2017/02/28/my-paid-apps/"/>
+    <id>https://w4mxl.github.io/2017/02/28/my-paid-apps/</id>
+    <published>2017-02-28T08:03:00.000Z</published>
+    <updated>2017-03-02T11:12:31.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;买正版软件的心态养成，我是要感谢jbguide的，尤其是jailbreakhum。jbguide的每期播客和每篇文章，获益不少。&lt;/p&gt;
+&lt;p&gt;TODO:&lt;br&gt;这些已购买的插件和 app 都是我特别喜欢或有需要才入的，对它们使用还算深度，后面想抽出时间来为其中一些优秀的写评测和使用感受。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>目标管理(减肥)</title>
+    <link href="https://w4mxl.github.io/2017/02/06/my-2017-reduce-weight-plan/"/>
+    <id>https://w4mxl.github.io/2017/02/06/my-2017-reduce-weight-plan/</id>
+    <published>2017-02-06T03:35:00.000Z</published>
+    <updated>2017-02-13T02:14:41.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;新年刚过，回到职场，大家除了会调侃“每逢佳节胖三斤”、聊聊过年期间的趣闻外，通常还会在这个时候筹划一下自己在新一年的计划和目标。所以，今天契合这个时间点，我想跟大家分享一下我对&lt;strong&gt;“目标管理”&lt;/strong&gt;的一些理解。&lt;/p&gt;
+&lt;p&gt;其实每个人都会有自己对生活的期望和想法，有些想法属于常有常丢型(常立志)，有些想法因为在实现过程中遇到挫折和困难而慢慢放弃。事实上我们也都清楚这些目标不是真的难到无法实现，只是在动力日渐变弱，又没有着实有效方法的情况下，几番折腾，计划之时的决心就慢慢被消磨殆尽，好似它不曾有过一样。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>回顾 2016</title>
+    <link href="https://w4mxl.github.io/2017/01/21/2016-review/"/>
+    <id>https://w4mxl.github.io/2017/01/21/2016-review/</id>
+    <published>2017-01-21T14:02:00.000Z</published>
+    <updated>2017-01-24T05:53:10.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;记得去年写&lt;a href=&quot;http://w4mxl.github.io/2016/02/07/write-in-the-end-of-2015/&quot;&gt;2015年总结&lt;/a&gt;时对2016年的愿望是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;学习，写多点东西 &lt;/li&gt;
+&lt;li&gt;婚前瘦到75KG&lt;/li&gt;
+&lt;li&gt;和她去台湾&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;现在看这三个，除了第一个可算实现之外（还好像沾了语义宽泛的光），其他两个都没做到，惭愧的很。今年写完回顾后，我会在 Evernote 中把每个目标细化得更具体，变成一个个小块啃掉。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>戴了一周魅族手环后简单说说感受</title>
+    <link href="https://w4mxl.github.io/2016/12/21/Life&#39;s/%E6%88%B4%E4%BA%86%E4%B8%80%E5%91%A8%E9%AD%85%E6%97%8F%E6%89%8B%E7%8E%AF%E5%90%8E%E7%AE%80%E5%8D%95%E8%AF%B4%E8%AF%B4%E6%84%9F%E5%8F%97/"/>
+    <id>https://w4mxl.github.io/2016/12/21/Life&#39;s/戴了一周魅族手环后简单说说感受/</id>
+    <published>2016-12-21T09:12:00.000Z</published>
+    <updated>2016-12-21T09:15:27.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;市面上现有的智能手环，像小米手环、Jawbone Up、咕咚手环、Nike+ Fuelband、Fitbit等，功能无外乎：查看时间、运动提醒和数据记录、心率测量，消息振动提醒，睡眠监测，IP67防水和相比智能手表的高续航。虽然这些设备看起来有着这样那样的卖点，可是功能很少是刚性需求，普遍都存在“用户粘性差”的问题，即使发展起来部分用户，也很难留住他们。打个比方，你出门已经走很远突然发现手机没带，百分之九十的人会折回去取。如果是手环呢，没戴就没戴吧，It doesn’t matter。&lt;/p&gt;
+&lt;p&gt;那为什么魅族手环吸引我买来体验呢？&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>易燃易爆炸</title>
+    <link href="https://w4mxl.github.io/2016/11/15/Life&#39;s/%E6%98%93%E7%87%83%E6%98%93%E7%88%86%E7%82%B8/"/>
+    <id>https://w4mxl.github.io/2016/11/15/Life&#39;s/易燃易爆炸/</id>
+    <published>2016-11-15T13:36:00.000Z</published>
+    <updated>2016-11-15T12:12:32.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;《易燃易爆炸》 陈粒-如也&lt;/p&gt;
+&lt;p&gt;在韩寒最新一次&lt;a href=&quot;http://www.iqiyi.com/v_19rrlrask0.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;公开演讲&lt;/a&gt;中，&lt;/p&gt;
+&lt;p&gt;听到陈粒现场自弹自唱这
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>奇云--我推荐的科学上网服务</title>
+    <link href="https://w4mxl.github.io/2016/11/09/Life&#39;s/%E5%A5%87%E4%BA%91--%E6%88%91%E6%8E%A8%E8%8D%90%E7%9A%84%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E6%9C%8D%E5%8A%A1/"/>
+    <id>https://w4mxl.github.io/2016/11/09/Life&#39;s/奇云--我推荐的科学上网服务/</id>
+    <published>2016-11-09T14:12:00.000Z</published>
+    <updated>2016-11-10T04:20:22.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;写这篇文章的动力有两个:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;我觉得任何限制都是反人性的，都该被打破，每个人都享有体验完整世界的权利。&lt;/li&gt;
+&lt;li&gt;赚点外快。&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>一个人的朝圣</title>
+    <link href="https://w4mxl.github.io/2016/11/01/Life&#39;s/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E6%9C%9D%E5%9C%A3/"/>
+    <id>https://w4mxl.github.io/2016/11/01/Life&#39;s/一个人的朝圣/</id>
+    <published>2016-11-01T14:55:00.000Z</published>
+    <updated>2016-11-10T04:58:57.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这两周读完了《一个人的朝圣》。&lt;/p&gt;
+&lt;p&gt;很久之前因为这本书的名字，kindle里就有放着它，后来读了但没读下去。大概是因为总不太喜欢翻译后的外国人名和地址，老是搞混或者忘记。这次重新读，是因为听了狗熊有话说的一期关于这本书的播客，被狗熊”剧透”后觉得好喜欢这故事啊，一定要读一读。&lt;/p&gt;
+&lt;p&gt;所以再读的时候，虽然不是一口气读完，但是每次放下kindle 有种意犹未尽，下次拿起kindle充满喜悦。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>看到梁朝伟代言小米 Note2</title>
+    <link href="https://w4mxl.github.io/2016/11/01/Life&#39;s/%E5%85%B3%E4%BA%8E%E6%A2%81%E6%9C%9D%E4%BC%9F%E4%BB%A3%E8%A8%80%E5%B0%8F%E7%B1%B3Note2/"/>
+    <id>https://w4mxl.github.io/2016/11/01/Life&#39;s/关于梁朝伟代言小米Note2/</id>
+    <published>2016-11-01T14:33:00.000Z</published>
+    <updated>2016-11-10T04:20:20.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/large/7853084cgw1f9mvw5o13kj21kw1kw7q7.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;同很多人一样，被小米这次发布的”MIX全面屏概念手机”的前面板惊艳到了。高达91%屏占比，真
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>小米Max 换屏及刷国际版 Rom</title>
+    <link href="https://w4mxl.github.io/2016/10/23/Life&#39;s/%E5%B0%8F%E7%B1%B3Max%20%E6%8D%A2%E5%B1%8F%E5%8F%8A%E5%88%B7%E5%9B%BD%E9%99%85%E7%89%88Rom/"/>
+    <id>https://w4mxl.github.io/2016/10/23/Life&#39;s/小米Max 换屏及刷国际版Rom/</id>
+    <published>2016-10-23T07:12:00.000Z</published>
+    <updated>2016-10-23T07:17:20.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;背景介绍&quot;&gt;&lt;a href=&quot;#背景介绍&quot; class=&quot;headerlink&quot; title=&quot;背景介绍&quot;&gt;&lt;/a&gt;背景介绍&lt;/h3&gt;&lt;p&gt;这次折腾的这台小米Max是我父亲的。早两年我给他买的是一华为手机配一翻合式的保护套，稳稳当当用了两年多还不错。因为保护套用久后有点破烂了，上个月我就给他拿下来扔了。之后没多久的，啪，手机掉地上屏幕给摔碎了。&lt;/p&gt;
+&lt;p&gt;今年父亲平时没啥事会出去开开 Uber 和滴滴，找补点事情做，4寸的华为机用来导航看着是有点累。刚好乘着这次碎屏事件想给他直接换一屏幕大点的手机。在一系列大屏手机中最后入了今天的主角小米Max配一钢化膜。可曾想，才用一个多月摔了两次，第一次侥幸是钢化膜裂了，第二次屏幕成功 big bang 。ヽ( ´ー｀)ノ&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ScrollView 中嵌套 RecyclerView(ListView) 后的常见问题</title>
+    <link href="https://w4mxl.github.io/2016/09/07/scrollView-nested-problems/"/>
+    <id>https://w4mxl.github.io/2016/09/07/scrollView-nested-problems/</id>
+    <published>2016-09-07T07:53:00.000Z</published>
+    <updated>2016-09-08T02:36:10.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1-显示不全&quot;&gt;&lt;a href=&quot;#1-显示不全&quot; class=&quot;headerlink&quot; title=&quot;1. 显示不全&quot;&gt;&lt;/a&gt;1. 显示不全&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;被嵌套的 RecyclerView(ListView) 显示不全，有多个 item，则只显示第一个。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;解决方法目前常见的有两种：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;del&gt;动态计算 RecyclerView(ListView) 高度&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;直接展示所有的 item，让其不滚动了 (推荐)&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>在 Nexus 6 上 FLASH Android N</title>
+    <link href="https://w4mxl.github.io/2016/03/10/flash-N-to-nexus6/"/>
+    <id>https://w4mxl.github.io/2016/03/10/flash-N-to-nexus6/</id>
+    <published>2016-03-10T03:07:24.000Z</published>
+    <updated>2016-07-29T18:32:09.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天 Google 较之往年提前2个月发布了 Android N 的开发者预览版，按耐不住，折腾起来。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+    
+      <category term="nexus" scheme="https://w4mxl.github.io/tags/nexus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>写在2015年三十</title>
+    <link href="https://w4mxl.github.io/2016/02/07/write-in-the-end-of-2015/"/>
+    <id>https://w4mxl.github.io/2016/02/07/write-in-the-end-of-2015/</id>
+    <published>2016-02-07T00:07:00.000Z</published>
+    <updated>2017-01-24T05:53:11.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一年又要过去了，以前说『又大了一岁』，现在说『又老了一岁』。&lt;/p&gt;
+&lt;p&gt;在上完今年最后一个工作日（02.05），在快回到家的时候，我走进了一个尚在营业的理发店，将头发全染成了蓝色。到家后，当然，我妈肯定给了我一顿骂，还好有我爸给我打圆场，说「挺好的啊」。(^_^)ノ&lt;/p&gt;
+&lt;p&gt;说到写年终总结国内人无外乎在两个时间点，一是元旦前，一是年节前。我猜选择后者的往往是有拖延症的。  (¬_¬)&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Nexus 6 首次折腾（含调整屏幕色温）</title>
+    <link href="https://w4mxl.github.io/2016/01/21/my-struggle-of-nexus6/"/>
+    <id>https://w4mxl.github.io/2016/01/21/my-struggle-of-nexus6/</id>
+    <published>2016-01-21T07:12:00.000Z</published>
+    <updated>2016-02-08T02:42:44.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;15年的黑五( 2015.11.27)，在美国亚马逊海淘了一台 Nexus 6，当时看到促销价 $ 199.99 心里乐滋滋的，终于不会想到后来竟还有55刀的转运费，更有被税后需补缴18.5刀税。此机到手价实为：199.99＋55＋18.5 ＝ 273.49 刀，转成人民币
+    
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+    
+      <category term="nexus" scheme="https://w4mxl.github.io/tags/nexus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>装修答卷:搭建一个家的美好</title>
+    <link href="https://w4mxl.github.io/2015/12/23/make-a-nice-house/"/>
+    <id>https://w4mxl.github.io/2015/12/23/make-a-nice-house/</id>
+    <published>2015-12-23T02:36:00.000Z</published>
+    <updated>2016-07-29T18:49:22.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;房子坐落在昆山花桥，22楼的一个3室(主卧、次卧、书房)1厅1厨2卫的房子。&lt;br&gt;装修从今年9.16号正式开工。&lt;br&gt;前期的装修是半包出去的，所谓的半包是指水电工、木工、油漆工是请来的，但是他们用到的所有所需材料都是我们去家具城亲自买回来。&lt;br&gt;铺建水电路、卫生间瓷砖
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用 Google Wallet 在 Google Play 上购买付费应用</title>
+    <link href="https://w4mxl.github.io/2015/12/14/Buy-an-app-from-GooglePlay-by-Google-Wallet/"/>
+    <id>https://w4mxl.github.io/2015/12/14/Buy-an-app-from-GooglePlay-by-Google-Wallet/</id>
+    <published>2015-12-14T10:12:00.000Z</published>
+    <updated>2016-01-13T16:08:20.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天终于把”在 Google Play 上购买付费应用”折腾成功，过程纪录如下&lt;/p&gt;
+&lt;p&gt;1.准备&lt;br&gt;信用卡：因为我自己无信用卡，是借用同事的交行VISA信用卡&lt;br&gt;Google 账号：Google 账号并且已经激活了 Google Wallet 服务&lt;br&gt;VP
+    
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2015.12.07</title>
+    <link href="https://w4mxl.github.io/2015/12/07/Life&#39;s/2015-12-07/"/>
+    <id>https://w4mxl.github.io/2015/12/07/Life&#39;s/2015-12-07/</id>
+    <published>2015-12-07T13:55:00.000Z</published>
+    <updated>2016-01-23T08:53:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1.很久一段时间没来这里更新文章，原因一是从9.16号开始装修房子，几乎一整个心都推入进去，没有二&lt;/p&gt;
+&lt;p&gt;2.今天更新，是因为读inoreader里subscribe的文章，看到VICE拍了一部纪录片《触手可及》，关于陈冠希，看了后想抽烟&lt;/p&gt;
+&lt;p&gt;3.听爸爸的
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>学习过的Android开源项目汇总</title>
+    <link href="https://w4mxl.github.io/2015/08/30/Android/%E5%AD%A6%E4%B9%A0%E8%BF%87%E7%9A%84Android%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%E6%B1%87%E6%80%BB/"/>
+    <id>https://w4mxl.github.io/2015/08/30/Android/学习过的Android开源项目汇总/</id>
+    <published>2015-08-30T09:36:00.000Z</published>
+    <updated>2016-01-13T15:23:20.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;利用周末整理下之前工作中、学习中使用过的 Android 开源项目，通过整理好之后，能每周抽出些时间去对这些开源项目的源码进行解析，以期通过这种方式能更深层次的学习这些优秀的 Android 开源项目。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;View 篇&lt;/strong&gt;&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+    
+      <category term="OpenSource" scheme="https://w4mxl.github.io/tags/OpenSource/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android setEmptyview</title>
+    <link href="https://w4mxl.github.io/2015/08/22/Android-setEmptyview/"/>
+    <id>https://w4mxl.github.io/2015/08/22/Android-setEmptyview/</id>
+    <published>2015-08-22T14:25:00.000Z</published>
+    <updated>2016-01-13T16:12:28.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1-介绍&quot;&gt;&lt;a href=&quot;#1-介绍&quot; class=&quot;headerlink&quot; title=&quot;1. 介绍&quot;&gt;&lt;/a&gt;1. 介绍&lt;/h3&gt;&lt;p&gt;使用 listview、gridview 等列表形式的 view 时，如果后台server返回的数据为空，通常我们需要为
+    
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Fragment 重叠(重影)问题</title>
+    <link href="https://w4mxl.github.io/2015/08/17/fragment-overlay-problem&#39;/"/>
+    <id>https://w4mxl.github.io/2015/08/17/fragment-overlay-problem&#39;/</id>
+    <published>2015-08-17T01:41:00.000Z</published>
+    <updated>2016-01-13T16:13:40.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在最近做的项目中，遇到了 Fragment 重叠的问题。具体的情况是，app 需要在多个 Fragment 间切换，并且保存每个 Fragment 的状态。官方的方法是使用 replace() 来替换 Fragment，但是 replace() 的调用会导致 Fragmen
+    
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Apple Watch 使用感受</title>
+    <link href="https://w4mxl.github.io/2015/08/02/experience-of-apple-watch/"/>
+    <id>https://w4mxl.github.io/2015/08/02/experience-of-apple-watch/</id>
+    <published>2015-08-02T09:32:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我向来喜欢科技产品，热衷尝试新奇的事物，但这并不代表我会随随便便成为一款新产品的用户。&lt;/p&gt;
+&lt;p&gt;从知道 apple 要做 apple watch 这款产品，到发布、再到开发购买，我的 RSS 订阅中就没间断的出现有关它的文章。随着这些文章的阅读，评测视频的观看，我逐渐
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>曲径宣布关闭</title>
+    <link href="https://w4mxl.github.io/2015/07/31/goodbye-qujin/"/>
+    <id>https://w4mxl.github.io/2015/07/31/goodbye-qujin/</id>
+    <published>2015-07-30T16:00:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;就说这几天曲径用的怎么不顺畅，在用曲径一年多时间内，一直用着挺稳定的。大爱它的智能分流。&lt;br&gt;没想到还是给查了水表！！还是给查了水表！！查了水表！！&lt;/p&gt;
+&lt;p&gt;谢谢你，曲径，在过去的那些欢畅的日子里有你。&lt;br&gt;好走 ❤️ …&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;htt
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>在冬天和奶奶一起晒太阳</title>
+    <link href="https://w4mxl.github.io/2015/07/21/Life&#39;s/%E5%9C%A8%E5%86%AC%E5%A4%A9%E5%92%8C%E5%A5%B6%E5%A5%B6%E4%B8%80%E8%B5%B7%E6%99%92%E5%A4%AA%E9%98%B3/"/>
+    <id>https://w4mxl.github.io/2015/07/21/Life&#39;s/在冬天和奶奶一起晒太阳/</id>
+    <published>2015-07-21T13:46:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;《在冬天和奶奶一起晒太阳》是赵照《大经厂》专辑中的一首歌。是上周在网易云音乐中，无意看到这歌名听起来的。好听。下载到手机后，这几天下班骑车回家都会听，听起来是有感觉的。&lt;/p&gt;
+&lt;p&gt;上周六回了趟扬州，奶奶目前是待在扬州大伯家里的。毕业后的这3年，前面两年多因为在北京和深圳
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>用户头像－拍照、选择＋裁剪</title>
+    <link href="https://w4mxl.github.io/2015/07/19/Android/%E7%94%A8%E6%88%B7%E5%A4%B4%E5%83%8F%EF%BC%8D%E6%8B%8D%E7%85%A7%E3%80%81%E9%80%89%E6%8B%A9%EF%BC%8B%E8%A3%81%E5%89%AA/"/>
+    <id>https://w4mxl.github.io/2015/07/19/Android/用户头像－拍照、选择＋裁剪/</id>
+    <published>2015-07-19T13:52:00.000Z</published>
+    <updated>2016-01-13T16:14:14.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一般做 app，只要存在用户系统，跑不了都会有设置用户头像的需求。设置用户头像一般都提供拍照和从相册选择两种方式，得到图片后，让用户对图片进行裁剪，然后上传服务器。&lt;/p&gt;
+&lt;p&gt;关于拍照和从相册选取，都是向系统发送特定的 Intent，唤起对应的系统程序，然后在onAct
+    
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Activity的启动模式</title>
+    <link href="https://w4mxl.github.io/2015/07/08/activity-launchMode/"/>
+    <id>https://w4mxl.github.io/2015/07/08/activity-launchMode/</id>
+    <published>2015-07-08T00:34:00.000Z</published>
+    <updated>2016-01-13T16:15:48.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在实际项目中我们应该根据特定的需求为每个 Activity 指定适当的启动模式。这里根据个人理解和实际开发中的经验，做些总结。有四种启动模式，分别是 standard 、singleTop 、singleTask 和singleInstance 。可以在 AndroidMa
+    
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Intent的Flag属性</title>
+    <link href="https://w4mxl.github.io/2015/07/06/Intent-Flag/"/>
+    <id>https://w4mxl.github.io/2015/07/06/Intent-Flag/</id>
+    <published>2015-07-06T12:03:00.000Z</published>
+    <updated>2016-01-13T16:14:58.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这篇是想接着上篇&lt;a href=&quot;http://wml.farbox.com/post/activity-launchMode&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;「Activity的启动模式」&lt;/a&gt;，从实际需求场景的出发介绍下Intent与启
+    
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>记一次下厨</title>
+    <link href="https://w4mxl.github.io/2015/07/05/record-a-cook/"/>
+    <id>https://w4mxl.github.io/2015/07/05/record-a-cook/</id>
+    <published>2015-07-05T03:59:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;下厨起因&quot;&gt;&lt;a href=&quot;#下厨起因&quot; class=&quot;headerlink&quot; title=&quot;下厨起因&quot;&gt;&lt;/a&gt;下厨起因&lt;/h3&gt;&lt;p&gt;雯这周因为过敏，左眼红肿，身体其他地方也出现了些问题，本来应该是不大的事，全因起初那医生诊后说她是得了湿疹开了很多药给她，徒
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>赵雷的MV《理想》</title>
+    <link href="https://w4mxl.github.io/2015/07/03/Life&#39;s/%E8%B5%B5%E9%9B%B7%E7%9A%84MV%E3%80%8A%E7%90%86%E6%83%B3%E3%80%8B/"/>
+    <id>https://w4mxl.github.io/2015/07/03/Life&#39;s/赵雷的MV《理想》/</id>
+    <published>2015-07-03T14:23:00.000Z</published>
+    <updated>2016-01-18T15:16:34.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;分享赵雷的MV《理想》，以前这首歌也一直听，昨夜里敲罢代码，在网易云音乐里看到这首MV，喜欢。&lt;/p&gt;
+&lt;iframe height=&quot;498&quot; width=&quot;510&quot; src=&quot;http://player.youku.com/embed/XODI2NTcyMjg4&quot; fr
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>友盟-&quot;用户反馈&quot;的集成和UI自定义</title>
+    <link href="https://w4mxl.github.io/2015/06/28/Android/%E5%8F%8B%E7%9B%9F-%E7%94%A8%E6%88%B7%E5%8F%8D%E9%A6%88%E7%9A%84%E9%9B%86%E6%88%90%E5%92%8CUI%E8%87%AA%E5%AE%9A%E4%B9%89/"/>
+    <id>https://w4mxl.github.io/2015/06/28/Android/友盟-用户反馈的集成和UI自定义/</id>
+    <published>2015-06-28T11:58:00.000Z</published>
+    <updated>2016-01-13T15:27:10.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1-对比&quot;&gt;&lt;a href=&quot;#1-对比&quot; class=&quot;headerlink&quot; title=&quot;1. 对比&quot;&gt;&lt;/a&gt;1. 对比&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/62ed8609jw1etk3hqcje6j
+    
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+    
+      <category term="友盟" scheme="https://w4mxl.github.io/tags/%E5%8F%8B%E7%9B%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>「Replace」 by Zee Young</title>
+    <link href="https://w4mxl.github.io/2015/06/18/%E3%80%8CReplace%E3%80%8D-by-Zee-Young/"/>
+    <id>https://w4mxl.github.io/2015/06/18/「Replace」-by-Zee-Young/</id>
+    <published>2015-06-18T03:18:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://d13yacurqjgara.cloudfront.net/users/384313/screenshots/2067564/replace.gif&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt; &lt;a href=&quot;https://dribbble.c
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ScrollView下嵌套 ListView(GridView) 冲突导致显示不全的问题</title>
+    <link href="https://w4mxl.github.io/2015/06/17/Android/ScrollView%E4%B8%8B%E5%B5%8C%E5%A5%97%20ListView(GridView)%20%E5%86%B2%E7%AA%81%E5%AF%BC%E8%87%B4%E6%98%BE%E7%A4%BA%E4%B8%8D%E5%85%A8%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>https://w4mxl.github.io/2015/06/17/Android/ScrollView下嵌套 ListView(GridView) 冲突导致显示不全的问题/</id>
+    <published>2015-06-17T03:35:00.000Z</published>
+    <updated>2016-01-13T16:16:36.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;为了满足功能需求，界面布局中常常需要用到 ScrollView 下嵌套 ListView(GridView) 的情况，Scr
+    
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用SparseArray替代HashMap</title>
+    <link href="https://w4mxl.github.io/2015/06/14/Android/%5BAndroid%E5%BA%94%E7%94%A8%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%5D%E4%BD%BF%E7%94%A8SparseArray%E6%9B%BF%E4%BB%A3HashMap/"/>
+    <id>https://w4mxl.github.io/2015/06/14/Android/[Android应用性能优化]使用SparseArray替代HashMap/</id>
+    <published>2015-06-14T05:51:00.000Z</published>
+    <updated>2016-01-13T14:57:24.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天在用 Android Studio &amp;gt; Analyze &amp;gt; Inspect Code 对目前项目进行检查后给出了很多优化建议，其中一类是关于用SparseArray替代HashMap的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg
+    
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+    
+      <category term="Android应用性能优化" scheme="https://w4mxl.github.io/tags/Android%E5%BA%94%E7%94%A8%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android 微信支付</title>
+    <link href="https://w4mxl.github.io/2015/06/07/Android-wechat-pay/"/>
+    <id>https://w4mxl.github.io/2015/06/07/Android-wechat-pay/</id>
+    <published>2015-06-07T11:51:00.000Z</published>
+    <updated>2016-01-13T16:19:42.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1-相关术语&quot;&gt;&lt;a href=&quot;#1-相关术语&quot; class=&quot;headerlink&quot; title=&quot;1.相关术语&quot;&gt;&lt;/a&gt;1.相关术语&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;微信开放平台&lt;br&gt;微信开放平台是商户APP接入微信支付开放接口的申请入口，通过此平台可申请微信
+    
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Volley study</title>
+    <link href="https://w4mxl.github.io/2015/05/31/Volley-study/"/>
+    <id>https://w4mxl.github.io/2015/05/31/Volley-study/</id>
+    <published>2015-05-31T13:59:00.000Z</published>
+    <updated>2016-01-13T16:20:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Volley 是 Android 开发中跟网络操作相关的一个开源库，这个库的官方介绍是：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Volley is a library that makes networking for Android apps&lt;br&gt;easier and
+    
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ButterKnife的使用</title>
+    <link href="https://w4mxl.github.io/2015/05/23/Use-ButterKnife/"/>
+    <id>https://w4mxl.github.io/2015/05/23/Use-ButterKnife/</id>
+    <published>2015-05-23T01:05:00.000Z</published>
+    <updated>2016-01-13T16:22:14.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://jakewharton.github.io/butterknife/static/logo.png&quot; alt=&quot;butterknife-logo&quot;&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/JakeWharton/bu
+    
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+    
+      <category term="ButterKnife" scheme="https://w4mxl.github.io/tags/ButterKnife/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我的电影(no rank &amp; updating)</title>
+    <link href="https://w4mxl.github.io/2015/05/09/my-movie/"/>
+    <id>https://w4mxl.github.io/2015/05/09/my-movie/</id>
+    <published>2015-05-09T05:13:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://movie.douban.com/subject/25853727/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/62ed8609jw1evzz4
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+      <category term="movie" scheme="https://w4mxl.github.io/tags/movie/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[Combination Lock &amp; HotDog] 密码页自定义</title>
+    <link href="https://w4mxl.github.io/2015/05/06/Combination-Lock-And-HotDog/"/>
+    <id>https://w4mxl.github.io/2015/05/06/Combination-Lock-And-HotDog/</id>
+    <published>2015-05-06T12:50:00.000Z</published>
+    <updated>2016-01-13T17:03:18.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/62ed8609gw1eruvbdcpgdj20ku112dq6.jpg&quot; width=&quot;300&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/62ed860
+    
+    </summary>
+    
+      <category term="Jailbreak" scheme="https://w4mxl.github.io/categories/Jailbreak/"/>
+    
+    
+      <category term="JailbreakTweak" scheme="https://w4mxl.github.io/tags/JailbreakTweak/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>青年节清晨</title>
+    <link href="https://w4mxl.github.io/2015/05/04/Life&#39;s/%E9%9D%92%E5%B9%B4%E8%8A%82%E6%B8%85%E6%99%A8/"/>
+    <id>https://w4mxl.github.io/2015/05/04/Life&#39;s/青年节清晨/</id>
+    <published>2015-05-04T00:37:28.000Z</published>
+    <updated>2016-01-18T15:22:38.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/62ed8609gw1errzniojbdj21w01w0hdu.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JW、枫泾镇游船上</title>
+    <link href="https://w4mxl.github.io/2015/05/01/JW%E3%80%81%E6%9E%AB%E6%B3%BE%E9%95%87%E6%B8%B8%E8%88%B9%E4%B8%8A/"/>
+    <id>https://w4mxl.github.io/2015/05/01/JW、枫泾镇游船上/</id>
+    <published>2015-05-01T07:13:13.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/62ed8609gw1errzngpckaj21w01w0npd.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Android Studio 使用技巧(updating...)</title>
+    <link href="https://w4mxl.github.io/2015/04/17/tips-of-Android-Studio/"/>
+    <id>https://w4mxl.github.io/2015/04/17/tips-of-Android-Studio/</id>
+    <published>2015-04-16T16:00:00.000Z</published>
+    <updated>2016-01-13T16:18:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Android Studio,从13年Google I/O发布后（还记得那时候翻墙在YouTube上看Google产品经理I/0现场演示Android Studio新特性，那黑色的theme[Darcula]，好酷），和它一路从早期开发者预览版、beta版、稳定版走来。开始
+    
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+    
+      <category term="Android Studio" scheme="https://w4mxl.github.io/tags/Android-Studio/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://w4mxl.github.io/2015/03/05/Life&#39;s/%E9%BB%84%E9%87%91%E6%97%B6%E4%BB%A3%20(2014%E5%B9%B4%E7%94%B5%E5%BD%B1)/"/>
+    <id>https://w4mxl.github.io/2015/03/05/Life&#39;s/黄金时代 (2014年电影)/</id>
+    <published>2015-03-05T04:10:00.000Z</published>
+    <updated>2016-01-18T15:16:34.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在大多数人、媒体、网络已经不在疯狂谈论许鞍华《黄金时代》这部电影的时候，在这样一个环境和心境都不算安静的早晨，我独坐在房间内开始观看起这部电影来… &lt;/p&gt;
+&lt;p&gt;二萧在贫困日子里饱食一顿后，走在街上。萧红说鞋带断了，萧军走回来蹲下身，用捡来的碎玻璃片割下一长段自己的鞋带，
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>《速度与激情》7</title>
+    <link href="https://w4mxl.github.io/2015/02/17/%E9%80%9F%E5%BA%A6%E4%B8%8E%E6%BF%80%E6%83%857/"/>
+    <id>https://w4mxl.github.io/2015/02/17/速度与激情7/</id>
+    <published>2015-02-16T16:18:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;除了&lt;a href=&quot;http://www.wikiwand.com/zh-cn/%E7%8E%A9%E5%91%BD%E9%97%9C%E9%A0%AD7&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;《速度与激情》&lt;/a&gt;，像这种长系列的电影，以前只跟
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+      <category term="Movie" scheme="https://w4mxl.github.io/tags/Movie/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>啊朋友 再见</title>
+    <link href="https://w4mxl.github.io/2015/02/13/%E5%95%8A%E6%9C%8B%E5%8F%8B-%E5%86%8D%E8%A7%81/"/>
+    <id>https://w4mxl.github.io/2015/02/13/啊朋友-再见/</id>
+    <published>2015-02-13T15:31:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;318&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+      <category term="Music" scheme="https://w4mxl.github.io/tags/Music/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[Itsycal] Mac端的日历小工具</title>
+    <link href="https://w4mxl.github.io/2015/02/04/Itsycal/"/>
+    <id>https://w4mxl.github.io/2015/02/04/Itsycal/</id>
+    <published>2015-02-03T16:38:00.000Z</published>
+    <updated>2016-01-13T17:03:18.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/image/itsycal.png&quot; width=&quot;250&quot;&gt;&lt;br&gt;&lt;strong&gt;&lt;a href=&quot;http://www.mowglii.com/itsycal/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Itsycal&lt;/a
+    
+    </summary>
+    
+      <category term="Jailbreak" scheme="https://w4mxl.github.io/categories/Jailbreak/"/>
+    
+    
+      <category term="JailbreakTweak" scheme="https://w4mxl.github.io/tags/JailbreakTweak/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[Upscale] 自定义手机分辨率</title>
+    <link href="https://w4mxl.github.io/2015/01/20/Upscale/"/>
+    <id>https://w4mxl.github.io/2015/01/20/Upscale/</id>
+    <published>2015-01-20T15:23:00.000Z</published>
+    <updated>2016-01-13T17:03:18.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;Upscale&lt;/strong&gt;&lt;br&gt;Description: customize your device’s resolution to what you like.&lt;br&gt;Developer: bd452&lt;br&gt;Price: Free&lt;br&gt;Repo:
+    
+    </summary>
+    
+      <category term="Jailbreak" scheme="https://w4mxl.github.io/categories/Jailbreak/"/>
+    
+    
+      <category term="JailbreakTweak" scheme="https://w4mxl.github.io/tags/JailbreakTweak/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[Date In StatusBar] 在状态栏显示日期</title>
+    <link href="https://w4mxl.github.io/2015/01/19/date-in-StatusBar/"/>
+    <id>https://w4mxl.github.io/2015/01/19/date-in-StatusBar/</id>
+    <published>2015-01-19T14:55:00.000Z</published>
+    <updated>2016-01-13T17:03:18.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;Date In StatusBar&lt;/strong&gt;&lt;br&gt;Description: shows the date in the Status Bar&lt;br&gt;Developer: MatrixDevTeam&lt;br&gt;Price: Free&lt;br&gt;Repo: B
+    
+    </summary>
+    
+      <category term="Jailbreak" scheme="https://w4mxl.github.io/categories/Jailbreak/"/>
+    
+    
+      <category term="JailbreakTweak" scheme="https://w4mxl.github.io/tags/JailbreakTweak/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>忽有故人心上过</title>
+    <link href="https://w4mxl.github.io/2014/12/27/Life&#39;s/%E5%BF%BD%E6%9C%89%E6%95%85%E4%BA%BA%E5%BF%83%E4%B8%8A%E8%BF%87/"/>
+    <id>https://w4mxl.github.io/2014/12/27/Life&#39;s/忽有故人心上过/</id>
+    <published>2014-12-26T19:00:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;文｜小宝珠&lt;/p&gt;
+&lt;p&gt;一&lt;/p&gt;
+&lt;p&gt;我出生于1974年，如今已经36岁了。年轻人叫我阿姨，若我不打扮，他们也会叫我大婶。在他们的眼里，我这样年纪的女人，既不年轻也不美丽，活着实在没有意义。年轻人真是一代比一代残忍。&lt;/p&gt;
+&lt;p&gt;可我想说，我心里还住着一个小女孩，我
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>chat with JW...</title>
+    <link href="https://w4mxl.github.io/2014/12/25/chat-with-JW.../"/>
+    <id>https://w4mxl.github.io/2014/12/25/chat-with-JW.../</id>
+    <published>2014-12-25T08:32:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;:)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/image/chat with JW.png&quot; alt=&quot;chat with JW&quot;&gt;&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Android Studio中新建一个文件时插入作者、日期</title>
+    <link href="https://w4mxl.github.io/2014/11/21/insert-author-and-date-in-android-studio-new-file/"/>
+    <id>https://w4mxl.github.io/2014/11/21/insert-author-and-date-in-android-studio-new-file/</id>
+    <published>2014-11-20T17:04:12.000Z</published>
+    <updated>2016-01-13T16:24:14.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;需求描述：&quot;&gt;&lt;a href=&quot;#需求描述：&quot; class=&quot;headerlink&quot; title=&quot;需求描述：&quot;&gt;&lt;/a&gt;需求描述：&lt;/h3&gt;&lt;p&gt;在使用android studio过程中，想在新创建的文件（activity、service…）头部添加上autho
+    
+    </summary>
+    
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Android/"/>
+    
+    
+      <category term="Android Studio" scheme="https://w4mxl.github.io/tags/Android-Studio/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Github中 “Clone in Desktop” 无效的解决办法</title>
+    <link href="https://w4mxl.github.io/2014/10/27/Github%E4%B8%AD%E2%80%9CClone-in-Desktop%E2%80%9D%E6%97%A0%E6%95%88%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+    <id>https://w4mxl.github.io/2014/10/27/Github中“Clone-in-Desktop”无效的解决办法/</id>
+    <published>2014-10-27T11:48:01.000Z</published>
+    <updated>2016-01-18T15:26:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;/image/图/Make “Clone in Desktop” down01.png&quot; wid
+    
+    </summary>
+    
+      <category term="OSX" scheme="https://w4mxl.github.io/categories/OSX/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>一个悲伤的故事</title>
+    <link href="https://w4mxl.github.io/2014/08/25/a-sad-story/"/>
+    <id>https://w4mxl.github.io/2014/08/25/a-sad-story/</id>
+    <published>2014-08-25T14:50:55.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;del&gt;在很久很久以前，&lt;/del&gt;算了，&lt;br&gt;其实就是刚过去的这个周末，&lt;br&gt;他们一行五人约好同去深圳的西涌海滩露营。&lt;br&gt;五人中三男两女。&lt;br&gt;两枚女孩：Yue长的清秀生性活泼；Lin内敛恬静细致体贴。&lt;br&gt;男惯性省略。&lt;/p&gt;
+&lt;p&gt;深圳北站-&amp;gt;&lt;e
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Pushbullet-实时的跨设备、跨平台的复制粘贴及推送工具</title>
+    <link href="https://w4mxl.github.io/2014/08/25/Pushbullet-introduce/"/>
+    <id>https://w4mxl.github.io/2014/08/25/Pushbullet-introduce/</id>
+    <published>2014-08-25T03:23:55.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一. 简单介绍&lt;br&gt;二. 应用场景&lt;br&gt;三. 安装使用&lt;/p&gt;
+&lt;p&gt;##简单介绍　&lt;br&gt;Pushbullet是为数不多的跨平台应用中一款简单实用型应用。我已经不记得是从什么时候从哪里了解到这个工具的。不过从我的app使用记录中可以查到最早的一条推送日期是2013-0
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于后会无期、锤子手机一些杂感</title>
+    <link href="https://w4mxl.github.io/2014/08/01/about-the-continent-and%20smartisan-phone/"/>
+    <id>https://w4mxl.github.io/2014/08/01/about-the-continent-and smartisan-phone/</id>
+    <published>2014-07-31T17:53:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　后会无期和锤子手机都是打从他俩有意做这件事开始就关注着。当你一心关注着什么的时候，是必有喜怒哀乐伴随。&lt;/p&gt;
+&lt;p&gt;　　锤子手机发布后，老罗在微博不停有形形色色的口仗，最近他发的几条微博都机智的在宣扬锤子手机的同时几多帮着造势后会无期。私底下老罗跟韩寒是多年好友。稍微
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>running</title>
+    <link href="https://w4mxl.github.io/2014/07/16/Life&#39;s/running/"/>
+    <id>https://w4mxl.github.io/2014/07/16/Life&#39;s/running/</id>
+    <published>2014-07-15T18:13:00.000Z</published>
+    <updated>2016-01-18T15:23:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;打开下app，发现30公里了&lt;br&gt;想下楼奖自己一个红豆冰&lt;br&gt;发现楼下超市已打烊&lt;/p&gt;
+&lt;p&gt;默默地摸摸自己的肚子&lt;br&gt;不禁想起了他们俩&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/image/图/running01.png&quot; width=&quot;320&quot;&gt;&lt;br&gt;&lt;img sr
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>FUCK GFW!</title>
+    <link href="https://w4mxl.github.io/2014/06/15/FUCK-GFW!/"/>
+    <id>https://w4mxl.github.io/2014/06/15/FUCK-GFW!/</id>
+    <published>2014-06-14T16:00:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;2014/6/16 更新：&lt;/p&gt;
+&lt;p&gt;由于种种原因（懂的人懂的），最近Google在华的服务被屏蔽的更彻底更无下限了。GoAgent也近乎不能用，一片红黄。不过难不倒我，我已经在goagent客户端local\proxy.ini中加入了些可用的ip地址（已测试可用），同
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>《机器灵 砍菜刀》</title>
+    <link href="https://w4mxl.github.io/2014/04/29/%E6%9C%BA%E5%99%A8%E7%81%B5-%E7%A0%8D%E8%8F%9C%E5%88%80/"/>
+    <id>https://w4mxl.github.io/2014/04/29/机器灵-砍菜刀/</id>
+    <published>2014-04-29T01:17:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;http://music.163.com/outchain/player?type=
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+      <category term="Music" scheme="https://w4mxl.github.io/tags/Music/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>忆</title>
+    <link href="https://w4mxl.github.io/2014/04/23/Life&#39;s/%E5%BF%86/"/>
+    <id>https://w4mxl.github.io/2014/04/23/Life&#39;s/忆/</id>
+    <published>2014-04-23T15:04:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;想乌衣年少&lt;br&gt;爱耍马后炮&lt;br&gt;台球乒乓玩得跳&lt;/p&gt;
+&lt;p&gt;时至今 南北跑&lt;br&gt;年年代码敲&lt;br&gt;日日衣服小&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/image/图/忆.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>何时是广州</title>
+    <link href="https://w4mxl.github.io/2014/04/20/%E4%BC%A0%E5%A5%87%E4%B9%8B%E5%AE%AB%E5%B4%8E%E9%AA%8F/"/>
+    <id>https://w4mxl.github.io/2014/04/20/传奇之宫崎骏/</id>
+    <published>2014-04-19T22:54:19.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;想多了解点深圳来的，泡了下知乎，不觉就是几个钟头。于凌晨，一头亢奋和一脸忧伤。&lt;/p&gt;
+&lt;p&gt;亢奋是更加意识到未来可以多美好，忧伤是不明了要做多少未来才能美好…&lt;/p&gt;
+&lt;p&gt;以下摘录于知乎上的两个问题和部分答案，深有感触，整理下(较长，自用，感兴趣的朋友推荐由链接移步知乎
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2014.3.29 北京晴、深圳阴</title>
+    <link href="https://w4mxl.github.io/2014/03/30/2014.3.29-%E5%8C%97%E4%BA%AC%E6%99%B4%E3%80%81%E6%B7%B1%E5%9C%B3%E9%98%B4/"/>
+    <id>https://w4mxl.github.io/2014/03/30/2014.3.29-北京晴、深圳阴/</id>
+    <published>2014-03-29T17:10:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;不知是少年明智&lt;br&gt;亦或是糊涂&lt;br&gt;决心踏上走南闯北的路&lt;/p&gt;
+&lt;p&gt;只是心里明明白白的舍不得，北京&lt;br&gt;别过了，北京&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;##匍匐&lt;br&gt;&lt;strong&gt;文_随处春山&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;近处的群山，远方的海&lt;br&gt;匍匐着巨大的身形
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>安河桥</title>
+    <link href="https://w4mxl.github.io/2014/03/09/Life&#39;s/%E5%AE%89%E6%B2%B3%E6%A1%A5/"/>
+    <id>https://w4mxl.github.io/2014/03/09/Life&#39;s/安河桥/</id>
+    <published>2014-03-09T12:31:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;想出去走走，看了眼地铁站点图，换好鞋子拿上耳机。&lt;/p&gt;
+&lt;p&gt;出门时心想着去动物园的，可没走到地铁站心里就反悔了。我是喜欢动物，但是还是受不了看到他们被关在里面被外面另外一种动物隔笼玩弄的样子。这跟我喜欢孩子，受不了他们老被困在教室里一样。有些动物，我以为圈养他们是有罪的
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>很快的，北京冬了</title>
+    <link href="https://w4mxl.github.io/2013/11/12/Life&#39;s/%E5%BE%88%E5%BF%AB%E7%9A%84%EF%BC%8C%E5%8C%97%E4%BA%AC%E5%86%AC%E4%BA%86/"/>
+    <id>https://w4mxl.github.io/2013/11/12/Life&#39;s/很快的，北京冬了/</id>
+    <published>2013-11-11T16:10:03.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　很快的，北京冬了。想来，在北京跟朋友们之间好像就没说到过秋。这儿秋好似读者原创版两篇长文中间夹杂的诗从，你不经意也就翻过去了。倘若有心读之，亦觉得很美。红枫黄叶，秋风起之，摇摇曳曳，肆意斑斓。&lt;/p&gt;
+&lt;p&gt;　　来北京一年多了，一天天看，一天天感受。最近发现自己想追求的
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello Burj Khalifa,Hello World</title>
+    <link href="https://w4mxl.github.io/2013/06/28/Hello-Burj-Khalifa,Hello-World/"/>
+    <id>https://w4mxl.github.io/2013/06/28/Hello-Burj-Khalifa,Hello-World/</id>
+    <published>2013-06-27T18:13:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;center&gt;&lt;br&gt;&lt;iframe height=&quot;498&quot; width=&quot;510&quot; src=&quot;http://player.youku.com/embed/XNTc1MjE3NjIw&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>独木难成林</title>
+    <link href="https://w4mxl.github.io/2013/05/01/%E7%8B%AC%E6%9C%A8%E9%9A%BE%E6%88%90%E6%9E%97/"/>
+    <id>https://w4mxl.github.io/2013/05/01/独木难成林/</id>
+    <published>2013-04-30T19:45:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　03年，他读初一。记得那年非典肆虐。举国恐慌。那时信息传播速度还远没现在迅捷。当小镇百姓都开始下意识抢购醋和板蓝根时，可想而知，非典已然相当严重了。&lt;/p&gt;
+&lt;p&gt;　　不记得是谁呼吁的了，或许是语文老师或许是学校，让学生给在外地的亲人写一封信，贴邮票的那种，大致是普及一
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>写给xx的一封信</title>
+    <link href="https://w4mxl.github.io/2013/03/22/Life&#39;s/%E5%86%99%E7%BB%99xx%E7%9A%84%E4%B8%80%E5%B0%81%E4%BF%A1/"/>
+    <id>https://w4mxl.github.io/2013/03/22/Life&#39;s/写给xx的一封信/</id>
+    <published>2013-03-22T09:52:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;xx，你好。&lt;/p&gt;
+&lt;p&gt;　　想起以这种方式跟你说点什么时，我马上就不能安心敲代码了。心里开始码字，手也移开键盘迅速打开了手机上的便签。&lt;/p&gt;
+&lt;p&gt;　　和你是那么久的朋友了，虽然这么些年和你聊的次数加起来都屈指可数（脚拇指也算的话），但自以为每次聊我们都是实诚的，推心
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>走，明十三陵</title>
+    <link href="https://w4mxl.github.io/2013/02/25/%E8%B5%B0%EF%BC%8C%E6%98%8E%E5%8D%81%E4%B8%89%E9%99%B5/"/>
+    <id>https://w4mxl.github.io/2013/02/25/走，明十三陵/</id>
+    <published>2013-02-25T15:27:00.000Z</published>
+    <updated>2016-01-18T15:16:34.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;2013.2.23 星期六，跟“山海经户外”的六七十个朋友一起徒步了明十三陵。&lt;/p&gt;
+&lt;p&gt;这是我来北京半年多，第一次跟这么多人一起出行。跟往常一个人走有些不一样，现在想也没什么不一样。&lt;/p&gt;
+&lt;p&gt;有些人是第一次，一看就是菜鸟，就像我。后来看，无知无畏，他们也走完了十
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://w4mxl.github.io/2013/02/21/Life&#39;s/%E4%BD%A0%E5%A5%BD%EF%BC%8C%E5%88%AB%E6%9D%A5%E6%97%A0%E6%81%99/"/>
+    <id>https://w4mxl.github.io/2013/02/21/Life&#39;s/你好，别来无恙/</id>
+    <published>2013-02-20T17:10:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;两首歌，近日一直听，&lt;br&gt;还是想听。&lt;br&gt;一首自勉；一首期望。&lt;br&gt;想说：&lt;br&gt;你好，别来无恙。&lt;/p&gt;
+&lt;embed src=&quot;http://www.xiami.com/widget/557147_385438/singlePlayer.swf&quot; type=&quot;ap
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://w4mxl.github.io/2013/02/05/Life&#39;s/%E5%9B%9E%E9%A6%962012/"/>
+    <id>https://w4mxl.github.io/2013/02/05/Life&#39;s/回首2012/</id>
+    <published>2013-02-05T06:23:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　回首，纯粹是我个人对过往不舍的絮叨。&lt;/p&gt;
+&lt;p&gt;　　上次写回首还是08年，刹那间，四年光阴就这么悄然溜走了。这让我想起了今年夏天大家一起忙活毕业设计论文时，有段话被N多人用过，是这样说的，“岁月荏苒，光阴如梭。四年的大学生活让我学到很多很多…”。 - , -  。四
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>类似高三的感觉。。。</title>
+    <link href="https://w4mxl.github.io/2011/06/26/%E7%B1%BB%E4%BC%BC%E9%AB%98%E4%B8%89%E7%9A%84%E6%84%9F%E8%A7%89/"/>
+    <id>https://w4mxl.github.io/2011/06/26/类似高三的感觉/</id>
+    <published>2011-06-25T16:00:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;昨天和朋友一起包了个面包车从学校搬到城南校区附近租住屋里。在那里进行暑假的复习。&lt;/p&gt;
+&lt;p&gt;我们四个人，两间相邻的屋子。房东是叔叔、阿姨和他们两岁大的孩子，我喜欢他，分他半个西瓜。事实上，孩子我都喜欢。&lt;/p&gt;
+&lt;p&gt;屋子没有独立卫生间，但有网可以上考研论坛，有太阳能可
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>有些人真的不一样</title>
+    <link href="https://w4mxl.github.io/2011/06/05/%E6%9C%89%E4%BA%9B%E4%BA%BA%E7%9C%9F%E7%9A%84%E4%B8%8D%E4%B8%80%E6%A0%B7/"/>
+    <id>https://w4mxl.github.io/2011/06/05/有些人真的不一样/</id>
+    <published>2011-06-04T16:00:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这次想过来打点字是因为晚上看非诚勿扰[无聊时我最爱干的事]时被一男的所选择的生活方式所触动，是叫郭大浩的40岁的真男人_他因小时候看到的一个短报道触动，后立志以骑单车的方式环游世界，现今已经去了90多个国家。如果你也有触动到，那我想表达什么你懂的。。。&lt;/p&gt;
+&lt;p&gt;小时候
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>寒寒就不寒了</title>
+    <link href="https://w4mxl.github.io/2011/05/20/%E5%AF%92%E5%AF%92%E5%B0%B1%E4%B8%8D%E5%AF%92%E4%BA%86/"/>
+    <id>https://w4mxl.github.io/2011/05/20/寒寒就不寒了/</id>
+    <published>2011-05-19T16:00:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;近两天闲暇时狠读了些韩寒久远以前的博文，起先是打算从后向前一篇篇来的，读得兴起时被标题牵着走。原来他文字一向犀利，很多时候，读他的文章，像是看着一个战士拿着那种带刺刀的抢，他总不爱一枪毙命玩完，他更喜欢刀刀见血。（PS.相比我就寒不了，我DOTA时总爱首选火枪_意识里还是爱
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>对于吉卜力工作室的孩子，我总是急不可耐</title>
+    <link href="https://w4mxl.github.io/2011/05/06/%E5%AF%B9%E4%BA%8E%E5%90%89%E5%8D%9C%E5%8A%9B%E5%B7%A5%E4%BD%9C%E5%AE%A4%E7%9A%84%E5%AD%A9%E5%AD%90%EF%BC%8C%E6%88%91%E6%80%BB%E6%98%AF%E6%80%A5%E4%B8%8D%E5%8F%AF%E8%80%90/"/>
+    <id>https://w4mxl.github.io/2011/05/06/对于吉卜力工作室的孩子，我总是急不可耐/</id>
+    <published>2011-05-05T16:00:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/image/图/对于吉卜力工作室的孩子，我总是急不可耐01.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;《来自虞美人坡道》（コクリコ坂から）为佐山哲郎原作、高桥千鹤作画；在1980年期间发行的日本少女漫画，由吉卜力工作室宫崎吾朗执
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>夜</title>
+    <link href="https://w4mxl.github.io/2011/04/06/%E5%A4%9C/"/>
+    <id>https://w4mxl.github.io/2011/04/06/夜/</id>
+    <published>2011-04-06T02:34:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我喜欢这时，&lt;br&gt;一切都那么安静，&lt;br&gt;只等曙光他来。&lt;/p&gt;
+&lt;p&gt;一缕微光从玻璃窗透进，&lt;br&gt;落在脸上，&lt;br&gt;和未合起的书上，&lt;br&gt;我看见星星一个接一个熄灭了。&lt;/p&gt;
+&lt;p&gt;我就喜欢这时，无休无止，大音如诗。 &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;10:34 PM 4/6
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>孤独的孩子，你是造物的恩宠</title>
+    <link href="https://w4mxl.github.io/2011/03/31/%E5%AD%A4%E7%8B%AC%E7%9A%84%E5%AD%A9%E5%AD%90%EF%BC%8C%E4%BD%A0%E6%98%AF%E9%80%A0%E7%89%A9%E7%9A%84%E6%81%A9%E5%AE%A0/"/>
+    <id>https://w4mxl.github.io/2011/03/31/孤独的孩子，你是造物的恩宠/</id>
+    <published>2011-03-30T16:00:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/image/图/孤独的孩子，你是造物的恩宠01.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;“孤独的孩子，你是造物的恩宠”&lt;/p&gt;
+&lt;p&gt;这话是前两天在听罗大佑《你的样子》一歌里偷来的。很雷很喜欢。听歌时记得了这句话也有些是因为不久前回复yuexiaobe
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>安慰</title>
+    <link href="https://w4mxl.github.io/2011/02/20/%E5%AE%89%E6%85%B0/"/>
+    <id>https://w4mxl.github.io/2011/02/20/安慰/</id>
+    <published>2011-02-19T16:00:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;电影总让我想起些我似乎忘了的东西！&lt;/p&gt;
+&lt;p&gt;明明钥匙在手上，却寻不到钥匙把门打开。看完《天若有情Ⅰ》，我就奇怪，那时吊儿郎当的我，现在怎么这么“乖”。在古惑仔横扫我整个初中那时，我们凡事只讲义气，只够买一根冰棒那分着吃，兄弟喜欢的女生不能有‘想法‘-_-#。那时候也是
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Back to School</title>
+    <link href="https://w4mxl.github.io/2011/02/20/Back-to-School/"/>
+    <id>https://w4mxl.github.io/2011/02/20/Back-to-School/</id>
+    <published>2011-02-19T16:00:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>我的关于苏紫紫的一些想法</title>
+    <link href="https://w4mxl.github.io/2011/01/18/%E6%88%91%E7%9A%84%E5%85%B3%E4%BA%8E%E8%8B%8F%E7%B4%AB%E7%B4%AB%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/"/>
+    <id>https://w4mxl.github.io/2011/01/18/我的关于苏紫紫的一些想法/</id>
+    <published>2011-01-17T16:17:15.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　我不是现在才知道“苏紫紫”。&lt;/p&gt;
+&lt;p&gt;　　第一次是在网易图片新闻看到那张她很淡定的裸体接受记者采访照片，当时看到那张照片，我有一种奇怪，这一“本该”用意魅惑、挑逗观者的裸照怎么没一点那种感觉。因为当时那张照片只是偶然看到，我也顺然继续查看邮件没多想。&lt;/p&gt;
+&lt;p
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>我只能说，有的人死了，他还活着！</title>
+    <link href="https://w4mxl.github.io/2011/01/03/%E6%88%91%E5%8F%AA%E8%83%BD%E8%AF%B4%EF%BC%8C%E6%9C%89%E7%9A%84%E4%BA%BA%E6%AD%BB%E4%BA%86%EF%BC%8C%E4%BB%96%E8%BF%98%E6%B4%BB%E7%9D%80%EF%BC%81/"/>
+    <id>https://w4mxl.github.io/2011/01/03/我只能说，有的人死了，他还活着！/</id>
+    <published>2011-01-02T16:00:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/image/图/我只能说，有的人死了，他还活着！01.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;才知道12.31号凌晨史铁生与世长辞！享年仅59岁！！！&lt;/p&gt;
+&lt;p&gt;我知道他的其实不多，却每次看到“史铁生”这个名字心中便充满深深敬畏！&lt;/p&gt;
+&lt;p&gt;在
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>谁动了我奶酪</title>
+    <link href="https://w4mxl.github.io/2011/01/02/%E8%B0%81%E5%8A%A8%E4%BA%86%E6%88%91%E5%A5%B6%E9%85%AA/"/>
+    <id>https://w4mxl.github.io/2011/01/02/谁动了我奶酪/</id>
+    <published>2011-01-01T16:00:00.000Z</published>
+    <updated>2016-01-18T15:16:34.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我也不知道是谁动了我奶酪？我就怎么丢了，每次想，都奇怪！生活本来就此！有过的好不会忘记，发生了就真的不能抹煞，且行且珍惜。&lt;/p&gt;
+&lt;p&gt;得之我幸，失之我命！&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;提下《让子弹飞》，这次姜文算是真正拍成功了。93年导的那部《阳光灿烂的日子》还清晰着呢，想
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>走好</title>
+    <link href="https://w4mxl.github.io/2010/12/26/%E8%B5%B0%E5%A5%BD/"/>
+    <id>https://w4mxl.github.io/2010/12/26/走好/</id>
+    <published>2010-12-25T18:05:00.000Z</published>
+    <updated>2016-01-18T15:16:34.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;2010-12-26 2:05 周六&lt;/p&gt;
+&lt;p&gt;现在想写些东西了，在这个白天熟睡了的时候。&lt;/p&gt;
+&lt;p&gt;深夜总让我心如止水，又澎湃汹涌。就像听摇滚乐，就像听汪峰唱歌。&lt;br&gt;2010.12.20  2:05pm我外公去世！他抛弃了这个世界，选择了飞翔！&lt;br&gt;妈妈很早
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>李小龙70岁生日(Bruce Lee 70th Birthday)</title>
+    <link href="https://w4mxl.github.io/2010/11/27/%E6%9D%8E%E5%B0%8F%E9%BE%9970%E5%B2%81%E7%94%9F%E6%97%A5(Bruce-Lee-70th-Birthday)/"/>
+    <id>https://w4mxl.github.io/2010/11/27/李小龙70岁生日(Bruce-Lee-70th-Birthday)/</id>
+    <published>2010-11-27T05:58:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/image/图/李小龙70岁生日01.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;/image/图/李小龙70岁生日02.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;今天，&lt;br&gt;是你诞辰70周年！&lt;br&gt;今天，&lt;br&gt;是你的70岁生日！&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>十月</title>
+    <link href="https://w4mxl.github.io/2010/11/06/%E5%8D%81%E6%9C%88/"/>
+    <id>https://w4mxl.github.io/2010/11/06/十月/</id>
+    <published>2010-11-05T16:00:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Last October&lt;/p&gt;
+&lt;p&gt;1.&lt;/p&gt;
+&lt;p&gt;月初，国庆长假，舍友们各施各事，留我一人当个伪霍尔顿的“宿舍守望者”。我倒挺乐意的。其实是我不想冒着黄金周出去捡黄金，到哪儿哪儿是人海会使我很痛苦。至于那几日，白天，就学些编些程序看些书；下午泛读点杂书；晚上看电影
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>目光需远大——略论凡客诚品(VANCL)之成功</title>
+    <link href="https://w4mxl.github.io/2010/10/11/%E7%9B%AE%E5%85%89%E9%9C%80%E8%BF%9C%E5%A4%A7%E2%80%94%E2%80%94%E7%95%A5%E8%AE%BA%E5%87%A1%E5%AE%A2%E8%AF%9A%E5%93%81(VANCL)%E4%B9%8B%E6%88%90%E5%8A%9F/"/>
+    <id>https://w4mxl.github.io/2010/10/11/目光需远大——略论凡客诚品(VANCL)之成功/</id>
+    <published>2010-10-10T16:00:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;·文/ 木小浪&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;VANCL简介：&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;电子商务网站，在互联网销售自己品牌的产品，坚持一线品质、合理价位，致力于让用户以中等价位享受奢侈品质，提倡简约、纵深、自在、环保。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;VANCL创始人：&lt;/em&gt;&lt;/p&gt;
+&lt;
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>韩寒-我的妞很彪悍很可爱</title>
+    <link href="https://w4mxl.github.io/2010/10/04/%E9%9F%A9%E5%AF%92-%E6%88%91%E7%9A%84%E5%A6%9E%E5%BE%88%E5%BD%AA%E6%82%8D%E5%BE%88%E5%8F%AF%E7%88%B1/"/>
+    <id>https://w4mxl.github.io/2010/10/04/韩寒-我的妞很彪悍很可爱/</id>
+    <published>2010-10-03T16:00:00.000Z</published>
+    <updated>2016-02-07T11:01:06.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;###&lt;strong&gt;被一个人喜欢，接受她为我花钱，是一种享受&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我其实中意各种各样的女人，相信大部分男的都是如此。&lt;/p&gt;
+&lt;p&gt;现在我有了女友，不是绯闻女友，是真正意义上的女友。关于她姓甚名谁身高体重职业出身这些东西，我一概不予披露。她未见
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>“我是静秋”</title>
+    <link href="https://w4mxl.github.io/2010/09/26/%E2%80%9C%E6%88%91%E6%98%AF%E9%9D%99%E7%A7%8B%E2%80%9D/"/>
+    <id>https://w4mxl.github.io/2010/09/26/“我是静秋”/</id>
+    <published>2010-09-25T16:00:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;“我是静秋、我是静秋…我是静秋、我是静秋…，你不是答应我听到我的名字你就会回来吗？我是静秋…”。&lt;/p&gt;
+&lt;p&gt;静秋却只能如此忧伤而无奈的哭喊着了。她顺着老三的视线看去天花板，板上贴着他们俩合拍的那张青春而又灿烂的照片…却已然高高在上了。听静秋这么叫着，我也不知觉地眼眶慢慢
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>偷得浮生两日闲</title>
+    <link href="https://w4mxl.github.io/2010/09/21/%E5%81%B7%E5%BE%97%E6%B5%AE%E7%94%9F%E4%B8%A4%E6%97%A5%E9%97%B2/"/>
+    <id>https://w4mxl.github.io/2010/09/21/偷得浮生两日闲/</id>
+    <published>2010-09-21T15:15:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;姐的儿子满月了，我匆匆回了趟老家。前天中午走今天中午回。&lt;/p&gt;
+&lt;p&gt;姐生梦宇（她儿子）的时候我在学校没能回去，想着这次怎么也得看看宝宝了，便风尘仆仆的乘车回家。大概是因为离了电脑的缘故，这两天真是很悠然自得。^^。异于学校的两天日子，给了我很多新的认识，竟有了想写些什么
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>世界上有这么一个人，他宁可死，也不会对你出尔反尔的</title>
+    <link href="https://w4mxl.github.io/2010/09/15/%E4%B8%96%E7%95%8C%E4%B8%8A%E6%9C%89%E8%BF%99%E4%B9%88%E4%B8%80%E4%B8%AA%E4%BA%BA%EF%BC%8C%E4%BB%96%E5%AE%81%E5%8F%AF%E6%AD%BB%EF%BC%8C%E4%B9%9F%E4%B8%8D%E4%BC%9A%E5%AF%B9%E4%BD%A0%E5%87%BA%E5%B0%94%E5%8F%8D%E5%B0%94%E7%9A%84/"/>
+    <id>https://w4mxl.github.io/2010/09/15/世界上有这么一个人，他宁可死，也不会对你出尔反尔的/</id>
+    <published>2010-09-14T16:00:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/image/图/世界上有这么一个人，他宁可死，也不会对你出尔反尔的01.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;《山楂树之恋》终于改编成电影了！！！&lt;/p&gt;
+&lt;p&gt;看书时有过看到被拍成电影的期待。就像看小说《匆匆那年》时会有的期待一样。&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Yesterday Once More</title>
+    <link href="https://w4mxl.github.io/2010/09/14/Yesterday-Once-More/"/>
+    <id>https://w4mxl.github.io/2010/09/14/Yesterday-Once-More/</id>
+    <published>2010-09-14T02:25:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;00:00 2010-9-14&lt;br&gt;那天晚上聊天时她不知怎么想起来说我是个浪漫的人。呵呵，我当时发了个流汗的表情给她，会觉得她说得很好玩，呵呵。&lt;/p&gt;
+&lt;p&gt;现在我觉得我还真是个浪漫的人呢！呵！以图为证：我竟然会“捕捉”到这么唯美的桌面呢！&lt;/p&gt;
+&lt;p&gt;&lt;img sr
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>劈开一切不说，光电影，我说《唐山大地震》是部好电影</title>
+    <link href="https://w4mxl.github.io/2010/09/10/%E5%8A%88%E5%BC%80%E4%B8%80%E5%88%87%E4%B8%8D%E8%AF%B4%EF%BC%8C%E5%85%89%E7%94%B5%E5%BD%B1%EF%BC%8C%E6%88%91%E8%AF%B4%E3%80%8A%E5%94%90%E5%B1%B1%E5%A4%A7%E5%9C%B0%E9%9C%87%E3%80%8B%E6%98%AF%E9%83%A8%E5%A5%BD%E7%94%B5%E5%BD%B1/"/>
+    <id>https://w4mxl.github.io/2010/09/10/劈开一切不说，光电影，我说《唐山大地震》是部好电影/</id>
+    <published>2010-09-10T01:47:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;《唐山大地震》：01:42 2010-9-10&lt;/p&gt;
+&lt;p&gt;看的很巧，片子里放到毛主席去世，天安门广场和人民大会堂人山人海时，想刚刚好今天就是9,9号（当时还没过零点）（记得毛主席就是9,9号逝世的），听着哀悼的音乐，会觉得好巧啊！&lt;/p&gt;
+&lt;p&gt;那时候的人们多好啊，70
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>北京之行-录3</title>
+    <link href="https://w4mxl.github.io/2010/08/09/%E5%8C%97%E4%BA%AC%E4%B9%8B%E8%A1%8C-%E5%BD%953/"/>
+    <id>https://w4mxl.github.io/2010/08/09/北京之行-录3/</id>
+    <published>2010-08-09T15:05:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;8,5&lt;/strong&gt;  今天王府井、北京火车站和地坛。&lt;/p&gt;
+&lt;p&gt;想去王府井是因为曾经在百度搜索栏中敲入“北京有哪些特大书店？”并回车后的众多答案里，王府井书店名列其中且赞誉很多。公交乘1h转两班在【王府井】站下。三两下找到，是因为书店很标识。进去，
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>北京之行-录2</title>
+    <link href="https://w4mxl.github.io/2010/08/07/%E5%8C%97%E4%BA%AC%E4%B9%8B%E8%A1%8C-%E5%BD%952/"/>
+    <id>https://w4mxl.github.io/2010/08/07/北京之行-录2/</id>
+    <published>2010-08-07T03:27:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;8,3&lt;/strong&gt; 去北大。8,1号那天很偶然很幸运找到北大，待看到那块眼熟得膜拜得的不行的匾，小心脏那个小兴奋啊！却说不能进去！（bcs学校礼堂有大型活动），-_-#，天堂–&amp;gt;地狱。&lt;/p&gt;
+&lt;p&gt;今儿再去，进去了， ^o^，日日思君不见君，今
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>北京之行-录1</title>
+    <link href="https://w4mxl.github.io/2010/08/02/%E5%8C%97%E4%BA%AC%E4%B9%8B%E8%A1%8C-%E5%BD%951/"/>
+    <id>https://w4mxl.github.io/2010/08/02/北京之行-录1/</id>
+    <published>2010-08-02T00:18:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;7,31&lt;/strong&gt; 下午5:40从老家宝应出发去神往已久的北京，乘坐的是京宝高速客车（卧铺）。插曲：因为我哥也是宝应–&amp;gt;北京客车公司上班的，所以此次车费也被免了，且还在他们的北京招待所谋得一下榻之所。 ^_^ 。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>走，出去玩——小U和西藏</title>
+    <link href="https://w4mxl.github.io/2010/07/18/%E8%B5%B0%EF%BC%8C%E5%87%BA%E5%8E%BB%E7%8E%A9%E2%80%94%E2%80%94%E5%B0%8FU%E5%92%8C%E8%A5%BF%E8%97%8F/"/>
+    <id>https://w4mxl.github.io/2010/07/18/走，出去玩——小U和西藏/</id>
+    <published>2010-07-18T06:03:00.000Z</published>
+    <updated>2016-01-18T15:16:34.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/image/图/走，出去玩——小U和西藏01.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这两天获悉了一本书和一只狗——《走，出去玩》、书的主角小U。&lt;/p&gt;
+&lt;p&gt;我喜欢狗，喜欢西藏，所以喜欢《走，出去玩》。爱屋及乌。我也羡慕书的作者：崔忆、宁心，当然还
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2010南非世界杯大决赛前赋拙劣诗一首以镇压</title>
+    <link href="https://w4mxl.github.io/2010/07/11/2010%E5%8D%97%E9%9D%9E%E4%B8%96%E7%95%8C%E6%9D%AF%E5%A4%A7%E5%86%B3%E8%B5%9B%E5%89%8D%E8%B5%8B%E6%8B%99%E5%8A%A3%E8%AF%97%E4%B8%80%E9%A6%96%E4%BB%A5%E9%95%87%E5%8E%8B/"/>
+    <id>https://w4mxl.github.io/2010/07/11/2010南非世界杯大决赛前赋拙劣诗一首以镇压/</id>
+    <published>2010-07-11T12:50:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;巅峰对决&lt;br&gt;无冕之王&lt;br&gt;斗牛士狂&lt;br&gt;生死存亡&lt;br&gt;我心惶惶&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>岁月神偷</title>
+    <link href="https://w4mxl.github.io/2010/07/08/%E5%B2%81%E6%9C%88%E7%A5%9E%E5%81%B7/"/>
+    <id>https://w4mxl.github.io/2010/07/08/岁月神偷/</id>
+    <published>2010-07-08T04:42:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;特想推荐一部电影，《岁月神偷》。港片。文艺。回忆。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/image/图/岁月神偷01.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;（左起：任达华、吴君如、罗启锐、张婉婷、中间小孩片子里的罗进二）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/image/图/岁月神
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>不必学习那些后来注定要忘掉的无用的知识</title>
+    <link href="https://w4mxl.github.io/2010/07/06/%E4%B8%8D%E5%BF%85%E5%AD%A6%E4%B9%A0%E9%82%A3%E4%BA%9B%E5%90%8E%E6%9D%A5%E6%B3%A8%E5%AE%9A%E8%A6%81%E5%BF%98%E6%8E%89%E7%9A%84%E6%97%A0%E7%94%A8%E7%9A%84%E7%9F%A5%E8%AF%86/"/>
+    <id>https://w4mxl.github.io/2010/07/06/不必学习那些后来注定要忘掉的无用的知识/</id>
+    <published>2010-07-06T05:07:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;22:46 2010/7/4&lt;/p&gt;
+&lt;p&gt;“在那个年代里，学生获得了空前的解放，……，不必学习那些后来注定要忘掉的无用的知识”这是一句台词，《与青春有关的日子》里的。这话在很多品论此剧的文章里被奉为经典。凡能把大白话说经典了的，证明这话肯定刺到了某问题的实质。这实质便是无
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>game-over</title>
+    <link href="https://w4mxl.github.io/2010/06/29/game-over/"/>
+    <id>https://w4mxl.github.io/2010/06/29/game-over/</id>
+    <published>2010-06-29T13:20:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;17:49 2010/6/29&lt;br&gt;到今天为止，这学期学校里面的所有事都game over了。本来下午早就统一安排好了的（专业）项目答辩也不知因为什么原因，在老师的一句话下-“算了，不答辩了”，不了了之。学校对这类真正有意义事的敷衍了事，让我总觉得很愤懑，有些同学倒好，以
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>雷子小丹married</title>
+    <link href="https://w4mxl.github.io/2010/05/26/%E9%9B%B7%E5%AD%90%E5%B0%8F%E4%B8%B9married/"/>
+    <id>https://w4mxl.github.io/2010/05/26/雷子小丹married/</id>
+    <published>2010-05-26T04:29:00.000Z</published>
+    <updated>2016-01-18T15:16:34.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;2010/‎5/‎25 星期二下午10:13:20&lt;br&gt;雷子小丹married&lt;/p&gt;
+&lt;p&gt;上星期五回老家一趟，昨天返校。雷子和小丹上周的周日结婚。&lt;/p&gt;
+&lt;p&gt;一个多月前雷子和小丹来电话，通知我他们5.23号结婚，问我有没空回去。必须的，我允诺道，我会到的。电话挂了
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>挺自由的监狱</title>
+    <link href="https://w4mxl.github.io/2010/05/18/%E6%8C%BA%E8%87%AA%E7%94%B1%E7%9A%84%E7%9B%91%E7%8B%B1/"/>
+    <id>https://w4mxl.github.io/2010/05/18/挺自由的监狱/</id>
+    <published>2010-05-18T00:32:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/image/图/挺自由的监狱01.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;/image/图/挺自由的监狱02.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>电影和博客</title>
+    <link href="https://w4mxl.github.io/2010/05/15/Life&#39;s/%E7%94%B5%E5%BD%B1%E5%92%8C%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://w4mxl.github.io/2010/05/15/Life&#39;s/电影和博客/</id>
+    <published>2010-05-15T03:08:00.000Z</published>
+    <updated>2016-01-18T15:25:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;movie this week：&lt;br&gt;《童年往事》侯孝贤1:01 2010/5/11&lt;br&gt;【或许多年以后我也会很想拍一部这样的童年往事，因为我的童年也有那么多的往事。此电影可以留给爸爸看，他会爱看的。再者，有时间多了解一点侯孝贤这个人】&lt;/p&gt;
+&lt;p&gt;《我们天上见》&lt;b
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>彼岸花</title>
+    <link href="https://w4mxl.github.io/2010/05/08/%E5%BD%BC%E5%B2%B8%E8%8A%B1/"/>
+    <id>https://w4mxl.github.io/2010/05/08/彼岸花/</id>
+    <published>2010-05-07T17:09:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;2010/‎5/‎7/20:53:09&lt;/p&gt;
+&lt;p&gt;在看安妮宝贝的《彼岸花》。一年前在矿大边的新华书店买的，之后一周断断续续的尽量连续看完了。再读，陌生感让我不觉怀疑起自己是否真的有读过。是我记忆力太差劲。还是它太狂野太跳跃。&lt;/p&gt;
+&lt;p&gt;乔的破旧牛仔裤，和散漫装束，让
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>5,4</title>
+    <link href="https://w4mxl.github.io/2010/05/04/5,4/"/>
+    <id>https://w4mxl.github.io/2010/05/04/5,4/</id>
+    <published>2010-05-04T08:47:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;2010/5/4&lt;br&gt;又一年五四，&lt;br&gt;遥想：&lt;br&gt;那少年激情，&lt;br&gt;那愤愤年华，&lt;br&gt;那满腔热血，&lt;br&gt;那为我们华夏民族前程而虔诚斗争的&lt;br&gt;勇士&lt;em&gt;孩子&lt;/em&gt;青年&lt;br&gt;                              木小浪`纪念&lt;/p
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>mla+MOGO+Germany</title>
+    <link href="https://w4mxl.github.io/2010/05/03/mla+MOGO+Germany/"/>
+    <id>https://w4mxl.github.io/2010/05/03/mla+MOGO+Germany/</id>
+    <published>2010-05-03T05:52:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这两天认识一个乐队_My little airport。是前天在一荣英语网&lt;a href=&quot;http://www.eoezone.com/听了他们的一首《edward&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.eoezone.co
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>建筑美</title>
+    <link href="https://w4mxl.github.io/2010/04/28/%E5%BB%BA%E7%AD%91%E7%BE%8E/"/>
+    <id>https://w4mxl.github.io/2010/04/28/建筑美/</id>
+    <published>2010-04-28T08:56:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/image/图/建筑美01.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;/image/图/建筑美02.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;/image/图/建筑美03.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;/ima
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>I hope……</title>
+    <link href="https://w4mxl.github.io/2010/04/21/I-hope/"/>
+    <id>https://w4mxl.github.io/2010/04/21/I-hope/</id>
+    <published>2010-04-21T09:30:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/image/图/I hope...01.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>睹图奇想</title>
+    <link href="https://w4mxl.github.io/2010/04/18/%E7%9D%B9%E5%9B%BE%E5%A5%87%E6%83%B3/"/>
+    <id>https://w4mxl.github.io/2010/04/18/睹图奇想/</id>
+    <published>2010-04-18T04:51:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/image/图/睹图奇想01.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>《第一滴血》＃兰博＃史泰龙</title>
+    <link href="https://w4mxl.github.io/2010/04/09/%E3%80%8A%E7%AC%AC%E4%B8%80%E6%BB%B4%E8%A1%80%E3%80%8B-%E5%85%B0%E5%8D%9A-%E5%8F%B2%E6%B3%B0%E9%BE%99/"/>
+    <id>https://w4mxl.github.io/2010/04/09/《第一滴血》-兰博-史泰龙/</id>
+    <published>2010-04-09T04:46:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;不知道他们到底谁是我偶像，是兰博，还是史泰龙？！&lt;/p&gt;
+&lt;p&gt;因为那时我对史泰龙本人的一无所知，所以很久以前，在我先后看完《第一滴血》4部之后，一直以为史泰龙的乳名叫兰博，他们只是一个人的两个名字。你可以为此取笑我，我无所谓。&lt;/p&gt;
+&lt;p&gt;正如很多小孩一样，我是极崇尚英
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>喜欢</title>
+    <link href="https://w4mxl.github.io/2010/04/01/%E5%96%9C%E6%AC%A2/"/>
+    <id>https://w4mxl.github.io/2010/04/01/喜欢/</id>
+    <published>2010-04-01T05:38:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/image/图/喜欢01.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;/image/图/喜欢02.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;/image/图/喜欢03.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;/image/
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>哈山</title>
+    <link href="https://w4mxl.github.io/2010/03/19/%E5%93%88%E5%B1%B1/"/>
+    <id>https://w4mxl.github.io/2010/03/19/哈山/</id>
+    <published>2010-03-19T12:23:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;文_木小浪&lt;br&gt;2010-3-19 14:06&lt;/p&gt;
+&lt;p&gt;不知道有多少人看过《追风筝的人》，不管是卡勒德&amp;amp;胡塞尼写的书，还是Marc Forster导的电影。要是你有看过，那你一定还记得哈山，因为你已永远也忘不了那句“为了你，千千万万遍”[ Fou you,a
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>日子说了算</title>
+    <link href="https://w4mxl.github.io/2010/03/16/%E6%97%A5%E5%AD%90%E8%AF%B4%E4%BA%86%E7%AE%97/"/>
+    <id>https://w4mxl.github.io/2010/03/16/日子说了算/</id>
+    <published>2010-03-16T12:48:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;March 16, 2010&lt;br&gt;新学期开始半个月了，绿柳抽芽的春天也姗姗来迟。&lt;br&gt;新学期学习新的技术：J2ME让我很兴奋，原来运行在我手机上的那些个小软件就是这么靠代码编出来的，很让我觉得神奇，有种立马学好的冲动；ASP.NET课上，参照着书开发了两个简单的WEB网
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>今年2010</title>
+    <link href="https://w4mxl.github.io/2010/03/06/%E4%BB%8A%E5%B9%B42010/"/>
+    <id>https://w4mxl.github.io/2010/03/06/今年2010/</id>
+    <published>2010-03-05T16:31:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今年2010&lt;br&gt;            ——木小浪&lt;br&gt;今年2010，&lt;br&gt;夏天或有远游计划，&lt;br&gt;买款新手机和旧摩托。&lt;br&gt;读人衣衫褴褛，&lt;br&gt;瞥兽灯红酒绿。&lt;br&gt;米兰的小铁匠哎，&lt;br&gt;终于买了他心爱的Guitar&lt;br&gt;弹着弹着，&lt;br&gt;睡着啦。&lt;/p
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>艺术</title>
+    <link href="https://w4mxl.github.io/2010/03/02/%E8%89%BA%E6%9C%AF/"/>
+    <id>https://w4mxl.github.io/2010/03/02/艺术/</id>
+    <published>2010-03-02T15:09:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;18:39 2010-3-2&lt;br&gt;下午在论坛淘MV，得到崔健的《一无所有》和艾敬的《我的1997》。特别是艾敬的《我的1997》，当时看着歌词，听着听着眼眶就有了泪水，可是歌曲快要结束时，我嘴角挂着笑容，心里欢畅。我清楚地记得这种情形在看电影《傻瓜》和《The legen
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>寒假（二）</title>
+    <link href="https://w4mxl.github.io/2010/02/17/%E5%AF%92%E5%81%87%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
+    <id>https://w4mxl.github.io/2010/02/17/寒假（二）/</id>
+    <published>2010-02-17T13:46:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;2010_2_17&lt;br&gt;尽管迟了，还是想说，新年好！我的朋友！&lt;/p&gt;
+&lt;p&gt;谢谢你们这些看我博的度友们，谢谢你们那些被我看博的度友们，这一年因为你们平添了许多的乐趣，也让我的天空高了许多，想飞的地儿多了许多。&lt;/p&gt;
+&lt;p&gt;今儿又在我姐这儿看了两集《蜗居》，继续着上次的
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>寒假（一）</title>
+    <link href="https://w4mxl.github.io/2010/02/10/%E5%AF%92%E5%81%87%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>https://w4mxl.github.io/2010/02/10/寒假（一）/</id>
+    <published>2010-02-10T05:49:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;2010-2-8&lt;br&gt;在文子家玩，他笔记本里有《蜗居》，之前在学校里网上传得贼火的一部剧。前几天在《鲁豫有约》节目里看到海清，觉得她这人很实，挺好。&lt;br&gt;然后下午就把文子电脑霸占了看起来，可是《蜗居》看到第五集就看不下去了，太憋屈了，老实说是不敢往下看了。海藻的老板一副
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>原来一个月前8号是列侬的忌日。</title>
+    <link href="https://w4mxl.github.io/2010/01/09/%E5%8E%9F%E6%9D%A5%E4%B8%80%E4%B8%AA%E6%9C%88%E5%89%8D8%E5%8F%B7%E6%98%AF%E5%88%97%E4%BE%AC%E7%9A%84%E5%BF%8C%E6%97%A5/"/>
+    <id>https://w4mxl.github.io/2010/01/09/原来一个月前8号是列侬的忌日/</id>
+    <published>2010-01-08T16:29:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;晚上“慢腾腾”的读了青年文摘（绿版电子）上的几篇文字，很有些启发。在他们的思想和见识面前，我承认我是个矮子，尽管我不矮。其中，韩少功的《怀念那些读书的日子》感触颇深，他讲的真对：“这是他有幸中的不幸”。（我把这篇文章截下来吧。附在尾处）。&lt;/p&gt;
+&lt;p&gt;今天听歌的时候，千千
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>那些航海环行的少年</title>
+    <link href="https://w4mxl.github.io/2010/01/03/%E9%82%A3%E4%BA%9B%E8%88%AA%E6%B5%B7%E7%8E%AF%E8%A1%8C%E7%9A%84%E5%B0%91%E5%B9%B4/"/>
+    <id>https://w4mxl.github.io/2010/01/03/那些航海环行的少年/</id>
+    <published>2010-01-03T07:08:00.000Z</published>
+    <updated>2016-01-18T15:16:34.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;那些有机会去实现自己梦想的少年们，&lt;br&gt;我羡慕的看着你们，&lt;br&gt;微笑着想象着公元某年某月的某天，&lt;br&gt;带着我耳麦和notebook上路。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/image/图/那些航海环行的少年01.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>mondialito乐队+兔斯基</title>
+    <link href="https://w4mxl.github.io/2009/12/27/mondialito%E4%B9%90%E9%98%9F+%E5%85%94%E6%96%AF%E5%9F%BA/"/>
+    <id>https://w4mxl.github.io/2009/12/27/mondialito乐队+兔斯基/</id>
+    <published>2009-12-27T15:34:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;一男一女，法语：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/image/图/mondialito乐队 + 兔斯基01.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;兔斯基：&lt;/p&gt;
+&lt;/blockquote
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>忙里偷闲</title>
+    <link href="https://w4mxl.github.io/2009/12/26/%E5%BF%99%E9%87%8C%E5%81%B7%E9%97%B2/"/>
+    <id>https://w4mxl.github.io/2009/12/26/忙里偷闲/</id>
+    <published>2009-12-25T16:23:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;有几天没上来了，前面忙着四级，现在忙着复习，却发现最快乐的是忙里偷闲。&lt;/p&gt;
+&lt;p&gt;前天夜里在央视网CCTV10的第十放映室看了苏菲玛索，这位被法国人称为法兰西之吻的女孩真是美丽，因于可爱！从她出演《初吻》里的维首次登上荧屏到她成功诠释了《安娜卡列尼娜》，她的质越，影迷的
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>外面的世界</title>
+    <link href="https://w4mxl.github.io/2009/12/12/%E5%A4%96%E9%9D%A2%E7%9A%84%E4%B8%96%E7%95%8C/"/>
+    <id>https://w4mxl.github.io/2009/12/12/外面的世界/</id>
+    <published>2009-12-11T16:09:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;记得刚开百度空间时每个人都要写个类似“自我简介”的模块，我在里面就有一句：早已对外面的世界虎视眈眈。这真是我的心里话，肺腑的。&lt;/p&gt;
+&lt;p&gt;也许是因为来自乡村，小时候没机会见太多世面，浸泡在单纯的小快乐里一直到十八岁。无知者无欲。口袋里装上五六个小球（玻璃球）就能快活的在
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>夜观 《The notebook》</title>
+    <link href="https://w4mxl.github.io/2009/12/09/%E5%A4%9C%E8%A7%82%E3%80%8AThe%20notebook%E3%80%8B/"/>
+    <id>https://w4mxl.github.io/2009/12/09/夜观《The notebook》/</id>
+    <published>2009-12-08T16:54:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/image/图/夜观 《The notebook》01.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;/image/图/夜观 《The notebook》02.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Look,guys.That’s my swe
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>我说吧，AI一定回来的！</title>
+    <link href="https://w4mxl.github.io/2009/12/03/%E6%88%91%E8%AF%B4%E5%90%A7%EF%BC%8CAI%E4%B8%80%E5%AE%9A%E5%9B%9E%E6%9D%A5%E7%9A%84%EF%BC%81/"/>
+    <id>https://w4mxl.github.io/2009/12/03/我说吧，AI一定回来的！/</id>
+    <published>2009-12-03T09:30:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;AI今天宣布接受了费城76人的合同（一年老将底薪无保障合同），虽然合同不怎么可观薪水才130万多，可毕竟有了归属。&lt;/p&gt;
+&lt;p&gt;艾弗森去76人，在我看来真的是个很不错的契机。一来，最近76人大将威廉姆斯因病休战且球队卷进连败漩涡真缺人率队重整旗鼓呢。再者，76人是艾弗森职
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>艾弗森，我觉得你一定还会回来的</title>
+    <link href="https://w4mxl.github.io/2009/11/26/%E8%89%BE%E5%BC%97%E6%A3%AE%EF%BC%8C%E6%88%91%E8%A7%89%E5%BE%97%E4%BD%A0%E4%B8%80%E5%AE%9A%E8%BF%98%E4%BC%9A%E5%9B%9E%E6%9D%A5%E7%9A%84/"/>
+    <id>https://w4mxl.github.io/2009/11/26/艾弗森，我觉得你一定还会回来的/</id>
+    <published>2009-11-26T14:00:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;是下午在上离散数学的课间知道AI（艾弗森）自己声明退役的，第二节离散课上的都思想不怎么集中。NBA不该让他退役的，没有理由让一个球坛巨星在他尚且年盛气旺时就抛弃他，何况这人是AI。一个如此血气方刚又如此可爱的AI，你怎么就决定要离开了呢？！舍不得你走啊。 冥冥之中我觉得你一
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>《夏天的尾巴》的影子</title>
+    <link href="https://w4mxl.github.io/2009/11/20/%E3%80%8A%E5%A4%8F%E5%A4%A9%E7%9A%84%E5%B0%BE%E5%B7%B4%E3%80%8B%E7%9A%84%E5%BD%B1%E5%AD%90/"/>
+    <id>https://w4mxl.github.io/2009/11/20/《夏天的尾巴》的影子/</id>
+    <published>2009-11-20T11:58:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;《夏天的尾巴》的影子在我小小的心里投射出暖暖的一塊，看了很多遍，還是會再看，那方綠綠的綠水稻田和藍藍的藍天，那斷斷續續的慢節拍的吉他插曲，那洋溢著搖滾氣息的熱心阿月、叛逆小子陳懷鈞、搞笑的“屎殼郎”、和有些些靦腆的林文莉，和那有個尾巴就能自找樂子的夏天。&lt;/p&gt;
+&lt;p&gt;在豆
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>观《伴我同行》</title>
+    <link href="https://w4mxl.github.io/2009/11/05/%E8%A7%82%E3%80%8A%E4%BC%B4%E6%88%91%E5%90%8C%E8%A1%8C%E3%80%8B/"/>
+    <id>https://w4mxl.github.io/2009/11/05/观《伴我同行》/</id>
+    <published>2009-11-05T15:13:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;22:25 2009-11-5&lt;br&gt;首先，&lt;br&gt;我不太懂，为什么在最后“我”先说明克里斯下狠劲上到了大学，之后当上了执业律师而后又要说克里斯是在好心劝架的情况下被意外杀害？！(有谁能告诉我？！）&lt;br&gt;He was stabbed in the throat.He di
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Happy Birthday</title>
+    <link href="https://w4mxl.github.io/2009/11/02/Happy-Birthday/"/>
+    <id>https://w4mxl.github.io/2009/11/02/Happy-Birthday/</id>
+    <published>2009-11-02T14:06:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;19:55 2009-11-2&lt;br&gt;LG，明天你生日，happy birthday！&lt;br&gt;= =&lt;br&gt;提到你生日，莫名有些愧意。想想，即便是对你最痴情的最热火朝天的喜欢的那几年我也没好好的为你好过生日，没送过你什么难忘的礼物。后来看的小说多了，才知是我那时只顾对你“好
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>“杂”文</title>
+    <link href="https://w4mxl.github.io/2009/10/24/%E2%80%9C%E6%9D%82%E2%80%9D%E6%96%87/"/>
+    <id>https://w4mxl.github.io/2009/10/24/“杂”文/</id>
+    <published>2009-10-24T01:30:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;0:03 2009-10-18&lt;br&gt;《悲恋三人行》 （泰国）&lt;br&gt;FAH YU NUM 悲伤而执着的三个人、、、&lt;/p&gt;
+&lt;p&gt;13:09 2009-10-18&lt;br&gt;“如果我不写作，我会屠杀全世界的” 杜拉斯&lt;/p&gt;
+&lt;p&gt;21:21 2009-10-23&lt;br&gt;贾樟
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>《傻瓜》ba-bo？！</title>
+    <link href="https://w4mxl.github.io/2009/10/17/%E3%80%8A%E5%82%BB%E7%93%9C%E3%80%8Bba-bo%EF%BC%9F%EF%BC%81/"/>
+    <id>https://w4mxl.github.io/2009/10/17/《傻瓜》ba-bo？！/</id>
+    <published>2009-10-16T17:12:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;他是傻子，他总是笑嘻嘻，对谁都是。明明不是他烧了钢琴，被老师、同学误解，妈妈受屈，他也不说出是善书。看到她回来，他喜悦地忘记了掉了鞋。她对他说永远不要再见到你，他就躲在暗处看她，被她发现就害怕的一直说“对不起、对不起”，十几年没忘。她第一次上台钢琴表演，不知所措的愣了，只有
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>好快，这周</title>
+    <link href="https://w4mxl.github.io/2009/10/16/%E5%A5%BD%E5%BF%AB%EF%BC%8C%E8%BF%99%E5%91%A8/"/>
+    <id>https://w4mxl.github.io/2009/10/16/好快，这周/</id>
+    <published>2009-10-16T12:19:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这周过的好快啊，每天忙停当了瞄一眼手机都过零点。然后就懒得上来了，在桌面的记事本里快而简单的写上两句，爬上床了。习惯了上床后打开手机上的UCWEB，每次它都会很贴心的显示一句：木小浪，夜深了，请注意休息。可睡觉总还是要在我看完在上面RSS订阅的博客和IT类新闻更新之后才安心
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>烟火-吴奇隆</title>
+    <link href="https://w4mxl.github.io/2009/10/10/%E7%83%9F%E7%81%AB-%E5%90%B4%E5%A5%87%E9%9A%86/"/>
+    <id>https://w4mxl.github.io/2009/10/10/烟火-吴奇隆/</id>
+    <published>2009-10-10T15:15:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;总是一次又一次不小心&lt;br&gt;走进悲伤的森林&lt;br&gt;以为已经沉睡的恋情&lt;br&gt;又在午夜里惊醒&lt;br&gt;总是不知不觉地想起你&lt;br&gt;惊慌失措的眼睛&lt;br&gt;就算已经远走的背影&lt;br&gt;依然靠在我怀里&lt;br&gt;孤孤单单一个人&lt;br&gt;走在丽影双双的街头&lt;br&gt;忘了我在找什么&lt;br&gt;等待明天
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>电影院</title>
+    <link href="https://w4mxl.github.io/2009/10/07/%E7%94%B5%E5%BD%B1%E9%99%A2/"/>
+    <id>https://w4mxl.github.io/2009/10/07/电影院/</id>
+    <published>2009-10-07T14:48:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;前天看了吉赛贝.托纳多雷的《THE LEGEND OF 1900》，后来在豆瓣电影里稍微了解了一下这位影人，这才知道他的诸多不凡，是位很了不起的人。在这个过程中，又知道了他还有另外两部叫好叫座的电影，一是《天堂电影院》，两外一部是《西西里的美丽传说》。前者是第62届奥斯卡最
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>THE LEGEND OF 1900（海上钢琴师）</title>
+    <link href="https://w4mxl.github.io/2009/10/05/THE-LEGEND-OF-1900%EF%BC%88%E6%B5%B7%E4%B8%8A%E9%92%A2%E7%90%B4%E5%B8%88%EF%BC%89/"/>
+    <id>https://w4mxl.github.io/2009/10/05/THE-LEGEND-OF-1900（海上钢琴师）/</id>
+    <published>2009-10-05T14:31:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天看了《THE LEGEND OF 1900》（超不喜欢那个中译名），上午看了遍，下午又看了遍。刚去了豆瓣才知道自己有多菜，人这部电影1998就出来了，我这才发现这个宝。尽管这样，还是压抑不住想过来SHOW一下:-D。 也算是给看过的回味回味。&lt;br&gt;&lt;img src=&quot;
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>八月半</title>
+    <link href="https://w4mxl.github.io/2009/10/03/%E5%85%AB%E6%9C%88%E5%8D%8A/"/>
+    <id>https://w4mxl.github.io/2009/10/03/八月半/</id>
+    <published>2009-10-03T11:50:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;下楼吃了饭，打电话给老家的爷奶，打了两次接通，说到我家去烧斗香了。&lt;/p&gt;
+&lt;p&gt;我是知道的，每年爸妈，大大、大妈，三爷、三妈中秋不在家过时，爷爷都会为各家亲自扎一个斗香，设个案台，摆放上买来的时令水果、月饼、莲角…他们的心里一定是想着自己的儿女还来团圆的，在这个月圆的团圆
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>《读者》让我去认识了他们</title>
+    <link href="https://w4mxl.github.io/2009/10/02/%E3%80%8A%E8%AF%BB%E8%80%85%E3%80%8B%E8%AE%A9%E6%88%91%E5%8E%BB%E8%AE%A4%E8%AF%86%E4%BA%86%E4%BB%96%E4%BB%AC/"/>
+    <id>https://w4mxl.github.io/2009/10/02/《读者》让我去认识了他们/</id>
+    <published>2009-10-01T18:18:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;开始读《读者》是相当偶然的。记得是初中那会儿，有一次跟哥去买杂志，他要的那本记不清是足球还是篮球类的杂志恰巧卖光，报刊亭的贩就就拿了本《读者》说了‘这杂志很好你买本看看觉得值之类的话’哥没好意思回绝就把它带回家了。&lt;/p&gt;
+&lt;p&gt;自后，哥几乎只是走马观花数钱似的翻了一遍它，
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>月越来越圆了</title>
+    <link href="https://w4mxl.github.io/2009/09/29/%E6%9C%88%E8%B6%8A%E6%9D%A5%E8%B6%8A%E5%9C%86%E4%BA%86/"/>
+    <id>https://w4mxl.github.io/2009/09/29/月越来越圆了/</id>
+    <published>2009-09-29T15:48:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;星期二 2009 09 29&lt;br&gt;明天学校就要放长假了，那些个大一新生都在欣喜若狂的庆祝军训结束，而军训要是个人的话，我想大概也早已被“骂”得体无完肤了。其实他们09届新生要比我们舒服多了，一来今年闰月，九月份的天气已经不那么酷热难当了，这两天早上还出现晨雾了，再者他们军
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>“夜深了，快睡吧！”－《萤火虫之墓》</title>
+    <link href="https://w4mxl.github.io/2009/09/22/%E2%80%9C%E5%A4%9C%E6%B7%B1%E4%BA%86%EF%BC%8C%E5%BF%AB%E7%9D%A1%E5%90%A7%EF%BC%81%E2%80%9D%EF%BC%8D%E3%80%8A%E8%90%A4%E7%81%AB%E8%99%AB%E4%B9%8B%E5%A2%93%E3%80%8B/"/>
+    <id>https://w4mxl.github.io/2009/09/22/“夜深了，快睡吧！”－《萤火虫之墓》/</id>
+    <published>2009-09-21T19:13:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;高钿勋角本和监制，《萤火虫之墓》。我想看过的人没有没落泪的吧！这样我想，战争带来的最大的结果恐怕不会是胜利及其所得或者失败及其所失吧，而一定是双方的百姓啊！还记得《山破羊》里说过这么句：兴，百姓苦；亡，百姓苦。想来张养浩大师也是噙着泪睁眼看着呢，越多的泪水没模糊反倒越让他看
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>全是满满的感动</title>
+    <link href="https://w4mxl.github.io/2009/09/11/%E5%85%A8%E6%98%AF%E6%BB%A1%E6%BB%A1%E7%9A%84%E6%84%9F%E5%8A%A8/"/>
+    <id>https://w4mxl.github.io/2009/09/11/全是满满的感动/</id>
+    <published>2009-09-10T16:56:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;洗完澡在桌子前做四级的卷子，也就是随手打开了放在架子上的My Old P4,竟然发生了一件巨神奇的事：音乐播放列表变成了很久前用的那个，列表上的歌有的被删或转移了也能在，而且事实证明还能播放出来，够Cool吧&lt;/p&gt;
+&lt;p&gt;而能偶然听到这些“老歌”，除了窃喜，又让我重温了当
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>我也有过…那逝去的美好</title>
+    <link href="https://w4mxl.github.io/2009/09/08/%E6%88%91%E4%B9%9F%E6%9C%89%E8%BF%87%E2%80%A6%E9%82%A3%E9%80%9D%E5%8E%BB%E7%9A%84%E7%BE%8E%E5%A5%BD/"/>
+    <id>https://w4mxl.github.io/2009/09/08/我也有过…那逝去的美好/</id>
+    <published>2009-09-07T16:58:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;《匆匆那年》看到 第四卷 且行4。 晚自习第二课开始读的，感觉又过了会十六岁，也曾颤抖的在买来的信纸末尾署上：我喜欢你，“而在十几岁的时候，比爱浅上好几层的喜欢，却足以把心装满”。现在想来那时候真是纯啊，跟那藏窖了上百年的XO酒似的，脸红心跳就跟小男孩跑厕所一样动不动就来。
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>像蚂蚁一样＞GO</title>
+    <link href="https://w4mxl.github.io/2009/09/02/%E5%83%8F%E8%9A%82%E8%9A%81%E4%B8%80%E6%A0%B7%EF%BC%9EGO/"/>
+    <id>https://w4mxl.github.io/2009/09/02/像蚂蚁一样＞GO/</id>
+    <published>2009-09-02T15:58:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天二号，来学校6天了。每天碰的最多的就是电脑，虽然不是那种7*24的狂热一族，但我很爱电脑是真的。宿舍里的人没网费几乎就不碰电脑了，可我没网上一样玩的有朋之远方来、。&lt;/p&gt;
+&lt;p&gt;上月底去了农行办了张我自己的银行卡，一是本来大一过来的时候通知书夹有学校办的交行卡，大一也
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>读《父子应是忘年交》想</title>
+    <link href="https://w4mxl.github.io/2009/08/07/%E8%AF%BB%E3%80%8A%E7%88%B6%E5%AD%90%E5%BA%94%E6%98%AF%E5%BF%98%E5%B9%B4%E4%BA%A4%E3%80%8B%E6%83%B3/"/>
+    <id>https://w4mxl.github.io/2009/08/07/读《父子应是忘年交》想/</id>
+    <published>2009-08-07T09:22:00.000Z</published>
+    <updated>2016-01-18T15:16:34.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;下午在《读者》上读了一篇文章，《父子应是忘年交》，让我思了很长时间。做了如下思想总结：&lt;/p&gt;
+&lt;p&gt;1.关于作者（即冯骥才)的儿子&lt;/p&gt;
+&lt;p&gt;作者是在跟儿子闲谈中得知儿子自初中始就用自己的钱交学费了的，而这钱是儿子平时一点一滴攒出来的。他问儿子为什么要用自己的钱呢，儿
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>回到过去</title>
+    <link href="https://w4mxl.github.io/2009/08/04/%E5%9B%9E%E5%88%B0%E8%BF%87%E5%8E%BB/"/>
+    <id>https://w4mxl.github.io/2009/08/04/回到过去/</id>
+    <published>2009-08-04T15:23:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;上海今天又下雨了，接连几天，天天下，下得我心都潮湿了。97.5音乐电台的女主播在说南京今天也下了场持久的雨，然后她说她自己还是想做那个喜欢雨天的小孩 而现实是自己已是不喜欢雨天的大人 也许这就是成长的代价吧。她这样说的时候声音很低沉可是很好听，我看到了她脑海里对儿时美好的回
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>7-22</title>
+    <link href="https://w4mxl.github.io/2009/08/03/7-22/"/>
+    <id>https://w4mxl.github.io/2009/08/03/7-22/</id>
+    <published>2009-08-03T09:21:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;以下几篇是在老家时写的日记：&lt;/p&gt;
+&lt;p&gt;7/22/2009 8:07 AM&lt;br&gt;又是一个自然醒，很惬意的感觉充满了揉眼睛的手。我下意识得去看天气，坏了，到底还是碰上了阴天，看到日食的希望渺茫er了。还好，有电视直播可以瞅瞅。&lt;/p&gt;
+&lt;p&gt;提到电视，让我一下想起了季老
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>7-31</title>
+    <link href="https://w4mxl.github.io/2009/07/31/7-31/"/>
+    <id>https://w4mxl.github.io/2009/07/31/7-31/</id>
+    <published>2009-07-31T03:52:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;昨天又到了上海。&lt;/p&gt;
+&lt;p&gt;吃完午饭就是一场暴雨，记忆里上海还没发过这么大的火，落下如此掷地有声泪水。我爸妈租住的民房因为地势低洼加上下水道来不及排，水漫进了好多，都能达到我小腿肚了，一时还疯狂的往上涨，我爸妈火急火燎的把东西往桌上、碗厨之类高处挪放。那场大暴雨持续了一
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>8-) 意外发现</title>
+    <link href="https://w4mxl.github.io/2009/07/21/8-)-%E6%84%8F%E5%A4%96%E5%8F%91%E7%8E%B0/"/>
+    <id>https://w4mxl.github.io/2009/07/21/8-)-意外发现/</id>
+    <published>2009-07-21T07:19:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;原来手机也可以登百度啊8-) 待老家这么多天了，没电脑没网吧没孩子，寂寞出很多悠闲来。日子一天天流淌，屋前的水稻蹭蹭往上窜。大片大片的稻田，成堆的绿，等到七八月份就变成无边无际的黄，到时一颗颗金黄色的饱满的稻穗就会调皮的摩擦出好听的吱吱声。在一起时没觉得什么，离开没两天就拼
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>回老家了</title>
+    <link href="https://w4mxl.github.io/2009/07/04/%E5%9B%9E%E8%80%81%E5%AE%B6%E4%BA%86/"/>
+    <id>https://w4mxl.github.io/2009/07/04/回老家了/</id>
+    <published>2009-07-04T15:58:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本来还准备接着写上海2、上海3、……上海n呢，没想到眼睛一睁还没捞到闭就在老家宝应小城了。晚上在姐这里睡。就喜欢待姐这里，自在、温暖外加有电脑玩，^_^。&lt;/p&gt;
+&lt;p&gt;原先打算七月底回来的，因为有事就提前了。这样也好，家里有些事也让我很牵挂，需要我回来好好处理。弄好了，心
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>在上海1</title>
+    <link href="https://w4mxl.github.io/2009/07/01/%E5%9C%A8%E4%B8%8A%E6%B5%B71/"/>
+    <id>https://w4mxl.github.io/2009/07/01/在上海1/</id>
+    <published>2009-07-01T08:28:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;28号坐火车到的上海，爸妈见了我跟我见了他们一样高兴。爸把我接到他们租的小屋里，我还是有种到家的温暖幻觉。三口人，一个家，一张桌子，几盘小菜，晚饭吃得特开心。&lt;br&gt;这边没有自己的电脑了，不能随时想上就上网，度友的博客也不能一更新就看到，挺失落的。&lt;/p&gt;
+&lt;p&gt;挺庆幸的是
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>6,25他也走了</title>
+    <link href="https://w4mxl.github.io/2009/06/26/6-25%E4%BB%96%E4%B9%9F%E8%B5%B0%E4%BA%86/"/>
+    <id>https://w4mxl.github.io/2009/06/26/6-25他也走了/</id>
+    <published>2009-06-26T13:32:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;迈克尔-杰克逊&lt;br&gt;（刚才看新闻才知道他也走了）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/image/图/6,25他也走了.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>RUAN</title>
+    <link href="https://w4mxl.github.io/2009/06/25/RUAN/"/>
+    <id>https://w4mxl.github.io/2009/06/25/RUAN/</id>
+    <published>2009-06-25T06:14:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;咳，觉得谈恋爱的事挺烦的&lt;br&gt;真想干净些，不想迷了途。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;迷途&lt;br&gt;      ——北岛&lt;br&gt;沿着鸽子的哨音&lt;br&gt;我寻找着你&lt;br&gt;高高的森林挡住了天空&lt;br&gt;小路上&lt;br&gt;一颗迷途的蒲公英&lt;br&gt;把我引向蓝灰色的湖泊&lt;br&gt;在
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>朴树，在我心里留下刀痕的音乐人</title>
+    <link href="https://w4mxl.github.io/2009/06/24/%E6%9C%B4%E6%A0%91%EF%BC%8C%E5%9C%A8%E6%88%91%E5%BF%83%E9%87%8C%E7%95%99%E4%B8%8B%E5%88%80%E7%97%95%E7%9A%84%E9%9F%B3%E4%B9%90%E4%BA%BA/"/>
+    <id>https://w4mxl.github.io/2009/06/24/朴树，在我心里留下刀痕的音乐人/</id>
+    <published>2009-06-23T23:38:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;在希望的田野上&lt;/strong&gt;&lt;br&gt;&lt;em&gt;词曲：朴树&lt;/em&gt;&lt;br&gt;快些仰起你那苍白的脸吧&lt;br&gt;快些松开你那紧皱的眉吧&lt;br&gt;你的生命她不长&lt;br&gt;不能用她来悲伤&lt;br&gt;那些坏天气&lt;br&gt;终于都会过去&lt;br&gt;人们都是这样地
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>有些乱</title>
+    <link href="https://w4mxl.github.io/2009/06/19/%E6%9C%89%E4%BA%9B%E4%B9%B1/"/>
+    <id>https://w4mxl.github.io/2009/06/19/有些乱/</id>
+    <published>2009-06-19T03:12:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;2009-6-19 02:05&lt;br&gt;晚上宿舍太吵，试着静下心来还是没静下来，就爬上床看《天空晴朗晴朗》了。一开始还不是爱不释手的读，可到后来就真的放不下来了。下床时已经看到一大半了，挺快的。&lt;/p&gt;
+&lt;p&gt;刚才跟宿舍人瞎扯着玩，扯着扯着就谈到了赚钱。“天天听你说要去赚钱赚
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>许嘉靓</title>
+    <link href="https://w4mxl.github.io/2009/06/16/%E8%AE%B8%E5%98%89%E9%9D%93/"/>
+    <id>https://w4mxl.github.io/2009/06/16/许嘉靓/</id>
+    <published>2009-06-16T05:35:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这几天没事的时候或做事的间隙，我拿的是周嘉宁的《天空晴朗晴朗》在读。&lt;/p&gt;
+&lt;p&gt;这本封面封底都是通红的小说能让我荡漾起少年或许更早以前的回忆，而这些快乐悲伤好玩的记忆要不是读许嘉靓的生活故事，怕是要再埋没到很久吧….&lt;/p&gt;
+&lt;p&gt;注：&lt;br&gt;&lt;em&gt;周嘉宁这个上海女孩
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>观《贫民窟的百万富翁》有感</title>
+    <link href="https://w4mxl.github.io/2009/06/15/%E8%A7%82%E3%80%8A%E8%B4%AB%E6%B0%91%E7%AA%9F%E7%9A%84%E7%99%BE%E4%B8%87%E5%AF%8C%E7%BF%81%E3%80%8B%E6%9C%89%E6%84%9F/"/>
+    <id>https://w4mxl.github.io/2009/06/15/观《贫民窟的百万富翁》有感/</id>
+    <published>2009-06-15T03:03:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;2009-6-15 00:46&lt;br&gt;在看不懂听不懂得印度舞蹈和音乐里我看完了《贫民窟的百万富翁》，我想我是想要说些什么，才会在记事本上打出这些字来。&lt;/p&gt;
+&lt;p&gt;这电影现在让我对它觉得有些亏欠了。事情是这样的，一两个星期前我就用借来的盘把它和另外六部其他电影从二号楼（宿
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>我脑海中的橡皮擦</title>
+    <link href="https://w4mxl.github.io/2009/06/08/%E6%88%91%E8%84%91%E6%B5%B7%E4%B8%AD%E7%9A%84%E6%A9%A1%E7%9A%AE%E6%93%A6/"/>
+    <id>https://w4mxl.github.io/2009/06/08/我脑海中的橡皮擦/</id>
+    <published>2009-06-08T04:16:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;下楼买了盒饭到宿舍吃，因为知道自己吃饭慢，所以习惯了打开电脑边吃边做些什么，有时是打开千千静听用耳麦听音乐，多数时候是再看看以前看过的电影。我觉得我总是闲不下来，不是不行、是不愿意，好像习惯了忙着似的，就像家里的老农民一样，手总在捣鼓着什么好像永远没法闲着了。刚才又看了遍《
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>开始即结束</title>
+    <link href="https://w4mxl.github.io/2009/06/06/%E5%BC%80%E5%A7%8B%E5%8D%B3%E7%BB%93%E6%9D%9F/"/>
+    <id>https://w4mxl.github.io/2009/06/06/开始即结束/</id>
+    <published>2009-06-06T14:17:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;刚在楼下看我们学校的野草乐队“青春散场 摇滚专场”表演，老天似乎也为他们的&lt;br&gt;表演动容了呢，要不为何断断续续为这散场的青春飘起淅淅沥沥的雨来。他们是我&lt;br&gt;学校里唯一的一个乐队，四个男生，两个大三，另外两个大四即将毕业。很喜欢乐&lt;br&gt;队的名字，野草，即使是草也要做野
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>南京之行</title>
+    <link href="https://w4mxl.github.io/2009/06/03/%E5%8D%97%E4%BA%AC%E4%B9%8B%E8%A1%8C/"/>
+    <id>https://w4mxl.github.io/2009/06/03/南京之行/</id>
+    <published>2009-06-03T01:21:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;去的火车上&lt;br&gt;&lt;img src=&quot;/image/图/南京之行01.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;到达南京站&lt;br&gt;&lt;img src=&quot;/image/图/南京之行02.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;中山陵里的野花&lt;br&gt;&lt;img src=&quot;/image
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>日记3</title>
+    <link href="https://w4mxl.github.io/2009/06/02/Diary03/"/>
+    <id>https://w4mxl.github.io/2009/06/02/Diary03/</id>
+    <published>2009-06-02T02:04:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;09,6,1  星期一 晴&lt;br&gt;昨天匆匆的从南京赶回学校。&lt;/p&gt;
+&lt;p&gt;清楚的记得站在南京火车站的二楼候车室里眺望的玄武湖，还记得大屠杀纪念馆的血泪照片和具具白骨，还记得长久地在中山陵里沉睡着但分明活着的孙文孙中山，还记得南京的各个“门”的沧桑和石头城的久远，还记得我徒
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>在南京的网吧里写我在南京</title>
+    <link href="https://w4mxl.github.io/2009/05/29/%E5%9C%A8%E5%8D%97%E4%BA%AC%E7%9A%84%E7%BD%91%E5%90%A7%E9%87%8C%E5%86%99%E6%88%91%E5%9C%A8%E5%8D%97%E4%BA%AC/"/>
+    <id>https://w4mxl.github.io/2009/05/29/在南京的网吧里写我在南京/</id>
+    <published>2009-05-28T16:09:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我现在在网吧包夜呢，我也不想，是只能。原先说好到朋友宿舍里下榻的，可是等到我和我妹还有另外一朋友从中山陵回到安德门时，打他电话没人接了。到晚上9点他来了电话，我们才知道他家伙出来玩把手机落在家里了，我当场晕倒。他特内疚，让我们现在赶到他学校，说保证来得及。那我就急急忙忙去打
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>现在有点小兴奋</title>
+    <link href="https://w4mxl.github.io/2009/05/26/%E7%8E%B0%E5%9C%A8%E6%9C%89%E7%82%B9%E5%B0%8F%E5%85%B4%E5%A5%8B/"/>
+    <id>https://w4mxl.github.io/2009/05/26/现在有点小兴奋/</id>
+    <published>2009-05-26T03:34:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;现在我还在计算机房上着课，还是偷偷的过来要把此时的快乐心情记录下来.&lt;/p&gt;
+&lt;p&gt;刚才我在电脑上成功的做出了＂工程的部署和安装＂，简单的说就是做了一个象QQ那样的安装程序，呵呵，原来一大堆的安装过程也不是太难做出来的马．你们都知道的，在安装一个软件的时候不是要在协议上选同
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>日记2</title>
+    <link href="https://w4mxl.github.io/2009/05/23/%E6%97%A5%E8%AE%B02/"/>
+    <id>https://w4mxl.github.io/2009/05/23/日记2/</id>
+    <published>2009-05-23T15:08:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;5,23 星期六   晴&lt;/p&gt;
+&lt;p&gt;今天不止是晴，是灿烂。阳光照在茂密的树上，光中的调皮者还是跳跃过层层树叶落在地上、留下很亮的斑迹。这突然让我想到了小孩子，几个小男孩走在路上一起回家，走着走着就会比起来，争着走在最前面，似乎走在最前面能证明什么，可是自己又并不知道到底
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>大学日记</title>
+    <link href="https://w4mxl.github.io/2009/05/22/%E5%A4%A7%E5%AD%A6%E6%97%A5%E8%AE%B020090521/"/>
+    <id>https://w4mxl.github.io/2009/05/22/大学日记20090521/</id>
+    <published>2009-05-22T13:44:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;09，5，21   星期四   晴&lt;/p&gt;
+&lt;p&gt;下午5点多“脑充血”，立马兴奋地系好鞋带去操场跑5000米。这两天接触了“跑酷”这项极限运动好多东西，中午又把D盘存着的《暴力13街区》（导演：吕克贝松）看了遍，直接导致我在接下来的午睡里多次恍恍惚惚出现大卫贝利飞檐走壁的腾
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>学会看电影其实很有趣（转自豆瓣一网友）</title>
+    <link href="https://w4mxl.github.io/2009/05/18/%E3%80%8CReplace%E3%80%8D-by-Zee-Young/"/>
+    <id>https://w4mxl.github.io/2009/05/18/「Replace」-by-Zee-Young/</id>
+    <published>2009-05-18T15:00:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;学会看电影其实很有趣&lt;br&gt;    -于写意&lt;/p&gt;
+&lt;p&gt;　　在北京电影学院上过学的人都知道，电影学院上课其实是没有教材的，视听语言、剧作、影片分析、摄影基础等专业学科通通都由老师口头相授。纵然电影已经成为时下大众不可或缺的娱乐品及最流行的话题，纵然每个人都在看电影继而谈
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>传奇之宫崎骏</title>
+    <link href="https://w4mxl.github.io/2009/05/17/%E4%BC%A0%E5%A5%87%E4%B9%8B%E5%AE%AB%E5%B4%8E%E9%AA%8F/"/>
+    <id>https://w4mxl.github.io/2009/05/17/传奇之宫崎骏/</id>
+    <published>2009-05-17T14:47:00.000Z</published>
+    <updated>2016-01-18T14:57:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　&lt;strong&gt;我对宫崎骏的迷恋始于很早以前在《读者》上看的一篇文章。宫崎骏的动画制作理念让我在耳目一新的同时充满了深深地认同感，所以我粘上了他和他的动画电影，再也不愿离开那方梦的天空之城。后来我也去收集了宫崎骏的个人资料，虽然在百度百科上也有对宫崎骏的介绍，但读来太过
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>这样我已经很开心了</title>
+    <link href="https://w4mxl.github.io/2009/05/17/%E8%BF%99%E6%A0%B7%E6%88%91%E5%B7%B2%E7%BB%8F%E5%BE%88%E5%BC%80%E5%BF%83%E4%BA%86/"/>
+    <id>https://w4mxl.github.io/2009/05/17/这样我已经很开心了/</id>
+    <published>2009-05-16T17:39:00.000Z</published>
+    <updated>2016-01-18T15:16:34.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　昨天就想到这儿来写点东西的，又想到今天下午的5000米比赛就推迟到现在来动笔了。我的5000米比赛原先是昨天下午的，因为天公不作美下起了大雨，大会才临时通知将昨天的赛程移到今天来。&lt;/p&gt;
+&lt;p&gt;　　今天老天倒是很配合，温度适宜，空气里还夹杂着细细的微风，给人感觉很舒服
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>我的冰心体小诗</title>
+    <link href="https://w4mxl.github.io/2009/05/14/%E6%88%91%E7%9A%84%E5%86%B0%E5%BF%83%E4%BD%93%E5%B0%8F%E8%AF%97/"/>
+    <id>https://w4mxl.github.io/2009/05/14/我的冰心体小诗/</id>
+    <published>2009-05-14T06:34:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;一&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;今夜我又梦见了我的儿时&lt;br&gt;干净似鹅儿的毛&lt;br&gt;雪儿般无染&lt;br&gt;那是不眨眼的纯真&lt;br&gt;人们都管我叫孩子！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;二&lt;/code&gt;&lt;/p&gt;
+&lt;bloc
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>有着盼头就好满足</title>
+    <link href="https://w4mxl.github.io/2009/05/13/%E6%9C%89%E7%9D%80%E7%9B%BC%E5%A4%B4%E5%B0%B1%E5%A5%BD%E6%BB%A1%E8%B6%B3/"/>
+    <id>https://w4mxl.github.io/2009/05/13/有着盼头就好满足/</id>
+    <published>2009-05-13T13:56:00.000Z</published>
+    <updated>2016-01-18T15:13:56.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　下午急急忙忙下楼去观战10000米比赛，还好开始没多久。三十几个人围者操场一圈一圈，场面壮观的一塌糊涂，各个学院的观众为他们的运动员加油，狂喊。我还奇怪，怎么女生叫的比男生还激动，还蹦蹦跳跳。最让我就纳闷是，平时细声细语比志玲还志玲那些个女生也会不顾一切的声嘶力竭。好生
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>5，13我的博客有了</title>
+    <link href="https://w4mxl.github.io/2009/05/13/5-13%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%9C%89%E4%BA%86/"/>
+    <id>https://w4mxl.github.io/2009/05/13/5-13我的博客有了/</id>
+    <published>2009-05-13T09:29:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　老实说刚玩百阅时也有个小博客，只是那个太菜，不能算是。现在这个是真的开始，我玩真的了。有空就来写写东西，看看你们的文字，应该也会有泡杯茶在木椅上读《读者》类似的惬意吧。君子以同道为朋，路漫漫其修远兮，携手共进。&lt;/p&gt;
+&lt;p&gt;　　明天是我们学校的运动会开幕，(&lt;em&gt;^
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+</feed>
