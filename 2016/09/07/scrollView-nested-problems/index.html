@@ -98,34 +98,17 @@
 
 
 
-<meta name="description" content="1. 显示不全
-被嵌套的 RecyclerView(ListView) 显示不全，有多个 item，则只显示第一个。
-
-解决方法目前常见的有两种：
-
-动态计算 RecyclerView(ListView) 高度
-直接展示所有的 item，让其不滚动了 (推荐)">
+<meta name="description" content="1. 显示不全 被嵌套的 RecyclerView(ListView) 显示不全，有多个 item，则只显示第一个。  解决方法目前常见的有两种：  动态计算 RecyclerView(ListView) 高度 直接展示所有的 item，让其不滚动了 (推荐)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ScrollView 中嵌套 RecyclerView(ListView) 后的常见问题">
 <meta property="og:url" content="https://w4mxl.github.io/2016/09/07/scrollView-nested-problems/index.html">
-<meta property="og:site_name" content="Wml'Blog">
-<meta property="og:description" content="1. 显示不全
-被嵌套的 RecyclerView(ListView) 显示不全，有多个 item，则只显示第一个。
-
-解决方法目前常见的有两种：
-
-动态计算 RecyclerView(ListView) 高度
-直接展示所有的 item，让其不滚动了 (推荐)">
+<meta property="og:site_name" content="Wml&#39;Blog">
+<meta property="og:description" content="1. 显示不全 被嵌套的 RecyclerView(ListView) 显示不全，有多个 item，则只显示第一个。  解决方法目前常见的有两种：  动态计算 RecyclerView(ListView) 高度 直接展示所有的 item，让其不滚动了 (推荐)">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2016-09-08T02:36:10.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ScrollView 中嵌套 RecyclerView(ListView) 后的常见问题">
-<meta name="twitter:description" content="1. 显示不全
-被嵌套的 RecyclerView(ListView) 显示不全，有多个 item，则只显示第一个。
-
-解决方法目前常见的有两种：
-
-动态计算 RecyclerView(ListView) 高度
-直接展示所有的 item，让其不滚动了 (推荐)">
+<meta name="twitter:description" content="1. 显示不全 被嵌套的 RecyclerView(ListView) 显示不全，有多个 item，则只显示第一个。  解决方法目前常见的有两种：  动态计算 RecyclerView(ListView) 高度 直接展示所有的 item，让其不滚动了 (推荐)">
 
 
 
@@ -399,7 +382,7 @@
 <blockquote>
 <p>2 是嵌套 ListView 示例，嵌套 GridView等类似</p>
 </blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ScrollViewWithListView</span> <span class="keyword">extends</span> <span class="title">ListView</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">ScrollViewWithListView</span><span class="params">(android.content.Context context, android.util.AttributeSet attrs)</span> </span>&#123;</div><div class="line">        <span class="keyword">super</span>(context, attrs);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line">     * 设置不滚动</div><div class="line">     */</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onMeasure</span><span class="params">(<span class="keyword">int</span> widthMeasureSpec, <span class="keyword">int</span> heightMeasureSpec)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> expandSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE &gt;&gt; <span class="number">2</span>,</div><div class="line">                MeasureSpec.AT_MOST);</div><div class="line">        <span class="keyword">super</span>.onMeasure(widthMeasureSpec, expandSpec);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ScrollViewWithListView</span> <span class="keyword">extends</span> <span class="title">ListView</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">ScrollViewWithListView</span><span class="params">(android.content.Context context, android.util.AttributeSet attrs)</span> </span>&#123;</div><div class="line">        <span class="keyword">super</span>(context, attrs);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line"><span class="comment">     * 设置不滚动</span></div><div class="line"><span class="comment">     */</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onMeasure</span><span class="params">(<span class="keyword">int</span> widthMeasureSpec, <span class="keyword">int</span> heightMeasureSpec)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> expandSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE &gt;&gt; <span class="number">2</span>,</div><div class="line">                MeasureSpec.AT_MOST);</div><div class="line">        <span class="keyword">super</span>.onMeasure(widthMeasureSpec, expandSpec);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="2-自动滚动"><a href="#2-自动滚动" class="headerlink" title="2. 自动滚动"></a>2. 自动滚动</h3><p>场景1:</p>
 <blockquote>
 <p>ScrollView 中嵌套的组件 RecyclerView(ListView) 在内容加载之后，ScrollView 会自动下滚。</p>
@@ -407,7 +390,7 @@
 <p>解决方法：</p>
 <p>在 ScrollView 包裹的 LinearLayout 中添加：</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">android:focusable="true"</div><div class="line">android:focusableInTouchMode="true"</div></pre></td></tr></table></figure>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ScrollView</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></div><div class="line">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:scrollbars</span>=<span class="string">"none"</span>&gt;</div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">LinearLayout</span></span></div><div class="line">            <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">            <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></div><div class="line">            <span class="attr">android:orientation</span>=<span class="string">"vertical"</span></div><div class="line">            <span class="attr">android:focusable</span>=<span class="string">"true"</span></div><div class="line">            <span class="attr">android:focusableInTouchMode</span>=<span class="string">"true"</span>&gt;</div><div class="line">            ...</div><div class="line">            ...</div><div class="line">        <span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ScrollView</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ScrollView</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></div><div class="line"><span class="tag">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></div><div class="line"><span class="tag">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></div><div class="line"><span class="tag">        <span class="attr">android:scrollbars</span>=<span class="string">"none"</span>&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">LinearLayout</span></span></div><div class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:orientation</span>=<span class="string">"vertical"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:focusable</span>=<span class="string">"true"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:focusableInTouchMode</span>=<span class="string">"true"</span>&gt;</span></div><div class="line">            ...</div><div class="line">            ...</div><div class="line">        <span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ScrollView</span>&gt;</span></div></pre></td></tr></table></figure>
 <p><a href="http://blog.csdn.net/icyfox_bupt/article/details/15026299" target="_blank" rel="external">更多描述请查看这篇</a></p>
 <p>场景2:</p>
 <blockquote>
@@ -416,7 +399,7 @@
 <p>解决方法：</p>
 <p>在 ScrollView 包裹的 LinearLayout 中多添加：</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">android:focusableInTouchMode="true"</div></pre></td></tr></table></figure>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ScrollView</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></div><div class="line">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:scrollbars</span>=<span class="string">"none"</span>&gt;</div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">LinearLayout</span></span></div><div class="line">            <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">            <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></div><div class="line">            <span class="attr">android:orientation</span>=<span class="string">"vertical"</span></div><div class="line">            <span class="attr">android:focusable</span>=<span class="string">"true"</span></div><div class="line">            <span class="attr">android:focusableInTouchMode</span>=<span class="string">"true"</span></div><div class="line">            <span class="attr">android:focusableInTouchMode</span>=<span class="string">"true"</span>&gt;</div><div class="line">            ...</div><div class="line">            ...</div><div class="line">        <span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ScrollView</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ScrollView</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></div><div class="line"><span class="tag">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></div><div class="line"><span class="tag">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></div><div class="line"><span class="tag">        <span class="attr">android:scrollbars</span>=<span class="string">"none"</span>&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">LinearLayout</span></span></div><div class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:orientation</span>=<span class="string">"vertical"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:focusable</span>=<span class="string">"true"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:focusableInTouchMode</span>=<span class="string">"true"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:focusableInTouchMode</span>=<span class="string">"true"</span>&gt;</span></div><div class="line">            ...</div><div class="line">            ...</div><div class="line">        <span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ScrollView</span>&gt;</span></div></pre></td></tr></table></figure>
 <p><a href="http://stackoverflow.com/questions/9842494/how-to-prevent-a-scrollview-from-scrolling-to-a-webview-after-data-is-loaded" target="_blank" rel="external">是从这里知道的</a></p>
 
       
@@ -525,7 +508,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">165</span>
+              <span class="site-state-item-count">167</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -542,7 +525,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

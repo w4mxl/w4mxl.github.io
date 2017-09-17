@@ -102,8 +102,9 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Fragment 重叠(重影)问题">
 <meta property="og:url" content="https://w4mxl.github.io/2015/08/17/fragment-overlay-problem'/index.html">
-<meta property="og:site_name" content="Wml'Blog">
+<meta property="og:site_name" content="Wml&#39;Blog">
 <meta property="og:description" content="在最近做的项目中，遇到了 Fragment 重叠的问题。具体的情况是，app 需要在多个 Fragment 间切换，并且保存每个 Fragment 的状态。官方的方法是使用 replace() 来替换 Fragment，但是 replace() 的调用会导致 Fragment 的 onCreteView() 被调用，所以切换界面时会无法保存当前的状态。因此一般采用 add()、hide()与 sh">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://ww1.sinaimg.cn/mw690/62ed8609gw1ev5ds1gancj20lc0zkgnp.jpg">
 <meta property="og:updated_time" content="2016-01-13T16:13:40.000Z">
 <meta name="twitter:card" content="summary">
@@ -485,7 +486,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">165</span>
+              <span class="site-state-item-count">167</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -502,7 +503,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

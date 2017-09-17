@@ -98,26 +98,19 @@
 
 
 
-<meta name="description" content="ButterKnife是一个通过对Android View添加注解的方式来提高开发效率的开源库。
-1.配置在项目中配置ButterKnife有下面几种方式:   
-JAR旧式导jar包:Butter Knife v6.1.0 JAR
-MAVEN如果你使用maven，可以添加butterknife库作为依赖12345&amp;lt;dependency&amp;gt;  &amp;lt;groupId&amp;gt;com.jak">
+<meta name="description" content="ButterKnife是一个通过对Android View添加注解的方式来提高开发效率的开源库。 1.配置在项目中配置ButterKnife有下面几种方式:    JAR旧式导jar包:Butter Knife v6.1.0 JAR MAVEN如果你使用maven，可以添加butterknife库作为依赖12345&amp;lt;dependency&amp;gt;  &amp;lt;groupId&amp;gt;com.jak">
+<meta name="keywords" content="ButterKnife">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ButterKnife的使用">
 <meta property="og:url" content="https://w4mxl.github.io/2015/05/23/Use-ButterKnife/index.html">
-<meta property="og:site_name" content="Wml'Blog">
-<meta property="og:description" content="ButterKnife是一个通过对Android View添加注解的方式来提高开发效率的开源库。
-1.配置在项目中配置ButterKnife有下面几种方式:   
-JAR旧式导jar包:Butter Knife v6.1.0 JAR
-MAVEN如果你使用maven，可以添加butterknife库作为依赖12345&amp;lt;dependency&amp;gt;  &amp;lt;groupId&amp;gt;com.jak">
+<meta property="og:site_name" content="Wml&#39;Blog">
+<meta property="og:description" content="ButterKnife是一个通过对Android View添加注解的方式来提高开发效率的开源库。 1.配置在项目中配置ButterKnife有下面几种方式:    JAR旧式导jar包:Butter Knife v6.1.0 JAR MAVEN如果你使用maven，可以添加butterknife库作为依赖12345&amp;lt;dependency&amp;gt;  &amp;lt;groupId&amp;gt;com.jak">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://jakewharton.github.io/butterknife/static/logo.png">
 <meta property="og:updated_time" content="2016-01-13T16:22:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ButterKnife的使用">
-<meta name="twitter:description" content="ButterKnife是一个通过对Android View添加注解的方式来提高开发效率的开源库。
-1.配置在项目中配置ButterKnife有下面几种方式:   
-JAR旧式导jar包:Butter Knife v6.1.0 JAR
-MAVEN如果你使用maven，可以添加butterknife库作为依赖12345&amp;lt;dependency&amp;gt;  &amp;lt;groupId&amp;gt;com.jak">
+<meta name="twitter:description" content="ButterKnife是一个通过对Android View添加注解的方式来提高开发效率的开源库。 1.配置在项目中配置ButterKnife有下面几种方式:    JAR旧式导jar包:Butter Knife v6.1.0 JAR MAVEN如果你使用maven，可以添加butterknife库作为依赖12345&amp;lt;dependency&amp;gt;  &amp;lt;groupId&amp;gt;com.jak">
 <meta name="twitter:image" content="http://jakewharton.github.io/butterknife/static/logo.png">
 
 
@@ -395,7 +388,7 @@ MAVEN如果你使用maven，可以添加butterknife库作为依赖12345&amp;lt;d
 <p>自定义的view不用指定具体id也可以绑定它的listeners<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FancyButton</span> <span class="keyword">extends</span> <span class="title">Button</span> </span>&#123;</div><div class="line">  <span class="meta">@OnClick</span></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="comment">// TODO do something!</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <h4 id="2-5-OPTIONAL-INJECTIONS"><a href="#2-5-OPTIONAL-INJECTIONS" class="headerlink" title="2.5 OPTIONAL INJECTIONS"></a>2.5 OPTIONAL INJECTIONS</h4><p>通常情况下不会出现<code>the target view cannot be found</code>情况，但为了避免出现而报异常，可以在变量或者方法前面加上 <code>@Optional</code> 注解<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@Optional</span> <span class="meta">@InjectView</span>(R.id.might_not_be_there) TextView mightNotBeThere;</div><div class="line"></div><div class="line"><span class="meta">@Optional</span> <span class="meta">@OnClick</span>(R.id.maybe_missing) <span class="function"><span class="keyword">void</span> <span class="title">onMaybeMissingClicked</span><span class="params">()</span> </span>&#123;</div><div class="line">  <span class="comment">// TODO ...</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <h4 id="2-6-其他"><a href="#2-6-其他" class="headerlink" title="2.6 其他"></a>2.6 其他</h4><p>有一些View, Activity, or Dialog可能还是会去find views id，butterknife提供了findById方法，它会自动强转为正确类型。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">View view = LayoutInflater.from(context).inflate(R.layout.thing, <span class="keyword">null</span>);</div><div class="line">TextView firstName = ButterKnife.findById(view, R.id.first_name);</div><div class="line">TextView lastName = ButterKnife.findById(view, R.id.last_name);</div><div class="line">ImageView photo = ButterKnife.findById(view, R.id.photo);</div></pre></td></tr></table></figure></p>
-<h3 id="3-混淆"><a href="#3-混淆" class="headerlink" title="3.混淆"></a>3.混淆</h3><p>如果你在打包apk时需要对代码进行混淆处理，这时为了避免那些使用了butterknife注解的文件被认为无用而删除，可以在app -&gt; proguard-rules.pro 文件中添加下面混淆规则：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"># *********** For ButterKnife **************</div><div class="line">-keep class butterknife.** &#123; *; &#125;</div><div class="line">-dontwarn butterknife.internal.**</div><div class="line">-keep class **$$ViewInjector &#123; *; &#125;</div><div class="line"></div><div class="line">-keepclasseswithmembernames class * &#123;</div><div class="line">    @butterknife.* &lt;fields&gt;;</div><div class="line">&#125;</div><div class="line"></div><div class="line">-keepclasseswithmembernames class * &#123;</div><div class="line">    @butterknife.* &lt;methods&gt;;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="3-混淆"><a href="#3-混淆" class="headerlink" title="3.混淆"></a>3.混淆</h3><p>如果你在打包apk时需要对代码进行混淆处理，这时为了避免那些使用了butterknife注解的文件被认为无用而删除，可以在app -&gt; proguard-rules.pro 文件中添加下面混淆规则：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># *********** For ButterKnife **************</span></div><div class="line">-keep class butterknife.** &#123; *; &#125;</div><div class="line">-dontwarn butterknife.internal.**</div><div class="line">-keep class **$$ViewInjector &#123; *; &#125;</div><div class="line"></div><div class="line">-keepclasseswithmembernames class * &#123;</div><div class="line"><span class="meta">    @butterknife.* &lt;fields&gt;;</span></div><div class="line">&#125;</div><div class="line"></div><div class="line">-keepclasseswithmembernames class * &#123;</div><div class="line"><span class="meta">    @butterknife.* &lt;methods&gt;;</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>更多相关内容请查看源码和官方说明:<br><a href="https://github.com/JakeWharton/butterknife" target="_blank" rel="external">ButterKnife Github</a><br><a href="http://jakewharton.github.io/butterknife/" target="_blank" rel="external">ButterKnife Introduction</a></p>
 
       
@@ -510,7 +503,7 @@ MAVEN如果你使用maven，可以添加butterknife库作为依赖12345&amp;lt;d
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">165</span>
+              <span class="site-state-item-count">167</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -527,7 +520,7 @@ MAVEN如果你使用maven，可以添加butterknife库作为依赖12345&amp;lt;d
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
