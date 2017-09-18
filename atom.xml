@@ -57,9 +57,9 @@
     <link href="https://w4mxl.github.io/2017/04/11/1980&#39;s-love/"/>
     <id>https://w4mxl.github.io/2017/04/11/1980&#39;s-love/</id>
     <published>2017-04-11T07:30:53.000Z</published>
-    <updated>2017-09-18T05:20:12.000Z</updated>
+    <updated>2017-09-18T07:13:29.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://ww2.sinaimg.cn/large/006tKfTcgy1feis78kiqnj309w0dwgms.jpg" alt="img-w400"><br><img src="https://ww4.sinaimg.cn/large/006tKfTcgy1feis7syee0j30ll0y4ah2.jpg" alt="img-w400"></p>
+    <content type="html"><![CDATA[<p><img src="https://ww2.sinaimg.cn/large/006tKfTcgy1feis78kiqnj309w0dwgms.jpg" width="400"><img src="https://ww4.sinaimg.cn/large/006tKfTcgy1feis7syee0j30ll0y4ah2.jpg" width="400"></p>
 <ul>
 <li>作者:  野夫 </li>
 <li>出版社: 湖南文艺出版社; 第1版 (2013年9月1日)</li>
@@ -79,7 +79,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://ww2.sinaimg.cn/large/006tKfTcgy1feis78kiqnj309w0dwgms.jpg&quot; alt=&quot;img-w400&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://ww4.sinaimg.cn/large/00
+      &lt;p&gt;&lt;img src=&quot;https://ww2.sinaimg.cn/large/006tKfTcgy1feis78kiqnj309w0dwgms.jpg&quot; width=&quot;400&quot;&gt;&lt;img src=&quot;https://ww4.sinaimg.cn/large/006tKfTcg
     
     </summary>
     
@@ -141,12 +141,12 @@
     <link href="https://w4mxl.github.io/2017/02/28/my-paid-apps/"/>
     <id>https://w4mxl.github.io/2017/02/28/my-paid-apps/</id>
     <published>2017-02-28T08:03:00.000Z</published>
-    <updated>2017-09-17T12:32:01.000Z</updated>
+    <updated>2017-09-18T07:14:52.000Z</updated>
     
     <content type="html"><![CDATA[<p>TODO:<br>这些已购买的插件和 app 都是我特别喜欢或有需要才入的，对它们使用还算深度，后面想抽出时间来为其中一些优秀的写评测和使用感受。</p>
 <a id="more"></a>
-<p>2017/07/23<br>[Android App $ 2.99 USD ] <a href="https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm" target="_blank" rel="external">Tasker</a><br><img src="https://ws4.sinaimg.cn/large/006tNc79gy1fjmu3w0562j308c08cdfp.jpg" alt="-w120"></p>
-<p>2017/07/09<br>[Android App $ 3.99 USD ] <a href="https://play.google.com/store/apps/details?id=au.com.shiftyjelly.pocketcasts" target="_blank" rel="external">Pocket Casts</a><br><img src="https://ws1.sinaimg.cn/large/006tKfTcgy1fjmtxh141aj308c08cgll.jpg" alt="-w120"></p>
+<p>2017/07/23<br>[Android App $ 2.99 USD ] <a href="https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm" target="_blank" rel="external">Tasker</a><br><img src="https://ws4.sinaimg.cn/large/006tNc79gy1fjmu3w0562j308c08cdfp.jpg" width="120"></p>
+<p>2017/07/09<br>[Android App $ 3.99 USD ] <a href="https://play.google.com/store/apps/details?id=au.com.shiftyjelly.pocketcasts" target="_blank" rel="external">Pocket Casts</a><br><img src="https://ws1.sinaimg.cn/large/006tKfTcgy1fjmtxh141aj308c08cgll.jpg" width="120"></p>
 <p>2017/02/28<br>[iOS App ¥6.00 ] <a href="https://itunes.apple.com/us/app/wi-fi-widget/id1192965614?mt=8" target="_blank" rel="external">Wi-Fi Widget</a><br><img src="https://ww4.sinaimg.cn/large/006y8lVagy1fd8pi7w62rj303c03ct8h.jpg" alt=""></p>
 <p>2017/02/27<br>[iOS App ¥18.00] <a href="https://itunes.apple.com/cn/app/moke-%E7%BA%AF%E7%B2%B9%E4%BD%93%E9%AA%8C-for-%E6%96%B0%E6%B5%AA%E5%BE%AE%E5%8D%9A/id880813963?mt=8" target="_blank" rel="external">Moke — 纯粹体验 for 新浪微博</a><br><img src="https://ww2.sinaimg.cn/large/006y8lVagy1fd68lqnxmnj303c03c3ya.jpg" alt=""><br>[iOS App ¥25.00] <a href="https://itunes.apple.com/us/app/castro-podcast-player/id1080840241?mt=8" target="_blank" rel="external">Castro: Podcast Player</a><br><img src="https://ww4.sinaimg.cn/large/006y8lVagy1fd68nh50zcj303c03cq2q.jpg" alt=""></p>
 <p>2017/02/16<br>[iOS App ¥6.00 冰点( 原价 ¥30.00 )] <a href="https://itunes.apple.com/us/app/due-reminders-countdown-timers/id390017969?mt=8" target="_blank" rel="external">Due — Reminders, Countdown Timers</a><br><img src="https://ww3.sinaimg.cn/large/006y8lVagy1fd1cny7b5hj303c03cq2p.jpg" alt=""></p>
@@ -2056,7 +2056,7 @@ Reboot to bootloader and flash the following:
     <link href="https://w4mxl.github.io/2014/10/27/Github%E4%B8%AD%E2%80%9CClone-in-Desktop%E2%80%9D%E6%97%A0%E6%95%88%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
     <id>https://w4mxl.github.io/2014/10/27/Github中“Clone-in-Desktop”无效的解决办法/</id>
     <published>2014-10-27T11:48:01.000Z</published>
-    <updated>2016-01-18T15:26:56.000Z</updated>
+    <updated>2017-09-18T07:05:22.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h3><p><img src="/image/图/Make “Clone in Desktop” down01.png" width="180"></p>
 <p>在你想对Github中感兴趣的项目实践自己想法的时候，需要去“Clone in Desktop”，然后进行自己的code。当你第一次点击“Clone in Desktop”按钮，会跳转到Github for Mac的下载页面。当你下载、安装及登录好客户端之后，再去点“Clone in Desktop”发现还是同上，页面又跳转到Github for Mac的下载页面。
@@ -2072,7 +2072,7 @@ Reboot to bootloader and flash the following:
     
     </summary>
     
-      <category term="OSX" scheme="https://w4mxl.github.io/categories/OSX/"/>
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
     
     
   </entry>
