@@ -260,6 +260,186 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2015/05/23/Use-ButterKnife/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wml">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wml'Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/05/23/Use-ButterKnife/" itemprop="url">ButterKnife的使用</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-05-23T09:05:00+08:00">
+                2015-05-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Android/" itemprop="url" rel="index">
+                    <span itemprop="name">Android</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2015/05/23/Use-ButterKnife/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2015/05/23/Use-ButterKnife/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2015/05/23/Use-ButterKnife/" class="leancloud_visitors" data-flag-title="ButterKnife的使用">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="http://jakewharton.github.io/butterknife/static/logo.png" alt="butterknife-logo"><br><a href="https://github.com/JakeWharton/butterknife" target="_blank" rel="external">ButterKnife</a>是一个通过对Android View添加注解的方式来提高开发效率的开源库。</p>
+<h3 id="1-配置"><a href="#1-配置" class="headerlink" title="1.配置"></a>1.配置</h3><p>在项目中配置ButterKnife有下面几种方式:   </p>
+<h4 id="JAR"><a href="#JAR" class="headerlink" title="JAR"></a>JAR</h4><p>旧式导jar包:<a href="http://repo1.maven.org/maven2/com/jakewharton/butterknife/6.1.0/butterknife-6.1.0.jar" target="_blank" rel="external">Butter Knife v6.1.0 JAR</a></p>
+<h4 id="MAVEN"><a href="#MAVEN" class="headerlink" title="MAVEN"></a>MAVEN</h4><p>如果你使用maven，可以添加butterknife库作为依赖<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;dependency&gt;</div><div class="line">  &lt;groupId&gt;com.jakewharton&lt;/groupId&gt;</div><div class="line">  &lt;artifactId&gt;butterknife&lt;/artifactId&gt;</div><div class="line">  &lt;version&gt;6.1.0&lt;/version&gt;</div><div class="line">&lt;/dependency&gt;</div></pre></td></tr></table></figure></p>
+<h4 id="GRADLE"><a href="#GRADLE" class="headerlink" title="GRADLE"></a>GRADLE</h4><p>如果你使用gradle构建android项目（Android Studio默认构建方式），则可以在app -&gt; build.gradle -&gt; dependencies节点添加下面配置<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">compile <span class="string">'com.jakewharton:butterknife:6.1.0'</span></div></pre></td></tr></table></figure></p>
+<p>如果项目编译时出现类似<code>InvalidPackage: Package not included in Android</code>错误，则需要在app -&gt; build.gradle -&gt; android节点添加下面配置(不过我没出现这错误…)<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">android &#123;</div><div class="line">...</div><div class="line">   lintOptions &#123;</div><div class="line">   disable <span class="string">'InvalidPackage'</span></div><div class="line">   &#125;</div><div class="line"></div><div class="line">   packagingOptions &#123;</div><div class="line">   exclude <span class="string">'META-INF/services/javax.annotation.processing.Processor'</span></div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="2-使用"><a href="#2-使用" class="headerlink" title="2.使用"></a>2.使用</h3><h4 id="2-1-ACTIVITY-INJECTION"><a href="#2-1-ACTIVITY-INJECTION" class="headerlink" title="2.1 ACTIVITY INJECTION"></a>2.1 ACTIVITY INJECTION</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">ExampleActivity</span> <span class="keyword">extends</span> <span class="title">Activity</span> </span>&#123;</div><div class="line">  <span class="meta">@InjectView</span>(R.id.title) TextView title;</div><div class="line">  <span class="meta">@InjectView</span>(R.id.subtitle) TextView subtitle;</div><div class="line">  <span class="meta">@InjectView</span>(R.id.footer) TextView footer;</div><div class="line"></div><div class="line">  <span class="meta">@Override</span> <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</div><div class="line">    <span class="keyword">super</span>.onCreate(savedInstanceState);</div><div class="line">    setContentView(R.layout.simple_activity);</div><div class="line">    ButterKnife.inject(<span class="keyword">this</span>);</div><div class="line">    <span class="comment">// TODO Use "injected" views...</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="2-2-NON-ACTIVITY-INJECTION"><a href="#2-2-NON-ACTIVITY-INJECTION" class="headerlink" title="2.2 NON-ACTIVITY INJECTION"></a>2.2 NON-ACTIVITY INJECTION</h4><p>也可以对除Activity之外的view对象进行注入，不过要在获取到view root对象后。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FancyFragment</span> <span class="keyword">extends</span> <span class="title">Fragment</span> </span>&#123;</div><div class="line">  <span class="meta">@InjectView</span>(R.id.button1) Button button1;</div><div class="line">  <span class="meta">@InjectView</span>(R.id.button2) Button button2;</div><div class="line"></div><div class="line">  <span class="meta">@Override</span> <span class="function"><span class="keyword">public</span> View <span class="title">onCreateView</span><span class="params">(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)</span> </span>&#123;</div><div class="line">    View view = inflater.inflate(R.layout.fancy_fragment, container, <span class="keyword">false</span>);</div><div class="line">    ButterKnife.inject(<span class="keyword">this</span>, view);</div><div class="line">    <span class="comment">// TODO Use "injected" views...</span></div><div class="line">    <span class="keyword">return</span> view;</div><div class="line">  &#125;</div><div class="line">  </div><div class="line">  <span class="meta">@Override</span> <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onDestroyView</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">super</span>.onDestroyView();</div><div class="line">    <span class="comment">// set the views to null in onDestroyView</span></div><div class="line">    ButterKnife.reset(<span class="keyword">this</span>);</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h4 id="2-3-ViewHolder-INJECTION"><a href="#2-3-ViewHolder-INJECTION" class="headerlink" title="2.3 ViewHolder INJECTION"></a>2.3 ViewHolder INJECTION</h4><p>也可以简化list adapter中的View Holder模式。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyAdapter</span> <span class="keyword">extends</span> <span class="title">BaseAdapter</span> </span>&#123;</div><div class="line">  <span class="meta">@Override</span> <span class="function"><span class="keyword">public</span> View <span class="title">getView</span><span class="params">(<span class="keyword">int</span> position, View view, ViewGroup parent)</span> </span>&#123;</div><div class="line">    ViewHolder holder;</div><div class="line">    <span class="keyword">if</span> (view != <span class="keyword">null</span>) &#123;</div><div class="line">      holder = (ViewHolder) view.getTag();</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">      view = inflater.inflate(R.layout.whatever, parent, <span class="keyword">false</span>);</div><div class="line">      holder = <span class="keyword">new</span> ViewHolder(view);</div><div class="line">      view.setTag(holder);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    holder.name.setText(<span class="string">"John Doe"</span>);</div><div class="line">    <span class="comment">// etc...</span></div><div class="line"></div><div class="line">    <span class="keyword">return</span> view;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">ViewHolder</span> </span>&#123;</div><div class="line">    <span class="meta">@InjectView</span>(R.id.title) TextView name;</div><div class="line">    <span class="meta">@InjectView</span>(R.id.job_title) TextView jobTitle;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">ViewHolder</span><span class="params">(View view)</span> </span>&#123;</div><div class="line">      ButterKnife.inject(<span class="keyword">this</span>, view);</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h4 id="2-4-LISTENER-INJECTION"><a href="#2-4-LISTENER-INJECTION" class="headerlink" title="2.4 LISTENER INJECTION"></a>2.4 LISTENER INJECTION</h4><p>可以对事件监听进行注入(方法的参数可以按需添加)<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@OnClick</span>(R.id.submit)</div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">submit</span><span class="params">()</span> </span>&#123;</div><div class="line">  <span class="comment">// TODO submit data to server...</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>可以一次指定多个id，同时加事件<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@OnClick</span>(&#123; R.id.door1, R.id.door2, R.id.door3 &#125;)</div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">pickDoor</span><span class="params">(DoorView door)</span> </span>&#123;</div><div class="line">  <span class="keyword">if</span> (door.hasPrizeBehind()) &#123;</div><div class="line">    Toast.makeText(<span class="keyword">this</span>, <span class="string">"You win!"</span>, LENGTH_SHORT).show();</div><div class="line">  &#125; <span class="keyword">else</span> &#123;</div><div class="line">    Toast.makeText(<span class="keyword">this</span>, <span class="string">"Try again"</span>, LENGTH_SHORT).show();</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>可以给listview的item点击事件添加注入<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@OnItemClick</span>(R.id.list_view)</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">onItemClick</span><span class="params">(AdapterView&lt;?&gt; parent, View view, <span class="keyword">int</span> position, <span class="keyword">long</span> id)</span> </span>&#123;</div><div class="line">  <span class="comment">// TODO ...</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>自定义的view不用指定具体id也可以绑定它的listeners<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FancyButton</span> <span class="keyword">extends</span> <span class="title">Button</span> </span>&#123;</div><div class="line">  <span class="meta">@OnClick</span></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="comment">// TODO do something!</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h4 id="2-5-OPTIONAL-INJECTIONS"><a href="#2-5-OPTIONAL-INJECTIONS" class="headerlink" title="2.5 OPTIONAL INJECTIONS"></a>2.5 OPTIONAL INJECTIONS</h4><p>通常情况下不会出现<code>the target view cannot be found</code>情况，但为了避免出现而报异常，可以在变量或者方法前面加上 <code>@Optional</code> 注解<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@Optional</span> <span class="meta">@InjectView</span>(R.id.might_not_be_there) TextView mightNotBeThere;</div><div class="line"></div><div class="line"><span class="meta">@Optional</span> <span class="meta">@OnClick</span>(R.id.maybe_missing) <span class="function"><span class="keyword">void</span> <span class="title">onMaybeMissingClicked</span><span class="params">()</span> </span>&#123;</div><div class="line">  <span class="comment">// TODO ...</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h4 id="2-6-其他"><a href="#2-6-其他" class="headerlink" title="2.6 其他"></a>2.6 其他</h4><p>有一些View, Activity, or Dialog可能还是会去find views id，butterknife提供了findById方法，它会自动强转为正确类型。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">View view = LayoutInflater.from(context).inflate(R.layout.thing, <span class="keyword">null</span>);</div><div class="line">TextView firstName = ButterKnife.findById(view, R.id.first_name);</div><div class="line">TextView lastName = ButterKnife.findById(view, R.id.last_name);</div><div class="line">ImageView photo = ButterKnife.findById(view, R.id.photo);</div></pre></td></tr></table></figure></p>
+<h3 id="3-混淆"><a href="#3-混淆" class="headerlink" title="3.混淆"></a>3.混淆</h3><p>如果你在打包apk时需要对代码进行混淆处理，这时为了避免那些使用了butterknife注解的文件被认为无用而删除，可以在app -&gt; proguard-rules.pro 文件中添加下面混淆规则：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># *********** For ButterKnife **************</span></div><div class="line">-keep class butterknife.** &#123; *; &#125;</div><div class="line">-dontwarn butterknife.internal.**</div><div class="line">-keep class **$$ViewInjector &#123; *; &#125;</div><div class="line"></div><div class="line">-keepclasseswithmembernames class * &#123;</div><div class="line"><span class="meta">    @butterknife.* &lt;fields&gt;;</span></div><div class="line">&#125;</div><div class="line"></div><div class="line">-keepclasseswithmembernames class * &#123;</div><div class="line"><span class="meta">    @butterknife.* &lt;methods&gt;;</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>更多相关内容请查看源码和官方说明:<br><a href="https://github.com/JakeWharton/butterknife" target="_blank" rel="external">ButterKnife Github</a><br><a href="http://jakewharton.github.io/butterknife/" target="_blank" rel="external">ButterKnife Introduction</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2015/05/09/my-movie/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1818,173 +1998,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2015/01/20/Upscale/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wml">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wml'Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/01/20/Upscale/" itemprop="url">[Upscale] 自定义手机分辨率</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-01-20T23:23:00+08:00">
-                2015-01-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Jailbreak/" itemprop="url" rel="index">
-                    <span itemprop="name">Jailbreak</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2015/01/20/Upscale/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2015/01/20/Upscale/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2015/01/20/Upscale/" class="leancloud_visitors" data-flag-title="[Upscale] 自定义手机分辨率">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>Upscale</strong><br>Description: customize your device’s resolution to what you like.<br>Developer: bd452<br>Price: Free<br>Repo: <a href="http://repo.bd452.com" target="_blank" rel="external">http://repo.bd452.com</a> </p>
-<p>[Upscale]这款插件可以让用户根据自己的喜好自定义iphone的分辨率（原理类似我们在PC或者Mac上更改屏幕分辨率）。<br>不过插件作者在cydia该插件的介绍中有说明，为了后续手机使用过程中的稳定性，最好是不要把分辨率改的很奇葩。<br>另外，通过［Upscale］更改完分辨率后，如果有第三方的app界面显示大小并未适配，可以在cydia中安装另一款插件（ForceGoodFit）来解决。 </p>
-<p>在设置中，可以选择作者预设的4种分辨率，当然也可以通过输入其他值来自定义自己喜欢的。<br>我手上的是iphone 5s（640x1136），我选的是iphone 6的分辨率（750x1334），这样使用一段时间后，😍，喜欢的不行。 </p>
-<p>设置前后对比：<br><img src="/image/Upscale01.png" width="250"><br><img src="/image/Upscale02.png" width="250"><br><img src="/image/Upscale03.png" width="250"></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2038,7 +2051,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">169</span>
+                <span class="site-state-item-count">170</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
