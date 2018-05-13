@@ -260,6 +260,186 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2015/06/07/Android-wechat-pay/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wml">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wml'Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/06/07/Android-wechat-pay/" itemprop="url">Android 微信支付</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-06-07T19:51:00+08:00">
+                2015-06-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Android/" itemprop="url" rel="index">
+                    <span itemprop="name">Android</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2015/06/07/Android-wechat-pay/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2015/06/07/Android-wechat-pay/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2015/06/07/Android-wechat-pay/" class="leancloud_visitors" data-flag-title="Android 微信支付">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="1-相关术语"><a href="#1-相关术语" class="headerlink" title="1.相关术语"></a>1.相关术语</h3><ul>
+<li>微信开放平台<br>微信开放平台是商户APP接入微信支付开放接口的申请入口，通过此平台可申请微信APP支付。<br>平台入口：<a href="http://open.weixin.qq.com" target="_blank" rel="external">http://open.weixin.qq.com</a>。</li>
+<li>微信商户平台<br>微信商户平台是微信支付相关的商户功能集合，包括参数配置、支付数据查询与统计、在线退款、代金券或立减优惠运营等功能。<br>平台入口：<a href="http://pay.weixin.qq.com" target="_blank" rel="external">http://pay.weixin.qq.com</a>。</li>
+<li>商户证书<br>商户证书是微信提供的二进制文件，商户系统发起与微信支付后台服务器通信请求的时候，作为微信支付后台识别商户真实身份的凭据。</li>
+<li>签名<br>商户后台和微信支付后台根据相同的密钥和算法生成一个结果，用于校验双方身份合法性。签名的算法由微信支付制定并公开，常用的签名方式有：MD5、SHA1、SHA256、HMAC等。</li>
+</ul>
+<h3 id="2-接入前期的准备工作和学习资源"><a href="#2-接入前期的准备工作和学习资源" class="headerlink" title="2.接入前期的准备工作和学习资源"></a>2.接入前期的准备工作和学习资源</h3><p>-&gt; 申请好微信开放平台账号<br>-&gt; 创建好一个应用提交申请<br>-&gt; 在应用详情中申请开通微信支付功能(审核要3-7天，建议提前安排人做好这件事)<br><img src="http://mmbiz.qpic.cn/mmbiz/PiajxSqBRaEIVJ6bW5EhIpAib0BYv5l1FvJaAv8aQ8NicUicoxlXGgHoyC8AqSUV5WW1Hicj6aLNDZoGmyLjLwh4kDg/0?wx_fmt=jpeg" alt="申请流程图"><br>前面三步都完成后，对于开发人员来说应该已经获得下面几个有用数据：<br>1.AppID (应用申请审核通过后获得)<br>2.AppSecret (应用申请审核通过后获得)<br>3.商户号 (微信支付审核通过后获得)<br>4.商户支付密钥key (微信支付审核通过后，通过邮件引导在商户平台设置后获得)</p>
+<blockquote>
+<p>关于第4点可参考：<a href="http://help.ecmoban.com/article-2085.html" target="_blank" rel="external">商户支付密钥key的生成与设置</a></p>
+</blockquote>
+<p>-&gt; <a href="https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&amp;t=resource/res_list&amp;verify=1&amp;id=open1419319164&amp;lang=zh_CN" target="_blank" rel="external">Android资源下载</a><br><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1esvtprik46j21h80o4afr.jpg" alt=""><br>-&gt; <a href="http://pay.weixin.qq.com/wiki/doc/api/app.php?chapter=11_1" target="_blank" rel="external">微信APP支付资源下载</a><br><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1esvtpqxdzlj21i205q750.jpg" alt=""><br>在上面两个链接中可以下载到要集成进项目的SDK、开发文档、和两个demo(一个接入demo和一个支付demo)，前期应好好根据文档学习demo，demo是eclipse下开发的，导入后还需将其改为GBK编码，以解决demo中文注释乱码问题。<br>另外开放平台提供的<a href="https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&amp;t=resource/res_list&amp;verify=1&amp;lang=zh_CN&amp;token=1be847c3b5d715b3705ae6d7dbd243bd2c7d5a43" target="_blank" rel="external">Android接入指南</a>应该好好看。</p>
+<h3 id="3-开发步骤"><a href="#3-开发步骤" class="headerlink" title="3.开发步骤"></a>3.开发步骤</h3><p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1esvuj2vzjkj20qn0t4mz3.jpg" alt=""><br>我的项目中，在需要用到微信支付的activity中处理逻辑如下：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// <span class="doctag">TODO:</span> 1.请求后台生成支付订单</span></div><div class="line">GetPrepayIdTask getPrepayId = <span class="keyword">new</span> GetPrepayIdTask();</div><div class="line">getPrepayId.execute();</div><div class="line"><span class="comment">// 后台</span></div><div class="line"><span class="comment">// -&gt;调微信统一下单API</span></div><div class="line"><span class="comment">// -&gt;将从微信拿到的预付单信息(prepay_id)</span></div><div class="line"><span class="comment">// -&gt;生成带签名的客户端支付信息</span></div><div class="line"><span class="comment">// -&gt;返回信息给app(prepay_id,sign等)</span></div><div class="line"><span class="comment">// <span class="doctag">TODO:</span> 2.根据后台返回的信息生成支付请求</span></div><div class="line"><span class="comment">// <span class="doctag">TODO:</span> 3.发起微信支付请求</span></div></pre></td></tr></table></figure></p>
+<p>微信处理完返回给app的返回码对应关系：<br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1esvuj3fgfhj21hm0b2ac2.jpg" alt=""><br>不过注意<strong>“如果支付成功则去后台查询支付结果再展示用户实际支付结果。注意一定不能以客户端返回作为用户支付的结果，应以服务器端的接收的支付通知或查询API返回的结果为准。”</strong><br>其实只要你能将开始申请拿到的那几个字段替换到微信官方提供的<a href="http://pay.weixin.qq.com/wiki/doc/api/download/wechat_sdk_sample_android_v3_pay.zip" target="_blank" rel="external">微信支付demo:wechat_sdk_sample_android_v3_pay.zip</a>里的，然后成功跑通，流程就清楚了。不过需注意的是，官方文档里说的<strong>“商户服务器生成支付订单，先调用统一下单API生成预付单，获取到prepay_id后将参数再次签名传输给APP发起支付。”</strong>这一步，在demo中是在app端模拟实现的，实际开发中还是建议按文档中的来，会更加安全性。</p>
+<blockquote>
+<p>我摸索阶段除了微信官方提供的文档和demo，下面文章给过我帮助，谢谢:</p>
+</blockquote>
+<p><a href="http://blog.fangjie.info/android%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98/" target="_blank" rel="external">Android微信支付</a><br><a href="http://blog.csdn.net/janice0529/article/details/38051987" target="_blank" rel="external">Android学习之 移动应用<app>微信支付集成小结</app></a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2015/05/31/Volley-study/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1832,183 +2012,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2015/02/13/啊朋友-再见/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wml">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wml'Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/02/13/啊朋友-再见/" itemprop="url">啊朋友 再见</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-02-13T23:31:00+08:00">
-                2015-02-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Life-s/" itemprop="url" rel="index">
-                    <span itemprop="name">Life's</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2015/02/13/啊朋友-再见/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2015/02/13/啊朋友-再见/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2015/02/13/啊朋友-再见/" class="leancloud_visitors" data-flag-title="啊朋友 再见">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="318" height="86" src="http://music.163.com/outchain/player?type=2&id=28267047&auto=0&height=66"></iframe>  
-
-<h2 id="这些天，这首《啊朋友-再见》总是被我循环听，曲调和歌词皆喜欢。"><a href="#这些天，这首《啊朋友-再见》总是被我循环听，曲调和歌词皆喜欢。" class="headerlink" title="这些天，这首《啊朋友 再见》总是被我循环听，曲调和歌词皆喜欢。"></a>这些天，这首《啊朋友 再见》总是被我循环听，曲调和歌词皆喜欢。</h2><blockquote>
-<p>啊朋友 我们以为老去是件漫长的事<br>有时候它是一夜之间<br>在清晨的镜子看见苍白的自己<br>像一颗正在消失的流星 </p>
-<p>啊朋友 圣贤说那坚持一定成功的事<br>头悬梁锥刺股三顾茅庐<br>相信它的人就像相信一个漫长玩笑<br>不信它的人已没了灵魂 </p>
-<p>啊朋友 电影里面那些不曾怀疑的事<br>蒋中正 潘冬子 还有雷锋<br>没困难我们创造困难也要往前冲<br>坚持做未来世界主人翁 </p>
-<p>啊朋友 告诉我 相遇是件宿命的事<br>告诉我忠贞与背叛之间<br>如果说所有约定都是错误的开始<br>这一路我愿把自己埋葬<br>当我离去 在你的怀里<br>请让我化作不停飞翔的鸟<br>当我离开 在这个世界<br>我愿是一块不说话的石头 </p>
-<p>啊朋友 千里夜奔是件快意恩仇的事<br>醒来后那总是梁山一梦<br>在路上在7月在我们的清晨日暮<br>谁不是运数不定的蝼蚁 </p>
-<p>啊朋友 我们以为哭泣是件软弱的事<br>当眼泪无声地化为白雪<br>谁会在告别时握一握你微微的手<br>就像你出生时妈妈的抚摸<br>当我离去 在你的怀里<br>请让我化作不停飞翔的鸟<br>当我离开 在这个世界<br>我愿是一块不说话的石头 </p>
-<p>啊朋友再见 啊朋友再见<br>啊朋友再见吧 再见吧再见吧<br>如果我在生活中牺牲<br>你一定把我来埋葬<br>如果我在生活中牺牲<br>请不要把我来怀念 </p>
-<p>啊朋友再见 啊朋友再见<br>啊朋友再见吧 再见吧再见吧<br>如果我在生活中牺牲<br>你一定把我来埋葬<br>如果我在生活中牺牲<br>请不要把我来怀念 </p>
-<p>找啊找啊找朋友 找到一个好朋友<br>敬个礼呀握握手 你是我的好朋友<br>再见 </p>
-</blockquote>
-<p><img src="/image/IMG_4600.png" width="350"> </p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2062,7 +2065,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">171</span>
+                <span class="site-state-item-count">172</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
