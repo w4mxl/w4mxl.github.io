@@ -260,6 +260,178 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2015/06/14/Android/[Android应用性能优化]使用SparseArray替代HashMap/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wml">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wml'Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/06/14/Android/[Android应用性能优化]使用SparseArray替代HashMap/" itemprop="url">使用SparseArray替代HashMap</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-06-14T13:51:00+08:00">
+                2015-06-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Android/" itemprop="url" rel="index">
+                    <span itemprop="name">Android</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2015/06/14/Android/[Android应用性能优化]使用SparseArray替代HashMap/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2015/06/14/Android/[Android应用性能优化]使用SparseArray替代HashMap/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2015/06/14/Android/[Android应用性能优化]使用SparseArray替代HashMap/" class="leancloud_visitors" data-flag-title="使用SparseArray替代HashMap">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>今天在用 Android Studio &gt; Analyze &gt; Inspect Code 对目前项目进行检查后给出了很多优化建议，其中一类是关于用SparseArray替代HashMap的。</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1et3lvdgva1j213s058gn1.jpg" alt=""><br>图1:意思是说用SparseArray<e>来替代，以获取更好性能</e></p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1et3lvcylsgj20yy05sjsk.jpg" alt=""><br>图2:图1问题对应的实际代码块</p>
+<p>老实说我之前开发中用HashMap比较多，还真没用过SparseArray，当看到建议后就去google了解它。</p>
+<blockquote>
+<p>SparseArray是android里为<interger,object>这样的Hashmap而专门写的类，目的是提高效率，其核心是折半查找函数（binarySearch）。</interger,object></p>
+</blockquote>
+<p>我这里就结合我自己项目说下当我知道了SparseArray优势后是怎么用SparseArray替代HashMap的。至于SparseArray更具体的原理介绍网络上写的很好的已经很多，比如<a href="http://liuzhichao.com/p/832.html" target="_blank" rel="external">这篇</a>。</p>
+<h4 id="修改之前-HosBuildingFloorAdapter-java-："><a href="#修改之前-HosBuildingFloorAdapter-java-：" class="headerlink" title="修改之前(HosBuildingFloorAdapter.java)："></a>修改之前(HosBuildingFloorAdapter.java)：</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">HashMap&lt;Integer, String&gt; hashMap;<span class="comment">//buildingId、buildingName的捆绑</span></div><div class="line"></div><div class="line"><span class="comment">// Adapter构造方法中对hashMap实例化</span></div><div class="line">hashMap =  <span class="keyword">new</span> HashMap&lt;Integer, String&gt;();</div><div class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; buildings; i++) &#123;</div><div class="line">    hashMap.put(buildingListEntities.get(i).getBuildingId(), buildingListEntities.get(i).getBuildingName());</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// Adapter的getHeaderView中取值</span></div><div class="line"><span class="keyword">for</span> (Map.Entry&lt;Integer, String&gt; entry : hashMap.entrySet()) &#123;</div><div class="line">    <span class="keyword">if</span> (floorListEntities.get(position).getBuildingId() == entry.getKey()) &#123;</div><div class="line">        holder.text.setText(entry.getValue());</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="修改之后"><a href="#修改之后" class="headerlink" title="修改之后:"></a>修改之后:</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">SparseArray&lt;String&gt; stringSparseArray;</div><div class="line"></div><div class="line"><span class="comment">// Adapter构造方法中对stringSparseArray实例化</span></div><div class="line">stringSparseArray = <span class="keyword">new</span> SparseArray&lt;&gt;();</div><div class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; buildings; i++) &#123;</div><div class="line">    stringSparseArray.put(buildingListEntities.get(i).getBuildingId(), buildingListEntities.get(i).getBuildingName());</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// Adapter的getHeaderView中取值</span></div><div class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; stringSparseArray.size(); i++) &#123;</div><div class="line">    <span class="keyword">int</span> key = stringSparseArray.keyAt(i);</div><div class="line">    <span class="keyword">if</span> (floorListEntities.get(position).getBuildingId() == key) &#123;</div><div class="line">        holder.text.setText(stringSparseArray.get(key));</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2015/06/07/Android-wechat-pay/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1838,180 +2010,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2015/02/17/速度与激情7/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wml">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wml'Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/02/17/速度与激情7/" itemprop="url">《速度与激情》7</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-02-17T00:18:00+08:00">
-                2015-02-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Life-s/" itemprop="url" rel="index">
-                    <span itemprop="name">Life's</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2015/02/17/速度与激情7/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2015/02/17/速度与激情7/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2015/02/17/速度与激情7/" class="leancloud_visitors" data-flag-title="《速度与激情》7">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>除了<a href="http://www.wikiwand.com/zh-cn/%E7%8E%A9%E5%91%BD%E9%97%9C%E9%A0%AD7" target="_blank" rel="external">《速度与激情》</a>，像这种长系列的电影，以前只跟过史泰龙主演的<a href="http://www.wikiwand.com/zh-cn/洛奇" target="_blank" rel="external">《洛基1-6》（英语：Rocky）</a>。如你所知，有太多的系列，往往第一部口碑和票房上佳，然后紧跟着出第二部、第三部…拍着拍着就开始狗尾续貂了。 </p>
-<p>像很多人一样，我也是《速度与激情》系列的脑残粉。移动硬盘里静存着1-6部，有时馋电影了还会翻出来看看。 </p>
-<p>到目前为止，《速度与激情》7放出了2段预告片，我想到正式上映（美国于2015年4月3日）前应该还会陆续放出几段，所以想同步一一收集在这篇博客中。方便随时统一查(过)看(瘾)。 </p>
-<p>####<strong>中文版预告片</strong></p>
-<iframe src="http://www.tudou.com/programs/view/html5embed.action?type=3&code=FufV-eKDWg8&lcode=1qGtdZk53EA&resourceId=115028967_06_05_99" allowtransparency="true" allowfullscreen="true" scrolling="no" border="0" frameborder="0" style="width:560px;height:480px;"></iframe> 
-
-<p>####<strong>超级碗版预告片</strong></p>
-<iframe src="http://www.tudou.com/programs/view/html5embed.action?type=0&code=idlBbwrN3uA&lcode=&resourceId=115028967_06_05_99" allowtransparency="true" allowfullscreen="true" scrolling="no" border="0" frameborder="0" style="width:560px;height:480px;"></iframe> 
-
-<p><img src="/image/速度与激情7电影票.jpg" alt="速度与激情7电影票"></p>
-<p>早早的就预定了今天的票，去电影院观赏！COOL :)</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2065,7 +2063,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">172</span>
+                <span class="site-state-item-count">173</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
