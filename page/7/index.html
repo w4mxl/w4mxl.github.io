@@ -260,6 +260,372 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2014/10/27/Github中“Clone-in-Desktop”无效的解决办法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wml">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wml'Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2014/10/27/Github中“Clone-in-Desktop”无效的解决办法/" itemprop="url">Github中 “Clone in Desktop” 无效的解决办法</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2014-10-27T19:48:01+08:00">
+                2014-10-27
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-18T15:05:22+08:00">
+                2017-09-18
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Life-s/" itemprop="url" rel="index">
+                    <span itemprop="name">Life's</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2014/10/27/Github中“Clone-in-Desktop”无效的解决办法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2014/10/27/Github中“Clone-in-Desktop”无效的解决办法/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2014/10/27/Github中“Clone-in-Desktop”无效的解决办法/" class="leancloud_visitors" data-flag-title="Github中 “Clone in Desktop” 无效的解决办法">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h3><p><img src="/image/图/Make “Clone in Desktop” down01.png" width="180"></p>
+<p>在你想对Github中感兴趣的项目实践自己想法的时候，需要去“Clone in Desktop”，然后进行自己的code。当你第一次点击“Clone in Desktop”按钮，会跳转到Github for Mac的下载页面。当你下载、安装及登录好客户端之后，再去点“Clone in Desktop”发现还是同上，页面又跳转到Github for Mac的下载页面。
+　　</p>
+<h3 id="解决："><a href="#解决：" class="headerlink" title="解决："></a>解决：</h3><p>Google搜索一番之后，找到了<a href="https://help.github.com/articles/github-conduit" target="_blank" rel="external">这篇文章</a>。大体意思是，如果一切就绪你查看这个<a href="https://ghconduit.com:25035/status" target="_blank" rel="external">https://ghconduit.com:25035/status</a>，返回的json格式应该是：</p>
+<pre><code>{&quot;capabilities&quot;:[&quot;status&quot;,&quot;unique_id&quot;,&quot;url-parameter-filepath&quot;],&quot;running&quot;:true,&quot;server_version&quot;:&quot;5&quot;} 
+</code></pre><p>而当我点击的时候并没有返回这些，所以我试着把“127.0.0.1       ghconduit.com”添加到 private/etc/hosts 文件的末尾，保存之后，刷新页面（我用的chrome dev浏览器）发现还是不行。然后我打开Safari试了下（在没往hosts中添加“127.0.0.1       ghconduit.com”前也用Safari试过，是不行的），发现这下可以了正常把想要的项目“Clone in Desktop”了。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2014/08/25/a-sad-story/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wml">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wml'Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2014/08/25/a-sad-story/" itemprop="url">一个悲伤的故事</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2014-08-25T22:50:55+08:00">
+                2014-08-25
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2016-01-18T22:57:00+08:00">
+                2016-01-18
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Life-s/" itemprop="url" rel="index">
+                    <span itemprop="name">Life's</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2014/08/25/a-sad-story/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2014/08/25/a-sad-story/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2014/08/25/a-sad-story/" class="leancloud_visitors" data-flag-title="一个悲伤的故事">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><del>在很久很久以前，</del>算了，<br>其实就是刚过去的这个周末，<br>他们一行五人约好同去深圳的西涌海滩露营。<br>五人中三男两女。<br>两枚女孩：Yue长的清秀生性活泼；Lin内敛恬静细致体贴。<br>男惯性省略。</p>
+<p>深圳北站-&gt;<em>（2小时大巴）</em>南澳-&gt;<em>（半小时包车）</em>西涌海滩。</p>
+<p>西涌海滩，久负盛名，风光旖旎，一见倾心。</p>
+<p>Mu带头找了块相对人少的地儿停下，眼睛觊觎着大海。<br>Yue很有经验的搭好一顶帐篷后，Mu就迫不及待进去换了泳裤冲进海里。<br>相继的大家都下海玩耍起来，如鱼得水。<br>是日阳光明媚，海面倒映后波光粼粼，背着光看，美的简直不谈了。</p>
+<p>期间他们上岸补充了些水和食物后，稍稍休息了下又下海。<br>傍晚时分，吹吹海风，吃吃烧烤，身心脾胃皆惬意。<br>“没有哪样东西会比食物更能恰如其分的安慰人心，如果有，那就是爱”<br>所以伴随着夜幕，他们五人围坐在一起边吃边交流感情，谈笑风生。</p>
+<p>前面忘了交代，那两个女孩，一个是Mu同去的朋友的老婆，<br>另一个是Mu同去朋友的未婚妻。<br>所以事实是两对人含情脉脉忘我投入的交流感情，而Mu纯粹是带着感情交流。<br>他们友善的问Mu说你一个人会不会感到孤独。赶紧找个女朋友吧！<br>Mu只好诚恳的告诉他们说：<br><em>谢谢，别担心我。你们追求的是美人，而我追求的是美人鱼！</em><br>说完，一头扎进大海，游向深处…</p>
+<p>翌日，天刚亮，海滩喇叭传来急促播报声：“下面广播一条通知…”</p>
+<p><img src="/image/图/一个悲伤的故事01.JPG" alt=""><br><img src="/image/图/一个悲伤的故事02.JPG" width="480"></p>
+<p><em>PS.这故事缩到一句话讲完应该是：浪子，你何时泊岸？</em></p>
+<p>注：这是一个故事，且并未发生事故。所以别担心。只是世间的故事，多半是没有后来的。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2014/08/25/Pushbullet-introduce/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -297,7 +663,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2016-01-18T22:47:30+08:00">
+                2016-01-18
+              </time>
             
           </span>
 
@@ -492,7 +870,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2016-01-18T22:57:00+08:00">
+                2016-01-18
+              </time>
             
           </span>
 
@@ -664,7 +1054,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2016-01-18T23:23:56+08:00">
+                2016-01-18
+              </time>
             
           </span>
 
@@ -831,7 +1233,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2016-01-18T22:47:30+08:00">
+                2016-01-18
+              </time>
             
           </span>
 
@@ -1034,7 +1448,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2016-01-18T22:47:30+08:00">
+                2016-01-18
+              </time>
             
           </span>
 
@@ -1222,7 +1648,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2016-01-18T22:57:00+08:00">
+                2016-01-18
+              </time>
             
           </span>
 
@@ -1388,7 +1826,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2016-01-18T22:57:00+08:00">
+                2016-01-18
+              </time>
             
           </span>
 
@@ -1603,7 +2053,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2016-01-18T22:47:30+08:00">
+                2016-01-18
+              </time>
             
           </span>
 
@@ -1721,347 +2183,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2014/03/09/Life's/安河桥/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wml">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wml'Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2014/03/09/Life's/安河桥/" itemprop="url">安河桥</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2014-03-09T20:31:00+08:00">
-                2014-03-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Life-s/" itemprop="url" rel="index">
-                    <span itemprop="name">Life's</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2014/03/09/Life's/安河桥/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2014/03/09/Life's/安河桥/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2014/03/09/Life's/安河桥/" class="leancloud_visitors" data-flag-title="安河桥">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>想出去走走，看了眼地铁站点图，换好鞋子拿上耳机。</p>
-<p>出门时心想着去动物园的，可没走到地铁站心里就反悔了。我是喜欢动物，但是还是受不了看到他们被关在里面被外面另外一种动物隔笼玩弄的样子。这跟我喜欢孩子，受不了他们老被困在教室里一样。有些动物，我以为圈养他们是有罪的。</p>
-<p>那去哪儿呢。</p>
-<p>地铁载着还没想好目的地的我，径直往他的目的地行驶着…</p>
-<p>在我看到地铁站点图上，四号线安河桥北站时，我知道了此行我要去哪儿了。</p>
-<p>之前有下载宋冬野那个胖子的《安河桥北》专辑来听，里面的安河桥很好听，是我喜欢的；关忆北，我也喜欢；董小姐也收在其中。莫名想去看看胖子言及的安河桥，看看“安河桥下清澈的水”。（那些以地名命名的歌我都好喜欢，像小西口、钟鼓楼、霞飞路87号、安河桥…）</p>
-<p>地铁载着已和他有一样目的地的我继续向前行驶着，《安河桥北》专辑开始循环一遍遍播着。心里一下就明亮了。</p>
-<p>安河桥北，在北五环，地铁四号线北边终点站。</p>
-<p>当我走出地铁，看到的情景跟北京城里已经很不一样了，不再是车水马龙，也不会高楼林立。是那种看着安稳的景况。我买了个冷饮，好借故问老板安河桥怎么走，老板热心告知后，我开始往他指引的方向走去…</p>
-<p><img src="/image/图/安河桥01.jpg" alt="安河桥"><br><img src="/image/图/安河桥02.jpg" alt="安河桥"></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2013/11/12/Life's/很快的，北京冬了/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wml">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wml'Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2013/11/12/Life's/很快的，北京冬了/" itemprop="url">很快的，北京冬了</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-11-12T00:10:03+08:00">
-                2013-11-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Life-s/" itemprop="url" rel="index">
-                    <span itemprop="name">Life's</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2013/11/12/Life's/很快的，北京冬了/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2013/11/12/Life's/很快的，北京冬了/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2013/11/12/Life's/很快的，北京冬了/" class="leancloud_visitors" data-flag-title="很快的，北京冬了">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>　　很快的，北京冬了。想来，在北京跟朋友们之间好像就没说到过秋。这儿秋好似读者原创版两篇长文中间夹杂的诗从，你不经意也就翻过去了。倘若有心读之，亦觉得很美。红枫黄叶，秋风起之，摇摇曳曳，肆意斑斓。</p>
-<p>　　来北京一年多了，一天天看，一天天感受。最近发现自己想追求的东西有点变化了，那些看到的人做事，谈论有些会给我以影响，让我觉得以前那些不敢想或没想过的事，自己努努力也是可以去做到的。以前是跟着现在慢慢是自己走着，想挖掘自己更多，也相信可以发掘出来，以便做出一些事情。只是自己常常还是会焦虑，陷进一个个问题，可以潜心交谈的人不多，需要一点点自救。</p>
-<p>　　上周末朋友 从昆山来北京玩，率性的一个人，周五请假飞过来，周日高铁回。尽管我提前告知了北京已冷，带厚衣，还是冷得出乎她的薄外套的料想。按先前说好的，带她去她倾心想去玩的，陪她吃她想吃的。她话不多，相比我倒成大话精了，为了打破长时间沉默，我开头说些无关痛痒的话。多有照顾不周。</p>
-<p>　　11.11，就算有些意义的话，也该是寂寞的一个日子，硬生生被taobao带头搞成全民购物狂欢节。呵呵，到时看订阅的又该数据满天飞了。不谈。</p>
-<p><img src="/image/图/很快的，北京冬了.jpg" alt=""><br><em>PS.还是你们好，总是陪着我</em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2115,7 +2236,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">173</span>
+                <span class="site-state-item-count">175</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>

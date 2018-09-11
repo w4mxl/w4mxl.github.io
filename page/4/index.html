@@ -260,6 +260,389 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2015/08/17/fragment-overlay-problem'/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wml">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wml'Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/08/17/fragment-overlay-problem'/" itemprop="url">Fragment 重叠(重影)问题</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-08-17T09:41:00+08:00">
+                2015-08-17
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2016-01-14T00:13:40+08:00">
+                2016-01-14
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Android/" itemprop="url" rel="index">
+                    <span itemprop="name">Android</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2015/08/17/fragment-overlay-problem'/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2015/08/17/fragment-overlay-problem'/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2015/08/17/fragment-overlay-problem'/" class="leancloud_visitors" data-flag-title="Fragment 重叠(重影)问题">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>在最近做的项目中，遇到了 Fragment 重叠的问题。具体的情况是，app 需要在多个 Fragment 间切换，并且保存每个 Fragment 的状态。官方的方法是使用 replace() 来替换 Fragment，但是 replace() 的调用会导致 Fragment 的 onCreteView() 被调用，所以切换界面时会无法保存当前的状态。因此一般采用 add()、hide()与 show()配合，来达到保存 Fragment 的状态。</p>
+<p>正常情况下显示是对的，现象发生在我切换到其他的app，操作一会之后，再回到当前的app，有一定几率会出现 Fragment 重叠的现象。</p>
+<p>可以通过下面的方式进行手动重现这个BUG:<br>1.手机的 “设置” - “开发者选项” - 打开”不保留活动”(主要用于模拟Activity被及时回收)<br>2.把 app 切换到后台，再重新打开，通过点按不同的 tab 来切换 Fragment<br><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1ev5ds1gancj20lc0zkgnp.jpg" width="200"><br>▲ 重现 Fragment 的重叠</p>
+<p>起初我以为是我在使用add()、hide() 、show() 切换 Fragment 的时候有什么地方使用的不对，尝试去解决重叠的 bug，无果后，还是通过 google 找出了原因和解决方案。</p>
+<h4 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h4><p>使用 Fragment 的状态保存，当系统内存不足，Fragment 的宿主 Activity 回收的时候，Fragment 的实例并没有随之被回收。Activity 被系统回收时，会主动调用 onSaveInstance() 方法来保存视图层（View Hierarchy），所以当 Activity 通过导航再次被重建时，之前被实例化过的 Fragment 依然会出现在 Activity 中，此时的 FragmentTransaction 中的相当于又再次 add 了 fragment 进去的，hide()和show()方法对之前保存的fragment已经失效了。综上这些因素导致了多个Fragment重叠在一起。</p>
+<h4 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h4><p><strong>方案一:</strong><br>1.给每个 Fragment 加一个 Tag<br>2.在 onCreate(Bundle savedInstanceState) 中判断 Bundle savedInstanceState 是否不为空<br>3.不为空则进行 find Tag，重新给几个 frament 赋值<br>这样子仍是对之前保存的 fragment 操作，成功解决了重叠的问题。</p>
+<p><strong>方案二:</strong><br>Activity 中的 onSaveInstanceState() 里面有一句<em>super.onSaveInstanceState(outState);</em>，Google 对于这句话的解释是 “Always call the superclass so it can save the view hierarchy state”，大概意思是“总是执行这句代码来调用父类去保存视图层的状态”。通过注释掉这句话，这样主 Activity 因为种种原因被回收的时候就不会保存之前的 fragment state，也可以成功解决重叠的问题。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2015/08/02/experience-of-apple-watch/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wml">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wml'Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/08/02/experience-of-apple-watch/" itemprop="url">Apple Watch 使用感受</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-08-02T17:32:00+08:00">
+                2015-08-02
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2016-01-18T22:47:30+08:00">
+                2016-01-18
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Life-s/" itemprop="url" rel="index">
+                    <span itemprop="name">Life's</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2015/08/02/experience-of-apple-watch/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2015/08/02/experience-of-apple-watch/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2015/08/02/experience-of-apple-watch/" class="leancloud_visitors" data-flag-title="Apple Watch 使用感受">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>我向来喜欢科技产品，热衷尝试新奇的事物，但这并不代表我会随随便便成为一款新产品的用户。</p>
+<p>从知道 apple 要做 apple watch 这款产品，到发布、再到开发购买，我的 RSS 订阅中就没间断的出现有关它的文章。随着这些文章的阅读，评测视频的观看，我逐渐了解 apple watch，在它身上发现到契合我自身需求的功能，这也让我在清楚知道这是 apple watch 的第一代产品，它一定还有很大提升空间的意识下依然决定要购买。</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609jw1euoidewazbj21w01w01kx.jpg" width="460"><br>▲ apple watch 开箱前</p>
+<p>虽然之前 apple watch 的照片、视频已经360度无死角的观察过，等拿到手的那一瞬间还是惊艳其美，欣喜如狂。轻轻的撕掉屏幕上面的保护膜，看着那晶莹通透的表盘醉了一脸。</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1euoidlgw6aj21w02iohdt.jpg" width="460"><br>▲ apple watch 首次佩戴</p>
+<p>下面说说就我上手 apple watch 22天后的使用感受。其中感受最明显的其实只有两点，这两点也正是当初促使我决定购买它的原因或者也可以说是我希望 apple watch 能通过这两点能让自己的生活有所改变。</p>
+<h4 id="一-健身运动"><a href="#一-健身运动" class="headerlink" title="一.健身运动"></a>一.健身运动</h4><p><strong>每小时站立提醒</strong><br>如果 apple watch 检测到你在一个小时的前50分钟都坐着时，它就会通过 Taptic Engine 来震动提醒你该起身动一下了。要知道，久坐和久站都不利于身体健康，都能引发一系列的职业病。</p>
+<p><strong>鼓励运动</strong><br>通过在 apple watch 上“健身活动”app设置好每日的活动、锻炼和站立目标，当你在完成到某个进度它会鼓励你做得好继续；当你完成了当日得整体目标时，它也会鼓励你，如果做得出色甚至会得到一块特别的“奖章”。</p>
+<p><strong>健身数据记录</strong><br>借助 apple watch 上“健身”app，可以跟踪自己喜欢的健身运动（我目前常用得是户外跑步、户外步行、户外单车和室内跑步），在健身期间获得关于里程碑的提醒，以及在完成健身后获得详细的摘要。每次运动后，这些数据也都会同步到iPhone上“健康”app上。</p>
+<h4 id="二-通知提醒"><a href="#二-通知提醒" class="headerlink" title="二.通知提醒"></a>二.通知提醒</h4><p><strong>设定通知</strong><br>以前工作每次iPhone收到通知都会响一声或者震动提醒你有新通知。因为不放心都会点亮屏幕查看、处理。而往往一点亮屏幕，除了最新的那条，很可能又被其他的通知引到解锁做一大堆其他的事情。</p>
+<p>拿到 apple watch 后，第一件重要的事就是设定好通知。只将重要的通知推送设置到 apple Watch，而其他不重要的就让它们留在手机上。只要我的 apple Watch 不震动，我就知道这不是重要通知，无需拿出手机来看。而手机上的相对不重要的通知等空闲时间统一再查看。推送到 apple Watch 的通知，比如QQ、微信等瞟一眼知道内容，不重要就过了，重要再选择回复或者处理即可。这样使用下来，我发现大大减少了我拿起手机的次数，工作效率是有一定提升的。</p>
+<p><strong>Taptic Engine</strong><br>我认为Taptic Engine 是 Apple Watch 上最酷的功能之一，使用感受非常奇妙，当它提醒你站立的时候，会急促的震一下，像是有人敦促你该起身了；收到QQ等通知时，清脆的一声「叮」和震两下，像是有人碰了你胳膊两下，提醒你看通知；当你输错秘密的时候，它会左右动两下，像是在摇头否定。总之用文字表达起来实在无力，只能称之呼神奇。</p>
+<p><em>最后，我想说 apple watch 是我喜欢并且真正需要的科技产品，用久了就会发现，它以一种平平淡淡的方式却又非常真切地改变着我的生活。我同样希望自己可以将拥有的其他电子产品也能发挥它们的真正可以发挥的能力，让自己或者别人的生活更加精彩，我想这才是喜欢科技产品的真正意义。</em></p>
+<hr>
+<p><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1euoid9xmtmj20hs0vkwgd.jpg" width="250"><br>▲ 拿到 apple watch 前，有时会打开iPhone上的“apple watch” app看一眼</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1euoidmlunwj208o0au74l.jpg" width="250"><br>▲ 我用的表盘样式</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1euoidq42wej208o0auwfd.jpg" width="250"><br>▲ 每小时的站立提醒</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1euoidn7st1j208o0aut9r.jpg" width="250"><br>▲ 完成每小时站立的鼓励</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1eup4mhdo54j208o0aumxv.jpg" width="250"><br>▲ 每天的站立情况总览</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eup4mi1ufrj208o0auab0.jpg" width="250"><br>▲ 每天健身活动情况总览</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1euoidobvkqj208o0au75p.jpg" width="250"><br>▲ 有时你会欣喜的发现获得了一个奖章</p>
+<p><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1eup4miedapj208o0auq3i.jpg" width="250"><br>▲ apple watch 上的训练app</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eup4mipqiaj208o0au74k.jpg" width="250"><br>▲ 当选择好上面的某个活动后可以在此设定活动目标</p>
+<p><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1euoidowzxfj208o0augmk.jpg" width="250"><br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1euoidpj9yuj208o0au3zk.jpg" width="250"><br>▲ 可以在 apple watch 控制媒体播放，比如骑车上下班的时候</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1euojmh7ntrj20hs0vk0wo.jpg" width="250"><br>▲ 使用 apple watch 这段时间来的运动量明显增加</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1euojmi2btyj20hs0vkgo5.jpg" width="250"><br>▲ 奖章系统，很喜欢这设计 </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2015/07/31/goodbye-qujin/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -297,7 +680,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2016-01-18T23:13:56+08:00">
+                2016-01-18
+              </time>
             
           </span>
 
@@ -463,7 +858,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2016-01-18T22:57:00+08:00">
+                2016-01-18
+              </time>
             
           </span>
 
@@ -633,7 +1040,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2016-01-14T00:14:14+08:00">
+                2016-01-14
+              </time>
             
           </span>
 
@@ -804,7 +1223,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2016-01-14T00:15:48+08:00">
+                2016-01-14
+              </time>
             
           </span>
 
@@ -990,7 +1421,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2016-01-14T00:14:58+08:00">
+                2016-01-14
+              </time>
             
           </span>
 
@@ -1174,7 +1617,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2016-01-18T23:13:56+08:00">
+                2016-01-18
+              </time>
             
           </span>
 
@@ -1372,7 +1827,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2016-01-18T23:16:34+08:00">
+                2016-01-18
+              </time>
             
           </span>
 
@@ -1543,7 +2010,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2016-01-13T23:27:10+08:00">
+                2016-01-13
+              </time>
             
           </span>
 
@@ -1674,343 +2153,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2015/06/18/「Replace」-by-Zee-Young/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wml">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wml'Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/06/18/「Replace」-by-Zee-Young/" itemprop="url">「Replace」 by Zee Young</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-06-18T11:18:00+08:00">
-                2015-06-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Life-s/" itemprop="url" rel="index">
-                    <span itemprop="name">Life's</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2015/06/18/「Replace」-by-Zee-Young/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2015/06/18/「Replace」-by-Zee-Young/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2015/06/18/「Replace」-by-Zee-Young/" class="leancloud_visitors" data-flag-title="「Replace」 by Zee Young">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="https://d13yacurqjgara.cloudfront.net/users/384313/screenshots/2067564/replace.gif" alt=""></p>
-<p> <a href="https://dribbble.com/shots/2067564-Replace?list=users&amp;offset=0" target="_blank" rel="external">「Replace」</a> BY <a href="https://dribbble.com/zeeyoung" target="_blank" rel="external">@Zee Young</a>  </p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2015/06/17/Android/ScrollView下嵌套 ListView(GridView) 冲突导致显示不全的问题/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wml">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wml'Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/06/17/Android/ScrollView下嵌套 ListView(GridView) 冲突导致显示不全的问题/" itemprop="url">ScrollView下嵌套 ListView(GridView) 冲突导致显示不全的问题</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-06-17T11:35:00+08:00">
-                2015-06-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Android/" itemprop="url" rel="index">
-                    <span itemprop="name">Android</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2015/06/17/Android/ScrollView下嵌套 ListView(GridView) 冲突导致显示不全的问题/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2015/06/17/Android/ScrollView下嵌套 ListView(GridView) 冲突导致显示不全的问题/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2015/06/17/Android/ScrollView下嵌套 ListView(GridView) 冲突导致显示不全的问题/" class="leancloud_visitors" data-flag-title="ScrollView下嵌套 ListView(GridView) 冲突导致显示不全的问题">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>为了满足功能需求，界面布局中常常需要用到 ScrollView 下嵌套 ListView(GridView) 的情况，ScrollView 可以滚动，而 ListView(GridView) 只作数据展示不能滚动。而写完调试时会发现，ListView(GridView) 只显示了一行数据，自身滚动后能看到剩余数据。原因是ScrollView 中嵌套 ListView(GridView)，无法正确的计算ListView(GridView)的高度。</p>
-<h2 id="解决方法一"><a href="#解决方法一" class="headerlink" title="解决方法一"></a>解决方法一</h2><p>原理:<code>setAdapter后，获取到每一项item的高度，再动态设置listview或者gridview的高度。</code><br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment"> * 解决scrollview 嵌套 gridview</span></div><div class="line"><span class="comment"> *</span></div><div class="line"><span class="comment"> * <span class="doctag">@param</span> gridView</span></div><div class="line"><span class="comment"> * <span class="doctag">@param</span> columns  gridview的列数</span></div><div class="line"><span class="comment"> */</span></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">setGridViewHeightBasedOnChildren</span><span class="params">(GridView gridView, <span class="keyword">int</span> columns)</span> </span>&#123;</div><div class="line">    ListAdapter listAdapter = gridView.getAdapter();</div><div class="line">    <span class="keyword">if</span> (listAdapter == <span class="keyword">null</span>) &#123;</div><div class="line">        <span class="keyword">return</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">int</span> totalHeight = <span class="number">0</span>;</div><div class="line">    <span class="keyword">int</span> count = listAdapter.getCount();</div><div class="line">    View listItem = listAdapter.getView(<span class="number">0</span>, <span class="keyword">null</span>, gridView);</div><div class="line">    listItem.measure(<span class="number">0</span>, <span class="number">0</span>);</div><div class="line">    totalHeight = listItem.getMeasuredHeight() + <span class="number">9</span>;</div><div class="line"></div><div class="line">    <span class="keyword">int</span> yu = count % columns;</div><div class="line"></div><div class="line">    ViewGroup.LayoutParams params = gridView.getLayoutParams();</div><div class="line"></div><div class="line">    <span class="keyword">if</span> (yu &gt; <span class="number">0</span>) &#123;</div><div class="line">        params.height = (count - yu) / columns * (totalHeight + <span class="number">9</span>) + totalHeight;</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        params.height = count / columns * totalHeight + (count / columns - <span class="number">1</span>) * <span class="number">9</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    gridView.setLayoutParams(params);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment"> * 解决scrollview 嵌套 listview</span></div><div class="line"><span class="comment"> *</span></div><div class="line"><span class="comment"> * <span class="doctag">@param</span> listView</span></div><div class="line"><span class="comment"> */</span></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">setListViewHeightBasedOnChildren</span><span class="params">(ListView listView)</span> </span>&#123;</div><div class="line">    ListAdapter listAdapter = listView.getAdapter();</div><div class="line">    <span class="keyword">if</span> (listAdapter == <span class="keyword">null</span>) &#123;</div><div class="line">        <span class="keyword">return</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">int</span> totalHeight = <span class="number">0</span>;</div><div class="line">    <span class="keyword">int</span> count = listAdapter.getCount();</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; count; i++) &#123;</div><div class="line">        View listItem = listAdapter.getView(i, <span class="keyword">null</span>, listView);</div><div class="line">        listItem.measure(<span class="number">0</span>, <span class="number">0</span>);</div><div class="line">        totalHeight += listItem.getMeasuredHeight();</div><div class="line">    &#125;</div><div class="line">    ViewGroup.LayoutParams params = listView.getLayoutParams();</div><div class="line">    params.height = totalHeight + (listView.getDividerHeight() * (count - <span class="number">1</span>));</div><div class="line">    <span class="comment">// listView.getDividerHeight()获取子项间分隔符占用的高度</span></div><div class="line">    <span class="comment">// params.height最后得到整个ListView完整显示需要的高度</span></div><div class="line">    listView.setLayoutParams(params);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>此方法需要注意:<br>一、是Adapter中getView方法返回的View的必须由LinearLayout组成，因为只有LinearLayout才有measure()方法。<br>二、有时是需要手动把ScrollView滚动至最顶端。</p>
-<h2 id="解决方法二"><a href="#解决方法二" class="headerlink" title="解决方法二"></a>解决方法二</h2><p>原理:<code>重写 ListView、GridView 的 onMeasure 方法</code><br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyListView</span> <span class="keyword">extends</span> <span class="title">ListView</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MyListView</span><span class="params">(Context context)</span> </span>&#123;</div><div class="line">        <span class="keyword">super</span>(context);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onMeasure</span><span class="params">(<span class="keyword">int</span> widthMeasureSpec, <span class="keyword">int</span> heightMeasureSpec)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> expandSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE &gt;&gt; <span class="number">2</span>,</div><div class="line">                MeasureSpec.AT_MOST);</div><div class="line"></div><div class="line">        <span class="keyword">super</span>.onMeasure(widthMeasureSpec, expandSpec);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125; </div><div class="line">- - - - - - - -</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyGridView</span> <span class="keyword">extends</span> <span class="title">GridView</span></span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MyGridView</span><span class="params">(Context paramContext, AttributeSet paramAttributeSet)</span> </span>&#123;</div><div class="line">        <span class="keyword">super</span>(paramContext, paramAttributeSet);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onMeasure</span><span class="params">(<span class="keyword">int</span> widthMeasureSpec, <span class="keyword">int</span> heightMeasureSpec)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> expandSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE &gt;&gt; <span class="number">2</span>,MeasureSpec.AT_MOST);</div><div class="line">        <span class="keyword">super</span>.onMeasure(widthMeasureSpec, expandSpec);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>修改xml布局文件，代码中不用改动:<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">xx..MyGridView(MyListView)</span></span></div><div class="line"><span class="tag">    <span class="attr">xxx</span></span></div><div class="line"><span class="tag">    <span class="attr">xxx</span></span></div><div class="line">&lt;/xx..MyGridView(MyListView)&gt;</div></pre></td></tr></table></figure></p>
-<p>这种方法虽然能够显示完整，但是ListView(GridView)边缘滑动仍会有阴影，如果需要去掉边缘滑动阴影（这些效果耗内存）:<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">android:overScrollMode="never"</div></pre></td></tr></table></figure></p>
-<blockquote>
-<p>此方法更详细的理论分析可以参见:<br><a href="http://blog.csdn.net/aqswde35025/article/details/41863203" target="_blank" rel="external">http://blog.csdn.net/aqswde35025/article/details/41863203</a></p>
-</blockquote>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2064,7 +2206,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">173</span>
+                <span class="site-state-item-count">175</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
