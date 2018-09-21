@@ -14,7 +14,7 @@
 <p>　　我们在今年2月份的<a href="https://medium.com/flutter-io/announcing-flutter-beta-1-build-beautiful-native-apps-dc142aea74c0" target="_blank" rel="external">初始测试版本</a>到今年夏天早些时候的<a href="https://developers.googleblog.com/2018/06/flutter-release-preview-1-live-from.html" target="_blank" rel="external">首个发布预览版</a>的可用性基础上,此版本继续完成核心方案和提高质量的工作。我们Flutter团队现在完全专注于完成我们的1.0版本。</p>
 <a id="more"></a>
 <h3 id="Release-Preview-2中的新功能"><a href="#Release-Preview-2中的新功能" class="headerlink" title="Release Preview 2中的新功能"></a>Release Preview 2中的新功能</h3><p>　　此版本的主题是<strong>完美适配iOS应用程序</strong>。虽然我们为Flutter设计了高度品牌驱动的定制体验，但我们也听到了一些想要构建严格遵循<a href="https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/" target="_blank" rel="external">Apple界面指南</a>的应用程序的反馈。因此，在这个版本中，我们大大扩展了对Flutter中“Cupertino”主题控件的支持，其中<a href="https://docs.flutter.io/flutter/cupertino/cupertino-library.html" target="_blank" rel="external">包含大量的小部件和类库</a>，使得在构建iOS应用程序时比以往任何时候都更容易。</p>
-<center><img src="https://3.bp.blogspot.com/-UF1Gy-3Ajzo/W6Aume35h7I/AAAAAAAAGCw/lTQwwiQu2PEWegrxQiG9cqsxvzg8CMctwCLcBGAs/s1600/transitionimage2.gif" alt=""><br><br><a href="https://github.com/xster/flutter-test/tree/master/t95_ios_settings_page" target="_blank" rel="external">使用Flutter构建</a>的iOS设置页</center>
+<center><img src="https://s1.ax1x.com/2018/09/21/inwage.gif" alt=""><br><a href="https://github.com/xster/flutter-test/tree/master/t95_ios_settings_page" target="_blank" rel="external">使用Flutter构建</a>的iOS设置页</center>
 
 <p>　　以下是Flutter Release Preview 2中添加的一些新的iOS主题小部件：</p>
 <ul>
@@ -56,7 +56,7 @@
 
 <p>　　我们十分重视客户满意度并定期对我们的用户进行调查。我们承诺与社区分享调查结果，我们<a href="https://medium.com/flutter-io/what-weve-learned-from-the-july-2018-flutter-user-survey-cbbf1e04370c" target="_blank" rel="external">最近的一次调查</a>显示，92％的开发者对Flutter感到满意或非常满意，并会向其他人推荐Flutter。在快速开发和漂亮的用户界面方面，79％的受访者认为Flutter在提高开发效率和实现理想UI方面非常有帮助或有帮助。82％的Flutter开发人员对<a href="https://medium.com/dartlang/dart-2-stable-and-the-dart-web-platform-3775d5f8eac7" target="_blank" rel="external">Dart编程语言</a>感到满意或非常满意，Dart编程语言最近也迎来了一个新的里程碑:Dart 2的发布。</p>
 <p>　　Flutter强大的社区增长也可以通过其他方式感受到。在<a href="https://stackoverflow.com/questions/tagged/flutter" target="_blank" rel="external">StackOverflow</a>上，我们看到对Flutter的兴趣日益增长，发布，回答和查看了许多新问题，如下图所示：</p>
-<center><img src="https://ws2.sinaimg.cn/large/006tNbRwgy1fvh0maqz4jj31160ha76b.jpg" alt=""><br><br>随着时间的推移用四个流行的UI框架中的每一个标记的StackOverflow问题视图的数量</center>
+<center><img src="https://ws2.sinaimg.cn/large/006tNbRwgy1fvh0maqz4jj31160ha76b.jpg" alt=""><br>随着时间的推移用四个流行的UI框架中的每一个标记的StackOverflow问题视图的数量</center>
 
 <p>　　Flutter<a href="https://github.com/flutter/engine/commit/20cc569f5961d4e896cb2f4651fd2049066bd47c" target="_blank" rel="external">从第一天开始</a>就是开源的。这是我们的设计初衷,我们的目标是用户能透明地了解我们的进展，并鼓励那些希望在所有平台上看到美好的用户体验的个人和公司为Flutter项目贡献一份力。</p>
 <h3 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h3><p>　　你可能想问如何<a href="https://flutter.io/upgrading/" target="_blank" rel="external">升级</a>到Flutter Release Preview 2？如果你已经在用beta版本，它只需要一个命令：<code>flutter upgrade</code></p>
@@ -1998,17 +1998,17 @@ Reboot to bootloader and flash the following:
     </entry>
     
     <entry>
-      <title><![CDATA[安慰]]></title>
-      <url>https://w4mxl.github.io/2011/02/20/%E5%AE%89%E6%85%B0/</url>
-      <content type="html"><![CDATA[<p>电影总让我想起些我似乎忘了的东西！</p>
-<p>明明钥匙在手上，却寻不到钥匙把门打开。看完《天若有情Ⅰ》，我就奇怪，那时吊儿郎当的我，现在怎么这么“乖”。在古惑仔横扫我整个初中那时，我们凡事只讲义气，只够买一根冰棒那分着吃，兄弟喜欢的女生不能有‘想法‘-_-#。那时候也是多么想能有辆摩托爽爽啊！事实上我们猛踩单车，也常有飞翔的感觉:P。可是，现在，我这么乖，每天乖乖去看书复习编程序！！其实，我们当然是知道的，你懂的，可是。。。所以，常常只能自寻刺激，dota啊，编程，喝酒，，，云云~~。玩后，又没劲！当然现在更多人乐意谈个小恋爱很好:-)。老实说我常注视他们，不是嫉妒羡慕恨，只是想看看他们真的快乐吗？！两部跟摩托车有关的电影，华仔一部，发哥一部，了作安慰。借用电台弛姐的话：晚安，我亲爱的各位。</p>
+      <title><![CDATA[Back to School]]></title>
+      <url>https://w4mxl.github.io/2011/02/20/Back-to-School/</url>
+      <content type="html"><![CDATA[<p>　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的，快乐的长大。</p>
 ]]></content>
     </entry>
     
     <entry>
-      <title><![CDATA[Back to School]]></title>
-      <url>https://w4mxl.github.io/2011/02/20/Back-to-School/</url>
-      <content type="html"><![CDATA[<p>　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的，快乐的长大。</p>
+      <title><![CDATA[安慰]]></title>
+      <url>https://w4mxl.github.io/2011/02/20/%E5%AE%89%E6%85%B0/</url>
+      <content type="html"><![CDATA[<p>电影总让我想起些我似乎忘了的东西！</p>
+<p>明明钥匙在手上，却寻不到钥匙把门打开。看完《天若有情Ⅰ》，我就奇怪，那时吊儿郎当的我，现在怎么这么“乖”。在古惑仔横扫我整个初中那时，我们凡事只讲义气，只够买一根冰棒那分着吃，兄弟喜欢的女生不能有‘想法‘-_-#。那时候也是多么想能有辆摩托爽爽啊！事实上我们猛踩单车，也常有飞翔的感觉:P。可是，现在，我这么乖，每天乖乖去看书复习编程序！！其实，我们当然是知道的，你懂的，可是。。。所以，常常只能自寻刺激，dota啊，编程，喝酒，，，云云~~。玩后，又没劲！当然现在更多人乐意谈个小恋爱很好:-)。老实说我常注视他们，不是嫉妒羡慕恨，只是想看看他们真的快乐吗？！两部跟摩托车有关的电影，华仔一部，发哥一部，了作安慰。借用电台弛姐的话：晚安，我亲爱的各位。</p>
 ]]></content>
     </entry>
     
