@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Wml'Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="创建一个新的 Stateless 或者 Stateful widget只需输入 stless 即可创建一个像这样的 Stateless widget：  或者输入 stful 来快速创建一个 Stateful widget：  如果想从已经建好的 Stateless widget 转换成 Stateful widget，该怎么做呢？我之前的做法是快速新建一个同名的 Stateful widget，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="提升 Flutter 开发效率的快捷键">
+<meta property="og:url" content="https://w4mxl.github.io/2019/02/12/flutter-ide-shortcuts-for-fast-development/index.html">
+<meta property="og:site_name" content="Wml&#39;Blog">
+<meta property="og:description" content="创建一个新的 Stateless 或者 Stateful widget只需输入 stless 即可创建一个像这样的 Stateless widget：  或者输入 stful 来快速创建一个 Stateful widget：  如果想从已经建好的 Stateless widget 转换成 Stateful widget，该怎么做呢？我之前的做法是快速新建一个同名的 Stateful widget，">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://i.loli.net/2019/02/12/5c623f4ea52fb.gif">
+<meta property="og:image" content="https://i.loli.net/2019/02/12/5c623f4ebc6a0.gif">
+<meta property="og:image" content="https://i.loli.net/2019/02/12/5c624124e1b2e.gif">
+<meta property="og:image" content="https://i.loli.net/2019/02/12/5c624124d4e97.gif">
+<meta property="og:image" content="https://i.loli.net/2019/02/12/5c624123bfd70.gif">
+<meta property="og:image" content="https://i.loli.net/2019/02/12/5c62412406b6b.gif">
+<meta property="og:image" content="https://i.loli.net/2019/02/12/5c624123ec46a.gif">
+<meta property="og:image" content="https://i.loli.net/2019/02/12/5c624123c47c9.gif">
+<meta property="og:image" content="https://i.loli.net/2019/02/12/5c6243c21f5a6.gif">
+<meta property="og:image" content="https://i.loli.net/2019/02/12/5c6264c4c5c44.gif">
+<meta property="og:image" content="https://i.loli.net/2019/02/12/5c6264c57f89f.gif">
+<meta property="og:image" content="https://i.loli.net/2019/02/12/5c626567c0175.gif">
+<meta property="og:image" content="https://i.loli.net/2019/02/12/5c62656805b00.gif">
+<meta property="og:image" content="https://i.loli.net/2019/02/12/5c62677c483f8.gif">
+<meta property="og:image" content="https://i.loli.net/2019/02/12/5c626824df656.gif">
+<meta property="og:image" content="https://i.loli.net/2019/02/12/5c6268249128e.gif">
+<meta property="og:image" content="https://i.loli.net/2019/02/12/5c626b24de53a.png">
+<meta property="og:image" content="https://i.loli.net/2019/02/12/5c626b261b4e1.gif">
+<meta property="og:image" content="https://i.loli.net/2019/02/12/5c626b255c53b.gif">
+<meta property="og:updated_time" content="2019-02-12T07:33:22.740Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="提升 Flutter 开发效率的快捷键">
+<meta name="twitter:description" content="创建一个新的 Stateless 或者 Stateful widget只需输入 stless 即可创建一个像这样的 Stateless widget：  或者输入 stful 来快速创建一个 Stateful widget：  如果想从已经建好的 Stateless widget 转换成 Stateful widget，该怎么做呢？我之前的做法是快速新建一个同名的 Stateful widget，">
+<meta name="twitter:image" content="https://i.loli.net/2019/02/12/5c623f4ea52fb.gif">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.2',
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://w4mxl.github.io/2019/02/12/flutter-ide-shortcuts-for-fast-development/"/>
+
+
+
+
+
+  <title>提升 Flutter 开发效率的快捷键 | Wml'Blog</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?08742edf3a23f3234294233438dd666e";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wml'Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2019/02/12/flutter-ide-shortcuts-for-fast-development/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wml">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wml'Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">提升 Flutter 开发效率的快捷键</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-12T11:14:12+08:00">
+                2019-02-12
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-02-12T15:33:22+08:00">
+                2019-02-12
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Flutter/" itemprop="url" rel="index">
+                    <span itemprop="name">Flutter</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/02/12/flutter-ide-shortcuts-for-fast-development/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2019/02/12/flutter-ide-shortcuts-for-fast-development/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2019/02/12/flutter-ide-shortcuts-for-fast-development/" class="leancloud_visitors" data-flag-title="提升 Flutter 开发效率的快捷键">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h4 id="创建一个新的-Stateless-或者-Stateful-widget"><a href="#创建一个新的-Stateless-或者-Stateful-widget" class="headerlink" title="创建一个新的 Stateless 或者 Stateful widget"></a>创建一个新的 Stateless 或者 Stateful widget</h4><p>只需输入 <code>stless</code> 即可创建一个像这样的 Stateless widget：</p>
+<p><img src="https://i.loli.net/2019/02/12/5c623f4ea52fb.gif" alt="1_lfehNLtasYJUFEj7qv1ETw.gif"></p>
+<p>或者输入 <code>stful</code> 来快速创建一个 Stateful widget：</p>
+<p><img src="https://i.loli.net/2019/02/12/5c623f4ebc6a0.gif" alt="1_NjScxI6JzLWfCfe_04H1rQ.gif"></p>
+<p>如果想从已经建好的 Stateless widget 转换成 Stateful widget，该怎么做呢？我之前的做法是快速新建一个同名的 Stateful widget，然后手动 copy、paste 之前的代码。虽然也可以，就是有点慢。这里其实有个更高效的办法实现。</p>
+<p>您可以将光标放在 <code>StatelessWidget</code> 上，按 <code>Alt + Enter</code> 快捷键（Windows 和 Mac 一样）并单击 <code>Convert to StatefulWidget</code> 就可以了。</p>
+<p><img src="https://i.loli.net/2019/02/12/5c624124e1b2e.gif" alt="1_Tz844vh_0P8TUyXTnNevQg.gif"></p>
+<a id="more"></a>
+<h4 id="Alt-Enter-快捷键的其它用法"><a href="#Alt-Enter-快捷键的其它用法" class="headerlink" title="Alt + Enter 快捷键的其它用法"></a><code>Alt + Enter</code> 快捷键的其它用法</h4><p>您可以单击选中任何 widget，然后按 <code>Alt + Enter</code> 查看您对该特定 widget 的可选项。例如：</p>
+<ul>
+<li><p>Add a Padding Around a Widget<br><img src="https://i.loli.net/2019/02/12/5c624124d4e97.gif" alt="1_u3VT93FfmmuyHQ_4TBhzMA.gif"></p>
+</li>
+<li><p>Center a Widget<br><img src="https://i.loli.net/2019/02/12/5c624123bfd70.gif" alt="1_zrRkMd-Uyu-tbiHizeXFkQ.gif"></p>
+</li>
+<li><p>Wrap with a Container, Column, Row or any other Widget<br><img src="https://i.loli.net/2019/02/12/5c62412406b6b.gif" alt="1_9-opmfKG2Tkabpc4x0BMgA.gif"><br><img src="https://i.loli.net/2019/02/12/5c624123ec46a.gif" alt="1_82Hi-Fvb2quvc8LZmjSMxw.gif"><br><img src="https://i.loli.net/2019/02/12/5c624123c47c9.gif" alt="1_mlkuo1XLveXZ6pohcylKxg.gif"></p>
+</li>
+<li><p>Don’t like a widget? Remove it with the Magic Wand.<br><img src="https://i.loli.net/2019/02/12/5c6243c21f5a6.gif" alt="1_nV-HJr5F2Zsw-_AZ1pqKSw.gif"></p>
+</li>
+</ul>
+<p>总而言之，<code>Alt + Enter</code> 快捷键在 flutter 开发中特别有用，在您想要对特定 widget 进行某些操作时，请习惯尝试使用这个快捷。相信我，一定能提升开发效率的。</p>
+<h4 id="查看-widget-的源码"><a href="#查看-widget-的源码" class="headerlink" title="查看 widget 的源码"></a>查看 widget 的源码</h4><p>对于新手来说，对 widget 的属性方法等都还不是很了解，查看源码是件高频的事情。加上 flutter 官方为每个 widget 添加了很详细的注释说明，方便开发者查阅学习。</p>
+<p>之前我都是手动按住 command（Mac）或 control（Windows）键再 click 跳转过去查看源码的，其实可以通过快捷键 <code>Ctrl + B</code>（Windows）或 <code>Command + B</code>（Mac），也可以使用 <code>F4 / Control + Enter</code>（Windows）或 <code>F4 / Command + Down Arrow</code>（Mac），达到同样目的。</p>
+<p><img src="https://i.loli.net/2019/02/12/5c6264c4c5c44.gif" alt="1_Thy02n4cbt_dZFS4Exw4RQ.gif"></p>
+<h4 id="在当前页面查看-Widget-的构造方法包含的属性"><a href="#在当前页面查看-Widget-的构造方法包含的属性" class="headerlink" title="在当前页面查看 Widget 的构造方法包含的属性"></a>在当前页面查看 Widget 的构造方法包含的属性</h4><p>上面介绍的通过快捷键 <code>Ctrl + B</code>（Windows）或 <code>Command + B</code>（Mac）来查看 widget 的源码，如果您只是想快速看一下 widget 的有哪些属性，可以通过另一个快捷键 <code>Ctrl+Shift+I</code>（Windows）或 <code>Command + Y</code>（Mac）做到。</p>
+<p><img src="https://i.loli.net/2019/02/12/5c6264c57f89f.gif" alt="1_9bvEQBMUzyJo33i_tE1dIg.gif"></p>
+<h4 id="快速选择整个-widget"><a href="#快速选择整个-widget" class="headerlink" title="快速选择整个 widget"></a>快速选择整个 widget</h4><p><img src="https://i.loli.net/2019/02/12/5c626567c0175.gif" alt="1_ajtutELoL4N7G8sldmCMuw.gif"></p>
+<p>▲ 一般操作。如果 widget 包含的代码比较多，嵌套深的话这样操作就会显得很麻烦且容易错。</p>
+<p><img src="https://i.loli.net/2019/02/12/5c62656805b00.gif" alt="1_yOO-rTQUAROmxXp2qwiDzg.gif"></p>
+<p>▲ 推荐使用快捷键操作。<code>Ctrl + W</code>（Windows）或 <code>Option + Up</code>（Mac）</p>
+<h4 id="代码格式化"><a href="#代码格式化" class="headerlink" title="代码格式化"></a>代码格式化</h4><p>这个快捷键就跟其它使用时没啥区别了：<br><code>Control + Alt + L</code>（Windows）或 <code>Command + Option + L</code>（Mac）</p>
+<p><img src="https://i.loli.net/2019/02/12/5c62677c483f8.gif" alt="1_DXX6iuWiGC7sNSPUc7UZnA.gif"></p>
+<h4 id="重构重命名（Refactor-Renaming）"><a href="#重构重命名（Refactor-Renaming）" class="headerlink" title="重构重命名（Refactor Renaming）"></a>重构重命名（Refactor Renaming）</h4><p>这个快捷键也跟其它时候使用时没区别，大家应该很熟悉了：<br><code>Shift + F6</code>（Windows 和 Mac 一样）。</p>
+<p><img src="https://i.loli.net/2019/02/12/5c626824df656.gif" alt="1_wtt7dY93JmRG3CKO1KHDLQ.gif"></p>
+<h4 id="移除没用的-imports（Optimize-imports）"><a href="#移除没用的-imports（Optimize-imports）" class="headerlink" title="移除没用的 imports（Optimize imports）"></a>移除没用的 imports（Optimize imports）</h4><p><code>Control + Alt + O</code>（Windows）或 <code>Control + Option + O</code>（Mac）</p>
+<p><img src="https://i.loli.net/2019/02/12/5c6268249128e.gif" alt="1_mEAzXNg-XuPPgPlzJMaViA.gif"></p>
+<h4 id="Flutter-Outline"><a href="#Flutter-Outline" class="headerlink" title="Flutter Outline"></a>Flutter Outline</h4><p>Flutter Outline 不是快捷键了，它是 IDE 给开发者提供的一个非常有用的工具。所以我这里也一并列出来。</p>
+<p>首先打开 Outline 窗口后，我们可以统览整个 dart 文件的结构，包括 widget 树的子孙层级，清晰明了。<br><img src="https://i.loli.net/2019/02/12/5c626b24de53a.png" alt="1_QpZJlHhPngXuR9QoRM5gKQ (1).png"></p>
+<p>开发过程中，您可以使用 Alt + Enter 执行大部分操作，例如使用 Center a Widget，但 Flutter Outline 选项卡下还有更多可用的东西！如下图中红色区域的三个按钮提供的功能。</p>
+<image src="https://ws4.sinaimg.cn/large/006tNc79gy1g03n66kuarj30hy05wjry.jpg" width="300">
+
+
+<h5 id="将代码提取到方法中（Extract-code-into-a-method）"><a href="#将代码提取到方法中（Extract-code-into-a-method）" class="headerlink" title="将代码提取到方法中（Extract code into a method）"></a>将代码提取到方法中（Extract code into a method）</h5><p>如果你觉得你正在编写一个很长而且应该是自定义 Widget 的 Widget，那么你可以使用这个工具为你提供的方法，而不是手动将代码移到一个方法中。</p>
+<p><img src="https://i.loli.net/2019/02/12/5c626b261b4e1.gif" alt="1__7Glff7_3PW49C7AOVZ40A.gif"></p>
+<h5 id="上下移动-widget"><a href="#上下移动-widget" class="headerlink" title="上下移动 widget"></a>上下移动 widget</h5><p>Outline 可以做的另一个很效率的事情是，如果 widget 中有多个子 widget，您可以轻松地重新排列它们的顺序：</p>
+<p><img src="https://i.loli.net/2019/02/12/5c626b255c53b.gif" alt="1_sBaD3TZE_vFfXrNr4HFrAg.gif"></p>
+<p><strong> 附注：</strong></p>
+<p>写这篇文章其实是想对刚刚在 Medium 上阅读到的 <a href="https://medium.com/flutter-community/flutter-ide-shortcuts-for-faster-development-2ef45c51085b" target="_blank" rel="external">另一篇文章</a> 的完善，那篇文章总结的快捷键对新手来说已经很好，gif 动图让读者也浅显易学，我文章里的 gif 图也是挪用自那里。其中有个别操作我之前也不知道，从她那里学到了很开心。不过有个问题是，她文章中提及的所有快捷键都仅基于 Windows 提供的，并没有相对应的 Mac 版本，因此我在她基础上作补充完善，希望能方便到更多的读者。</p>
+<p>同样，如果您有其它的上面未列出的快捷操作，欢迎评论告知我，谢谢。后面我也会将我知道的更多 flutter 提升开发效率的方法记录在这篇文章中。</p>
+<hr>
+<p>延伸阅读：</p>
+<p><a href="https://medium.com/coding-with-flutter/flutter-my-favourite-keyboard-shortcuts-63f6474afc8c" target="_blank" rel="external">Flutter: My favourite keyboard shortcuts</a></p>
+</image>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/26/flutter-Intl-Localizations/" rel="next" title="使用 Intl 包让 Flutter app 支持多语言">
+                <i class="fa fa-chevron-left"></i> 使用 Intl 包让 Flutter app 支持多语言
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          
+            <img class="site-author-image" itemprop="image"
+              src="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460"
+              alt="Wml" />
+          
+            <p class="site-author-name" itemprop="name">Wml</p>
+            <p class="site-description motion-element" itemprop="description">Life's A Struggle!</p>
+        </div>
+
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/archives/">
+            
+                <span class="site-state-item-count">185</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/w4mxl" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>GitHub</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/w4mxl" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建一个新的-Stateless-或者-Stateful-widget"><span class="nav-number">1.</span> <span class="nav-text">创建一个新的 Stateless 或者 Stateful widget</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Alt-Enter-快捷键的其它用法"><span class="nav-number">2.</span> <span class="nav-text">Alt + Enter 快捷键的其它用法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看-widget-的源码"><span class="nav-number">3.</span> <span class="nav-text">查看 widget 的源码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#在当前页面查看-Widget-的构造方法包含的属性"><span class="nav-number">4.</span> <span class="nav-text">在当前页面查看 Widget 的构造方法包含的属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#快速选择整个-widget"><span class="nav-number">5.</span> <span class="nav-text">快速选择整个 widget</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码格式化"><span class="nav-number">6.</span> <span class="nav-text">代码格式化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#重构重命名（Refactor-Renaming）"><span class="nav-number">7.</span> <span class="nav-text">重构重命名（Refactor Renaming）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#移除没用的-imports（Optimize-imports）"><span class="nav-number">8.</span> <span class="nav-text">移除没用的 imports（Optimize imports）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Flutter-Outline"><span class="nav-number">9.</span> <span class="nav-text">Flutter Outline</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#将代码提取到方法中（Extract-code-into-a-method）"><span class="nav-number">9.1.</span> <span class="nav-text">将代码提取到方法中（Extract code into a method）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#上下移动-widget"><span class="nav-number">9.2.</span> <span class="nav-text">上下移动 widget</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Wml</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.2</div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://w4mxl.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'https://w4mxl.github.io/2019/02/12/flutter-ide-shortcuts-for-fast-development/';
+          this.page.identifier = '2019/02/12/flutter-ide-shortcuts-for-fast-development/';
+          this.page.title = '提升 Flutter 开发效率的快捷键';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://w4mxl.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("YRVJmKPkW8nxTT84v8n2DLWI-gzGzoHsz", "nCieC7gQPQlDCs6rLlv9qjqv");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

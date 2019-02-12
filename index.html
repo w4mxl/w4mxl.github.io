@@ -56,17 +56,35 @@
   
 
   
+    
+      
+    
 
-  
-
+    
   
 
   
 
   
     
+      
     
-    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -116,7 +134,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '5.1.2',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
@@ -171,7 +189,7 @@
     
   
 
-  <div class="container sidebar-position-left 
+  <div class="container sidebar-position-right 
   page-home">
     <div class="headband"></div>
 
@@ -260,6 +278,192 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2019/02/12/flutter-ide-shortcuts-for-fast-development/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wml">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wml'Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/12/flutter-ide-shortcuts-for-fast-development/" itemprop="url">提升 Flutter 开发效率的快捷键</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-12T11:14:12+08:00">
+                2019-02-12
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-02-12T15:33:22+08:00">
+                2019-02-12
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Flutter/" itemprop="url" rel="index">
+                    <span itemprop="name">Flutter</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/02/12/flutter-ide-shortcuts-for-fast-development/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2019/02/12/flutter-ide-shortcuts-for-fast-development/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2019/02/12/flutter-ide-shortcuts-for-fast-development/" class="leancloud_visitors" data-flag-title="提升 Flutter 开发效率的快捷键">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h4 id="创建一个新的-Stateless-或者-Stateful-widget"><a href="#创建一个新的-Stateless-或者-Stateful-widget" class="headerlink" title="创建一个新的 Stateless 或者 Stateful widget"></a>创建一个新的 Stateless 或者 Stateful widget</h4><p>只需输入 <code>stless</code> 即可创建一个像这样的 Stateless widget：</p>
+<p><img src="https://i.loli.net/2019/02/12/5c623f4ea52fb.gif" alt="1_lfehNLtasYJUFEj7qv1ETw.gif"></p>
+<p>或者输入 <code>stful</code> 来快速创建一个 Stateful widget：</p>
+<p><img src="https://i.loli.net/2019/02/12/5c623f4ebc6a0.gif" alt="1_NjScxI6JzLWfCfe_04H1rQ.gif"></p>
+<p>如果想从已经建好的 Stateless widget 转换成 Stateful widget，该怎么做呢？我之前的做法是快速新建一个同名的 Stateful widget，然后手动 copy、paste 之前的代码。虽然也可以，就是有点慢。这里其实有个更高效的办法实现。</p>
+<p>您可以将光标放在 <code>StatelessWidget</code> 上，按 <code>Alt + Enter</code> 快捷键（Windows 和 Mac 一样）并单击 <code>Convert to StatefulWidget</code> 就可以了。</p>
+<p><img src="https://i.loli.net/2019/02/12/5c624124e1b2e.gif" alt="1_Tz844vh_0P8TUyXTnNevQg.gif"></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/02/12/flutter-ide-shortcuts-for-fast-development/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2019/01/26/flutter-Intl-Localizations/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -279,7 +483,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/01/26/flutter-Intl-Localizations/" itemprop="url">使用Intl包让Flutter app支持多语言</a></h1>
+                <a class="post-title-link" href="/2019/01/26/flutter-Intl-Localizations/" itemprop="url">使用 Intl 包让 Flutter app 支持多语言</a></h1>
         
 
         <div class="post-meta">
@@ -307,8 +511,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-01-28T14:09:03+08:00">
-                2019-01-28
+              <time title="更新于" itemprop="dateModified" datetime="2019-02-12T11:17:05+08:00">
+                2019-02-12
               </time>
             
           </span>
@@ -354,7 +558,7 @@
 
           
           
-             <span id="/2019/01/26/flutter-Intl-Localizations/" class="leancloud_visitors" data-flag-title="使用Intl包让Flutter app支持多语言">
+             <span id="/2019/01/26/flutter-Intl-Localizations/" class="leancloud_visitors" data-flag-title="使用 Intl 包让 Flutter app 支持多语言">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -387,13 +591,13 @@
       
         
           <h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><ol>
-<li>在项目根目录下创建一个i10n-arb目录，该目录用于保存arb文件</li>
-<li>在lib目录下创建一个i10n的目录，该目录用于保存从arb文件生成的dart代码文件。</li>
-<li>在i10n目录下面，创建一个localization_intl.dart 文件，用来实现Localizations和Delegate类</li>
-<li>在localization_intl.dart 文件中添加需要国际化的属性</li>
-<li><code>flutter packages pub run intl_translation:extract_to_arb --output-dir=i10n-arb lib/i10n/localization_intl.dart</code> 通过这个intl_translation命令把项目中Intl API标识的属性和字符串生成arb文件</li>
-<li>基于上面生成的arb文件，创建其它我们想支持的语言对应的arb文件</li>
-<li><code>flutter packages pub run intl_translation:generate_from_arb --output-dir=lib/i10n --no-use-deferred-loading lib/i10n/localization_intl.dart i10n-arb/intl_*.arb</code>  根据arb生成dart文件</li>
+<li>在项目根目录下创建一个 i10n-arb 目录，该目录用于保存 arb 文件</li>
+<li>在 lib 目录下创建一个 i10n 的目录，该目录用于保存从 arb 文件生成的 dart 代码文件。</li>
+<li>在 i10n 目录下面，创建一个 localization_intl.dart 文件，用来实现 Localizations 和 Delegate 类</li>
+<li>在 localization_intl.dart 文件中添加需要国际化的属性</li>
+<li><code>flutter packages pub run intl_translation:extract_to_arb --output-dir=i10n-arb lib/i10n/localization_intl.dart</code> 通过这个 intl_translation 命令把项目中 Intl API 标识的属性和字符串生成 arb 文件</li>
+<li>基于上面生成的 arb 文件，创建其它我们想支持的语言对应的 arb 文件</li>
+<li><code>flutter packages pub run intl_translation:generate_from_arb --output-dir=lib/i10n --no-use-deferred-loading lib/i10n/localization_intl.dart i10n-arb/intl_*.arb</code>  根据 arb 生成 dart 文件</li>
 </ol>
           <!--noindex-->
           <div class="post-button text-center">
@@ -467,7 +671,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/01/25/ios-system-language/" itemprop="url">iOS上获取当前系统语言</a></h1>
+                <a class="post-title-link" href="/2019/01/25/ios-system-language/" itemprop="url">iOS 上获取当前系统语言</a></h1>
         
 
         <div class="post-meta">
@@ -542,7 +746,7 @@
 
           
           
-             <span id="/2019/01/25/ios-system-language/" class="leancloud_visitors" data-flag-title="iOS上获取当前系统语言">
+             <span id="/2019/01/25/ios-system-language/" class="leancloud_visitors" data-flag-title="iOS 上获取当前系统语言">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -754,7 +958,7 @@
 
       
         
-          <p>　　刚读了文章<a href="https://mp.weixin.qq.com/s/-snO0kvsA5i7wGVRIOCodA" target="_blank" rel="external">《一代巨擘邹文怀：他缔造的嘉禾驰骋影坛37年》</a>，作者戴天文。</p>
+          <p>　　刚读了文章 <a href="https://mp.weixin.qq.com/s/-snO0kvsA5i7wGVRIOCodA" target="_blank" rel="external">《一代巨擘邹文怀：他缔造的嘉禾驰骋影坛 37 年》</a>，作者戴天文。</p>
 <p>　　其实在这之前我不知道邹文怀的，一点都不了解他是怎样的人。是标题中的「嘉禾」让我产生的阅读兴趣，我相信但凡看电影的人都是知道「嘉禾」的吧。<br>
           <!--noindex-->
           <div class="post-button text-center">
@@ -935,7 +1139,7 @@
 
       
         
-          <p>　　刚去电信营业厅把我的177手机号给注销掉了。2015年我们搬到中宇花苑这边，装修好安装宽带的时候我选择办理的电信纯宽带业务。去年为了升级到电信宽带200M，考虑到电信宽带和电信手机套餐绑定一起使用会划算些就有了这个177手机号。一年合约，每个月¥199套餐费，含200M宽带+700分钟通话+无限流量。</p>
+          <p>　　刚去电信营业厅把我的 177 手机号给注销掉了。2015 年我们搬到中宇花苑这边，装修好安装宽带的时候我选择办理的电信纯宽带业务。去年为了升级到电信宽带 200M，考虑到电信宽带和电信手机套餐绑定一起使用会划算些就有了这个 177 手机号。一年合约，每个月 ¥199 套餐费，含 200M 宽带 + 700 分钟通话 + 无限流量。</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/11/17/change-my-plan-for-cellphone/#more" rel="contents">
@@ -1295,7 +1499,7 @@
 
       
         
-          <p>　　下班回家的地铁中，在 iPhone 上打开了 YouTube app，不知道它喜好算法是怎么做的，给我推荐了一个MV视频合集。我点开后从第一首开始播放。<br>
+          <p>　　下班回家的地铁中，在 iPhone 上打开了 YouTube app，不知道它喜好算法是怎么做的，给我推荐了一个 MV 视频合集。我点开后从第一首开始播放。<br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/11/12/a-mv-list-from-youtube/#more" rel="contents">
@@ -1475,7 +1679,7 @@
 
       
         
-          <h4 id="背景："><a href="#背景：" class="headerlink" title="背景："></a>背景：</h4><p>　　阅读某篇RSS文章时，跳转到利器的公众号，再从利器公众号来到了他们的微博，接着就看到了这则视频：《How AI can save our humanity | Kai-Fu Lee》。</p>
+          <h4 id="背景："><a href="#背景：" class="headerlink" title="背景："></a>背景：</h4><p>　　阅读某篇 RSS 文章时，跳转到利器的公众号，再从利器公众号来到了他们的微博，接着就看到了这则视频：《How AI can save our humanity | Kai-Fu Lee》。</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/10/20/watch-a-ted-video/#more" rel="contents">
@@ -1656,7 +1860,7 @@
       
         
           <blockquote>
-<p>《Life’s a struggle 》是宋岳庭先生的绝笔之作，寄托了他一生的经历和思考，是一首超越时代限制的作品。歌词包含了人世间的悲欢离合、精神与欲望的对立挣扎以及他对人性和灵魂的哲思。一气呵成的flow，开辟先河的双押，饱和完整的情绪表达，都融汇于整首歌曲。这首歌对中文说唱发展的意义空前绝后，也是中文Hip-hop的精神坐标。</p>
+<p>《Life’s a struggle 》是宋岳庭先生的绝笔之作，寄托了他一生的经历和思考，是一首超越时代限制的作品。歌词包含了人世间的悲欢离合、精神与欲望的对立挣扎以及他对人性和灵魂的哲思。一气呵成的 flow，开辟先河的双押，饱和完整的情绪表达，都融汇于整首歌曲。这首歌对中文说唱发展的意义空前绝后，也是中文 Hip-hop 的精神坐标。</p>
 </blockquote>
           <!--noindex-->
           <div class="post-button text-center">
@@ -1730,7 +1934,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/09/21/flutter-release-preview-2-pixel-perfect/" itemprop="url">(翻译)Flutter Release Preview 2 像素级别完美适配 iOS</a></h1>
+                <a class="post-title-link" href="/2018/09/21/flutter-release-preview-2-pixel-perfect/" itemprop="url">(翻译) Flutter Release Preview 2 像素级别完美适配 iOS</a></h1>
         
 
         <div class="post-meta">
@@ -1758,8 +1962,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-09-21T15:14:35+08:00">
-                2018-09-21
+              <time title="更新于" itemprop="dateModified" datetime="2019-02-12T11:17:05+08:00">
+                2019-02-12
               </time>
             
           </span>
@@ -1805,7 +2009,7 @@
 
           
           
-             <span id="/2018/09/21/flutter-release-preview-2-pixel-perfect/" class="leancloud_visitors" data-flag-title="(翻译)Flutter Release Preview 2 像素级别完美适配 iOS">
+             <span id="/2018/09/21/flutter-release-preview-2-pixel-perfect/" class="leancloud_visitors" data-flag-title="(翻译) Flutter Release Preview 2 像素级别完美适配 iOS">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1840,192 +2044,12 @@
           <blockquote>
 <p>原文:  <a href="https://developers.googleblog.com/2018/09/flutter-release-preview-2-pixel-perfect.html" target="_blank" rel="external">Flutter Release Preview 2: Pixel-Perfect on iOS</a><br>Posted by the Flutter Team at Google</p>
 </blockquote>
-<p>　　Flutter 是谷歌发布的新的移动应用开发工具包(<code>译者注: 2017.05.17 Google I/O 2017 - Flutter 首次公布，Alpha (v0.0.6)</code>)，用于快速在iOS和Android上制作漂亮的原生界面。今天，在上海谷歌开发者日的主题演讲中，我们宣布了<strong>Flutter Release Preview 2</strong>： Flutter 1.0 前的最后一个重要里程碑。</p>
+<p>　　Flutter 是谷歌发布的新的移动应用开发工具包 (<code>译者注: 2017.05.17 Google I/O 2017 - Flutter 首次公布，Alpha (v0.0.6)</code>)，用于快速在 iOS 和 Android 上制作漂亮的原生界面。今天，在上海谷歌开发者日的主题演讲中，我们宣布了 <strong>Flutter Release Preview 2</strong>： Flutter 1.0 前的最后一个重要里程碑。</p>
 <p><img src="https://ws1.sinaimg.cn/large/006tNbRwgy1fvgzjfe351j318g08c75c.jpg" alt=""></p>
-<p>　　我们在今年2月份的<a href="https://medium.com/flutter-io/announcing-flutter-beta-1-build-beautiful-native-apps-dc142aea74c0" target="_blank" rel="external">初始测试版本</a>到今年夏天早些时候的<a href="https://developers.googleblog.com/2018/06/flutter-release-preview-1-live-from.html" target="_blank" rel="external">首个发布预览版</a>的可用性基础上,此版本继续完成核心方案和提高质量的工作。我们Flutter团队现在完全专注于完成我们的1.0版本。</p>
+<p>　　我们在今年 2 月份的 <a href="https://medium.com/flutter-io/announcing-flutter-beta-1-build-beautiful-native-apps-dc142aea74c0" target="_blank" rel="external">初始测试版本</a> 到今年夏天早些时候的 <a href="https://developers.googleblog.com/2018/06/flutter-release-preview-1-live-from.html" target="_blank" rel="external">首个发布预览版</a> 的可用性基础上，此版本继续完成核心方案和提高质量的工作。我们 Flutter 团队现在完全专注于完成我们的 1.0 版本。</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/09/21/flutter-release-preview-2-pixel-perfect/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2018/09/10/after-listen-storyfm-e118/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wml">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wml'Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/10/after-listen-storyfm-e118/" itemprop="url">故事FM.E118.中产家庭的教育自救：我的孩子在家上学，听后</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-10T22:20:00+08:00">
-                2018-09-10
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2018-09-11T11:41:58+08:00">
-                2018-09-11
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Life-s/" itemprop="url" rel="index">
-                    <span itemprop="name">Life's</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/09/10/after-listen-storyfm-e118/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/09/10/after-listen-storyfm-e118/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2018/09/10/after-listen-storyfm-e118/" class="leancloud_visitors" data-flag-title="故事FM.E118.中产家庭的教育自救：我的孩子在家上学，听后">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>　　故事FM.E118《中产家庭的教育自救：我的孩子在家上学》，这期播客是在下班回家的地铁上听的。听后，有一些想记录一下。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/09/10/after-listen-storyfm-e118/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -2116,7 +2140,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">184</span>
+                <span class="site-state-item-count">185</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -2138,7 +2162,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

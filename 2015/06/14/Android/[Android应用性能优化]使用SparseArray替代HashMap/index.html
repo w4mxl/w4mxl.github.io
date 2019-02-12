@@ -56,17 +56,35 @@
   
 
   
+    
+      
+    
 
-  
-
+    
   
 
   
 
   
     
+      
     
-    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -97,20 +115,20 @@
 
 
 
-<meta name="description" content="今天在用 Android Studio &amp;gt; Analyze &amp;gt; Inspect Code 对目前项目进行检查后给出了很多优化建议，其中一类是关于用SparseArray替代HashMap的。 图1:意思是说用SparseArray来替代，以获取更好性能 图2:图1问题对应的实际代码块 老实说我之前开发中用HashMap比较多，还真没用过SparseArray，当看到建议后就去googl">
+<meta name="description" content="今天在用 Android Studio &amp;gt; Analyze &amp;gt; Inspect Code 对目前项目进行检查后给出了很多优化建议，其中一类是关于用 SparseArray 替代 HashMap 的。 图 1: 意思是说用 SparseArray 来替代，以获取更好性能 图 2: 图 1 问题对应的实际代码块 老实说我之前开发中用 HashMap 比较多，还真没用过 SparseArra">
 <meta name="keywords" content="Android应用性能优化">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用SparseArray替代HashMap">
+<meta property="og:title" content="使用 SparseArray 替代 HashMap">
 <meta property="og:url" content="https://w4mxl.github.io/2015/06/14/Android/[Android应用性能优化]使用SparseArray替代HashMap/index.html">
 <meta property="og:site_name" content="Wml&#39;Blog">
-<meta property="og:description" content="今天在用 Android Studio &amp;gt; Analyze &amp;gt; Inspect Code 对目前项目进行检查后给出了很多优化建议，其中一类是关于用SparseArray替代HashMap的。 图1:意思是说用SparseArray来替代，以获取更好性能 图2:图1问题对应的实际代码块 老实说我之前开发中用HashMap比较多，还真没用过SparseArray，当看到建议后就去googl">
+<meta property="og:description" content="今天在用 Android Studio &amp;gt; Analyze &amp;gt; Inspect Code 对目前项目进行检查后给出了很多优化建议，其中一类是关于用 SparseArray 替代 HashMap 的。 图 1: 意思是说用 SparseArray 来替代，以获取更好性能 图 2: 图 1 问题对应的实际代码块 老实说我之前开发中用 HashMap 比较多，还真没用过 SparseArra">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://ww3.sinaimg.cn/mw690/62ed8609gw1et3lvdgva1j213s058gn1.jpg">
 <meta property="og:image" content="http://ww3.sinaimg.cn/mw690/62ed8609gw1et3lvcylsgj20yy05sjsk.jpg">
 <meta property="og:updated_time" content="2016-01-13T14:57:24.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用SparseArray替代HashMap">
-<meta name="twitter:description" content="今天在用 Android Studio &amp;gt; Analyze &amp;gt; Inspect Code 对目前项目进行检查后给出了很多优化建议，其中一类是关于用SparseArray替代HashMap的。 图1:意思是说用SparseArray来替代，以获取更好性能 图2:图1问题对应的实际代码块 老实说我之前开发中用HashMap比较多，还真没用过SparseArray，当看到建议后就去googl">
+<meta name="twitter:title" content="使用 SparseArray 替代 HashMap">
+<meta name="twitter:description" content="今天在用 Android Studio &amp;gt; Analyze &amp;gt; Inspect Code 对目前项目进行检查后给出了很多优化建议，其中一类是关于用 SparseArray 替代 HashMap 的。 图 1: 意思是说用 SparseArray 来替代，以获取更好性能 图 2: 图 1 问题对应的实际代码块 老实说我之前开发中用 HashMap 比较多，还真没用过 SparseArra">
 <meta name="twitter:image" content="http://ww3.sinaimg.cn/mw690/62ed8609gw1et3lvdgva1j213s058gn1.jpg">
 
 
@@ -121,7 +139,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '5.1.2',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
@@ -147,7 +165,7 @@
 
 
 
-  <title>使用SparseArray替代HashMap | Wml'Blog</title>
+  <title>使用 SparseArray 替代 HashMap | Wml'Blog</title>
   
 
 
@@ -176,7 +194,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -281,7 +299,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">使用SparseArray替代HashMap</h1>
+          <h1 class="post-title" itemprop="name headline">使用 SparseArray 替代 HashMap</h1>
         
 
         <div class="post-meta">
@@ -356,7 +374,7 @@
 
           
           
-             <span id="/2015/06/14/Android/[Android应用性能优化]使用SparseArray替代HashMap/" class="leancloud_visitors" data-flag-title="使用SparseArray替代HashMap">
+             <span id="/2015/06/14/Android/[Android应用性能优化]使用SparseArray替代HashMap/" class="leancloud_visitors" data-flag-title="使用 SparseArray 替代 HashMap">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -387,16 +405,16 @@
       
 
       
-        <p>今天在用 Android Studio &gt; Analyze &gt; Inspect Code 对目前项目进行检查后给出了很多优化建议，其中一类是关于用SparseArray替代HashMap的。</p>
-<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1et3lvdgva1j213s058gn1.jpg" alt=""><br>图1:意思是说用SparseArray<e>来替代，以获取更好性能</e></p>
-<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1et3lvcylsgj20yy05sjsk.jpg" alt=""><br>图2:图1问题对应的实际代码块</p>
-<p>老实说我之前开发中用HashMap比较多，还真没用过SparseArray，当看到建议后就去google了解它。</p>
+        <p>今天在用 Android Studio &gt; Analyze &gt; Inspect Code 对目前项目进行检查后给出了很多优化建议，其中一类是关于用 SparseArray 替代 HashMap 的。</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1et3lvdgva1j213s058gn1.jpg" alt=""><br>图 1: 意思是说用 SparseArray<e> 来替代，以获取更好性能</e></p>
+<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1et3lvcylsgj20yy05sjsk.jpg" alt=""><br>图 2: 图 1 问题对应的实际代码块</p>
+<p>老实说我之前开发中用 HashMap 比较多，还真没用过 SparseArray，当看到建议后就去 google 了解它。</p>
 <blockquote>
-<p>SparseArray是android里为<interger,object>这样的Hashmap而专门写的类，目的是提高效率，其核心是折半查找函数（binarySearch）。</interger,object></p>
+<p>SparseArray 是 android 里为 &lt; Interger,Object &gt; 这样的 Hashmap 而专门写的类，目的是提高效率，其核心是折半查找函数（binarySearch）。</p>
 </blockquote>
-<p>我这里就结合我自己项目说下当我知道了SparseArray优势后是怎么用SparseArray替代HashMap的。至于SparseArray更具体的原理介绍网络上写的很好的已经很多，比如<a href="http://liuzhichao.com/p/832.html" target="_blank" rel="external">这篇</a>。</p>
-<h4 id="修改之前-HosBuildingFloorAdapter-java-："><a href="#修改之前-HosBuildingFloorAdapter-java-：" class="headerlink" title="修改之前(HosBuildingFloorAdapter.java)："></a>修改之前(HosBuildingFloorAdapter.java)：</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">HashMap&lt;Integer, String&gt; hashMap;<span class="comment">//buildingId、buildingName的捆绑</span></div><div class="line"></div><div class="line"><span class="comment">// Adapter构造方法中对hashMap实例化</span></div><div class="line">hashMap =  <span class="keyword">new</span> HashMap&lt;Integer, String&gt;();</div><div class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; buildings; i++) &#123;</div><div class="line">    hashMap.put(buildingListEntities.get(i).getBuildingId(), buildingListEntities.get(i).getBuildingName());</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// Adapter的getHeaderView中取值</span></div><div class="line"><span class="keyword">for</span> (Map.Entry&lt;Integer, String&gt; entry : hashMap.entrySet()) &#123;</div><div class="line">    <span class="keyword">if</span> (floorListEntities.get(position).getBuildingId() == entry.getKey()) &#123;</div><div class="line">        holder.text.setText(entry.getValue());</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h4 id="修改之后"><a href="#修改之后" class="headerlink" title="修改之后:"></a>修改之后:</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">SparseArray&lt;String&gt; stringSparseArray;</div><div class="line"></div><div class="line"><span class="comment">// Adapter构造方法中对stringSparseArray实例化</span></div><div class="line">stringSparseArray = <span class="keyword">new</span> SparseArray&lt;&gt;();</div><div class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; buildings; i++) &#123;</div><div class="line">    stringSparseArray.put(buildingListEntities.get(i).getBuildingId(), buildingListEntities.get(i).getBuildingName());</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// Adapter的getHeaderView中取值</span></div><div class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; stringSparseArray.size(); i++) &#123;</div><div class="line">    <span class="keyword">int</span> key = stringSparseArray.keyAt(i);</div><div class="line">    <span class="keyword">if</span> (floorListEntities.get(position).getBuildingId() == key) &#123;</div><div class="line">        holder.text.setText(stringSparseArray.get(key));</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>我这里就结合我自己项目说下当我知道了 SparseArray 优势后是怎么用 SparseArray 替代 HashMap 的。至于 SparseArray 更具体的原理介绍网络上写的很好的已经很多，比如 <a href="http://liuzhichao.com/p/832.html" target="_blank" rel="external">这篇</a>。</p>
+<h4 id="修改之前-HosBuildingFloorAdapter-java-："><a href="#修改之前-HosBuildingFloorAdapter-java-：" class="headerlink" title="修改之前 (HosBuildingFloorAdapter.java)："></a>修改之前 (HosBuildingFloorAdapter.java)：</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">HashMap&lt;Integer, String&gt; hashMap;<span class="comment">//buildingId、buildingName 的捆绑 </span></div><div class="line"></div><div class="line"><span class="comment">// Adapter 构造方法中对 hashMap 实例化 </span></div><div class="line">hashMap =  <span class="keyword">new</span> HashMap&lt;Integer, String&gt;();</div><div class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; buildings; i++) &#123;</div><div class="line">    hashMap.put (buildingListEntities.get (i).getBuildingId (), buildingListEntities.get (i).getBuildingName ());</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// Adapter 的 getHeaderView 中取值 </span></div><div class="line"><span class="keyword">for</span> (Map.Entry&lt;Integer, String&gt; entry : hashMap.entrySet ()) &#123;</div><div class="line">    <span class="keyword">if</span> (floorListEntities.get (position).getBuildingId () == entry.getKey ()) &#123;</div><div class="line">        holder.text.setText (entry.getValue ());</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="修改之后"><a href="#修改之后" class="headerlink" title="修改之后:"></a>修改之后:</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">SparseArray&lt;String&gt; stringSparseArray;</div><div class="line"></div><div class="line"><span class="comment">// Adapter 构造方法中对 stringSparseArray 实例化 </span></div><div class="line">stringSparseArray = <span class="keyword">new</span> SparseArray&lt;&gt;();</div><div class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; buildings; i++) &#123;</div><div class="line">    stringSparseArray.put (buildingListEntities.get (i).getBuildingId (), buildingListEntities.get (i).getBuildingName ());</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// Adapter 的 getHeaderView 中取值 </span></div><div class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; stringSparseArray.size (); i++) &#123;</div><div class="line">    <span class="keyword">int</span> key = stringSparseArray.keyAt (i);</div><div class="line">    <span class="keyword">if</span> (floorListEntities.get (position).getBuildingId () == key) &#123;</div><div class="line">        holder.text.setText (stringSparseArray.get (key));</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -436,8 +454,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/06/17/Android/ScrollView下嵌套 ListView(GridView) 冲突导致显示不全的问题/" rel="prev" title="ScrollView下嵌套 ListView(GridView) 冲突导致显示不全的问题">
-                ScrollView下嵌套 ListView(GridView) 冲突导致显示不全的问题 <i class="fa fa-chevron-right"></i>
+              <a href="/2015/06/17/Android/ScrollView下嵌套 ListView(GridView) 冲突导致显示不全的问题/" rel="prev" title="ScrollView 下嵌套 ListView (GridView) 冲突导致显示不全的问题">
+                ScrollView 下嵌套 ListView (GridView) 冲突导致显示不全的问题 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -525,7 +543,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">184</span>
+                <span class="site-state-item-count">185</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -547,7 +565,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -603,7 +621,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#修改之前-HosBuildingFloorAdapter-java-："><span class="nav-number">1.</span> <span class="nav-text">修改之前(HosBuildingFloorAdapter.java)：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改之后"><span class="nav-number">2.</span> <span class="nav-text">修改之后:</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#修改之前-HosBuildingFloorAdapter-java-："><span class="nav-number">1.</span> <span class="nav-text">修改之前 (HosBuildingFloorAdapter.java)：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改之后"><span class="nav-number">2.</span> <span class="nav-text">修改之后:</span></a></li></ol></div>
             
 
           </div>
@@ -758,7 +776,7 @@
         var disqus_config = function () {
           this.page.url = 'https://w4mxl.github.io/2015/06/14/Android/[Android应用性能优化]使用SparseArray替代HashMap/';
           this.page.identifier = '2015/06/14/Android/[Android应用性能优化]使用SparseArray替代HashMap/';
-          this.page.title = '使用SparseArray替代HashMap';
+          this.page.title = '使用 SparseArray 替代 HashMap';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://w4mxl.disqus.com/embed.js';

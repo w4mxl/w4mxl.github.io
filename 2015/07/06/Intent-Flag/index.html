@@ -56,17 +56,35 @@
   
 
   
+    
+      
+    
 
-  
-
+    
   
 
   
 
   
     
+      
     
-    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -97,17 +115,17 @@
 
 
 
-<meta name="description" content="这篇是想接着上篇「Activity的启动模式」，从实际需求场景的出发介绍下Intent与启动模式相关的Flag使用。(注:并为将所有 Flag 介绍完全，因为有些我没实际用过可能还没有理解足够深刻，只写个人实际使用过并觉得理解到位了的，后续会补充) 常见需求场景需求1:  前提: 下面的 Activity A B C D 都没有显式的指明launchMode 和 taskAffinity 属性。">
+<meta name="description" content="这篇是想接着上篇 「Activity 的启动模式」，从实际需求场景的出发介绍下 Intent 与启动模式相关的 Flag 使用。(注：并为将所有 Flag 介绍完全，因为有些我没实际用过可能还没有理解足够深刻，只写个人实际使用过并觉得理解到位了的，后续会补充) 常见需求场景 需求 1:  前提：下面的 Activity A B C D 都没有显式的指明 launchMode 和 taskAffin">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Intent的Flag属性">
+<meta property="og:title" content="Intent 的 Flag 属性">
 <meta property="og:url" content="https://w4mxl.github.io/2015/07/06/Intent-Flag/index.html">
 <meta property="og:site_name" content="Wml&#39;Blog">
-<meta property="og:description" content="这篇是想接着上篇「Activity的启动模式」，从实际需求场景的出发介绍下Intent与启动模式相关的Flag使用。(注:并为将所有 Flag 介绍完全，因为有些我没实际用过可能还没有理解足够深刻，只写个人实际使用过并觉得理解到位了的，后续会补充) 常见需求场景需求1:  前提: 下面的 Activity A B C D 都没有显式的指明launchMode 和 taskAffinity 属性。">
+<meta property="og:description" content="这篇是想接着上篇 「Activity 的启动模式」，从实际需求场景的出发介绍下 Intent 与启动模式相关的 Flag 使用。(注：并为将所有 Flag 介绍完全，因为有些我没实际用过可能还没有理解足够深刻，只写个人实际使用过并觉得理解到位了的，后续会补充) 常见需求场景 需求 1:  前提：下面的 Activity A B C D 都没有显式的指明 launchMode 和 taskAffin">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2016-01-13T16:14:58.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Intent的Flag属性">
-<meta name="twitter:description" content="这篇是想接着上篇「Activity的启动模式」，从实际需求场景的出发介绍下Intent与启动模式相关的Flag使用。(注:并为将所有 Flag 介绍完全，因为有些我没实际用过可能还没有理解足够深刻，只写个人实际使用过并觉得理解到位了的，后续会补充) 常见需求场景需求1:  前提: 下面的 Activity A B C D 都没有显式的指明launchMode 和 taskAffinity 属性。">
+<meta name="twitter:title" content="Intent 的 Flag 属性">
+<meta name="twitter:description" content="这篇是想接着上篇 「Activity 的启动模式」，从实际需求场景的出发介绍下 Intent 与启动模式相关的 Flag 使用。(注：并为将所有 Flag 介绍完全，因为有些我没实际用过可能还没有理解足够深刻，只写个人实际使用过并觉得理解到位了的，后续会补充) 常见需求场景 需求 1:  前提：下面的 Activity A B C D 都没有显式的指明 launchMode 和 taskAffin">
 
 
 
@@ -117,7 +135,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '5.1.2',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
@@ -143,7 +161,7 @@
 
 
 
-  <title>Intent的Flag属性 | Wml'Blog</title>
+  <title>Intent 的 Flag 属性 | Wml'Blog</title>
   
 
 
@@ -172,7 +190,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -277,7 +295,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Intent的Flag属性</h1>
+          <h1 class="post-title" itemprop="name headline">Intent 的 Flag 属性</h1>
         
 
         <div class="post-meta">
@@ -352,7 +370,7 @@
 
           
           
-             <span id="/2015/07/06/Intent-Flag/" class="leancloud_visitors" data-flag-title="Intent的Flag属性">
+             <span id="/2015/07/06/Intent-Flag/" class="leancloud_visitors" data-flag-title="Intent 的 Flag 属性">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -383,26 +401,26 @@
       
 
       
-        <p>这篇是想接着上篇<a href="http://wml.farbox.com/post/activity-launchMode" target="_blank" rel="external">「Activity的启动模式」</a>，从实际需求场景的出发介绍下Intent与启动模式相关的Flag使用。(注:并为将所有 Flag 介绍完全，因为有些我没实际用过可能还没有理解足够深刻，只写个人实际使用过并觉得理解到位了的，后续会补充)</p>
-<h3 id="常见需求场景"><a href="#常见需求场景" class="headerlink" title="常见需求场景"></a>常见需求场景</h3><p><strong>需求1:</strong></p>
+        <p>这篇是想接着上篇 <a href="http://wml.farbox.com/post/activity-launchMode" target="_blank" rel="external">「Activity 的启动模式」</a>，从实际需求场景的出发介绍下 Intent 与启动模式相关的 Flag 使用。(注：并为将所有 Flag 介绍完全，因为有些我没实际用过可能还没有理解足够深刻，只写个人实际使用过并觉得理解到位了的，后续会补充)</p>
+<h3 id="常见需求场景"><a href="#常见需求场景" class="headerlink" title="常见需求场景"></a>常见需求场景</h3><p><strong> 需求 1:</strong></p>
 <blockquote>
-<p>前提: 下面的 Activity A B C D 都没有显式的指明launchMode 和 taskAffinity 属性。</p>
+<p>前提：下面的 Activity A B C D 都没有显式的指明 launchMode 和 taskAffinity 属性。</p>
 </blockquote>
-<p>已经启动了四个 Activity: A，B，C和D。在 D Activity里，我们想要跳到 B Activity，同时希望C Activity finish掉。<br><strong>实现:</strong>: FLAG_ACTIVITY_CLEAR_TOP<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Intent intent = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, B.class);</div><div class="line">intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);<span class="comment">// D Activity</span></div><div class="line">startActivity(intent);</div></pre></td></tr></table></figure></p>
-<p><strong>结果:</strong><br>D、C、B Activity 依次调用各自的 onDestroy 方法出栈 －&gt; B Activity 重新启动(onCreate)<br>栈中为: A B</p>
+<p>已经启动了四个 Activity: A，B，C 和 D。在 D Activity 里，我们想要跳到 B Activity，同时希望 C Activity finish 掉。<br><strong> 实现:</strong>: FLAG_ACTIVITY_CLEAR_TOP<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Intent intent = <span class="keyword">new</span> Intent (<span class="keyword">this</span>, B.class);</div><div class="line">intent.setFlags (Intent.FLAG_ACTIVITY_CLEAR_TOP);<span class="comment">// D Activity</span></div><div class="line">startActivity (intent);</div></pre></td></tr></table></figure></p>
+<p><strong> 结果:</strong><br>D、C、B Activity 依次调用各自的 onDestroy 方法出栈 －&gt; B Activity 重新启动 (onCreate)<br>栈中为: A B</p>
 <hr>
-<p><strong>需求2:</strong><br>在需求1的基础上，只是不想重新再创建一个新的B Activity，而是重用原来的实例。<br><strong>实现:</strong>: Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Intent intent = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, B.class);</div><div class="line"><span class="comment">// intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);// D Activity</span></div><div class="line">intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);<span class="comment">// D Activity</span></div><div class="line">startActivity(intent);</div></pre></td></tr></table></figure></p>
-<p><strong>结果:</strong><br>依次，C onDestroy -&gt; B Activity onNewIntent onRestart -&gt; D onDestroy<br>栈中为: A B</p>
+<p><strong> 需求 2:</strong><br>在需求 1 的基础上，只是不想重新再创建一个新的 B Activity，而是重用原来的实例。<br><strong> 实现:</strong>: Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Intent intent = <span class="keyword">new</span> Intent (<span class="keyword">this</span>, B.class);</div><div class="line"><span class="comment">//intent.setFlags (Intent.FLAG_ACTIVITY_CLEAR_TOP);// D Activity</span></div><div class="line">intent.setFlags (Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);<span class="comment">// D Activity</span></div><div class="line">startActivity (intent);</div></pre></td></tr></table></figure></p>
+<p><strong> 结果:</strong><br>依次，C onDestroy -&gt; B Activity onNewIntent onRestart -&gt; D onDestroy<br>栈中为: A B</p>
 <hr>
-<p><strong>需求3:</strong></p>
+<p><strong> 需求 3:</strong></p>
 <blockquote>
-<p>前提: 下面的 Activity A B C D 都没有显式的指明 launchMode 和 taskAffinity 属性。</p>
+<p>前提：下面的 Activity A B C D 都没有显式的指明 launchMode 和 taskAffinity 属性。</p>
 </blockquote>
-<p>已经启动了四个Activity：A，B，C和D。在D Activity里，想再启动一个Actvity B，但不变成A,B,C,D,B，而是希望是A,C,D,B。<br><strong>实现:</strong>: Intent.FLAG_ACTIVITY_REORDER_TO_FRONT<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Intent intent = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, B.class);</div><div class="line">intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);<span class="comment">// D Activity</span></div><div class="line">startActivity(intent);</div></pre></td></tr></table></figure></p>
-<p><strong>结果:</strong><br>依次，B Activity onNewIntent onRestart<br>栈中为: A C D B</p>
+<p>已经启动了四个 Activity：A，B，C 和 D。在 D Activity 里，想再启动一个 Actvity B，但不变成 A,B,C,D,B，而是希望是 A,C,D,B。<br><strong> 实现:</strong>: Intent.FLAG_ACTIVITY_REORDER_TO_FRONT<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Intent intent = <span class="keyword">new</span> Intent (<span class="keyword">this</span>, B.class);</div><div class="line">intent.setFlags (Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);<span class="comment">// D Activity</span></div><div class="line">startActivity (intent);</div></pre></td></tr></table></figure></p>
+<p><strong> 结果:</strong><br>依次，B Activity onNewIntent onRestart<br>栈中为: A C D B</p>
 <hr>
-<h3 id="其他常见-FLAG-说明"><a href="#其他常见-FLAG-说明" class="headerlink" title="其他常见 FLAG 说明"></a>其他常见 FLAG 说明</h3><p><strong>FLAG_ACTIVITY_NO_HISTORY</strong><br>例如现在栈情况为：A B C。C 通过 intent 跳转到 D，这个intent添加 FLAG_ACTIVITY_NO_HISTORY 标志，则此时界面显示D的内容，如果此时D中又跳转到E，栈的情况变为: A B C E，此时按返回键会回到C，因为D根本就没有被压入栈中。</p>
-<p><strong>FLAG_ACTIVITY_NEW_TASK</strong><br>例如现在栈1的情况是：A B C。C 通过intent跳转到 D，并且这个 intent 添加了 FLAG_ACTIVITY_NEW_TASK 标 记，如果 D 这个 Activity 在 Manifest.xml 中的声明中添加了 Task affinity，并且和栈1的 affinity 不同，系统首先会查找有没有和 D 的 Task affinity 相同的 task 栈存在，如果有存在，将 D 压入那个栈，如果不存在则会新建一个 D 的 affinity 的栈将其压入。如果 D 的 Task affinity 默认没有设置，或者和栈1的 affinity 相同，则会把其压入栈1，变成：A B C D，这样就和不加 FLAG_ACTIVITY_NEW_TASK 标记效果是一样的了。</p>
+<h3 id="其他常见-FLAG-说明"><a href="#其他常见-FLAG-说明" class="headerlink" title="其他常见 FLAG 说明"></a>其他常见 FLAG 说明</h3><p><strong>FLAG_ACTIVITY_NO_HISTORY</strong><br>例如现在栈情况为：A B C。C 通过 intent 跳转到 D，这个 intent 添加 FLAG_ACTIVITY_NO_HISTORY 标志，则此时界面显示 D 的内容，如果此时 D 中又跳转到 E，栈的情况变为: A B C E，此时按返回键会回到 C，因为 D 根本就没有被压入栈中。</p>
+<p><strong>FLAG_ACTIVITY_NEW_TASK</strong><br>例如现在栈 1 的情况是：A B C。C 通过 intent 跳转到 D，并且这个 intent 添加了 FLAG_ACTIVITY_NEW_TASK 标 记，如果 D 这个 Activity 在 Manifest.xml 中的声明中添加了 Task affinity，并且和栈 1 的 affinity 不同，系统首先会查找有没有和 D 的 Task affinity 相同的 task 栈存在，如果有存在，将 D 压入那个栈，如果不存在则会新建一个 D 的 affinity 的栈将其压入。如果 D 的 Task affinity 默认没有设置，或者和栈 1 的 affinity 相同，则会把其压入栈 1，变成：A B C D，这样就和不加 FLAG_ACTIVITY_NEW_TASK 标记效果是一样的了。</p>
 <p><strong>FLAG_ACTIVITY_NO_ANIMATION</strong><br>这个标志将阻止系统进入下一个 Activity 时应用 Acitivity 迁移动画。</p>
 
       
@@ -438,8 +456,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/07/08/activity-launchMode/" rel="prev" title="Activity的启动模式">
-                Activity的启动模式 <i class="fa fa-chevron-right"></i>
+              <a href="/2015/07/08/activity-launchMode/" rel="prev" title="Activity 的启动模式">
+                Activity 的启动模式 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -527,7 +545,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">184</span>
+                <span class="site-state-item-count">185</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -549,7 +567,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -760,7 +778,7 @@
         var disqus_config = function () {
           this.page.url = 'https://w4mxl.github.io/2015/07/06/Intent-Flag/';
           this.page.identifier = '2015/07/06/Intent-Flag/';
-          this.page.title = 'Intent的Flag属性';
+          this.page.title = 'Intent 的 Flag 属性';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://w4mxl.disqus.com/embed.js';

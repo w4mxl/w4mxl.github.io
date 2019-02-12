@@ -56,17 +56,35 @@
   
 
   
+    
+      
+    
 
-  
-
+    
   
 
   
 
   
     
+      
     
-    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -97,17 +115,17 @@
 
 
 
-<meta name="description" content="1. 显示不全 被嵌套的 RecyclerView(ListView) 显示不全，有多个 item，则只显示第一个。  解决方法目前常见的有两种：  动态计算 RecyclerView(ListView) 高度 直接展示所有的 item，让其不滚动了 (推荐)">
+<meta name="description" content="1. 显示不全 被嵌套的 RecyclerView (ListView) 显示不全，有多个 item，则只显示第一个。  解决方法目前常见的有两种：  ~~ 动态计算 RecyclerView (ListView) 高度～～ 直接展示所有的 item，让其不滚动了 (推荐)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ScrollView 中嵌套 RecyclerView(ListView) 后的常见问题">
+<meta property="og:title" content="ScrollView 中嵌套 RecyclerView (ListView) 后的常见问题">
 <meta property="og:url" content="https://w4mxl.github.io/2016/09/07/scrollView-nested-problems/index.html">
 <meta property="og:site_name" content="Wml&#39;Blog">
-<meta property="og:description" content="1. 显示不全 被嵌套的 RecyclerView(ListView) 显示不全，有多个 item，则只显示第一个。  解决方法目前常见的有两种：  动态计算 RecyclerView(ListView) 高度 直接展示所有的 item，让其不滚动了 (推荐)">
+<meta property="og:description" content="1. 显示不全 被嵌套的 RecyclerView (ListView) 显示不全，有多个 item，则只显示第一个。  解决方法目前常见的有两种：  ~~ 动态计算 RecyclerView (ListView) 高度～～ 直接展示所有的 item，让其不滚动了 (推荐)">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2016-09-08T02:36:10.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ScrollView 中嵌套 RecyclerView(ListView) 后的常见问题">
-<meta name="twitter:description" content="1. 显示不全 被嵌套的 RecyclerView(ListView) 显示不全，有多个 item，则只显示第一个。  解决方法目前常见的有两种：  动态计算 RecyclerView(ListView) 高度 直接展示所有的 item，让其不滚动了 (推荐)">
+<meta name="twitter:title" content="ScrollView 中嵌套 RecyclerView (ListView) 后的常见问题">
+<meta name="twitter:description" content="1. 显示不全 被嵌套的 RecyclerView (ListView) 显示不全，有多个 item，则只显示第一个。  解决方法目前常见的有两种：  ~~ 动态计算 RecyclerView (ListView) 高度～～ 直接展示所有的 item，让其不滚动了 (推荐)">
 
 
 
@@ -117,7 +135,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '5.1.2',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
@@ -143,7 +161,7 @@
 
 
 
-  <title>ScrollView 中嵌套 RecyclerView(ListView) 后的常见问题 | Wml'Blog</title>
+  <title>ScrollView 中嵌套 RecyclerView (ListView) 后的常见问题 | Wml'Blog</title>
   
 
 
@@ -172,7 +190,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -277,7 +295,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">ScrollView 中嵌套 RecyclerView(ListView) 后的常见问题</h1>
+          <h1 class="post-title" itemprop="name headline">ScrollView 中嵌套 RecyclerView (ListView) 后的常见问题</h1>
         
 
         <div class="post-meta">
@@ -352,7 +370,7 @@
 
           
           
-             <span id="/2016/09/07/scrollView-nested-problems/" class="leancloud_visitors" data-flag-title="ScrollView 中嵌套 RecyclerView(ListView) 后的常见问题">
+             <span id="/2016/09/07/scrollView-nested-problems/" class="leancloud_visitors" data-flag-title="ScrollView 中嵌套 RecyclerView (ListView) 后的常见问题">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -384,30 +402,30 @@
 
       
         <h3 id="1-显示不全"><a href="#1-显示不全" class="headerlink" title="1. 显示不全"></a>1. 显示不全</h3><blockquote>
-<p>被嵌套的 RecyclerView(ListView) 显示不全，有多个 item，则只显示第一个。</p>
+<p>被嵌套的 RecyclerView (ListView) 显示不全，有多个 item，则只显示第一个。</p>
 </blockquote>
 <p>解决方法目前常见的有两种：</p>
 <ol>
-<li><del>动态计算 RecyclerView(ListView) 高度</del></li>
+<li>~~ 动态计算 RecyclerView (ListView) 高度～～</li>
 <li>直接展示所有的 item，让其不滚动了 (推荐)</li>
 </ol>
 <a id="more"></a>
 <blockquote>
-<p>2 是嵌套 ListView 示例，嵌套 GridView等类似</p>
+<p>2 是嵌套 ListView 示例，嵌套 GridView 等类似</p>
 </blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ScrollViewWithListView</span> <span class="keyword">extends</span> <span class="title">ListView</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">ScrollViewWithListView</span><span class="params">(android.content.Context context, android.util.AttributeSet attrs)</span> </span>&#123;</div><div class="line">        <span class="keyword">super</span>(context, attrs);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line"><span class="comment">     * 设置不滚动</span></div><div class="line"><span class="comment">     */</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onMeasure</span><span class="params">(<span class="keyword">int</span> widthMeasureSpec, <span class="keyword">int</span> heightMeasureSpec)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> expandSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE &gt;&gt; <span class="number">2</span>,</div><div class="line">                MeasureSpec.AT_MOST);</div><div class="line">        <span class="keyword">super</span>.onMeasure(widthMeasureSpec, expandSpec);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="2-自动滚动"><a href="#2-自动滚动" class="headerlink" title="2. 自动滚动"></a>2. 自动滚动</h3><p>场景1:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ScrollViewWithListView</span> <span class="keyword">extends</span> <span class="title">ListView</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">ScrollViewWithListView</span><span class="params">(android.content.Context context, android.util.AttributeSet attrs)</span> </span>&#123;</div><div class="line">        <span class="keyword">super</span>(context, attrs);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line"><span class="comment">     * 设置不滚动 </span></div><div class="line"><span class="comment">     */</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onMeasure</span><span class="params">(<span class="keyword">int</span> widthMeasureSpec, <span class="keyword">int</span> heightMeasureSpec)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> expandSpec = MeasureSpec.makeMeasureSpec (Integer.MAX_VALUE &gt;&gt; <span class="number">2</span>,</div><div class="line">                MeasureSpec.AT_MOST);</div><div class="line">        <span class="keyword">super</span>.onMeasure (widthMeasureSpec, expandSpec);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="2-自动滚动"><a href="#2-自动滚动" class="headerlink" title="2. 自动滚动"></a>2. 自动滚动</h3><p>场景 1:</p>
 <blockquote>
-<p>ScrollView 中嵌套的组件 RecyclerView(ListView) 在内容加载之后，ScrollView 会自动下滚。</p>
+<p>ScrollView 中嵌套的组件 RecyclerView (ListView) 在内容加载之后，ScrollView 会自动下滚。</p>
 </blockquote>
 <p>解决方法：</p>
 <p>在 ScrollView 包裹的 LinearLayout 中添加：</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">android:focusable="true"</div><div class="line">android:focusableInTouchMode="true"</div></pre></td></tr></table></figure>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ScrollView</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></div><div class="line"><span class="tag">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></div><div class="line"><span class="tag">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></div><div class="line"><span class="tag">        <span class="attr">android:scrollbars</span>=<span class="string">"none"</span>&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">LinearLayout</span></span></div><div class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:orientation</span>=<span class="string">"vertical"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:focusable</span>=<span class="string">"true"</span></span></div><div class="line"><span class="tag">            <span class="attr">android:focusableInTouchMode</span>=<span class="string">"true"</span>&gt;</span></div><div class="line">            ...</div><div class="line">            ...</div><div class="line">        <span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ScrollView</span>&gt;</span></div></pre></td></tr></table></figure>
 <p><a href="http://blog.csdn.net/icyfox_bupt/article/details/15026299" target="_blank" rel="external">更多描述请查看这篇</a></p>
-<p>场景2:</p>
+<p>场景 2:</p>
 <blockquote>
-<p>在 1 的基础上, Fragment 中的 ScrollView 在初次加载会停留在顶部，可是切换到其它 Fragment 再切换回来的时候，又会自动下滚。</p>
+<p>在 1 的基础上，Fragment 中的 ScrollView 在初次加载会停留在顶部，可是切换到其它 Fragment 再切换回来的时候，又会自动下滚。</p>
 </blockquote>
 <p>解决方法：</p>
 <p>在 ScrollView 包裹的 LinearLayout 中多添加：</p>
@@ -448,8 +466,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/10/23/小米Max换屏及刷国际版Rom/" rel="prev" title="小米Max 换屏及刷国际版 Rom">
-                小米Max 换屏及刷国际版 Rom <i class="fa fa-chevron-right"></i>
+              <a href="/2016/10/23/小米Max换屏及刷国际版Rom/" rel="prev" title="小米 Max 换屏及刷国际版 Rom">
+                小米 Max 换屏及刷国际版 Rom <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -537,7 +555,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">184</span>
+                <span class="site-state-item-count">185</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -559,7 +577,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -770,7 +788,7 @@
         var disqus_config = function () {
           this.page.url = 'https://w4mxl.github.io/2016/09/07/scrollView-nested-problems/';
           this.page.identifier = '2016/09/07/scrollView-nested-problems/';
-          this.page.title = 'ScrollView 中嵌套 RecyclerView(ListView) 后的常见问题';
+          this.page.title = 'ScrollView 中嵌套 RecyclerView (ListView) 后的常见问题';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://w4mxl.disqus.com/embed.js';
