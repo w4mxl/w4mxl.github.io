@@ -2,26 +2,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222"/>
 
 
 
@@ -38,9 +36,9 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
 
 
 
@@ -56,11 +54,7 @@
   
 
   
-    
-      
-    
 
-    
   
 
   
@@ -75,16 +69,8 @@
 
   
     
-      
     
-
-    
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Slabo 27px:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"/>
   
 
 
@@ -92,56 +78,40 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
 
-<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Hexo, NexT" />
+<link rel="stylesheet" href="/css/main.css?v=7.0.0"/>
 
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.0">
 
 
-
-  <link rel="alternate" href="/atom.xml" title="Wml'Blog" type="application/atom+xml" />
-
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico?v=7.0.0">
 
 
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico?v=7.0.0">
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.0.0" color="#222">
 
 
 
 
 
 
-<meta name="description" content="Life&apos;s A Struggle!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Wml&#39;Blog">
-<meta property="og:url" content="https://w4mxl.github.io/index.html">
-<meta property="og:site_name" content="Wml&#39;Blog">
-<meta property="og:description" content="Life&apos;s A Struggle!">
-<meta property="og:locale" content="zh-Hans">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Wml&#39;Blog">
-<meta name="twitter:description" content="Life&apos;s A Struggle!">
 
-
-
-<script type="text/javascript" id="hexo.configurations">
+<script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
     scheme: 'Pisces',
-    version: '5.1.2',
-    sidebar: {"position":"right","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
+    version: '7.0.0',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -153,12 +123,38 @@
 </script>
 
 
+  
+
+
+
+
+  <meta name="description" content="Life&apos;s A Struggle!">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wml&#39;Blog">
+<meta property="og:url" content="https://w4mxl.github.io/index.html">
+<meta property="og:site_name" content="Wml&#39;Blog">
+<meta property="og:description" content="Life&apos;s A Struggle!">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Wml&#39;Blog">
+<meta name="twitter:description" content="Life&apos;s A Struggle!">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Wml'Blog" type="application/atom+xml"/>
+
+
+
 
   <link rel="canonical" href="https://w4mxl.github.io/"/>
 
 
 
-
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>Wml'Blog</title>
   
@@ -167,7 +163,8 @@
 
 
 
-  <script type="text/javascript">
+
+  <script>
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
@@ -180,9 +177,37 @@
 
 
 
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -195,23 +220,22 @@
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+  <div class="site-meta">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">Wml'Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
+    
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -219,35 +243,52 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
+        
+          
+          <li class="menu-item menu-item-home menu-item-active">
+
+    
+    
+    
       
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br/>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>归档</a>
+
+  </li>
 
       
+      
     </ul>
+  
+
   
 
   
@@ -255,12 +296,23 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+            
+
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -273,21 +325,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2019/02/12/flutter-ide-shortcuts-for-fast-development/">
+    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2019/02/12/flutter-ide-shortcuts-for-fast-development/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wml">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
+      <meta itemprop="name" content="Wml"/>
+      <meta itemprop="description" content="Life's A Struggle!"/>
+      <meta itemprop="image" content="/image/me.jpg"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wml'Blog">
+      <meta itemprop="name" content="Wml'Blog"/>
     </span>
 
     
@@ -297,11 +351,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/02/12/flutter-ide-shortcuts-for-fast-development/" itemprop="url">提升 Flutter 开发效率的快捷键</a></h1>
+                
+                <a href="/2019/02/12/flutter-ide-shortcuts-for-fast-development/" class="post-title-link" itemprop="url">提升 Flutter 开发效率的快捷键</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -309,30 +372,23 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-12T11:14:12+08:00">
-                2019-02-12
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-12 11:14:12 / 修改时间：15:33:22" itemprop="dateCreated datePublished" datetime="2019-02-12T11:14:12+08:00">2019-02-12</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2019-02-12T15:33:22+08:00">
-                2019-02-12
-              </time>
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -343,11 +399,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Flutter/" itemprop="url" rel="index">
-                    <span itemprop="name">Flutter</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Flutter/" itemprop="url" rel="index"><span itemprop="name">Flutter</span></a></span>
 
                 
                 
@@ -357,14 +409,17 @@
 
           
             
+            
+              
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
                 <a href="/2019/02/12/flutter-ide-shortcuts-for-fast-development/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2019/02/12/flutter-ide-shortcuts-for-fast-development/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/02/12/flutter-ide-shortcuts-for-fast-development/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -372,16 +427,16 @@
 
           
           
-             <span id="/2019/02/12/flutter-ide-shortcuts-for-fast-development/" class="leancloud_visitors" data-flag-title="提升 Flutter 开发效率的快捷键">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
+            <span id="/2019/02/12/flutter-ide-shortcuts-for-fast-development/" class="leancloud_visitors" data-flag-title="提升 Flutter 开发效率的快捷键">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
           
 
           
@@ -412,21 +467,29 @@
 <p>您可以将光标放在 <code>StatelessWidget</code> 上，按 <code>Alt + Enter</code> 快捷键（Windows 和 Mac 一样）并单击 <code>Convert to StatefulWidget</code> 就可以了。</p>
 <p><img src="https://i.loli.net/2019/02/12/5c624124e1b2e.gif" alt="1_Tz844vh_0P8TUyXTnNevQg.gif"></p>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/02/12/flutter-ide-shortcuts-for-fast-development/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/02/12/flutter-ide-shortcuts-for-fast-development/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -459,21 +522,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2019/01/26/flutter-Intl-Localizations/">
+    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2019/01/26/flutter-Intl-Localizations/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wml">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
+      <meta itemprop="name" content="Wml"/>
+      <meta itemprop="description" content="Life's A Struggle!"/>
+      <meta itemprop="image" content="/image/me.jpg"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wml'Blog">
+      <meta itemprop="name" content="Wml'Blog"/>
     </span>
 
     
@@ -483,11 +548,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/01/26/flutter-Intl-Localizations/" itemprop="url">使用 Intl 包让 Flutter app 支持多语言</a></h1>
+                
+                <a href="/2019/01/26/flutter-Intl-Localizations/" class="post-title-link" itemprop="url">使用 Intl 包让 Flutter app 支持多语言</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -495,30 +569,35 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-26T11:16:00+08:00">
-                2019-01-26
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-26 11:16:00" itemprop="dateCreated datePublished" datetime="2019-01-26T11:16:00+08:00">2019-01-26</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于&#58;</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-02-12 11:17:05" itemprop="dateModified" datetime="2019-02-12T11:17:05+08:00">2019-02-12</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-02-12T11:17:05+08:00">
-                2019-02-12
-              </time>
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -529,11 +608,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Flutter/" itemprop="url" rel="index">
-                    <span itemprop="name">Flutter</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Flutter/" itemprop="url" rel="index"><span itemprop="name">Flutter</span></a></span>
 
                 
                 
@@ -543,14 +618,17 @@
 
           
             
+            
+              
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
                 <a href="/2019/01/26/flutter-Intl-Localizations/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2019/01/26/flutter-Intl-Localizations/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/26/flutter-Intl-Localizations/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -558,16 +636,16 @@
 
           
           
-             <span id="/2019/01/26/flutter-Intl-Localizations/" class="leancloud_visitors" data-flag-title="使用 Intl 包让 Flutter app 支持多语言">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
+            <span id="/2019/01/26/flutter-Intl-Localizations/" class="leancloud_visitors" data-flag-title="使用 Intl 包让 Flutter app 支持多语言">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
           
 
           
@@ -600,21 +678,29 @@
 <li><code>flutter packages pub run intl_translation:generate_from_arb --output-dir=lib/i10n --no-use-deferred-loading lib/i10n/localization_intl.dart i10n-arb/intl_*.arb</code>  根据 arb 生成 dart 文件</li>
 </ol>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/01/26/flutter-Intl-Localizations/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/01/26/flutter-Intl-Localizations/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -647,21 +733,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2019/01/25/ios-system-language/">
+    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2019/01/25/ios-system-language/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wml">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
+      <meta itemprop="name" content="Wml"/>
+      <meta itemprop="description" content="Life's A Struggle!"/>
+      <meta itemprop="image" content="/image/me.jpg"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wml'Blog">
+      <meta itemprop="name" content="Wml'Blog"/>
     </span>
 
     
@@ -671,11 +759,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/01/25/ios-system-language/" itemprop="url">iOS 上获取当前系统语言</a></h1>
+                
+                <a href="/2019/01/25/ios-system-language/" class="post-title-link" itemprop="url">iOS 上获取当前系统语言</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -683,30 +780,35 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-25T15:23:00+08:00">
-                2019-01-25
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-25 15:23:00" itemprop="dateCreated datePublished" datetime="2019-01-25T15:23:00+08:00">2019-01-25</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于&#58;</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-01-28 14:09:03" itemprop="dateModified" datetime="2019-01-28T14:09:03+08:00">2019-01-28</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-01-28T14:09:03+08:00">
-                2019-01-28
-              </time>
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -717,11 +819,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Flutter/" itemprop="url" rel="index">
-                    <span itemprop="name">Flutter</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Flutter/" itemprop="url" rel="index"><span itemprop="name">Flutter</span></a></span>
 
                 
                 
@@ -731,14 +829,17 @@
 
           
             
+            
+              
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
                 <a href="/2019/01/25/ios-system-language/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2019/01/25/ios-system-language/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/25/ios-system-language/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -746,16 +847,16 @@
 
           
           
-             <span id="/2019/01/25/ios-system-language/" class="leancloud_visitors" data-flag-title="iOS 上获取当前系统语言">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
+            <span id="/2019/01/25/ios-system-language/" class="leancloud_visitors" data-flag-title="iOS 上获取当前系统语言">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
           
 
           
@@ -780,21 +881,29 @@
         
           <h1 id="测试代码"><a href="#测试代码" class="headerlink" title="测试代码"></a>测试代码</h1><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSString</span> *identifier = [[<span class="built_in">NSLocale</span> currentLocale] localeIdentifier];</div><div class="line"><span class="built_in">NSString</span> *displayName = [[<span class="built_in">NSLocale</span> currentLocale] displayNameForKey:<span class="built_in">NSLocaleIdentifier</span> value:identifier];</div><div class="line"></div><div class="line"><span class="built_in">NSString</span> *udfLanguageCode = [[<span class="built_in">NSUserDefaults</span> standardUserDefaults] objectForKey:<span class="string">@"AppleLanguages"</span>][<span class="number">0</span>];</div><div class="line"><span class="built_in">NSString</span> *pfLanguageCode = [<span class="built_in">NSLocale</span> preferredLanguages][<span class="number">0</span>];</div><div class="line"><span class="built_in">NSString</span> *localeLanguageCode = [[<span class="built_in">NSLocale</span> currentLocale] objectForKey:<span class="built_in">NSLocaleLanguageCode</span>];</div><div class="line"><span class="built_in">NSString</span> *language =  [[<span class="built_in">NSBundle</span> mainBundle] preferredLocalizations][<span class="number">0</span>];</div><div class="line"></div><div class="line"><span class="built_in">NSLog</span>(<span class="string">@"%@"</span>, identifier);</div><div class="line"><span class="built_in">NSLog</span>(<span class="string">@"%@"</span>, displayName);</div><div class="line"></div><div class="line"><span class="built_in">NSLog</span>(<span class="string">@"%@"</span>, [[<span class="built_in">NSUserDefaults</span> standardUserDefaults] objectForKey:<span class="string">@"AppleLanguages"</span>]);</div><div class="line"><span class="built_in">NSLog</span>(<span class="string">@"%@"</span>, udfLanguageCode);</div><div class="line"></div><div class="line"><span class="built_in">NSLog</span>(<span class="string">@"%@"</span>,[<span class="built_in">NSLocale</span> preferredLanguages]);</div><div class="line"><span class="built_in">NSLog</span>(<span class="string">@"%@"</span>, pfLanguageCode);</div><div class="line"><span class="built_in">NSLog</span>(<span class="string">@"%@"</span>, localeLanguageCode);</div><div class="line"><span class="built_in">NSLog</span>(<span class="string">@"%@"</span>, language);</div></pre></td></tr></table></figure>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/01/25/ios-system-language/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/01/25/ios-system-language/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -827,21 +936,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2018/11/19/a-little-thought-after-Zou-Wenhuai-death/">
+    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2018/11/19/a-little-thought-after-Zou-Wenhuai-death/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wml">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
+      <meta itemprop="name" content="Wml"/>
+      <meta itemprop="description" content="Life's A Struggle!"/>
+      <meta itemprop="image" content="/image/me.jpg"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wml'Blog">
+      <meta itemprop="name" content="Wml'Blog"/>
     </span>
 
     
@@ -851,11 +962,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/11/19/a-little-thought-after-Zou-Wenhuai-death/" itemprop="url">看到邹文怀去世文章后的一点感想</a></h1>
+                
+                <a href="/2018/11/19/a-little-thought-after-Zou-Wenhuai-death/" class="post-title-link" itemprop="url">看到邹文怀去世文章后的一点感想</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -863,30 +983,35 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-19T14:41:27+08:00">
-                2018-11-19
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-11-19 14:41:27" itemprop="dateCreated datePublished" datetime="2018-11-19T14:41:27+08:00">2018-11-19</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于&#58;</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-12-03 17:01:45" itemprop="dateModified" datetime="2018-12-03T17:01:45+08:00">2018-12-03</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-12-03T17:01:45+08:00">
-                2018-12-03
-              </time>
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -897,11 +1022,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Life-s/" itemprop="url" rel="index">
-                    <span itemprop="name">Life's</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Life-s/" itemprop="url" rel="index"><span itemprop="name">Life's</span></a></span>
 
                 
                 
@@ -911,14 +1032,17 @@
 
           
             
+            
+              
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
                 <a href="/2018/11/19/a-little-thought-after-Zou-Wenhuai-death/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/11/19/a-little-thought-after-Zou-Wenhuai-death/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/11/19/a-little-thought-after-Zou-Wenhuai-death/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -926,16 +1050,16 @@
 
           
           
-             <span id="/2018/11/19/a-little-thought-after-Zou-Wenhuai-death/" class="leancloud_visitors" data-flag-title="看到邹文怀去世文章后的一点感想">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
+            <span id="/2018/11/19/a-little-thought-after-Zou-Wenhuai-death/" class="leancloud_visitors" data-flag-title="看到邹文怀去世文章后的一点感想">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
           
 
           
@@ -961,21 +1085,29 @@
           <p>　　刚读了文章 <a href="https://mp.weixin.qq.com/s/-snO0kvsA5i7wGVRIOCodA" target="_blank" rel="external">《一代巨擘邹文怀：他缔造的嘉禾驰骋影坛 37 年》</a>，作者戴天文。</p>
 <p>　　其实在这之前我不知道邹文怀的，一点都不了解他是怎样的人。是标题中的「嘉禾」让我产生的阅读兴趣，我相信但凡看电影的人都是知道「嘉禾」的吧。<br>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/11/19/a-little-thought-after-Zou-Wenhuai-death/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/11/19/a-little-thought-after-Zou-Wenhuai-death/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -1008,21 +1140,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2018/11/17/change-my-plan-for-cellphone/">
+    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2018/11/17/change-my-plan-for-cellphone/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wml">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
+      <meta itemprop="name" content="Wml"/>
+      <meta itemprop="description" content="Life's A Struggle!"/>
+      <meta itemprop="image" content="/image/me.jpg"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wml'Blog">
+      <meta itemprop="name" content="Wml'Blog"/>
     </span>
 
     
@@ -1032,11 +1166,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/11/17/change-my-plan-for-cellphone/" itemprop="url">换手机号换套餐</a></h1>
+                
+                <a href="/2018/11/17/change-my-plan-for-cellphone/" class="post-title-link" itemprop="url">换手机号换套餐</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1044,30 +1187,35 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-17T14:47:32+08:00">
-                2018-11-17
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-11-17 14:47:32" itemprop="dateCreated datePublished" datetime="2018-11-17T14:47:32+08:00">2018-11-17</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于&#58;</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-12-03 15:56:58" itemprop="dateModified" datetime="2018-12-03T15:56:58+08:00">2018-12-03</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-12-03T15:56:58+08:00">
-                2018-12-03
-              </time>
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1078,11 +1226,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Life-s/" itemprop="url" rel="index">
-                    <span itemprop="name">Life's</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Life-s/" itemprop="url" rel="index"><span itemprop="name">Life's</span></a></span>
 
                 
                 
@@ -1092,14 +1236,17 @@
 
           
             
+            
+              
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
                 <a href="/2018/11/17/change-my-plan-for-cellphone/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/11/17/change-my-plan-for-cellphone/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/11/17/change-my-plan-for-cellphone/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1107,16 +1254,16 @@
 
           
           
-             <span id="/2018/11/17/change-my-plan-for-cellphone/" class="leancloud_visitors" data-flag-title="换手机号换套餐">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
+            <span id="/2018/11/17/change-my-plan-for-cellphone/" class="leancloud_visitors" data-flag-title="换手机号换套餐">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
           
 
           
@@ -1141,21 +1288,29 @@
         
           <p>　　刚去电信营业厅把我的 177 手机号给注销掉了。2015 年我们搬到中宇花苑这边，装修好安装宽带的时候我选择办理的电信纯宽带业务。去年为了升级到电信宽带 200M，考虑到电信宽带和电信手机套餐绑定一起使用会划算些就有了这个 177 手机号。一年合约，每个月 ¥199 套餐费，含 200M 宽带 + 700 分钟通话 + 无限流量。</p>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/11/17/change-my-plan-for-cellphone/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/11/17/change-my-plan-for-cellphone/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -1188,21 +1343,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2018/11/16/my-nexus-4-renewed/">
+    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2018/11/16/my-nexus-4-renewed/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wml">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
+      <meta itemprop="name" content="Wml"/>
+      <meta itemprop="description" content="Life's A Struggle!"/>
+      <meta itemprop="image" content="/image/me.jpg"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wml'Blog">
+      <meta itemprop="name" content="Wml'Blog"/>
     </span>
 
     
@@ -1212,11 +1369,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/11/16/my-nexus-4-renewed/" itemprop="url">Nexus 4 焕然一新</a></h1>
+                
+                <a href="/2018/11/16/my-nexus-4-renewed/" class="post-title-link" itemprop="url">Nexus 4 焕然一新</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1224,30 +1390,35 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-16T22:50:00+08:00">
-                2018-11-16
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-11-16 22:50:00" itemprop="dateCreated datePublished" datetime="2018-11-16T22:50:00+08:00">2018-11-16</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于&#58;</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-12-03 17:01:45" itemprop="dateModified" datetime="2018-12-03T17:01:45+08:00">2018-12-03</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-12-03T17:01:45+08:00">
-                2018-12-03
-              </time>
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1258,11 +1429,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Life-s/" itemprop="url" rel="index">
-                    <span itemprop="name">Life's</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Life-s/" itemprop="url" rel="index"><span itemprop="name">Life's</span></a></span>
 
                 
                 
@@ -1272,14 +1439,17 @@
 
           
             
+            
+              
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
                 <a href="/2018/11/16/my-nexus-4-renewed/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/11/16/my-nexus-4-renewed/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/11/16/my-nexus-4-renewed/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1287,16 +1457,16 @@
 
           
           
-             <span id="/2018/11/16/my-nexus-4-renewed/" class="leancloud_visitors" data-flag-title="Nexus 4 焕然一新">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
+            <span id="/2018/11/16/my-nexus-4-renewed/" class="leancloud_visitors" data-flag-title="Nexus 4 焕然一新">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
           
 
           
@@ -1321,21 +1491,29 @@
         
           <p>　　感觉今天 So lucky！<br>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/11/16/my-nexus-4-renewed/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/11/16/my-nexus-4-renewed/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -1368,21 +1546,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2018/11/12/a-mv-list-from-youtube/">
+    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2018/11/12/a-mv-list-from-youtube/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wml">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
+      <meta itemprop="name" content="Wml"/>
+      <meta itemprop="description" content="Life's A Struggle!"/>
+      <meta itemprop="image" content="/image/me.jpg"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wml'Blog">
+      <meta itemprop="name" content="Wml'Blog"/>
     </span>
 
     
@@ -1392,11 +1572,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/11/12/a-mv-list-from-youtube/" itemprop="url">一个 Youtube 歌曲合集</a></h1>
+                
+                <a href="/2018/11/12/a-mv-list-from-youtube/" class="post-title-link" itemprop="url">一个 Youtube 歌曲合集</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1404,30 +1593,35 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-12T20:18:27+08:00">
-                2018-11-12
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-11-12 20:18:27" itemprop="dateCreated datePublished" datetime="2018-11-12T20:18:27+08:00">2018-11-12</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于&#58;</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-12-03 16:56:00" itemprop="dateModified" datetime="2018-12-03T16:56:00+08:00">2018-12-03</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-12-03T16:56:00+08:00">
-                2018-12-03
-              </time>
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1438,11 +1632,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Life-s/" itemprop="url" rel="index">
-                    <span itemprop="name">Life's</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Life-s/" itemprop="url" rel="index"><span itemprop="name">Life's</span></a></span>
 
                 
                 
@@ -1452,14 +1642,17 @@
 
           
             
+            
+              
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
                 <a href="/2018/11/12/a-mv-list-from-youtube/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/11/12/a-mv-list-from-youtube/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/11/12/a-mv-list-from-youtube/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1467,16 +1660,16 @@
 
           
           
-             <span id="/2018/11/12/a-mv-list-from-youtube/" class="leancloud_visitors" data-flag-title="一个 Youtube 歌曲合集">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
+            <span id="/2018/11/12/a-mv-list-from-youtube/" class="leancloud_visitors" data-flag-title="一个 Youtube 歌曲合集">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
           
 
           
@@ -1501,21 +1694,29 @@
         
           <p>　　下班回家的地铁中，在 iPhone 上打开了 YouTube app，不知道它喜好算法是怎么做的，给我推荐了一个 MV 视频合集。我点开后从第一首开始播放。<br>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/11/12/a-mv-list-from-youtube/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/11/12/a-mv-list-from-youtube/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -1548,21 +1749,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2018/10/20/watch-a-ted-video/">
+    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2018/10/20/watch-a-ted-video/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wml">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
+      <meta itemprop="name" content="Wml"/>
+      <meta itemprop="description" content="Life's A Struggle!"/>
+      <meta itemprop="image" content="/image/me.jpg"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wml'Blog">
+      <meta itemprop="name" content="Wml'Blog"/>
     </span>
 
     
@@ -1572,11 +1775,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/10/20/watch-a-ted-video/" itemprop="url">看《How AI can save our humanity | Kai-Fu Lee》</a></h1>
+                
+                <a href="/2018/10/20/watch-a-ted-video/" class="post-title-link" itemprop="url">看《How AI can save our humanity | Kai-Fu Lee》</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1584,30 +1796,35 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-20T00:44:26+08:00">
-                2018-10-20
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-10-20 00:44:26" itemprop="dateCreated datePublished" datetime="2018-10-20T00:44:26+08:00">2018-10-20</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于&#58;</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-12-03 16:36:52" itemprop="dateModified" datetime="2018-12-03T16:36:52+08:00">2018-12-03</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-12-03T16:36:52+08:00">
-                2018-12-03
-              </time>
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1618,11 +1835,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Life-s/" itemprop="url" rel="index">
-                    <span itemprop="name">Life's</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Life-s/" itemprop="url" rel="index"><span itemprop="name">Life's</span></a></span>
 
                 
                 
@@ -1632,14 +1845,17 @@
 
           
             
+            
+              
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
                 <a href="/2018/10/20/watch-a-ted-video/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/10/20/watch-a-ted-video/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/10/20/watch-a-ted-video/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1647,16 +1863,16 @@
 
           
           
-             <span id="/2018/10/20/watch-a-ted-video/" class="leancloud_visitors" data-flag-title="看《How AI can save our humanity | Kai-Fu Lee》">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
+            <span id="/2018/10/20/watch-a-ted-video/" class="leancloud_visitors" data-flag-title="看《How AI can save our humanity | Kai-Fu Lee》">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
           
 
           
@@ -1681,21 +1897,29 @@
         
           <h4 id="背景："><a href="#背景：" class="headerlink" title="背景："></a>背景：</h4><p>　　阅读某篇 RSS 文章时，跳转到利器的公众号，再从利器公众号来到了他们的微博，接着就看到了这则视频：《How AI can save our humanity | Kai-Fu Lee》。</p>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/10/20/watch-a-ted-video/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/10/20/watch-a-ted-video/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -1728,21 +1952,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2018/09/23/about-life's-a-struggle/">
+    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2018/09/23/about-life's-a-struggle/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wml">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
+      <meta itemprop="name" content="Wml"/>
+      <meta itemprop="description" content="Life's A Struggle!"/>
+      <meta itemprop="image" content="/image/me.jpg"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wml'Blog">
+      <meta itemprop="name" content="Wml'Blog"/>
     </span>
 
     
@@ -1752,11 +1978,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/09/23/about-life's-a-struggle/" itemprop="url">《Life's a struggle 》</a></h1>
+                
+                <a href="/2018/09/23/about-life's-a-struggle/" class="post-title-link" itemprop="url">《Life's a struggle 》</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1764,30 +1999,35 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-23T01:27:04+08:00">
-                2018-09-23
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-09-23 01:27:04" itemprop="dateCreated datePublished" datetime="2018-09-23T01:27:04+08:00">2018-09-23</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于&#58;</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-12-03 16:45:14" itemprop="dateModified" datetime="2018-12-03T16:45:14+08:00">2018-12-03</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-12-03T16:45:14+08:00">
-                2018-12-03
-              </time>
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1798,11 +2038,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Life-s/" itemprop="url" rel="index">
-                    <span itemprop="name">Life's</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Life-s/" itemprop="url" rel="index"><span itemprop="name">Life's</span></a></span>
 
                 
                 
@@ -1812,14 +2048,17 @@
 
           
             
+            
+              
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
                 <a href="/2018/09/23/about-life's-a-struggle/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/09/23/about-life's-a-struggle/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/09/23/about-life's-a-struggle/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1827,16 +2066,16 @@
 
           
           
-             <span id="/2018/09/23/about-life's-a-struggle/" class="leancloud_visitors" data-flag-title="《Life's a struggle 》">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
+            <span id="/2018/09/23/about-life's-a-struggle/" class="leancloud_visitors" data-flag-title="《Life's a struggle 》">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
           
 
           
@@ -1863,21 +2102,29 @@
 <p>《Life’s a struggle 》是宋岳庭先生的绝笔之作，寄托了他一生的经历和思考，是一首超越时代限制的作品。歌词包含了人世间的悲欢离合、精神与欲望的对立挣扎以及他对人性和灵魂的哲思。一气呵成的 flow，开辟先河的双押，饱和完整的情绪表达，都融汇于整首歌曲。这首歌对中文说唱发展的意义空前绝后，也是中文 Hip-hop 的精神坐标。</p>
 </blockquote>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/09/23/about-life's-a-struggle/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/09/23/about-life's-a-struggle/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -1910,21 +2157,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2018/09/21/flutter-release-preview-2-pixel-perfect/">
+    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2018/09/21/flutter-release-preview-2-pixel-perfect/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wml">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460">
+      <meta itemprop="name" content="Wml"/>
+      <meta itemprop="description" content="Life's A Struggle!"/>
+      <meta itemprop="image" content="/image/me.jpg"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wml'Blog">
+      <meta itemprop="name" content="Wml'Blog"/>
     </span>
 
     
@@ -1934,11 +2183,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/09/21/flutter-release-preview-2-pixel-perfect/" itemprop="url">(翻译) Flutter Release Preview 2 像素级别完美适配 iOS</a></h1>
+                
+                <a href="/2018/09/21/flutter-release-preview-2-pixel-perfect/" class="post-title-link" itemprop="url">(翻译) Flutter Release Preview 2 像素级别完美适配 iOS</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1946,30 +2204,35 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-21T10:27:43+08:00">
-                2018-09-21
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2018-09-21 10:27:43" itemprop="dateCreated datePublished" datetime="2018-09-21T10:27:43+08:00">2018-09-21</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于&#58;</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-02-12 11:17:05" itemprop="dateModified" datetime="2019-02-12T11:17:05+08:00">2019-02-12</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-02-12T11:17:05+08:00">
-                2019-02-12
-              </time>
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1980,11 +2243,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Flutter/" itemprop="url" rel="index">
-                    <span itemprop="name">Flutter</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Flutter/" itemprop="url" rel="index"><span itemprop="name">Flutter</span></a></span>
 
                 
                 
@@ -1994,14 +2253,17 @@
 
           
             
+            
+              
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
                 <a href="/2018/09/21/flutter-release-preview-2-pixel-perfect/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/09/21/flutter-release-preview-2-pixel-perfect/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/09/21/flutter-release-preview-2-pixel-perfect/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -2009,16 +2271,16 @@
 
           
           
-             <span id="/2018/09/21/flutter-release-preview-2-pixel-perfect/" class="leancloud_visitors" data-flag-title="(翻译) Flutter Release Preview 2 像素级别完美适配 iOS">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
+            <span id="/2018/09/21/flutter-release-preview-2-pixel-perfect/" class="leancloud_visitors" data-flag-title="(翻译) Flutter Release Preview 2 像素级别完美适配 iOS">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
           
 
           
@@ -2048,21 +2310,29 @@
 <p><img src="https://ws1.sinaimg.cn/large/006tNbRwgy1fvgzjfe351j318g08c75c.jpg" alt=""></p>
 <p>　　我们在今年 2 月份的 <a href="https://medium.com/flutter-io/announcing-flutter-beta-1-build-beautiful-native-apps-dc142aea74c0" target="_blank" rel="external">初始测试版本</a> 到今年夏天早些时候的 <a href="https://developers.googleblog.com/2018/06/flutter-release-preview-1-live-from.html" target="_blank" rel="external">首个发布预览版</a> 的可用性基础上，此版本继续完成核心方案和提高质量的工作。我们 Flutter 团队现在完全专注于完成我们的 1.0 版本。</p>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/09/21/flutter-release-preview-2-pixel-perfect/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/09/21/flutter-release-preview-2-pixel-perfect/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -2091,15 +2361,12 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/19/">19</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/19/">19</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
 
           </div>
-          
-
-
           
 
         </div>
@@ -2122,91 +2389,136 @@
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <img class="site-author-image" itemprop="image"
-              src="https://avatars3.githubusercontent.com/u/3645496?v=3&s=460"
-              alt="Wml" />
-          
-            <p class="site-author-name" itemprop="name">Wml</p>
-            <p class="site-description motion-element" itemprop="description">Life's A Struggle!</p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives/">
+              <img class="site-author-image" itemprop="image"
+                src="/image/me.jpg"
+                alt="Wml"/>
             
-                <span class="site-state-item-count">185</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
-            </div>
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-categories">
-              <a href="/categories/index.html">
-                <span class="site-state-item-count">4</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
-            </div>
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">10</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">Wml</p>
+              <p class="site-description motion-element" itemprop="description">Life's A Struggle!</p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">185</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:mxl1989@gmail.com" title="E-Mail &rarr; mailto:mxl1989@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/w4mxl" title="GitHub &rarr; https://github.com/w4mxl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
           
             
-              <span class="links-of-author-item">
-                <a href="https://github.com/w4mxl" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-github"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/w4mxl" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-twitter"></i>Twitter</a>
-              </span>
-            
           
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
-      </section>
+      </div>
 
       
 
@@ -2222,29 +2534,44 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2019</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
+        <div class="copyright">&copy; 2009 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-tree"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Wml</span>
+
+  
 
   
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.3.9</div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.2</div>
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.0.0</div>
+
+
 
 
         
 
 
+
+
+  <script>
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=66174635";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -2261,11 +2588,16 @@
       </div>
     
 
+    
+
+    
+
+    
   </div>
 
   
 
-<script type="text/javascript">
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
@@ -2279,7 +2611,6 @@
 
 
 
-  
 
 
 
@@ -2292,31 +2623,27 @@
 
 
 
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
 
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+
+
 
   
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
 
   
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+  <script src="/js/src/utils.js?v=7.0.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+  <script src="/js/src/motion.js?v=7.0.0"></script>
 
 
 
@@ -2324,14 +2651,10 @@
   
 
 
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+  <script src="/js/src/affix.js?v=7.0.0"></script>
 
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+  <script src="/js/src/schemes/pisces.js?v=7.0.0"></script>
 
-
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
 
   
@@ -2339,36 +2662,13 @@
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+  <script src="/js/src/bootstrap.js?v=7.0.0"></script>
 
 
 
   
-
-
   
-
-    
-      <script id="dsq-count-scr" src="https://w4mxl.disqus.com/count.js" async></script>
-    
-
-    
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
+  <script id="dsq-count-scr" src="https://w4mxl.disqus.com/count.js" async></script>
 
 
 
@@ -2381,25 +2681,20 @@
 
 
 
-
   
-
   
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("YRVJmKPkW8nxTT84v8n2DLWI-gzGzoHsz", "nCieC7gQPQlDCs6rLlv9qjqv");</script>
   <script>
+    
     function showTime(Counter) {
-      var query = new AV.Query(Counter);
       var entries = [];
-      var $visitors = $(".leancloud_visitors");
+      var $visitors = $('.leancloud_visitors');
 
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
+      $visitors.each(function() {
+        entries.push( $(this).attr('id').trim() );
       });
 
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { '$in': entries } }) })
+        .done(function({ results }) {
           var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
 
           if (results.length === 0) {
@@ -2409,83 +2704,48 @@
 
           for (var i = 0; i < results.length; i++) {
             var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
+            var url = item.url;
+            var time = item.time;
             var element = document.getElementById(url);
 
             $(element).find(COUNT_CONTAINER_REF).text(time);
           }
-          for(var i = 0; i < entries.length; i++) {
+          for (var i = 0; i < entries.length; i++) {
             var url = entries[i];
             var element = document.getElementById(url);
             var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
+            if (countSpan.text() == '') {
               countSpan.text(0);
             }
           }
         })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
+        .fail(function ({ responseJSON }) {
+          console.log(`LeanCloud Counter Error: ${responseJSON.code} ${responseJSON.error}`);
         });
     }
-
-    function addCount(Counter) {
-      var $visitors = $(".leancloud_visitors");
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
-
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
-          if (results.length > 0) {
-            var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
-          } else {
-            var newcounter = new Counter();
-            /* Set ACL */
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-            /* End Set ACL */
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
+    
 
     $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + 'YRVJmKPkW8nxTT84v8n2DLWI-gzGzoHsz')
+        .done(function({ api_server }) {
+          var Counter = function(method, url, data) {
+            return $.ajax({
+              method: method,
+              url: 'https://' + api_server + '/1.1' + url,
+              headers: {
+                'X-LC-Id': 'YRVJmKPkW8nxTT84v8n2DLWI-gzGzoHsz',
+                'X-LC-Key': 'nCieC7gQPQlDCs6rLlv9qjqv',
+                'Content-Type': 'application/json',
+              },
+              data: data
+            });
+          };
+          
+            if ($('.post-title-link').length >= 1) {
+              showTime(Counter);
+            }
+          
+        });
     });
   </script>
 
@@ -2500,6 +2760,97 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function(i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap');
+      $(e).after($wrap);
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function(e) {
+        var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+          return $(e).text();
+        }).toArray().join('\n');
+        var ta = document.createElement('textarea');
+        var range = document.createRange(); //For Chrome
+        var sel = window.getSelection(); //For Chrome
+        var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+        ta.style.top = yPosition + 'px'; //Prevent page scroll
+        ta.style.position = 'absolute';
+        ta.style.opacity = '0';
+        ta.value = code;
+        ta.textContent = code; //For FireFox
+        ta.contentEditable = true;
+        ta.readOnly = false;
+        document.body.appendChild(ta);
+        range.selectNode(ta);
+        sel.removeAllRanges();
+        sel.addRange(range);
+        ta.setSelectionRange(0, code.length);
+        var result = document.execCommand('copy');
+        
+          if (result) $(this).text('复制成功');
+          else $(this).text('复制失败');
+        
+        ta.blur(); //For iOS
+        $(this).blur();
+      })).on('mouseleave', function(e) {
+        var $b = $(this).find('.copy-btn');
+        setTimeout(function() {
+          $b.text('复制');
+        }, 300);
+      }).append(e);
+    })
+  </script>
+
 
 </body>
 </html>
