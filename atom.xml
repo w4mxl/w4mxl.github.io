@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://w4mxl.github.io/"/>
-  <updated>2019-02-12T07:33:22.740Z</updated>
+  <updated>2019-02-13T08:46:53.538Z</updated>
   <id>https://w4mxl.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://w4mxl.github.io/2019/02/12/flutter-ide-shortcuts-for-fast-development/"/>
     <id>https://w4mxl.github.io/2019/02/12/flutter-ide-shortcuts-for-fast-development/</id>
     <published>2019-02-12T03:14:12.000Z</published>
-    <updated>2019-02-12T07:33:22.740Z</updated>
+    <updated>2019-02-13T08:46:53.538Z</updated>
     
     <content type="html"><![CDATA[<h4 id="创建一个新的-Stateless-或者-Stateful-widget"><a href="#创建一个新的-Stateless-或者-Stateful-widget" class="headerlink" title="创建一个新的 Stateless 或者 Stateful widget"></a>创建一个新的 Stateless 或者 Stateful widget</h4><p>只需输入 <code>stless</code> 即可创建一个像这样的 Stateless widget：</p>
 <p><img src="https://i.loli.net/2019/02/12/5c623f4ea52fb.gif" alt="1_lfehNLtasYJUFEj7qv1ETw.gif"></p>
@@ -47,10 +47,8 @@
 <p><img src="https://i.loli.net/2019/02/12/5c6264c4c5c44.gif" alt="1_Thy02n4cbt_dZFS4Exw4RQ.gif"></p>
 <h4 id="在当前页面查看-Widget-的构造方法包含的属性"><a href="#在当前页面查看-Widget-的构造方法包含的属性" class="headerlink" title="在当前页面查看 Widget 的构造方法包含的属性"></a>在当前页面查看 Widget 的构造方法包含的属性</h4><p>上面介绍的通过快捷键 <code>Ctrl + B</code>（Windows）或 <code>Command + B</code>（Mac）来查看 widget 的源码，如果您只是想快速看一下 widget 的有哪些属性，可以通过另一个快捷键 <code>Ctrl+Shift+I</code>（Windows）或 <code>Command + Y</code>（Mac）做到。</p>
 <p><img src="https://i.loli.net/2019/02/12/5c6264c57f89f.gif" alt="1_9bvEQBMUzyJo33i_tE1dIg.gif"></p>
-<h4 id="快速选择整个-widget"><a href="#快速选择整个-widget" class="headerlink" title="快速选择整个 widget"></a>快速选择整个 widget</h4><p><img src="https://i.loli.net/2019/02/12/5c626567c0175.gif" alt="1_ajtutELoL4N7G8sldmCMuw.gif"></p>
-<p>▲ 一般操作。如果 widget 包含的代码比较多，嵌套深的话这样操作就会显得很麻烦且容易错。</p>
-<p><img src="https://i.loli.net/2019/02/12/5c62656805b00.gif" alt="1_yOO-rTQUAROmxXp2qwiDzg.gif"></p>
-<p>▲ 推荐使用快捷键操作。<code>Ctrl + W</code>（Windows）或 <code>Option + Up</code>（Mac）</p>
+<h4 id="快速选择整个-widget"><a href="#快速选择整个-widget" class="headerlink" title="快速选择整个 widget"></a>快速选择整个 widget</h4><p><img src="https://i.loli.net/2019/02/12/5c626567c0175.gif" alt="1_ajtutELoL4N7G8sldmCMuw.gif" title="一般操作。如果 widget 包含的代码比较多，嵌套深的话这样操作就会显得很麻烦且容易错"></p>
+<p><img src="https://i.loli.net/2019/02/12/5c62656805b00.gif" alt="1_yOO-rTQUAROmxXp2qwiDzg.gif" title="推荐使用快捷键操作。`Ctrl + W`（Windows）或`Option + Up`（Mac）"></p>
 <h4 id="代码格式化"><a href="#代码格式化" class="headerlink" title="代码格式化"></a>代码格式化</h4><p>这个快捷键就跟其它使用时没啥区别了：<br><code>Control + Alt + L</code>（Windows）或 <code>Command + Option + L</code>（Mac）</p>
 <p><img src="https://i.loli.net/2019/02/12/5c62677c483f8.gif" alt="1_DXX6iuWiGC7sNSPUc7UZnA.gif"></p>
 <h4 id="重构重命名（Refactor-Renaming）"><a href="#重构重命名（Refactor-Renaming）" class="headerlink" title="重构重命名（Refactor Renaming）"></a>重构重命名（Refactor Renaming）</h4><p>这个快捷键也跟其它时候使用时没区别，大家应该很熟悉了：<br><code>Shift + F6</code>（Windows 和 Mac 一样）。</p>
@@ -380,13 +378,13 @@
     <link href="https://w4mxl.github.io/2018/09/21/flutter-release-preview-2-pixel-perfect/"/>
     <id>https://w4mxl.github.io/2018/09/21/flutter-release-preview-2-pixel-perfect/</id>
     <published>2018-09-21T02:27:43.000Z</published>
-    <updated>2019-02-12T03:17:05.063Z</updated>
+    <updated>2019-02-13T08:45:27.337Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>原文:  <a href="https://developers.googleblog.com/2018/09/flutter-release-preview-2-pixel-perfect.html" target="_blank" rel="external">Flutter Release Preview 2: Pixel-Perfect on iOS</a><br>Posted by the Flutter Team at Google</p>
 </blockquote>
 <p>　　Flutter 是谷歌发布的新的移动应用开发工具包 (<code>译者注: 2017.05.17 Google I/O 2017 - Flutter 首次公布，Alpha (v0.0.6)</code>)，用于快速在 iOS 和 Android 上制作漂亮的原生界面。今天，在上海谷歌开发者日的主题演讲中，我们宣布了 <strong>Flutter Release Preview 2</strong>： Flutter 1.0 前的最后一个重要里程碑。</p>
-<p><img src="https://ws1.sinaimg.cn/large/006tNbRwgy1fvgzjfe351j318g08c75c.jpg" alt=""></p>
+<p><img src="https://ws1.sinaimg.cn/large/006tNbRwgy1fvgzjfe351j318g08c75c.jpg" alt="" title="Flutter Release Preview 2"></p>
 <p>　　我们在今年 2 月份的 <a href="https://medium.com/flutter-io/announcing-flutter-beta-1-build-beautiful-native-apps-dc142aea74c0" target="_blank" rel="external">初始测试版本</a> 到今年夏天早些时候的 <a href="https://developers.googleblog.com/2018/06/flutter-release-preview-1-live-from.html" target="_blank" rel="external">首个发布预览版</a> 的可用性基础上，此版本继续完成核心方案和提高质量的工作。我们 Flutter 团队现在完全专注于完成我们的 1.0 版本。</p>
 <a id="more"></a>
 <h3 id="Release-Preview-2-中的新功能"><a href="#Release-Preview-2-中的新功能" class="headerlink" title="Release Preview 2 中的新功能"></a>Release Preview 2 中的新功能</h3><p>　　此版本的主题是 <strong> 完美适配 iOS 应用程序 </strong>。虽然我们为 Flutter 设计了高度品牌驱动的定制体验，但我们也听到了一些想要构建严格遵循 <a href="https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/" target="_blank" rel="external">Apple 界面指南</a> 的应用程序的反馈。因此，在这个版本中，我们大大扩展了对 Flutter 中 “Cupertino” 主题控件的支持，其中 <a href="https://docs.flutter.io/flutter/cupertino/cupertino-library.html" target="_blank" rel="external">包含大量的小部件和类库</a>，使得在构建 iOS 应用程序时比以往任何时候都更容易。</p>
@@ -461,7 +459,7 @@
 &lt;p&gt;原文:  &lt;a href=&quot;https://developers.googleblog.com/2018/09/flutter-release-preview-2-pixel-perfect.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Flutter Release Preview 2: Pixel-Perfect on iOS&lt;/a&gt;&lt;br&gt;Posted by the Flutter Team at Google&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;　　Flutter 是谷歌发布的新的移动应用开发工具包 (&lt;code&gt;译者注: 2017.05.17 Google I/O 2017 - Flutter 首次公布，Alpha (v0.0.6)&lt;/code&gt;)，用于快速在 iOS 和 Android 上制作漂亮的原生界面。今天，在上海谷歌开发者日的主题演讲中，我们宣布了 &lt;strong&gt;Flutter Release Preview 2&lt;/strong&gt;： Flutter 1.0 前的最后一个重要里程碑。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/006tNbRwgy1fvgzjfe351j318g08c75c.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/006tNbRwgy1fvgzjfe351j318g08c75c.jpg&quot; alt=&quot;&quot; title=&quot;Flutter Release Preview 2&quot;&gt;&lt;/p&gt;
 &lt;p&gt;　　我们在今年 2 月份的 &lt;a href=&quot;https://medium.com/flutter-io/announcing-flutter-beta-1-build-beautiful-native-apps-dc142aea74c0&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;初始测试版本&lt;/a&gt; 到今年夏天早些时候的 &lt;a href=&quot;https://developers.googleblog.com/2018/06/flutter-release-preview-1-live-from.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;首个发布预览版&lt;/a&gt; 的可用性基础上，此版本继续完成核心方案和提高质量的工作。我们 Flutter 团队现在完全专注于完成我们的 1.0 版本。&lt;/p&gt;
     
     </summary>
