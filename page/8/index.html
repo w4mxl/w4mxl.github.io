@@ -290,7 +290,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>归档<span class="badge">185</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>归档<span class="badge">186</span></a>
 
   </li>
 
@@ -326,6 +326,209 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2014/11/21/insert-author-and-date-in-android-studio-new-file/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wml"/>
+      <meta itemprop="description" content="Life's A Struggle!"/>
+      <meta itemprop="image" content="/image/me.jpg"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wml'Blog"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2014/11/21/insert-author-and-date-in-android-studio-new-file/" class="post-title-link" itemprop="url">Android Studio 中新建一个文件时插入作者、日期</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2014-11-21 01:04:12" itemprop="dateCreated datePublished" datetime="2014-11-21T01:04:12+08:00">2014-11-21</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2016-01-14 00:24:14" itemprop="dateModified" datetime="2016-01-14T00:24:14+08:00">2016-01-14</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2014/11/21/insert-author-and-date-in-android-studio-new-file/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2014/11/21/insert-author-and-date-in-android-studio-new-file/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+            <span id="/2014/11/21/insert-author-and-date-in-android-studio-new-file/" class="leancloud_visitors" data-flag-title="Android Studio 中新建一个文件时插入作者、日期">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="需求描述："><a href="#需求描述：" class="headerlink" title="需求描述："></a>需求描述：</h3><p>在使用 android studio 过程中，想在新创建的文件（activity、service…）头部添加上 author、date 信息。
+　　</p>
+<h3 id="解决过程："><a href="#解决过程：" class="headerlink" title="解决过程："></a>解决过程：</h3><p><img src="/image/ 图 / Android Studio 中新建一个文件（Activity...）时插入作者、日期 01.png" width="700"></p>
+<p>我先是按照之前使用 eclipse 对这个需求的配置方法，这个方法是通过配置 Eclipse－Preferences－Java-Code Templates 里 Comments 模板来实现，如果可行的话会在每次创建完新的文件后自动在文件头插入配置上的信息。但是折腾完发现在这里行不通。</p>
+<p>之后就想到把想配置的这个模板做成一个快捷键，当新建完一个文件后，在文件的头部通过快捷键的方式插入前面配置好的信息。测试后发现可以行的通。</p>
+<p><img src="/image/ 图 / Android Studio 中新建一个文件（Activity...）时插入作者、日期 02.png" width="700"></p>
+<p><img src="/image/ 图 / Android Studio 中新建一个文件（Activity...）时插入作者、日期 03.png" width="600"><br><img src="/image/ 图 / Android Studio 中新建一个文件（Activity...）时插入作者、日期 04.png" width="600"></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -2273,207 +2476,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2014/03/30/2014.3.29-北京晴、深圳阴/"/>
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wml"/>
-      <meta itemprop="description" content="Life's A Struggle!"/>
-      <meta itemprop="image" content="/image/me.jpg"/>
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wml'Blog"/>
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2014/03/30/2014.3.29-北京晴、深圳阴/" class="post-title-link" itemprop="url">2014.3.29 北京晴、深圳阴</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2014-03-30 01:10:00" itemprop="dateCreated datePublished" datetime="2014-03-30T01:10:00+08:00">2014-03-30</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2016-01-18 22:47:30" itemprop="dateModified" datetime="2016-01-18T22:47:30+08:00">2016-01-18</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Life-s/" itemprop="url" rel="index"><span itemprop="name">Life's</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/2014/03/30/2014.3.29-北京晴、深圳阴/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2014/03/30/2014.3.29-北京晴、深圳阴/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-            <span id="/2014/03/30/2014.3.29-北京晴、深圳阴/" class="leancloud_visitors" data-flag-title="2014.3.29 北京晴、深圳阴">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读次数：</span>
-              
-                <span class="leancloud-visitors-count"></span>
-            </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>不知是少年明智<br>亦或是糊涂<br>决心踏上走南闯北的路</p>
-<p>只是心里明明白白的舍不得，北京<br>别过了，北京</p>
-<hr>
-<h2 id="匍匐"><a href="#匍匐" class="headerlink" title="匍匐"></a>匍匐</h2><p><strong> 文_随处春山 </strong></p>
-<p>近处的群山，远方的海<br>匍匐着巨大的身形<br>只为<br>让渺小的事物不虚此行。</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2525,7 +2527,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">185</span>
+                    <span class="site-state-item-count">186</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
