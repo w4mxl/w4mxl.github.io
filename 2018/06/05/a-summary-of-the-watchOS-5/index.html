@@ -28,10 +28,6 @@
 
 
 
-  
-  
-  <link rel="stylesheet" href="/lib/Han/dist/han.min.css?v=3.3"/>
-
 
 
 
@@ -80,7 +76,7 @@
   
     
     
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Serif SC:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"/>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Linux Biolinum:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"/>
   
 
 
@@ -138,18 +134,18 @@
 
 
 
-  <meta name="description" content="忘了从哪一年开始，苹果一年一度的 WWDC 大会都会熬夜去看直播，其实虽然知道白天肯定也会有很多所谓的 5 分钟无废话版或者很全面完整的解读文章，总还是不愿舍弃观看直播的那种即时快感。 这次看之前还给自己准备了冰镇西瓜、鱼皮花生（很喜欢吃😍）和王老吉，直播看得爽歪歪。">
+  <meta name="description" content="忘了从哪一年开始，苹果一年一度的 WWDC 大会都会熬夜去看直播，其实虽然知道白天肯定也会有很多所谓的5分钟无废话版或者很全面完整的解读文章，总还是不愿舍弃观看直播的那种即时快感。 这次看之前还给自己准备了冰镇西瓜、鱼皮花生（很喜欢吃😍）和王老吉，直播看得爽歪歪。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="WWDC 2018 中关于 watchOS 5 的笔记">
 <meta property="og:url" content="https://w4mxl.github.io/2018/06/05/a-summary-of-the-watchOS-5/index.html">
 <meta property="og:site_name" content="Wml&#39;Blog">
-<meta property="og:description" content="忘了从哪一年开始，苹果一年一度的 WWDC 大会都会熬夜去看直播，其实虽然知道白天肯定也会有很多所谓的 5 分钟无废话版或者很全面完整的解读文章，总还是不愿舍弃观看直播的那种即时快感。 这次看之前还给自己准备了冰镇西瓜、鱼皮花生（很喜欢吃😍）和王老吉，直播看得爽歪歪。">
+<meta property="og:description" content="忘了从哪一年开始，苹果一年一度的 WWDC 大会都会熬夜去看直播，其实虽然知道白天肯定也会有很多所谓的5分钟无废话版或者很全面完整的解读文章，总还是不愿舍弃观看直播的那种即时快感。 这次看之前还给自己准备了冰镇西瓜、鱼皮花生（很喜欢吃😍）和王老吉，直播看得爽歪歪。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79gy1fs1icl2qe0j31hc0u078a.jpg">
 <meta property="og:updated_time" content="2018-06-06T08:05:36.058Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WWDC 2018 中关于 watchOS 5 的笔记">
-<meta name="twitter:description" content="忘了从哪一年开始，苹果一年一度的 WWDC 大会都会熬夜去看直播，其实虽然知道白天肯定也会有很多所谓的 5 分钟无废话版或者很全面完整的解读文章，总还是不愿舍弃观看直播的那种即时快感。 这次看之前还给自己准备了冰镇西瓜、鱼皮花生（很喜欢吃😍）和王老吉，直播看得爽歪歪。">
+<meta name="twitter:description" content="忘了从哪一年开始，苹果一年一度的 WWDC 大会都会熬夜去看直播，其实虽然知道白天肯定也会有很多所谓的5分钟无废话版或者很全面完整的解读文章，总还是不愿舍弃观看直播的那种即时快感。 这次看之前还给自己准备了冰镇西瓜、鱼皮花生（很喜欢吃😍）和王老吉，直播看得爽歪歪。">
 <meta name="twitter:image" content="https://ws2.sinaimg.cn/large/006tNc79gy1fs1icl2qe0j31hc0u078a.jpg">
 
 
@@ -509,13 +505,13 @@
     
     
     
-    <div class="post-body han-init-context" itemprop="articleBody">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
-        <p>忘了从哪一年开始，苹果一年一度的 WWDC 大会都会熬夜去看直播，其实虽然知道白天肯定也会有很多所谓的 5 分钟无废话版或者很全面完整的解读文章，总还是不愿舍弃观看直播的那种即时快感。</p>
+        <p>忘了从哪一年开始，苹果一年一度的 WWDC 大会都会熬夜去看直播，其实虽然知道白天肯定也会有很多所谓的5分钟无废话版或者很全面完整的解读文章，总还是不愿舍弃观看直播的那种即时快感。</p>
 <p>这次看之前还给自己准备了冰镇西瓜、鱼皮花生（很喜欢吃😍）和王老吉，直播看得爽歪歪。</p>
 <p><img src="https://ws2.sinaimg.cn/large/006tNc79gy1fs1icl2qe0j31hc0u078a.jpg" alt=""></p>
 <a id="more"></a>
@@ -536,12 +532,12 @@
 <ul>
 <li>Workout Updates （加入新运动模式与自动侦测功能）</li>
 </ul>
-<p>这次 watchOS 5 上，加入两个新的运动模式，瑜珈（Yoga）、户外健走活动（Hiking）。更欣喜的是有了运动自动侦测。这个我之前使用的三星 Gear S2 手表上就有这个功能，特别方便好用的。现在 Apple Watch 也可以在侦测到用户开始运动后主动给予提醒，结束的时候提醒关闭运动。</p>
+<p>这次 watchOS 5 上，加入两个新的运动模式，瑜珈（Yoga）、户外健走活动（Hiking）。更欣喜的是有了运动自动侦测。这个我之前使用的三星 Gear S2 手表上就有这个功能，特别方便好用的。现在Apple Watch 也可以在侦测到用户开始运动后主动给予提醒，结束的时候提醒关闭运动。</p>
 <ul>
 <li>Walkie-Talkie （对讲机）</li>
 </ul>
-<p>哈哈，这个功能看 WWDC 上的演示就觉得特别有趣。我记得小时候家里是有一对对讲机的，有效连接距离只有 20 米左右，那时候和朋友玩游戏用得不亦乐乎呢，你一言我一语，洞幺洞幺我是洞拐。</p>
-<p>PS. 本来很期待这次 WWDC 上会发布 iPhone SE2 的，可惜还没有… 😭</p>
+<p>哈哈，这个功能看 WWDC 上的演示就觉得特别有趣。我记得小时候家里是有一对对讲机的，有效连接距离只有20米左右，那时候和朋友玩游戏用得不亦乐乎呢，你一言我一语，洞幺洞幺我是洞拐。</p>
+<p>PS. 本来很期待这次 WWDC 上会发布 iPhone SE2的，可惜还没有… 😭</p>
 
       
     </div>
@@ -1417,6 +1413,11 @@
   
 
   
+  
+  
+  <script src="/lib/pangu/dist/pangu.min.js?v=3.3"></script>
+  <script>pangu.spacingPage();</script>
+
 
   
 

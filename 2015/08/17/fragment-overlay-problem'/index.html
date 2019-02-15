@@ -28,10 +28,6 @@
 
 
 
-  
-  
-  <link rel="stylesheet" href="/lib/Han/dist/han.min.css?v=3.3"/>
-
 
 
 
@@ -80,7 +76,7 @@
   
     
     
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Serif SC:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"/>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Linux Biolinum:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"/>
   
 
 
@@ -138,18 +134,18 @@
 
 
 
-  <meta name="description" content="在最近做的项目中，遇到了 Fragment 重叠的问题。具体的情况是，app 需要在多个 Fragment 间切换，并且保存每个 Fragment 的状态。官方的方法是使用 replace () 来替换 Fragment，但是 replace () 的调用会导致 Fragment 的 onCreteView () 被调用，所以切换界面时会无法保存当前的状态。因此一般采用 add ()、hide (">
+  <meta name="description" content="在最近做的项目中，遇到了 Fragment 重叠的问题。具体的情况是，app 需要在多个 Fragment 间切换，并且保存每个 Fragment 的状态。官方的方法是使用 replace() 来替换 Fragment，但是 replace() 的调用会导致 Fragment 的 onCreteView() 被调用，所以切换界面时会无法保存当前的状态。因此一般采用 add()、hide()与 sh">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Fragment 重叠 (重影) 问题">
+<meta property="og:title" content="Fragment 重叠(重影)问题">
 <meta property="og:url" content="https://w4mxl.github.io/2015/08/17/fragment-overlay-problem'/index.html">
 <meta property="og:site_name" content="Wml&#39;Blog">
-<meta property="og:description" content="在最近做的项目中，遇到了 Fragment 重叠的问题。具体的情况是，app 需要在多个 Fragment 间切换，并且保存每个 Fragment 的状态。官方的方法是使用 replace () 来替换 Fragment，但是 replace () 的调用会导致 Fragment 的 onCreteView () 被调用，所以切换界面时会无法保存当前的状态。因此一般采用 add ()、hide (">
+<meta property="og:description" content="在最近做的项目中，遇到了 Fragment 重叠的问题。具体的情况是，app 需要在多个 Fragment 间切换，并且保存每个 Fragment 的状态。官方的方法是使用 replace() 来替换 Fragment，但是 replace() 的调用会导致 Fragment 的 onCreteView() 被调用，所以切换界面时会无法保存当前的状态。因此一般采用 add()、hide()与 sh">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://ww1.sinaimg.cn/mw690/62ed8609gw1ev5ds1gancj20lc0zkgnp.jpg">
 <meta property="og:updated_time" content="2016-01-13T16:13:40.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Fragment 重叠 (重影) 问题">
-<meta name="twitter:description" content="在最近做的项目中，遇到了 Fragment 重叠的问题。具体的情况是，app 需要在多个 Fragment 间切换，并且保存每个 Fragment 的状态。官方的方法是使用 replace () 来替换 Fragment，但是 replace () 的调用会导致 Fragment 的 onCreteView () 被调用，所以切换界面时会无法保存当前的状态。因此一般采用 add ()、hide (">
+<meta name="twitter:title" content="Fragment 重叠(重影)问题">
+<meta name="twitter:description" content="在最近做的项目中，遇到了 Fragment 重叠的问题。具体的情况是，app 需要在多个 Fragment 间切换，并且保存每个 Fragment 的状态。官方的方法是使用 replace() 来替换 Fragment，但是 replace() 的调用会导致 Fragment 的 onCreteView() 被调用，所以切换界面时会无法保存当前的状态。因此一般采用 add()、hide()与 sh">
 <meta name="twitter:image" content="http://ww1.sinaimg.cn/mw690/62ed8609gw1ev5ds1gancj20lc0zkgnp.jpg">
 
 
@@ -169,7 +165,7 @@
   };
 </script>
 
-  <title>Fragment 重叠 (重影) 问题 | Wml'Blog</title>
+  <title>Fragment 重叠(重影)问题 | Wml'Blog</title>
   
 
 
@@ -396,7 +392,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Fragment 重叠 (重影) 问题
+          <h2 class="post-title" itemprop="name headline">Fragment 重叠(重影)问题
 
               
             
@@ -484,7 +480,7 @@
 
           
           
-            <span id="/2015/08/17/fragment-overlay-problem'/" class="leancloud_visitors" data-flag-title="Fragment 重叠 (重影) 问题">
+            <span id="/2015/08/17/fragment-overlay-problem'/" class="leancloud_visitors" data-flag-title="Fragment 重叠(重影)问题">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -509,28 +505,19 @@
     
     
     
-    <div class="post-body han-init-context" itemprop="articleBody">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
-        <p>在最近做的项目中，遇到了 Fragment 重叠的问题。具体的情况是，app 需要在多个 Fragment 间切换，并且保存每个 Fragment 的状态。官方的方法是使用 replace () 来替换 Fragment，但是 replace () 的调用会导致 Fragment 的 onCreteView () 被调用，所以切换界面时会无法保存当前的状态。因此一般采用 add ()、hide () 与 show () 配合，来达到保存 Fragment 的状态。</p>
-<p>正常情况下显示是对的，现象发生在我切换到其他的 app，操作一会之后，再回到当前的 app，有一定几率会出现 Fragment 重叠的现象。</p>
-<p>可以通过下面的方式进行手动重现这个 BUG:</p>
-<ol>
-<li>手机的 “设置” - “开发者选项” - 打开 “不保留活动”(主要用于模拟 Activity 被及时回收)</li>
-<li>把 app 切换到后台，再重新打开，通过点按不同的 tab 来切换 Fragment<br><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1ev5ds1gancj20lc0zkgnp.jpg" width="200"><br>▲ 重现 Fragment 的重叠</li>
-</ol>
-<p>起初我以为是我在使用 add ()、hide () 、show () 切换 Fragment 的时候有什么地方使用的不对，尝试去解决重叠的 bug，无果后，还是通过 google 找出了原因和解决方案。</p>
-<h4 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h4><p>使用 Fragment 的状态保存，当系统内存不足，Fragment 的宿主 Activity 回收的时候，Fragment 的实例并没有随之被回收。Activity 被系统回收时，会主动调用 onSaveInstance () 方法来保存视图层（View Hierarchy），所以当 Activity 通过导航再次被重建时，之前被实例化过的 Fragment 依然会出现在 Activity 中，此时的 FragmentTransaction 中的相当于又再次 add 了 fragment 进去的，hide () 和 show () 方法对之前保存的 fragment 已经失效了。综上这些因素导致了多个 Fragment 重叠在一起。</p>
-<h4 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h4><p><strong> 方案一:</strong></p>
-<ol>
-<li>给每个 Fragment 加一个 Tag</li>
-<li>在 onCreate (Bundle savedInstanceState) 中判断 Bundle savedInstanceState 是否不为空</li>
-<li>不为空则进行 find Tag，重新给几个 frament 赋值<br>这样子仍是对之前保存的 fragment 操作，成功解决了重叠的问题。</li>
-</ol>
-<p><strong> 方案二:</strong><br>Activity 中的 onSaveInstanceState () 里面有一句 <em> super.onSaveInstanceState (outState);</em>，Google 对于这句话的解释是 “Always call the superclass so it can save the view hierarchy state”，大概意思是 “总是执行这句代码来调用父类去保存视图层的状态”。通过注释掉这句话，这样主 Activity 因为种种原因被回收的时候就不会保存之前的 fragment state，也可以成功解决重叠的问题。</p>
+        <p>在最近做的项目中，遇到了 Fragment 重叠的问题。具体的情况是，app 需要在多个 Fragment 间切换，并且保存每个 Fragment 的状态。官方的方法是使用 replace() 来替换 Fragment，但是 replace() 的调用会导致 Fragment 的 onCreteView() 被调用，所以切换界面时会无法保存当前的状态。因此一般采用 add()、hide()与 show()配合，来达到保存 Fragment 的状态。</p>
+<p>正常情况下显示是对的，现象发生在我切换到其他的app，操作一会之后，再回到当前的app，有一定几率会出现 Fragment 重叠的现象。</p>
+<p>可以通过下面的方式进行手动重现这个BUG:<br>1.手机的 “设置” - “开发者选项” - 打开”不保留活动”(主要用于模拟Activity被及时回收)<br>2.把 app 切换到后台，再重新打开，通过点按不同的 tab 来切换 Fragment<br><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1ev5ds1gancj20lc0zkgnp.jpg" width="200"><br>▲ 重现 Fragment 的重叠</p>
+<p>起初我以为是我在使用add()、hide() 、show() 切换 Fragment 的时候有什么地方使用的不对，尝试去解决重叠的 bug，无果后，还是通过 google 找出了原因和解决方案。</p>
+<h4 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h4><p>使用 Fragment 的状态保存，当系统内存不足，Fragment 的宿主 Activity 回收的时候，Fragment 的实例并没有随之被回收。Activity 被系统回收时，会主动调用 onSaveInstance() 方法来保存视图层（View Hierarchy），所以当 Activity 通过导航再次被重建时，之前被实例化过的 Fragment 依然会出现在 Activity 中，此时的 FragmentTransaction 中的相当于又再次 add 了 fragment 进去的，hide()和show()方法对之前保存的fragment已经失效了。综上这些因素导致了多个Fragment重叠在一起。</p>
+<h4 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h4><p><strong>方案一:</strong><br>1.给每个 Fragment 加一个 Tag<br>2.在 onCreate(Bundle savedInstanceState) 中判断 Bundle savedInstanceState 是否不为空<br>3.不为空则进行 find Tag，重新给几个 frament 赋值<br>这样子仍是对之前保存的 fragment 操作，成功解决了重叠的问题。</p>
+<p><strong>方案二:</strong><br>Activity 中的 onSaveInstanceState() 里面有一句<em>super.onSaveInstanceState(outState);</em>，Google 对于这句话的解释是 “Always call the superclass so it can save the view hierarchy state”，大概意思是“总是执行这句代码来调用父类去保存视图层的状态”。通过注释掉这句话，这样主 Activity 因为种种原因被回收的时候就不会保存之前的 fragment state，也可以成功解决重叠的问题。</p>
 
       
     </div>
@@ -564,7 +551,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="https://w4mxl.github.io/2015/08/17/fragment-overlay-problem'/" title="Fragment 重叠 (重影) 问题">https://w4mxl.github.io/2015/08/17/fragment-overlay-problem'/</a>
+    <a href="https://w4mxl.github.io/2015/08/17/fragment-overlay-problem'/" title="Fragment 重叠(重影)问题">https://w4mxl.github.io/2015/08/17/fragment-overlay-problem'/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -979,7 +966,7 @@
   var disqus_config = function() {
     this.page.url = "https://w4mxl.github.io/2015/08/17/fragment-overlay-problem'/";
     this.page.identifier = "2015/08/17/fragment-overlay-problem'/";
-    this.page.title = 'Fragment 重叠 (重影) 问题';
+    this.page.title = 'Fragment 重叠(重影)问题';
     };
   function loadComments() {
     var d = document, s = d.createElement('script');
@@ -1406,6 +1393,11 @@
   
 
   
+  
+  
+  <script src="/lib/pangu/dist/pangu.min.js?v=3.3"></script>
+  <script>pangu.spacingPage();</script>
+
 
   
 

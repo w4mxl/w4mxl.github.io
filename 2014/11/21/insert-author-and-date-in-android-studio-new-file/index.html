@@ -28,10 +28,6 @@
 
 
 
-  
-  
-  <link rel="stylesheet" href="/lib/Han/dist/han.min.css?v=3.3"/>
-
 
 
 
@@ -80,7 +76,7 @@
   
     
     
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Serif SC:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"/>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Linux Biolinum:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"/>
   
 
 
@@ -138,23 +134,23 @@
 
 
 
-  <meta name="description" content="需求描述：在使用 android studio 过程中，想在新创建的文件（activity、service…）头部添加上 author、date 信息。 　　 解决过程： 我先是按照之前使用 eclipse 对这个需求的配置方法，这个方法是通过配置 Eclipse－Preferences－Java-Code Templates 里 Comments 模板来实现，如果可行的话会在每次创建完新的文件后">
+  <meta name="description" content="需求描述：在使用android studio过程中，想在新创建的文件（activity、service…）头部添加上author、date信息。 　　 解决过程： 我先是按照之前使用eclipse对这个需求的配置方法，这个方法是通过配置Eclipse－Preferences－Java-Code Templates里Comments模板来实现，如果可行的话会在每次创建完新的文件后自动在文件头插入配置">
 <meta name="keywords" content="Android Studio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android Studio 中新建一个文件时插入作者、日期">
+<meta property="og:title" content="Android Studio中新建一个文件时插入作者、日期">
 <meta property="og:url" content="https://w4mxl.github.io/2014/11/21/insert-author-and-date-in-android-studio-new-file/index.html">
 <meta property="og:site_name" content="Wml&#39;Blog">
-<meta property="og:description" content="需求描述：在使用 android studio 过程中，想在新创建的文件（activity、service…）头部添加上 author、date 信息。 　　 解决过程： 我先是按照之前使用 eclipse 对这个需求的配置方法，这个方法是通过配置 Eclipse－Preferences－Java-Code Templates 里 Comments 模板来实现，如果可行的话会在每次创建完新的文件后">
+<meta property="og:description" content="需求描述：在使用android studio过程中，想在新创建的文件（activity、service…）头部添加上author、date信息。 　　 解决过程： 我先是按照之前使用eclipse对这个需求的配置方法，这个方法是通过配置Eclipse－Preferences－Java-Code Templates里Comments模板来实现，如果可行的话会在每次创建完新的文件后自动在文件头插入配置">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://w4mxl.github.io/image/%20图%20/%20Android%20Studio%20中新建一个文件（Activity...）时插入作者、日期%2001.png">
-<meta property="og:image" content="https://w4mxl.github.io/image/%20图%20/%20Android%20Studio%20中新建一个文件（Activity...）时插入作者、日期%2002.png">
-<meta property="og:image" content="https://w4mxl.github.io/image/%20图%20/%20Android%20Studio%20中新建一个文件（Activity...）时插入作者、日期%2003.png">
-<meta property="og:image" content="https://w4mxl.github.io/image/%20图%20/%20Android%20Studio%20中新建一个文件（Activity...）时插入作者、日期%2004.png">
+<meta property="og:image" content="https://w4mxl.github.io/image/图/Android%20Studio中新建一个文件（Activity...）时插入作者、日期01.png">
+<meta property="og:image" content="https://w4mxl.github.io/image/图/Android%20Studio中新建一个文件（Activity...）时插入作者、日期02.png">
+<meta property="og:image" content="https://w4mxl.github.io/image/图/Android%20Studio中新建一个文件（Activity...）时插入作者、日期03.png">
+<meta property="og:image" content="https://w4mxl.github.io/image/图/Android%20Studio中新建一个文件（Activity...）时插入作者、日期04.png">
 <meta property="og:updated_time" content="2016-01-13T16:24:14.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android Studio 中新建一个文件时插入作者、日期">
-<meta name="twitter:description" content="需求描述：在使用 android studio 过程中，想在新创建的文件（activity、service…）头部添加上 author、date 信息。 　　 解决过程： 我先是按照之前使用 eclipse 对这个需求的配置方法，这个方法是通过配置 Eclipse－Preferences－Java-Code Templates 里 Comments 模板来实现，如果可行的话会在每次创建完新的文件后">
-<meta name="twitter:image" content="https://w4mxl.github.io/image/%20图%20/%20Android%20Studio%20中新建一个文件（Activity...）时插入作者、日期%2001.png">
+<meta name="twitter:title" content="Android Studio中新建一个文件时插入作者、日期">
+<meta name="twitter:description" content="需求描述：在使用android studio过程中，想在新创建的文件（activity、service…）头部添加上author、date信息。 　　 解决过程： 我先是按照之前使用eclipse对这个需求的配置方法，这个方法是通过配置Eclipse－Preferences－Java-Code Templates里Comments模板来实现，如果可行的话会在每次创建完新的文件后自动在文件头插入配置">
+<meta name="twitter:image" content="https://w4mxl.github.io/image/图/Android%20Studio中新建一个文件（Activity...）时插入作者、日期01.png">
 
 
 
@@ -173,7 +169,7 @@
   };
 </script>
 
-  <title>Android Studio 中新建一个文件时插入作者、日期 | Wml'Blog</title>
+  <title>Android Studio中新建一个文件时插入作者、日期 | Wml'Blog</title>
   
 
 
@@ -400,7 +396,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Android Studio 中新建一个文件时插入作者、日期
+          <h2 class="post-title" itemprop="name headline">Android Studio中新建一个文件时插入作者、日期
 
               
             
@@ -488,7 +484,7 @@
 
           
           
-            <span id="/2014/11/21/insert-author-and-date-in-android-studio-new-file/" class="leancloud_visitors" data-flag-title="Android Studio 中新建一个文件时插入作者、日期">
+            <span id="/2014/11/21/insert-author-and-date-in-android-studio-new-file/" class="leancloud_visitors" data-flag-title="Android Studio中新建一个文件时插入作者、日期">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -513,19 +509,19 @@
     
     
     
-    <div class="post-body han-init-context" itemprop="articleBody">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
-        <h3 id="需求描述："><a href="#需求描述：" class="headerlink" title="需求描述："></a>需求描述：</h3><p>在使用 android studio 过程中，想在新创建的文件（activity、service…）头部添加上 author、date 信息。
+        <h3 id="需求描述："><a href="#需求描述：" class="headerlink" title="需求描述："></a>需求描述：</h3><p>在使用android studio过程中，想在新创建的文件（activity、service…）头部添加上author、date信息。
 　　</p>
-<h3 id="解决过程："><a href="#解决过程：" class="headerlink" title="解决过程："></a>解决过程：</h3><p><img src="/image/ 图 / Android Studio 中新建一个文件（Activity...）时插入作者、日期 01.png" width="700"></p>
-<p>我先是按照之前使用 eclipse 对这个需求的配置方法，这个方法是通过配置 Eclipse－Preferences－Java-Code Templates 里 Comments 模板来实现，如果可行的话会在每次创建完新的文件后自动在文件头插入配置上的信息。但是折腾完发现在这里行不通。</p>
+<h3 id="解决过程："><a href="#解决过程：" class="headerlink" title="解决过程："></a>解决过程：</h3><p><img src="/image/图/Android Studio中新建一个文件（Activity...）时插入作者、日期01.png" width="700"></p>
+<p>我先是按照之前使用eclipse对这个需求的配置方法，这个方法是通过配置Eclipse－Preferences－Java-Code Templates里Comments模板来实现，如果可行的话会在每次创建完新的文件后自动在文件头插入配置上的信息。但是折腾完发现在这里行不通。</p>
 <p>之后就想到把想配置的这个模板做成一个快捷键，当新建完一个文件后，在文件的头部通过快捷键的方式插入前面配置好的信息。测试后发现可以行的通。</p>
-<p><img src="/image/ 图 / Android Studio 中新建一个文件（Activity...）时插入作者、日期 02.png" width="700"></p>
-<p><img src="/image/ 图 / Android Studio 中新建一个文件（Activity...）时插入作者、日期 03.png" width="600"><br><img src="/image/ 图 / Android Studio 中新建一个文件（Activity...）时插入作者、日期 04.png" width="600"></p>
+<p><img src="/image/图/Android Studio中新建一个文件（Activity...）时插入作者、日期02.png" width="700"></p>
+<p><img src="/image/图/Android Studio中新建一个文件（Activity...）时插入作者、日期03.png" width="600"><br><img src="/image/图/Android Studio中新建一个文件（Activity...）时插入作者、日期04.png" width="600"></p>
 
       
     </div>
@@ -559,7 +555,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="https://w4mxl.github.io/2014/11/21/insert-author-and-date-in-android-studio-new-file/" title="Android Studio 中新建一个文件时插入作者、日期">https://w4mxl.github.io/2014/11/21/insert-author-and-date-in-android-studio-new-file/</a>
+    <a href="https://w4mxl.github.io/2014/11/21/insert-author-and-date-in-android-studio-new-file/" title="Android Studio中新建一个文件时插入作者、日期">https://w4mxl.github.io/2014/11/21/insert-author-and-date-in-android-studio-new-file/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -585,8 +581,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2014/10/27/Github中“Clone-in-Desktop”无效的解决办法/" rel="next" title="Github 中 “Clone in Desktop” 无效的解决办法">
-                <i class="fa fa-chevron-left"></i> Github 中 “Clone in Desktop” 无效的解决办法
+              <a href="/2014/10/27/Github中“Clone-in-Desktop”无效的解决办法/" rel="next" title="Github中 “Clone in Desktop” 无效的解决办法">
+                <i class="fa fa-chevron-left"></i> Github中 “Clone in Desktop” 无效的解决办法
               </a>
             
           </div>
@@ -980,7 +976,7 @@
   var disqus_config = function() {
     this.page.url = "https://w4mxl.github.io/2014/11/21/insert-author-and-date-in-android-studio-new-file/";
     this.page.identifier = "2014/11/21/insert-author-and-date-in-android-studio-new-file/";
-    this.page.title = 'Android Studio 中新建一个文件时插入作者、日期';
+    this.page.title = 'Android Studio中新建一个文件时插入作者、日期';
     };
   function loadComments() {
     var d = document, s = d.createElement('script');
@@ -1407,6 +1403,11 @@
   
 
   
+  
+  
+  <script src="/lib/pangu/dist/pangu.min.js?v=3.3"></script>
+  <script>pangu.spacingPage();</script>
+
 
   
 

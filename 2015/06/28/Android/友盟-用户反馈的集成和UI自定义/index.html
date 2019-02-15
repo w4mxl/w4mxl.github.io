@@ -28,10 +28,6 @@
 
 
 
-  
-  
-  <link rel="stylesheet" href="/lib/Han/dist/han.min.css?v=3.3"/>
-
 
 
 
@@ -80,7 +76,7 @@
   
     
     
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Serif SC:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"/>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Linux Biolinum:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"/>
   
 
 
@@ -138,13 +134,13 @@
 
 
 
-  <meta name="description" content="1. 对比  注：友盟用户反馈 SDK 中默认的用户反馈页，功能大而全 (联系方式可以选择电话、QQ、邮箱；用户可以用发送语音反馈；可发图片；回复后推送消息给用户…)，可这设计实在是丑到没朋友，且友盟集成的方式很难在原基础上对 UI 进行自定义…       注: app 中 “用户反馈” 功能常见的页面是长这个样子的：图 1 截自大众点评   图 2 截自豆瓣 FM     注: “联系方式 (">
+  <meta name="description" content="1. 对比  注: 友盟用户反馈SDK中默认的用户反馈页，功能大而全(联系方式可以选择电话、QQ、邮箱;用户可以用发送语音反馈;可发图片;回复后推送消息给用户…)，可这设计实在是丑到没朋友，且友盟集成的方式很难在原基础上对UI进行自定义…       注: app中”用户反馈”功能常见的页面是长这个样子的: 图1 截自大众点评   图2 截自豆瓣FM    注: “联系方式 (EditText)">
 <meta name="keywords" content="友盟">
 <meta property="og:type" content="article">
-<meta property="og:title" content="友盟 -&quot;用户反馈&quot; 的集成和 UI 自定义">
+<meta property="og:title" content="友盟-&quot;用户反馈&quot;的集成和UI自定义">
 <meta property="og:url" content="https://w4mxl.github.io/2015/06/28/Android/友盟-用户反馈的集成和UI自定义/index.html">
 <meta property="og:site_name" content="Wml&#39;Blog">
-<meta property="og:description" content="1. 对比  注：友盟用户反馈 SDK 中默认的用户反馈页，功能大而全 (联系方式可以选择电话、QQ、邮箱；用户可以用发送语音反馈；可发图片；回复后推送消息给用户…)，可这设计实在是丑到没朋友，且友盟集成的方式很难在原基础上对 UI 进行自定义…       注: app 中 “用户反馈” 功能常见的页面是长这个样子的：图 1 截自大众点评   图 2 截自豆瓣 FM     注: “联系方式 (">
+<meta property="og:description" content="1. 对比  注: 友盟用户反馈SDK中默认的用户反馈页，功能大而全(联系方式可以选择电话、QQ、邮箱;用户可以用发送语音反馈;可发图片;回复后推送消息给用户…)，可这设计实在是丑到没朋友，且友盟集成的方式很难在原基础上对UI进行自定义…       注: app中”用户反馈”功能常见的页面是长这个样子的: 图1 截自大众点评   图2 截自豆瓣FM    注: “联系方式 (EditText)">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://ww4.sinaimg.cn/mw690/62ed8609jw1etk3hqcje6j20lc0zkq5i.jpg">
 <meta property="og:image" content="http://ww3.sinaimg.cn/mw690/62ed8609jw1etk2r6ohbrj20lc0zktah.jpg">
@@ -152,8 +148,8 @@
 <meta property="og:image" content="http://ww4.sinaimg.cn/mw690/62ed8609jw1etk2r5d49oj20lc0zk0uz.jpg">
 <meta property="og:updated_time" content="2016-01-13T15:27:10.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="友盟 -&quot;用户反馈&quot; 的集成和 UI 自定义">
-<meta name="twitter:description" content="1. 对比  注：友盟用户反馈 SDK 中默认的用户反馈页，功能大而全 (联系方式可以选择电话、QQ、邮箱；用户可以用发送语音反馈；可发图片；回复后推送消息给用户…)，可这设计实在是丑到没朋友，且友盟集成的方式很难在原基础上对 UI 进行自定义…       注: app 中 “用户反馈” 功能常见的页面是长这个样子的：图 1 截自大众点评   图 2 截自豆瓣 FM     注: “联系方式 (">
+<meta name="twitter:title" content="友盟-&quot;用户反馈&quot;的集成和UI自定义">
+<meta name="twitter:description" content="1. 对比  注: 友盟用户反馈SDK中默认的用户反馈页，功能大而全(联系方式可以选择电话、QQ、邮箱;用户可以用发送语音反馈;可发图片;回复后推送消息给用户…)，可这设计实在是丑到没朋友，且友盟集成的方式很难在原基础上对UI进行自定义…       注: app中”用户反馈”功能常见的页面是长这个样子的: 图1 截自大众点评   图2 截自豆瓣FM    注: “联系方式 (EditText)">
 <meta name="twitter:image" content="http://ww4.sinaimg.cn/mw690/62ed8609jw1etk3hqcje6j20lc0zkq5i.jpg">
 
 
@@ -173,7 +169,7 @@
   };
 </script>
 
-  <title>友盟 -"用户反馈" 的集成和 UI 自定义 | Wml'Blog</title>
+  <title>友盟-"用户反馈"的集成和UI自定义 | Wml'Blog</title>
   
 
 
@@ -400,7 +396,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">友盟 -"用户反馈" 的集成和 UI 自定义
+          <h2 class="post-title" itemprop="name headline">友盟-"用户反馈"的集成和UI自定义
 
               
             
@@ -488,7 +484,7 @@
 
           
           
-            <span id="/2015/06/28/Android/友盟-用户反馈的集成和UI自定义/" class="leancloud_visitors" data-flag-title="友盟 -"用户反馈" 的集成和 UI 自定义">
+            <span id="/2015/06/28/Android/友盟-用户反馈的集成和UI自定义/" class="leancloud_visitors" data-flag-title="友盟-"用户反馈"的集成和UI自定义">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -513,7 +509,7 @@
     
     
     
-    <div class="post-body han-init-context" itemprop="articleBody">
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -521,21 +517,21 @@
       
         <h3 id="1-对比"><a href="#1-对比" class="headerlink" title="1. 对比"></a>1. 对比</h3><p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1etk3hqcje6j20lc0zkq5i.jpg" width="250"></p>
 <blockquote>
-<p>注：友盟用户反馈 SDK 中默认的用户反馈页，功能大而全 (联系方式可以选择电话、QQ、邮箱；用户可以用发送语音反馈；可发图片；回复后推送消息给用户…)，可这设计实在是丑到没朋友，且友盟集成的方式很难在原基础上对 UI 进行自定义…</p>
+<p>注: 友盟用户反馈SDK中默认的用户反馈页，功能大而全(联系方式可以选择电话、QQ、邮箱;用户可以用发送语音反馈;可发图片;回复后推送消息给用户…)，可这设计实在是丑到没朋友，且友盟集成的方式很难在原基础上对UI进行自定义…</p>
 </blockquote>
 <p><img src="http://ww3.sinaimg.cn/mw690/62ed8609jw1etk2r6ohbrj20lc0zktah.jpg" width="250">  <img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1etk2r62351j20lc0zkaav.jpg" width="250"> </p>
 <blockquote>
-<p>注: app 中 “用户反馈” 功能常见的页面是长这个样子的：图 1 截自大众点评   图 2 截自豆瓣 FM</p>
+<p>注: app中”用户反馈”功能常见的页面是长这个样子的: 图1 截自大众点评   图2 截自豆瓣FM</p>
 </blockquote>
 <p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1etk2r5d49oj20lc0zk0uz.jpg" width="250"></p>
 <blockquote>
-<p><strong> 注: “联系方式 (EditText) ＋ 反馈内容 (EditText) ＋ 发送 (Button)” 这种意见反馈实现起来很简单，也满足大部分 app 的反馈的需求了，可目前在做的项目因为产品定位上需要，希望对用户的反馈的及时性还是高一点好，所以集成了友盟的意见反馈 (它提供了一个后台回复平台)，且对原始页面进行 UI 自定义，初步样式如上 </strong></p>
+<p><strong>注: “联系方式 (EditText) ＋ 反馈内容 (EditText) ＋ 发送 (Button)”这种意见反馈实现起来很简单，也满足大部分app的反馈的需求了，可目前在做的项目因为产品定位上需要，希望对用户的反馈的及时性还是高一点好，所以集成了友盟的意见反馈(它提供了一个后台回复平台)，且对原始页面进行UI自定义，初步样式如上</strong></p>
 </blockquote>
-<h3 id="2-集成-只介绍-Android-Studio-方式"><a href="#2-集成-只介绍-Android-Studio-方式" class="headerlink" title="2. 集成 (只介绍 Android Studio 方式)"></a>2. 集成 (只介绍 Android Studio 方式)</h3><p>1) 一贯的申请开发者账号，注册应用，下载 SDK、Demo<br>2) 在应用对应 module 下的 build.gradle 文件中添加:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">repositories &#123;</div><div class="line">        <span class="comment">//others</span></div><div class="line">        jcenter ()</div><div class="line">        maven &#123; url <span class="string">"https://raw.githubusercontent.com/umeng/mvn-repo-umeng/master/repository"</span> &#125;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">dependencies &#123;</div><div class="line">    <span class="comment">//others</span></div><div class="line">    compile <span class="string">'com.umeng:fb:5.3.0'</span></div><div class="line">    compile <span class="string">'com.android.support:support-v4:21.+'</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>3) “AndroidManifest.xml”, 在 &lt; application &gt; 标签中添加对应的 Activity, APPKEY, 和权限，注意替换其中的 “YOUR_APP_KEY” 和 “Channel ID”。<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">&lt;manifest&gt;</div><div class="line">    <span class="comment">//others</span></div><div class="line">    &lt;uses-permission android:name=<span class="string">"android.permission.INTERNET"</span>/&gt;</div><div class="line">    &lt;uses-permission android:name=<span class="string">"android.permission.READ_PHONE_STATE"</span>/&gt;</div><div class="line">    &lt;uses-permission android:name=<span class="string">"android.permission.ACCESS_NETWORK_STATE"</span>/&gt;</div><div class="line">    &lt;uses-permission android:name=<span class="string">"android.permission.ACCESS_WIFI_STATE"</span> /&gt;</div><div class="line">    &lt;uses-permission android:name=<span class="string">"android.permission.WRITE_EXTERNAL_STORAGE"</span> /&gt;</div><div class="line">    &lt;application&gt;</div><div class="line">        <span class="comment">//others</span></div><div class="line">        &lt;activity</div><div class="line">            android:name=<span class="string">".x.me.FeedBackActivity"</span></div><div class="line">            android:screenOrientation=<span class="string">"portrait"</span>/&gt;</div><div class="line">        &lt;meta-data</div><div class="line">        android:value=<span class="string">"YOUR_APP_KEY"</span></div><div class="line">        android:name=<span class="string">"UMENG_APPKEY"</span>/&gt;</div><div class="line">        &lt;meta-data</div><div class="line">        android:value=<span class="string">"Channel ID"</span></div><div class="line">        android:name=<span class="string">"UMENG_CHANNEL"</span>/&gt;</div><div class="line">    &lt;/application&gt;</div><div class="line">&lt;/manifest&gt;</div></pre></td></tr></table></figure></p>
-<p>4) 自定义页面布局、参照开发文档和官方 demo 实现页面功能</p>
+<h3 id="2-集成-只介绍Android-Studio方式"><a href="#2-集成-只介绍Android-Studio方式" class="headerlink" title="2.集成(只介绍Android Studio方式)"></a>2.集成(只介绍Android Studio方式)</h3><p>1) 一贯的申请开发者账号，注册应用，下载SDK、Demo<br>2) 在应用对应module下的build.gradle文件中添加:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">repositories &#123;</div><div class="line">        <span class="comment">// others</span></div><div class="line">        jcenter()</div><div class="line">        maven &#123; url <span class="string">"https://raw.githubusercontent.com/umeng/mvn-repo-umeng/master/repository"</span> &#125;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">dependencies &#123;</div><div class="line">    <span class="comment">// others</span></div><div class="line">    compile <span class="string">'com.umeng:fb:5.3.0'</span></div><div class="line">    compile <span class="string">'com.android.support:support-v4:21.+'</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>3) “AndroidManifest.xml”, 在<application>标签中添加对应的Activity, APPKEY, 和权限，注意替换其中的”YOUR_APP_KEY” 和”Channel ID”。<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">&lt;manifest&gt;</div><div class="line">    <span class="comment">// others</span></div><div class="line">    &lt;uses-permission android:name=<span class="string">"android.permission.INTERNET"</span>/&gt;</div><div class="line">    &lt;uses-permission android:name=<span class="string">"android.permission.READ_PHONE_STATE"</span>/&gt;</div><div class="line">    &lt;uses-permission android:name=<span class="string">"android.permission.ACCESS_NETWORK_STATE"</span>/&gt;</div><div class="line">    &lt;uses-permission android:name=<span class="string">"android.permission.ACCESS_WIFI_STATE"</span> /&gt;</div><div class="line">    &lt;uses-permission android:name=<span class="string">"android.permission.WRITE_EXTERNAL_STORAGE"</span> /&gt;</div><div class="line">    &lt;application&gt;</div><div class="line">        <span class="comment">// others</span></div><div class="line">        &lt;activity</div><div class="line">            android:name=<span class="string">".x.me.FeedBackActivity"</span></div><div class="line">            android:screenOrientation=<span class="string">"portrait"</span>/&gt;</div><div class="line">        &lt;meta-data</div><div class="line">        android:value=<span class="string">"YOUR_APP_KEY"</span></div><div class="line">        android:name=<span class="string">"UMENG_APPKEY"</span>/&gt;</div><div class="line">        &lt;meta-data</div><div class="line">        android:value=<span class="string">"Channel ID"</span></div><div class="line">        android:name=<span class="string">"UMENG_CHANNEL"</span>/&gt;</div><div class="line">    &lt;/application&gt;</div><div class="line">&lt;/manifest&gt;</div></pre></td></tr></table></figure></application></p>
+<p>4) 自定义页面布局、参照开发文档和官方demo实现页面功能</p>
 <blockquote>
-<p>这里不细讲实现细节了，待当前项目完成后我将我的意见反馈模块抽出来做成 demo 放到 github 上，看 demo 会更清楚</p>
+<p>这里不细讲实现细节了，待当前项目完成后我将我的意见反馈模块抽出来做成demo放到github上，看demo会更清楚</p>
 </blockquote>
 
       
@@ -570,7 +566,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="https://w4mxl.github.io/2015/06/28/Android/友盟-用户反馈的集成和UI自定义/" title="友盟 -"用户反馈" 的集成和 UI 自定义">https://w4mxl.github.io/2015/06/28/Android/友盟-用户反馈的集成和UI自定义/</a>
+    <a href="https://w4mxl.github.io/2015/06/28/Android/友盟-用户反馈的集成和UI自定义/" title="友盟-"用户反馈"的集成和UI自定义">https://w4mxl.github.io/2015/06/28/Android/友盟-用户反馈的集成和UI自定义/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -606,8 +602,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/07/03/Life's/赵雷的MV《理想》/" rel="prev" title="赵雷的 MV《理想》">
-                赵雷的 MV《理想》 <i class="fa fa-chevron-right"></i>
+              <a href="/2015/07/03/Life's/赵雷的MV《理想》/" rel="prev" title="赵雷的MV《理想》">
+                赵雷的MV《理想》 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -821,7 +817,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-对比"><span class="nav-number">1.</span> <span class="nav-text">1. 对比</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-集成-只介绍-Android-Studio-方式"><span class="nav-number">2.</span> <span class="nav-text">2. 集成 (只介绍 Android Studio 方式)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-对比"><span class="nav-number">1.</span> <span class="nav-text">1. 对比</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-集成-只介绍Android-Studio方式"><span class="nav-number">2.</span> <span class="nav-text">2.集成(只介绍Android Studio方式)</span></a></li></ol></div>
             
 
           </div>
@@ -991,7 +987,7 @@
   var disqus_config = function() {
     this.page.url = "https://w4mxl.github.io/2015/06/28/Android/友盟-用户反馈的集成和UI自定义/";
     this.page.identifier = "2015/06/28/Android/友盟-用户反馈的集成和UI自定义/";
-    this.page.title = '友盟 -\"用户反馈\" 的集成和 UI 自定义';
+    this.page.title = '友盟-\"用户反馈\"的集成和UI自定义';
     };
   function loadComments() {
     var d = document, s = d.createElement('script');
@@ -1418,6 +1414,11 @@
   
 
   
+  
+  
+  <script src="/lib/pangu/dist/pangu.min.js?v=3.3"></script>
+  <script>pangu.spacingPage();</script>
+
 
   
 
