@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://w4mxl.github.io/"/>
-  <updated>2019-02-15T05:25:39.317Z</updated>
+  <updated>2019-05-16T23:38:00.083Z</updated>
   <id>https://w4mxl.github.io/</id>
   
   <author>
@@ -14,6 +14,86 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>观影《人生果实》</title>
+    <link href="https://w4mxl.github.io/2019/05/15/life-is-fruity/"/>
+    <id>https://w4mxl.github.io/2019/05/15/life-is-fruity/</id>
+    <published>2019-05-15T15:57:39.000Z</published>
+    <updated>2019-05-16T23:38:00.083Z</updated>
+    
+    <content type="html"><![CDATA[<center><img src="https://ws1.sinaimg.cn/large/006tNc79gy1g33ylh8ql0j30u014a7ic.jpg" alt="《人生果实》海报" width="400"></center>
+
+<p>下班到家后，和佳雯聊了下地铁上读的书的事情，接着她就极力推荐我看一下《人生果实》这个纪录片。</p>
+<p>她又和我一起看的，这是她今天看的第二遍了。</p>
+<p>看着看着，某个时候我转头看她，她睡着了。</p>
+<p>我刚看完。难怪她预言我一定会喜欢的，是的，我真的特别喜欢这部片子…我喜欢津一对生活的态度和想法。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;center&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/006tNc79gy1g33ylh8ql0j30u014a7ic.jpg&quot; alt=&quot;《人生果实》海报&quot; width=&quot;400&quot;&gt;&lt;/center&gt;
+
+&lt;p&gt;下班到家后，和佳雯聊了下地铁
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>V2LF - 使用 Flutter 开发的开源的 V2EX 客户端</title>
+    <link href="https://w4mxl.github.io/2019/05/14/v2lf-open-source/"/>
+    <id>https://w4mxl.github.io/2019/05/14/v2lf-open-source/</id>
+    <published>2019-05-13T23:33:12.000Z</published>
+    <updated>2019-05-16T23:20:30.416Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="V2LF-正式开源"><a href="#V2LF-正式开源" class="headerlink" title="V2LF 正式开源"></a>V2LF 正式开源</h3><p>GitHub 地址：<a href="https://github.com/w4mxl/V2LF" target="_blank" rel="external">https://github.com/w4mxl/V2LF</a></p>
+<p>如果您不知道 V2LF 是啥，可以先看我之前在 v2ex 发的贴子来了解：</p>
+<p><a href="https://www.v2ex.com/t/548936#reply164" target="_blank" rel="external">邀请体验： V2LF - 用 Flutter 开发的 V2EX App
+</a></p>
+<p>自从发了体验邀请之后，挺多用户给了我宝贵建议和反馈，<strong>感谢你们</strong>。其中有一位，他算是 v2ex 重度用户了，在 iMessage 上断断续续给我提“需求”，我们交流的还挺欢乐。</p>
+<p>本次开源采用了 <strong><a href="https://www.wikiwand.com/zh/GNU%E9%80%9A%E7%94%A8%E5%85%AC%E5%85%B1%E8%AE%B8%E5%8F%AF%E8%AF%81" target="_blank" rel="external">GPL v3.0 开源许可</a></strong> ，期待得到大家更多的参与。只要我还会逛 v2ex，就会继续完善 V2LF 这个项目。</p>
+<p>我相信这次开源会是一个新的开始！</p>
+<a id="more"></a>
+<h3 id="上架说明"><a href="#上架说明" class="headerlink" title="上架说明"></a>上架说明</h3><p>我原本是打算上架了App Store 和 Google play 之后就开源出来的，play那边很快搞定，奈何 App Store 那边审核遇到些阻碍，和审核人员来回沟通了几次。目前账号审核状态，迟迟没有进展，只能等等看了 ¯\<em>(ツ)</em>/¯ 。我希望能早点审核好，然后顺利上架。</p>
+<p><img src="https://i.loli.net/2019/05/14/5cda1b956a21156246.jpeg" alt="42303A5F-879B-4CA3-A6B2-5B8182C6ABE6.jpeg"></p>
+<p>👆 App Store 审核过程（左） &amp; 最近一次 reject （右）</p>
+<p>App Store 和 Google play 我都是定价 ¥12 的。当然我没有指望从这个 app 可以赚钱，我很清楚它的受众群其实很有限的。之所以设置付费，纯粹是好奇，想试试看会有多少用户真的喜欢这个app到愿意付费支持的程度。如果有，哪怕个位数，我也会很开心。当然我也提供了完全免费使用的途径，酷安、TestFlight，或者直接编译运行源码。</p>
+<p>我在开发 V2LF 的时候也陆续体验了一些其它同类app，列在下面，你们感兴趣也可以去下载使用，多尝试挺好的。不爱尝试的同学，手机浏览器用网页版v2ex体验也是不错的。</p>
+<ul>
+<li><a href="https://play.google.com/store/apps/details?id=com.czbix.v2ex" target="_blank" rel="external">V2EX+ (android)</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=me.ghui.v2er" target="_blank" rel="external">V2er - 好用的V2EX客户端 (android)</a></li>
+<li><a href="https://itunes.apple.com/cn/app/v2er-best-client-for-v2ex/id1308118507?mt=8" target="_blank" rel="external">V2er - Best client for V2EX (iOS)</a></li>
+<li><a href="https://itunes.apple.com/cn/app/v2ex-%E5%88%9B%E6%84%8F%E5%B7%A5%E4%BD%9C%E8%80%85%E4%BB%AC%E7%9A%84%E7%A4%BE%E5%8C%BA/id1078157349?mt=8" target="_blank" rel="external">V2EX - 创意工作者们的社区。(iOS)</a></li>
+<li><a href="https://itunes.apple.com/cn/app/vexplore-lite-v2ex%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BC%80%E6%BA%90%E5%AE%A2%E6%88%B7%E7%AB%AF/id1191058321?mt=8" target="_blank" rel="external">VeXplore Lite - V2EX第三方开源客户端 (iOS)</a></li>
+</ul>
+<h3 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h3><ul>
+<li>V2LF iOS TestFlight： <a href="https://testflight.apple.com/join/cvx4MQuh" target="_blank" rel="external">https://testflight.apple.com/join/cvx4MQuh</a></li>
+<li>V2LF 酷安：<a href="https://www.coolapk.com/apk/221879" target="_blank" rel="external">https://www.coolapk.com/apk/221879</a></li>
+</ul>
+<p><a href="https://play.google.com/store/apps/details?id=io.github.w4mxl.v2lf" target="_blank" rel="external"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" height="90px/"></a></p>
+<h3 id="一点想法"><a href="#一点想法" class="headerlink" title="一点想法"></a>一点想法</h3><p>日常在公司工作，只管写代码实现功能就好。而到开发个人项目的时候就会发现，实现功能前得自己设计 UI/UX，起码是一个框架图。公司要上架时可能只负责打好包就行，文案、截图、预览啥的找产品或者找设计张口要就好。而到自己项目都得亲力亲为，初次弄这些的时候往往觉得比写代码更辛苦，隔行如隔山。当然了，也好的一面，比如用了好些年macOS，为了做预览，第一次用上了iMovie app。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;V2LF-正式开源&quot;&gt;&lt;a href=&quot;#V2LF-正式开源&quot; class=&quot;headerlink&quot; title=&quot;V2LF 正式开源&quot;&gt;&lt;/a&gt;V2LF 正式开源&lt;/h3&gt;&lt;p&gt;GitHub 地址：&lt;a href=&quot;https://github.com/w4mxl/V2LF&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/w4mxl/V2LF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如果您不知道 V2LF 是啥，可以先看我之前在 v2ex 发的贴子来了解：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.v2ex.com/t/548936#reply164&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;邀请体验： V2LF - 用 Flutter 开发的 V2EX App
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;自从发了体验邀请之后，挺多用户给了我宝贵建议和反馈，&lt;strong&gt;感谢你们&lt;/strong&gt;。其中有一位，他算是 v2ex 重度用户了，在 iMessage 上断断续续给我提“需求”，我们交流的还挺欢乐。&lt;/p&gt;
+&lt;p&gt;本次开源采用了 &lt;strong&gt;&lt;a href=&quot;https://www.wikiwand.com/zh/GNU%E9%80%9A%E7%94%A8%E5%85%AC%E5%85%B1%E8%AE%B8%E5%8F%AF%E8%AF%81&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GPL v3.0 开源许可&lt;/a&gt;&lt;/strong&gt; ，期待得到大家更多的参与。只要我还会逛 v2ex，就会继续完善 V2LF 这个项目。&lt;/p&gt;
+&lt;p&gt;我相信这次开源会是一个新的开始！&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Flutter" scheme="https://w4mxl.github.io/categories/Flutter/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>阅读《流浪地球》</title>
@@ -3785,6 +3865,27 @@ Reboot to bootloader and flash the following:
   </entry>
   
   <entry>
+    <title>Back to School</title>
+    <link href="https://w4mxl.github.io/2011/02/20/Back-to-School/"/>
+    <id>https://w4mxl.github.io/2011/02/20/Back-to-School/</id>
+    <published>2011-02-19T16:00:00.000Z</published>
+    <updated>2016-01-18T14:47:30.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的，快乐的长大。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>安慰</title>
     <link href="https://w4mxl.github.io/2011/02/20/%E5%AE%89%E6%85%B0/"/>
     <id>https://w4mxl.github.io/2011/02/20/安慰/</id>
@@ -3799,27 +3900,6 @@ Reboot to bootloader and flash the following:
     
       &lt;p&gt;电影总让我想起些我似乎忘了的东西！&lt;/p&gt;
 &lt;p&gt;明明钥匙在手上，却寻不到钥匙把门打开。看完《天若有情Ⅰ》，我就奇怪，那时吊儿郎当的我，现在怎么这么“乖”。在古惑仔横扫我整个初中那时，我们凡事只讲义气，只够买一根冰棒那分着吃，兄弟喜欢的女生不能有‘想法‘-_-#。那时候也是
-    
-    </summary>
-    
-      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Back to School</title>
-    <link href="https://w4mxl.github.io/2011/02/20/Back-to-School/"/>
-    <id>https://w4mxl.github.io/2011/02/20/Back-to-School/</id>
-    <published>2011-02-19T16:00:00.000Z</published>
-    <updated>2016-01-18T14:47:30.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的，快乐的长大。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的
     
     </summary>
     
