@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://w4mxl.github.io/"/>
-  <updated>2019-05-17T14:38:58.971Z</updated>
+  <updated>2019-05-18T12:47:06.423Z</updated>
   <id>https://w4mxl.github.io/</id>
   
   <author>
@@ -20,18 +20,18 @@
     <link href="https://w4mxl.github.io/2019/05/15/life-is-fruity/"/>
     <id>https://w4mxl.github.io/2019/05/15/life-is-fruity/</id>
     <published>2019-05-15T15:57:39.000Z</published>
-    <updated>2019-05-17T14:38:58.971Z</updated>
+    <updated>2019-05-18T12:47:06.423Z</updated>
     
-    <content type="html"><![CDATA[<center><img src="https://ws1.sinaimg.cn/large/006tNc79gy1g33ylh8ql0j30u014a7ic.jpg" title="《人生果实》海报" width="500"></center>
+    <content type="html"><![CDATA[<center><img src="https://i.loli.net/2019/05/18/5cdffeab569b254715.jpg" title="《人生果实》海报" width="500"></center>
 
 <p>下班到家后，和佳雯聊了下地铁上读的书的事情。<br>接着她就极力推荐我看一下《人生果实》这个纪录片。<br>她又和我一起看的，这是她今天看的第二遍了。<br>看着看着，某个时候我转头看她，她睡着了。<br>我刚看完。难怪她预言我一定会喜欢的，是的，我真的特别喜欢这部片子…<br>我喜欢津一对生活的态度和想法。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;center&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/006tNc79gy1g33ylh8ql0j30u014a7ic.jpg&quot; title=&quot;《人生果实》海报&quot; width=&quot;500&quot;&gt;&lt;/center&gt;
+      &lt;center&gt;&lt;img src=&quot;https://i.loli.net/2019/05/18/5cdffeab569b254715.jpg&quot; title=&quot;《人生果实》海报&quot; width=&quot;500&quot;&gt;&lt;/center&gt;
 
-&lt;p&gt;下班到家后，和佳雯聊了下
+&lt;p&gt;下班到家后，和佳雯聊了下地铁上读的书的事情。&lt;br
     
     </summary>
     
@@ -45,9 +45,9 @@
     <link href="https://w4mxl.github.io/2019/05/14/v2lf-open-source/"/>
     <id>https://w4mxl.github.io/2019/05/14/v2lf-open-source/</id>
     <published>2019-05-13T23:33:12.000Z</published>
-    <updated>2019-05-17T14:38:56.146Z</updated>
+    <updated>2019-05-18T02:12:32.290Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="V2LF-正式开源"><a href="#V2LF-正式开源" class="headerlink" title="V2LF 正式开源"></a>V2LF 正式开源</h3><p>GitHub 地址：<a href="https://github.com/w4mxl/V2LF" target="_blank" rel="noopener">https://github.com/w4mxl/V2LF</a></p>
+    <content type="html"><![CDATA[<h1 id="V2LF-正式开源"><a href="#V2LF-正式开源" class="headerlink" title="V2LF 正式开源"></a>V2LF 正式开源</h1><p>GitHub 地址：<a href="https://github.com/w4mxl/V2LF" target="_blank" rel="noopener">https://github.com/w4mxl/V2LF</a></p>
 <p>如果您不知道 V2LF 是啥，可以先看我之前在 v2ex 发的贴子来了解：</p>
 <p><a href="https://www.v2ex.com/t/548936#reply164" target="_blank" rel="noopener">邀请体验： V2LF - 用 Flutter 开发的 V2EX App
 </a></p>
@@ -55,7 +55,7 @@
 <p>本次开源采用了 <strong><a href="https://www.wikiwand.com/zh/GNU%E9%80%9A%E7%94%A8%E5%85%AC%E5%85%B1%E8%AE%B8%E5%8F%AF%E8%AF%81" target="_blank" rel="noopener">GPL v3.0 开源许可</a></strong> ，期待得到大家更多的参与。只要我还会逛 v2ex，就会继续完善 V2LF 这个项目。</p>
 <p>我相信这次开源会是一个新的开始！</p>
 <a id="more"></a>
-<h3 id="上架说明"><a href="#上架说明" class="headerlink" title="上架说明"></a>上架说明</h3><p>我原本是打算上架了App Store 和 Google play 之后就开源出来的，play那边很快搞定，奈何 App Store 那边审核遇到些阻碍，和审核人员来回沟通了几次。目前账号审核状态，迟迟没有进展，只能等等看了 ¯\<em>(ツ)</em>/¯ 。我希望能早点审核好，然后顺利上架。</p>
+<h1 id="上架说明"><a href="#上架说明" class="headerlink" title="上架说明"></a>上架说明</h1><p>我原本是打算上架了App Store 和 Google play 之后就开源出来的，play那边很快搞定，奈何 App Store 那边审核遇到些阻碍，和审核人员来回沟通了几次。目前账号审核状态，迟迟没有进展，只能等等看了 ¯\<em>(ツ)</em>/¯ 。我希望能早点审核好，然后顺利上架。</p>
 <p><img src="https://i.loli.net/2019/05/14/5cda1b956a21156246.jpeg" alt="42303A5F-879B-4CA3-A6B2-5B8182C6ABE6.jpeg" title="App Store 审核过程（左） &amp; 最近一次 reject （右）"></p>
 <p>App Store 和 Google play 我都是定价 ¥12 的。当然我没有指望从这个 app 可以赚钱，我很清楚它的受众群其实很有限的。之所以设置付费，纯粹是好奇，想试试看会有多少用户真的喜欢这个app到愿意付费支持的程度。如果有，哪怕个位数，我也会很开心。当然我也提供了完全免费使用的途径，酷安、TestFlight，或者直接编译运行源码。</p>
 <p>我在开发 V2LF 的时候也陆续体验了一些其它同类app，列在下面，你们感兴趣也可以去下载使用，多尝试挺好的。不爱尝试的同学，手机浏览器用网页版v2ex体验也是不错的。</p>
@@ -66,17 +66,17 @@
 <li><a href="https://itunes.apple.com/cn/app/v2ex-%E5%88%9B%E6%84%8F%E5%B7%A5%E4%BD%9C%E8%80%85%E4%BB%AC%E7%9A%84%E7%A4%BE%E5%8C%BA/id1078157349?mt=8" target="_blank" rel="noopener">V2EX - 创意工作者们的社区。(iOS)</a></li>
 <li><a href="https://itunes.apple.com/cn/app/vexplore-lite-v2ex%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BC%80%E6%BA%90%E5%AE%A2%E6%88%B7%E7%AB%AF/id1191058321?mt=8" target="_blank" rel="noopener">VeXplore Lite - V2EX第三方开源客户端 (iOS)</a></li>
 </ul>
-<h3 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h3><ul>
+<h1 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h1><ul>
 <li>V2LF iOS TestFlight： <a href="https://testflight.apple.com/join/cvx4MQuh" target="_blank" rel="noopener">https://testflight.apple.com/join/cvx4MQuh</a></li>
 <li>V2LF 酷安：<a href="https://www.coolapk.com/apk/221879" target="_blank" rel="noopener">https://www.coolapk.com/apk/221879</a></li>
 <li>V2LF Google Play：<a href="https://play.google.com/store/apps/details?id=io.github.w4mxl.v2lf" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=io.github.w4mxl.v2lf</a></li>
 </ul>
-<h3 id="一点想法"><a href="#一点想法" class="headerlink" title="一点想法"></a>一点想法</h3><p>日常在公司工作，只管写代码实现功能就好。而到开发个人项目的时候就会发现，实现功能前得自己设计 UI/UX，起码是一个框架图。公司要上架时可能只负责打好包就行，文案、截图、预览啥的找产品或者找设计张口要就好。而到自己项目都得亲力亲为，初次弄这些的时候往往觉得比写代码更辛苦，隔行如隔山。当然了，也好的一面，比如用了好些年macOS，为了做预览，第一次用上了iMovie app。</p>
+<h1 id="一点想法"><a href="#一点想法" class="headerlink" title="一点想法"></a>一点想法</h1><p>日常在公司工作，只管写代码实现功能就好。而到开发个人项目的时候就会发现，实现功能前得自己设计 UI/UX，起码是一个框架图。公司要上架时可能只负责打好包就行，文案、截图、预览啥的找产品或者找设计张口要就好。而到自己项目都得亲力亲为，初次弄这些的时候往往觉得比写代码更辛苦，隔行如隔山。当然了，也好的一面，比如用了好些年macOS，为了做预览，第一次用上了iMovie app。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;V2LF-正式开源&quot;&gt;&lt;a href=&quot;#V2LF-正式开源&quot; class=&quot;headerlink&quot; title=&quot;V2LF 正式开源&quot;&gt;&lt;/a&gt;V2LF 正式开源&lt;/h3&gt;&lt;p&gt;GitHub 地址：&lt;a href=&quot;https://github.com/w4mxl/V2LF&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/w4mxl/V2LF&lt;/a&gt;&lt;/p&gt;
+      &lt;h1 id=&quot;V2LF-正式开源&quot;&gt;&lt;a href=&quot;#V2LF-正式开源&quot; class=&quot;headerlink&quot; title=&quot;V2LF 正式开源&quot;&gt;&lt;/a&gt;V2LF 正式开源&lt;/h1&gt;&lt;p&gt;GitHub 地址：&lt;a href=&quot;https://github.com/w4mxl/V2LF&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/w4mxl/V2LF&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;如果您不知道 V2LF 是啥，可以先看我之前在 v2ex 发的贴子来了解：&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.v2ex.com/t/548936#reply164&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;邀请体验： V2LF - 用 Flutter 开发的 V2EX App
 &lt;/a&gt;&lt;/p&gt;
@@ -153,13 +153,13 @@
     <link href="https://w4mxl.github.io/2019/02/14/20190214/"/>
     <id>https://w4mxl.github.io/2019/02/14/20190214/</id>
     <published>2019-02-14T01:24:39.000Z</published>
-    <updated>2019-03-16T12:22:26.515Z</updated>
+    <updated>2019-05-18T12:27:14.367Z</updated>
     
-    <content type="html"><![CDATA[<center><br>你是我粥一般的爱人<br>余生只够爱的一个人<br><br>有时你让我说爱你<br>我沉默…<br>沉默…<br>“爱你”<br>你动情的笑<br><br>你知不知道<br>我不爱说爱<br>因为总觉得说出来的不够<br><br><br><em>–  于 2019.02.14 地铁</em><br></center>]]></content>
+    <content type="html"><![CDATA[<center><br>你是我粥一般的爱人<br>余生只够爱的一个人<br><br>有时你让我说爱你<br>我沉默…<br>沉默…<br>“爱你”<br>你动情的笑<br><br>你知不知道<br>我不爱说爱<br>因为总觉得说出来的不够<br><br><br><em>–  2019.02.14 于地铁</em><br></center>]]></content>
     
     <summary type="html">
     
-      &lt;center&gt;&lt;br&gt;你是我粥一般的爱人&lt;br&gt;余生只够爱的一个人&lt;br&gt;&lt;br&gt;有时你让我说爱你&lt;br&gt;我沉默…&lt;br&gt;沉默…&lt;br&gt;“爱你”&lt;br&gt;你动情的笑&lt;br&gt;&lt;br&gt;你知不知道&lt;br&gt;我不爱说爱&lt;br&gt;因为总觉得说出来的不够&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;em&gt;–  于 
+      &lt;center&gt;&lt;br&gt;你是我粥一般的爱人&lt;br&gt;余生只够爱的一个人&lt;br&gt;&lt;br&gt;有时你让我说爱你&lt;br&gt;我沉默…&lt;br&gt;沉默…&lt;br&gt;“爱你”&lt;br&gt;你动情的笑&lt;br&gt;&lt;br&gt;你知不知道&lt;br&gt;我不爱说爱&lt;br&gt;因为总觉得说出来的不够&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;em&gt;–  20
     
     </summary>
     
@@ -173,9 +173,9 @@
     <link href="https://w4mxl.github.io/2019/02/12/flutter-ide-shortcuts-for-fast-development/"/>
     <id>https://w4mxl.github.io/2019/02/12/flutter-ide-shortcuts-for-fast-development/</id>
     <published>2019-02-12T03:14:12.000Z</published>
-    <updated>2019-03-16T12:22:26.512Z</updated>
+    <updated>2019-05-18T02:12:32.298Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="创建一个新的-Stateless-或者-Stateful-widget"><a href="#创建一个新的-Stateless-或者-Stateful-widget" class="headerlink" title="创建一个新的 Stateless 或者 Stateful widget"></a>创建一个新的 Stateless 或者 Stateful widget</h4><p>只需输入<code>stless</code>即可创建一个像这样的Stateless widget：</p>
+    <content type="html"><![CDATA[<h1 id="创建一个新的-Stateless-或者-Stateful-widget"><a href="#创建一个新的-Stateless-或者-Stateful-widget" class="headerlink" title="创建一个新的 Stateless 或者 Stateful widget"></a>创建一个新的 Stateless 或者 Stateful widget</h1><p>只需输入<code>stless</code>即可创建一个像这样的Stateless widget：</p>
 <p><img src="https://i.loli.net/2019/02/12/5c623f4ea52fb.gif" alt="1_lfehNLtasYJUFEj7qv1ETw.gif"></p>
 <p>或者输入<code>stful</code>来快速创建一个Stateful widget：</p>
 <p><img src="https://i.loli.net/2019/02/12/5c623f4ebc6a0.gif" alt="1_NjScxI6JzLWfCfe_04H1rQ.gif"></p>
@@ -183,7 +183,7 @@
 <p>您可以将光标放在<code>StatelessWidget</code>上，按<code>Alt + Enter</code>快捷键（Windows和Mac一样）并单击<code>Convert to StatefulWidget</code>就可以了。</p>
 <p><img src="https://i.loli.net/2019/02/12/5c624124e1b2e.gif" alt="1_Tz844vh_0P8TUyXTnNevQg.gif"></p>
 <a id="more"></a>
-<h4 id="Alt-Enter快捷键的其它用法"><a href="#Alt-Enter快捷键的其它用法" class="headerlink" title="Alt + Enter快捷键的其它用法"></a><code>Alt + Enter</code>快捷键的其它用法</h4><p>您可以单击选中任何 widget，然后按<code>Alt + Enter</code>查看您对该特定widget的可选项。例如：</p>
+<h1 id="Alt-Enter快捷键的其它用法"><a href="#Alt-Enter快捷键的其它用法" class="headerlink" title="Alt + Enter快捷键的其它用法"></a><code>Alt + Enter</code>快捷键的其它用法</h1><p>您可以单击选中任何 widget，然后按<code>Alt + Enter</code>查看您对该特定widget的可选项。例如：</p>
 <ul>
 <li><p>Add a Padding Around a Widget<br><img src="https://i.loli.net/2019/02/12/5c624124d4e97.gif" alt="1_u3VT93FfmmuyHQ_4TBhzMA.gif"></p>
 </li>
@@ -195,28 +195,28 @@
 </li>
 </ul>
 <p>总而言之，<code>Alt + Enter</code>快捷键在flutter开发中特别有用，在您想要对特定widget进行某些操作时，请习惯尝试使用这个快捷。相信我，一定能提升开发效率的。</p>
-<h4 id="查看widget的源码"><a href="#查看widget的源码" class="headerlink" title="查看widget的源码"></a>查看widget的源码</h4><p>对于新手来说，对widget的属性方法等都还不是很了解，查看源码是件高频的事情。加上flutter官方为每个widget添加了很详细的注释说明，方便开发者查阅学习。</p>
+<h1 id="查看widget的源码"><a href="#查看widget的源码" class="headerlink" title="查看widget的源码"></a>查看widget的源码</h1><p>对于新手来说，对widget的属性方法等都还不是很了解，查看源码是件高频的事情。加上flutter官方为每个widget添加了很详细的注释说明，方便开发者查阅学习。</p>
 <p>之前我都是手动按住command（Mac）或control（Windows）键再click跳转过去查看源码的，其实可以通过快捷键<code>Ctrl + B</code>（Windows）或<code>Command + B</code>（Mac），也可以使用<code>F4 / Control + Enter</code>（Windows）或<code>F4 / Command + Down Arrow</code>（Mac），达到同样目的。</p>
 <p><img src="https://i.loli.net/2019/02/12/5c6264c4c5c44.gif" alt="1_Thy02n4cbt_dZFS4Exw4RQ.gif"></p>
-<h4 id="在当前页面查看-Widget-的构造方法包含的属性"><a href="#在当前页面查看-Widget-的构造方法包含的属性" class="headerlink" title="在当前页面查看 Widget 的构造方法包含的属性"></a>在当前页面查看 Widget 的构造方法包含的属性</h4><p>上面介绍的通过快捷键<code>Ctrl + B</code>（Windows）或<code>Command + B</code>（Mac）来查看widget的源码，如果您只是想快速看一下widget的有哪些属性，可以通过另一个快捷键<code>Ctrl+Shift+I</code>（Windows）或<code>Command + Y</code>（Mac）做到。</p>
+<h1 id="在当前页面查看-Widget-的构造方法包含的属性"><a href="#在当前页面查看-Widget-的构造方法包含的属性" class="headerlink" title="在当前页面查看 Widget 的构造方法包含的属性"></a>在当前页面查看 Widget 的构造方法包含的属性</h1><p>上面介绍的通过快捷键<code>Ctrl + B</code>（Windows）或<code>Command + B</code>（Mac）来查看widget的源码，如果您只是想快速看一下widget的有哪些属性，可以通过另一个快捷键<code>Ctrl+Shift+I</code>（Windows）或<code>Command + Y</code>（Mac）做到。</p>
 <p><img src="https://i.loli.net/2019/02/12/5c6264c57f89f.gif" alt="1_9bvEQBMUzyJo33i_tE1dIg.gif"></p>
-<h4 id="快速选择整个widget"><a href="#快速选择整个widget" class="headerlink" title="快速选择整个widget"></a>快速选择整个widget</h4><p><img src="https://i.loli.net/2019/02/12/5c626567c0175.gif" alt="1_ajtutELoL4N7G8sldmCMuw.gif" title="一般操作。如果widget包含的代码比较多，嵌套深的话这样操作就会显得很麻烦且容易错"></p>
+<h1 id="快速选择整个widget"><a href="#快速选择整个widget" class="headerlink" title="快速选择整个widget"></a>快速选择整个widget</h1><p><img src="https://i.loli.net/2019/02/12/5c626567c0175.gif" alt="1_ajtutELoL4N7G8sldmCMuw.gif" title="一般操作。如果widget包含的代码比较多，嵌套深的话这样操作就会显得很麻烦且容易错"></p>
 <p><img src="https://i.loli.net/2019/02/12/5c62656805b00.gif" alt="1_yOO-rTQUAROmxXp2qwiDzg.gif" title="推荐使用快捷键操作。`Ctrl + W`（Windows）或`Option + Up`（Mac）"></p>
-<h4 id="代码格式化"><a href="#代码格式化" class="headerlink" title="代码格式化"></a>代码格式化</h4><p>这个快捷键就跟其它使用时没啥区别了：<br><code>Control + Alt + L</code>（Windows）或<code>Command + Option + L</code>（Mac）</p>
+<h1 id="代码格式化"><a href="#代码格式化" class="headerlink" title="代码格式化"></a>代码格式化</h1><p>这个快捷键就跟其它使用时没啥区别了：<br><code>Control + Alt + L</code>（Windows）或<code>Command + Option + L</code>（Mac）</p>
 <p><img src="https://i.loli.net/2019/02/12/5c62677c483f8.gif" alt="1_DXX6iuWiGC7sNSPUc7UZnA.gif"></p>
-<h4 id="重构重命名（Refactor-Renaming）"><a href="#重构重命名（Refactor-Renaming）" class="headerlink" title="重构重命名（Refactor Renaming）"></a>重构重命名（Refactor Renaming）</h4><p>这个快捷键也跟其它时候使用时没区别，大家应该很熟悉了：<br><code>Shift + F6</code>（Windows和Mac一样）。</p>
+<h1 id="重构重命名（Refactor-Renaming）"><a href="#重构重命名（Refactor-Renaming）" class="headerlink" title="重构重命名（Refactor Renaming）"></a>重构重命名（Refactor Renaming）</h1><p>这个快捷键也跟其它时候使用时没区别，大家应该很熟悉了：<br><code>Shift + F6</code>（Windows和Mac一样）。</p>
 <p><img src="https://i.loli.net/2019/02/12/5c626824df656.gif" alt="1_wtt7dY93JmRG3CKO1KHDLQ.gif"></p>
-<h4 id="移除没用的-imports（Optimize-imports）"><a href="#移除没用的-imports（Optimize-imports）" class="headerlink" title="移除没用的 imports（Optimize imports）"></a>移除没用的 imports（Optimize imports）</h4><p><code>Control + Alt + O</code>（Windows）或<code>Control + Option + O</code>（Mac）</p>
+<h1 id="移除没用的-imports（Optimize-imports）"><a href="#移除没用的-imports（Optimize-imports）" class="headerlink" title="移除没用的 imports（Optimize imports）"></a>移除没用的 imports（Optimize imports）</h1><p><code>Control + Alt + O</code>（Windows）或<code>Control + Option + O</code>（Mac）</p>
 <p><img src="https://i.loli.net/2019/02/12/5c6268249128e.gif" alt="1_mEAzXNg-XuPPgPlzJMaViA.gif"></p>
-<h4 id="Flutter-Outline"><a href="#Flutter-Outline" class="headerlink" title="Flutter Outline"></a>Flutter Outline</h4><p>Flutter Outline 不是快捷键了，它是IDE给开发者提供的一个非常有用的工具。所以我这里也一并列出来。</p>
+<h1 id="Flutter-Outline"><a href="#Flutter-Outline" class="headerlink" title="Flutter Outline"></a>Flutter Outline</h1><p>Flutter Outline 不是快捷键了，它是IDE给开发者提供的一个非常有用的工具。所以我这里也一并列出来。</p>
 <p>首先打开Outline窗口后，我们可以统览整个dart文件的结构，包括widget树的子孙层级，清晰明了。<br><img src="https://i.loli.net/2019/02/12/5c626b24de53a.png" alt="1_QpZJlHhPngXuR9QoRM5gKQ (1).png"></p>
 <p>开发过程中，您可以使用Alt + Enter执行大部分操作，例如使用Center a Widget，但Flutter Outline选项卡下还有更多可用的东西！如下图中红色区域的三个按钮提供的功能。</p>
 <image src="https://ws4.sinaimg.cn/large/006tNc79gy1g03n66kuarj30hy05wjry.jpg" width="300">
 
 
-<h5 id="将代码提取到方法中（Extract-code-into-a-method）"><a href="#将代码提取到方法中（Extract-code-into-a-method）" class="headerlink" title="将代码提取到方法中（Extract code into a method）"></a>将代码提取到方法中（Extract code into a method）</h5><p>如果你觉得你正在编写一个很长而且应该是自定义Widget的Widget，那么你可以使用这个工具为你提供的方法，而不是手动将代码移到一个方法中。</p>
+<h1 id="将代码提取到方法中（Extract-code-into-a-method）"><a href="#将代码提取到方法中（Extract-code-into-a-method）" class="headerlink" title="将代码提取到方法中（Extract code into a method）"></a>将代码提取到方法中（Extract code into a method）</h1><p>如果你觉得你正在编写一个很长而且应该是自定义Widget的Widget，那么你可以使用这个工具为你提供的方法，而不是手动将代码移到一个方法中。</p>
 <p><img src="https://i.loli.net/2019/02/12/5c626b261b4e1.gif" alt="1__7Glff7_3PW49C7AOVZ40A.gif"></p>
-<h5 id="上下移动widget"><a href="#上下移动widget" class="headerlink" title="上下移动widget"></a>上下移动widget</h5><p>Outline可以做的另一个很效率的事情是，如果widget中有多个子widget，您可以轻松地重新排列它们的顺序：</p>
+<h1 id="上下移动widget"><a href="#上下移动widget" class="headerlink" title="上下移动widget"></a>上下移动widget</h1><p>Outline可以做的另一个很效率的事情是，如果widget中有多个子widget，您可以轻松地重新排列它们的顺序：</p>
 <p><img src="https://i.loli.net/2019/02/12/5c626b255c53b.gif" alt="1_sBaD3TZE_vFfXrNr4HFrAg.gif"></p>
 <p><strong>附注：</strong></p>
 <p>写这篇文章其实是想对刚刚在Medium上阅读到的<a href="https://medium.com/flutter-community/flutter-ide-shortcuts-for-faster-development-2ef45c51085b" target="_blank" rel="noopener">另一篇文章</a>的完善，那篇文章总结的快捷键对新手来说已经很好，gif动图让读者也浅显易学，我文章里的gif图也是挪用自那里。其中有个别操作我之前也不知道，从她那里学到了很开心。不过有个问题是，她文章中提及的所有快捷键都仅基于Windows提供的，并没有相对应的Mac版本，因此我在她基础上作补充完善，希望能方便到更多的读者。</p>
@@ -228,7 +228,7 @@
     
     <summary type="html">
     
-      &lt;h4 id=&quot;创建一个新的-Stateless-或者-Stateful-widget&quot;&gt;&lt;a href=&quot;#创建一个新的-Stateless-或者-Stateful-widget&quot; class=&quot;headerlink&quot; title=&quot;创建一个新的 Stateless 或者 Stateful widget&quot;&gt;&lt;/a&gt;创建一个新的 Stateless 或者 Stateful widget&lt;/h4&gt;&lt;p&gt;只需输入&lt;code&gt;stless&lt;/code&gt;即可创建一个像这样的Stateless widget：&lt;/p&gt;
+      &lt;h1 id=&quot;创建一个新的-Stateless-或者-Stateful-widget&quot;&gt;&lt;a href=&quot;#创建一个新的-Stateless-或者-Stateful-widget&quot; class=&quot;headerlink&quot; title=&quot;创建一个新的 Stateless 或者 Stateful widget&quot;&gt;&lt;/a&gt;创建一个新的 Stateless 或者 Stateful widget&lt;/h1&gt;&lt;p&gt;只需输入&lt;code&gt;stless&lt;/code&gt;即可创建一个像这样的Stateless widget：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2019/02/12/5c623f4ea52fb.gif&quot; alt=&quot;1_lfehNLtasYJUFEj7qv1ETw.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;或者输入&lt;code&gt;stful&lt;/code&gt;来快速创建一个Stateful widget：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2019/02/12/5c623f4ebc6a0.gif&quot; alt=&quot;1_NjScxI6JzLWfCfe_04H1rQ.gif&quot;&gt;&lt;/p&gt;
@@ -531,7 +531,7 @@
     <link href="https://w4mxl.github.io/2018/09/21/flutter-release-preview-2-pixel-perfect/"/>
     <id>https://w4mxl.github.io/2018/09/21/flutter-release-preview-2-pixel-perfect/</id>
     <published>2018-09-21T02:27:43.000Z</published>
-    <updated>2019-03-16T12:22:26.513Z</updated>
+    <updated>2019-05-18T02:12:32.304Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>原文:  <a href="https://developers.googleblog.com/2018/09/flutter-release-preview-2-pixel-perfect.html" target="_blank" rel="noopener">Flutter Release Preview 2: Pixel-Perfect on iOS</a><br>Posted by the Flutter Team at Google</p>
@@ -540,7 +540,7 @@
 <p><img src="https://ws1.sinaimg.cn/large/006tNbRwgy1fvgzjfe351j318g08c75c.jpg" alt title="Flutter Release Preview 2"></p>
 <p>　　我们在今年2月份的<a href="https://medium.com/flutter-io/announcing-flutter-beta-1-build-beautiful-native-apps-dc142aea74c0" target="_blank" rel="noopener">初始测试版本</a>到今年夏天早些时候的<a href="https://developers.googleblog.com/2018/06/flutter-release-preview-1-live-from.html" target="_blank" rel="noopener">首个发布预览版</a>的可用性基础上,此版本继续完成核心方案和提高质量的工作。我们Flutter团队现在完全专注于完成我们的1.0版本。</p>
 <a id="more"></a>
-<h3 id="Release-Preview-2中的新功能"><a href="#Release-Preview-2中的新功能" class="headerlink" title="Release Preview 2中的新功能"></a>Release Preview 2中的新功能</h3><p>　　此版本的主题是<strong>完美适配iOS应用程序</strong>。虽然我们为Flutter设计了高度品牌驱动的定制体验，但我们也听到了一些想要构建严格遵循<a href="https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/" target="_blank" rel="noopener">Apple界面指南</a>的应用程序的反馈。因此，在这个版本中，我们大大扩展了对Flutter中“Cupertino”主题控件的支持，其中<a href="https://docs.flutter.io/flutter/cupertino/cupertino-library.html" target="_blank" rel="noopener">包含大量的小部件和类库</a>，使得在构建iOS应用程序时比以往任何时候都更容易。</p>
+<h1 id="Release-Preview-2中的新功能"><a href="#Release-Preview-2中的新功能" class="headerlink" title="Release Preview 2中的新功能"></a>Release Preview 2中的新功能</h1><p>　　此版本的主题是<strong>完美适配iOS应用程序</strong>。虽然我们为Flutter设计了高度品牌驱动的定制体验，但我们也听到了一些想要构建严格遵循<a href="https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/" target="_blank" rel="noopener">Apple界面指南</a>的应用程序的反馈。因此，在这个版本中，我们大大扩展了对Flutter中“Cupertino”主题控件的支持，其中<a href="https://docs.flutter.io/flutter/cupertino/cupertino-library.html" target="_blank" rel="noopener">包含大量的小部件和类库</a>，使得在构建iOS应用程序时比以往任何时候都更容易。</p>
 <center><img src="https://s1.ax1x.com/2018/09/21/inwage.gif" alt><br><a href="https://github.com/xster/flutter-test/tree/master/t95_ios_settings_page" target="_blank" rel="noopener">使用Flutter构建</a>的iOS设置页</center>
 
 <p>　　以下是Flutter Release Preview 2中添加的一些新的iOS主题小部件：</p>
@@ -576,7 +576,7 @@
 <p>　　另一项改进是在Android和iOS上<a href="https://github.com/flutter/flutter/issues/16833#issuecomment-410103493" target="_blank" rel="noopener">我们的应用程序包大小减少了高达30％</a>。我们在Android上的<a href="https://github.com/flutter/flutter/tree/60d223c20c44424e3c8031d019270d22bab35df6/examples/hello_world" target="_blank" rel="noopener">最小Flutter应用程序</a>正式打包出来的大小仅为4.7MB，比我们开始优化前小少了2MB - 我们将继续努力,找出进一步的潜在优化的可能性。（请注意，虽然这些改进对iOS和Android都适用，但<a href="https://github.com/flutter/flutter/issues/16833#issuecomment-410103493" target="_blank" rel="noopener">由于iOS软件包的构建方式</a>，您可能会在iOS上看到不同的结果）。</p>
 <iframe width="594" height="315" src="//player.bilibili.com/player.html?aid=32140785&cid=56229899&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen> </iframe>
 
-<h3 id="增长势头"><a href="#增长势头" class="headerlink" title="增长势头"></a>增长势头</h3><p>　　随着许多新开发人员陆续发现和关注Flutter，我们注意到Flutter现在是GitHub上50大活跃库之一：</p>
+<h1 id="增长势头"><a href="#增长势头" class="headerlink" title="增长势头"></a>增长势头</h1><p>　　随着许多新开发人员陆续发现和关注Flutter，我们注意到Flutter现在是GitHub上50大活跃库之一：</p>
 <p><img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fvh02fqxudj30mp0q277h.jpg" alt></p>
 <p>　　我们今年在Google I / O上宣布Flutter“准备就绪”; 随着Flutter越来越接近稳定的1.0版本，许多新的Flutter应用程序正在发布，已经有数千个基于Flutter的应用程序出现在Apple和Google Play商店中。其中包括一些使用最广泛的应用程序，如阿里（<a href="https://play.google.com/store/apps/details?id=com.taobao.idlefish" target="_blank" rel="noopener">Android</a>，<a href="https://itunes.apple.com/cn/app/%E9%97%B2%E9%B1%BC-%E6%8C%82%E9%97%B2%E9%B1%BC-%E9%97%B2%E7%BD%AE%E8%83%BD%E6%8D%A2%E9%92%B1/id510909506?mt=8" target="_blank" rel="noopener">iOS</a>），腾讯现在（<a href="https://play.google.com/store/apps/details?id=com.tencent.now" target="_blank" rel="noopener">Android</a>，<a href="https://itunes.apple.com/us/app/%E8%85%BE%E8%AE%AFnow%E7%9B%B4%E6%92%AD-%E8%BF%99%E6%98%AF%E6%88%91%E7%9A%84%E6%97%B6%E5%88%BB/id1097492828?mt=8" target="_blank" rel="noopener">iOS</a>）和谷歌广告（<a href="https://play.google.com/store/apps/details?id=com.google.android.apps.adwords" target="_blank" rel="noopener">Android</a>，<a href="https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8" target="_blank" rel="noopener">iOS</a>）。这是一段关于阿里巴巴如何使用Flutter构建他们的闲鱼应用程序（Android，iOS）的视频，目前中国有超过5000万客户使用它：</p>
 <iframe width="594" height="315" src="//player.bilibili.com/player.html?aid=32140486&cid=56229199&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen> </iframe>
@@ -586,7 +586,7 @@
 <center><img src="https://ws2.sinaimg.cn/large/006tNbRwgy1fvh0maqz4jj31160ha76b.jpg" alt><br>随着时间的推移用四个流行的UI框架中的每一个标记的StackOverflow问题视图的数量</center>
 
 <p>　　Flutter<a href="https://github.com/flutter/engine/commit/20cc569f5961d4e896cb2f4651fd2049066bd47c" target="_blank" rel="noopener">从第一天开始</a>就是开源的。这是我们的设计初衷,我们的目标是用户能透明地了解我们的进展，并鼓励那些希望在所有平台上看到美好的用户体验的个人和公司为Flutter项目贡献一份力。</p>
-<h3 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h3><p>　　你可能想问如何<a href="https://flutter.io/upgrading/" target="_blank" rel="noopener">升级</a>到Flutter Release Preview 2？如果你已经在用beta版本，它只需要一个命令：<code>flutter upgrade</code></p>
+<h1 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h1><p>　　你可能想问如何<a href="https://flutter.io/upgrading/" target="_blank" rel="noopener">升级</a>到Flutter Release Preview 2？如果你已经在用beta版本，它只需要一个命令：<code>flutter upgrade</code></p>
 <p>　　您可以通过<code>flutter --version</code>从命令行运行来检查是否已安装Release Preview 2 。如果您使用的是0.8.2或更高版本，那么您将拥有本文中描述的所有内容。</p>
 <p>　　如果你尚未尝试Flutter，现在是你开始的最佳时间，并且<a href="https://flutter.io/get-started/install/" target="_blank" rel="noopener">flutter.io</a>拥有下载Flutter的所有细节，并开始开发您的第一个应用程序。</p>
 <p>　　当你准备好了，Flutter有一整套生态系统的示例应用程序和代码片段可以帮助你开始。您可以在GitHub上的<a href="flutter/samples">flutter/samples</a> repo中找到Flutter团队的样本，包括如何使用Material和Cupertino，反序列化以JSON编码的数据等方法。还有一个<a href="https://github.com/flutter/samples/blob/master/INDEX.md" target="_blank" rel="noopener">精心策划的示例清单</a>，链接到Flutter社区创建的一些最佳示例。</p>
@@ -3861,27 +3861,6 @@ Reboot to bootloader and flash the following:
   </entry>
   
   <entry>
-    <title>Back to School</title>
-    <link href="https://w4mxl.github.io/2011/02/20/Back-to-School/"/>
-    <id>https://w4mxl.github.io/2011/02/20/Back-to-School/</id>
-    <published>2011-02-19T16:00:00.000Z</published>
-    <updated>2019-03-16T12:22:17.632Z</updated>
-    
-    <content type="html"><![CDATA[<p>　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的，快乐的长大。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的
-    
-    </summary>
-    
-      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>安慰</title>
     <link href="https://w4mxl.github.io/2011/02/20/%E5%AE%89%E6%85%B0/"/>
     <id>https://w4mxl.github.io/2011/02/20/安慰/</id>
@@ -3896,6 +3875,27 @@ Reboot to bootloader and flash the following:
     
       &lt;p&gt;电影总让我想起些我似乎忘了的东西！&lt;/p&gt;
 &lt;p&gt;明明钥匙在手上，却寻不到钥匙把门打开。看完《天若有情Ⅰ》，我就奇怪，那时吊儿郎当的我，现在怎么这么“乖”。在古惑仔横扫我整个初中那时，我们凡事只讲义气，只够买一根冰棒那分着吃，兄弟喜欢的女生不能有‘想法‘-_-#。那时候也是
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Back to School</title>
+    <link href="https://w4mxl.github.io/2011/02/20/Back-to-School/"/>
+    <id>https://w4mxl.github.io/2011/02/20/Back-to-School/</id>
+    <published>2011-02-19T16:00:00.000Z</published>
+    <updated>2019-03-16T12:22:17.632Z</updated>
+    
+    <content type="html"><![CDATA[<p>　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的，快乐的长大。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的
     
     </summary>
     

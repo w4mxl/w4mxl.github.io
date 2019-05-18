@@ -6,16 +6,24 @@
     <entry>
       <title><![CDATA[观影《人生果实》]]></title>
       <url>https://w4mxl.github.io/2019/05/15/life-is-fruity/</url>
-      <content type="html"><![CDATA[<center><img src="https://ws1.sinaimg.cn/large/006tNc79gy1g33ylh8ql0j30u014a7ic.jpg" title="《人生果实》海报" width="500"></center>
+      <content type="html"><![CDATA[<center><img src="https://i.loli.net/2019/05/18/5cdffeab569b254715.jpg" title="《人生果实》海报" width="500"></center>
 
 <p>下班到家后，和佳雯聊了下地铁上读的书的事情。<br>接着她就极力推荐我看一下《人生果实》这个纪录片。<br>她又和我一起看的，这是她今天看的第二遍了。<br>看着看着，某个时候我转头看她，她睡着了。<br>我刚看完。难怪她预言我一定会喜欢的，是的，我真的特别喜欢这部片子…<br>我喜欢津一对生活的态度和想法。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
       <title><![CDATA[V2LF - 使用 Flutter 开发的开源的 V2EX 客户端]]></title>
       <url>https://w4mxl.github.io/2019/05/14/v2lf-open-source/</url>
-      <content type="html"><![CDATA[<h3 id="V2LF-正式开源"><a href="#V2LF-正式开源" class="headerlink" title="V2LF 正式开源"></a>V2LF 正式开源</h3><p>GitHub 地址：<a href="https://github.com/w4mxl/V2LF" target="_blank" rel="noopener">https://github.com/w4mxl/V2LF</a></p>
+      <content type="html"><![CDATA[<h1 id="V2LF-正式开源"><a href="#V2LF-正式开源" class="headerlink" title="V2LF 正式开源"></a>V2LF 正式开源</h1><p>GitHub 地址：<a href="https://github.com/w4mxl/V2LF" target="_blank" rel="noopener">https://github.com/w4mxl/V2LF</a></p>
 <p>如果您不知道 V2LF 是啥，可以先看我之前在 v2ex 发的贴子来了解：</p>
 <p><a href="https://www.v2ex.com/t/548936#reply164" target="_blank" rel="noopener">邀请体验： V2LF - 用 Flutter 开发的 V2EX App
 </a></p>
@@ -23,7 +31,7 @@
 <p>本次开源采用了 <strong><a href="https://www.wikiwand.com/zh/GNU%E9%80%9A%E7%94%A8%E5%85%AC%E5%85%B1%E8%AE%B8%E5%8F%AF%E8%AF%81" target="_blank" rel="noopener">GPL v3.0 开源许可</a></strong> ，期待得到大家更多的参与。只要我还会逛 v2ex，就会继续完善 V2LF 这个项目。</p>
 <p>我相信这次开源会是一个新的开始！</p>
 <a id="more"></a>
-<h3 id="上架说明"><a href="#上架说明" class="headerlink" title="上架说明"></a>上架说明</h3><p>我原本是打算上架了App Store 和 Google play 之后就开源出来的，play那边很快搞定，奈何 App Store 那边审核遇到些阻碍，和审核人员来回沟通了几次。目前账号审核状态，迟迟没有进展，只能等等看了 ¯\<em>(ツ)</em>/¯ 。我希望能早点审核好，然后顺利上架。</p>
+<h1 id="上架说明"><a href="#上架说明" class="headerlink" title="上架说明"></a>上架说明</h1><p>我原本是打算上架了App Store 和 Google play 之后就开源出来的，play那边很快搞定，奈何 App Store 那边审核遇到些阻碍，和审核人员来回沟通了几次。目前账号审核状态，迟迟没有进展，只能等等看了 ¯\<em>(ツ)</em>/¯ 。我希望能早点审核好，然后顺利上架。</p>
 <p><img src="https://i.loli.net/2019/05/14/5cda1b956a21156246.jpeg" alt="42303A5F-879B-4CA3-A6B2-5B8182C6ABE6.jpeg" title="App Store 审核过程（左） &amp; 最近一次 reject （右）"></p>
 <p>App Store 和 Google play 我都是定价 ¥12 的。当然我没有指望从这个 app 可以赚钱，我很清楚它的受众群其实很有限的。之所以设置付费，纯粹是好奇，想试试看会有多少用户真的喜欢这个app到愿意付费支持的程度。如果有，哪怕个位数，我也会很开心。当然我也提供了完全免费使用的途径，酷安、TestFlight，或者直接编译运行源码。</p>
 <p>我在开发 V2LF 的时候也陆续体验了一些其它同类app，列在下面，你们感兴趣也可以去下载使用，多尝试挺好的。不爱尝试的同学，手机浏览器用网页版v2ex体验也是不错的。</p>
@@ -34,13 +42,21 @@
 <li><a href="https://itunes.apple.com/cn/app/v2ex-%E5%88%9B%E6%84%8F%E5%B7%A5%E4%BD%9C%E8%80%85%E4%BB%AC%E7%9A%84%E7%A4%BE%E5%8C%BA/id1078157349?mt=8" target="_blank" rel="noopener">V2EX - 创意工作者们的社区。(iOS)</a></li>
 <li><a href="https://itunes.apple.com/cn/app/vexplore-lite-v2ex%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BC%80%E6%BA%90%E5%AE%A2%E6%88%B7%E7%AB%AF/id1191058321?mt=8" target="_blank" rel="noopener">VeXplore Lite - V2EX第三方开源客户端 (iOS)</a></li>
 </ul>
-<h3 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h3><ul>
+<h1 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h1><ul>
 <li>V2LF iOS TestFlight： <a href="https://testflight.apple.com/join/cvx4MQuh" target="_blank" rel="noopener">https://testflight.apple.com/join/cvx4MQuh</a></li>
 <li>V2LF 酷安：<a href="https://www.coolapk.com/apk/221879" target="_blank" rel="noopener">https://www.coolapk.com/apk/221879</a></li>
 <li>V2LF Google Play：<a href="https://play.google.com/store/apps/details?id=io.github.w4mxl.v2lf" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=io.github.w4mxl.v2lf</a></li>
 </ul>
-<h3 id="一点想法"><a href="#一点想法" class="headerlink" title="一点想法"></a>一点想法</h3><p>日常在公司工作，只管写代码实现功能就好。而到开发个人项目的时候就会发现，实现功能前得自己设计 UI/UX，起码是一个框架图。公司要上架时可能只负责打好包就行，文案、截图、预览啥的找产品或者找设计张口要就好。而到自己项目都得亲力亲为，初次弄这些的时候往往觉得比写代码更辛苦，隔行如隔山。当然了，也好的一面，比如用了好些年macOS，为了做预览，第一次用上了iMovie app。</p>
+<h1 id="一点想法"><a href="#一点想法" class="headerlink" title="一点想法"></a>一点想法</h1><p>日常在公司工作，只管写代码实现功能就好。而到开发个人项目的时候就会发现，实现功能前得自己设计 UI/UX，起码是一个框架图。公司要上架时可能只负责打好包就行，文案、截图、预览啥的找产品或者找设计张口要就好。而到自己项目都得亲力亲为，初次弄这些的时候往往觉得比写代码更辛苦，隔行如隔山。当然了，也好的一面，比如用了好些年macOS，为了做预览，第一次用上了iMovie app。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Flutter </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -80,18 +96,34 @@
 <li><a href="https://mp.weixin.qq.com/s?__biz=MzAxMTAzNDM2OQ==&amp;mid=2657074920&amp;idx=3&amp;sn=b7fb45389067f85ffda45d5db13769a5&amp;chksm=80ec5486b79bdd90fade376aca9fcce0c17746e52d505dea9e687cfc3bdbec9392f1aa111c4e&amp;mpshare=1&amp;scene=1&amp;srcid=0213bWITe7yuhV0LlXlmn6mF%23rd" target="_blank" rel="noopener">翻了43部刘慈欣的小说，我终于找出了《流浪地球》最全的彩蛋！</a></li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
       <title><![CDATA[20190214]]></title>
       <url>https://w4mxl.github.io/2019/02/14/20190214/</url>
-      <content type="html"><![CDATA[<center><br>你是我粥一般的爱人<br>余生只够爱的一个人<br><br>有时你让我说爱你<br>我沉默…<br>沉默…<br>“爱你”<br>你动情的笑<br><br>你知不知道<br>我不爱说爱<br>因为总觉得说出来的不够<br><br><br><em>–  于 2019.02.14 地铁</em><br></center>]]></content>
+      <content type="html"><![CDATA[<center><br>你是我粥一般的爱人<br>余生只够爱的一个人<br><br>有时你让我说爱你<br>我沉默…<br>沉默…<br>“爱你”<br>你动情的笑<br><br>你知不知道<br>我不爱说爱<br>因为总觉得说出来的不够<br><br><br><em>–  2019.02.14 于地铁</em><br></center>]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
       <title><![CDATA[提升Flutter开发效率的快捷键]]></title>
       <url>https://w4mxl.github.io/2019/02/12/flutter-ide-shortcuts-for-fast-development/</url>
-      <content type="html"><![CDATA[<h4 id="创建一个新的-Stateless-或者-Stateful-widget"><a href="#创建一个新的-Stateless-或者-Stateful-widget" class="headerlink" title="创建一个新的 Stateless 或者 Stateful widget"></a>创建一个新的 Stateless 或者 Stateful widget</h4><p>只需输入<code>stless</code>即可创建一个像这样的Stateless widget：</p>
+      <content type="html"><![CDATA[<h1 id="创建一个新的-Stateless-或者-Stateful-widget"><a href="#创建一个新的-Stateless-或者-Stateful-widget" class="headerlink" title="创建一个新的 Stateless 或者 Stateful widget"></a>创建一个新的 Stateless 或者 Stateful widget</h1><p>只需输入<code>stless</code>即可创建一个像这样的Stateless widget：</p>
 <p><img src="https://i.loli.net/2019/02/12/5c623f4ea52fb.gif" alt="1_lfehNLtasYJUFEj7qv1ETw.gif"></p>
 <p>或者输入<code>stful</code>来快速创建一个Stateful widget：</p>
 <p><img src="https://i.loli.net/2019/02/12/5c623f4ebc6a0.gif" alt="1_NjScxI6JzLWfCfe_04H1rQ.gif"></p>
@@ -99,7 +131,7 @@
 <p>您可以将光标放在<code>StatelessWidget</code>上，按<code>Alt + Enter</code>快捷键（Windows和Mac一样）并单击<code>Convert to StatefulWidget</code>就可以了。</p>
 <p><img src="https://i.loli.net/2019/02/12/5c624124e1b2e.gif" alt="1_Tz844vh_0P8TUyXTnNevQg.gif"></p>
 <a id="more"></a>
-<h4 id="Alt-Enter快捷键的其它用法"><a href="#Alt-Enter快捷键的其它用法" class="headerlink" title="Alt + Enter快捷键的其它用法"></a><code>Alt + Enter</code>快捷键的其它用法</h4><p>您可以单击选中任何 widget，然后按<code>Alt + Enter</code>查看您对该特定widget的可选项。例如：</p>
+<h1 id="Alt-Enter快捷键的其它用法"><a href="#Alt-Enter快捷键的其它用法" class="headerlink" title="Alt + Enter快捷键的其它用法"></a><code>Alt + Enter</code>快捷键的其它用法</h1><p>您可以单击选中任何 widget，然后按<code>Alt + Enter</code>查看您对该特定widget的可选项。例如：</p>
 <ul>
 <li><p>Add a Padding Around a Widget<br><img src="https://i.loli.net/2019/02/12/5c624124d4e97.gif" alt="1_u3VT93FfmmuyHQ_4TBhzMA.gif"></p>
 </li>
@@ -111,28 +143,28 @@
 </li>
 </ul>
 <p>总而言之，<code>Alt + Enter</code>快捷键在flutter开发中特别有用，在您想要对特定widget进行某些操作时，请习惯尝试使用这个快捷。相信我，一定能提升开发效率的。</p>
-<h4 id="查看widget的源码"><a href="#查看widget的源码" class="headerlink" title="查看widget的源码"></a>查看widget的源码</h4><p>对于新手来说，对widget的属性方法等都还不是很了解，查看源码是件高频的事情。加上flutter官方为每个widget添加了很详细的注释说明，方便开发者查阅学习。</p>
+<h1 id="查看widget的源码"><a href="#查看widget的源码" class="headerlink" title="查看widget的源码"></a>查看widget的源码</h1><p>对于新手来说，对widget的属性方法等都还不是很了解，查看源码是件高频的事情。加上flutter官方为每个widget添加了很详细的注释说明，方便开发者查阅学习。</p>
 <p>之前我都是手动按住command（Mac）或control（Windows）键再click跳转过去查看源码的，其实可以通过快捷键<code>Ctrl + B</code>（Windows）或<code>Command + B</code>（Mac），也可以使用<code>F4 / Control + Enter</code>（Windows）或<code>F4 / Command + Down Arrow</code>（Mac），达到同样目的。</p>
 <p><img src="https://i.loli.net/2019/02/12/5c6264c4c5c44.gif" alt="1_Thy02n4cbt_dZFS4Exw4RQ.gif"></p>
-<h4 id="在当前页面查看-Widget-的构造方法包含的属性"><a href="#在当前页面查看-Widget-的构造方法包含的属性" class="headerlink" title="在当前页面查看 Widget 的构造方法包含的属性"></a>在当前页面查看 Widget 的构造方法包含的属性</h4><p>上面介绍的通过快捷键<code>Ctrl + B</code>（Windows）或<code>Command + B</code>（Mac）来查看widget的源码，如果您只是想快速看一下widget的有哪些属性，可以通过另一个快捷键<code>Ctrl+Shift+I</code>（Windows）或<code>Command + Y</code>（Mac）做到。</p>
+<h1 id="在当前页面查看-Widget-的构造方法包含的属性"><a href="#在当前页面查看-Widget-的构造方法包含的属性" class="headerlink" title="在当前页面查看 Widget 的构造方法包含的属性"></a>在当前页面查看 Widget 的构造方法包含的属性</h1><p>上面介绍的通过快捷键<code>Ctrl + B</code>（Windows）或<code>Command + B</code>（Mac）来查看widget的源码，如果您只是想快速看一下widget的有哪些属性，可以通过另一个快捷键<code>Ctrl+Shift+I</code>（Windows）或<code>Command + Y</code>（Mac）做到。</p>
 <p><img src="https://i.loli.net/2019/02/12/5c6264c57f89f.gif" alt="1_9bvEQBMUzyJo33i_tE1dIg.gif"></p>
-<h4 id="快速选择整个widget"><a href="#快速选择整个widget" class="headerlink" title="快速选择整个widget"></a>快速选择整个widget</h4><p><img src="https://i.loli.net/2019/02/12/5c626567c0175.gif" alt="1_ajtutELoL4N7G8sldmCMuw.gif" title="一般操作。如果widget包含的代码比较多，嵌套深的话这样操作就会显得很麻烦且容易错"></p>
+<h1 id="快速选择整个widget"><a href="#快速选择整个widget" class="headerlink" title="快速选择整个widget"></a>快速选择整个widget</h1><p><img src="https://i.loli.net/2019/02/12/5c626567c0175.gif" alt="1_ajtutELoL4N7G8sldmCMuw.gif" title="一般操作。如果widget包含的代码比较多，嵌套深的话这样操作就会显得很麻烦且容易错"></p>
 <p><img src="https://i.loli.net/2019/02/12/5c62656805b00.gif" alt="1_yOO-rTQUAROmxXp2qwiDzg.gif" title="推荐使用快捷键操作。`Ctrl + W`（Windows）或`Option + Up`（Mac）"></p>
-<h4 id="代码格式化"><a href="#代码格式化" class="headerlink" title="代码格式化"></a>代码格式化</h4><p>这个快捷键就跟其它使用时没啥区别了：<br><code>Control + Alt + L</code>（Windows）或<code>Command + Option + L</code>（Mac）</p>
+<h1 id="代码格式化"><a href="#代码格式化" class="headerlink" title="代码格式化"></a>代码格式化</h1><p>这个快捷键就跟其它使用时没啥区别了：<br><code>Control + Alt + L</code>（Windows）或<code>Command + Option + L</code>（Mac）</p>
 <p><img src="https://i.loli.net/2019/02/12/5c62677c483f8.gif" alt="1_DXX6iuWiGC7sNSPUc7UZnA.gif"></p>
-<h4 id="重构重命名（Refactor-Renaming）"><a href="#重构重命名（Refactor-Renaming）" class="headerlink" title="重构重命名（Refactor Renaming）"></a>重构重命名（Refactor Renaming）</h4><p>这个快捷键也跟其它时候使用时没区别，大家应该很熟悉了：<br><code>Shift + F6</code>（Windows和Mac一样）。</p>
+<h1 id="重构重命名（Refactor-Renaming）"><a href="#重构重命名（Refactor-Renaming）" class="headerlink" title="重构重命名（Refactor Renaming）"></a>重构重命名（Refactor Renaming）</h1><p>这个快捷键也跟其它时候使用时没区别，大家应该很熟悉了：<br><code>Shift + F6</code>（Windows和Mac一样）。</p>
 <p><img src="https://i.loli.net/2019/02/12/5c626824df656.gif" alt="1_wtt7dY93JmRG3CKO1KHDLQ.gif"></p>
-<h4 id="移除没用的-imports（Optimize-imports）"><a href="#移除没用的-imports（Optimize-imports）" class="headerlink" title="移除没用的 imports（Optimize imports）"></a>移除没用的 imports（Optimize imports）</h4><p><code>Control + Alt + O</code>（Windows）或<code>Control + Option + O</code>（Mac）</p>
+<h1 id="移除没用的-imports（Optimize-imports）"><a href="#移除没用的-imports（Optimize-imports）" class="headerlink" title="移除没用的 imports（Optimize imports）"></a>移除没用的 imports（Optimize imports）</h1><p><code>Control + Alt + O</code>（Windows）或<code>Control + Option + O</code>（Mac）</p>
 <p><img src="https://i.loli.net/2019/02/12/5c6268249128e.gif" alt="1_mEAzXNg-XuPPgPlzJMaViA.gif"></p>
-<h4 id="Flutter-Outline"><a href="#Flutter-Outline" class="headerlink" title="Flutter Outline"></a>Flutter Outline</h4><p>Flutter Outline 不是快捷键了，它是IDE给开发者提供的一个非常有用的工具。所以我这里也一并列出来。</p>
+<h1 id="Flutter-Outline"><a href="#Flutter-Outline" class="headerlink" title="Flutter Outline"></a>Flutter Outline</h1><p>Flutter Outline 不是快捷键了，它是IDE给开发者提供的一个非常有用的工具。所以我这里也一并列出来。</p>
 <p>首先打开Outline窗口后，我们可以统览整个dart文件的结构，包括widget树的子孙层级，清晰明了。<br><img src="https://i.loli.net/2019/02/12/5c626b24de53a.png" alt="1_QpZJlHhPngXuR9QoRM5gKQ (1).png"></p>
 <p>开发过程中，您可以使用Alt + Enter执行大部分操作，例如使用Center a Widget，但Flutter Outline选项卡下还有更多可用的东西！如下图中红色区域的三个按钮提供的功能。</p>
 <image src="https://ws4.sinaimg.cn/large/006tNc79gy1g03n66kuarj30hy05wjry.jpg" width="300">
 
 
-<h5 id="将代码提取到方法中（Extract-code-into-a-method）"><a href="#将代码提取到方法中（Extract-code-into-a-method）" class="headerlink" title="将代码提取到方法中（Extract code into a method）"></a>将代码提取到方法中（Extract code into a method）</h5><p>如果你觉得你正在编写一个很长而且应该是自定义Widget的Widget，那么你可以使用这个工具为你提供的方法，而不是手动将代码移到一个方法中。</p>
+<h1 id="将代码提取到方法中（Extract-code-into-a-method）"><a href="#将代码提取到方法中（Extract-code-into-a-method）" class="headerlink" title="将代码提取到方法中（Extract code into a method）"></a>将代码提取到方法中（Extract code into a method）</h1><p>如果你觉得你正在编写一个很长而且应该是自定义Widget的Widget，那么你可以使用这个工具为你提供的方法，而不是手动将代码移到一个方法中。</p>
 <p><img src="https://i.loli.net/2019/02/12/5c626b261b4e1.gif" alt="1__7Glff7_3PW49C7AOVZ40A.gif"></p>
-<h5 id="上下移动widget"><a href="#上下移动widget" class="headerlink" title="上下移动widget"></a>上下移动widget</h5><p>Outline可以做的另一个很效率的事情是，如果widget中有多个子widget，您可以轻松地重新排列它们的顺序：</p>
+<h1 id="上下移动widget"><a href="#上下移动widget" class="headerlink" title="上下移动widget"></a>上下移动widget</h1><p>Outline可以做的另一个很效率的事情是，如果widget中有多个子widget，您可以轻松地重新排列它们的顺序：</p>
 <p><img src="https://i.loli.net/2019/02/12/5c626b255c53b.gif" alt="1_sBaD3TZE_vFfXrNr4HFrAg.gif"></p>
 <p><strong>附注：</strong></p>
 <p>写这篇文章其实是想对刚刚在Medium上阅读到的<a href="https://medium.com/flutter-community/flutter-ide-shortcuts-for-faster-development-2ef45c51085b" target="_blank" rel="noopener">另一篇文章</a>的完善，那篇文章总结的快捷键对新手来说已经很好，gif动图让读者也浅显易学，我文章里的gif图也是挪用自那里。其中有个别操作我之前也不知道，从她那里学到了很开心。不过有个问题是，她文章中提及的所有快捷键都仅基于Windows提供的，并没有相对应的Mac版本，因此我在她基础上作补充完善，希望能方便到更多的读者。</p>
@@ -141,6 +173,14 @@
 <p>延伸阅读：</p>
 <p><a href="https://medium.com/coding-with-flutter/flutter-my-favourite-keyboard-shortcuts-63f6474afc8c" target="_blank" rel="noopener">Flutter: My favourite keyboard shortcuts</a></p>
 </image>]]></content>
+      
+        <categories>
+            
+            <category> Flutter </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -187,6 +227,14 @@
 <li><a href="https://github.com/long1eu/flutter_i18n" target="_blank" rel="noopener">Flutter i18n</a></li>
 </ul>
 </image></image></image>]]></content>
+      
+        <categories>
+            
+            <category> Flutter </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -200,6 +248,14 @@
 <hr>
 <p><image src="https://ws3.sinaimg.cn/large/006tNc79gy1fzivqut9zsj30n01dsadz.jpg" width="300"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">2019-01-25 15:44:23.640336+0800 TestLanguage[30886:254351] en_CN</span><br><span class="line">2019-01-25 15:44:23.640494+0800 TestLanguage[30886:254351] 英文（中國）</span><br><span class="line">2019-01-25 15:44:23.640613+0800 TestLanguage[30886:254351] (</span><br><span class="line">    &quot;zh-Hant-HK&quot;,</span><br><span class="line">    &quot;zh-Hant-TW&quot;,</span><br><span class="line">    &quot;zh-Hans-CN&quot;,</span><br><span class="line">    &quot;ja-CN&quot;,</span><br><span class="line">    &quot;en-CN&quot;</span><br><span class="line">)</span><br><span class="line">2019-01-25 15:44:23.640701+0800 TestLanguage[30886:254351] zh-Hant-HK</span><br><span class="line">2019-01-25 15:44:23.640848+0800 TestLanguage[30886:254351] (</span><br><span class="line">    &quot;zh-Hant-HK&quot;,</span><br><span class="line">    &quot;zh-Hant-TW&quot;,</span><br><span class="line">    &quot;zh-Hans-CN&quot;,</span><br><span class="line">    &quot;ja-CN&quot;,</span><br><span class="line">    &quot;en-CN&quot;</span><br><span class="line">)</span><br><span class="line">2019-01-25 15:44:23.640921+0800 TestLanguage[30886:254351] zh-Hant-HK</span><br><span class="line">2019-01-25 15:44:23.640999+0800 TestLanguage[30886:254351] en</span><br><span class="line">2019-01-25 15:44:23.641082+0800 TestLanguage[30886:254351] en</span><br></pre></td></tr></table></figure></image></p>
 </image>]]></content>
+      
+        <categories>
+            
+            <category> Flutter </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -226,6 +282,14 @@
 <li>2018年11月2日，邹文怀在香港去世，享年91岁，当日收盘，橙天嘉禾股价每股0.37元，总市值10.36亿元。</li>
 </ul>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=175957&auto=1&height=66"></iframe>]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -239,6 +303,14 @@
 <p>　　另外说一下，我之前主用177电信号，而189的北京联通号我用的小米一元日租套餐养着。既然177号今天销号了，我考虑了一下，将189号的套餐转成了Oppo O粉卡。我觉得这是目前最合适我个人使用情况的联通互联网套餐了！这次转互联网套餐的过程不算麻烦，但是前后也跟联通电话了三四次。选择套餐的时候有参考知乎上的这篇文章：<a href="https://www.zhihu.com/question/58178068/answer/155940595" target="_blank" rel="noopener">除了腾讯王卡、蚂蚁宝卡、京东强卡、阿里鱼卡，运营商还推出了哪些互联网套餐（电话卡/流量卡）？</a></p>
 <p>Ps.<a href="https://m.10010.com/queen/ofans/ofanscard.html" target="_blank" rel="noopener">Oppo O粉卡套餐介绍</a></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -254,6 +326,14 @@
 <li>22:12 发现 Rom 自带的 Screen record 功能会闪退。刚尝试了安装老牌AZ录屏app也是闪退，我简单Google了下没有找到原因。我又下载安装了一款叫做Screen Recorder的app，这个app很好用，设计、设置和使用给我的感受就很好，最重要的是，它可以正常录制了！👍</li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -262,6 +342,14 @@
       <content type="html"><![CDATA[<p>　　下班回家的地铁中，在 iPhone 上打开了 YouTube app，不知道它喜好算法是怎么做的，给我推荐了一个MV视频合集。我点开后从第一首开始播放。<br><a id="more"></a><br>　　听完第二首《钟鼓楼》之后，我往下翻了翻合集列表里的其它歌，还真都是我读书年纪里听了很多遍很多遍的那些歌。像是李志的《关于郑州的记忆》，艾敬的《我的1997》等歌。</p>
 <p>　　想来我一直还是理想主义的。尽管平日里对新事物充满好奇心和探索欲，可对喜欢过的一些旧的人事物依然情有独钟。</p>
 <center><img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fxtnnaefunj30hs0vk48w.jpg" width="300"></center>]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -284,6 +372,14 @@
 <li>AI的持续蓬勃发展，未来会改变世界。深度学习是AI的最要引擎，“So with the US leading the era of discovery and china leading the era of implementation”.AI的发展的如此之快，我们普通人该怎样应对呢？</li>
 </ol>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -301,6 +397,14 @@
 <p>　　又过了好些年了，慢慢才知道喜欢这首歌的人多了去了，这首歌产生的影响大了去了…</p>
 <p>　　<strong>Respect Always !</strong></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -313,7 +417,7 @@
 <p><img src="https://ws1.sinaimg.cn/large/006tNbRwgy1fvgzjfe351j318g08c75c.jpg" alt title="Flutter Release Preview 2"></p>
 <p>　　我们在今年2月份的<a href="https://medium.com/flutter-io/announcing-flutter-beta-1-build-beautiful-native-apps-dc142aea74c0" target="_blank" rel="noopener">初始测试版本</a>到今年夏天早些时候的<a href="https://developers.googleblog.com/2018/06/flutter-release-preview-1-live-from.html" target="_blank" rel="noopener">首个发布预览版</a>的可用性基础上,此版本继续完成核心方案和提高质量的工作。我们Flutter团队现在完全专注于完成我们的1.0版本。</p>
 <a id="more"></a>
-<h3 id="Release-Preview-2中的新功能"><a href="#Release-Preview-2中的新功能" class="headerlink" title="Release Preview 2中的新功能"></a>Release Preview 2中的新功能</h3><p>　　此版本的主题是<strong>完美适配iOS应用程序</strong>。虽然我们为Flutter设计了高度品牌驱动的定制体验，但我们也听到了一些想要构建严格遵循<a href="https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/" target="_blank" rel="noopener">Apple界面指南</a>的应用程序的反馈。因此，在这个版本中，我们大大扩展了对Flutter中“Cupertino”主题控件的支持，其中<a href="https://docs.flutter.io/flutter/cupertino/cupertino-library.html" target="_blank" rel="noopener">包含大量的小部件和类库</a>，使得在构建iOS应用程序时比以往任何时候都更容易。</p>
+<h1 id="Release-Preview-2中的新功能"><a href="#Release-Preview-2中的新功能" class="headerlink" title="Release Preview 2中的新功能"></a>Release Preview 2中的新功能</h1><p>　　此版本的主题是<strong>完美适配iOS应用程序</strong>。虽然我们为Flutter设计了高度品牌驱动的定制体验，但我们也听到了一些想要构建严格遵循<a href="https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/" target="_blank" rel="noopener">Apple界面指南</a>的应用程序的反馈。因此，在这个版本中，我们大大扩展了对Flutter中“Cupertino”主题控件的支持，其中<a href="https://docs.flutter.io/flutter/cupertino/cupertino-library.html" target="_blank" rel="noopener">包含大量的小部件和类库</a>，使得在构建iOS应用程序时比以往任何时候都更容易。</p>
 <center><img src="https://s1.ax1x.com/2018/09/21/inwage.gif" alt><br><a href="https://github.com/xster/flutter-test/tree/master/t95_ios_settings_page" target="_blank" rel="noopener">使用Flutter构建</a>的iOS设置页</center>
 
 <p>　　以下是Flutter Release Preview 2中添加的一些新的iOS主题小部件：</p>
@@ -349,7 +453,7 @@
 <p>　　另一项改进是在Android和iOS上<a href="https://github.com/flutter/flutter/issues/16833#issuecomment-410103493" target="_blank" rel="noopener">我们的应用程序包大小减少了高达30％</a>。我们在Android上的<a href="https://github.com/flutter/flutter/tree/60d223c20c44424e3c8031d019270d22bab35df6/examples/hello_world" target="_blank" rel="noopener">最小Flutter应用程序</a>正式打包出来的大小仅为4.7MB，比我们开始优化前小少了2MB - 我们将继续努力,找出进一步的潜在优化的可能性。（请注意，虽然这些改进对iOS和Android都适用，但<a href="https://github.com/flutter/flutter/issues/16833#issuecomment-410103493" target="_blank" rel="noopener">由于iOS软件包的构建方式</a>，您可能会在iOS上看到不同的结果）。</p>
 <iframe width="594" height="315" src="//player.bilibili.com/player.html?aid=32140785&cid=56229899&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen> </iframe>
 
-<h3 id="增长势头"><a href="#增长势头" class="headerlink" title="增长势头"></a>增长势头</h3><p>　　随着许多新开发人员陆续发现和关注Flutter，我们注意到Flutter现在是GitHub上50大活跃库之一：</p>
+<h1 id="增长势头"><a href="#增长势头" class="headerlink" title="增长势头"></a>增长势头</h1><p>　　随着许多新开发人员陆续发现和关注Flutter，我们注意到Flutter现在是GitHub上50大活跃库之一：</p>
 <p><img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fvh02fqxudj30mp0q277h.jpg" alt></p>
 <p>　　我们今年在Google I / O上宣布Flutter“准备就绪”; 随着Flutter越来越接近稳定的1.0版本，许多新的Flutter应用程序正在发布，已经有数千个基于Flutter的应用程序出现在Apple和Google Play商店中。其中包括一些使用最广泛的应用程序，如阿里（<a href="https://play.google.com/store/apps/details?id=com.taobao.idlefish" target="_blank" rel="noopener">Android</a>，<a href="https://itunes.apple.com/cn/app/%E9%97%B2%E9%B1%BC-%E6%8C%82%E9%97%B2%E9%B1%BC-%E9%97%B2%E7%BD%AE%E8%83%BD%E6%8D%A2%E9%92%B1/id510909506?mt=8" target="_blank" rel="noopener">iOS</a>），腾讯现在（<a href="https://play.google.com/store/apps/details?id=com.tencent.now" target="_blank" rel="noopener">Android</a>，<a href="https://itunes.apple.com/us/app/%E8%85%BE%E8%AE%AFnow%E7%9B%B4%E6%92%AD-%E8%BF%99%E6%98%AF%E6%88%91%E7%9A%84%E6%97%B6%E5%88%BB/id1097492828?mt=8" target="_blank" rel="noopener">iOS</a>）和谷歌广告（<a href="https://play.google.com/store/apps/details?id=com.google.android.apps.adwords" target="_blank" rel="noopener">Android</a>，<a href="https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8" target="_blank" rel="noopener">iOS</a>）。这是一段关于阿里巴巴如何使用Flutter构建他们的闲鱼应用程序（Android，iOS）的视频，目前中国有超过5000万客户使用它：</p>
 <iframe width="594" height="315" src="//player.bilibili.com/player.html?aid=32140486&cid=56229199&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen> </iframe>
@@ -359,7 +463,7 @@
 <center><img src="https://ws2.sinaimg.cn/large/006tNbRwgy1fvh0maqz4jj31160ha76b.jpg" alt><br>随着时间的推移用四个流行的UI框架中的每一个标记的StackOverflow问题视图的数量</center>
 
 <p>　　Flutter<a href="https://github.com/flutter/engine/commit/20cc569f5961d4e896cb2f4651fd2049066bd47c" target="_blank" rel="noopener">从第一天开始</a>就是开源的。这是我们的设计初衷,我们的目标是用户能透明地了解我们的进展，并鼓励那些希望在所有平台上看到美好的用户体验的个人和公司为Flutter项目贡献一份力。</p>
-<h3 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h3><p>　　你可能想问如何<a href="https://flutter.io/upgrading/" target="_blank" rel="noopener">升级</a>到Flutter Release Preview 2？如果你已经在用beta版本，它只需要一个命令：<code>flutter upgrade</code></p>
+<h1 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h1><p>　　你可能想问如何<a href="https://flutter.io/upgrading/" target="_blank" rel="noopener">升级</a>到Flutter Release Preview 2？如果你已经在用beta版本，它只需要一个命令：<code>flutter upgrade</code></p>
 <p>　　您可以通过<code>flutter --version</code>从命令行运行来检查是否已安装Release Preview 2 。如果您使用的是0.8.2或更高版本，那么您将拥有本文中描述的所有内容。</p>
 <p>　　如果你尚未尝试Flutter，现在是你开始的最佳时间，并且<a href="https://flutter.io/get-started/install/" target="_blank" rel="noopener">flutter.io</a>拥有下载Flutter的所有细节，并开始开发您的第一个应用程序。</p>
 <p>　　当你准备好了，Flutter有一整套生态系统的示例应用程序和代码片段可以帮助你开始。您可以在GitHub上的<a href="flutter/samples">flutter/samples</a> repo中找到Flutter团队的样本，包括如何使用Material和Cupertino，反序列化以JSON编码的数据等方法。还有一个<a href="https://github.com/flutter/samples/blob/master/INDEX.md" target="_blank" rel="noopener">精心策划的示例清单</a>，链接到Flutter社区创建的一些最佳示例。</p>
@@ -378,6 +482,14 @@
 <li>Flutter 入门容易,文档健全</li>
 </ol>
 ]]></content>
+      
+        <categories>
+            
+            <category> Flutter </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -391,6 +503,14 @@
 <li><a href="http://paper.people.com.cn/mszk/html/2013-09/23/content_1308044.htm" target="_blank" rel="noopener">“在家上学”民间发酵</a></li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -408,6 +528,14 @@
 <h2 id><a href="#" class="headerlink" title="　　　"></a>　　　</h2><p>　　2018/09/11 update：</p>
 <p>　　去听王以太的歌，犹豫了下还是选择购买了网易云音乐黑胶VIP一年。（网易云音乐🎵app我是在S8上用的。之前在iPhone上已经订阅了Apple Music，另外网易官方是11rmb/月，我在淘宝买的是¥104.66。）<br>　　<br>　　因为地铁🚇上听王以太的《Better Than Me？》亢奋了，昨晚21点多到家后，我就出门跑步了，路上也在单曲循环这首歌。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -441,6 +569,14 @@
 <p>哈哈，这个功能看 WWDC 上的演示就觉得特别有趣。我记得小时候家里是有一对对讲机的，有效连接距离只有20米左右，那时候和朋友玩游戏用得不亦乐乎呢，你一言我一语，洞幺洞幺我是洞拐。</p>
 <p>PS. 本来很期待这次 WWDC 上会发布 iPhone SE2的，可惜还没有… 😭</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -487,6 +623,14 @@
 <li><a href="http://www.ifanr.com/1028434?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" target="_blank" rel="noopener">苹果设计灵魂首谈 Apple Watch：乔布斯没参与，但我们找了外援</a></li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -506,6 +650,14 @@
 </ol>
 <p>　　这几天用下来，我对它是满意的。希望 QC 30 未来能陪伴我长久，我也会好好使用你的。😊</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -525,6 +677,14 @@
 
 
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -569,6 +729,14 @@
 </blockquote>
 <h4 id="文章链接"><a href="#文章链接" class="headerlink" title="文章链接"></a>文章链接</h4><p><a href="https://www.qdaily.com/articles/51241.html?source=feed" target="_blank" rel="noopener">漫画家朱德庸：创作者要保持单纯的生活，以及，人们应当学会掌控自己</a></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -601,6 +769,14 @@
 <li>…</li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -636,6 +812,14 @@
 <li>练出腹肌 &amp; 体重70KG</li>
 </ol>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -697,6 +881,14 @@
 <p>created date : 2015-4-10 13:11</p>
 </blockquote>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -714,6 +906,14 @@
 <p>　　另外关于新 iPhone， iPhone 8和iPhone 8 Plus 不必多说了，因为我觉得他们只是一年一度的常规升级，毫无兴趣。而 iphone X 其实我觉得还是有点酷的。 软硬件上面的创新和升级我觉得是配得上苹果所谓的新时代手机的(future of the smartphone)，还有 FaceID，Wireless，Cameras 等。发布会里最有趣的环节要数那段用 animoji 发信息那个环节，捧腹大笑，特别逗的🤣。</p>
 <p>　　另外，前面提到 Wireless，我想使用苹果全家桶的朋友，应该会钟爱 AirPower 这款无线充电枕的吧，将 iphone，apple watch，airpods 一并往上面排排放，爽歪歪。只是 AirPower 还处于研发阶段，正式上市要到明年，略有遗憾。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -725,6 +925,14 @@
 <p>　　今晚在 App Store 上更新 Apps 时，无意下载了好奇心日报的客户端（两个问题，1.手机上本来只是处理A事的，随后就有了B事C事 2.我之前对这类可以用 RSS 订阅阅读的媒体的客户端没觉得有一点再下载安装 app 的必要，现在竟有了些好奇心试一试好奇心日报这款）。</p>
 <p>　　其实写上面这些时我还没在这个客户端读过一篇文章，只是安装后习惯性先去瞅瞅设置，在那里点到”关于我们”，看完长长的我猜包含了好奇心日报所有在职员工的介绍后，感觉到了一种对人的独立个体性的尊重和有意思。这就加重了我对它的好感，也就有了写上面这些文字的冲动。ヽ( ´ー｀)ノ<br>　　<br>　　<img src="https://ww4.sinaimg.cn/large/006y8lVagy1fd8nev8sunj30af0ijjs5.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -732,6 +940,14 @@
       <url>https://w4mxl.github.io/2017/02/28/podcast-client-from-overcast-to-castro/</url>
       <content type="html"><![CDATA[<p>　　前面听播客一直用的是 Overcast 客户端，简洁且功能强大。自从发现在 Overcast 上对喜欢且可能重复听的单集播客标记 Recommend (⭐️) 后，标⭐️只是能让 Twitter 上 follow 你的人看到你的推荐，而不能在客户端中找到对应的一个自己推荐过的单集的列表时，心里常有些纠结。因为我对喜欢的单集真的有重听多次的习惯。后来我在 Twitter 上问了下 Marco Arment‏(Overcast 客户端开发者) 能不能在后面版本考虑加上这样一个列表，没有得到肯定的回复。<br>　　<br>　　尽管很喜欢 Overcast，还是开始考虑换 Castro 了。因为爱听播客，对播客客户端的资讯也常常有仔细阅读。特别是它们中的佼佼者，像 Overcast 和 Castro。说来也巧，前几天(2017/2/20) Overcast 发布了3.0版本，看了 Marco Arment 和其他人对此写的介绍文章，觉得更新后确实更接近 iOS 10 的设计风格。两天后，Castro 也更新了2.3版本，加强了 notifications 功能。而之前 Castro 在2.0大版本更新后摆脱了传统播客应用对节目的管理方式，提供了“Queue + Inbox + Archive”类 GTD 式的方案。<br>　　<br>　　好吧，花点钱体验一款杰出的播客应用还是自我允许的，更何况 Castro 除了功能上满足了我目前所有需求，还拥有考究的界面和交互设计。于是昨天将它收入囊中。这一天使用下来，如我所愿，我的播客世界从此又美好了一些。如果说对 Castro 后面更新还有什么期许，那一定是希望它早日带来 Watch 版本。<br>　　<br>　　<img src="https://ww3.sinaimg.cn/large/006y8lVagy1fd6bbcwedxj30af0ij74x.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -794,6 +1010,14 @@
 <p><a href="https://movie.douban.com/subject/4249355/" target="_blank" rel="noopener">孤胆特工 / 杀手代父(港) / 大叔(台)</a> 是我特别喜欢的一部电影，元斌在电影里的形象真酷！</p>
 <p>再到年底时能对照着年初设定的目标，笑开花。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -896,6 +1120,14 @@
 <li>旅行，2+</li>
 </ol>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -926,6 +1158,14 @@
 <p><img src="http://ww2.sinaimg.cn/large/006tNc79gw1fayih21oinj30yi1pcgox.jpg" alt><br>👆 心率测量</p>
 <p><img src="http://ww3.sinaimg.cn/large/006tNc79gw1fayijuycpbj30yi1pcjtk.jpg" alt><br>👆 固件升级</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -939,6 +1179,14 @@
 <p>回家路上，已燃已爆炸。</p>
 <p><img src="http://ww3.sinaimg.cn/large/006tNbRwgw1f9t1psg0w2j31kw0x6tj9.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -966,6 +1214,14 @@
 <p><strong> ps.适逢双11，奇云官方给出双11优惠码：1111666 所有套餐通用、6.6折，有效期截至11月12号。算下来现在包年只需要120块不到 </strong></p>
 <p>最后是奇云官网，还不抓紧购买使用？<br><a href="https://www.qiyunss.com/?aff=12518" target="_blank" rel="noopener">奇云SS - 更稳、更快、更高效的科学上网姿势</a></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -978,6 +1234,14 @@
 <p><img src="http://ww3.sinaimg.cn/large/7853084cgw1f9mvk39ahyj20yi1pcnb9.jpg" alt></p>
 <p><img src="http://ww4.sinaimg.cn/large/7853084cgw1f9mvkten9bj21kw23u7wh.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -989,6 +1253,14 @@
 <p>后面请上来了梁朝伟，两人聊 Note2 的那段，看得我尴尬症都犯了。我心里就想，你找个人代言你家科技产品，扯不上关系就算了，为啥不能先让他熟悉久一点再问他对这产品的使用感受呢！也不明白在显然没怎么用过的情况下,梁朝伟为啥肯替小米 Note2 代言。</p>
 <p>现在每次在这些广告牌上看到梁拿着 Note2 一面科技一面艺术，[Facepalm]。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1015,6 +1287,14 @@
 <p><img src="http://ww3.sinaimg.cn/large/006y8lVagw1f927vgmpc7j31kw1kw1if.jpg" alt><br>最终成果</p>
 <p>：）</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1052,6 +1332,14 @@
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ScrollView</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:scrollbars</span>=<span class="string">"none"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">LinearLayout</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:orientation</span>=<span class="string">"vertical"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:focusable</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:focusableInTouchMode</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:focusableInTouchMode</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line">            ...</span><br><span class="line">            ...</span><br><span class="line">        <span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ScrollView</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p><a href="http://stackoverflow.com/questions/9842494/how-to-prevent-a-scrollview-from-scrolling-to-a-webview-after-data-is-loaded" target="_blank" rel="noopener">是从这里知道的</a></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Android </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1091,6 +1379,20 @@ Reboot to bootloader and flash the following:
 <p><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1f1swpdm5xrj22c02c01ky.jpg" alt></p>
 <p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1f1swpgnw1vj22c02c01ky.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Android </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> nexus </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1116,6 +1418,14 @@ Reboot to bootloader and flash the following:
 <li>和她去台湾</li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1138,6 +1448,20 @@ Reboot to bootloader and flash the following:
 </ol>
 <p>我的KCAL配置(参考xda上):<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">R · <span class="number">230</span></span><br><span class="line">G · <span class="number">222</span></span><br><span class="line">B · <span class="number">253</span></span><br><span class="line">Sat · <span class="number">40</span></span><br><span class="line">Val · <span class="number">135</span></span><br><span class="line">Con · <span class="number">120</span></span><br></pre></td></tr></table></figure></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Android </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> nexus </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1168,6 +1492,14 @@ Reboot to bootloader and flash the following:
 <p>综上所述：<br>实木地板：适合经济富足，平时有专人打理的客户。<br>实木多层地板：适合对环保要求高，但是家里比较爱惜地面的家庭。<br>强化复合地板：适合要求经济实惠，平时也没空保养的家庭。如果家里有宝宝，因为宝宝会乱丢东西砸到地板，最好还是选强化地板。<br>当确定好哪种类型的地板后，选择款式阶段，如果是网购地板，最好是能从店铺中选择几个样板快递到手上实际感受后决定选那种。</p>
 <p>搭建一个家是2015年我投入心思最多的一件事，个中滋味，意犹未尽。<br>wml. 于2015年末</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1178,6 +1510,14 @@ Reboot to bootloader and flash the following:
 <p>2.操作<br>1) 通过浏览器访问 Google Wallet，地址是<a href="https://wallet.google.com/" target="_blank" rel="noopener">https://wallet.google.com/</a><br>2) 点击付款方式菜单项，添加一张信用卡。在表单中依次输入信用卡号码、有效期、CVC 码并填写帐单地址。<strong>注意:</strong>地区选择香港 HK，街道地址填大陆地址，手机号码用＋86的中国手机号，点击保存按钮即可<br><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eyzo8sbs73j20vy102tbz.jpg" alt></p>
 <p>3) 通过使用 VPN 在 Google Play 商店购买商品<br>4) 购买成功后，可以在 Google Wallet 的交易菜单项中找到交易纪录的条目<br><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eyzobghm6wj20t6090mxv.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Android </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1189,6 +1529,14 @@ Reboot to bootloader and flash the following:
 <p>4.今天收到京东众筹于10.15号买的咕咕WiFi无线热敏打印机。从极客之选上第一眼看到咕咕WiFi无线热敏打印机的模样就爱上了。无它。上手试用了一下，酷酷的<br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1eyrgock4erj21hd1hc7ci.jpg" alt><br><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1eyrgobvk1dj21hd1hcqh6.jpg" alt></p>
 <p>ps.待搬进新房后要写两篇文章 1.关于这段时间装修心得 2.咕咕的使用体验<br>pss.冠希的《战争》确实好听</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1234,6 +1582,20 @@ Reboot to bootloader and flash the following:
 </ul>
 <p>( 未完… )</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Android </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> OpenSource </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1250,6 +1612,14 @@ Reboot to bootloader and flash the following:
 <p>同理，如果 empty view 不简单是一个 TextView 而是其他一个较复杂的自定义 View，则可以通过 inflate:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">View emptyView = View.inflate(R.layout.empty_view, <span class="keyword">null</span>);</span><br><span class="line">emptyView.setVisibility(View.GONE);</span><br><span class="line">((ViewGroup) list.getParent()).addView(emptyView);</span><br><span class="line">list.setEmptyView(emptyView);</span><br></pre></td></tr></table></figure></p>
 <h3 id="3-尾巴"><a href="#3-尾巴" class="headerlink" title="3. 尾巴"></a>3. 尾巴</h3><p>ViewStub 在很多时候也是可以实现我们空页面的需求，在页面中的数据不是动态变化的情况下，使用 ViewStub 也是不错的选择。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Android </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1263,6 +1633,14 @@ Reboot to bootloader and flash the following:
 <h4 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h4><p><strong>方案一:</strong><br>1.给每个 Fragment 加一个 Tag<br>2.在 onCreate(Bundle savedInstanceState) 中判断 Bundle savedInstanceState 是否不为空<br>3.不为空则进行 find Tag，重新给几个 frament 赋值<br>这样子仍是对之前保存的 fragment 操作，成功解决了重叠的问题。</p>
 <p><strong>方案二:</strong><br>Activity 中的 onSaveInstanceState() 里面有一句<em>super.onSaveInstanceState(outState);</em>，Google 对于这句话的解释是 “Always call the superclass so it can save the view hierarchy state”，大概意思是“总是执行这句代码来调用父类去保存视图层的状态”。通过注释掉这句话，这样主 Activity 因为种种原因被回收的时候就不会保存之前的 fragment state，也可以成功解决重叠的问题。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Android </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1295,6 +1673,14 @@ Reboot to bootloader and flash the following:
 <p><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1euojmh7ntrj20hs0vk0wo.jpg" width="250"><br>▲ 使用 apple watch 这段时间来的运动量明显增加</p>
 <p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1euojmi2btyj20hs0vkgo5.jpg" width="250"><br>▲ 奖章系统，很喜欢这设计 </p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1304,6 +1690,14 @@ Reboot to bootloader and flash the following:
 <p>谢谢你，曲径，在过去的那些欢畅的日子里有你。<br>好走 ❤️ …</p>
 <p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1eul8x570emj211c0wa0z8.jpg" alt><br>▲ 曲径官网公告</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1317,6 +1711,14 @@ Reboot to bootloader and flash the following:
 <p><img src="http://ww3.sinaimg.cn/mw690/62ed8609jw1euashrp4d1j217g17g47i.jpg" alt><br>▲ 奶奶 2015/7/18</p>
 <p><iframe height="498" width="510" src="http://player.youku.com/embed/XNTAyNDUwMTUy" frameborder="0" allowfullscreen></iframe><br>▲ 赵照 釜辰:《当你老了》,《在冬天和奶奶一起晒太阳》,《慢慢的》</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1331,6 +1733,14 @@ Reboot to bootloader and flash the following:
 <p>在 MeInfoActivity.java 中只是按照用户的选择发出相对应的 action，选择、拍照、裁剪的响应都是放到 ImageCropActivity.java 中处理的。<br>ImageCropActivity.java 中对应的代码我是参见的开源项目，<a href="https://github.com/albinmathew/PhotoCrop/blob/master/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Falbinmathew%2Fsamples%2Fphotocrop%2FImageCropActivity.java" target="_blank" rel="noopener">地址</a>。</p>
 <h3 id="3-将裁剪后的本地图片上传到服务器"><a href="#3-将裁剪后的本地图片上传到服务器" class="headerlink" title="3.将裁剪后的本地图片上传到服务器"></a>3.将裁剪后的本地图片上传到服务器</h3><p>通常上传 app 本地文件(如图片)到后台 server，需要 app 开发人员与后台接口人员定义一种方式。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Android </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1360,6 +1770,14 @@ Reboot to bootloader and flash the following:
 <li>当跳转到 singleTask 类型的 Activity，并且该 Activity 实例已经存在时，会删除该 Activity 所在 task 中位于该 Activity 之上的全部 Activity 实例；而跳转到 singleInstance 类型的 Activity，并且该 Activity 已经存在时，不需要删除其他 Activity，因为它所在的 task 只有该 Activity 唯一一个 Activity 实例。</li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> Android </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1387,6 +1805,14 @@ Reboot to bootloader and flash the following:
 <p><strong>FLAG_ACTIVITY_NEW_TASK</strong><br>例如现在栈1的情况是：A B C。C 通过intent跳转到 D，并且这个 intent 添加了 FLAG_ACTIVITY_NEW_TASK 标 记，如果 D 这个 Activity 在 Manifest.xml 中的声明中添加了 Task affinity，并且和栈1的 affinity 不同，系统首先会查找有没有和 D 的 Task affinity 相同的 task 栈存在，如果有存在，将 D 压入那个栈，如果不存在则会新建一个 D 的 affinity 的栈将其压入。如果 D 的 Task affinity 默认没有设置，或者和栈1的 affinity 相同，则会把其压入栈1，变成：A B C D，这样就和不加 FLAG_ACTIVITY_NEW_TASK 标记效果是一样的了。</p>
 <p><strong>FLAG_ACTIVITY_NO_ANIMATION</strong><br>这个标志将阻止系统进入下一个 Activity 时应用 Acitivity 迁移动画。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Android </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1428,6 +1854,14 @@ Reboot to bootloader and flash the following:
 <p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1ets7uzv7t8j21w01w07wh.jpg" alt></p>
 <p><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1ets7uwx78pj21w01w0qta.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1442,6 +1876,14 @@ Reboot to bootloader and flash the following:
 <p>昨晚mv看第二遍时又末尾了截的图</p>
 </blockquote>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1466,6 +1908,20 @@ Reboot to bootloader and flash the following:
 <p>这里不细讲实现细节了，待当前项目完成后我将我的意见反馈模块抽出来做成demo放到github上，看demo会更清楚</p>
 </blockquote>
 ]]></content>
+      
+        <categories>
+            
+            <category> Android </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 友盟 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1474,6 +1930,14 @@ Reboot to bootloader and flash the following:
       <content type="html"><![CDATA[<p><img src="https://d13yacurqjgara.cloudfront.net/users/384313/screenshots/2067564/replace.gif" alt></p>
 <p> <a href="https://dribbble.com/shots/2067564-Replace?list=users&amp;offset=0" target="_blank" rel="noopener">「Replace」</a> BY <a href="https://dribbble.com/zeeyoung" target="_blank" rel="noopener">@Zee Young</a>  </p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1489,6 +1953,14 @@ Reboot to bootloader and flash the following:
 <p>此方法更详细的理论分析可以参见:<br><a href="http://blog.csdn.net/aqswde35025/article/details/41863203" target="_blank" rel="noopener">http://blog.csdn.net/aqswde35025/article/details/41863203</a></p>
 </blockquote>
 ]]></content>
+      
+        <categories>
+            
+            <category> Android </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1504,6 +1976,20 @@ Reboot to bootloader and flash the following:
 <p>我这里就结合我自己项目说下当我知道了SparseArray优势后是怎么用SparseArray替代HashMap的。至于SparseArray更具体的原理介绍网络上写的很好的已经很多，比如<a href="http://liuzhichao.com/p/832.html" target="_blank" rel="noopener">这篇</a>。</p>
 <h4 id="修改之前-HosBuildingFloorAdapter-java-："><a href="#修改之前-HosBuildingFloorAdapter-java-：" class="headerlink" title="修改之前(HosBuildingFloorAdapter.java)："></a>修改之前(HosBuildingFloorAdapter.java)：</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">HashMap&lt;Integer, String&gt; hashMap;<span class="comment">//buildingId、buildingName的捆绑</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Adapter构造方法中对hashMap实例化</span></span><br><span class="line">hashMap =  <span class="keyword">new</span> HashMap&lt;Integer, String&gt;();</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; buildings; i++) &#123;</span><br><span class="line">    hashMap.put(buildingListEntities.get(i).getBuildingId(), buildingListEntities.get(i).getBuildingName());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Adapter的getHeaderView中取值</span></span><br><span class="line"><span class="keyword">for</span> (Map.Entry&lt;Integer, String&gt; entry : hashMap.entrySet()) &#123;</span><br><span class="line">    <span class="keyword">if</span> (floorListEntities.get(position).getBuildingId() == entry.getKey()) &#123;</span><br><span class="line">        holder.text.setText(entry.getValue());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="修改之后"><a href="#修改之后" class="headerlink" title="修改之后:"></a>修改之后:</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">SparseArray&lt;String&gt; stringSparseArray;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Adapter构造方法中对stringSparseArray实例化</span></span><br><span class="line">stringSparseArray = <span class="keyword">new</span> SparseArray&lt;&gt;();</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; buildings; i++) &#123;</span><br><span class="line">    stringSparseArray.put(buildingListEntities.get(i).getBuildingId(), buildingListEntities.get(i).getBuildingName());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Adapter的getHeaderView中取值</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; stringSparseArray.size(); i++) &#123;</span><br><span class="line">    <span class="keyword">int</span> key = stringSparseArray.keyAt(i);</span><br><span class="line">    <span class="keyword">if</span> (floorListEntities.get(position).getBuildingId() == key) &#123;</span><br><span class="line">        holder.text.setText(stringSparseArray.get(key));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+        <categories>
+            
+            <category> Android </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Android应用性能优化 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1527,6 +2013,14 @@ Reboot to bootloader and flash the following:
 </blockquote>
 <p><a href="http://blog.fangjie.info/android%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98/" target="_blank" rel="noopener">Android微信支付</a><br><a href="http://blog.csdn.net/janice0529/article/details/38051987" target="_blank" rel="noopener">Android学习之 移动应用<app>微信支付集成小结</app></a></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Android </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1545,6 +2039,14 @@ Reboot to bootloader and flash the following:
 </blockquote>
 <p>我在之前项目使用volley的过程中，遇到过一些坑还有就是为了满足实际需求对volley库进行了增强，我后续会陆续整理添加到这篇博客中…</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Android </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1568,6 +2070,20 @@ Reboot to bootloader and flash the following:
 <h3 id="3-混淆"><a href="#3-混淆" class="headerlink" title="3.混淆"></a>3.混淆</h3><p>如果你在打包apk时需要对代码进行混淆处理，这时为了避免那些使用了butterknife注解的文件被认为无用而删除，可以在app -&gt; proguard-rules.pro 文件中添加下面混淆规则：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># *********** For ButterKnife **************</span></span><br><span class="line">-keep class butterknife.** &#123; *; &#125;</span><br><span class="line">-dontwarn butterknife.internal.**</span><br><span class="line">-keep class **$$ViewInjector &#123; *; &#125;</span><br><span class="line"></span><br><span class="line">-keepclasseswithmembernames class * &#123;</span><br><span class="line"><span class="meta">    @butterknife.* &lt;fields&gt;;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">-keepclasseswithmembernames class * &#123;</span><br><span class="line"><span class="meta">    @butterknife.* &lt;methods&gt;;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>更多相关内容请查看源码和官方说明:<br><a href="https://github.com/JakeWharton/butterknife" target="_blank" rel="noopener">ButterKnife Github</a><br><a href="http://jakewharton.github.io/butterknife/" target="_blank" rel="noopener">ButterKnife Introduction</a></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Android </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> ButterKnife </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1602,6 +2118,20 @@ Reboot to bootloader and flash the following:
 <p><a href="http://movie.douban.com/subject/24743015/" target="_blank" rel="noopener"><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1erzjrcf6hpj20bm0gognl.jpg" title="哭泣的男人 우는 남자 (2014)" width="300"></a> <a href="http://movie.douban.com/subject/1304972/" target="_blank" rel="noopener"><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1erzjrbu2m8j20b90go77z.jpg" title="太极旗飘扬 태극기 휘날리며 (2004)" width="300"></a></p>
 <p><a href="http://movie.douban.com/subject/11516701/" target="_blank" rel="noopener"><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1erzjrbfkjoj20b40fkjst.jpg" title="再见金华站 (2011)" width="300"></a> <a href="http://movie.douban.com/subject/1301168/" target="_blank" rel="noopener"><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1erzjran9y3j20bm0godj8.jpg" title="卧虎藏龙 臥虎藏龍 (2000)" width="300"></a></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> movie </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1615,6 +2145,20 @@ Reboot to bootloader and flash the following:
 </li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> Jailbreak </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> JailbreakTweak </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1622,6 +2166,14 @@ Reboot to bootloader and flash the following:
       <url>https://w4mxl.github.io/2015/05/04/Life's/%E9%9D%92%E5%B9%B4%E8%8A%82%E6%B8%85%E6%99%A8/</url>
       <content type="html"><![CDATA[<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1errzniojbdj21w01w0hdu.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1629,6 +2181,14 @@ Reboot to bootloader and flash the following:
       <url>https://w4mxl.github.io/2015/05/01/JW%E3%80%81%E6%9E%AB%E6%B3%BE%E9%95%87%E6%B8%B8%E8%88%B9%E4%B8%8A/</url>
       <content type="html"><![CDATA[<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1errzngpckaj21w01w0npd.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1665,6 +2225,20 @@ Reboot to bootloader and flash the following:
 </ul>
 <p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1et09ls3nl5g20js0gfq8q.gif" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Android </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Android Studio </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1682,6 +2256,14 @@ Reboot to bootloader and flash the following:
 <p>走六小时寂寞的长途，<br>到你头边放一束红山茶，<br>我等待着，长夜漫漫，<br>你却卧听着海涛闲话。 </p>
 <p>一九四四年十一月二十日</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1699,6 +2281,20 @@ Reboot to bootloader and flash the following:
 <p><img src="/image/速度与激情7电影票.jpg" alt="速度与激情7电影票"></p>
 <p>早早的就预定了今天的票，去电影院观赏！COOL :)</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Movie </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1719,6 +2315,20 @@ Reboot to bootloader and flash the following:
 </blockquote>
 <p><img src="/image/IMG_4600.png" width="350"> </p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Music </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1726,6 +2336,20 @@ Reboot to bootloader and flash the following:
       <url>https://w4mxl.github.io/2015/02/04/Itsycal/</url>
       <content type="html"><![CDATA[<p><img src="/image/itsycal.png" width="250"><br><strong><a href="http://www.mowglii.com/itsycal/" target="_blank" rel="noopener">Itsycal</a></strong><br>Simple and easy to use.</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Jailbreak </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> JailbreakTweak </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1736,6 +2360,20 @@ Reboot to bootloader and flash the following:
 <p>在设置中，可以选择作者预设的4种分辨率，当然也可以通过输入其他值来自定义自己喜欢的。<br>我手上的是iphone 5s（640x1136），我选的是iphone 6的分辨率（750x1334），这样使用一段时间后，😍，喜欢的不行。 </p>
 <p>设置前后对比：<br><img src="/image/Upscale01.png" width="250"><br><img src="/image/Upscale02.png" width="250"><br><img src="/image/Upscale03.png" width="250"></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Jailbreak </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> JailbreakTweak </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1745,6 +2383,20 @@ Reboot to bootloader and flash the following:
 <p>我向来就喜欢简洁而有效的插件，[Date In StatusBar]这款插件就是之一。<br>它就在那儿。当你每次想知道当前日期时，瞥一眼状态栏就可以，就如同往状态栏瞥一眼时间那样自然和原生。<br>不知道再往后ios升级，系统设置中会不会出现这样一个设置项。 </p>
 <p><img src="/image/DateInStatusBar.png" width="350"></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Jailbreak </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> JailbreakTweak </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1823,6 +2475,14 @@ Reboot to bootloader and flash the following:
 <p><img src="/image/智取威虎山.jpg" alt></p>
 <p>杨子荣。座山雕。八大金刚。203分队！印象中小时候还有读过这样的一本《智取威虎山》的小人书。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1831,6 +2491,14 @@ Reboot to bootloader and flash the following:
       <content type="html"><![CDATA[<p>:)</p>
 <p><img src="/image/chat with JW.png" alt="chat with JW"></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1844,6 +2512,20 @@ Reboot to bootloader and flash the following:
 <p><img src="/image/图/Android Studio中新建一个文件（Activity...）时插入作者、日期02.png" width="700"></p>
 <p><img src="/image/图/Android Studio中新建一个文件（Activity...）时插入作者、日期03.png" width="600"><br><img src="/image/图/Android Studio中新建一个文件（Activity...）时插入作者、日期04.png" width="600"></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Android </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Android Studio </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1856,6 +2538,14 @@ Reboot to bootloader and flash the following:
 <pre><code>{&quot;capabilities&quot;:[&quot;status&quot;,&quot;unique_id&quot;,&quot;url-parameter-filepath&quot;],&quot;running&quot;:true,&quot;server_version&quot;:&quot;5&quot;} 
 </code></pre><p>而当我点击的时候并没有返回这些，所以我试着把“127.0.0.1       ghconduit.com”添加到 private/etc/hosts 文件的末尾，保存之后，刷新页面（我用的chrome dev浏览器）发现还是不行。然后我打开Safari试了下（在没往hosts中添加“127.0.0.1       ghconduit.com”前也用Safari试过，是不行的），发现这下可以了正常把想要的项目“Clone in Desktop”了。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1872,6 +2562,14 @@ Reboot to bootloader and flash the following:
 <p><em>PS.这故事缩到一句话讲完应该是：浪子，你何时泊岸？</em></p>
 <p>注：这是一个故事，且并未发生事故。所以别担心。只是世间的故事，多半是没有后来的。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1910,6 +2608,14 @@ Reboot to bootloader and flash the following:
 </ul>
 <p><em>ps.因为GFW的存在，想要流畅并优雅的使用 Pushbullet，常常还得走VPN</em></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1925,6 +2631,14 @@ Reboot to bootloader and flash the following:
 <p><img src="/image/图/关于后会无期、锤子手机一些杂感01.jpg" alt><br>PS.我觉得把旗袍穿好的女子不能再美丽了</p>
 <p><em>更新：</em><br><img src="/image/图/关于后会无期、锤子手机一些杂感02.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1935,6 +2649,14 @@ Reboot to bootloader and flash the following:
 <p><img src="/image/图/running01.png" width="320"><br><img src="/image/图/running02.png" width="320"><br><img src="/image/图/running03.jpg" alt><br><img src="/image/图/running04.jpg" alt></p>
 <p>###<em>更新：2014年8月18日 星期一</em><br><img src="/image/图/running05.png" width="320"></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1981,6 +2703,14 @@ Reboot to bootloader and flash the following:
 <p>GoAgent主站：<a href="https://code.google.com/p/goagent/" title="https://code.google.com/p/goagent/" target="_blank" rel="noopener">https://code.google.com/p/goagent/</a><br>goagent客户端3.1.18[6.16新]（<a href="http://pan.baidu.com/s/190yiq" target="_blank" rel="noopener">百度网盘下载</a>）</p>
 </blockquote>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2012,6 +2742,20 @@ Reboot to bootloader and flash the following:
 <p>有多少人为了名利戴上了冰凉哩手铐<br>有多少人为了苟活背叛了最初的理想<br>但坚持了理想的却又混不到车房<br>有多少人为了车房要还一辈子外账<br>他还了外账也是拆了东墙补上了西墙<br>有多少人的婚姻没有出现过裂缝<br>嘴上骂着小三自己却破坏别人的家庭<br>有多少人的亲朋好友被钱给逼疯<br>他却无动于衷的在夜总会里晃着筛盅<br>有多少的通讯设备安装了无数功能<br>但总是和最亲最近的人无法沟通<br>有多少人多少事其实我们都懂<br>但懂的太多最后智商却变成了狗熊<br>有多少人听到这里听着听着累了<br>有多少人听到这里听着听着哭了<br>有多少的故事我们永远回不去了<br>有多少思念的人在天堂听着<br>机器灵 砍菜刀 恁那边哩紧俺挑<br>挑谁吧 挑 挑的那个人已经不见了 </p>
 </blockquote>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Music </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -2021,6 +2765,14 @@ Reboot to bootloader and flash the following:
 <p>时至今 南北跑<br>年年代码敲<br>日日衣服小</p>
 <p><img src="/image/图/忆.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2079,6 +2831,14 @@ Reboot to bootloader and flash the following:
 <p>OVER </p>
 <p><img src="/image/图/何时是广州.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2090,6 +2850,14 @@ Reboot to bootloader and flash the following:
 <p>##匍匐<br><strong>文_随处春山</strong></p>
 <p>近处的群山，远方的海<br>匍匐着巨大的身形<br>只为<br>让渺小的事物不虚此行。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2106,6 +2874,14 @@ Reboot to bootloader and flash the following:
 <p>当我走出地铁，看到的情景跟北京城里已经很不一样了，不再是车水马龙，也不会高楼林立。是那种看着安稳的景况。我买了个冷饮，好借故问老板安河桥怎么走，老板热心告知后，我开始往他指引的方向走去…</p>
 <p><img src="/image/图/安河桥01.jpg" alt="安河桥"><br><img src="/image/图/安河桥02.jpg" alt="安河桥"></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2117,6 +2893,14 @@ Reboot to bootloader and flash the following:
 <p>　　11.11，就算有些意义的话，也该是寂寞的一个日子，硬生生被taobao带头搞成全民购物狂欢节。呵呵，到时看订阅的又该数据满天飞了。不谈。</p>
 <p><img src="/image/图/很快的，北京冬了.jpg" alt><br><em>PS.还是你们好，总是陪着我</em></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2126,6 +2910,14 @@ Reboot to bootloader and flash the following:
 
 <p><em>觉得好震撼</em></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2137,6 +2929,14 @@ Reboot to bootloader and flash the following:
 <p>　　一路走来，他得到过许多人的帮助，他常提醒自己定要记得和回报。父亲不言一语的殷殷期许，他常以此激励自己要一直前行。</p>
 <p>　　一路走来，平坦坎坷。想来最让他欣慰的是，小时候做过的梦，他还在做。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2156,6 +2956,14 @@ Reboot to bootloader and flash the following:
 <p>　　附，三毛的 <a href="http://soul.cn.yahoo.com/ypen/20120205/845777_1.html" target="_blank" rel="noopener">《一个男孩子的爱情》</a><br>　　xx，我的朋友，愿有人如是爱你。 </p>
 <p>wml<br>2013/3/22 17:12                                                                                            </p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2174,6 +2982,14 @@ Reboot to bootloader and flash the following:
 <p>不是不喜欢物质，我喜欢自由。</p>
 <p><img src="/image/图/走，明十三陵01.png" alt><br><img src="/image/图/走，明十三陵02.jpg" alt><br><img src="/image/图/走，明十三陵03.jpg" alt><br><img src="/image/图/走，明十三陵04.jpg" alt><br><img src="/image/图/走，明十三陵05.jpg" alt><br><img src="/image/图/走，明十三陵06.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2195,6 +3011,14 @@ Reboot to bootloader and flash the following:
 <p>别留恋岁月中<br>我无意的柔情万种<br>不要问我是否再相逢<br>不要管我是否言不由衷</p>
 <p>为何你不懂<br>只要有爱就有痛<br>有一天你会知道<br>人生没有我并不会不同<br>人生已经太匆匆<br>我好害怕总是泪眼朦胧<br>忘了我就没有痛<br>将往事留在风中</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2219,6 +3043,14 @@ Reboot to bootloader and flash the following:
 <p>　　顺祝亲朋好友们，蛇年行大运，开心每一天。</p>
 <p>　　然后呢，然后就没有然后了。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2235,6 +3067,14 @@ Reboot to bootloader and flash the following:
 <p>后几月，尽努力，希如愿！</p>
 <p>记：xp前几天分享了《星空》，我看了，知道你当时看了会难过，希望你不难过。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2249,6 +3089,14 @@ Reboot to bootloader and flash the following:
 <p><img src="/image/图/那些航海环行的少年01.jpg" alt><br><em>上面这是我好久以前在青年文摘电子版里读到截下的，刚在文件夹里找了好久才找到。</em></p>
 <p><img src="/image/图/有些人真的不一样01.jpg" alt><br><em>这是我在找上面那张照片时顺看到的，是很久以前读小北文章看到后保存的，我也不知为什么想贴这里，算是各自鼓励吧。。。：)</em></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2258,6 +3106,14 @@ Reboot to bootloader and flash the following:
 <p>所以，至此说声谢谢！</p>
 <p>也许，我们这个地处温带的大国，再寒寒就不寒了！</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2274,6 +3130,14 @@ Reboot to bootloader and flash the following:
 <p>《借东西的阿丽埃蒂;借居的阿丽埃蒂》（日语：借りぐらしのアリエッティ，英文：The Borrower Arrietty ），日语原意为借居的阿丽埃蒂，是日本吉卜力工作室制作的动画电影，剧情改编自英国小说家玛丽·诺顿（Mary Norton）的奇幻小说《地板下的小矮人》（The Borrower）。本片声优演员于2010年4月12日公布，并已在同年7月17日在日本上映，为米林宏昌执导的首部电影。宫崎骏负责本片企划及剧本编写。    —摘自维基百科 / 借物少女艾莉緹</p>
 </blockquote>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2284,6 +3148,14 @@ Reboot to bootloader and flash the following:
 <p>我就喜欢这时，无休无止，大音如诗。 </p>
 <p><em>10:34 PM 4/6/2011 读《夏洛特的网》时随写</em></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2295,13 +3167,14 @@ Reboot to bootloader and flash the following:
 <p>“孤独的孩子，你是造物的恩宠”。God likes lonely boy…</p>
 <p>ps.琐记：复习进展还好，大方向有，只是进度感觉慢了些，需提速；编程学习上，不那么勤快了，可能是每天太累了；跑步还坚持着，下午太阳快落的时候，戴着耳机跑步常让我享受；朝着太阳时，步子会加快，因为想“夸父逐日”:p；最近DOTA打的倒很勤；xp said 她有点害怕，我不知是什么，也只好在这里在祝她顺利；</p>
 ]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Back to School]]></title>
-      <url>https://w4mxl.github.io/2011/02/20/Back-to-School/</url>
-      <content type="html"><![CDATA[<p>　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的，快乐的长大。</p>
-]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2310,6 +3183,29 @@ Reboot to bootloader and flash the following:
       <content type="html"><![CDATA[<p>电影总让我想起些我似乎忘了的东西！</p>
 <p>明明钥匙在手上，却寻不到钥匙把门打开。看完《天若有情Ⅰ》，我就奇怪，那时吊儿郎当的我，现在怎么这么“乖”。在古惑仔横扫我整个初中那时，我们凡事只讲义气，只够买一根冰棒那分着吃，兄弟喜欢的女生不能有‘想法‘-_-#。那时候也是多么想能有辆摩托爽爽啊！事实上我们猛踩单车，也常有飞翔的感觉:P。可是，现在，我这么乖，每天乖乖去看书复习编程序！！其实，我们当然是知道的，你懂的，可是。。。所以，常常只能自寻刺激，dota啊，编程，喝酒，，，云云~~。玩后，又没劲！当然现在更多人乐意谈个小恋爱很好:-)。老实说我常注视他们，不是嫉妒羡慕恨，只是想看看他们真的快乐吗？！两部跟摩托车有关的电影，华仔一部，发哥一部，了作安慰。借用电台弛姐的话：晚安，我亲爱的各位。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Back to School]]></title>
+      <url>https://w4mxl.github.io/2011/02/20/Back-to-School/</url>
+      <content type="html"><![CDATA[<p>　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的，快乐的长大。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2322,6 +3218,14 @@ Reboot to bootloader and flash the following:
 <p>　　我对陌生人没有过多的欲求，只是单纯地希望，他们在打量我这个怪物时，不要挡住我的阳光，即使偶然挡住，也能善意的离开。让我在这不可多得的阳光下捕捉一丝丝生的希望- 苏紫紫</p>
 <p>　　其实，我只是想说，苏紫紫，我支持！</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2334,6 +3238,14 @@ Reboot to bootloader and flash the following:
 <p>10年夏天独自去北京时，那天转了几班公交才找到地坛，在里面待了整个下午。尽量多的路过园子里的古树，注视落日余晖的朴素，在小路边找个椅子安静读书！还想史铁生！</p>
 <p>知道地坛，也全是因为他！</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2351,6 +3263,14 @@ Reboot to bootloader and flash the following:
 <p>AT THE END，告别下2010！</p>
 <p>PS.那晚在2011快来了时，我们三个一拍即合，都放下手上的事，在DOTA中辞旧迎新。爽！</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2363,6 +3283,14 @@ Reboot to bootloader and flash the following:
 <p>算了，妈妈，我们放了他吧。让他飞吧。他得老年痴呆这两年太委屈了。就让他走吧。<br>烧着的纸的火光，念着的道士的经文，飘着的天的皱纹，升着的你累了要休息的灵魂。</p>
 <p>生命，这东西，真他妈的有病。又坚强又他妈脆弱。<br>不管了，不死就好好活着！</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2374,6 +3302,14 @@ Reboot to bootloader and flash the following:
 <p>Long live Bruce Lee !!!<br>Long live Bruce Lee !!!<br>Long live !!!</p>
 <p>13:58 2010-11-27 /六/魏木林</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2397,6 +3333,14 @@ Reboot to bootloader and flash the following:
 <p>另外，关于这场仗的前因后果和一些个人见解，我先前是准备好写篇文章的，后来就在今天(11.5号)在51CTO技术博客中看到一篇相当牛B的见解，我不自觉的叫好，看来不用我献丑了。文章地址：<a href="http://windyli.blog.51cto.com/1300305/415202" target="_blank" rel="noopener">《360 VS QQ，当胳膊遇上大腿》</a></p>
 <p>6.<br>十月底世博谢幕了！！！</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2426,6 +3370,14 @@ Reboot to bootloader and flash the following:
 <p>网上很多人说到凡客诚品的CEO陈年时常用“亲切”一词形容他，我看着也真是这样的。说话啊，想法啊什么的，很有读书人的样子。在上海第一财经频道播出的一个专题片里，他就说：凡客立足就是一个人民的品牌，平民的品牌。此片里他还乐道了一个事，他说当他去帆布鞋生产线上时侯，看到很多小孩（生产线上的员工吧）穿凡客的T恤，小孩说他们买得起凡客的T恤；而当他去T恤的生产线时，再看到很多小孩穿着凡客的帆布鞋的时候，他心里就很感动了。他顿时觉得自己在做一件相当光荣的事，他在让整个大众人民都有了购买力。</p>
 <p>PS.上面这些，是我自己对凡客的一些认识，也算是学习。草草文字写在这里，全当留下个思考的痕迹。虽然现如今中国的电子商务市场竞争何其激烈，加上很多国外大品牌竞相进入国内互联网市场，我也还是对凡客很看好，很希望它作为一个好的榜样带领中国下面跃跃欲试的或已经雷厉风行的干起来的创业者们一起愤然前进。我们强则国强！</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2462,6 +3414,14 @@ Reboot to bootloader and flash the following:
 <p>我向来是不怀疑韩寒的勇气的，连“在通往民主的道路上，最大的阻碍就是人民”这样的话也敢愤愤然写下的人，还有什么可怕的！不同看他博客时真诚、冷刺的感觉，这文章里全是温柔。一个男人对女人的深情，一个女人对男人的细心。当时还想，文中的女孩那般乖巧可爱，精灵古怪，勇敢直率，也难怪韩寒“想到成家这个事情时”，没想过别人了。可是当我细读两遍后，总觉得里面写的这样集大成的女孩有些假，好像该她儒雅的时候她一定是儒雅的，该她调皮的时候她一定是调皮的，想她怎样时她便一定是那样完美的怎样了。这样，她会不会累啊！后来查了知道，这篇文章真不是出自韩寒本人之手，是一个叫增健的职业写手之作。他还曾发表过《张越：我的精致生活也疯狂》、《林永健：能让太太满意的就是好趣味》等一些列名人+题目的类似稿件，我不懂他为什么以这种方式写这些！我只是觉得，这样不错的文采，以“本人”来激昂文字、指点江山不是更好吗？！就像韩寒本人那样。</p>
 <p>PS.如果某天韩寒真有了那样的女友，我肯定是支持+祝福他们的。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2473,6 +3433,14 @@ Reboot to bootloader and flash the following:
 <p>跟那些在电影首页便自觉打上“本故事纯属虚构”的电影不同，这部《山楂树之恋》是真的，当然同名的小说也是真的。当年艾米是受托写下了小说《山楂树之恋》的，书中绝大部分素材都是熊音回忆于艾米的，而托她的人便是当年的“静秋”。那么些年过去之后，熊音一直也记着“老三”，那个为了她，宁愿死也不对她出尔反尔的人。因为熊音的深深地怀念，因为人们对这份爱情的深深感动，艾米才会让我们有机会读到《山楂树之恋》的小说，张艺谋才会让我们有机会看到《山楂树之恋》的电影。而我这喜欢码字的人才有机会在这留下些感动后的自恋的只言片语。</p>
 <p>他们都说老三是个完美的男人（除了走的早了点），他真的是这样的。那么美好，充满着阳光，光明的，一尘不染。那夜静秋还对他说，“认识你 真好”！我也很喜欢这句“认识你 真好”，能让自己喜欢的人这样觉得，我也会像老三听到这话时满脸挂着喜悦的。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2493,6 +3461,14 @@ Reboot to bootloader and flash the following:
 <p>反复读《战士和苍蝇》一文，在“然而，有缺点的战士终竟是战士，完美的苍蝇也终竟不过是苍蝇。”一句处长久逗留。不是新鲜，只是深深认同。所以，“去罢，苍蝇们！虽然生着翅子，还能营营，总不会超过战士的。你们这些虫豸们！”。还有先生的《说“面子”》、《书籍和财色》、《无声的中国》，其犀利的讽刺让人莞尔的同时又不得不反思！那一期的《读者.原创版》也是佳作繁多。格桑亚西的《余纯顺，你的推车还在天全等你》，让我的崇拜者行列里又多了一位—余纯顺。他是个立志徒步壮游全中国的男人。从1988.7.1à1996.6.12长达8年的时间中，“他先后成功穿越了川藏、青藏、滇藏、新藏、中尼等5条公路，徒步走访了我国33个少数名族的主要聚居地，完成了59个探险项目”，最终死于罗布泊，总行程达8.4万华里。这种人，没白走这一遭啊！韩昌盛的《穿越小城的目光》，让我再次被美好的青春狠狠打败。“哪个青春不暗恋”。罗西的《中国新穷人的5个标签》，是他从生活的观察反思之作。文章很独到也很精辟，他最后那句，“我想，富人的奢靡堕落与穷人的麻木沉沦，也许，后者更可怕。”也许是对的，在富人的奢靡堕落不是建立在穷人基础上时。还有程乃珊的《诀别边城》，对张爱玲《重访边城》一书作了些述说，情感真挚。</p>
 <p>前两天特别热，夜里电台的弛姐解释说，快秋了嘛，太阳得趁着最后的时间出来耍耍威风。到今天气温就降得特别厉害，秋天似乎一转眼就到了，西风秋意凉，但愿人长久。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2507,6 +3483,14 @@ Reboot to bootloader and flash the following:
 <p>而我，不管他前面几部商业片拍的如何SHIT，他拍的那些文艺片的独到和手法我是绝对臣服直至的。所以当他的弃文从商对我打击是相当大。</p>
 <p>《红高粱》《活着》《我的父亲母亲》里的镜头又在脑海闪过，没想起不是忘记，感动过的略想起就历历在目！而我猜《山楂树之恋》跟《我的父亲母亲》在爱情的表现内涵上会看到一些相似，但那一定不是老谋子的黔驴技穷，而是真正的爱情固有的共同点！</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2521,6 +3505,14 @@ Reboot to bootloader and flash the following:
 <p>不像，郁闷寂寞时到处时到处找，即便找到了好的，也不会像现在这种感觉！</p>
 <p><img src="/image/图/Yesterday Once More02.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2534,6 +3526,14 @@ Reboot to bootloader and flash the following:
 <p>最后，还有想说的，之前片子刚开拍那会儿我有很关注冯小刚的这部作品，常在电视上留意相关新闻。很多期待。可是后来在豆瓣上看了几篇影评，觉得里面的人说的很在理：片子是好，可是充斥着商业元素太多。举一例，最明显的就是片名，开始时就叫《余震》，和原著小说同名。可是，《余震》不够号召，不够吸人眼球啊，为了<strong>**</strong>，片子最终定名为《唐山大地震》。我向来最讨厌的就是不伦不类的商业片（定型为商业片可又没好莱坞那样拿得出手的技术支持，还是不是的玩不真诚的文艺，就跟李湘何炅一样）。也许就因为那几篇影评的原因，我后来都没怎么在关注此片，也没找资源下载。晚上纯偶然从小玉那把片子拷贝来看的。</p>
 <p>劈开一切不说，光电影，我说《唐山大地震》是部实实在在的好电影。；</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2550,6 +3550,14 @@ Reboot to bootloader and flash the following:
 <p>在去书店的路上，目睹很多乞讨者很可怜的在向路人乞讨生活。原来首都也一样，也有人匍匐在地乞讨，旁边坐着嗷嗷待哺的小孩亦或躺着不动的老人。而从他们身边光鲜的走过的我或你们，除了丢下些钱，表情同情，却再也做不了什么。常常因为这，我会觉得自己很可悲，对自己失望，因为尚无能力改变什么。这是什么世界，为什么要有那么多的不平等不公平！！人为什么要生而平等却无往不在枷锁之中？！……</p>
 <p>PS.刚在CCTV 5的天下足球知道劳尔在2010.7.26从正式皇家马德里队转会到沙尔克04队。天下足球用30分钟的视频回顾了他在皇马的16年传奇历程和他的20粒精彩进球。在伯纳乌球场为他举行的欢送仪式上，他脸上清泪两行……</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2562,6 +3570,14 @@ Reboot to bootloader and flash the following:
 <p>在祈年殿，我也很享受。是因为那里的建筑。我说不上来是为了哪个具体的，就是感觉很舒服和佩服。在回音壁时已经开始下雨了，我一个人也不能试试回音壁是不是真的像所说的那么神奇。很多父母和小孩在试，他们显然很兴奋。出了回音壁，便突降暴雨，我站在一个售卖纪念品的下面躲雨，可大雨没有停的意思。我心想要是我进来时多带些雨伞和雨衣就好了，此时一定大卖大赚一笔了。果真不多久我就看到很多兜售雨伞雨衣的小贩了，呵呵。我过去买雨衣（那种很薄的，一次性的），他竟然问我要十块。我晕，觉得贵，扭头要走。他赶忙说“算了，五块吧，最低价了”。呵呵，可见他是个黑心贩，不仗义，也不能为了赚钱坐地起价啊。在天坛南门出来，尽管穿着雨衣，鞋子还是湿透了，在旁边侧门坐了好久才雨才小了些。抽了根烟，打道回府。</p>
 <p>PS.晚上看了《志明与春娇》。很喜欢春娇这种性格的女孩-直爽干脆。这部片子很罕见，很生活很有趣。^^。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2579,6 +3595,14 @@ Reboot to bootloader and flash the following:
 <p>（未完……）</p>
 <p>ps.因为没有足够多的剩余银两购买相机，所以无图，稍觉遗憾。所以用心，读北京城。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2592,6 +3616,14 @@ Reboot to bootloader and flash the following:
 <p>喜欢《走，出去玩》，除却狗小U，就是这句，走，出去玩。我爱走，知我者无不知。我热爱自由，厌恶拘束，享受在路上的惬意是我的心愿。每每看到学哥学姐们步入职场前后所文，我心里就会冒出害怕。“上班、下班，再上班……每天往复。上班，写字楼的窗外还是写字楼，挤在楼与楼之间的那一小撮绿色的树和草坪，像个巨大的盆景，呆板而无生机。下班，街灯、车灯、霓虹灯；人声、手机声、喇叭声……城市像个浓妆艳抹的女人，手舞足蹈而又聒噪不休。到家，晾的衣服没收，脏的衣服没洗，阳台上的乌龟两天都没有换水……家像个流水线的作坊，每天单调的重复。”我烦上面这样的日子。所以我在自己计算机专业上下苦功，希望能成个尚且自由的高级程序员，带着我Thinkpad本在路上奔着……我就想这样的。</p>
 <p>PS.无比期待快到的北京之旅。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2599,6 +3631,14 @@ Reboot to bootloader and flash the following:
       <url>https://w4mxl.github.io/2010/07/11/2010%E5%8D%97%E9%9D%9E%E4%B8%96%E7%95%8C%E6%9D%AF%E5%A4%A7%E5%86%B3%E8%B5%9B%E5%89%8D%E8%B5%8B%E6%8B%99%E5%8A%A3%E8%AF%97%E4%B8%80%E9%A6%96%E4%BB%A5%E9%95%87%E5%8E%8B/</url>
       <content type="html"><![CDATA[<p>巅峰对决<br>无冕之王<br>斗牛士狂<br>生死存亡<br>我心惶惶</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2611,6 +3651,14 @@ Reboot to bootloader and flash the following:
 <p><img src="/image/图/岁月神偷03.jpg" alt><br><img src="/image/图/岁月神偷04.jpg" alt><br><img src="/image/图/岁月神偷05.jpg" alt><br><img src="/image/图/岁月神偷06.jpg" alt></p>
 <p>PS.在线高清观看：<a href="http://tv.sohu.com/20100627/n273110861.shtml" target="_blank" rel="noopener">http://tv.sohu.com/20100627/n273110861.shtml</a><br>迅雷下载：岁月神偷.[国语中字.1024分辨率]/[电影天堂www.dy2018.net]岁月神偷BD国语中字.rmvb<br>我喜欢的影评:<br>豆瓣影评1: <a href="http://movie.douban.com/review/3157484/" target="_blank" rel="noopener">http://movie.douban.com/review/3157484/</a><br>豆瓣影评2: <a href="http://movie.douban.com/review/2971477/" target="_blank" rel="noopener">http://movie.douban.com/review/2971477/</a></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2624,6 +3672,14 @@ Reboot to bootloader and flash the following:
 <p>学校里开的正课（除了有自学的专业课），在前面博客里也说过，能逃的绝不将就。讽刺的是，自己选的选修课倒是很少落下。我不去上课，并不是我懒，也不是我厌学，更不是我听不懂，是我不想学那些后来注定要忘掉的无用的知识。没开化的人才会学那些，简直是为了忘记的学习。每年总有人在唱“毕业即失业”高调，可他们却没本事知道自己为什么没本事。他们什么都学，什么都学的不错，考试从不挂科，早早拿了党员证书……却在毕业时找不到好工作。“毕业生所学专业的专业化程度越高，与国民经济中增长较快的行业和职业相关性越强，就业越容易。”大概是他们所不知的。</p>
 <p>少年轻狂，岁月神偷。逝者如斯夫，所以珍惜。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2641,6 +3697,14 @@ Reboot to bootloader and flash the following:
 <p>最后说一首歌，my little airport 的《frankie wants to be alone》 。</p>
 <p>frankie wants to be alone<br>唱: nicole<br>词/曲/编/ guitar/ casio/ programming: 阿p<br>（歌词）<br>His name is Frankie, likes to drink green tea. And I noticed him, when I was 16. We discussed about Christy, she was the goddess to me. He knows who is Tim, but not closed to him. Though they both like film, they have different dreams. Frankie wants to be lonely, he needs no one to agree. He walks alone in school, no one think he is cool. He never studies hard, but he always gets high mark. People think he’s so strange, but he doesn’t wanna change. All he need is daydreaming. No one really knows his thinking. He walks alone in school……No one really knows his feeling.</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2661,6 +3725,14 @@ Reboot to bootloader and flash the following:
 <p>刚才‎2010/‎5/‎26，11:30，太阳在主场击败湖人，把比分扳成2:2。只看到最后12分钟的直播，太阳队主帅金特里太man了，在替补发挥神勇时勇敢的让5个替补全留在场上。西部决赛我想有得看了。</p>
 <p><img src="/image/图/雷子小丹married03.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2668,6 +3740,14 @@ Reboot to bootloader and flash the following:
       <url>https://w4mxl.github.io/2010/05/18/%E6%8C%BA%E8%87%AA%E7%94%B1%E7%9A%84%E7%9B%91%E7%8B%B1/</url>
       <content type="html"><![CDATA[<p><img src="/image/图/挺自由的监狱01.jpg" alt><br><img src="/image/图/挺自由的监狱02.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2681,6 +3761,14 @@ Reboot to bootloader and flash the following:
 <p>Blogs thie week:（部分）<br><img src="/image/图/电影和博客05.jpg" alt><br><img src="/image/图/电影和博客06.jpg" alt><br><img src="/image/图/电影和博客07.jpg" alt></p>
 <p>PS.张小娴说：<br>世上最遥远的距离，不是生与死的距离，不是天各一方，而是我就站在你面前，你却不知道我爱你。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2695,6 +3783,14 @@ Reboot to bootloader and flash the following:
 <p>所以，我在往程序员的道上走。这学期在Java上多有涉足，在web设计上花了很多时间。敬佩孙卫琴作为一位教育者和作者，对其作品在javathinker网站上“开源”的支持。让我这个“穷小子”没花什么钱便能得到《Tomcat与JavaWeb开发技术详解》（电子版）+视频。</p>
 <p>PS.他们玩地下城玩的狂喊狂叫，热火朝天。我被吸引过去看，看很久都不懂，呵呵，我智商太低了。注定只能玩单机。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2702,6 +3798,14 @@ Reboot to bootloader and flash the following:
       <url>https://w4mxl.github.io/2010/05/04/5,4/</url>
       <content type="html"><![CDATA[<p>2010/5/4<br>又一年五四，<br>遥想：<br>那少年激情，<br>那愤愤年华，<br>那满腔热血，<br>那为我们华夏民族前程而虔诚斗争的<br>勇士<em>孩子</em>青年<br>                              木小浪`纪念</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2715,6 +3819,14 @@ Reboot to bootloader and flash the following:
 <p>喜欢他们的歌，很大原因在于他们的歌词和他们歌词里想要表达的想法。不是豆瓣里的小清新。是和朋友，政治，青春，性爱……相关的想法的直率告白。“我说我的，关你鸟事”。</p>
 <p><img src="image/图/mla+MOGO+Germany03.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2722,6 +3834,14 @@ Reboot to bootloader and flash the following:
       <url>https://w4mxl.github.io/2010/04/28/%E5%BB%BA%E7%AD%91%E7%BE%8E/</url>
       <content type="html"><![CDATA[<p><img src="/image/图/建筑美01.jpg" alt><br><img src="/image/图/建筑美02.jpg" alt><br><img src="/image/图/建筑美03.jpg" alt><br><img src="/image/图/建筑美04.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2729,6 +3849,14 @@ Reboot to bootloader and flash the following:
       <url>https://w4mxl.github.io/2010/04/21/I-hope/</url>
       <content type="html"><![CDATA[<p><img src="/image/图/I hope...01.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2736,6 +3864,14 @@ Reboot to bootloader and flash the following:
       <url>https://w4mxl.github.io/2010/04/18/%E7%9D%B9%E5%9B%BE%E5%A5%87%E6%83%B3/</url>
       <content type="html"><![CDATA[<p><img src="/image/图/睹图奇想01.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2746,6 +3882,14 @@ Reboot to bootloader and flash the following:
 <p>正如很多小孩一样，我是极崇尚英雄的。从最初的连环画里的行者武松、豹子头林冲、九纹龙史进、浪里白条张顺，曹操、关羽、张飞、吕布，到后来梁羽生，古龙和金庸武侠小说和武侠剧里的燕南天、石破天、乔峰、令狐冲、杨过、张无忌、七剑，再到后来李小龙、成龙，李连杰，吴京，甄子丹演的电影角色，像《精武门》里的成真、《我是谁》里的杰克、《狼牙》里的阿布、《导火线》里的马军，无不让我迷恋。我敢说，如果一个男孩的心里如果没有自己崇拜的英雄，那他一定软的跟个柿子一样，被欺负不敢还手。<br>现在知道，史泰龙拍完《第一滴血》前三部，时隔20年才拍了《第一滴血》第四部，而且他当时已是62岁，除了兰博，他还在这部片子担当制片人、编剧和导演。其艰辛和付出可想而知。</p>
 <p>可是廉颇未老，尚能饭也！</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2754,6 +3898,14 @@ Reboot to bootloader and flash the following:
       <content type="html"><![CDATA[<p><img src="/image/图/喜欢01.jpg" alt><br><img src="/image/图/喜欢02.jpg" alt><br><img src="/image/图/喜欢03.jpg" alt><br><img src="/image/图/喜欢04.jpg" alt><br><img src="/image/图/喜欢05.jpg" alt></p>
 <p>这是梅苑风铃诵读的雪小禅《浅喜深爱》：<a href="blog.sina.com.cn/s/blog_598922460100fyu2.html">链接</a><br>（她朗诵的很好）</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2791,6 +3943,14 @@ Reboot to bootloader and flash the following:
 <p><img src="/image/图/哈山07.jpg" alt><br><img src="/image/图/哈山07.5.jpg" alt><br><img src="/image/图/哈山08.jpg" alt><br><img src="/image/图/哈山09.jpg" alt><br><img src="/image/图/哈山10.jpg" alt><br><img src="/image/图/哈山11.jpg" alt><br><img src="/image/图/哈山12.jpg" alt><br><img src="/image/图/哈山13.jpg" alt><br><img src="/image/图/哈山14.jpg" alt><br><img src="/image/图/哈山15.jpg" alt><br><img src="/image/图/哈山16.jpg" alt></p>
 <p>#<strong>请注意那句：FOR YOU,A THOUSAND YEARS OVER!</strong></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2801,6 +3961,14 @@ Reboot to bootloader and flash the following:
 <p><img src="/image/图/日子说了算02.jpg" alt><br>（↑前段时间读的很High很上心的雪小禅的作品）</p>
 <p><img src="/image/图/日子说了算03.jpg" alt><br>（↑想要有一辆自己的Motorbike)</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2808,6 +3976,14 @@ Reboot to bootloader and flash the following:
       <url>https://w4mxl.github.io/2010/03/06/%E4%BB%8A%E5%B9%B42010/</url>
       <content type="html"><![CDATA[<p>今年2010<br>            ——木小浪<br>今年2010，<br>夏天或有远游计划，<br>买款新手机和旧摩托。<br>读人衣衫褴褛，<br>瞥兽灯红酒绿。<br>米兰的小铁匠哎，<br>终于买了他心爱的Guitar<br>弹着弹着，<br>睡着啦。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2818,6 +3994,14 @@ Reboot to bootloader and flash the following:
 <p>今天去泮塘邮局把两本书领回来了。</p>
 <p>两本书还是寒假放假前一周在当当网买的，估摸着离校前能到的，悲剧的是包裹单偏偏在我离校第二天才到，汗！。系1，27返校时在楼长的办公桌上找到包裹单。两本书，一本是《2010中国自助游》，一本是孔庆东的《脍炙英雄》，后者原先准备在过年时送给我爸的。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2828,6 +4012,14 @@ Reboot to bootloader and flash the following:
 <p>今儿又在我姐这儿看了两集《蜗居》，继续着上次的揪心。第一次见识了炒房的火力，真够恐怖的；小贝真够好的，知道如何爱海藻；那小时工挺悲凉的，这社会真的像我姐说的那样残酷？！；当海藻说她的工作是“灵魂按摩师”时，那些老总听到要冷笑了；海萍，我挺你；有机会好想跟小贝聊聊，该如何去爱自己爱的女孩,在这个恐怖的社会。和她搬到郊区去住，给她在家种花、听音乐、看电影、读书写东西怎样，要是她自己也喜欢这样那便不错；</p>
 <p>那我得挣钱。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2835,6 +4027,14 @@ Reboot to bootloader and flash the following:
       <url>https://w4mxl.github.io/2010/02/10/%E5%AF%92%E5%81%87%EF%BC%88%E4%B8%80%EF%BC%89/</url>
       <content type="html"><![CDATA[<p>2010-2-8<br>在文子家玩，他笔记本里有《蜗居》，之前在学校里网上传得贼火的一部剧。前几天在《鲁豫有约》节目里看到海清，觉得她这人很实，挺好。<br>然后下午就把文子电脑霸占了看起来，可是《蜗居》看到第五集就看不下去了，太憋屈了，老实说是不敢往下看了。海藻的老板一副二愣子样，那什么宋秘书长得就不像是什么好东西，而海藻又拿了他的钱，不用想也知道海藻离毁八九不离十了。而海萍他们二位为了个房子，唉，太难受了，两个复旦大学毕业生，在江州打拼了8，9年，连打长途给女儿还不得不看着时间o(︶︿︶)o。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2844,6 +4044,14 @@ Reboot to bootloader and flash the following:
 <p>今天听歌的时候，千千里又放到了列侬的《Imagine》，很回味。于是一激动就去百度百科了一下列侬，想对他再多些了解。这才知道原来一个月前8号是列侬的忌日，才知道他竟是在1980，12，8被人枪杀而亡，才知道至今年的12月8号这位摇滚天才已离开我们整整三十载。而我们唯一能寄予仍旧追随他的办法就是重温他的歌曲和去做他想要我们做到的事情。</p>
 <p><img src="image/图/原来一个月前8号是列侬的忌日01.jpg" alt><br><img src="image/图/原来一个月前8号是列侬的忌日02.jpg" alt><br>(接着上面末尾）<br><img src="image/图/原来一个月前8号是列侬的忌日03.jpg" alt><br><img src="image/图/原来一个月前8号是列侬的忌日04.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2852,6 +4060,14 @@ Reboot to bootloader and flash the following:
       <content type="html"><![CDATA[<p>那些有机会去实现自己梦想的少年们，<br>我羡慕的看着你们，<br>微笑着想象着公元某年某月的某天，<br>带着我耳麦和notebook上路。</p>
 <p><img src="/image/图/那些航海环行的少年01.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2866,6 +4082,14 @@ Reboot to bootloader and flash the following:
 </blockquote>
 <p><img src="/image/图/mondialito乐队 + 兔斯基02.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2877,6 +4101,14 @@ Reboot to bootloader and flash the following:
 <p>还有不忘关注NBA。明早6点湖人跟骑士有个圣诞大战，准备弄个闹钟早起观战。阿联昨天复出一战打得相当出彩，祝贺。AI也渐渐恢复，祝你神勇，一如当年（艾弗森：一定）！</p>
 <p>PS.今天宿舍朋友生日，晚上我们宿舍6人加上他的几个朋友一起大搓了一顿，我干了近两瓶啤酒。一桌菜最后剩下一半，不过开心就好，开心是老大。还有，回宿舍后另外一朋友送了我一许愿灯（孔明灯），挺谢谢他的。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2886,6 +4118,14 @@ Reboot to bootloader and flash the following:
 <p>也许是因为来自乡村，小时候没机会见太多世面，浸泡在单纯的小快乐里一直到十八岁。无知者无欲。口袋里装上五六个小球（玻璃球）就能快活的在外面玩一个下午直到被奶奶狮子吼般吆喝回家；夏天，若能和几个同党捉个三五只田鸡，那中午的饭桌上一定有一大盆通红的大龙虾；春游时，整个小学校里几百号人在老师的带领下就在田埂上徒步，遇到空地就赶快把自己在家和爷爷做的风筝放起来，风筝的后尾通常系的是我们的红领巾…那时候真是单纯啊，记得从小我就狂爱读语文书和课外阅读，常常是读了好多遍还是爱读。那些读过的东西都成了我梦里有别于现实的另外一个世界，很美妙很神奇的。</p>
 <p>现在大了，算是半个知青了吧，看到的知道的也越来越复杂，人心变得跟高数公式一样，表面简单。可外面的世界依然对我充满了诱惑，不管是在电影还是电视上看到自由女神像，我都觉得她是在向我招手。我深爱着这个世界一如我爱宫崎骏，爱卢梭，爱海子。<br>等哪天银行卡里末尾0的个数足够多时，咱也学人成龙大哥环游世界一把，了了这个夙愿…</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2894,6 +4134,14 @@ Reboot to bootloader and flash the following:
       <content type="html"><![CDATA[<p><img src="/image/图/夜观 《The notebook》01.jpg" alt><br><img src="/image/图/夜观 《The notebook》02.jpg" alt></p>
 <p>Look,guys.That’s my sweetheart in there.I’m not leaving her.<br>This’s my home now.Your mother is my home.<br>I will be here ,i will never leave you.<br>Do you think our love,can take us away together.<br>如果你也看过这部电影（The notebook），我想你知道此刻我在想什么…</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2904,6 +4152,14 @@ Reboot to bootloader and flash the following:
 <p>作为无数热爱你的艾迷中的一员，我衷心的祝愿你在76人能重拾辉煌，疯狂去刷新你已有的各项记录吧，它们不动久矣。</p>
 <p><strong>记着，你是谁，   </strong><br>    <strong>你是阿伦·艾弗森！</strong><br><img src="/image/图/艾弗森，我觉得你一定还会回来的01.jpg" alt>    </p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2918,6 +4174,14 @@ Reboot to bootloader and flash the following:
 <p>最后，回味一下AI未完的NBA神奇数据：<br>     四次联盟得分王（98-99，00-01，01-02，04-05）<br>　　七次成为联盟赛季场均出战时间最多球员（98-99，01-04，05-08）<br>　　三次联盟抢断王（00-03）<br>　　10次NBA全明星成员<br>　　两次全明星赛MVP（2001，2005）<br>　　2000-01赛季NBA常规赛MVP<br>　　三次NBA赛季最佳阵容第一队<br>　　三次NBA赛季最佳阵容第二队<br>　　一次NBA赛季最佳阵容第三队<br>　　另外他也在NBA历史记录册上多处留下了自己的名字：<br>　　罚球总命中数历史第10<br>　　罚球总出手数历史地14<br>　　运动战总进球数历史第23<br>　　运动战总出手数历史第12<br>　　总出战时间历史第38<br>　　总助攻数历史第36<br>　　总抢断数历史第12<br>　　总得分历史第17<br>　　场均得分历史第6<br>　　场均出战时间历史第4<br>　　场均抢断次数历史第6<br>（数据由meatfight统计）</p>
 <p><a href="espn.go.com/video/clip">espn.go.com/video/clip</a>这是ESPN采访史蒂芬-史密斯视频地址，交代了一些AI退役的具体情况。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2926,6 +4190,14 @@ Reboot to bootloader and flash the following:
       <content type="html"><![CDATA[<p>《夏天的尾巴》的影子在我小小的心里投射出暖暖的一塊，看了很多遍，還是會再看，那方綠綠的綠水稻田和藍藍的藍天，那斷斷續續的慢節拍的吉他插曲，那洋溢著搖滾氣息的熱心阿月、叛逆小子陳懷鈞、搞笑的“屎殼郎”、和有些些靦腆的林文莉，和那有個尾巴就能自找樂子的夏天。</p>
 <p>在豆瓣上看到很多《夏天的尾巴》的影評，許多朋友都說“我們大陸絕對拍不出這樣好的青春片”，大陸導演太“深刻”，喜歡“以很深的主題來立意”，呵呵，雖然我對他們的這些說法不是深以為然，但在內地的確沒看到這種皆碑的好片。亦或是我看片太少，眼光太拙。<br>PS.望荐。分享=快乐+快乐。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2935,6 +4207,14 @@ Reboot to bootloader and flash the following:
 <p><img src="/image/图/观《伴我同行》01.jpg" alt></p>
 <p>这段话，是整部片子的点睛。<br>我们都是这样，那些小时候玩的很铁的哥们，渐渐地大了、疏远了，成了我们生命中的过客，这是难免的。而更多的朋友则是跟路上的行人一样，一闪即逝。有些人I’ll miss them forever，有些人会在我的回忆里留下一段虽短但足够清晰地影像。而我想，当若干年以后，在我老的没剩下一颗牙齿，我也能靠着对这世界的回忆咀嚼出甜甜的味来。<br>Lastly，我祝愿所有“在路上”的朋友能高唱着自己谱的人生之曲厚道的走下去…</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -2945,6 +4225,14 @@ Reboot to bootloader and flash the following:
 <p>晚上我会回宿舍用吉他弹happy birthday给你听，不知你能否听到？！</p>
 <p>木</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3005,6 +4293,14 @@ Reboot to bootloader and flash the following:
 </tbody>
 </table>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3015,6 +4311,14 @@ Reboot to bootloader and flash the following:
 <p>我老家的村里也有个傻子，村里人都叫他小龙。他也老是会笑，没什么手艺，一直帮着家里人种田和做体力活。村里人都说他好，因为不论哪家有什么大的体力活，老头儿老奶奶叫他，他都会笑着跑过来帮忙做好，事完了还是笑着走开。小时侯我们几个屁孩常常没大没小的跟他闹，他全不在意，还是笑着跟我们一起。后来我有问过奶奶他的事，奶奶说了些，可我现在只记得奶奶说过他跟我爸爸是同年生的，其他的都忘了。到高中以后，我就按月才回家里一趟，很多次在要到家的路上就会看到他，他还是照常笑，我会朝他喊“小龙啊”，然后过去摸摸他的手，他就笑得更厉害了，我还常傻傻的问他吃过没，好像个大人似的，现在想来挺搞笑的。我突然想到，有可能拍《傻瓜》的导演以前村里也有一个这样的傻瓜，这样一个也让他久久难忘的人，他是在用他最熟悉的方式来阐释他村里的那个傻瓜。</p>
 <p>如果真是这样，那我想对导演说，你拍得真好。xiexie.</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3023,6 +4327,14 @@ Reboot to bootloader and flash the following:
       <content type="html"><![CDATA[<p>这周过的好快啊，每天忙停当了瞄一眼手机都过零点。然后就懒得上来了，在桌面的记事本里快而简单的写上两句，爬上床了。习惯了上床后打开手机上的UCWEB，每次它都会很贴心的显示一句：木小浪，夜深了，请注意休息。可睡觉总还是要在我看完在上面RSS订阅的博客和IT类新闻更新之后才安心的。呵呵，好像每天都会这样，有些事。有些事就是这样，一次就爱上了，就像邂逅了一个不错的女孩以后。</p>
 <p>（记事本上的这周）<br><img src="/image/图/好快，这周01.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3030,6 +4342,14 @@ Reboot to bootloader and flash the following:
       <url>https://w4mxl.github.io/2009/10/10/%E7%83%9F%E7%81%AB-%E5%90%B4%E5%A5%87%E9%9A%86/</url>
       <content type="html"><![CDATA[<p>总是一次又一次不小心<br>走进悲伤的森林<br>以为已经沉睡的恋情<br>又在午夜里惊醒<br>总是不知不觉地想起你<br>惊慌失措的眼睛<br>就算已经远走的背影<br>依然靠在我怀里<br>孤孤单单一个人<br>走在丽影双双的街头<br>忘了我在找什么<br>等待明天还是往回走<br>总是在失去以后<br>才想再拥有<br>如果时光能够倒流<br>夜空那幕烟火<br>映在你的心里<br>是否触痛尘封的记忆<br>总是在离别以后<br>才想再回头<br>不管重新等待多寂寞<br>夜空那幕烟火<br>映在我的心底<br>是无穷无尽的永久<br>总是一次又一次不小心<br>走进悲伤的森林<br>以为已经沉睡的恋情<br>又在午夜里惊醒<br>总是不知不觉地想起你<br>惊慌失措的眼睛<br>就算已经远走的背影<br>依然靠在我怀里<br>孤孤单单一个人<br>走在丽影双双的街头<br>忘了我在找什么<br>等待明天还是往回走<br>总是在失去以后<br>才想再拥有<br>如果时光能够倒流<br>夜空那幕烟火<br>映在你的心里<br>是否触痛尘封的记忆<br>总是在离别以后<br>才想再回头<br>不管重新等待多寂寞<br>夜空那幕烟火映在我的心底<br>是无穷无尽的永久<br>夜空那幕烟火<br>映在我的心底<br>是无穷无尽的永久</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3044,6 +4364,14 @@ Reboot to bootloader and flash the following:
 <p>ps.看到这段时让我一下想起了两首诗：<br>一是老毛的，<br>男儿立志出乡关，学不成名誓不还；埋骨何须桑梓地，人生无处不青山！<br>再一是周恩来的，<br>大江歌罢掉头东，邃密群科济世穷。面壁十年图破壁，难酬蹈海亦英雄。<br>（高中时老邰每节语文课之前都要我们背诵这首，很想念老邰！）</p>
 <p><img src="/image/图/天堂电影院02.jpg" alt><br>多多在艾弗多（爷爷）葬礼时还是回来了</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3051,6 +4379,14 @@ Reboot to bootloader and flash the following:
       <url>https://w4mxl.github.io/2009/10/05/THE-LEGEND-OF-1900%EF%BC%88%E6%B5%B7%E4%B8%8A%E9%92%A2%E7%90%B4%E5%B8%88%EF%BC%89/</url>
       <content type="html"><![CDATA[<p>今天看了《THE LEGEND OF 1900》（超不喜欢那个中译名），上午看了遍，下午又看了遍。刚去了豆瓣才知道自己有多菜，人这部电影1998就出来了，我这才发现这个宝。尽管这样，还是压抑不住想过来SHOW一下:-D。 也算是给看过的回味回味。<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）01.jpg" alt><br>这就是我今天想大肆说的电影THE LEGEND OF 1900（中译为《海上钢琴师》，个人感觉这名译的太烂了，连原名中Legend这层含义都没阐释到，跟《西游记》被翻译成Journey to the West(英文版)大概是一个道理。<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）02.jpg" alt><br>剧作者：GIUSEPPE TORNATORE 吉赛贝.托纳多雷（意大利），去豆瓣看了知道他还有三部曲中还有两部，找机会看<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）03.jpg" alt><br>改编自：小说《Novecento》（《新世纪》）作者：ALESSANDRO BARICCO 阿列山德罗.巴里科<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）04.jpg" alt><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）05.jpg" alt><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）06.jpg" alt><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）07.jpg" alt><br>因为这，我都对去美国有憧憬了！！！<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）08.jpg" alt><br>就因为丹尼的即兴，有了“1990” ，然后开始了传奇<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）09.jpg" alt><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）10.jpg" alt><br>像船一样的摇篮随着这艘大船，荡啊荡，我们的1900要睡觉了<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）11.jpg" alt><br>1900的钢琴天赋崭露头角，孩子的天真、琴音的跳跃，真不可思议<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）12.jpg" alt><br>我一听到就喷笑，得到了丹尼的真传啊( ^_^ )，听老外说Fuck听一次笑一次，这次还是从个孩子嘴里说出来，帅<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）13.jpg" alt><br>美吧，真想把这段视频剪切下粘过来：船在大海中剧烈的摇晃，钢琴跟着在大厅里飘荡，而琴声就这么神奇的缓缓的流淌出来。。。。<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）14.jpg" alt><br>他不只为头等舱的人演奏<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）15.jpg" alt><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）16.jpg" alt><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）17.jpg" alt><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）18.jpg" alt><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）19.jpg" alt><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）19.5.jpg" alt><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）20.jpg" alt><br>斗琴开始了，也是全片的经典。…|| ||<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）21.jpg" alt><br>全场惊呆！！！<br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）22.jpg" alt><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）23.jpg" alt><br><img src="/image/图/THE LEGEND OF 1900（海上钢琴师）24.jpg" alt><br>这三张可以看作是1900的成长历程照 （this is all)</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3060,6 +4396,14 @@ Reboot to bootloader and flash the following:
 <p>我是知道的，每年爸妈，大大、大妈，三爷、三妈中秋不在家过时，爷爷都会为各家亲自扎一个斗香，设个案台，摆放上买来的时令水果、月饼、莲角…他们的心里一定是想着自己的儿女还来团圆的，在这个月圆的团圆的日子里。可是在我还在家的几次中秋日里，每次爸妈他们打电话回来问候爷奶，爷奶都是一心让他们放心，让他们在外安心，好好的。…。</p>
 <p>在这没回家的八月半，我想我那在老家的爷奶。望你们好。你们要看着你们的孙子，他永远离不开你们，就像儿时睡在你们床里面的小子还要你们给他盖上被踢开的被子，要不他会生病的。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3071,6 +4415,14 @@ Reboot to bootloader and flash the following:
 <p>【安宁】<br>以前常常会想，这个人怎么这么牛啊，每次稿子都能被《读者》选上，而且还写的这么出色。后来才知道她是《读者》的签约作家。特喜欢看她写的短篇小说，尤其是那些描述小小爱情的，估计自己那时刚登上懵懂期的小船，每次买来新一期的就迫不及待的翻到目录找‘安宁’这个名字，若是真的扫到了，心里就会立马冲进来喜悦，然后持续快乐下去好久。。现在偶尔翻翻以前的《读者》，再读到当年被折上角的她的文章还是会耐心的读下去。相比其他人写的校园爱情，她的要细腻的多，去掉了俗气和司空见惯的形容词和套路情节，显得很清新，像晨雾中坠在花瓣上的露水。</p>
 <p>【张丽钧】<br>她文章中的细节刻画和挖掘常常让我有很深刻的感动。她曾对采访她的记者说过她就是钟爱细节，她坚定的认为小处能折射出很强的光。她是个老师，获得过‘十佳青年’‘劳模’‘优秀教师’…，很多。她热爱文字，不甘流俗，用心读她的文字，你会体会到她那份对学生对文字的责任之心。她讲过这样一段话：那被鲁迅先生称为‘匕首、投枪’之类的利器，不可能握在一个只关注自我娱乐度和对异性吸引度的小女人手上。当我们的手开始不能自抑的去摸索那些利器，就说明，我们的爱，带上了‘血性’。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3081,6 +4433,14 @@ Reboot to bootloader and flash the following:
 <p>我国庆决定不回家了，爸前两天打电话问我是回老家还是去他们那，我说都不，这几天就待这吧。我觉得自己也不小了，有时间该去为自己的想要的以后努力了，即便是想回老家跟爷奶过中秋，想吃妈妈做的菜。。等以后吧。<br>这些天我注意到月亮开始走圆了，比前几天通透明亮了很多，柔和的月光在地面上镶嵌了一层金色，照之有余晖，揽之不盈手。</p>
 <p>PS.今天丘子应该结婚大喜了，老早就在Q上看到他签名。丘子和我同村，小时侯调皮捣蛋的总少不了我们几个，当然也有丘子。掏鸟窝，捉到蛇放到小路中间吓人，钓龙虾，钓鱼，偷地瓜、番茄，打荷叶……。丘子比我大一岁，但我们小学读同一年级，因为那时我们小学每个年级一个班，所以我们小学六年都是一起玩的。后来初中毕业他就不读书了，估计跟家里也有些关系，后来好像一直是在上海做事。刚晚上打了几个电话给他，都没接通。只好把话放这：丘子，祝你幸福</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3088,6 +4448,14 @@ Reboot to bootloader and flash the following:
       <url>https://w4mxl.github.io/2009/09/22/%E2%80%9C%E5%A4%9C%E6%B7%B1%E4%BA%86%EF%BC%8C%E5%BF%AB%E7%9D%A1%E5%90%A7%EF%BC%81%E2%80%9D%EF%BC%8D%E3%80%8A%E8%90%A4%E7%81%AB%E8%99%AB%E4%B9%8B%E5%A2%93%E3%80%8B/</url>
       <content type="html"><![CDATA[<p>高钿勋角本和监制，《萤火虫之墓》。我想看过的人没有没落泪的吧！这样我想，战争带来的最大的结果恐怕不会是胜利及其所得或者失败及其所失吧，而一定是双方的百姓啊！还记得《山破羊》里说过这么句：兴，百姓苦；亡，百姓苦。想来张养浩大师也是噙着泪睁眼看着呢，越多的泪水没模糊反倒越让他看清。你说孩子是不是真的很奇妙啊，他她们的一哭一笑，一戏一闹率真的就好像是从山上流泻下来的溪水一样，除了干净就是干净。他她们感到难过了就歇斯底里的哭，感到开心了就肆无忌惮的笑。而现在我看到很多人连笑都看不出来开心了，哭也不太会了，像那些因不常用而记不得的数学公式。 记得我在初中的时候有段时间特想自己能有个小妹妹，我问妈妈怎么不给我多生个小妹妹，妈妈笑而不答。我是真的很想有个妹妹，那样我可以讲好多看过的故事给她听，买给她最喜欢吃的东西，带着她在田里河边玩耍，烤甜甜玉米棒从后面放到她鼻子前给她惊喜…可我终究没能做出什么事来。现在宿舍这么静，我能听到那片子里小女孩的爽爽的笑声，我看到的却是从她、他眼里落下的一滴一滴的疼痛…在很饿的时候，白米饭也是佳肴。所以重要的珍惜，我们拥有的可都不少了啊！最后高呼一声：和平万岁。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3099,6 +4467,14 @@ Reboot to bootloader and flash the following:
 <p>刚才一听到Jay的《梯田》的调子就停了笔。<br>在画面中的我不会写词都像个诗人；<br>自私的人类，狼不狼狈；<br>可怜可悲，我不是你们的校长，也不能给你们一巴掌；<br>显微镜下面的我们，可能更现实更自私，这种艺术，真的，很难领悟。<br>第一次听到就巨喜欢这歌，除了调调歌词酷外，更多的是对Jay的佩服，他延伸了音乐来表达自己对自然的同情，讲音乐远远的拉出了情情爱爱的藩篱，简直就像宫崎骏的动画电影一样。<br>还有他的《外婆》<br>大人们始终不明白，她要的是陪伴，而不是六百快；</p>
 <p>……全是满满的感动</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3106,6 +4482,14 @@ Reboot to bootloader and flash the following:
       <url>https://w4mxl.github.io/2009/09/08/%E6%88%91%E4%B9%9F%E6%9C%89%E8%BF%87%E2%80%A6%E9%82%A3%E9%80%9D%E5%8E%BB%E7%9A%84%E7%BE%8E%E5%A5%BD/</url>
       <content type="html"><![CDATA[<p>《匆匆那年》看到 第四卷 且行4。 晚自习第二课开始读的，感觉又过了会十六岁，也曾颤抖的在买来的信纸末尾署上：我喜欢你，“而在十几岁的时候，比爱浅上好几层的喜欢，却足以把心装满”。现在想来那时候真是纯啊，跟那藏窖了上百年的XO酒似的，脸红心跳就跟小男孩跑厕所一样动不动就来。她的一句话一个眼神就足够一晚上有得乐滋的了。也许正是因为没手机，没短信，没QQ，好多情愫不能随时表达，才会在心里深埋出更多的甜蜜和难忘… 匆匆那些年，怎么忘怀</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3115,6 +4499,14 @@ Reboot to bootloader and flash the following:
 <p>上月底去了农行办了张我自己的银行卡，一是本来大一过来的时候通知书夹有学校办的交行卡，大一也就用的那张卡，可是知道爸每次汇钱给我要绕很远的路就一直想再办张离他那最近的银行的卡。二来，我也想把赚来的钱和节约下来的钱存进去争取攒够了买台自己想要的笔记本。（“小金库”开卡时已经存了2000，是从交行里3000块的生活费里转进去的）哈哈！争取这学期买本。 晚上登Q时突然被一老同学找到，她说是在＊群里看到我。跟她聊了一会儿，真觉得她遭遇挺背的。去年高考，320+20可因为生物得了个C而只好只好选择复读，到今年高考生物过了，物理又得了C…还好今年好多高校是允许有1C的，可是报了南林却没被录取，真冤啊。最后竟然被我们学校录取了，9,12到我们学校报到。呵呵，“世事难料”这话绝对是真理，据说她还是在强化班复读的。类似的事我室友前两天也爆料了一个。最后只能跟她说过来，有什么不清楚就找我吧。</p>
 <p>P.S班长通知我们是9,1号到校报到的，26号就来是因为在爸妈那边会很闲，觉得每天都有东西在眼前逃脱，就像光明明就把手照亮了可还是怎么也抓不住一样的感觉。再者，有些耽搁他们做生意。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3129,6 +4521,14 @@ Reboot to bootloader and flash the following:
 <p>首先大一这一年也有不少努力，利用双休日做了不少兼职，盘点一下干过发传单、推销产品、校园代理、饭店服务生、饭店后勤…-_-!。只是没想到赚大钱的门路，有一些比如在学校附近开个餐馆的计划也没很用心把它考虑周全，被同伙扼杀了。接下来，主要想往计算机方面进军，潜意识里总相信互联网的沙石里埋藏着无穷尽的金子，就缺有慧眼的淘宝者。所以革命成功大有希望。</p>
 <p>P.S我巨希望看到我这篇博客的朋友能多多的给我一些赚钱的建议或经验，我会感极涕零的.. 。:）</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3137,6 +4537,14 @@ Reboot to bootloader and flash the following:
       <content type="html"><![CDATA[<p>上海今天又下雨了，接连几天，天天下，下得我心都潮湿了。97.5音乐电台的女主播在说南京今天也下了场持久的雨，然后她说她自己还是想做那个喜欢雨天的小孩 而现实是自己已是不喜欢雨天的大人 也许这就是成长的代价吧。她这样说的时候声音很低沉可是很好听，我看到了她脑海里对儿时美好的回忆。我觉得电台主播的工作很契合她们这类女子，简直就是对她们灵魂的安慰。换言之，其实并不是所有女子都能在电台长久的做下去的，不懂的人会孤独，“她有一只梵高的音乐之耳”。</p>
 <p>下午看了电影《重返十七岁》，一部不错的片子。或许哪天我们也会来个重返十七岁然后再奇迹般的回来，大概那时我们才真的懂得该抱怨的并不是生活，找回自我，知道怎样才能做个好丈夫好父亲。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3147,6 +4555,14 @@ Reboot to bootloader and flash the following:
 <p>提到电视，让我一下想起了季老，前几天看新闻才知道原来季老也走了，一直对他满怀崇敬，突然听说他走了心疼痛不已，这么好的一个人，这么德高望重的人竟然也会走…</p>
 <p>知道季羡林这个人是在高中，经常在做语文试卷的阅读题上碰到他的文章。我那时最喜欢做的就是阅读题，每次试卷一拿到手我总是第一道就做阅读，那些精致的散文亦或小说会让我澎湃，题答得也是行云流水般，跟米芾的草书有的PK,要知道在那样压抑的高中生活里这样的快感就跟走在路上一脚踩上金子一样开心啊。还记得那时做到一篇季老的《北大之魂，清华之神》，当时一看到是这标题，再看到作者季羡林，我立马兴奋起来，答起题来时也就像济南泉眼里的水似的不停往上涌，搞的旁边人忒郁闷，呵呵，那些美好旧事说起来哪有个尽头，一波又一波啊。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3156,6 +4572,14 @@ Reboot to bootloader and flash the following:
 <p>吃完午饭就是一场暴雨，记忆里上海还没发过这么大的火，落下如此掷地有声泪水。我爸妈租住的民房因为地势低洼加上下水道来不及排，水漫进了好多，都能达到我小腿肚了，一时还疯狂的往上涨，我爸妈火急火燎的把东西往桌上、碗厨之类高处挪放。那场大暴雨持续了一个多小时才骤然停息，而屋子里的水又慢慢淌了一个多小时才淌干净，这才算完了。今天早上看新闻里说上海气象局为昨天的暴雨发布了红色预警报告。刚才找了家网吧，上的我郁闷到半死－连个Word都没。新下载了还不给安装，系统设计的烂到发出臭味。不说什么了，我已经出离愤怒。听爸说我的一个表弟快到昆山上班了，我那几个表兄弟要么上了班要么就要上了就乘我还是个上学的主，遥遥无期，急啊。我发现我开始天天想着挣钱了，以前老觉得那些大人天天嘴里挂着钱忒俗，现在才知道我错了。</p>
 <p>其实不是挣钱俗，俗的是我看待钱的眼光。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3164,6 +4588,14 @@ Reboot to bootloader and flash the following:
       <content type="html"><![CDATA[<p>原来手机也可以登百度啊8-) 待老家这么多天了，没电脑没网吧没孩子，寂寞出很多悠闲来。日子一天天流淌，屋前的水稻蹭蹭往上窜。大片大片的稻田，成堆的绿，等到七八月份就变成无边无际的黄，到时一颗颗金黄色的饱满的稻穗就会调皮的摩擦出好听的吱吱声。在一起时没觉得什么，离开没两天就拼命的思我的电脑了，脑子里会想，要是有台上网本就好了。有时候看电视上有说什么一等奖是＊＊手提电脑一台之类的互动活动，我也会打了兴奋剂一样发短信过去，可是从来没见过回音，罢了。</p>
 <p>这段时间读了迟子建的《额尔古纳河的右岸》，读它让我又回想起了《青铜葵花》，他们这辈作家总让我有很深的感动，这种感动不同于安妮、《梦里花落知多少》、周嘉宁、小四… 他们是纯真的一代，就像中国电影的纯真年代是六十年代，是属于徐克、张艺谋、程小东…他们的一代一样。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3175,6 +4607,14 @@ Reboot to bootloader and flash the following:
 <p>对了，我姐家的宝贝胖嘟嘟的特可爱，跟我总是嬉皮笑脸的闹着玩，舅舅、舅舅叫的特好听。跟她玩，我心里都开花了。现在正打着小呼睡得特香呢。</p>
 <p><img src="/image/图/回老家了01.jpg" alt><br><img src="/image/图/回老家了02.jpg" alt><br><img src="/image/图/回老家了03.jpg" alt><br><img src="/image/图/回老家了04.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3183,6 +4623,14 @@ Reboot to bootloader and flash the following:
       <content type="html"><![CDATA[<p>28号坐火车到的上海，爸妈见了我跟我见了他们一样高兴。爸把我接到他们租的小屋里，我还是有种到家的温暖幻觉。三口人，一个家，一张桌子，几盘小菜，晚饭吃得特开心。<br>这边没有自己的电脑了，不能随时想上就上网，度友的博客也不能一更新就看到，挺失落的。</p>
 <p>挺庆幸的是，一朋友回老家，我跟妈去把她笔记本借过来了，尽管不能上网，但是听音乐，敲程序还是可以的。这样觉得也不错了^-^</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3191,6 +4639,14 @@ Reboot to bootloader and flash the following:
       <content type="html"><![CDATA[<p>迈克尔-杰克逊<br>（刚才看新闻才知道他也走了）</p>
 <p><img src="/image/图/6,25他也走了.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3201,6 +4657,14 @@ Reboot to bootloader and flash the following:
 <p>迷途<br>      ——北岛<br>沿着鸽子的哨音<br>我寻找着你<br>高高的森林挡住了天空<br>小路上<br>一颗迷途的蒲公英<br>把我引向蓝灰色的湖泊<br>在微微摇曳的倒影中<br>我找到了你<br>那深不可测的眼睛</p>
 </blockquote>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3221,6 +4685,14 @@ Reboot to bootloader and flash the following:
 <p>这两张就是和随身听一起带过来磁带，当时一共没带几盘过来，唯独把朴树的两盘都带来了，可见它们一直是我很喜欢的。</p>
 </blockquote>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3232,6 +4704,14 @@ Reboot to bootloader and flash the following:
 <p>还记得我最早“赚钱”是在小学，有一段时间时我们常玩一种砸橡皮的游戏，就是在一定范围内谁把谁的橡皮砸下来或砸出界，就把橡皮赢到自己手里了。我那时超强，赢了一大把。有人想继续玩又懒得到小店去买橡皮就问我能不能买我的战利品，我一听觉得这主意不错，卖了，然后我玩得更积极赢得也更多了。下一次的赚钱好像还是玩游戏，不过这次玻璃球，我清楚记得是以一角钱五个卖的呢。….然后高中里承包过班级的饮料瓶；上学期间或的打了近200块钱的散工；还准备大二搬到新校区的时候和几个同道好友开个小店或者弄个卖早点、盒饭的推车….兴致盎然的时候还想等以后专业学好编写个好用的程序可以卖好多好多钱呢。好想好想以后不再是以后啊，呵呵</p>
 <p>注：最近看书老想起LG，想起以前我们的事我觉得我很不男人。对不起她的话再说也没用。以前我觉得再没可能了，可是最近我又想我该是抓住她的。可这一切又似乎同徐州这几天闷热的天气一样，使我昏昏的有些乱。真的能再回到以前天空晴朗的日子吗！时光啊，真是残酷的要命！</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3246,6 +4726,14 @@ Reboot to bootloader and flash the following:
 <p>喜欢是淡淡的爱，淡淡的爱是深深的喜欢……</p>
 </blockquote>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3260,6 +4748,14 @@ Reboot to bootloader and flash the following:
 <p>我不知道导演拍出这部电影想阐释出什么，亲情？爱情？或许还有其它很多什么。而我看到了上面这些，这是我自己的观后感。</p>
 <p>我不相信命，可好多事似乎真的就是命中注定！</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3270,6 +4766,14 @@ Reboot to bootloader and flash the following:
 <p>爱情本身是无比美好的，可它常常带来苦痛，就好比“我们生而自由，却无往不再枷锁之中”般。纵使我再怎么挣扎也有无可奈何，而挣扎的心徒然的更痛了，剩下的只有对逝去的美好的遍遍回忆。我知道这不是爱情的错，是生活是我们自己的错，无关他人。我坚定的相信爱情,百合花般纯洁的爱情是那样的让人迷醉。没有人会否认真理，而美好的爱情必定存在就是我心里的一条真理。</p>
 <p>对于爱情，我真诚的祝愿每个人都能找到属于自己的那一份。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3279,6 +4783,14 @@ Reboot to bootloader and flash the following:
 <p>大四的离开也意味着新的大一的到来，这让我想起明天就是09年的高考了，三年等<br>来的三天，你们做好全力以赴了吗？不管结果怎样，请你们永远不要放弃你们的希<br>望和期待，坚定的相信未来，“相信不屈不挠的努力”，相信远方会有阳光。我要<br>提前祝我那些复读的高中同学这次能取得成功，早日考进心中理想的大学，祝你们<br>好运。</p>
 <p>对于执着的人来说，登上顶峰只是时间问题。<br>结束即开始。<br>无止境。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3288,6 +4800,14 @@ Reboot to bootloader and flash the following:
 <p>到达南京站<br><img src="/image/图/南京之行02.jpg" alt></p>
 <p>中山陵里的野花<br><img src="/image/图/南京之行03.jpg" alt></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3299,6 +4819,14 @@ Reboot to bootloader and flash the following:
 <p>快要考试了，上午高数课老师按考试大纲给我们做了简单的复习，“剩下的时间就自己看书，有问题就上来问”，我坐在最后开始按刚才记在笔记本上的大纲复习，因为数学一直学的，所以对考试没什么担心的。倒是常常会自问，怎么才能把学到的数学知识运用到解决实际问题来？</p>
 <p>下晚自习回宿舍的路上，我无意看了一下在桥上卖臭豆腐的中年男人，他的架子上还放着垒了两层的炸好的臭豆腐，看着他握筷子的手让我突然想起了我在外打工的爸爸，他们的手是一样的，心也一样。我默默的走了。我想我还有好多事要做。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3313,6 +4841,14 @@ Reboot to bootloader and flash the following:
 <p>呵呵，高三那种教室里人人抬头认真读书的日子已经悄悄过去一年了。对过去的美好我常常还会不自觉想到，我大概是一个喜欢回忆的人，也因为这样才会被过去拉扯出疼痛。</p>
 <p>现在再想想孙中山纪念馆大堂里刻着的话“人类进化，世界大同”就觉得感受不一样了，是啊，世界大同。”you may say i am a dreamer,but i am not the only one”.</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3322,6 +4858,14 @@ Reboot to bootloader and flash the following:
 <p>刚才我在电脑上成功的做出了＂工程的部署和安装＂，简单的说就是做了一个象QQ那样的安装程序，呵呵，原来一大堆的安装过程也不是太难做出来的马．你们都知道的，在安装一个软件的时候不是要在协议上选同意吗，呵呵我在部署这个协议的时候写了句＂我是＊＊＊，我成功了．程序随便用＂．想想你哪天安装软件时遇到这样一个协议，一定回扑哧笑出声的把．</p>
 <p>要下课了，走了.</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3333,6 +4877,14 @@ Reboot to bootloader and flash the following:
 <p>不知道是什么原因，我对生活的期盼是要激情，也要平静。我怎么会把如此大相径庭的两个词同时用来期待生活，咳，可我就是这样想的。为了激情，我会很努力的做事，最求完美。为了平静，我常常在阳光下走动，常常去陌生的城市游荡。说到这我好高兴，因为下周三（端午节放假）我就要去南京了，我已经和在那里的朋友说了，我很期待见到他们。还有我会去南京大屠杀遇难同胞纪念馆、南京博物馆、南京长江大桥、中山陵、紫金山天文台、南大….会在三天里去尽量多的地方，看尽量多的自然，了解尽量多的南京。</p>
 <p>有期待的时候我是最开心的。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3344,6 +4896,14 @@ Reboot to bootloader and flash the following:
 <p>在microsoft中文官网上看的多了，才知道自己的水平有多菜。就自己每天学到的那小把东西太皮毛了。说的蛮好听，在学C#，SQL server,.NETfremwork,visual stdio,其实是在接触这些高级编程语言，数据库系统，应用程序的基础的基础。千里之路才踏出一寸。每天把老师教的东西在做电脑上自己做出来，我就会很满足，很开心，可是我现在怎么想也不能再为那点知识高兴起来。有时我还想，我以后大了一定不做那种朝九晚五的上班浊，那样的日子我会压抑的到发疯的。我要作个自由人，像安妮宝贝这种自由作家的自由人，顺着往下想就是靠什么来钱，我就想到了我的专业，我可以缺钱了就编程序卖，有钱了就到处走，没钱了再编程。呵呵，我好浪漫啊。</p>
 <p>看来，我该很努力去把专业学好…….  </p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3363,6 +4923,14 @@ Reboot to bootloader and flash the following:
 <p>“一年，三年，五年或是很久很久以后，我们会变成什么样的大人呢”</p>
 <p>“我闭上眼睛也看不见自己，但我能看见你”</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3419,6 +4987,14 @@ Reboot to bootloader and flash the following:
 <p><strong><em>宫崎骏的书：</em></strong></p>
 <p>《出发点》　作　者：宫崎骏<br>本书详细描述宫崎骏与动画之间的关系，内容主要分为动画的制作、工作的周边、人、书、喜爱的事物、对谈、企划书、作品等八大章节，每一章节里，宫崎骏藉由各种人事物提出他对动画的想法，阅读本书，就彷佛阅读了宫崎骏在动画上的各种努力与成就，真正进入宫崎骏的动画世界。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3429,6 +5005,14 @@ Reboot to bootloader and flash the following:
 <p>　　从比赛开始到强完跑道，我排在十几名的位置，我不敢立刻加速去超越，这是人所共知的长跑大忌。我试图缓缓的加速，几圈下来我感觉我越来越镇定，节奏也把握的不错。于是我开始超越，一个过去了，接着又一个，……到了第十圈我跑到了第五名，这时第四名还在我前面100米左右呢。我大口大口的喘着气，用里挥动双臂以加大向前的惯性。我拼命努力试图赶上他。每次在弯道我都缩短一些，再一些，加上他好像本人速度也有所稍降，到了第12圈时，我离他就大概10米了。我在最后两百米竭尽全身力气往前狂奔，我什么疼痛度忘了，我只是冲，单纯的就像彼时光光溜溜的天空。还好，我在里终点线两米左右超过了他，硬生生的把他的第四名占为己有了。然后我急忙问拿水给我的朋友第一名超了我有多远，他告诉我有一圈多。我听了，在心里无可奈何的一笑，那家伙是人类吗，真么能跑，真服了。在后来知道，那人前两天10000米也是第一，去年也是两项第一，是大三的。这样我心里稍微平衡了些。</p>
 <p>　　回去后，朋友们对我交的成绩单很满意。L还对我说他很以我为傲，说我以这样的速度竟然还能跑这么远，很强。我听了很开心。其实他不知道，5000米跑多了也就那么回事，没他以为的神奇。班长还打电话告诉我，第四名有50块钱的奖励还外加证书呢。<br>　　<br>　　这样的结果我已经很开心了。觉得一切都值了！</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3443,6 +5027,14 @@ Reboot to bootloader and flash the following:
 <p>流浪者啊<br>你快告诉我<br>埃及的天能有西藏的蓝吗<br>北极是不是真的一点没有黑夜<br>神农架飞着白色的乌鸦？<br>….<br>…..<br>求求你<br>求求你<br>也带上我一起上路吧<br>我想亲吻自然的脸颊<br>久久的<br>热热的<br>吻着她</p>
 </blockquote>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3453,6 +5045,14 @@ Reboot to bootloader and flash the following:
 <p>　　前几天在学校网站必读书目考试上报了两门：《约翰•克利斯朵夫》和《古文观止》，又下了些相关介绍在盘里，过会儿下线了先看看，明天准备到图书馆把书借到。这两本书都很不错的，一直没去读，期待着。</p>
 <p>　　期待着那些让我期待的美好…….</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -3462,6 +5062,14 @@ Reboot to bootloader and flash the following:
 <p>　　明天是我们学校的运动会开幕，(<em>^__^</em>) 嘻嘻……我也是运动员哦。我报的是5000米，星期五下午三点半，有点小紧张还有点小兴奋，就等着冲过终点线了…….</p>
 <p>　　对了，现在操场上10000米跑应该开比了，我得下楼去观观。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Life&#39;s </category>
+            
+        </categories>
+        
+        
     </entry>
     
   
