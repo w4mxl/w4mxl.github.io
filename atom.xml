@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://w4mxl.github.io/"/>
-  <updated>2019-05-18T12:47:06.423Z</updated>
+  <updated>2019-05-22T23:49:26.860Z</updated>
   <id>https://w4mxl.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://w4mxl.github.io/2019/05/15/life-is-fruity/"/>
     <id>https://w4mxl.github.io/2019/05/15/life-is-fruity/</id>
     <published>2019-05-15T15:57:39.000Z</published>
-    <updated>2019-05-18T12:47:06.423Z</updated>
+    <updated>2019-05-22T23:49:26.860Z</updated>
     
     <content type="html"><![CDATA[<center><img src="https://i.loli.net/2019/05/18/5cdffeab569b254715.jpg" title="《人生果实》海报" width="500"></center>
 
@@ -248,31 +248,31 @@
     <link href="https://w4mxl.github.io/2019/01/26/flutter-Intl-Localizations/"/>
     <id>https://w4mxl.github.io/2019/01/26/flutter-Intl-Localizations/</id>
     <published>2019-01-26T03:16:00.000Z</published>
-    <updated>2019-03-16T12:22:26.512Z</updated>
+    <updated>2019-05-24T15:30:27.067Z</updated>
     
     <content type="html"><![CDATA[<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><ol>
 <li>在项目根目录下创建一个i10n-arb目录，该目录用于保存arb文件</li>
 <li>在lib目录下创建一个i10n的目录，该目录用于保存从arb文件生成的dart代码文件。</li>
 <li>在i10n目录下面，创建一个localization_intl.dart 文件，用来实现Localizations和Delegate类</li>
 <li>在localization_intl.dart 文件中添加需要国际化的属性</li>
-<li><code>flutter packages pub run intl_translation:extract_to_arb --output-dir=i10n-arb lib/i10n/localization_intl.dart</code> 通过这个intl_translation命令把项目中Intl API标识的属性和字符串生成arb文件</li>
+<li><strong><code>flutter packages pub run intl_translation:extract_to_arb --output-dir=i10n-arb lib/i10n/localization_intl.dart</code></strong> 通过这个intl_translation命令把项目中Intl API标识的属性和字符串生成arb文件</li>
 <li>基于上面生成的arb文件，创建其它我们想支持的语言对应的arb文件</li>
-<li><code>flutter packages pub run intl_translation:generate_from_arb --output-dir=lib/i10n --no-use-deferred-loading lib/i10n/localization_intl.dart i10n-arb/intl_*.arb</code>  根据arb生成dart文件</li>
+<li><strong><code>flutter packages pub run intl_translation:generate_from_arb --output-dir=lib/i10n --no-use-deferred-loading lib/i10n/localization_intl.dart i10n-arb/intl_*.arb</code></strong>  根据arb生成dart文件</li>
 </ol>
 <a id="more"></a>
 <h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p>官方的教程中第五步和第七步有用到两个命令：</p>
-<p><code>flutter packages pub run intl_translation:extract_to_arb --output-dir=i10n-arb lib/i10n/localization_intl.dart</code></p>
-<image src="https://ws3.sinaimg.cn/large/006tNc79gy1fzjtjsxczgj30rw05w3ys.jpg" width="200">
+<p><strong><code>flutter packages pub run intl_translation:extract_to_arb --output-dir=i10n-arb lib/i10n/localization_intl.dart</code></strong></p>
+<image src="https://i.loli.net/2019/05/24/5ce80d83bf01468384.jpg" width="200">
 
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"@@last_modified"</span>: <span class="string">"2019-01-26T11:14:10.582986"</span>,</span><br><span class="line">  <span class="attr">"login"</span>: <span class="string">"Login"</span>,</span><br><span class="line">  <span class="attr">"@login"</span>: &#123;</span><br><span class="line">    <span class="attr">"description"</span>: <span class="string">"Title for left drawer login text"</span>,</span><br><span class="line">    <span class="attr">"type"</span>: <span class="string">"text"</span>,</span><br><span class="line">    <span class="attr">"placeholders"</span>: &#123;&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>这个是生成的默认的Locale资源文件，如果我们现在要支持中文简体，只需要在该文件同级目录创建一个”intl_zh_Hans.arb”文件。</p>
-<image src="https://ws2.sinaimg.cn/large/006tNc79gy1fzjukxbm55j30pg08gjrv.jpg" width="200">
+<image src="https://i.loli.net/2019/05/24/5ce80d83c5b4b31093.jpg" width="200">
 
 <p>然后将”intl_messages.arb”的内容拷贝到”intl_zh_Hans.arb”文件，接下来将英文翻译为中文即可，翻译后的”intl_zh_Hans.arb”文件内容如下：</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"@@last_modified"</span>: <span class="string">"2019-01-26T11:27:30.905630"</span>,</span><br><span class="line">  <span class="attr">"@@locale"</span>:<span class="string">"zh-Hans"</span>,</span><br><span class="line">  <span class="attr">"login"</span>: <span class="string">"登录"</span>,</span><br><span class="line">  <span class="attr">"@login"</span>: &#123;</span><br><span class="line">    <span class="attr">"description"</span>: <span class="string">"Title for left drawer login text"</span>,</span><br><span class="line">    <span class="attr">"type"</span>: <span class="string">"text"</span>,</span><br><span class="line">    <span class="attr">"placeholders"</span>: &#123;&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
-<p><code>flutter pub pub run intl_translation:generate_from_arb --output-dir=lib/i10n --no-use-deferred-loading lib/i10n/localization_intl.dart i10n-arb/intl_*.arb</code></p>
-<image src="https://ws4.sinaimg.cn/large/006tNc79gy1fzjunwho55j30gk0gejsl.jpg" width="300">
+<p><strong><code>flutter pub pub run intl_translation:generate_from_arb --output-dir=lib/i10n --no-use-deferred-loading lib/i10n/localization_intl.dart i10n-arb/intl_*.arb</code></strong></p>
+<image src="https://i.loli.net/2019/05/24/5ce80d83d464086681.jpg" width="300">
 
 
 <h1 id="感受"><a href="#感受" class="headerlink" title="感受"></a>感受</h1><p>经过学习实践官方的国际化方案后，我觉得相对还是有点复杂了。需要dart转arb，arb再转一次dart。对于没有开发过原生app的新手来说，也不是很直观的理解其中的逻辑。</p>
@@ -299,9 +299,9 @@
 &lt;li&gt;在lib目录下创建一个i10n的目录，该目录用于保存从arb文件生成的dart代码文件。&lt;/li&gt;
 &lt;li&gt;在i10n目录下面，创建一个localization_intl.dart 文件，用来实现Localizations和Delegate类&lt;/li&gt;
 &lt;li&gt;在localization_intl.dart 文件中添加需要国际化的属性&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;flutter packages pub run intl_translation:extract_to_arb --output-dir=i10n-arb lib/i10n/localization_intl.dart&lt;/code&gt; 通过这个intl_translation命令把项目中Intl API标识的属性和字符串生成arb文件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;flutter packages pub run intl_translation:extract_to_arb --output-dir=i10n-arb lib/i10n/localization_intl.dart&lt;/code&gt;&lt;/strong&gt; 通过这个intl_translation命令把项目中Intl API标识的属性和字符串生成arb文件&lt;/li&gt;
 &lt;li&gt;基于上面生成的arb文件，创建其它我们想支持的语言对应的arb文件&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;flutter packages pub run intl_translation:generate_from_arb --output-dir=lib/i10n --no-use-deferred-loading lib/i10n/localization_intl.dart i10n-arb/intl_*.arb&lt;/code&gt;  根据arb生成dart文件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;flutter packages pub run intl_translation:generate_from_arb --output-dir=lib/i10n --no-use-deferred-loading lib/i10n/localization_intl.dart i10n-arb/intl_*.arb&lt;/code&gt;&lt;/strong&gt;  根据arb生成dart文件&lt;/li&gt;
 &lt;/ol&gt;
     
     </summary>
@@ -1796,10 +1796,10 @@ Reboot to bootloader and flash the following:
     <link href="https://w4mxl.github.io/2015/12/23/make-a-nice-house/"/>
     <id>https://w4mxl.github.io/2015/12/23/make-a-nice-house/</id>
     <published>2015-12-23T02:36:00.000Z</published>
-    <updated>2019-03-16T12:22:26.528Z</updated>
+    <updated>2019-05-22T23:49:22.335Z</updated>
     
     <content type="html"><![CDATA[<p>房子坐落在昆山花桥，22楼的一个3室(主卧、次卧、书房)1厅1厨2卫的房子。<br>装修从今年9.16号正式开工。<br>前期的装修是半包出去的，所谓的半包是指水电工、木工、油漆工是请来的，但是他们用到的所有所需材料都是我们去家具城亲自买回来。<br>铺建水电路、卫生间瓷砖、吊顶、做橱柜、鞋柜等等这些前期工作大概花了一个月时间。<br>后期的装修主要是添置家具和软装。<br>好了，开启上图模式，末尾分享这次装修中的一些些经验。</p>
-<p>&lt;!—- more -—&gt;</p>
+<p>&lt;!— more —&gt;</p>
 <p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1eziz6t3tfmj21w01w0nmd.jpg" alt><br><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1ezj5pzy3epj22c0340x6p.jpg" alt><br><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eziz6vi7vpj22c03401ky.jpg" alt><br>▲ 客厅</p>
 <p><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1eziz6un3avj21w01w0ts5.jpg" alt><br><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1ezj5q5eb08j22c0340npd.jpg" alt><br>▲ 吧台</p>
 <p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1eziz6tw7qpj21w01w0qq4.jpg" alt><br><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1ezj5q84dw9j22c03407wi.jpg" alt><br>▲ 餐厅</p>
@@ -3861,6 +3861,27 @@ Reboot to bootloader and flash the following:
   </entry>
   
   <entry>
+    <title>Back to School</title>
+    <link href="https://w4mxl.github.io/2011/02/20/Back-to-School/"/>
+    <id>https://w4mxl.github.io/2011/02/20/Back-to-School/</id>
+    <published>2011-02-19T16:00:00.000Z</published>
+    <updated>2019-03-16T12:22:17.632Z</updated>
+    
+    <content type="html"><![CDATA[<p>　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的，快乐的长大。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>安慰</title>
     <link href="https://w4mxl.github.io/2011/02/20/%E5%AE%89%E6%85%B0/"/>
     <id>https://w4mxl.github.io/2011/02/20/安慰/</id>
@@ -3875,27 +3896,6 @@ Reboot to bootloader and flash the following:
     
       &lt;p&gt;电影总让我想起些我似乎忘了的东西！&lt;/p&gt;
 &lt;p&gt;明明钥匙在手上，却寻不到钥匙把门打开。看完《天若有情Ⅰ》，我就奇怪，那时吊儿郎当的我，现在怎么这么“乖”。在古惑仔横扫我整个初中那时，我们凡事只讲义气，只够买一根冰棒那分着吃，兄弟喜欢的女生不能有‘想法‘-_-#。那时候也是
-    
-    </summary>
-    
-      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Back to School</title>
-    <link href="https://w4mxl.github.io/2011/02/20/Back-to-School/"/>
-    <id>https://w4mxl.github.io/2011/02/20/Back-to-School/</id>
-    <published>2011-02-19T16:00:00.000Z</published>
-    <updated>2019-03-16T12:22:17.632Z</updated>
-    
-    <content type="html"><![CDATA[<p>　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的，快乐的长大。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的
     
     </summary>
     
