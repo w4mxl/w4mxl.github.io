@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://w4mxl.github.io/"/>
-  <updated>2019-07-03T11:06:43.047Z</updated>
+  <updated>2019-07-04T06:53:26.323Z</updated>
   <id>https://w4mxl.github.io/</id>
   
   <author>
@@ -16,11 +16,43 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Logitech’s Slim Folio Pro &amp; Apple’s Smart Keyboard Folio</title>
+    <link href="https://w4mxl.github.io/2019/07/03/about-Logitech%E2%80%99s-Slim-Folio-Pro-and-Apple%E2%80%99s-Smart-Keyboard-Folio/"/>
+    <id>https://w4mxl.github.io/2019/07/03/about-Logitech’s-Slim-Folio-Pro-and-Apple’s-Smart-Keyboard-Folio/</id>
+    <published>2019-07-03T13:40:00.000Z</published>
+    <updated>2019-07-04T06:53:26.323Z</updated>
+    
+    <content type="html"><![CDATA[<p>我发现 <a href="https://www.apple.com/cn/shop/product/HMU92CH/A?fnode=9a" target="_blank" rel="noopener">Slim folio pro</a> 和 apple 官方的 <a href="https://www.apple.com/cn/shop/product/MU8G2TA/A?fnode=9a" target="_blank" rel="noopener">Smart keyboard folio</a> 两者在产品定位上的一点矛盾，我感觉他们俩都有点过犹不及。也可能是我理解不到位，如果是的话请不吝赐教。</p>
+<p><img src="/image/logitechkeyboardapplekeyboard-800x600.jpg" alt="logitechkeyboardapplekeyboard-800x600"></p>
+<p>罗技家的主打键盘手感佳，对 iPad 保护出色，按理说应该是 EDC 的，放心大胆的带出去用，反正也不怕摔。可是它厚又重，你轻易不会考虑带出门；而官方的对iPad几乎没有任何保护性，摔了去修，常人是要肉疼的，所以少带着移动才更安全。可它是亲儿子，通过磁性触点和iPad连接的（Slim folio pro 是通过蓝牙连接iPad的），迅速方便还省电，又很轻薄，不随身携带岂不可惜。</p>
+<p><img src="/image/logitechkeyboardsideview-800x337.jpg" alt="logitechkeyboardsideview-800x337"></p>
+<p>我这样描述，不了解这两个产品的人可能还是不够直观。打个不算恰当的比方吧，Slim folio pro 是一个肥仔，Smart keyboard folio 是一位窈窕淑女。肥仔如果出门是可以横冲直撞都不怕的，但是他因懒喜欢宅在家里追番剧看漫画；而淑女弱不禁风又不会武功，在家里做网红会比较安全，但是她身材好样貌佳，忍不住总往外面跑，还挺危险的。</p>
+<hr>
+<p>6月初的时候，我开始考虑为我的 iPad 挑选一个带键盘的保护壳，按照我的喜好和需求看中了Slim folio pro，但是国行没有和国际版一起在4月发布后即上市。我一直关注着国行啥时候能买到，也差点就没忍住在美亚直接海淘一个。等到6月中旬，终于在刷 Apple Store 的时候看到 Slim folio pro 上架在售了，第二天我就去南京东路的门店买回来。</p>
+<p><strong>备注：</strong></p>
+<ul>
+<li>文中图片来自网络</li>
+<li>文中提及的 “<strong>iPad</strong>”这里都是指的 iPad Pro 2018 款，我自己目前在用的是11寸的版本。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我发现 &lt;a href=&quot;https://www.apple.com/cn/shop/product/HMU92CH/A?fnode=9a&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Slim folio pro&lt;/a&gt; 和 apple 官方的 &lt;a h
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>6月跑起来</title>
     <link href="https://w4mxl.github.io/2019/07/01/run-june/"/>
     <id>https://w4mxl.github.io/2019/07/01/run-june/</id>
     <published>2019-07-01T15:57:39.000Z</published>
-    <updated>2019-07-03T11:06:43.047Z</updated>
+    <updated>2019-07-04T06:56:07.740Z</updated>
     
     <content type="html"><![CDATA[<p>6月，在读两本书。通勤路上是《最璀璨的银河：刘慈欣经典作品集》，在家里读《当我谈跑步时，我在谈些什么》纸质书。一边是 “在一个不可知的宇宙里，我的心脏懒得跳动了”，另一边是村上长期的不间断的奔跑，挑战更强。 所以，这段时间我常会交叉出现虚幻和真实的奇妙感觉。</p>
 <p>月底我用 Numbers 尝试把6月份的跑步记录做了下表格。制作步骤是：</p>
@@ -30,7 +62,8 @@
 <li>在模版文档的基础上，替换成自己的数据，再按我的想法修改列、数据的格式、公式</li>
 </ol>
 <p><a href="https://i.loli.net/2019/07/03/5d1c8b817418c89638.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2019/07/03/5d1c8b817418c89638.png" alt="2019年6月跑步记录.png"></a></p>
-<p>同时也把上半年的跑步数据做了汇总到一个表格中（数据在iPhone中的Activity-Workouts中有），这样会比较直观看到自己的整体跑步情况。6月跑量相对多了挺多，到达了180km，看来是有被村上的文字和态度激励到。我决定7月份要把跑量刷到200km+。</p>
+<p>同时也把上半年的跑步数据做了汇总到一个表格中（数据在iPhone中的Activity-Workouts中有），这样会比较直观看到自己的整体跑步情况。6月跑量相对多了挺多，到达了180km，看来是有被村上的文字和态度激励到。</p>
+<p><strong>我决定7月份要把跑量刷到200km+。</strong></p>
 <p><a href="https://i.loli.net/2019/07/03/5d1c8b7fb7aeb81969.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2019/07/03/5d1c8b7fb7aeb81969.png" alt="2019上半年跑步记录汇总.png"></a></p>
 <p>毕业工作头几年，断断续续的想起来就跑一跑，平均速度在6分钟/公里左右，相对比较随意的那种。从今年开始才算比较有意识的做跑步练习，跑量上慢慢增加起来。不记得是什么时候了，我曾经在Kindle上读过村上春树的《当我谈跑步时，我在谈些什么》，但是没足够兴趣把它读完。现在这个时间段再读它，我觉得时机正合适，而且津津有味。村上在书里提及的跑步感受以及跑步带给他的种种变化，我理解起来会有感同身受。另外一本读过的和跑步有关的书是《强风吹拂》，这本书是我去年从多抓鱼上二手买来的，18年8月读完，那段时间我对箱根驿传兴趣颇大，找了很多相关资料了解，还看了一些往年的比赛视频。日本在田径舞台上始终保持世界级水平真的是有历史传承的原因的，他们的跑步文化和跑步氛围激烈着一代代人不停在跑步上拼搏，追求更强。</p>
 <p>最后贴一些跑步或徒步过程中拍到的照片。</p>
@@ -2412,16 +2445,16 @@ Reboot to bootloader and flash the following:
     <link href="https://w4mxl.github.io/2015/06/18/%E3%80%8CReplace%E3%80%8D-by-Zee-Young/"/>
     <id>https://w4mxl.github.io/2015/06/18/「Replace」-by-Zee-Young/</id>
     <published>2015-06-18T03:18:00.000Z</published>
-    <updated>2019-03-16T12:22:17.495Z</updated>
+    <updated>2019-07-04T07:32:30.870Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://d13yacurqjgara.cloudfront.net/users/384313/screenshots/2067564/replace.gif" alt></p>
+    <content type="html"><![CDATA[<p><img src="/image/replace.gif" alt="replace"></p>
 <p> <a href="https://dribbble.com/shots/2067564-Replace?list=users&amp;offset=0" target="_blank" rel="noopener">「Replace」</a> BY <a href="https://dribbble.com/zeeyoung" target="_blank" rel="noopener">@Zee Young</a>  </p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://d13yacurqjgara.cloudfront.net/users/384313/screenshots/2067564/replace.gif&quot; alt&gt;&lt;/p&gt;
-&lt;p&gt; &lt;a href=&quot;https://dribbble.com/
+      &lt;p&gt;&lt;img src=&quot;/image/replace.gif&quot; alt=&quot;replace&quot;&gt;&lt;/p&gt;
+&lt;p&gt; &lt;a href=&quot;https://dribbble.com/shots/2067564-Replace?list=users&amp;amp;offset=0&quot; target=
     
     </summary>
     
@@ -2726,6 +2759,29 @@ Reboot to bootloader and flash the following:
   </entry>
   
   <entry>
+    <title>希腊爱情海上的圣托里尼岛</title>
+    <link href="https://w4mxl.github.io/2015/04/19/Life&#39;s/%E5%B8%8C%E8%85%8A%E7%88%B1%E6%83%85%E6%B5%B7%E4%B8%8A%E7%9A%84%E5%9C%A3%E6%89%98%E9%87%8C%E5%B0%BC%E5%B2%9B/"/>
+    <id>https://w4mxl.github.io/2015/04/19/Life&#39;s/希腊爱情海上的圣托里尼岛/</id>
+    <published>2015-04-19T15:21:00.000Z</published>
+    <updated>2019-07-04T07:14:05.980Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/image/6139411112794580032.jpg" alt="6139411112794580032"></p>
+<p><img src="/image/6139411185809024073.jpg" alt="6139411185809024073"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/image/6139411112794580032.jpg&quot; alt=&quot;6139411112794580032&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/image/6139411185809024073.jpg&quot; alt=&quot;61394111858090
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Android Studio 使用技巧(updating...)</title>
     <link href="https://w4mxl.github.io/2015/04/17/tips-of-Android-Studio/"/>
     <id>https://w4mxl.github.io/2015/04/17/tips-of-Android-Studio/</id>
@@ -2778,11 +2834,83 @@ Reboot to bootloader and flash the following:
   </entry>
   
   <entry>
-    <title></title>
+    <title>插花</title>
+    <link href="https://w4mxl.github.io/2015/04/11/Life&#39;s/%E6%8F%92%E8%8A%B1/"/>
+    <id>https://w4mxl.github.io/2015/04/11/Life&#39;s/插花/</id>
+    <published>2015-04-10T16:00:00.000Z</published>
+    <updated>2019-07-04T07:18:53.698Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/image/6136273793803430920.jpg" alt="6136273793803430920"></p>
+<p>周末早上，隔壁邻居门前的插花</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/image/6136273793803430920.jpg&quot; alt=&quot;6136273793803430920&quot;&gt;&lt;/p&gt;
+&lt;p&gt;周末早上，隔壁邻居门前的插花&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>伞</title>
+    <link href="https://w4mxl.github.io/2015/04/08/Life&#39;s/%E4%BC%9E/"/>
+    <id>https://w4mxl.github.io/2015/04/08/Life&#39;s/伞/</id>
+    <published>2015-04-08T04:00:00.000Z</published>
+    <updated>2019-07-04T07:12:46.008Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/image/6135212180967002754.jpg" alt="6135212180967002754"></p>
+<p>昨晚冒雨骑车回住所，晚上在 JD 买了这把天堂伞…</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/image/6135212180967002754.jpg&quot; alt=&quot;6135212180967002754&quot;&gt;&lt;/p&gt;
+&lt;p&gt;昨晚冒雨骑车回住所，晚上在 JD 买了这把天堂伞…&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>游同里</title>
+    <link href="https://w4mxl.github.io/2015/04/07/Life&#39;s/%E6%B8%B8%E5%90%8C%E9%87%8C/"/>
+    <id>https://w4mxl.github.io/2015/04/07/Life&#39;s/游同里/</id>
+    <published>2015-04-07T08:01:41.000Z</published>
+    <updated>2019-07-04T07:23:19.437Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/image/6134904223221926518.jpg" alt="6134904223221926518"></p>
+<p>那谁谁 : )<br>拍摄于同里-猫空书店</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/image/6134904223221926518.jpg&quot; alt=&quot;6134904223221926518&quot;&gt;&lt;/p&gt;
+&lt;p&gt;那谁谁 : )&lt;br&gt;拍摄于同里-猫空书店&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>黄金时代 (2014年电影)</title>
     <link href="https://w4mxl.github.io/2015/03/05/Life&#39;s/%E9%BB%84%E9%87%91%E6%97%B6%E4%BB%A3%20(2014%E5%B9%B4%E7%94%B5%E5%BD%B1)/"/>
     <id>https://w4mxl.github.io/2015/03/05/Life&#39;s/黄金时代 (2014年电影)/</id>
     <published>2015-03-05T04:10:00.000Z</published>
-    <updated>2019-03-16T12:22:17.614Z</updated>
+    <updated>2019-07-04T07:32:30.878Z</updated>
     
     <content type="html"><![CDATA[<p>在大多数人、媒体、网络已经不在疯狂谈论许鞍华《黄金时代》这部电影的时候，在这样一个环境和心境都不算安静的早晨，我独坐在房间内开始观看起这部电影来… </p>
 <p>二萧在贫困日子里饱食一顿后，走在街上。萧红说鞋带断了，萧军走回来蹲下身，用捡来的碎玻璃片割下一长段自己的鞋带，认真的给萧红系上。</p>
@@ -3614,7 +3742,7 @@ Reboot to bootloader and flash the following:
     <link href="https://w4mxl.github.io/2013/03/22/Life&#39;s/%E5%86%99%E7%BB%99xx%E7%9A%84%E4%B8%80%E5%B0%81%E4%BF%A1/"/>
     <id>https://w4mxl.github.io/2013/03/22/Life&#39;s/写给xx的一封信/</id>
     <published>2013-03-22T09:52:00.000Z</published>
-    <updated>2019-03-16T12:22:17.588Z</updated>
+    <updated>2019-07-04T03:26:54.701Z</updated>
     
     <content type="html"><![CDATA[<p>xx，你好。</p>
 <p>　　想起以这种方式跟你说点什么时，我马上就不能安心敲代码了。心里开始码字，手也移开键盘迅速打开了手机上的便签。</p>
@@ -3679,11 +3807,11 @@ Reboot to bootloader and flash the following:
   </entry>
   
   <entry>
-    <title></title>
+    <title>你好，别来无恙</title>
     <link href="https://w4mxl.github.io/2013/02/21/Life&#39;s/%E4%BD%A0%E5%A5%BD%EF%BC%8C%E5%88%AB%E6%9D%A5%E6%97%A0%E6%81%99/"/>
     <id>https://w4mxl.github.io/2013/02/21/Life&#39;s/你好，别来无恙/</id>
     <published>2013-02-20T17:10:00.000Z</published>
-    <updated>2019-03-16T12:22:17.531Z</updated>
+    <updated>2019-07-04T07:35:58.640Z</updated>
     
     <content type="html"><![CDATA[<p>两首歌，近日一直听，<br>还是想听。<br>一首自勉；一首期望。<br>想说：<br>你好，别来无恙。</p>
 <embed src="http://www.xiami.com/widget/557147_385438/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent">
@@ -3715,11 +3843,11 @@ Reboot to bootloader and flash the following:
   </entry>
   
   <entry>
-    <title></title>
+    <title>回首2012</title>
     <link href="https://w4mxl.github.io/2013/02/05/Life&#39;s/%E5%9B%9E%E9%A6%962012/"/>
     <id>https://w4mxl.github.io/2013/02/05/Life&#39;s/回首2012/</id>
     <published>2013-02-05T06:23:00.000Z</published>
-    <updated>2019-03-16T12:22:17.535Z</updated>
+    <updated>2019-07-04T07:35:58.634Z</updated>
     
     <content type="html"><![CDATA[<p>　　回首，纯粹是我个人对过往不舍的絮叨。</p>
 <p>　　上次写回首还是08年，刹那间，四年光阴就这么悄然溜走了。这让我想起了今年夏天大家一起忙活毕业设计论文时，有段话被N多人用过，是这样说的，“岁月荏苒，光阴如梭。四年的大学生活让我学到很多很多…”。 - , -  。四年，还挺漫长的时间，我就琢磨，到底都用这些时光做了什么？（好像要从“回首2012”变成“回首过去的四年”了 =_,= ）</p>
@@ -3924,6 +4052,27 @@ Reboot to bootloader and flash the following:
   </entry>
   
   <entry>
+    <title>Back to School</title>
+    <link href="https://w4mxl.github.io/2011/02/20/Back-to-School/"/>
+    <id>https://w4mxl.github.io/2011/02/20/Back-to-School/</id>
+    <published>2011-02-19T16:00:00.000Z</published>
+    <updated>2019-03-16T12:22:17.632Z</updated>
+    
+    <content type="html"><![CDATA[<p>　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的，快乐的长大。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>安慰</title>
     <link href="https://w4mxl.github.io/2011/02/20/%E5%AE%89%E6%85%B0/"/>
     <id>https://w4mxl.github.io/2011/02/20/安慰/</id>
@@ -3938,27 +4087,6 @@ Reboot to bootloader and flash the following:
     
       &lt;p&gt;电影总让我想起些我似乎忘了的东西！&lt;/p&gt;
 &lt;p&gt;明明钥匙在手上，却寻不到钥匙把门打开。看完《天若有情Ⅰ》，我就奇怪，那时吊儿郎当的我，现在怎么这么“乖”。在古惑仔横扫我整个初中那时，我们凡事只讲义气，只够买一根冰棒那分着吃，兄弟喜欢的女生不能有‘想法‘-_-#。那时候也是
-    
-    </summary>
-    
-      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Back to School</title>
-    <link href="https://w4mxl.github.io/2011/02/20/Back-to-School/"/>
-    <id>https://w4mxl.github.io/2011/02/20/Back-to-School/</id>
-    <published>2011-02-19T16:00:00.000Z</published>
-    <updated>2019-03-16T12:22:17.632Z</updated>
-    
-    <content type="html"><![CDATA[<p>　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的，快乐的长大。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的
     
     </summary>
     
