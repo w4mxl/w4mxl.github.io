@@ -11,9 +11,9 @@ permalink: flutter-Intl-Localizations
 2. 在lib目录下创建一个i10n的目录，该目录用于保存从arb文件生成的dart代码文件。
 3. 在i10n目录下面，创建一个localization_intl.dart 文件，用来实现Localizations和Delegate类
 4. 在localization_intl.dart 文件中添加需要国际化的属性
-5. `flutter packages pub run intl_translation:extract_to_arb --output-dir=i10n-arb lib/i10n/localization_intl.dart` 通过这个intl_translation命令把项目中Intl API标识的属性和字符串生成arb文件
+5. **`flutter packages pub run intl_translation:extract_to_arb --output-dir=i10n-arb lib/i10n/localization_intl.dart`** 通过这个intl_translation命令把项目中Intl API标识的属性和字符串生成arb文件
 6. 基于上面生成的arb文件，创建其它我们想支持的语言对应的arb文件
-7. `flutter packages pub run intl_translation:generate_from_arb --output-dir=lib/i10n --no-use-deferred-loading lib/i10n/localization_intl.dart i10n-arb/intl_*.arb`  根据arb生成dart文件
+7. **`flutter packages pub run intl_translation:generate_from_arb --output-dir=lib/i10n --no-use-deferred-loading lib/i10n/localization_intl.dart i10n-arb/intl_*.arb`**  根据arb生成dart文件
 
 <!-- more -->
 
@@ -21,9 +21,9 @@ permalink: flutter-Intl-Localizations
 
 官方的教程中第五步和第七步有用到两个命令：
 
-`flutter packages pub run intl_translation:extract_to_arb --output-dir=i10n-arb lib/i10n/localization_intl.dart`
+**`flutter packages pub run intl_translation:extract_to_arb --output-dir=i10n-arb lib/i10n/localization_intl.dart`**
 
-<image src="https://ws3.sinaimg.cn/large/006tNc79gy1fzjtjsxczgj30rw05w3ys.jpg" width="200"/>
+<image src="https://i.loli.net/2019/05/24/5ce80d83bf01468384.jpg" width="200"/>
 
 ``` json
 {
@@ -39,7 +39,7 @@ permalink: flutter-Intl-Localizations
 
 这个是生成的默认的Locale资源文件，如果我们现在要支持中文简体，只需要在该文件同级目录创建一个"intl_zh_Hans.arb"文件。
 
-<image src="https://ws2.sinaimg.cn/large/006tNc79gy1fzjukxbm55j30pg08gjrv.jpg" width="200"/>
+<image src="https://i.loli.net/2019/05/24/5ce80d83c5b4b31093.jpg" width="200"/>
 
 然后将"intl_messages.arb"的内容拷贝到"intl_zh_Hans.arb"文件，接下来将英文翻译为中文即可，翻译后的"intl_zh_Hans.arb"文件内容如下：
 
@@ -58,9 +58,9 @@ permalink: flutter-Intl-Localizations
 
 -------
 
-`flutter pub pub run intl_translation:generate_from_arb --output-dir=lib/i10n --no-use-deferred-loading lib/i10n/localization_intl.dart i10n-arb/intl_*.arb`
+**`flutter pub pub run intl_translation:generate_from_arb --output-dir=lib/i10n --no-use-deferred-loading lib/i10n/localization_intl.dart i10n-arb/intl_*.arb`**
 
-<image src="https://ws4.sinaimg.cn/large/006tNc79gy1fzjunwho55j30gk0gejsl.jpg" width="300" />
+<image src="https://i.loli.net/2019/05/24/5ce80d83d464086681.jpg" width="300" />
 
 
 # 感受

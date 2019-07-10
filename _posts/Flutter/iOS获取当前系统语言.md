@@ -33,7 +33,7 @@ permalink: ios-system-language
 # 系统设置 & 打印信息 (模拟器和真机情况一致)
 
 
-<image src="https://ws2.sinaimg.cn/large/006tNc79gy1fzivcjdcaqj30n01ds42e.jpg" width="300" /> 
+<image src="https://i.loli.net/2019/05/29/5cee9f4c97e2c52584.jpg" width="300" /> 
 
 ```
 2019-01-25 15:20:35.580212+0800 TestLanguage[22878:188985] en_JP
@@ -61,7 +61,7 @@ permalink: ios-system-language
 
 -------
 
-<image src="https://ws3.sinaimg.cn/large/006tNc79gy1fzivqut9zsj30n01dsadz.jpg" width="300"/>
+<image src="https://i.loli.net/2019/05/29/5cee9f4c74b9835473.jpg" width="300"/>
 ```
 2019-01-25 15:44:23.640336+0800 TestLanguage[30886:254351] en_CN
 2019-01-25 15:44:23.640494+0800 TestLanguage[30886:254351] 英文（中國）

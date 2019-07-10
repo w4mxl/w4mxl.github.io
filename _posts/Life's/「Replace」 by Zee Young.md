@@ -5,7 +5,7 @@ categories: Life's
 permalink: 「Replace」-by-Zee-Young
 ---
 
+![replace](/image/replace.gif)
 
-![](https://d13yacurqjgara.cloudfront.net/users/384313/screenshots/2067564/replace.gif)
  
  [「Replace」](https://dribbble.com/shots/2067564-Replace?list=users&offset=0) BY [@Zee Young](https://dribbble.com/zeeyoung)  

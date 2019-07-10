@@ -1,0 +1,9 @@
+{
+  "name" : "MyBlog",
+  "fileExtension" : ".md",
+  "autoUploadInsertedImage" : false,
+  "folderType" : 11,
+  "mediaFloder" : "image",
+  "orderBy" : 0,
+  "newlinesToBR" : 0
+}
