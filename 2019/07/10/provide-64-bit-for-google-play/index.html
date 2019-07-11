@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Google play 推进 64位应用 从今年1月份开始，Google 就陆续通过邮件等方式发通知，鼓励 Android 开发者尽快将已经上传到 Google play 的 app 对 64 位做兼容处理。并告知开发者，在今年 8 月 1 日开始，将强制要求新上架的 App 或老应用更新，除了提供 32 位的版本之外，还必须要提供 64 位的版本。  今年 5 月份，我上传了一款用 Flutte">
+<meta property="og:type" content="article">
+<meta property="og:title" content="App 需支持 64 位以满足 Google play 强制要求">
+<meta property="og:url" content="https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/index.html">
+<meta property="og:site_name" content="Wml&#39;Blog">
+<meta property="og:description" content="Google play 推进 64位应用 从今年1月份开始，Google 就陆续通过邮件等方式发通知，鼓励 Android 开发者尽快将已经上传到 Google play 的 app 对 64 位做兼容处理。并告知开发者，在今年 8 月 1 日开始，将强制要求新上架的 App 或老应用更新，除了提供 32 位的版本之外，还必须要提供 64 位的版本。  今年 5 月份，我上传了一款用 Flutte">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://w4mxl.github.io/image/111562745745_.pic.jpg">
+<meta property="og:image" content="https://w4mxl.github.io/image/141562750828_.pic.jpg">
+<meta property="og:image" content="https://w4mxl.github.io/image/121562749707_.pic.jpg">
+<meta property="og:image" content="https://w4mxl.github.io/image/flutter1.7.png">
+<meta property="og:image" content="https://w4mxl.github.io/image/151562812574_.pic_hd.jpg">
+<meta property="og:image" content="https://w4mxl.github.io/image/131562749760_.pic.jpg">
+<meta property="og:updated_time" content="2019-07-11T06:39:40.901Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="App 需支持 64 位以满足 Google play 强制要求">
+<meta name="twitter:description" content="Google play 推进 64位应用 从今年1月份开始，Google 就陆续通过邮件等方式发通知，鼓励 Android 开发者尽快将已经上传到 Google play 的 app 对 64 位做兼容处理。并告知开发者，在今年 8 月 1 日开始，将强制要求新上架的 App 或老应用更新，除了提供 32 位的版本之外，还必须要提供 64 位的版本。  今年 5 月份，我上传了一款用 Flutte">
+<meta name="twitter:image" content="https://w4mxl.github.io/image/111562745745_.pic.jpg">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>App 需支持 64 位以满足 Google play 强制要求</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+</head>
+
+<body class="max-width mx-auto px3 ltr">    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+         
+          <li><a href="http://github.com/w4mxl">项目</a></li>
+         
+          <li><a href="/search/">搜索</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/2019/07/03/about-Logitech’s-Slim-Folio-Pro-and-Apple’s-Smart-Keyboard-Folio/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">上一篇</span>
+      <span id="i-next" class="info" style="display:none;">下一篇</span>
+      <span id="i-top" class="info" style="display:none;">返回顶部</span>
+      <span id="i-share" class="info" style="display:none;">分享文章</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/&text=App 需支持 64 位以满足 Google play 强制要求"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/&title=App 需支持 64 位以满足 Google play 强制要求"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/&is_video=false&description=App 需支持 64 位以满足 Google play 强制要求"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=App 需支持 64 位以满足 Google play 强制要求&body=Check out this article: https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/&title=App 需支持 64 位以满足 Google play 强制要求"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/&title=App 需支持 64 位以满足 Google play 强制要求"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/&title=App 需支持 64 位以满足 Google play 强制要求"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/&title=App 需支持 64 位以满足 Google play 强制要求"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/&name=App 需支持 64 位以满足 Google play 强制要求&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Google-play-推进-64位应用"><span class="toc-number">1.</span> <span class="toc-text">Google play 推进 64位应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Flutter-stable-1-7-支持了-Android-app-bundles-和-64-bit-Android-apps"><span class="toc-number">2.</span> <span class="toc-text">Flutter stable 1.7 支持了 Android app bundles 和 64-bit Android apps</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#相关链接"><span class="toc-number">3.</span> <span class="toc-text">相关链接</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        App 需支持 64 位以满足 Google play 强制要求
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Wml'Blog</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2019-07-10T08:59:50.000Z" itemprop="datePublished">2019-07-10</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/Flutter/">Flutter</a>
+    </div>
+
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h2 id="Google-play-推进-64位应用"><a href="#Google-play-推进-64位应用" class="headerlink" title="Google play 推进 64位应用"></a>Google play 推进 64位应用</h2><p><img src="/image/111562745745_.pic.jpg" alt="111562745745_.pi"></p>
+<p>从今年1月份开始，Google 就陆续通过邮件等方式发通知，鼓励 Android 开发者尽快将已经上传到 Google play 的 app 对 64 位做兼容处理。并告知开发者，在今年 8 月 1 日开始，将强制要求新上架的 App 或老应用更新，除了提供 32 位的版本之外，还必须要提供 64 位的版本。</p>
+<p><img src="/image/141562750828_.pic.jpg" alt="141562750828_.pi"></p>
+<p>今年 5 月份，我上传了一款用 Flutter 开发的 App（<strong><a href="https://play.google.com/store/apps/details?id=io.github.w4mxl.v2lf" target="_blank" rel="noopener">V2LF</a></strong>）到Google play 上，那时候打包出来的 APK 大小是 9.1 MB，默认只有 armeabi-v7a 一种 CPU 架构。后来陆续有收到通知邮件，提示我再提供一个 64 位的版本。</p>
+<p><img src="/image/121562749707_.pic.jpg" alt="121562749707_.pi"></p>
+<h2 id="Flutter-stable-1-7-支持了-Android-app-bundles-和-64-bit-Android-apps"><a href="#Flutter-stable-1-7-支持了-Android-app-bundles-和-64-bit-Android-apps" class="headerlink" title="Flutter stable 1.7 支持了 Android app bundles 和 64-bit Android apps"></a>Flutter stable 1.7 支持了 Android app bundles 和 64-bit Android apps</h2><p>今天上午看到 Flutter 官方在 medium 上新发布的一篇文章：<a href="https://medium.com/flutter/announcing-flutter-1-7-9cab4f34eacf" target="_blank" rel="noopener">Announcing Flutter 1.7</a>。</p>
+<p><img src="/image/flutter1.7.png" alt="flutter1.7"></p>
+<p>文章在 “Support for Android app bundles and 64-bit Android apps” 一节中也有提到关于 8 月 1 号 Google play 的强制包含 64 位版本的要求，并说这次发布的 Flutter 1.7 的 SDK， Android App Bundles 也已经支持单独创建 32 位和 64 位的包了。</p>
+<p>如果还是使用原先的命令 <code>flutter build apk</code> 来打包 APK，Android studio 会给出下面的提示，告知这种方式会将 android-arm 和 android-arm64 两种CPU架构都打包到一个apk中，app打包出来的apk会是一个 <strong>“fat APK”</strong>。<br><img src="/image/151562812574_.pic_hd.jpg" alt="151562812574_.pic_hd"></p>
+<p><img src="/image/131562749760_.pic.jpg" alt="131562749760_.pi"></p>
+<p>也会给出提示告知，如果打包是为了上传到 Google play 上的，建议使用 app bundles 的方式或者对不同架构 CPU 分别打包。提示原文如下：</p>
+<p>To generate an app bundle, run:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter build appbundle --target-platform android-arm,android-arm64</span><br></pre></td></tr></table></figure>
+<p>Learn more on: <a href="https://developer.android.com/guide/app-bundle" target="_blank" rel="noopener">https://developer.android.com/guide/app-bundle</a></p>
+<p>To split the APKs per ABI, run:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter build apk --target-platform android-arm,android-arm64 --split-per-abi</span><br></pre></td></tr></table></figure>
+<p><a href="https://developer.android.com/studio/build/configure-apk-splits#configure-abi-split" target="_blank" rel="noopener">https://developer.android.com/studio/build/configure-apk-splits#configure-abi-split</a></p>
+<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><ul>
+<li><a href="https://github.com/flutter/flutter/issues/31922#issuecomment-490185953" target="_blank" rel="noopener">https://github.com/flutter/flutter/issues/31922#issuecomment-490185953</a></li>
+<li><a href="https://github.com/flutter/flutter/issues/18494#issuecomment-489807239" target="_blank" rel="noopener">https://github.com/flutter/flutter/issues/18494#issuecomment-489807239</a></li>
+<li><a href="https://juejin.im/post/5c467c28e51d455243768284" target="_blank" rel="noopener">让您的应用做好准备，以符合 64 位要求</a></li>
+<li><a href="https://juejin.im/post/5cff1843e51d4510774a8844" target="_blank" rel="noopener">8月不支持 64 位，App 将无法上架 Google Play！需要怎么做？</a></li>
+</ul>
+
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>加载评论需要在浏览器启用 JavaScript 脚本支持。</noscript>
+        </div>
+    </div>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+         
+          <li><a href="http://github.com/w4mxl">项目</a></li>
+         
+          <li><a href="/search/">搜索</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Google-play-推进-64位应用"><span class="toc-number">1.</span> <span class="toc-text">Google play 推进 64位应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Flutter-stable-1-7-支持了-Android-app-bundles-和-64-bit-Android-apps"><span class="toc-number">2.</span> <span class="toc-text">Flutter stable 1.7 支持了 Android app bundles 和 64-bit Android apps</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#相关链接"><span class="toc-number">3.</span> <span class="toc-text">相关链接</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/&text=App 需支持 64 位以满足 Google play 强制要求"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/&title=App 需支持 64 位以满足 Google play 强制要求"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/&is_video=false&description=App 需支持 64 位以满足 Google play 强制要求"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=App 需支持 64 位以满足 Google play 强制要求&body=Check out this article: https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/&title=App 需支持 64 位以满足 Google play 强制要求"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/&title=App 需支持 64 位以满足 Google play 强制要求"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/&title=App 需支持 64 位以满足 Google play 强制要求"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/&title=App 需支持 64 位以满足 Google play 强制要求"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/&name=App 需支持 64 位以满足 Google play 强制要求&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> 目录</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2019 Wml
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+         
+          <li><a href="http://github.com/w4mxl">项目</a></li>
+         
+          <li><a href="/search/">搜索</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'w4mxl';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+
+</body>
+</html>

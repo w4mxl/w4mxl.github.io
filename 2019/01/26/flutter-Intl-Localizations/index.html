@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="Wml&#39;Blog">
 <meta property="og:description" content="步骤 在项目根目录下创建一个i10n-arb目录，该目录用于保存arb文件 在lib目录下创建一个i10n的目录，该目录用于保存从arb文件生成的dart代码文件。 在i10n目录下面，创建一个localization_intl.dart 文件，用来实现Localizations和Delegate类 在localization_intl.dart 文件中添加需要国际化的属性 flutter pac">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-24T15:30:27.067Z">
+<meta property="og:updated_time" content="2019-07-11T06:15:39.162Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Intl包让Flutter app支持多语言">
 <meta name="twitter:description" content="步骤 在项目根目录下创建一个i10n-arb目录，该目录用于保存arb文件 在lib目录下创建一个i10n的目录，该目录用于保存从arb文件生成的dart代码文件。 在i10n目录下面，创建一个localization_intl.dart 文件，用来实现Localizations和Delegate类 在localization_intl.dart 文件中添加需要国际化的属性 flutter pac">
@@ -98,20 +98,12 @@
   <li><a class="icon" href="http://reddit.com/submit?url=https://w4mxl.github.io/2019/01/26/flutter-Intl-Localizations/&title=使用Intl包让Flutter app支持多语言"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
   <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://w4mxl.github.io/2019/01/26/flutter-Intl-Localizations/&title=使用Intl包让Flutter app支持多语言"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
   <li><a class="icon" href="http://digg.com/submit?url=https://w4mxl.github.io/2019/01/26/flutter-Intl-Localizations/&title=使用Intl包让Flutter app支持多语言"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://w4mxl.github.io/2019/01/26/flutter-Intl-Localizations/&name=使用Intl包让Flutter app支持多语言&description=&lt;h1 id=&quot;步骤&quot;&gt;&lt;a href=&quot;#步骤&quot; class=&quot;headerlink&quot; title=&quot;步骤&quot;&gt;&lt;/a&gt;步骤&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;在项目根目录下创建一个i10n-arb目录，该目录用于保存arb文件&lt;/li&gt;
-&lt;li&gt;在lib目录下创建一个i10n的目录，该目录用于保存从arb文件生成的dart代码文件。&lt;/li&gt;
-&lt;li&gt;在i10n目录下面，创建一个localization_intl.dart 文件，用来实现Localizations和Delegate类&lt;/li&gt;
-&lt;li&gt;在localization_intl.dart 文件中添加需要国际化的属性&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;flutter packages pub run intl_translation:extract_to_arb --output-dir=i10n-arb lib/i10n/localization_intl.dart&lt;/code&gt;&lt;/strong&gt; 通过这个intl_translation命令把项目中Intl API标识的属性和字符串生成arb文件&lt;/li&gt;
-&lt;li&gt;基于上面生成的arb文件，创建其它我们想支持的语言对应的arb文件&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;flutter packages pub run intl_translation:generate_from_arb --output-dir=lib/i10n --no-use-deferred-loading lib/i10n/localization_intl.dart i10n-arb/intl_*.arb&lt;/code&gt;&lt;/strong&gt;  根据arb生成dart文件&lt;/li&gt;
-&lt;/ol&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://w4mxl.github.io/2019/01/26/flutter-Intl-Localizations/&name=使用Intl包让Flutter app支持多语言&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#步骤"><span class="toc-number">1.</span> <span class="toc-text">步骤</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#说明"><span class="toc-number">2.</span> <span class="toc-text">说明</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#感受"><span class="toc-number">3.</span> <span class="toc-text">感受</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#参考链接"><span class="toc-number">4.</span> <span class="toc-text">参考链接</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#步骤"><span class="toc-number">1.</span> <span class="toc-text">步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#说明"><span class="toc-number">2.</span> <span class="toc-text">说明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#感受"><span class="toc-number">3.</span> <span class="toc-text">感受</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考链接"><span class="toc-number">4.</span> <span class="toc-text">参考链接</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -155,7 +147,7 @@
   
 
   <div class="content" itemprop="articleBody">
-    <h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><ol>
+    <h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
 <li>在项目根目录下创建一个i10n-arb目录，该目录用于保存arb文件</li>
 <li>在lib目录下创建一个i10n的目录，该目录用于保存从arb文件生成的dart代码文件。</li>
 <li>在i10n目录下面，创建一个localization_intl.dart 文件，用来实现Localizations和Delegate类</li>
@@ -164,8 +156,7 @@
 <li>基于上面生成的arb文件，创建其它我们想支持的语言对应的arb文件</li>
 <li><strong><code>flutter packages pub run intl_translation:generate_from_arb --output-dir=lib/i10n --no-use-deferred-loading lib/i10n/localization_intl.dart i10n-arb/intl_*.arb</code></strong>  根据arb生成dart文件</li>
 </ol>
-<a id="more"></a>
-<h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p>官方的教程中第五步和第七步有用到两个命令：</p>
+<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>官方的教程中第五步和第七步有用到两个命令：</p>
 <p><strong><code>flutter packages pub run intl_translation:extract_to_arb --output-dir=i10n-arb lib/i10n/localization_intl.dart</code></strong></p>
 <image src="https://i.loli.net/2019/05/24/5ce80d83bf01468384.jpg" width="200">
 
@@ -180,7 +171,7 @@
 <image src="https://i.loli.net/2019/05/24/5ce80d83d464086681.jpg" width="300">
 
 
-<h1 id="感受"><a href="#感受" class="headerlink" title="感受"></a>感受</h1><p>经过学习实践官方的国际化方案后，我觉得相对还是有点复杂了。需要dart转arb，arb再转一次dart。对于没有开发过原生app的新手来说，也不是很直观的理解其中的逻辑。</p>
+<h2 id="感受"><a href="#感受" class="headerlink" title="感受"></a>感受</h2><p>经过学习实践官方的国际化方案后，我觉得相对还是有点复杂了。需要dart转arb，arb再转一次dart。对于没有开发过原生app的新手来说，也不是很直观的理解其中的逻辑。</p>
 <p>基于上面原因，我目前发现了一些其它方案，</p>
 <ul>
 <li>基于 Flutter i18n IDE插件，按照插件提供的文档去实现国际化。<ul>
@@ -189,7 +180,7 @@
 </li>
 <li>基于 <a href="https://github.com/Sky24n/fluintl" target="_blank" rel="noopener">fluintl</a> 库实现</li>
 </ul>
-<h1 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h1><ul>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
 <li><a href="https://flutter.io/docs/development/accessibility-and-localization/internationalization" target="_blank" rel="noopener">Flutter 国际化 （官方英文）</a></li>
 <li><a href="https://book.flutterchina.club/chapter12/" target="_blank" rel="noopener">Flutter 国际化 （中文，基于官方英文翻译）</a></li>
 <li><a href="https://medium.com/@zonble/%E8%AE%93-flutter-app-%E6%94%AF%E6%8F%B4%E5%A4%9A%E5%9C%8B%E8%AA%9E%E7%B3%BB%E7%9A%84%E9%96%8B%E7%99%BC%E6%B5%81%E7%A8%8B-ceb31532e2e1" target="_blank" rel="noopener">讓 Flutter App 支援多國語系的開發流程</a></li>
@@ -228,7 +219,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#步骤"><span class="toc-number">1.</span> <span class="toc-text">步骤</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#说明"><span class="toc-number">2.</span> <span class="toc-text">说明</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#感受"><span class="toc-number">3.</span> <span class="toc-text">感受</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#参考链接"><span class="toc-number">4.</span> <span class="toc-text">参考链接</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#步骤"><span class="toc-number">1.</span> <span class="toc-text">步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#说明"><span class="toc-number">2.</span> <span class="toc-text">说明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#感受"><span class="toc-number">3.</span> <span class="toc-text">感受</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考链接"><span class="toc-number">4.</span> <span class="toc-text">参考链接</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
@@ -242,15 +233,7 @@
   <li><a class="icon" href="http://reddit.com/submit?url=https://w4mxl.github.io/2019/01/26/flutter-Intl-Localizations/&title=使用Intl包让Flutter app支持多语言"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
   <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://w4mxl.github.io/2019/01/26/flutter-Intl-Localizations/&title=使用Intl包让Flutter app支持多语言"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
   <li><a class="icon" href="http://digg.com/submit?url=https://w4mxl.github.io/2019/01/26/flutter-Intl-Localizations/&title=使用Intl包让Flutter app支持多语言"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://w4mxl.github.io/2019/01/26/flutter-Intl-Localizations/&name=使用Intl包让Flutter app支持多语言&description=&lt;h1 id=&quot;步骤&quot;&gt;&lt;a href=&quot;#步骤&quot; class=&quot;headerlink&quot; title=&quot;步骤&quot;&gt;&lt;/a&gt;步骤&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;在项目根目录下创建一个i10n-arb目录，该目录用于保存arb文件&lt;/li&gt;
-&lt;li&gt;在lib目录下创建一个i10n的目录，该目录用于保存从arb文件生成的dart代码文件。&lt;/li&gt;
-&lt;li&gt;在i10n目录下面，创建一个localization_intl.dart 文件，用来实现Localizations和Delegate类&lt;/li&gt;
-&lt;li&gt;在localization_intl.dart 文件中添加需要国际化的属性&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;flutter packages pub run intl_translation:extract_to_arb --output-dir=i10n-arb lib/i10n/localization_intl.dart&lt;/code&gt;&lt;/strong&gt; 通过这个intl_translation命令把项目中Intl API标识的属性和字符串生成arb文件&lt;/li&gt;
-&lt;li&gt;基于上面生成的arb文件，创建其它我们想支持的语言对应的arb文件&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;flutter packages pub run intl_translation:generate_from_arb --output-dir=lib/i10n --no-use-deferred-loading lib/i10n/localization_intl.dart i10n-arb/intl_*.arb&lt;/code&gt;&lt;/strong&gt;  根据arb生成dart文件&lt;/li&gt;
-&lt;/ol&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://w4mxl.github.io/2019/01/26/flutter-Intl-Localizations/&name=使用Intl包让Flutter app支持多语言&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
