@@ -5,7 +5,7 @@ date: 2019-1-26 11:16
 permalink: flutter-Intl-Localizations
 ---
 
-# 步骤
+## 步骤
 
 1. 在项目根目录下创建一个i10n-arb目录，该目录用于保存arb文件
 2. 在lib目录下创建一个i10n的目录，该目录用于保存从arb文件生成的dart代码文件。
@@ -15,9 +15,7 @@ permalink: flutter-Intl-Localizations
 6. 基于上面生成的arb文件，创建其它我们想支持的语言对应的arb文件
 7. **`flutter packages pub run intl_translation:generate_from_arb --output-dir=lib/i10n --no-use-deferred-loading lib/i10n/localization_intl.dart i10n-arb/intl_*.arb`**  根据arb生成dart文件
 
-<!-- more -->
-
-# 说明
+## 说明
 
 官方的教程中第五步和第七步有用到两个命令：
 
@@ -63,7 +61,7 @@ permalink: flutter-Intl-Localizations
 <image src="https://i.loli.net/2019/05/24/5ce80d83d464086681.jpg" width="300" />
 
 
-# 感受
+## 感受
 
 经过学习实践官方的国际化方案后，我觉得相对还是有点复杂了。需要dart转arb，arb再转一次dart。对于没有开发过原生app的新手来说，也不是很直观的理解其中的逻辑。
 
@@ -74,7 +72,7 @@ permalink: flutter-Intl-Localizations
 * 基于 [fluintl](https://github.com/Sky24n/fluintl) 库实现
     
 
-# 参考链接
+## 参考链接
 
 * [Flutter 国际化 （官方英文）](https://flutter.io/docs/development/accessibility-and-localization/internationalization)
 * [Flutter 国际化 （中文，基于官方英文翻译）](https://book.flutterchina.club/chapter12/)

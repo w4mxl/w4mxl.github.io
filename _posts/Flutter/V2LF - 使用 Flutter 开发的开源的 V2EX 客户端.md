@@ -5,7 +5,7 @@ categories: Flutter
 permalink: v2lf-open-source
 ---
 
-# V2LF 正式开源
+## V2LF 正式开源
 
 GitHub 地址：https://github.com/w4mxl/V2LF
 
@@ -20,9 +20,7 @@ GitHub 地址：https://github.com/w4mxl/V2LF
 
 我相信这次开源会是一个新的开始！
 
-<!-- more -->
-
-# 上架说明
+## 上架说明
 
 我原本是打算上架了App Store 和 Google play 之后就开源出来的，play那边很快搞定，奈何 App Store 那边审核遇到些阻碍，和审核人员来回沟通了几次。目前账号审核状态，迟迟没有进展，只能等等看了 ¯\\_(ツ)_/¯ 。我希望能早点审核好，然后顺利上架。
 
@@ -38,12 +36,12 @@ App Store 和 Google play 我都是定价 ¥12 的。当然我没有指望从这
 * [V2EX - 创意工作者们的社区。(iOS)](https://itunes.apple.com/cn/app/v2ex-%E5%88%9B%E6%84%8F%E5%B7%A5%E4%BD%9C%E8%80%85%E4%BB%AC%E7%9A%84%E7%A4%BE%E5%8C%BA/id1078157349?mt=8)
 * [VeXplore Lite - V2EX第三方开源客户端 (iOS)](https://itunes.apple.com/cn/app/vexplore-lite-v2ex%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BC%80%E6%BA%90%E5%AE%A2%E6%88%B7%E7%AB%AF/id1191058321?mt=8)
 
-# 下载链接
+## 下载链接
 
 * V2LF iOS TestFlight： https://testflight.apple.com/join/cvx4MQuh
 * V2LF 酷安：https://www.coolapk.com/apk/221879
 * V2LF Google Play：https://play.google.com/store/apps/details?id=io.github.w4mxl.v2lf
 
-# 一点想法
+## 一点想法
 
 日常在公司工作，只管写代码实现功能就好。而到开发个人项目的时候就会发现，实现功能前得自己设计 UI/UX，起码是一个框架图。公司要上架时可能只负责打好包就行，文案、截图、预览啥的找产品或者找设计张口要就好。而到自己项目都得亲力亲为，初次弄这些的时候往往觉得比写代码更辛苦，隔行如隔山。当然了，也好的一面，比如用了好些年macOS，为了做预览，第一次用上了iMovie app。

@@ -16,7 +16,7 @@ permalink: flutter-release-preview-2-pixel-perfect
 
 <!-- more -->
 
-# Release Preview 2中的新功能
+## Release Preview 2中的新功能
 
 　　此版本的主题是**完美适配iOS应用程序**。虽然我们为Flutter设计了高度品牌驱动的定制体验，但我们也听到了一些想要构建严格遵循[Apple界面指南](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/)的应用程序的反馈。因此，在这个版本中，我们大大扩展了对Flutter中“Cupertino”主题控件的支持，其中[包含大量的小部件和类库](https://docs.flutter.io/flutter/cupertino/cupertino-library.html)，使得在构建iOS应用程序时比以往任何时候都更容易。
 
@@ -51,7 +51,7 @@ permalink: flutter-release-preview-2-pixel-perfect
 
 <iframe width="594" height="315" src="//player.bilibili.com/player.html?aid=32140785&cid=56229899&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen> </iframe>
 
-# 增长势头
+## 增长势头
 
 　　随着许多新开发人员陆续发现和关注Flutter，我们注意到Flutter现在是GitHub上50大活跃库之一：
 
@@ -70,7 +70,7 @@ permalink: flutter-release-preview-2-pixel-perfect
 
 　　Flutter[从第一天开始](https://github.com/flutter/engine/commit/20cc569f5961d4e896cb2f4651fd2049066bd47c)就是开源的。这是我们的设计初衷,我们的目标是用户能透明地了解我们的进展，并鼓励那些希望在所有平台上看到美好的用户体验的个人和公司为Flutter项目贡献一份力。
 
-# 入门
+## 入门
 
 　　你可能想问如何[升级](https://flutter.io/upgrading/)到Flutter Release Preview 2？如果你已经在用beta版本，它只需要一个命令：`flutter upgrade`
 
