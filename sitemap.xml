@@ -2,6 +2,90 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://w4mxl.github.io/2019/01/26/flutter-Intl-Localizations/</loc>
+    
+    <lastmod>2019-07-29T09:59:02.535Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://w4mxl.github.io/2019/05/14/v2lf-open-source/</loc>
+    
+    <lastmod>2019-07-29T09:57:50.456Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://w4mxl.github.io/2018/09/21/flutter-release-preview-2-pixel-perfect/</loc>
+    
+    <lastmod>2019-07-29T09:52:43.794Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://w4mxl.github.io/2019/02/12/flutter-shortcuts-for-fast-development/</loc>
+    
+    <lastmod>2019-07-29T09:49:40.235Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/</loc>
+    
+    <lastmod>2019-07-29T09:44:03.220Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://w4mxl.github.io/2019/07/12/not-bring-rice-to-eat-noodles/</loc>
+    
+    <lastmod>2019-07-29T09:41:29.802Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://w4mxl.github.io/2019/07/01/run-june/</loc>
+    
+    <lastmod>2019-07-29T09:18:36.357Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://w4mxl.github.io/2014/11/21/insert-author-date-in-new-file/</loc>
+    
+    <lastmod>2019-07-29T08:47:49.136Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://w4mxl.github.io/2015/06/17/ScrollView-with-ListView-or-GridView/</loc>
+    
+    <lastmod>2019-07-29T08:45:07.167Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://w4mxl.github.io/2015/06/28/add-umeng-feedback/</loc>
+    
+    <lastmod>2019-07-29T08:43:16.484Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://w4mxl.github.io/2015/07/08/activity-launchMode/</loc>
+    
+    <lastmod>2019-07-29T08:34:32.566Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://w4mxl.github.io/2015/07/19/set-user-avatar/</loc>
+    
+    <lastmod>2019-07-29T08:34:10.381Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://w4mxl.github.io/2015/05/06/Combination-Lock-And-HotDog/</loc>
     
     <lastmod>2019-07-29T08:24:24.878Z</lastmod>
@@ -30,44 +114,9 @@
   </url>
   
   <url>
-    <loc>https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/</loc>
-    
-    <lastmod>2019-07-29T08:20:38.070Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://w4mxl.github.io/2018/09/21/flutter-release-preview-2-pixel-perfect/</loc>
-    
-    <lastmod>2019-07-29T08:20:03.599Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://w4mxl.github.io/2019/01/25/ios-system-language/</loc>
     
     <lastmod>2019-07-29T08:19:58.130Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://w4mxl.github.io/2019/01/26/flutter-Intl-Localizations/</loc>
-    
-    <lastmod>2019-07-29T08:19:51.333Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://w4mxl.github.io/2019/02/12/flutter-shortcuts-for-fast-development/</loc>
-    
-    <lastmod>2019-07-29T08:19:46.853Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://w4mxl.github.io/2019/05/14/v2lf-open-source/</loc>
-    
-    <lastmod>2019-07-29T08:19:41.776Z</lastmod>
     
   </url>
   
@@ -82,13 +131,6 @@
     <loc>https://w4mxl.github.io/2015/05/31/Volley-study/</loc>
     
     <lastmod>2019-07-29T06:53:54.334Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://w4mxl.github.io/2015/06/17/Tech/Android/ScrollView%E4%B8%8B%E5%B5%8C%E5%A5%97%20ListView(GridView)%20%E5%86%B2%E7%AA%81%E5%AF%BC%E8%87%B4%E6%98%BE%E7%A4%BA%E4%B8%8D%E5%85%A8%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
-    
-    <lastmod>2019-07-29T06:53:54.241Z</lastmod>
     
   </url>
   
@@ -135,13 +177,6 @@
   </url>
   
   <url>
-    <loc>https://w4mxl.github.io/2014/11/21/insert-author-date-in-android-new-file/</loc>
-    
-    <lastmod>2019-07-29T06:10:13.196Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://w4mxl.github.io/2015/04/17/tips-of-Android-Studio/</loc>
     
     <lastmod>2019-07-29T06:08:16.393Z</lastmod>
@@ -149,30 +184,9 @@
   </url>
   
   <url>
-    <loc>https://w4mxl.github.io/2015/07/08/activity-launchMode/</loc>
-    
-    <lastmod>2019-07-29T03:56:22.799Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://w4mxl.github.io/2015/07/19/Tech/Android/%E7%94%A8%E6%88%B7%E5%A4%B4%E5%83%8F%EF%BC%8D%E6%8B%8D%E7%85%A7%E3%80%81%E9%80%89%E6%8B%A9%EF%BC%8B%E8%A3%81%E5%89%AA/</loc>
-    
-    <lastmod>2019-07-29T03:54:00.328Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://w4mxl.github.io/2016/03/10/flash-N-to-nexus6/</loc>
     
     <lastmod>2019-07-29T03:45:55.351Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://w4mxl.github.io/2015/06/28/Tech/Android/%E5%8F%8B%E7%9B%9F-%E7%94%A8%E6%88%B7%E5%8F%8D%E9%A6%88%E7%9A%84%E9%9B%86%E6%88%90%E5%92%8CUI%E8%87%AA%E5%AE%9A%E4%B9%89/</loc>
-    
-    <lastmod>2019-07-29T03:38:18.900Z</lastmod>
     
   </url>
   
@@ -194,13 +208,6 @@
     <loc>https://w4mxl.github.io/2019/07/03/two-ipad-case-compare/</loc>
     
     <lastmod>2019-07-29T02:17:05.180Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://w4mxl.github.io/2019/07/12/not-bring-rice-to-eat-noodles/</loc>
-    
-    <lastmod>2019-07-26T03:34:02.843Z</lastmod>
     
   </url>
   
@@ -373,13 +380,6 @@
   </url>
   
   <url>
-    <loc>https://w4mxl.github.io/2019/07/01/run-june/</loc>
-    
-    <lastmod>2019-07-04T06:56:07.740Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://w4mxl.github.io/2013/03/22/Life's/%E5%86%99%E7%BB%99xx%E7%9A%84%E4%B8%80%E5%B0%81%E4%BF%A1/</loc>
     
     <lastmod>2019-07-04T03:26:54.701Z</lastmod>
@@ -429,13 +429,6 @@
   </url>
   
   <url>
-    <loc>https://w4mxl.github.io/2017/02/06/my-2017-reduce-weight-plan/</loc>
-    
-    <lastmod>2019-03-16T12:22:26.530Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://w4mxl.github.io/2018/11/19/a-little-thought-after-Zou-Wenhuai-death/</loc>
     
     <lastmod>2019-03-16T12:22:26.530Z</lastmod>
@@ -443,14 +436,21 @@
   </url>
   
   <url>
-    <loc>https://w4mxl.github.io/2018/09/10/after-listen-storyfm-e118/</loc>
+    <loc>https://w4mxl.github.io/2017/02/06/my-2017-reduce-weight-plan/</loc>
+    
+    <lastmod>2019-03-16T12:22:26.530Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://w4mxl.github.io/2015/07/03/Life's/%E8%B5%B5%E9%9B%B7%E7%9A%84MV%E3%80%8A%E7%90%86%E6%83%B3%E3%80%8B/</loc>
     
     <lastmod>2019-03-16T12:22:26.529Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://w4mxl.github.io/2018/11/17/change-my-plan-for-cellphone/</loc>
+    <loc>https://w4mxl.github.io/2018/09/10/after-listen-storyfm-e118/</loc>
     
     <lastmod>2019-03-16T12:22:26.529Z</lastmod>
     
@@ -464,7 +464,7 @@
   </url>
   
   <url>
-    <loc>https://w4mxl.github.io/2015/07/03/Life's/%E8%B5%B5%E9%9B%B7%E7%9A%84MV%E3%80%8A%E7%90%86%E6%83%B3%E3%80%8B/</loc>
+    <loc>https://w4mxl.github.io/2018/11/17/change-my-plan-for-cellphone/</loc>
     
     <lastmod>2019-03-16T12:22:26.529Z</lastmod>
     
@@ -478,13 +478,6 @@
   </url>
   
   <url>
-    <loc>https://w4mxl.github.io/2010/03/02/%E8%89%BA%E6%9C%AF/</loc>
-    
-    <lastmod>2019-03-16T12:22:26.527Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://w4mxl.github.io/2018/03/25/read-article-about-zhudeyong/</loc>
     
     <lastmod>2019-03-16T12:22:26.527Z</lastmod>
@@ -493,6 +486,13 @@
   
   <url>
     <loc>https://w4mxl.github.io/2016/02/07/write-in-the-end-of-2015/</loc>
+    
+    <lastmod>2019-03-16T12:22:26.527Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://w4mxl.github.io/2010/03/02/%E8%89%BA%E6%9C%AF/</loc>
     
     <lastmod>2019-03-16T12:22:26.527Z</lastmod>
     
@@ -513,6 +513,20 @@
   </url>
   
   <url>
+    <loc>https://w4mxl.github.io/2018/10/20/watch-a-ted-video/</loc>
+    
+    <lastmod>2019-03-16T12:22:26.525Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://w4mxl.github.io/2016/12/21/experience-of-meizu-band/</loc>
+    
+    <lastmod>2019-03-16T12:22:26.525Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://w4mxl.github.io/2017/01/21/2016-review/</loc>
     
     <lastmod>2019-03-16T12:22:26.525Z</lastmod>
@@ -527,20 +541,6 @@
   </url>
   
   <url>
-    <loc>https://w4mxl.github.io/2016/12/21/experience-of-meizu-band/</loc>
-    
-    <lastmod>2019-03-16T12:22:26.525Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://w4mxl.github.io/2018/10/20/watch-a-ted-video/</loc>
-    
-    <lastmod>2019-03-16T12:22:26.525Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://w4mxl.github.io/2017/03/02/qdaily/</loc>
     
     <lastmod>2019-03-16T12:22:26.524Z</lastmod>
@@ -548,14 +548,14 @@
   </url>
   
   <url>
-    <loc>https://w4mxl.github.io/2016/11/01/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E6%9C%9D%E5%9C%A3/</loc>
+    <loc>https://w4mxl.github.io/2018/04/14/the-notification-pushed-by-xijiangyue/</loc>
     
     <lastmod>2019-03-16T12:22:26.523Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://w4mxl.github.io/2018/04/14/the-notification-pushed-by-xijiangyue/</loc>
+    <loc>https://w4mxl.github.io/2016/11/01/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E6%9C%9D%E5%9C%A3/</loc>
     
     <lastmod>2019-03-16T12:22:26.523Z</lastmod>
     
@@ -569,14 +569,14 @@
   </url>
   
   <url>
-    <loc>https://w4mxl.github.io/2018/05/11/the-experience-of-apple-watch-series-3-LTE/</loc>
+    <loc>https://w4mxl.github.io/2017/12/10/my-paid-apps/</loc>
     
     <lastmod>2019-03-16T12:22:26.517Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://w4mxl.github.io/2017/12/10/my-paid-apps/</loc>
+    <loc>https://w4mxl.github.io/2018/05/11/the-experience-of-apple-watch-series-3-LTE/</loc>
     
     <lastmod>2019-03-16T12:22:26.517Z</lastmod>
     
@@ -590,13 +590,6 @@
   </url>
   
   <url>
-    <loc>https://w4mxl.github.io/2018/11/16/my-nexus-4-renewed/</loc>
-    
-    <lastmod>2019-03-16T12:22:26.516Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://w4mxl.github.io/2018/04/15/record-how-to-pick-qc30-and-wi-1000x/</loc>
     
     <lastmod>2019-03-16T12:22:26.516Z</lastmod>
@@ -604,14 +597,14 @@
   </url>
   
   <url>
-    <loc>https://w4mxl.github.io/2018/02/08/buy-spotify-premium/</loc>
+    <loc>https://w4mxl.github.io/2018/11/16/my-nexus-4-renewed/</loc>
     
-    <lastmod>2019-03-16T12:22:26.515Z</lastmod>
+    <lastmod>2019-03-16T12:22:26.516Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://w4mxl.github.io/2018/11/12/a-mv-list-from-youtube/</loc>
+    <loc>https://w4mxl.github.io/2016/11/01/%E7%9C%8B%E5%88%B0%E6%A2%81%E6%9C%9D%E4%BC%9F%E4%BB%A3%E8%A8%80%E5%B0%8F%E7%B1%B3Note2/</loc>
     
     <lastmod>2019-03-16T12:22:26.515Z</lastmod>
     
@@ -625,7 +618,14 @@
   </url>
   
   <url>
-    <loc>https://w4mxl.github.io/2016/11/01/%E7%9C%8B%E5%88%B0%E6%A2%81%E6%9C%9D%E4%BC%9F%E4%BB%A3%E8%A8%80%E5%B0%8F%E7%B1%B3Note2/</loc>
+    <loc>https://w4mxl.github.io/2018/11/12/a-mv-list-from-youtube/</loc>
+    
+    <lastmod>2019-03-16T12:22:26.515Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://w4mxl.github.io/2018/02/08/buy-spotify-premium/</loc>
     
     <lastmod>2019-03-16T12:22:26.515Z</lastmod>
     
@@ -828,14 +828,14 @@
   </url>
   
   <url>
-    <loc>https://w4mxl.github.io/2011/03/31/%E5%AD%A4%E7%8B%AC%E7%9A%84%E5%AD%A9%E5%AD%90%EF%BC%8C%E4%BD%A0%E6%98%AF%E9%80%A0%E7%89%A9%E7%9A%84%E6%81%A9%E5%AE%A0/</loc>
+    <loc>https://w4mxl.github.io/2009/07/01/%E5%9C%A8%E4%B8%8A%E6%B5%B71/</loc>
     
     <lastmod>2019-03-16T12:22:17.662Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://w4mxl.github.io/2009/07/01/%E5%9C%A8%E4%B8%8A%E6%B5%B71/</loc>
+    <loc>https://w4mxl.github.io/2011/03/31/%E5%AD%A4%E7%8B%AC%E7%9A%84%E5%AD%A9%E5%AD%90%EF%BC%8C%E4%BD%A0%E6%98%AF%E9%80%A0%E7%89%A9%E7%9A%84%E6%81%A9%E5%AE%A0/</loc>
     
     <lastmod>2019-03-16T12:22:17.662Z</lastmod>
     
@@ -1199,14 +1199,14 @@
   </url>
   
   <url>
-    <loc>https://w4mxl.github.io/2009/09/02/%E5%83%8F%E8%9A%82%E8%9A%81%E4%B8%80%E6%A0%B7%EF%BC%9EGO/</loc>
+    <loc>https://w4mxl.github.io/2014/07/16/Life's/running/</loc>
     
     <lastmod>2019-03-16T12:22:17.562Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://w4mxl.github.io/2014/07/16/Life's/running/</loc>
+    <loc>https://w4mxl.github.io/2009/09/02/%E5%83%8F%E8%9A%82%E8%9A%81%E4%B8%80%E6%A0%B7%EF%BC%9EGO/</loc>
     
     <lastmod>2019-03-16T12:22:17.562Z</lastmod>
     
