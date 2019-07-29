@@ -65,7 +65,7 @@
     <link href="https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/"/>
     <id>https://w4mxl.github.io/2019/07/10/provide-64-bit-for-google-play/</id>
     <published>2019-07-10T08:59:50.000Z</published>
-    <updated>2019-07-25T09:50:01.426Z</updated>
+    <updated>2019-07-29T08:20:38.070Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Google-play-推进-64位应用"><a href="#Google-play-推进-64位应用" class="headerlink" title="Google play 推进 64位应用"></a>Google play 推进 64位应用</h2><p><img src="/image/111562745745_.pic.jpg" alt="111562745745_.pi"></p>
 <p>从今年1月份开始，Google 就陆续通过邮件等方式发通知，鼓励 Android 开发者尽快将已经上传到 Google play 的 app 对 64 位做兼容处理。并告知开发者，在今年 8 月 1 日开始，将强制要求新上架的 App 或老应用更新，除了提供 32 位的版本之外，还必须要提供 64 位的版本。</p>
@@ -98,19 +98,19 @@
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Flutter" scheme="https://w4mxl.github.io/categories/Code/Flutter/"/>
+      <category term="Flutter" scheme="https://w4mxl.github.io/categories/Tech/Flutter/"/>
     
     
   </entry>
   
   <entry>
     <title>Logitech’s Slim Folio Pro &amp; Apple’s Smart Keyboard Folio</title>
-    <link href="https://w4mxl.github.io/2019/07/03/about-Logitech%E2%80%99s-Slim-Folio-Pro-and-Apple%E2%80%99s-Smart-Keyboard-Folio/"/>
-    <id>https://w4mxl.github.io/2019/07/03/about-Logitech’s-Slim-Folio-Pro-and-Apple’s-Smart-Keyboard-Folio/</id>
+    <link href="https://w4mxl.github.io/2019/07/03/two-ipad-case-compare/"/>
+    <id>https://w4mxl.github.io/2019/07/03/two-ipad-case-compare/</id>
     <published>2019-07-03T13:40:00.000Z</published>
-    <updated>2019-07-04T06:53:26.323Z</updated>
+    <updated>2019-07-29T02:17:05.180Z</updated>
     
     <content type="html"><![CDATA[<p>我发现 <a href="https://www.apple.com/cn/shop/product/HMU92CH/A?fnode=9a" target="_blank" rel="noopener">Slim folio pro</a> 和 apple 官方的 <a href="https://www.apple.com/cn/shop/product/MU8G2TA/A?fnode=9a" target="_blank" rel="noopener">Smart keyboard folio</a> 两者在产品定位上的一点矛盾，我感觉他们俩都有点过犹不及。也可能是我理解不到位，如果是的话请不吝赐教。</p>
 <p><img src="/image/logitechkeyboardapplekeyboard-800x600.jpg" alt="logitechkeyboardapplekeyboard-800x600"></p>
@@ -207,7 +207,7 @@
     <link href="https://w4mxl.github.io/2019/05/14/v2lf-open-source/"/>
     <id>https://w4mxl.github.io/2019/05/14/v2lf-open-source/</id>
     <published>2019-05-13T23:33:12.000Z</published>
-    <updated>2019-07-25T09:50:01.472Z</updated>
+    <updated>2019-07-29T08:19:41.776Z</updated>
     
     <content type="html"><![CDATA[<h2 id="V2LF-正式开源"><a href="#V2LF-正式开源" class="headerlink" title="V2LF 正式开源"></a>V2LF 正式开源</h2><p>GitHub 地址：<a href="https://github.com/w4mxl/V2LF" target="_blank" rel="noopener">https://github.com/w4mxl/V2LF</a></p>
 <p>如果您不知道 V2LF 是啥，可以先看我之前在 v2ex 发的贴子来了解：</p>
@@ -241,9 +241,9 @@
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Flutter" scheme="https://w4mxl.github.io/categories/Code/Flutter/"/>
+      <category term="Flutter" scheme="https://w4mxl.github.io/categories/Tech/Flutter/"/>
     
     
   </entry>
@@ -354,11 +354,11 @@
   </entry>
   
   <entry>
-    <title>提升Flutter开发效率的快捷键</title>
-    <link href="https://w4mxl.github.io/2019/02/12/flutter-ide-shortcuts-for-fast-development/"/>
-    <id>https://w4mxl.github.io/2019/02/12/flutter-ide-shortcuts-for-fast-development/</id>
+    <title>提升 Flutter 开发效率的快捷键</title>
+    <link href="https://w4mxl.github.io/2019/02/12/flutter-shortcuts-for-fast-development/"/>
+    <id>https://w4mxl.github.io/2019/02/12/flutter-shortcuts-for-fast-development/</id>
     <published>2019-02-12T03:14:12.000Z</published>
-    <updated>2019-07-25T09:50:01.436Z</updated>
+    <updated>2019-07-29T08:19:46.853Z</updated>
     
     <content type="html"><![CDATA[<h2 id="创建一个新的-Stateless-或者-Stateful-widget"><a href="#创建一个新的-Stateless-或者-Stateful-widget" class="headerlink" title="创建一个新的 Stateless 或者 Stateful widget"></a>创建一个新的 Stateless 或者 Stateful widget</h2><p>只需输入<code>stless</code>即可创建一个像这样的Stateless widget：</p>
 <p><img src="https://i.loli.net/2019/02/12/5c623f4ea52fb.gif" alt="1_lfehNLtasYJUFEj7qv1ETw.gif"></p>
@@ -423,9 +423,9 @@
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Flutter" scheme="https://w4mxl.github.io/categories/Code/Flutter/"/>
+      <category term="Flutter" scheme="https://w4mxl.github.io/categories/Tech/Flutter/"/>
     
     
   </entry>
@@ -435,7 +435,7 @@
     <link href="https://w4mxl.github.io/2019/01/26/flutter-Intl-Localizations/"/>
     <id>https://w4mxl.github.io/2019/01/26/flutter-Intl-Localizations/</id>
     <published>2019-01-26T03:16:00.000Z</published>
-    <updated>2019-07-25T09:50:01.442Z</updated>
+    <updated>2019-07-29T08:19:51.333Z</updated>
     
     <content type="html"><![CDATA[<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
 <li>在项目根目录下创建一个i10n-arb目录，该目录用于保存arb文件</li>
@@ -505,19 +505,19 @@
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Flutter" scheme="https://w4mxl.github.io/categories/Code/Flutter/"/>
+      <category term="Flutter" scheme="https://w4mxl.github.io/categories/Tech/Flutter/"/>
     
     
   </entry>
   
   <entry>
-    <title>iOS上获取当前系统语言</title>
+    <title>iOS 上获取当前系统语言</title>
     <link href="https://w4mxl.github.io/2019/01/25/ios-system-language/"/>
     <id>https://w4mxl.github.io/2019/01/25/ios-system-language/</id>
     <published>2019-01-25T07:23:00.000Z</published>
-    <updated>2019-07-25T09:50:01.466Z</updated>
+    <updated>2019-07-29T08:19:58.130Z</updated>
     
     <content type="html"><![CDATA[<h1 id="测试代码"><a href="#测试代码" class="headerlink" title="测试代码"></a>测试代码</h1><pre><code class="ObjectiveC">    NSString *identifier = [[NSLocale currentLocale] localeIdentifier];
     NSString *displayName = [[NSLocale currentLocale] displayNameForKey:NSLocaleIdentifier value:identifier];
@@ -609,9 +609,9 @@
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Flutter" scheme="https://w4mxl.github.io/categories/Code/Flutter/"/>
+      <category term="Flutter" scheme="https://w4mxl.github.io/categories/Tech/Flutter/"/>
     
     
   </entry>
@@ -805,11 +805,11 @@
   </entry>
   
   <entry>
-    <title>(翻译)Flutter Release Preview 2 像素级别完美适配 iOS</title>
+    <title>（翻译）Flutter Release Preview 2 像素级别完美适配 iOS</title>
     <link href="https://w4mxl.github.io/2018/09/21/flutter-release-preview-2-pixel-perfect/"/>
     <id>https://w4mxl.github.io/2018/09/21/flutter-release-preview-2-pixel-perfect/</id>
     <published>2018-09-21T02:27:43.000Z</published>
-    <updated>2019-07-25T09:50:01.450Z</updated>
+    <updated>2019-07-29T08:20:03.599Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>原文:  <a href="https://developers.googleblog.com/2018/09/flutter-release-preview-2-pixel-perfect.html" target="_blank" rel="noopener">Flutter Release Preview 2: Pixel-Perfect on iOS</a><br>Posted by the Flutter Team at Google</p>
@@ -895,9 +895,9 @@
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Flutter" scheme="https://w4mxl.github.io/categories/Code/Flutter/"/>
+      <category term="Flutter" scheme="https://w4mxl.github.io/categories/Tech/Flutter/"/>
     
     
   </entry>
@@ -1882,23 +1882,23 @@
   </entry>
   
   <entry>
-    <title>ScrollView 中嵌套 RecyclerView(ListView) 后的常见问题</title>
+    <title>ScrollView 中嵌套 RecyclerView（ListView）后的常见问题</title>
     <link href="https://w4mxl.github.io/2016/09/07/scrollView-nested-problems/"/>
     <id>https://w4mxl.github.io/2016/09/07/scrollView-nested-problems/</id>
     <published>2016-09-07T07:53:00.000Z</published>
-    <updated>2019-07-25T09:48:36.436Z</updated>
+    <updated>2019-07-29T02:42:54.090Z</updated>
     
     <content type="html"><![CDATA[<h3 id="1-显示不全"><a href="#1-显示不全" class="headerlink" title="1. 显示不全"></a>1. 显示不全</h3><blockquote>
-<p>被嵌套的 RecyclerView(ListView) 显示不全，有多个 item，则只显示第一个。</p>
+<p>被嵌套的 RecyclerView（ListView） 显示不全，有多个 item，则只显示第一个。</p>
 </blockquote>
 <p>解决方法目前常见的有两种：</p>
 <ol>
-<li><del>动态计算 RecyclerView(ListView) 高度</del></li>
+<li><del>动态计算 RecyclerView（ListView） 高度</del></li>
 <li>直接展示所有的 item，让其不滚动了 (推荐)</li>
 </ol>
 <a id="more"></a>
 <blockquote>
-<p>2 是嵌套 ListView 示例，嵌套 GridView等类似</p>
+<p>2 是嵌套 ListView 示例，嵌套 GridView 等类似</p>
 </blockquote>
 <pre><code class="java">public class ScrollViewWithListView extends ListView {
 
@@ -1918,7 +1918,7 @@
 </code></pre>
 <h3 id="2-自动滚动"><a href="#2-自动滚动" class="headerlink" title="2. 自动滚动"></a>2. 自动滚动</h3><p>场景1:</p>
 <blockquote>
-<p>ScrollView 中嵌套的组件 RecyclerView(ListView) 在内容加载之后，ScrollView 会自动下滚。</p>
+<p>ScrollView 中嵌套的组件 RecyclerView（ListView） 在内容加载之后，ScrollView 会自动下滚。</p>
 </blockquote>
 <p>解决方法：</p>
 <p>在 ScrollView 包裹的 LinearLayout 中添加：</p>
@@ -1973,19 +1973,19 @@ android:focusableInTouchMode=&quot;true&quot;
     <summary type="html">
     
       &lt;h3 id=&quot;1-显示不全&quot;&gt;&lt;a href=&quot;#1-显示不全&quot; class=&quot;headerlink&quot; title=&quot;1. 显示不全&quot;&gt;&lt;/a&gt;1. 显示不全&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;被嵌套的 RecyclerView(ListView) 显示不全，有多个 item，则只显示第一个。&lt;/p&gt;
+&lt;p&gt;被嵌套的 RecyclerView（ListView） 显示不全，有多个 item，则只显示第一个。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;解决方法目前常见的有两种：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;del&gt;动态计算 RecyclerView(ListView) 高度&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;动态计算 RecyclerView（ListView） 高度&lt;/del&gt;&lt;/li&gt;
 &lt;li&gt;直接展示所有的 item，让其不滚动了 (推荐)&lt;/li&gt;
 &lt;/ol&gt;
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Android" scheme="https://w4mxl.github.io/categories/Code/Android/"/>
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Tech/Android/"/>
     
     
   </entry>
@@ -1995,14 +1995,14 @@ android:focusableInTouchMode=&quot;true&quot;
     <link href="https://w4mxl.github.io/2016/03/10/flash-N-to-nexus6/"/>
     <id>https://w4mxl.github.io/2016/03/10/flash-N-to-nexus6/</id>
     <published>2016-03-10T03:07:24.000Z</published>
-    <updated>2019-07-25T09:48:36.385Z</updated>
+    <updated>2019-07-29T03:45:55.351Z</updated>
     
     <content type="html"><![CDATA[<p>今天 Google 较之往年提前2个月发布了 Android N 的开发者预览版，按耐不住，折腾起来。</p>
 <a id="more"></a>
 <p>同时 <a href="https://www.google.com/android/beta" target="_blank" rel="noopener">Android Beta Program</a> 也被发布。通过注册这个预览体验项目来获取 Android N 。后续还可以通过 OTA 的方式来获取更新，再也不必像过去必须通过刷机的方式来获得了。在此之前，开发者想要安装预览版，必须要解锁 OEM 和 bootloader ，然后再刷入镜像。</p>
 <p>可是当我 enrolled 我的 Nexus 6(在用的固件是 Pure Nexus) 手机后，等了好一会并没有收到推送！索性还是换我之前比较熟悉的刷固件的方式！</p>
 <h2 id="下载固件"><a href="#下载固件" class="headerlink" title="下载固件"></a>下载固件</h2><p>之前 Nexus 6 正式版的固件下载地方是<a href="https://developers.google.com/android/nexus/images#shamu" target="_blank" rel="noopener">这里</a>。不过这次发布的预览版的固件是在<a href="https://dl.google.com/dl/android/aosp/shamu-mmb29v-factory-0b4a53f0.tgz" target="_blank" rel="noopener">这里</a>。</p>
-<h2 id="开始刷机"><a href="#开始刷机" class="headerlink" title="开始刷机"></a>开始刷机</h2><p><code>惯例，刷机前先备份好手机上个人重要数据！！！！</code></p>
+<h2 id="开始刷机"><a href="#开始刷机" class="headerlink" title="开始刷机"></a>开始刷机</h2><p><strong><code>惯例，刷机前先备份好手机上个人重要数据！！！！</code></strong></p>
 <p>起初我按照原来刷正式包的过程刷的：  </p>
 <ol>
 <li>adb reboot bootloader  </li>
@@ -2028,10 +2028,8 @@ Reboot to bootloader and flash the following:
    fastboot flash cache cache.img
    fastboot reboot
 </code></pre><p>最后是随手拍的几张图：</p>
-<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1f1swp8qa8sj22c02c0npd.jpg" alt></p>
-<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1f1swp5iemsj22c02c0x6p.jpg" alt></p>
-<p><img src="http://ww2.sinaimg.cn/mw690/62ed8609gw1f1swpdm5xrj22c02c01ky.jpg" alt></p>
-<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1f1swpgnw1vj22c02c01ky.jpg" alt></p>
+<center><img src="https://i.loli.net/2019/07/29/5d3e6aeb1888562687.png" width="280"> <img src="https://i.loli.net/2019/07/29/5d3e6b22c6beb59558.png" width="280"><br><br><img src="https://i.loli.net/2019/07/29/5d3e6b629daf987850.png" width="280"> <img src="https://i.loli.net/2019/07/29/5d3e6b7c6ea5e57120.png" width="280"></center>
+
 ]]></content>
     
     <summary type="html">
@@ -2040,9 +2038,9 @@ Reboot to bootloader and flash the following:
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Android" scheme="https://w4mxl.github.io/categories/Code/Android/"/>
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Tech/Android/"/>
     
     
   </entry>
@@ -2093,7 +2091,7 @@ Reboot to bootloader and flash the following:
     <link href="https://w4mxl.github.io/2016/01/21/my-struggle-of-nexus6/"/>
     <id>https://w4mxl.github.io/2016/01/21/my-struggle-of-nexus6/</id>
     <published>2016-01-21T07:12:00.000Z</published>
-    <updated>2019-07-25T09:48:36.443Z</updated>
+    <updated>2019-07-29T06:48:18.394Z</updated>
     
     <content type="html"><![CDATA[<p>15年的黑五( 2015.11.27)，在美国亚马逊海淘了一台 Nexus 6，当时看到促销价 $ 199.99 心里乐滋滋的，终于不会想到后来竟还有55刀的转运费，更有被税后需补缴18.5刀税。此机到手价实为：199.99＋55＋18.5 ＝ 273.49 刀，转成人民币大约是 ¥1800。不过这价格能买到亲儿子我已经很满意。</p>
 <p> 翘首以待了一个多月，在2016.01.18终于摸到真机。期间此货也算「开心的」在路上垮了个年。拆箱开机，屏幕上的保护膜明显很多气泡，更重要的是那屏幕暖的啊 =_=||，实在接受不能，于是开始搞屏幕色温。</p>
@@ -2126,9 +2124,9 @@ Con · 120
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Android" scheme="https://w4mxl.github.io/categories/Code/Android/"/>
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Tech/Android/"/>
     
     
   </entry>
@@ -2179,27 +2177,31 @@ Con · 120
   
   <entry>
     <title>使用 Google Wallet 在 Google Play 上购买付费应用</title>
-    <link href="https://w4mxl.github.io/2015/12/14/Buy-an-app-from-GooglePlay-by-Google-Wallet/"/>
-    <id>https://w4mxl.github.io/2015/12/14/Buy-an-app-from-GooglePlay-by-Google-Wallet/</id>
+    <link href="https://w4mxl.github.io/2015/12/14/buy-app-in-play-by-google-wallet/"/>
+    <id>https://w4mxl.github.io/2015/12/14/buy-app-in-play-by-google-wallet/</id>
     <published>2015-12-14T10:12:00.000Z</published>
-    <updated>2019-07-25T09:48:36.348Z</updated>
+    <updated>2019-07-29T02:43:32.534Z</updated>
     
-    <content type="html"><![CDATA[<p>今天终于把”在 Google Play 上购买付费应用”折腾成功，过程纪录如下</p>
-<p>1.准备<br>信用卡：因为我自己无信用卡，是借用同事的交行VISA信用卡<br>Google 账号：Google 账号并且已经激活了 Google Wallet 服务<br>VPN：目前一直用的是 <a href="https://txs.li/" target="_blank" rel="noopener">txs</a><br>当然还要有一台 Android 设备</p>
-<p>2.操作<br>1) 通过浏览器访问 Google Wallet，地址是<a href="https://wallet.google.com/" target="_blank" rel="noopener">https://wallet.google.com/</a><br>2) 点击付款方式菜单项，添加一张信用卡。在表单中依次输入信用卡号码、有效期、CVC 码并填写帐单地址。<strong>注意:</strong>地区选择香港 HK，街道地址填大陆地址，手机号码用＋86的中国手机号，点击保存按钮即可<br><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eyzo8sbs73j20vy102tbz.jpg" alt></p>
-<p>3) 通过使用 VPN 在 Google Play 商店购买商品<br>4) 购买成功后，可以在 Google Wallet 的交易菜单项中找到交易纪录的条目<br><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1eyzobghm6wj20t6090mxv.jpg" alt></p>
+    <content type="html"><![CDATA[<p>今天终于把“在 Google Play 上购买付费应用”折腾成功，过程纪录如下</p>
+<h2 id="1-准备"><a href="#1-准备" class="headerlink" title="1.准备"></a>1.准备</h2><p>信用卡：因为我自己无信用卡，是借用同事的交行VISA信用卡<br>Google 账号：Google 账号并且已经激活了 Google Wallet 服务<br>VPN：目前一直用的是 <a href="https://txs.li/" target="_blank" rel="noopener">txs</a><br>当然还要有一台 Android 设备</p>
+<h2 id="2-操作"><a href="#2-操作" class="headerlink" title="2.操作"></a>2.操作</h2><p>1) 通过浏览器访问 Google Wallet，地址是 <a href="https://wallet.google.com/" target="_blank" rel="noopener">https://wallet.google.com/</a></p>
+<p>2) 点击付款方式菜单项，添加一张信用卡。在表单中依次输入信用卡号码、有效期、CVC 码并填写帐单地址。<strong>注意:</strong> 地区选择香港 HK，街道地址填大陆地址，手机号码用＋86 的中国手机号，点击保存按钮即可</p>
+<p><img src="https://i.loli.net/2019/07/29/5d3e5be78b23819820.jpg" alt="新增卡片"></p>
+<p>3) 通过使用 VPN 在 Google Play 商店购买商品</p>
+<p>4) 购买成功后，可以在 Google Wallet 的交易菜单项中找到交易纪录的条目</p>
+<p><img src="https://i.loli.net/2019/07/29/5d3e5be81972877322.jpg" alt="交易记录"></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;今天终于把”在 Google Play 上购买付费应用”折腾成功，过程纪录如下&lt;/p&gt;
-&lt;p&gt;1.准备&lt;br&gt;信用卡：因为我自己无信用卡，是借用同事的交行VISA信用卡&lt;br&gt;Google 账号：Google 账号并且已经激活了 Google Wallet 服务&lt;br&gt;VP
+      &lt;p&gt;今天终于把“在 Google Play 上购买付费应用”折腾成功，过程纪录如下&lt;/p&gt;
+&lt;h2 id=&quot;1-准备&quot;&gt;&lt;a href=&quot;#1-准备&quot; class=&quot;headerlink&quot; title=&quot;1.准备&quot;&gt;&lt;/a&gt;1.准备&lt;/h2&gt;&lt;p&gt;信用卡：因为我自己无信用卡，是
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Android" scheme="https://w4mxl.github.io/categories/Code/Android/"/>
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Tech/Android/"/>
     
     
   </entry>
@@ -2232,80 +2234,23 @@ Con · 120
   </entry>
   
   <entry>
-    <title>学习过的Android开源项目汇总</title>
-    <link href="https://w4mxl.github.io/2015/08/30/Android/%E5%AD%A6%E4%B9%A0%E8%BF%87%E7%9A%84Android%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%E6%B1%87%E6%80%BB/"/>
-    <id>https://w4mxl.github.io/2015/08/30/Android/学习过的Android开源项目汇总/</id>
-    <published>2015-08-30T09:36:00.000Z</published>
-    <updated>2019-07-25T09:48:36.379Z</updated>
-    
-    <content type="html"><![CDATA[<p>利用周末整理下之前工作中、学习中使用过的 Android 开源项目，通过整理好之后，能每周抽出些时间去对这些开源项目的源码进行解析，以期通过这种方式能更深层次的学习这些优秀的 Android 开源项目。</p>
-<p><strong>View 篇</strong></p>
-<ul>
-<li><p>Android-ConvenientBanner<br>项目描述:通用的广告栏控件，让你轻松实现广告头效果。支持无限循环，可以设置自动翻页和时间(而且非常智能，手指触碰则暂停翻页，离开自动开始翻页。你也可以设置在界面onPause的时候不进行自动翻页，onResume之后继续自动翻页)，并且提供多种翻页特效。 对比其他广告栏控件，大多都需要对源码进行改动才能加载网络图片，或者帮你集成不是你所需要的图片缓存库。而这个库能让有代码洁癖的你欢喜，不需要对库源码进行修改你就可以使用任何你喜欢的网络图片库进行配合。<br>项目地址:<a href="https://github.com/saiwu-bigkoo/Android-ConvenientBanner" target="_blank" rel="noopener">https://github.com/saiwu-bigkoo/Android-ConvenientBanner</a><br>项目效果:<br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1evkt6q7j62g20bd0hykjq.gif" alt></p>
-</li>
-<li><p>Android ViewPagerIndicator<br>项目描述: 配合 ViewPager 使用的 Indicator，支持各种位置和样式<br>项目地址: <a href="https://github.com/JakeWharton/ViewPagerIndicator" target="_blank" rel="noopener">https://github.com/JakeWharton/ViewPagerIndicator</a><br>项目效果:<br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1evkurq6dl3j20no0gok0a.jpg" alt>  </p>
-</li>
-<li><p>MVCHelper<br>项目描述: 实现下拉刷新，滚动底部自动加载更多，分页加载，自动切换显示网络失败布局，暂无数据布局，支持任意view，支持切换主流下拉刷新框架，真正的android MVC架构,refresh,loadmore<br>项目地址: <a href="https://github.com/LuckyJayce/MVCHelper" target="_blank" rel="noopener">https://github.com/LuckyJayce/MVCHelper</a><br>demo地址: <a href="https://github.com/LuckyJayce/MVCHelper/blob/master/raw/MVCHelper_Demo.apk?raw=true" target="_blank" rel="noopener">Demo APK</a></p>
-</li>
-<li><p>EmojiChat<br>项目描述: 一个聊天界面，包括从网络下载大表情并使用，图片发送，文字发送，Emoji表情发送，自定义表情键盘，Emoji表情键盘，仿QQ功能键盘等等……<br>项目地址: <a href="https://github.com/kymjs/EmojiChat" target="_blank" rel="noopener">https://github.com/kymjs/EmojiChat</a><br>项目效果:<br><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1evkv3kl160j205k09wq43.jpg" alt></p>
-</li>
-<li><p>Emojicon<br>项目描述: Emojicon 是一个用于在 TextView, EditText (like WhatsApp) 显示 emoji 表情的开源库。<br>项目地址: <a href="https://github.com/rockerhieu/emojicon" target="_blank" rel="noopener">https://github.com/rockerhieu/emojicon</a><br>项目效果:<br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1evkvbd2w7lj20b00ibjss.jpg" alt>  </p>
-</li>
-<li><p>Material<br>项目描述: MaterialLibrary is an Open Source Android library that back-port Material Design components to pre-Lolipop Android.<br>项目地址: <a href="https://github.com/rey5137/material" target="_blank" rel="noopener">https://github.com/rey5137/material</a><br>demo地址: <a href="https://play.google.com/store/apps/details?id=com.rey.material.demo" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.rey.material.demo</a></p>
-</li>
-<li><p>SwipeMenuListView<br>项目描述: A swipe menu for ListView.<br>项目地址: <a href="https://github.com/baoyongzhang/SwipeMenuListView" target="_blank" rel="noopener">https://github.com/baoyongzhang/SwipeMenuListView</a><br>项目效果:<br><img src="http://ww3.sinaimg.cn/mw690/62ed8609jw1evkvipk41sg20ar0i146f.gif" alt></p>
-</li>
-<li><p>PhotoCrop<br>项目描述: A Library which can be used to crop images in Android similar to Facebook and Telegram<br>项目地址: <a href="https://github.com/albinmathew/PhotoCrop" target="_blank" rel="noopener">https://github.com/albinmathew/PhotoCrop</a><br>项目效果:<br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1evkwzqlb3oj20a00hsdjw.jpg" alt></p>
-</li>
-<li><p>RoundedImageView<br>项目描述: A fast ImageView (and Drawable) that supports rounded corners (and ovals or circles) based on the original <a href="http://www.curious-creature.org/2012/12/11/android-recipe-1-image-with-rounded-corners/" target="_blank" rel="noopener">example from Romain Guy</a>. RoundedImageView is a full superset of <a href="https://github.com/hdodenhof/CircleImageView" target="_blank" rel="noopener">CircleImageView</a> (which is actually just a subset based on this lib) with many more advanced features like support for ovals, rounded rectangles, ScaleTypes and TileModes.<br>项目地址: <a href="https://github.com/vinc3m1/RoundedImageView" target="_blank" rel="noopener">https://github.com/vinc3m1/RoundedImageView</a><br>项目效果:<br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1evkxf8ngpoj208c0etn2e.jpg" alt><br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1evkxf7h5m4j208c0etq81.jpg" alt></p>
-</li>
-<li><p>CircleImageView<br>项目描述: A fast circular ImageView perfect for profile images. This is based on <a href="https://github.com/vinc3m1/RoundedImageView" target="_blank" rel="noopener">RoundedImageView from Vince Mi</a> which itself is based <a href="http://www.curious-creature.org/2012/12/11/android-recipe-1-image-with-rounded-corners/" target="_blank" rel="noopener">on techniques recommended by Romain Guy</a>.<br>项目地址: <a href="https://github.com/hdodenhof/CircleImageView" target="_blank" rel="noopener">https://github.com/hdodenhof/CircleImageView</a><br>项目效果:<br><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1evkxjr8znvj20f00qotat.jpg" alt>  </p>
-</li>
-<li><p>ASimpleCache<br>项目描述: ASimpleCache 是一个为android制定的 轻量级的 开源缓存框架。轻量到只有一个java文件（由十几个类精简而来）。<br>项目地址: <a href="https://github.com/yangfuhai/ASimpleCache" target="_blank" rel="noopener">https://github.com/yangfuhai/ASimpleCache</a></p>
-</li>
-<li><p>Logger<br>项目描述: Simple, pretty and powerful logger for android<br>项目地址: <a href="https://github.com/orhanobut/logger" target="_blank" rel="noopener">https://github.com/orhanobut/logger</a><br>项目效果:<br><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1evkxpqa492j20uk0smafu.jpg" alt></p>
-</li>
-<li><p>LeakCanary<br>项目描述: Android 和 Java 内存泄露检测。<br>项目地址: <a href="https://github.com/square/leakcanary" target="_blank" rel="noopener">https://github.com/square/leakcanary</a><br>项目demo: <a href="https://github.com/liaohuqiu/leakcanary-demo" target="_blank" rel="noopener">https://github.com/liaohuqiu/leakcanary-demo</a><br>项目效果:<br><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1evkynk1l3ij20jg0a4ac1.jpg" alt></p>
-</li>
-<li><p>Android ViewBadger<br>项目描述: A simple way to “badge” any given Android view at runtime without having to cater for it in layout.<br>项目地址: <a href="https://github.com/jgilfelt/android-viewbadger" target="_blank" rel="noopener">https://github.com/jgilfelt/android-viewbadger</a><br>项目效果:<br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1evkyrta511j20a00h476e.jpg" alt></p>
-</li>
-<li><p>pinned-section-listview<br>项目描述: Easy to use ListView with pinned sections for Android 2.1 and higher. Pinned section is a header view which sticks to the top of the list until at least one item of that section is visible.<br>项目地址: <a href="https://github.com/beworker/pinned-section-listview" target="_blank" rel="noopener">https://github.com/beworker/pinned-section-listview</a><br>项目效果:<br><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1evkyvpsit5j20660abaae.jpg" alt></p>
-</li>
-<li><p>Dynamicbox<br>项目描述: DynamicBox is a library which inflates custom layouts to indicate :loading content、show an exception or even a custom view.<br>项目地址:  <a href="https://github.com/medyo/dynamicbox" target="_blank" rel="noopener">https://github.com/medyo/dynamicbox</a></p>
-</li>
-<li><p>Sweet Alert Dialog<br>项目描述: Android版的SweetAlert，清新文艺，快意灵动的甜心弹框<br>项目地址: <a href="https://github.com/pedant/sweet-alert-dialog" target="_blank" rel="noopener">https://github.com/pedant/sweet-alert-dialog</a><br>项目效果:<br><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1evkze1hmwig20al0h5age.gif" alt></p>
-</li>
-</ul>
-<p>( 未完… )</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;利用周末整理下之前工作中、学习中使用过的 Android 开源项目，通过整理好之后，能每周抽出些时间去对这些开源项目的源码进行解析，以期通过这种方式能更深层次的学习这些优秀的 Android 开源项目。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;View 篇&lt;/strong&gt;&lt;/p&gt;
-
-    
-    </summary>
-    
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
-    
-      <category term="Android" scheme="https://w4mxl.github.io/categories/Code/Android/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Android setEmptyview</title>
     <link href="https://w4mxl.github.io/2015/08/22/Android-setEmptyview/"/>
     <id>https://w4mxl.github.io/2015/08/22/Android-setEmptyview/</id>
     <published>2015-08-22T14:25:00.000Z</published>
-    <updated>2019-07-25T09:48:36.365Z</updated>
+    <updated>2019-07-29T06:17:35.297Z</updated>
     
     <content type="html"><![CDATA[<h3 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1. 介绍"></a>1. 介绍</h3><p>使用 listview、gridview 等列表形式的 view 时，如果后台server返回的数据为空，通常我们需要为页面增加 empty view （俗称空页面），使得页面显示起来更友好，这个时候就用到了 setEmptyView() 方法。</p>
-<p><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1evbrvuo1swj21bu0getbn.jpg" alt><br>▲ setEmptyView() 是 AdapterView 中的一个方法，而我们常用到的ExpandableListView, GridView, ListView等都是继承之 AdapterView 的，可以直接调用 setEmptyView() 方法。</p>
-<p><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1evbrvv8pg2j20u603gmxh.jpg" alt><br>▲ setEmptyView() 官方描述</p>
-<h3 id="2-使用方法"><a href="#2-使用方法" class="headerlink" title="2. 使用方法"></a>2. 使用方法</h3><p>下面以一个简单实例的描述 setEmptyview() 的两种常见的使用方法。<br><img src="http://ww3.sinaimg.cn/mw690/62ed8609jw1evbs5rbzblj20lc0zk751.jpg" width="250"><br>▲ 实例的最终效果。“暂无常用回答哦”这个 TextView 就是我们设定好的 empty view 。</p>
-<p><strong>方法一</strong><br>如果页面是继承 ListActivity，只要在布局文件中这样:</p>
+<center><br><img src="https://i.loli.net/2019/07/29/5d3e8dd42555511590.png" alt="setEmptyView() 是 AdapterView 中的一个方法，而我们常用到的ExpandableListView, GridView, ListView等都是继承之 AdapterView 的，可以直接调用 setEmptyView() 方法"></center>  
+
+
+<center><img src="https://i.loli.net/2019/07/29/5d3e8e1f1472182998.png" alt="setEmptyView() 官方描述"></center>
+
+<h3 id="2-使用方法"><a href="#2-使用方法" class="headerlink" title="2. 使用方法"></a>2. 使用方法</h3><p>下面以一个简单实例的描述 setEmptyview() 的两种常见的使用方法。</p>
+<center><img src="https://i.loli.net/2019/07/29/5d3e8e6bb5f8075733.png" width="280"><br>▲ 实例的最终效果。“暂无常用回答哦”这个 TextView 就是我们设定好的 empty view 。</center>
+
+<p><strong>方法一</strong></p>
+<p>如果页面是继承 ListActivity，只要在布局文件中这样:</p>
 <pre><code class="java">...
 &lt;ListView android:id=&quot;@id/android:list&quot;.../&gt; 
 &lt;TextView 
@@ -2326,7 +2271,8 @@ Con · 120
 ListView listView = (ListView)findViewById(R.id.list);
 listView.setEmptyView(findViewById(R.id.empty));
 </code></pre>
-<p><strong>方法二</strong><br>setEmptyView()这个方法是有限制的，这个 empty view 必须在当前的 View hierarchy 的节点上，所以需要把empty view 添加到当前的 View hierarchy 的节点上。布局文件中不作额外配置，在页面中实现如下:</p>
+<p><strong>方法二</strong></p>
+<p>setEmptyView()这个方法是有限制的，这个 empty view 必须在当前的 View hierarchy 的节点上，所以需要把empty view 添加到当前的 View hierarchy 的节点上。布局文件中不作额外配置，在页面中实现如下:</p>
 <pre><code class="java">TextView emptyView = new TextView(activity);
 emptyView.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));
 emptyView.setText(&quot;暂无常用回答哦&quot;);
@@ -2349,27 +2295,36 @@ list.setEmptyView(emptyView);
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Android" scheme="https://w4mxl.github.io/categories/Code/Android/"/>
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Tech/Android/"/>
     
     
   </entry>
   
   <entry>
-    <title>Fragment 重叠(重影)问题</title>
-    <link href="https://w4mxl.github.io/2015/08/17/fragment-overlay-problem&#39;/"/>
-    <id>https://w4mxl.github.io/2015/08/17/fragment-overlay-problem&#39;/</id>
+    <title>Fragment 重叠（重影）问题</title>
+    <link href="https://w4mxl.github.io/2015/08/17/fragment-overlay-problem/"/>
+    <id>https://w4mxl.github.io/2015/08/17/fragment-overlay-problem/</id>
     <published>2015-08-17T01:41:00.000Z</published>
-    <updated>2019-07-25T09:48:36.473Z</updated>
+    <updated>2019-07-29T06:23:59.688Z</updated>
     
     <content type="html"><![CDATA[<p>在最近做的项目中，遇到了 Fragment 重叠的问题。具体的情况是，app 需要在多个 Fragment 间切换，并且保存每个 Fragment 的状态。官方的方法是使用 replace() 来替换 Fragment，但是 replace() 的调用会导致 Fragment 的 onCreteView() 被调用，所以切换界面时会无法保存当前的状态。因此一般采用 add()、hide()与 show()配合，来达到保存 Fragment 的状态。</p>
 <p>正常情况下显示是对的，现象发生在我切换到其他的app，操作一会之后，再回到当前的app，有一定几率会出现 Fragment 重叠的现象。</p>
-<p>可以通过下面的方式进行手动重现这个BUG:<br>1.手机的 “设置” - “开发者选项” - 打开”不保留活动”(主要用于模拟Activity被及时回收)<br>2.把 app 切换到后台，再重新打开，通过点按不同的 tab 来切换 Fragment<br><img src="http://ww1.sinaimg.cn/mw690/62ed8609gw1ev5ds1gancj20lc0zkgnp.jpg" width="200"><br>▲ 重现 Fragment 的重叠</p>
+<p>可以通过下面的方式进行手动重现这个BUG:</p>
+<ol>
+<li>手机的 “设置” - “开发者选项” - 打开”不保留活动”（主要用于模拟Activity被及时回收）</li>
+<li>把 app 切换到后台，再重新打开，通过点按不同的 tab 来切换 Fragment</li>
+</ol>
+<center><img src="https://i.loli.net/2019/07/29/5d3e90bb2629751126.png" width="280"><br>▲ 重现 Fragment 的重叠</center>
+
+
 <p>起初我以为是我在使用add()、hide() 、show() 切换 Fragment 的时候有什么地方使用的不对，尝试去解决重叠的 bug，无果后，还是通过 google 找出了原因和解决方案。</p>
 <h4 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h4><p>使用 Fragment 的状态保存，当系统内存不足，Fragment 的宿主 Activity 回收的时候，Fragment 的实例并没有随之被回收。Activity 被系统回收时，会主动调用 onSaveInstance() 方法来保存视图层（View Hierarchy），所以当 Activity 通过导航再次被重建时，之前被实例化过的 Fragment 依然会出现在 Activity 中，此时的 FragmentTransaction 中的相当于又再次 add 了 fragment 进去的，hide()和show()方法对之前保存的fragment已经失效了。综上这些因素导致了多个Fragment重叠在一起。</p>
-<h4 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h4><p><strong>方案一:</strong><br>1.给每个 Fragment 加一个 Tag<br>2.在 onCreate(Bundle savedInstanceState) 中判断 Bundle savedInstanceState 是否不为空<br>3.不为空则进行 find Tag，重新给几个 frament 赋值<br>这样子仍是对之前保存的 fragment 操作，成功解决了重叠的问题。</p>
-<p><strong>方案二:</strong><br>Activity 中的 onSaveInstanceState() 里面有一句<em>super.onSaveInstanceState(outState);</em>，Google 对于这句话的解释是 “Always call the superclass so it can save the view hierarchy state”，大概意思是“总是执行这句代码来调用父类去保存视图层的状态”。通过注释掉这句话，这样主 Activity 因为种种原因被回收的时候就不会保存之前的 fragment state，也可以成功解决重叠的问题。</p>
+<h4 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h4><p><strong>方案一:</strong></p>
+<p>1.给每个 Fragment 加一个 Tag<br>2.在 onCreate(Bundle savedInstanceState) 中判断 Bundle savedInstanceState 是否不为空<br>3.不为空则进行 find Tag，重新给几个 frament 赋值<br>这样子仍是对之前保存的 fragment 操作，成功解决了重叠的问题。</p>
+<p><strong>方案二:</strong></p>
+<p>Activity 中的 onSaveInstanceState() 里面有一句<em>super.onSaveInstanceState(outState);</em>，Google 对于这句话的解释是 “Always call the superclass so it can save the view hierarchy state”，大概意思是“总是执行这句代码来调用父类去保存视图层的状态”。通过注释掉这句话，这样主 Activity 因为种种原因被回收的时候就不会保存之前的 fragment state，也可以成功解决重叠的问题。</p>
 ]]></content>
     
     <summary type="html">
@@ -2378,9 +2333,9 @@ list.setEmptyView(emptyView);
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Android" scheme="https://w4mxl.github.io/categories/Code/Android/"/>
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Tech/Android/"/>
     
     
   </entry>
@@ -2487,15 +2442,17 @@ list.setEmptyView(emptyView);
   
   <entry>
     <title>用户头像－拍照、选择＋裁剪</title>
-    <link href="https://w4mxl.github.io/2015/07/19/Android/%E7%94%A8%E6%88%B7%E5%A4%B4%E5%83%8F%EF%BC%8D%E6%8B%8D%E7%85%A7%E3%80%81%E9%80%89%E6%8B%A9%EF%BC%8B%E8%A3%81%E5%89%AA/"/>
-    <id>https://w4mxl.github.io/2015/07/19/Android/用户头像－拍照、选择＋裁剪/</id>
+    <link href="https://w4mxl.github.io/2015/07/19/Tech/Android/%E7%94%A8%E6%88%B7%E5%A4%B4%E5%83%8F%EF%BC%8D%E6%8B%8D%E7%85%A7%E3%80%81%E9%80%89%E6%8B%A9%EF%BC%8B%E8%A3%81%E5%89%AA/"/>
+    <id>https://w4mxl.github.io/2015/07/19/Tech/Android/用户头像－拍照、选择＋裁剪/</id>
     <published>2015-07-19T13:52:00.000Z</published>
-    <updated>2019-07-25T09:48:36.374Z</updated>
+    <updated>2019-07-29T03:54:00.328Z</updated>
     
     <content type="html"><![CDATA[<p>一般做 app，只要存在用户系统，跑不了都会有设置用户头像的需求。设置用户头像一般都提供拍照和从相册选择两种方式，得到图片后，让用户对图片进行裁剪，然后上传服务器。</p>
 <p>关于拍照和从相册选取，都是向系统发送特定的 Intent，唤起对应的系统程序，然后在onActivityResult 里面，获取我们的图片数据。关于图像裁剪，一般有两种方式，第一种是我们可以直接利用系统提供的裁剪功能，实现图像的裁剪。另外一种是自己处理，比如利用一些第三方的开源项目，如<a href="https://github.com/edmodo/cropper" target="_blank" rel="noopener">cropper</a> 和 <a href="https://github.com/jdamcd/android-crop" target="_blank" rel="noopener">android-crop</a>，来完成我们的需求。</p>
 <p>以前做过的项目中碰到设置用户头像这个需求，裁剪都是用的上面说到的第一种方式，即通过 Intent intent = new Intent(“com.android.camera.action.CROP”); 语句来调用系统的裁剪功能，但是自从推出 android lollipop(5.0) 之后，用之前的那套代码会有 bug，通过 stackoverflow 了解到因为 “Camera’s crop activity doesn’t return anything for onActivityResult() method. ”。所以这次项目中尝试选择了第二方式来解决这个问题。</p>
-<h3 id="1-按设计完成从底部弹出选择对话框"><a href="#1-按设计完成从底部弹出选择对话框" class="headerlink" title="1.按设计完成从底部弹出选择对话框"></a>1.按设计完成从底部弹出选择对话框</h3><p><img src="http://ww4.sinaimg.cn/mw690/62ed8609gw1eu8f8qo62ij20lc0zkwfy.jpg" width="400"><br>▲ 最终完成效果如上</p>
+<h3 id="1-按设计完成从底部弹出选择对话框"><a href="#1-按设计完成从底部弹出选择对话框" class="headerlink" title="1.按设计完成从底部弹出选择对话框"></a>1.按设计完成从底部弹出选择对话框</h3><center><img src="https://i.loli.net/2019/07/29/5d3e6d4a4dabb15916.png" width="400"><br>▲ 最终完成效果如上</center>
+
+
 <p>MeInfoActivity.java 中对应的代码:</p>
 <pre><code class="java">    @OnClick(R.id.rl_set_head)
     public void setHeadImage() {
@@ -2546,9 +2503,9 @@ list.setEmptyView(emptyView);
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Android" scheme="https://w4mxl.github.io/categories/Code/Android/"/>
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Tech/Android/"/>
     
     
   </entry>
@@ -2558,10 +2515,10 @@ list.setEmptyView(emptyView);
     <link href="https://w4mxl.github.io/2015/07/08/activity-launchMode/"/>
     <id>https://w4mxl.github.io/2015/07/08/activity-launchMode/</id>
     <published>2015-07-08T00:34:00.000Z</published>
-    <updated>2019-07-25T09:48:36.498Z</updated>
+    <updated>2019-07-29T03:56:22.799Z</updated>
     
     <content type="html"><![CDATA[<p>在实际项目中我们应该根据特定的需求为每个 Activity 指定适当的启动模式。这里根据个人理解和实际开发中的经验，做些总结。有四种启动模式，分别是 standard 、singleTop 、singleTask 和singleInstance 。可以在 AndroidManifest.xml 中通过给 &lt;activity&gt; 对应的标签指定 android:launchMode 属性来设置启动模式。</p>
-<p><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1etx2yevlj4j218y0kw795.jpg" alt></p>
+<p><img src="https://i.loli.net/2019/07/29/5d3e6e0e587b651251.png" alt="设定启动模式"></p>
 <p>为了介绍清这四种启动模式，我们应该先清楚下面两个概念: task、taskAffinity。</p>
 <blockquote>
 <p>task</p>
@@ -2591,19 +2548,19 @@ list.setEmptyView(emptyView);
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Android" scheme="https://w4mxl.github.io/categories/Code/Android/"/>
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Tech/Android/"/>
     
     
   </entry>
   
   <entry>
-    <title>Intent的Flag属性</title>
+    <title>Intent Flag 属性</title>
     <link href="https://w4mxl.github.io/2015/07/06/Intent-Flag/"/>
     <id>https://w4mxl.github.io/2015/07/06/Intent-Flag/</id>
     <published>2015-07-06T12:03:00.000Z</published>
-    <updated>2019-07-25T09:48:36.462Z</updated>
+    <updated>2019-07-29T06:30:00.231Z</updated>
     
     <content type="html"><![CDATA[<p>这篇是想接着上篇<a href="http://wml.farbox.com/post/activity-launchMode" target="_blank" rel="noopener">「Activity的启动模式」</a>，从实际需求场景的出发介绍下Intent与启动模式相关的Flag使用。(注:并为将所有 Flag 介绍完全，因为有些我没实际用过可能还没有理解足够深刻，只写个人实际使用过并觉得理解到位了的，后续会补充)</p>
 <h3 id="常见需求场景"><a href="#常见需求场景" class="headerlink" title="常见需求场景"></a>常见需求场景</h3><p><strong>需求1:</strong></p>
@@ -2647,9 +2604,9 @@ startActivity(intent);
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Android" scheme="https://w4mxl.github.io/categories/Code/Android/"/>
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Tech/Android/"/>
     
     
   </entry>
@@ -2739,25 +2696,28 @@ startActivity(intent);
   </entry>
   
   <entry>
-    <title>友盟-&quot;用户反馈&quot;的集成和UI自定义</title>
-    <link href="https://w4mxl.github.io/2015/06/28/Android/%E5%8F%8B%E7%9B%9F-%E7%94%A8%E6%88%B7%E5%8F%8D%E9%A6%88%E7%9A%84%E9%9B%86%E6%88%90%E5%92%8CUI%E8%87%AA%E5%AE%9A%E4%B9%89/"/>
-    <id>https://w4mxl.github.io/2015/06/28/Android/友盟-用户反馈的集成和UI自定义/</id>
+    <title>友盟&quot;用户反馈&quot;的集成和UI自定义</title>
+    <link href="https://w4mxl.github.io/2015/06/28/Tech/Android/%E5%8F%8B%E7%9B%9F-%E7%94%A8%E6%88%B7%E5%8F%8D%E9%A6%88%E7%9A%84%E9%9B%86%E6%88%90%E5%92%8CUI%E8%87%AA%E5%AE%9A%E4%B9%89/"/>
+    <id>https://w4mxl.github.io/2015/06/28/Tech/Android/友盟-用户反馈的集成和UI自定义/</id>
     <published>2015-06-28T11:58:00.000Z</published>
-    <updated>2019-07-25T09:55:27.810Z</updated>
+    <updated>2019-07-29T03:38:18.900Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="1-对比"><a href="#1-对比" class="headerlink" title="1. 对比"></a>1. 对比</h3><p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1etk3hqcje6j20lc0zkq5i.jpg" width="250"></p>
+    <content type="html"><![CDATA[<h3 id="1-对比"><a href="#1-对比" class="headerlink" title="1. 对比"></a>1. 对比</h3><center><img src="https://i.loli.net/2019/07/29/5d3e5deb94b6e92245.png" width="250"></center>
+
 <blockquote>
 <p>注: 友盟用户反馈SDK中默认的用户反馈页，功能大而全(联系方式可以选择电话、QQ、邮箱;用户可以用发送语音反馈;可发图片;回复后推送消息给用户…)，可这设计实在是丑到没朋友，且友盟集成的方式很难在原基础上对UI进行自定义…</p>
 </blockquote>
-<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609jw1etk2r6ohbrj20lc0zktah.jpg" width="250">  <img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1etk2r62351j20lc0zkaav.jpg" width="250"> </p>
+<center><img src="https://i.loli.net/2019/07/29/5d3e5f5f66f3e61612.png" width="220">  <img src="https://i.loli.net/2019/07/29/5d3e5f76c88c199819.png" width="220"></center>
+
 <blockquote>
 <p>注: app中”用户反馈”功能常见的页面是长这个样子的: 图1 截自大众点评   图2 截自豆瓣FM</p>
 </blockquote>
-<p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1etk2r5d49oj20lc0zk0uz.jpg" width="250"></p>
+<center><img src="https://i.loli.net/2019/07/29/5d3e5f940b06935620.png" width="250"></center>
+
 <blockquote>
 <p><strong>注: “联系方式 (EditText) ＋ 反馈内容 (EditText) ＋ 发送 (Button)”这种意见反馈实现起来很简单，也满足大部分app的反馈的需求了，可目前在做的项目因为产品定位上需要，希望对用户的反馈的及时性还是高一点好，所以集成了友盟的意见反馈(它提供了一个后台回复平台)，且对原始页面进行UI自定义，初步样式如上</strong></p>
 </blockquote>
-<h3 id="2-集成-只介绍Android-Studio方式"><a href="#2-集成-只介绍Android-Studio方式" class="headerlink" title="2.集成(只介绍Android Studio方式)"></a>2.集成(只介绍Android Studio方式)</h3><p>1) 一贯的申请开发者账号，注册应用，下载SDK、Demo<br>2) 在应用对应module下的build.gradle文件中添加:</p>
+<h3 id="2-集成-只介绍Android-Studio方式"><a href="#2-集成-只介绍Android-Studio方式" class="headerlink" title="2.集成(只介绍Android Studio方式)"></a>2.集成(只介绍Android Studio方式)</h3><p>1) 一贯的申请开发者账号，注册应用，下载 SDK、Demo<br>2) 在应用对应module下的 <code>build.gradle</code> 文件中添加:</p>
 <pre><code class="Java">repositories {
         // others
         jcenter()
@@ -2770,7 +2730,7 @@ dependencies {
     compile &#39;com.android.support:support-v4:21.+&#39;
 }
 </code></pre>
-<p>3) “AndroidManifest.xml”, 在<application>标签中添加对应的Activity, APPKEY, 和权限，注意替换其中的”YOUR_APP_KEY” 和”Channel ID”。</application></p>
+<p>3) “AndroidManifest.xml”, 在<application>标签中添加对应的 Activity, APPKEY, 和权限，注意替换其中的 <code>YOUR_APP_KEY</code>  和 <code>Channel ID</code> 。</application></p>
 <pre><code class="Java">&lt;manifest&gt;
     // others
     &lt;uses-permission android:name=&quot;android.permission.INTERNET&quot;/&gt;
@@ -2792,21 +2752,21 @@ dependencies {
     &lt;/application&gt;
 &lt;/manifest&gt;
 </code></pre>
-<p>4) 自定义页面布局、参照开发文档和官方demo实现页面功能</p>
+<p>4) 自定义页面布局、参照开发文档和官方 demo 实现页面功能</p>
 <blockquote>
-<p>这里不细讲实现细节了，待当前项目完成后我将我的意见反馈模块抽出来做成demo放到github上，看demo会更清楚</p>
+<p>这里不细讲实现细节了，待当前项目完成后我将我的意见反馈模块抽出来做成 demo 放到 github上，看 demo会更清楚。</p>
 </blockquote>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;1-对比&quot;&gt;&lt;a href=&quot;#1-对比&quot; class=&quot;headerlink&quot; title=&quot;1. 对比&quot;&gt;&lt;/a&gt;1. 对比&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/62ed8609jw1etk3hqcje6j
+      &lt;h3 id=&quot;1-对比&quot;&gt;&lt;a href=&quot;#1-对比&quot; class=&quot;headerlink&quot; title=&quot;1. 对比&quot;&gt;&lt;/a&gt;1. 对比&lt;/h3&gt;&lt;center&gt;&lt;img src=&quot;https://i.loli.net/2019/07/29/5d3e5deb94b6e92
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Android" scheme="https://w4mxl.github.io/categories/Code/Android/"/>
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Tech/Android/"/>
     
     
   </entry>
@@ -2835,11 +2795,11 @@ dependencies {
   </entry>
   
   <entry>
-    <title>ScrollView下嵌套 ListView(GridView) 冲突导致显示不全的问题</title>
-    <link href="https://w4mxl.github.io/2015/06/17/Android/ScrollView%E4%B8%8B%E5%B5%8C%E5%A5%97%20ListView(GridView)%20%E5%86%B2%E7%AA%81%E5%AF%BC%E8%87%B4%E6%98%BE%E7%A4%BA%E4%B8%8D%E5%85%A8%E7%9A%84%E9%97%AE%E9%A2%98/"/>
-    <id>https://w4mxl.github.io/2015/06/17/Android/ScrollView下嵌套 ListView(GridView) 冲突导致显示不全的问题/</id>
+    <title>ScrollView下嵌套 ListView（GridView）冲突导致显示不全的问题</title>
+    <link href="https://w4mxl.github.io/2015/06/17/Tech/Android/ScrollView%E4%B8%8B%E5%B5%8C%E5%A5%97%20ListView(GridView)%20%E5%86%B2%E7%AA%81%E5%AF%BC%E8%87%B4%E6%98%BE%E7%A4%BA%E4%B8%8D%E5%85%A8%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>https://w4mxl.github.io/2015/06/17/Tech/Android/ScrollView下嵌套 ListView(GridView) 冲突导致显示不全的问题/</id>
     <published>2015-06-17T03:35:00.000Z</published>
-    <updated>2019-07-25T09:48:36.422Z</updated>
+    <updated>2019-07-29T06:53:54.241Z</updated>
     
     <content type="html"><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>为了满足功能需求，界面布局中常常需要用到 ScrollView 下嵌套 ListView(GridView) 的情况，ScrollView 可以滚动，而 ListView(GridView) 只作数据展示不能滚动。而写完调试时会发现，ListView(GridView) 只显示了一行数据，自身滚动后能看到剩余数据。原因是ScrollView 中嵌套 ListView(GridView)，无法正确的计算ListView(GridView)的高度。</p>
 <h2 id="解决方法一"><a href="#解决方法一" class="headerlink" title="解决方法一"></a>解决方法一</h2><p>原理:<code>setAdapter后，获取到每一项item的高度，再动态设置listview或者gridview的高度。</code></p>
@@ -2946,23 +2906,23 @@ public class MyGridView extends GridView{
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Android" scheme="https://w4mxl.github.io/categories/Code/Android/"/>
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Tech/Android/"/>
     
     
   </entry>
   
   <entry>
-    <title>使用SparseArray替代HashMap</title>
-    <link href="https://w4mxl.github.io/2015/06/14/Android/%5BAndroid%E5%BA%94%E7%94%A8%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%5D%E4%BD%BF%E7%94%A8SparseArray%E6%9B%BF%E4%BB%A3HashMap/"/>
-    <id>https://w4mxl.github.io/2015/06/14/Android/[Android应用性能优化]使用SparseArray替代HashMap/</id>
+    <title>使用 SparseArray 替代 HashMap</title>
+    <link href="https://w4mxl.github.io/2015/06/14/use-sparse-array/"/>
+    <id>https://w4mxl.github.io/2015/06/14/use-sparse-array/</id>
     <published>2015-06-14T05:51:00.000Z</published>
-    <updated>2019-07-25T09:48:36.402Z</updated>
+    <updated>2019-07-29T07:24:03.251Z</updated>
     
     <content type="html"><![CDATA[<p>今天在用 Android Studio &gt; Analyze &gt; Inspect Code 对目前项目进行检查后给出了很多优化建议，其中一类是关于用SparseArray替代HashMap的。</p>
-<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1et3lvdgva1j213s058gn1.jpg" alt><br>图1:意思是说用SparseArray<e>来替代，以获取更好性能</e></p>
-<p><img src="http://ww3.sinaimg.cn/mw690/62ed8609gw1et3lvcylsgj20yy05sjsk.jpg" alt><br>图2:图1问题对应的实际代码块</p>
+<p><img src="https://i.loli.net/2019/07/29/5d3e98da0efef38754.png" alt="用SparseArray&lt;E&gt;来替代，以获取更好性能"></p>
+<p><img src="https://i.loli.net/2019/07/29/5d3e99185af4130533.png" alt="对应的实际代码块"></p>
 <p>老实说我之前开发中用HashMap比较多，还真没用过SparseArray，当看到建议后就去google了解它。</p>
 <blockquote>
 <p>SparseArray是android里为<interger,object>这样的Hashmap而专门写的类，目的是提高效率，其核心是折半查找函数（binarySearch）。</interger,object></p>
@@ -3004,13 +2964,13 @@ for (int i = 0; i &lt; stringSparseArray.size(); i++) {
     <summary type="html">
     
       &lt;p&gt;今天在用 Android Studio &amp;gt; Analyze &amp;gt; Inspect Code 对目前项目进行检查后给出了很多优化建议，其中一类是关于用SparseArray替代HashMap的。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Android" scheme="https://w4mxl.github.io/categories/Code/Android/"/>
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Tech/Android/"/>
     
     
   </entry>
@@ -3020,7 +2980,7 @@ for (int i = 0; i &lt; stringSparseArray.size(); i++) {
     <link href="https://w4mxl.github.io/2015/06/07/Android-wechat-pay/"/>
     <id>https://w4mxl.github.io/2015/06/07/Android-wechat-pay/</id>
     <published>2015-06-07T11:51:00.000Z</published>
-    <updated>2019-07-25T09:48:36.517Z</updated>
+    <updated>2019-07-29T06:21:33.773Z</updated>
     
     <content type="html"><![CDATA[<h3 id="1-相关术语"><a href="#1-相关术语" class="headerlink" title="1.相关术语"></a>1.相关术语</h3><ul>
 <li>微信开放平台<br>微信开放平台是商户APP接入微信支付开放接口的申请入口，通过此平台可申请微信APP支付。<br>平台入口：<a href="http://open.weixin.qq.com" target="_blank" rel="noopener">http://open.weixin.qq.com</a>。</li>
@@ -3028,12 +2988,21 @@ for (int i = 0; i &lt; stringSparseArray.size(); i++) {
 <li>商户证书<br>商户证书是微信提供的二进制文件，商户系统发起与微信支付后台服务器通信请求的时候，作为微信支付后台识别商户真实身份的凭据。</li>
 <li>签名<br>商户后台和微信支付后台根据相同的密钥和算法生成一个结果，用于校验双方身份合法性。签名的算法由微信支付制定并公开，常用的签名方式有：MD5、SHA1、SHA256、HMAC等。</li>
 </ul>
-<h3 id="2-接入前期的准备工作和学习资源"><a href="#2-接入前期的准备工作和学习资源" class="headerlink" title="2.接入前期的准备工作和学习资源"></a>2.接入前期的准备工作和学习资源</h3><p>-&gt; 申请好微信开放平台账号<br>-&gt; 创建好一个应用提交申请<br>-&gt; 在应用详情中申请开通微信支付功能(审核要3-7天，建议提前安排人做好这件事)<br><img src="http://mmbiz.qpic.cn/mmbiz/PiajxSqBRaEIVJ6bW5EhIpAib0BYv5l1FvJaAv8aQ8NicUicoxlXGgHoyC8AqSUV5WW1Hicj6aLNDZoGmyLjLwh4kDg/0?wx_fmt=jpeg" alt="申请流程图"><br>前面三步都完成后，对于开发人员来说应该已经获得下面几个有用数据：<br>1.AppID (应用申请审核通过后获得)<br>2.AppSecret (应用申请审核通过后获得)<br>3.商户号 (微信支付审核通过后获得)<br>4.商户支付密钥key (微信支付审核通过后，通过邮件引导在商户平台设置后获得)</p>
+<h3 id="2-接入前期的准备工作和学习资源"><a href="#2-接入前期的准备工作和学习资源" class="headerlink" title="2.接入前期的准备工作和学习资源"></a>2.接入前期的准备工作和学习资源</h3><p>-&gt; 申请好微信开放平台账号<br>-&gt; 创建好一个应用提交申请<br>-&gt; 在应用详情中申请开通微信支付功能(审核要3-7天，建议提前安排人做好这件事)<br><img src="https://i.loli.net/2019/07/29/5d3e8f9129f7f89958.png" alt="申请流程图"><br>前面三步都完成后，对于开发人员来说应该已经获得下面几个有用数据：</p>
+<ol>
+<li>AppID (应用申请审核通过后获得)</li>
+<li>AppSecret (应用申请审核通过后获得)</li>
+<li>商户号 (微信支付审核通过后获得)</li>
+<li>商户支付密钥key (微信支付审核通过后，通过邮件引导在商户平台设置后获得)</li>
+</ol>
 <blockquote>
 <p>关于第4点可参考：<a href="http://help.ecmoban.com/article-2085.html" target="_blank" rel="noopener">商户支付密钥key的生成与设置</a></p>
 </blockquote>
-<p>-&gt; <a href="https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&amp;t=resource/res_list&amp;verify=1&amp;id=open1419319164&amp;lang=zh_CN" target="_blank" rel="noopener">Android资源下载</a><br><img src="http://ww2.sinaimg.cn/mw690/62ed8609jw1esvtprik46j21h80o4afr.jpg" alt><br>-&gt; <a href="http://pay.weixin.qq.com/wiki/doc/api/app.php?chapter=11_1" target="_blank" rel="noopener">微信APP支付资源下载</a><br><img src="http://ww1.sinaimg.cn/mw690/62ed8609jw1esvtpqxdzlj21i205q750.jpg" alt><br>在上面两个链接中可以下载到要集成进项目的SDK、开发文档、和两个demo(一个接入demo和一个支付demo)，前期应好好根据文档学习demo，demo是eclipse下开发的，导入后还需将其改为GBK编码，以解决demo中文注释乱码问题。<br>另外开放平台提供的<a href="https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&amp;t=resource/res_list&amp;verify=1&amp;lang=zh_CN&amp;token=1be847c3b5d715b3705ae6d7dbd243bd2c7d5a43" target="_blank" rel="noopener">Android接入指南</a>应该好好看。</p>
-<h3 id="3-开发步骤"><a href="#3-开发步骤" class="headerlink" title="3.开发步骤"></a>3.开发步骤</h3><p><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1esvuj2vzjkj20qn0t4mz3.jpg" alt><br>我的项目中，在需要用到微信支付的activity中处理逻辑如下：</p>
+<p>-&gt; <a href="https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&amp;t=resource/res_list&amp;verify=1&amp;id=open1419319164&amp;lang=zh_CN" target="_blank" rel="noopener">Android资源下载</a><br><img src="https://i.loli.net/2019/07/29/5d3e8fd18913822222.png" alt></p>
+<p>-&gt; <a href="http://pay.weixin.qq.com/wiki/doc/api/app.php?chapter=11_1" target="_blank" rel="noopener">微信APP支付资源下载</a><br><img src="https://i.loli.net/2019/07/29/5d3e8fe4e107c86008.png" alt></p>
+<p>在上面两个链接中可以下载到要集成进项目的SDK、开发文档、和两个demo(一个接入demo和一个支付demo)，前期应好好根据文档学习demo，demo是eclipse下开发的，导入后还需将其改为GBK编码，以解决demo中文注释乱码问题。<br>另外开放平台提供的<a href="https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&amp;t=resource/res_list&amp;verify=1&amp;lang=zh_CN&amp;token=1be847c3b5d715b3705ae6d7dbd243bd2c7d5a43" target="_blank" rel="noopener">Android接入指南</a>应该好好看。</p>
+<h3 id="3-开发步骤"><a href="#3-开发步骤" class="headerlink" title="3.开发步骤"></a>3.开发步骤</h3><p><img src="https://i.loli.net/2019/07/29/5d3e90031a96753276.png" alt></p>
+<p>我的项目中，在需要用到微信支付的activity中处理逻辑如下：</p>
 <pre><code class="JAVA">// TODO: 1.请求后台生成支付订单
 GetPrepayIdTask getPrepayId = new GetPrepayIdTask();
 getPrepayId.execute();
@@ -3045,7 +3014,9 @@ getPrepayId.execute();
 // TODO: 2.根据后台返回的信息生成支付请求
 // TODO: 3.发起微信支付请求
 </code></pre>
-<p>微信处理完返回给app的返回码对应关系：<br><img src="http://ww4.sinaimg.cn/mw690/62ed8609jw1esvuj3fgfhj21hm0b2ac2.jpg" alt><br>不过注意<strong>“如果支付成功则去后台查询支付结果再展示用户实际支付结果。注意一定不能以客户端返回作为用户支付的结果，应以服务器端的接收的支付通知或查询API返回的结果为准。”</strong><br>其实只要你能将开始申请拿到的那几个字段替换到微信官方提供的<a href="http://pay.weixin.qq.com/wiki/doc/api/download/wechat_sdk_sample_android_v3_pay.zip" target="_blank" rel="noopener">微信支付demo:wechat_sdk_sample_android_v3_pay.zip</a>里的，然后成功跑通，流程就清楚了。不过需注意的是，官方文档里说的<strong>“商户服务器生成支付订单，先调用统一下单API生成预付单，获取到prepay_id后将参数再次签名传输给APP发起支付。”</strong>这一步，在demo中是在app端模拟实现的，实际开发中还是建议按文档中的来，会更加安全性。</p>
+<p>微信处理完返回给app的返回码对应关系：<br><img src="https://i.loli.net/2019/07/29/5d3e9038af3f453623.png" alt></p>
+<p>不过注意<strong>“如果支付成功则去后台查询支付结果再展示用户实际支付结果。注意一定不能以客户端返回作为用户支付的结果，应以服务器端的接收的支付通知或查询API返回的结果为准。”</strong></p>
+<p>其实只要你能将开始申请拿到的那几个字段替换到微信官方提供的<a href="http://pay.weixin.qq.com/wiki/doc/api/download/wechat_sdk_sample_android_v3_pay.zip" target="_blank" rel="noopener">微信支付demo:wechat_sdk_sample_android_v3_pay.zip</a>里的，然后成功跑通，流程就清楚了。不过需注意的是，官方文档里说的<strong>“商户服务器生成支付订单，先调用统一下单API生成预付单，获取到prepay_id后将参数再次签名传输给APP发起支付。”</strong>这一步，在demo中是在app端模拟实现的，实际开发中还是建议按文档中的来，会更加安全性。</p>
 <blockquote>
 <p>我摸索阶段除了微信官方提供的文档和demo，下面文章给过我帮助，谢谢:</p>
 </blockquote>
@@ -3059,9 +3030,9 @@ getPrepayId.execute();
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Android" scheme="https://w4mxl.github.io/categories/Code/Android/"/>
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Tech/Android/"/>
     
     
   </entry>
@@ -3071,7 +3042,7 @@ getPrepayId.execute();
     <link href="https://w4mxl.github.io/2015/05/31/Volley-study/"/>
     <id>https://w4mxl.github.io/2015/05/31/Volley-study/</id>
     <published>2015-05-31T13:59:00.000Z</published>
-    <updated>2019-07-25T09:48:36.428Z</updated>
+    <updated>2019-07-29T06:53:54.334Z</updated>
     
     <content type="html"><![CDATA[<p>Volley 是 Android 开发中跟网络操作相关的一个开源库，这个库的官方介绍是：</p>
 <blockquote>
@@ -3095,21 +3066,21 @@ getPrepayId.execute();
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Android" scheme="https://w4mxl.github.io/categories/Code/Android/"/>
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Tech/Android/"/>
     
     
   </entry>
   
   <entry>
-    <title>ButterKnife的使用</title>
+    <title>ButterKnife 的使用</title>
     <link href="https://w4mxl.github.io/2015/05/23/Use-ButterKnife/"/>
     <id>https://w4mxl.github.io/2015/05/23/Use-ButterKnife/</id>
     <published>2015-05-23T01:05:00.000Z</published>
-    <updated>2019-07-25T09:48:36.510Z</updated>
+    <updated>2019-07-29T06:22:43.474Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="http://jakewharton.github.io/butterknife/static/logo.png" alt="butterknife-logo"><br><a href="https://github.com/JakeWharton/butterknife" target="_blank" rel="noopener">ButterKnife</a>是一个通过对Android View添加注解的方式来提高开发效率的开源库。</p>
+    <content type="html"><![CDATA[<p><img src="https://i.loli.net/2019/07/29/5d3e9073405cd33033.png" alt="butterknife-logo"><br><a href="https://github.com/JakeWharton/butterknife" target="_blank" rel="noopener">ButterKnife</a>是一个通过对Android View添加注解的方式来提高开发效率的开源库。</p>
 <h3 id="1-配置"><a href="#1-配置" class="headerlink" title="1.配置"></a>1.配置</h3><p>在项目中配置ButterKnife有下面几种方式:   </p>
 <h4 id="JAR"><a href="#JAR" class="headerlink" title="JAR"></a>JAR</h4><p>旧式导jar包:<a href="http://repo1.maven.org/maven2/com/jakewharton/butterknife/6.1.0/butterknife-6.1.0.jar" target="_blank" rel="noopener">Butter Knife v6.1.0 JAR</a></p>
 <h4 id="MAVEN"><a href="#MAVEN" class="headerlink" title="MAVEN"></a>MAVEN</h4><p>如果你使用maven，可以添加butterknife库作为依赖</p>
@@ -3256,13 +3227,13 @@ ImageView photo = ButterKnife.findById(view, R.id.photo);
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://jakewharton.github.io/butterknife/static/logo.png&quot; alt=&quot;butterknife-logo&quot;&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/JakeWharton/bu
+      &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2019/07/29/5d3e9073405cd33033.png&quot; alt=&quot;butterknife-logo&quot;&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/JakeWharton/butter
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Android" scheme="https://w4mxl.github.io/categories/Code/Android/"/>
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Tech/Android/"/>
     
     
   </entry>
@@ -3322,9 +3293,10 @@ ImageView photo = ButterKnife.findById(view, R.id.photo);
     <link href="https://w4mxl.github.io/2015/05/06/Combination-Lock-And-HotDog/"/>
     <id>https://w4mxl.github.io/2015/05/06/Combination-Lock-And-HotDog/</id>
     <published>2015-05-06T12:50:00.000Z</published>
-    <updated>2019-07-25T09:45:31.868Z</updated>
+    <updated>2019-07-29T08:24:24.878Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/image/62ed8609gw1eruvbdcpgdj20ku112dq6.jpg" width="300"><br><img src="/image/62ed8609gw1eruv82lkk6j20ku1127ds.jpg" width="300"></p>
+    <content type="html"><![CDATA[<center><img src="/image/62ed8609gw1eruvbdcpgdj20ku112dq6.jpg" width="300"> <img src="/image/62ed8609gw1eruv82lkk6j20ku1127ds.jpg" width="300"></center>
+
 <ul>
 <li><p>Combination Lock 插件安装后没有设置项，直接起效。通过转动轮盘选择密码数字，有点怀旧的感觉。最近刚上架cydia，好像还有点bug(转动时有时数字选不上，但是可以像原始那样使用直接点击数字的方式)，不过一点没影响我对它的喜欢。    </p>
 </li>
@@ -3335,13 +3307,13 @@ ImageView photo = ButterKnife.findById(view, R.id.photo);
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/image/62ed8609gw1eruvbdcpgdj20ku112dq6.jpg&quot; width=&quot;300&quot;&gt;&lt;br&gt;&lt;img src=&quot;/image/62ed8609gw1eruv82lkk6j20ku1127ds.jpg&quot; width=&quot;300&quot;
+      &lt;center&gt;&lt;img src=&quot;/image/62ed8609gw1eruvbdcpgdj20ku112dq6.jpg&quot; width=&quot;300&quot;&gt; &lt;img src=&quot;/image/62ed8609gw1eruv82lkk6j20ku1127ds.jpg&quot; width=&quot;30
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Jailbreak" scheme="https://w4mxl.github.io/categories/Code/Jailbreak/"/>
+      <category term="Jailbreak" scheme="https://w4mxl.github.io/categories/Tech/Jailbreak/"/>
     
     
   </entry>
@@ -3414,13 +3386,13 @@ ImageView photo = ButterKnife.findById(view, R.id.photo);
   </entry>
   
   <entry>
-    <title>Android Studio 使用技巧(updating...)</title>
+    <title>Android Studio 使用技巧</title>
     <link href="https://w4mxl.github.io/2015/04/17/tips-of-Android-Studio/"/>
     <id>https://w4mxl.github.io/2015/04/17/tips-of-Android-Studio/</id>
     <published>2015-04-16T16:00:00.000Z</published>
-    <updated>2019-07-25T09:48:36.355Z</updated>
+    <updated>2019-07-29T06:08:16.393Z</updated>
     
-    <content type="html"><![CDATA[<p>Android Studio,从13年Google I/O发布后（还记得那时候翻墙在YouTube上看Google产品经理I/0现场演示Android Studio新特性，那黑色的theme[Darcula]，好酷），和它一路从早期开发者预览版、beta版、稳定版走来。开始很不稳定，每次一更新不出意外总遇到问题，然后只好不断通过google来填坑，再后来随着一版版更新，坑也填的差不多了，稳定版就发布了（2014/12/08），用起来也越来越顺手，说起来满满的都是爱。</p>
+    <content type="html"><![CDATA[<p>Android Studio，从13年 Google I/O 发布后（还记得那时候翻墙在 YouTube 上看 Google 产品经理I/0现场演示 Android Studio 新特性，那黑色的theme[Darcula]，好酷），和它一路从早期开发者预览版、beta版、稳定版走来。开始很不稳定，每次一更新不出意外总遇到问题，然后只好不断通过 google 来填坑，再后来随着一版版更新，坑也填的差不多了，稳定版就发布了（2014/12/08），用起来也越来越顺手，说起来满满的都是爱。</p>
 <p>下面是我使用Android Studio过程中累计到一些技巧(工具)，希望通过这篇博客分享出来，如果你有其他关于Android Studio的使用上的技巧，也特别希望你能分享给我。</p>
 <h4 id="下面提到的工具安装方法"><a href="#下面提到的工具安装方法" class="headerlink" title="下面提到的工具安装方法"></a>下面提到的工具安装方法</h4><ol>
 <li>Android Studio:  <code>Preferences → Plugins → Browse repositories</code> 搜索工具的名字</li>
@@ -3445,7 +3417,7 @@ ImageView photo = ButterKnife.findById(view, R.id.photo);
 <li><a href="https://github.com/zzz40500/GsonFormat" target="_blank" rel="noopener">GsonFormat</a>。这是一个根据JSONObject格式的字符串,自动生成实体类参数的插件。实在是很方便好用。</li>
 </ul>
 <p><img src="/image/GsonFormat.png" alt></p>
-<h2 id><a href="#" class="headerlink" title></a><img src="/image/GsonFormat_simple.gif" alt></h2><p><code>更新: 2015/6/11</code></p>
+<h2 id><a href="#" class="headerlink" title></a><img src="/image/GsonFormat_simple.gif" alt></h2><p><strong>更新: 2015/6/11</strong></p>
 <ul>
 <li><a href="https://github.com/avast/android-butterknife-zelezny" target="_blank" rel="noopener">ButterKnife Zelezny</a>。<code>Android Studio plugin for generating ButterKnife injections from selected layout XML.</code></li>
 </ul>
@@ -3454,13 +3426,13 @@ ImageView photo = ButterKnife.findById(view, R.id.photo);
     
     <summary type="html">
     
-      &lt;p&gt;Android Studio,从13年Google I/O发布后（还记得那时候翻墙在YouTube上看Google产品经理I/0现场演示Android Studio新特性，那黑色的theme[Darcula]，好酷），和它一路从早期开发者预览版、beta版、稳定版走来。开始
+      &lt;p&gt;Android Studio，从13年 Google I/O 发布后（还记得那时候翻墙在 YouTube 上看 Google 产品经理I/0现场演示 Android Studio 新特性，那黑色的theme[Darcula]，好酷），和它一路从早期开发者预览版、beta版、
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Android" scheme="https://w4mxl.github.io/categories/Code/Android/"/>
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Tech/Android/"/>
     
     
   </entry>
@@ -3641,24 +3613,24 @@ ImageView photo = ButterKnife.findById(view, R.id.photo);
   </entry>
   
   <entry>
-    <title>[Itsycal] Mac端的日历小工具</title>
+    <title>[Itsycal] Mac 端的日历小工具</title>
     <link href="https://w4mxl.github.io/2015/02/04/Itsycal/"/>
     <id>https://w4mxl.github.io/2015/02/04/Itsycal/</id>
     <published>2015-02-03T16:38:00.000Z</published>
-    <updated>2019-07-25T09:45:34.465Z</updated>
+    <updated>2019-07-29T08:24:23.918Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/image/itsycal.png" width="250"><br><strong><a href="http://www.mowglii.com/itsycal/" target="_blank" rel="noopener">Itsycal</a></strong><br>Simple and easy to use.</p>
+    <content type="html"><![CDATA[<p><center><img src="/image/itsycal.png" width="250"><br><strong><a href="http://www.mowglii.com/itsycal/" target="_blank" rel="noopener">Itsycal</a></strong><br>Simple and easy to use.</center></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/image/itsycal.png&quot; width=&quot;250&quot;&gt;&lt;br&gt;&lt;strong&gt;&lt;a href=&quot;http://www.mowglii.com/itsycal/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Itsycal&lt;/a
+      &lt;p&gt;&lt;center&gt;&lt;img src=&quot;/image/itsycal.png&quot; width=&quot;250&quot;&gt;&lt;br&gt;&lt;strong&gt;&lt;a href=&quot;http://www.mowglii.com/itsycal/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;It
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Jailbreak" scheme="https://w4mxl.github.io/categories/Code/Jailbreak/"/>
+      <category term="Jailbreak" scheme="https://w4mxl.github.io/categories/Tech/Jailbreak/"/>
     
     
   </entry>
@@ -3668,13 +3640,15 @@ ImageView photo = ButterKnife.findById(view, R.id.photo);
     <link href="https://w4mxl.github.io/2015/01/20/Upscale/"/>
     <id>https://w4mxl.github.io/2015/01/20/Upscale/</id>
     <published>2015-01-20T15:23:00.000Z</published>
-    <updated>2019-07-25T09:45:34.469Z</updated>
+    <updated>2019-07-29T08:24:24.775Z</updated>
     
     <content type="html"><![CDATA[<p><strong>Upscale</strong><br>Description: customize your device’s resolution to what you like.<br>Developer: bd452<br>Price: Free<br>Repo: <a href="http://repo.bd452.com" target="_blank" rel="noopener">http://repo.bd452.com</a> </p>
 <p>[Upscale]这款插件可以让用户根据自己的喜好自定义iphone的分辨率（原理类似我们在PC或者Mac上更改屏幕分辨率）。<br>不过插件作者在cydia该插件的介绍中有说明，为了后续手机使用过程中的稳定性，最好是不要把分辨率改的很奇葩。<br>另外，通过［Upscale］更改完分辨率后，如果有第三方的app界面显示大小并未适配，可以在cydia中安装另一款插件（ForceGoodFit）来解决。 </p>
 <p>在设置中，可以选择作者预设的4种分辨率，当然也可以通过输入其他值来自定义自己喜欢的。<br>我手上的是iphone 5s（640x1136），我选的是iphone 6的分辨率（750x1334），这样使用一段时间后，😍，喜欢的不行。 </p>
-<p>设置前后对比：<br><img src="/image/Upscale01.png" width="250"><br><img src="/image/Upscale02.png" width="250"><br><img src="/image/Upscale03.png" width="250"></p>
-]]></content>
+<p>设置前后对比： </p>
+<center><img src="/image/Upscale01.png" width="250"></center>
+
+<center><img src="/image/Upscale02.png" width="250">  <img src="/image/Upscale03.png" width="250"></center>]]></content>
     
     <summary type="html">
     
@@ -3682,9 +3656,9 @@ ImageView photo = ButterKnife.findById(view, R.id.photo);
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Jailbreak" scheme="https://w4mxl.github.io/categories/Code/Jailbreak/"/>
+      <category term="Jailbreak" scheme="https://w4mxl.github.io/categories/Tech/Jailbreak/"/>
     
     
   </entry>
@@ -3694,12 +3668,11 @@ ImageView photo = ButterKnife.findById(view, R.id.photo);
     <link href="https://w4mxl.github.io/2015/01/19/date-in-StatusBar/"/>
     <id>https://w4mxl.github.io/2015/01/19/date-in-StatusBar/</id>
     <published>2015-01-19T14:55:00.000Z</published>
-    <updated>2019-07-25T09:45:34.456Z</updated>
+    <updated>2019-07-29T08:24:23.052Z</updated>
     
     <content type="html"><![CDATA[<p><strong>Date In StatusBar</strong><br>Description: shows the date in the Status Bar<br>Developer: MatrixDevTeam<br>Price: Free<br>Repo: BigBoss </p>
 <p>我向来就喜欢简洁而有效的插件，[Date In StatusBar]这款插件就是之一。<br>它就在那儿。当你每次想知道当前日期时，瞥一眼状态栏就可以，就如同往状态栏瞥一眼时间那样自然和原生。<br>不知道再往后ios升级，系统设置中会不会出现这样一个设置项。 </p>
-<p><img src="/image/DateInStatusBar.png" width="350"></p>
-]]></content>
+<center><img src="/image/DateInStatusBar.png" width="350"></center>]]></content>
     
     <summary type="html">
     
@@ -3707,9 +3680,9 @@ ImageView photo = ButterKnife.findById(view, R.id.photo);
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Jailbreak" scheme="https://w4mxl.github.io/categories/Code/Jailbreak/"/>
+      <category term="Jailbreak" scheme="https://w4mxl.github.io/categories/Tech/Jailbreak/"/>
     
     
   </entry>
@@ -3834,16 +3807,16 @@ ImageView photo = ButterKnife.findById(view, R.id.photo);
   </entry>
   
   <entry>
-    <title>Android Studio中新建一个文件时插入作者、日期</title>
-    <link href="https://w4mxl.github.io/2014/11/21/insert-author-and-date-in-android-studio-new-file/"/>
-    <id>https://w4mxl.github.io/2014/11/21/insert-author-and-date-in-android-studio-new-file/</id>
+    <title>Android Studio 中新建文件时插入作者、日期</title>
+    <link href="https://w4mxl.github.io/2014/11/21/insert-author-date-in-android-new-file/"/>
+    <id>https://w4mxl.github.io/2014/11/21/insert-author-date-in-android-new-file/</id>
     <published>2014-11-20T17:04:12.000Z</published>
-    <updated>2019-07-25T09:48:36.454Z</updated>
+    <updated>2019-07-29T06:10:13.196Z</updated>
     
     <content type="html"><![CDATA[<h3 id="需求描述："><a href="#需求描述：" class="headerlink" title="需求描述："></a>需求描述：</h3><p>在使用android studio过程中，想在新创建的文件（activity、service…）头部添加上author、date信息。
 　　</p>
 <h3 id="解决过程："><a href="#解决过程：" class="headerlink" title="解决过程："></a>解决过程：</h3><p><img src="/image/图/Android Studio中新建一个文件（Activity...）时插入作者、日期01.png" width="700"></p>
-<p>我先是按照之前使用eclipse对这个需求的配置方法，这个方法是通过配置Eclipse－Preferences－Java-Code Templates里Comments模板来实现，如果可行的话会在每次创建完新的文件后自动在文件头插入配置上的信息。但是折腾完发现在这里行不通。</p>
+<p>我先是按照之前使用eclipse对这个需求的配置方法，这个方法是通过配置 <code>Eclipse</code>－<code>Preferences</code>－<code>Java</code>-<code>Code Templates</code> 里 Comments 模板来实现，如果可行的话会在每次创建完新的文件后自动在文件头插入配置上的信息。但是折腾完发现在这里行不通。</p>
 <p>之后就想到把想配置的这个模板做成一个快捷键，当新建完一个文件后，在文件的头部通过快捷键的方式插入前面配置好的信息。测试后发现可以行的通。</p>
 <p><img src="/image/图/Android Studio中新建一个文件（Activity...）时插入作者、日期02.png" width="700"></p>
 <p><img src="/image/图/Android Studio中新建一个文件（Activity...）时插入作者、日期03.png" width="600"><br><img src="/image/图/Android Studio中新建一个文件（Activity...）时插入作者、日期04.png" width="600"></p>
@@ -3855,9 +3828,9 @@ ImageView photo = ButterKnife.findById(view, R.id.photo);
     
     </summary>
     
-      <category term="Code" scheme="https://w4mxl.github.io/categories/Code/"/>
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
     
-      <category term="Android" scheme="https://w4mxl.github.io/categories/Code/Android/"/>
+      <category term="Android" scheme="https://w4mxl.github.io/categories/Tech/Android/"/>
     
     
   </entry>
@@ -4691,6 +4664,27 @@ ImageView photo = ButterKnife.findById(view, R.id.photo);
   </entry>
   
   <entry>
+    <title>Back to School</title>
+    <link href="https://w4mxl.github.io/2011/02/20/Back-to-School/"/>
+    <id>https://w4mxl.github.io/2011/02/20/Back-to-School/</id>
+    <published>2011-02-19T16:00:00.000Z</published>
+    <updated>2019-03-16T12:22:17.632Z</updated>
+    
+    <content type="html"><![CDATA[<p>　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的，快乐的长大。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的
+    
+    </summary>
+    
+      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>安慰</title>
     <link href="https://w4mxl.github.io/2011/02/20/%E5%AE%89%E6%85%B0/"/>
     <id>https://w4mxl.github.io/2011/02/20/安慰/</id>
@@ -4705,27 +4699,6 @@ ImageView photo = ButterKnife.findById(view, R.id.photo);
     
       &lt;p&gt;电影总让我想起些我似乎忘了的东西！&lt;/p&gt;
 &lt;p&gt;明明钥匙在手上，却寻不到钥匙把门打开。看完《天若有情Ⅰ》，我就奇怪，那时吊儿郎当的我，现在怎么这么“乖”。在古惑仔横扫我整个初中那时，我们凡事只讲义气，只够买一根冰棒那分着吃，兄弟喜欢的女生不能有‘想法‘-_-#。那时候也是
-    
-    </summary>
-    
-      <category term="Life&#39;s" scheme="https://w4mxl.github.io/categories/Life-s/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Back to School</title>
-    <link href="https://w4mxl.github.io/2011/02/20/Back-to-School/"/>
-    <id>https://w4mxl.github.io/2011/02/20/Back-to-School/</id>
-    <published>2011-02-19T16:00:00.000Z</published>
-    <updated>2019-03-16T12:22:17.632Z</updated>
-    
-    <content type="html"><![CDATA[<p>　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的，快乐的长大。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的
     
     </summary>
     
