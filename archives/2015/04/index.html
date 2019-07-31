@@ -80,14 +80,6 @@
     
         
             
-            <li><div data-rel="Life">Life<small> (170)</small></div>
-                
-            </li>
-            
-        
-    
-        
-            
             <li><div data-rel="Tech"><i class="fold iconfont icon-right"></i>Tech<small> (27)</small></div>
                 
                     <ul class="sub hide">
@@ -105,6 +97,14 @@
                         </li>
                             
                     </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="Life">Life<small> (170)</small></div>
                 
             </li>
             
@@ -167,11 +167,11 @@
     <div class="tags-list">
     
     <li class="article-tag-list-item">
-        <a href="javascript:" class="color1">movie</a>
+        <a href="javascript:" class="color1">music</a>
     </li>
     
     <li class="article-tag-list-item">
-        <a href="javascript:" class="color1">music</a>
+        <a href="javascript:" class="color1">movie</a>
     </li>
     
     <div class="clearfix"></div>
@@ -1184,7 +1184,7 @@
         <article class="index">
             <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#关于我"><span class="toc-text">关于我</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#关于这里"><span class="toc-text">关于这里</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#关于我"><span class="toc-text">关于我</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#关于这里"><span class="toc-text">关于这里</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#搜索框"><span class="toc-text">搜索框</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#全局"><span class="toc-text">全局</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1212,6 +1212,71 @@
 <p>当然，我的分享如果对他人产生了价值或影响，我会觉得很酷。</p>
 <p>到目前为止已经写了<code class="article_number"></code>篇文章。</p>
 <p>网站是基于 <a href="https://pages.github.com/">GitHub Page</a> 和 <a href="https://hexo.io/">Hexo</a> 搭建的。 当前使用的是 <a href="https://github.com/yelog/hexo-theme-3-hexo">3-hexo</a> 主题。</p>
+<p><code>3-hexo</code> 主题很友好，支持以下快捷键操作（快捷键为vim风格的，可能与vimium、cVim（chrome插件）等的快捷键有冲突，插件设置屏蔽掉此站的快捷键即可）：</p>
+<h3 id="搜索框"><a href="#搜索框" class="headerlink" title="搜索框"></a>搜索框</h3><table>
+<thead>
+<tr>
+<th style="text-align:left">Key</th>
+<th style="text-align:left">Descption</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ESC</td>
+<td style="text-align:left">1.如果输入框有内容，清除内容<br> 2.如果输入框无内容，失去焦点</td>
+</tr>
+<tr>
+<td style="text-align:left">i/I</td>
+<td style="text-align:left">获取焦点</td>
+</tr>
+<tr>
+<td style="text-align:left">下</td>
+<td style="text-align:left">向下选择文章</td>
+</tr>
+<tr>
+<td style="text-align:left">上</td>
+<td style="text-align:left">向上选择文章</td>
+</tr>
+<tr>
+<td style="text-align:left">回车</td>
+<td style="text-align:left">打开当前选中的文章，若没有，则默认打开第一个</td>
+</tr>
+</tbody>
+</table>
+<h3 id="全局"><a href="#全局" class="headerlink" title="全局"></a>全局</h3><table>
+<thead>
+<tr>
+<th style="text-align:left">Key</th>
+<th style="text-align:left">Descption</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">s/S</td>
+<td style="text-align:left">全屏/取消全屏</td>
+</tr>
+<tr>
+<td style="text-align:left">w/W</td>
+<td style="text-align:left">打开/关闭文章目录</td>
+</tr>
+<tr>
+<td style="text-align:left">j/J</td>
+<td style="text-align:left">向下滑动</td>
+</tr>
+<tr>
+<td style="text-align:left">k/K</td>
+<td style="text-align:left">向上滑动</td>
+</tr>
+<tr>
+<td style="text-align:left">gg/GG</td>
+<td style="text-align:left">到最顶端</td>
+</tr>
+<tr>
+<td style="text-align:left">shift+G/g</td>
+<td style="text-align:left">到最下端</td>
+</tr>
+</tbody>
+</table>
 
         </article>
         
@@ -1264,15 +1329,13 @@
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#movie','#music',],
+            'data': ['#music','#movie',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
     })
     function initArticle() {
         /*渲染对应的表格样式*/
-        
-            $(".post .pjax table").addClass("green_title");
         
 
         /*渲染打赏样式*/

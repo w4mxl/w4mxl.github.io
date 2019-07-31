@@ -80,14 +80,6 @@
     
         
             
-            <li><div data-rel="Life">Life<small> (170)</small></div>
-                
-            </li>
-            
-        
-    
-        
-            
             <li><div data-rel="Tech"><i class="fold iconfont icon-right"></i>Tech<small> (27)</small></div>
                 
                     <ul class="sub hide">
@@ -105,6 +97,14 @@
                         </li>
                             
                     </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="Life">Life<small> (170)</small></div>
                 
             </li>
             
@@ -167,11 +167,11 @@
     <div class="tags-list">
     
     <li class="article-tag-list-item">
-        <a href="javascript:" class="color1">movie</a>
+        <a href="javascript:" class="color1">music</a>
     </li>
     
     <li class="article-tag-list-item">
-        <a href="javascript:" class="color1">music</a>
+        <a href="javascript:" class="color1">movie</a>
     </li>
     
     <div class="clearfix"></div>
@@ -1326,15 +1326,13 @@ startActivity(intent);
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#movie','#music',],
+            'data': ['#music','#movie',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
     })
     function initArticle() {
         /*渲染对应的表格样式*/
-        
-            $(".post .pjax table").addClass("green_title");
         
 
         /*渲染打赏样式*/
