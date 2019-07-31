@@ -80,7 +80,7 @@
     
         
             
-            <li><div data-rel="Life&#39;s">Life&#39;s<small> (0)</small></div>
+            <li><div data-rel="Life">Life<small> (170)</small></div>
                 
             </li>
             
@@ -111,14 +111,6 @@
         
     
         
-            
-        
-    
-        
-            
-            <li><div data-rel="Life">Life<small> (170)</small></div>
-                
-            </li>
             
         
     
@@ -353,7 +345,7 @@
         </a>
         
         <a class="Life " href="/2017/02/06/my-2017-reduce-weight-plan/" data-tag data-author>
-            <span class="post-title" title="目标管理(减肥)">目标管理(减肥)</span>
+            <span class="post-title" title="目标管理之减肥篇">目标管理之减肥篇</span>
             <span class="post-date" title="2017-02-06 11:35:00">2017/02/06</span>
         </a>
         
@@ -792,7 +784,7 @@
             <span class="post-date" title="2010-09-14 10:25:00">2010/09/14</span>
         </a>
         
-        <a class="Life " href="/2010/09/10/劈开一切不说，光电影，我说《唐山大地震》是部好电影/" data-tag data-author>
+        <a class="Life " href="/2010/09/10/唐山大地震是部好电影/" data-tag data-author>
             <span class="post-title" title="劈开一切不说，光电影，我说《唐山大地震》是部好电影">劈开一切不说，光电影，我说《唐山大地震》是部好电影</span>
             <span class="post-date" title="2010-09-10 09:47:00">2010/09/10</span>
         </a>
@@ -1163,7 +1155,7 @@
         </a>
         
         <a class="Life " href="/2009/05/14/我的冰心体小诗/" data-tag data-author>
-            <span class="post-title" title="我的冰心体小诗">我的冰心体小诗</span>
+            <span class="post-title" title="冰心体小诗">冰心体小诗</span>
             <span class="post-date" title="2009-05-14 14:34:00">2009/05/14</span>
         </a>
         
@@ -1209,7 +1201,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间: <time class="date" title="更新时间: 2019-07-29 14:23:59">2015-08-17 09:41</time>
+        创建时间: <time class="date" title="更新时间: 2019-07-31 16:21:29">2015-08-17 09:41</time>
         
     </div>
     <div class="article-meta">
@@ -1242,7 +1234,7 @@
 <li>手机的 “设置” - “开发者选项” - 打开”不保留活动”（主要用于模拟Activity被及时回收）</li>
 <li>把 app 切换到后台，再重新打开，通过点按不同的 tab 来切换 Fragment</li>
 </ol>
-<center><img src="https://i.loli.net/2019/07/29/5d3e90bb2629751126.png" width="280"><br>▲ 重现 Fragment 的重叠</center>
+<center><img src="https://i.loli.net/2019/07/29/5d3e90bb2629751126.png" width="280" alt="重现 Fragment 的重叠"></center>
 
 
 <p>起初我以为是我在使用add()、hide() 、show() 切换 Fragment 的时候有什么地方使用的不对，尝试去解决重叠的 bug，无果后，还是通过 google 找出了原因和解决方案。</p>
@@ -1272,7 +1264,7 @@
             repo: 'w4mxl.github.io',
             owner: 'w4mxl',
             admin: ['w4mxl'],
-            id: location.pathname,
+            id: decodeURI(location.pathname),
             distractionFreeMode: 'false',
             language: 'zh-CN',
             perPage: parseInt('10',10)

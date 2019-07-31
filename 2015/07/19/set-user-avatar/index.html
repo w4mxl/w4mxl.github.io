@@ -80,7 +80,7 @@
     
         
             
-            <li><div data-rel="Life&#39;s">Life&#39;s<small> (0)</small></div>
+            <li><div data-rel="Life">Life<small> (170)</small></div>
                 
             </li>
             
@@ -111,14 +111,6 @@
         
     
         
-            
-        
-    
-        
-            
-            <li><div data-rel="Life">Life<small> (170)</small></div>
-                
-            </li>
             
         
     
@@ -353,7 +345,7 @@
         </a>
         
         <a class="Life " href="/2017/02/06/my-2017-reduce-weight-plan/" data-tag data-author>
-            <span class="post-title" title="目标管理(减肥)">目标管理(减肥)</span>
+            <span class="post-title" title="目标管理之减肥篇">目标管理之减肥篇</span>
             <span class="post-date" title="2017-02-06 11:35:00">2017/02/06</span>
         </a>
         
@@ -792,7 +784,7 @@
             <span class="post-date" title="2010-09-14 10:25:00">2010/09/14</span>
         </a>
         
-        <a class="Life " href="/2010/09/10/劈开一切不说，光电影，我说《唐山大地震》是部好电影/" data-tag data-author>
+        <a class="Life " href="/2010/09/10/唐山大地震是部好电影/" data-tag data-author>
             <span class="post-title" title="劈开一切不说，光电影，我说《唐山大地震》是部好电影">劈开一切不说，光电影，我说《唐山大地震》是部好电影</span>
             <span class="post-date" title="2010-09-10 09:47:00">2010/09/10</span>
         </a>
@@ -1163,7 +1155,7 @@
         </a>
         
         <a class="Life " href="/2009/05/14/我的冰心体小诗/" data-tag data-author>
-            <span class="post-title" title="我的冰心体小诗">我的冰心体小诗</span>
+            <span class="post-title" title="冰心体小诗">冰心体小诗</span>
             <span class="post-date" title="2009-05-14 14:34:00">2009/05/14</span>
         </a>
         
@@ -1209,7 +1201,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间: <time class="date" title="更新时间: 2019-07-29 16:34:10">2015-07-19 21:52</time>
+        创建时间: <time class="date" title="更新时间: 2019-07-31 16:22:41">2015-07-19 21:52</time>
         
     </div>
     <div class="article-meta">
@@ -1238,7 +1230,7 @@
         <p>一般做 app，只要存在用户系统，跑不了都会有设置用户头像的需求。设置用户头像一般都提供拍照和从相册选择两种方式，得到图片后，让用户对图片进行裁剪，然后上传服务器。</p>
 <p>关于拍照和从相册选取，都是向系统发送特定的 Intent，唤起对应的系统程序，然后在onActivityResult 里面，获取我们的图片数据。关于图像裁剪，一般有两种方式，第一种是我们可以直接利用系统提供的裁剪功能，实现图像的裁剪。另外一种是自己处理，比如利用一些第三方的开源项目，如<a href="https://github.com/edmodo/cropper" target="_blank" rel="noopener">cropper</a> 和 <a href="https://github.com/jdamcd/android-crop" target="_blank" rel="noopener">android-crop</a>，来完成我们的需求。</p>
 <p>以前做过的项目中碰到设置用户头像这个需求，裁剪都是用的上面说到的第一种方式，即通过 Intent intent = new Intent(“com.android.camera.action.CROP”); 语句来调用系统的裁剪功能，但是自从推出 android lollipop(5.0) 之后，用之前的那套代码会有 bug，通过 stackoverflow 了解到因为 “Camera’s crop activity doesn’t return anything for onActivityResult() method. ”。所以这次项目中尝试选择了第二方式来解决这个问题。</p>
-<h3 id="1-按设计完成从底部弹出选择对话框"><a href="#1-按设计完成从底部弹出选择对话框" class="headerlink" title="1.按设计完成从底部弹出选择对话框"></a>1.按设计完成从底部弹出选择对话框</h3><center><img src="https://i.loli.net/2019/07/29/5d3e6d4a4dabb15916.png" width="400"><br>▲ 最终完成效果如上</center>
+<h3 id="1-按设计完成从底部弹出选择对话框"><a href="#1-按设计完成从底部弹出选择对话框" class="headerlink" title="1.按设计完成从底部弹出选择对话框"></a>1.按设计完成从底部弹出选择对话框</h3><center><img src="https://i.loli.net/2019/07/29/5d3e6d4a4dabb15916.png" width="400" alt="最终完成效果如上"></center>
 
 
 <p>MeInfoActivity.java 中对应的代码:</p>
@@ -1303,7 +1295,7 @@
             repo: 'w4mxl.github.io',
             owner: 'w4mxl',
             admin: ['w4mxl'],
-            id: location.pathname,
+            id: decodeURI(location.pathname),
             distractionFreeMode: 'false',
             language: 'zh-CN',
             perPage: parseInt('10',10)

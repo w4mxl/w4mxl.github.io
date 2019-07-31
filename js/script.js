@@ -505,6 +505,7 @@ function bind() {
     if (img_resize != 'photoSwipe') {
         $(".pjax").find('img').each(function () {
             if (!$(this).parent().hasClass('div_img')) {
+                $(this).wrap("<div class='div_img'></div>");
                 var alt = this.alt;
                 if (alt) {
                     $(this).after('<div class="img_alt"><span>' + alt + '</span></div>');

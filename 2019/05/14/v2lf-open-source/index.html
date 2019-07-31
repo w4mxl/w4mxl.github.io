@@ -80,7 +80,7 @@
     
         
             
-            <li><div data-rel="Life&#39;s">Life&#39;s<small> (0)</small></div>
+            <li><div data-rel="Life">Life<small> (170)</small></div>
                 
             </li>
             
@@ -111,14 +111,6 @@
         
     
         
-            
-        
-    
-        
-            
-            <li><div data-rel="Life">Life<small> (170)</small></div>
-                
-            </li>
             
         
     
@@ -353,7 +345,7 @@
         </a>
         
         <a class="Life " href="/2017/02/06/my-2017-reduce-weight-plan/" data-tag data-author>
-            <span class="post-title" title="目标管理(减肥)">目标管理(减肥)</span>
+            <span class="post-title" title="目标管理之减肥篇">目标管理之减肥篇</span>
             <span class="post-date" title="2017-02-06 11:35:00">2017/02/06</span>
         </a>
         
@@ -792,7 +784,7 @@
             <span class="post-date" title="2010-09-14 10:25:00">2010/09/14</span>
         </a>
         
-        <a class="Life " href="/2010/09/10/劈开一切不说，光电影，我说《唐山大地震》是部好电影/" data-tag data-author>
+        <a class="Life " href="/2010/09/10/唐山大地震是部好电影/" data-tag data-author>
             <span class="post-title" title="劈开一切不说，光电影，我说《唐山大地震》是部好电影">劈开一切不说，光电影，我说《唐山大地震》是部好电影</span>
             <span class="post-date" title="2010-09-10 09:47:00">2010/09/10</span>
         </a>
@@ -1163,7 +1155,7 @@
         </a>
         
         <a class="Life " href="/2009/05/14/我的冰心体小诗/" data-tag data-author>
-            <span class="post-title" title="我的冰心体小诗">我的冰心体小诗</span>
+            <span class="post-title" title="冰心体小诗">冰心体小诗</span>
             <span class="post-date" title="2009-05-14 14:34:00">2009/05/14</span>
         </a>
         
@@ -1209,7 +1201,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间: <time class="date" title="更新时间: 2019-07-29 17:57:50">2019-05-14 07:33</time>
+        创建时间: <time class="date" title="更新时间: 2019-07-31 16:39:07">2019-05-14 07:33</time>
         
     </div>
     <div class="article-meta">
@@ -1243,7 +1235,7 @@
 <p>本次开源采用了 <strong><a href="https://www.wikiwand.com/zh/GNU%E9%80%9A%E7%94%A8%E5%85%AC%E5%85%B1%E8%AE%B8%E5%8F%AF%E8%AF%81" target="_blank" rel="noopener">GPL v3.0 开源许可</a></strong> ，期待得到大家更多的参与。只要我还会逛 v2ex，就会继续完善 V2LF 这个项目。</p>
 <p>我相信这次开源会是一个新的开始！</p>
 <h2 id="上架说明"><a href="#上架说明" class="headerlink" title="上架说明"></a>上架说明</h2><p>我原本是打算上架了App Store 和 Google play 之后就开源出来的，play那边很快搞定，奈何 App Store 那边审核遇到些阻碍，和审核人员来回沟通了几次。目前账号审核状态，迟迟没有进展，只能等等看了 ¯\<em>(ツ)</em>/¯ 。我希望能早点审核好，然后顺利上架。</p>
-<p><img src="https://i.loli.net/2019/05/14/5cda1b956a21156246.jpeg" alt="&quot;App Store 审核过程（左） &amp; 最近一次 reject （右）&quot;"></p>
+<p><img src="https://i.loli.net/2019/05/14/5cda1b956a21156246.jpeg" alt="App Store 审核过程（左） &amp; 最近一次 reject （右）"></p>
 <p>App Store 和 Google play 我都是定价 ¥12 的。当然我没有指望从这个 app 可以赚钱，我很清楚它的受众群其实很有限的。之所以设置付费，纯粹是好奇，想试试看会有多少用户真的喜欢这个app到愿意付费支持的程度。如果有，哪怕个位数，我也会很开心。当然我也提供了完全免费使用的途径，酷安、TestFlight，或者直接编译运行源码。</p>
 <p>我在开发 V2LF 的时候也陆续体验了一些其它同类app，列在下面，你们感兴趣也可以去下载使用，多尝试挺好的。不爱尝试的同学，手机浏览器用网页版v2ex体验也是不错的。</p>
 <ul>
@@ -1280,7 +1272,7 @@
             repo: 'w4mxl.github.io',
             owner: 'w4mxl',
             admin: ['w4mxl'],
-            id: location.pathname,
+            id: decodeURI(location.pathname),
             distractionFreeMode: 'false',
             language: 'zh-CN',
             perPage: parseInt('10',10)

@@ -1325,7 +1325,7 @@ div.ac > ul > li:before,
 .post .pjax article .article-meta .top-comment a {
   cursor: pointer;
   color: inherit;
-  font: 400 15px/1 "Open Sans", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans", source-han-sans-simplified-c, '宋体', sans-serif;
+  font: 400 15px/1 pt-sans-caption, "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans", source-han-sans-simplified-c, '宋体', sans-serif;
 }
 .post .pjax article .article-meta .top-comment a:hover {
   color: #4078c0;
@@ -1453,11 +1453,14 @@ div.ac > ul > li:before,
 .post .pjax article figure {
   margin: 0;
   padding: 10px 0;
+  text-align: center;
 }
 .post .pjax article img {
-  max-width: 100%;
+  max-width: 95%;
+  display: inline-block;
   margin: auto;
   cursor: zoom-in;
+  padding: 1px;
 }
 .post .pjax article .img_alt {
   text-align: center;
@@ -1468,7 +1471,7 @@ div.ac > ul > li:before,
   padding: 10px 10px;
   margin-bottom: 20px;
   color: #969696;
-  font-family: "Open Sans", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans", source-han-sans-simplified-c, '宋体', sans-serif;
+  font-family: pt-sans-caption, "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans", source-han-sans-simplified-c, '宋体', sans-serif;
   display: inline-block;
 }
 .post .pjax article blockquote {
@@ -1648,7 +1651,7 @@ body {
   height: 100%;
   margin: 0;
   color: #283444;
-  font: 400 15px/1 "Open Sans", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans", source-han-sans-simplified-c, '宋体', sans-serif;
+  font: 400 15px/1 pt-sans-caption, "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans", source-han-sans-simplified-c, '宋体', sans-serif;
   -webkit-font-smoothing: subpixel-antialiased;
   -webkit-text-size-adjust: none;
   overflow: hidden;
@@ -1791,7 +1794,7 @@ img.pswp__img {
 @media screen and (max-width: 1468px) {
   html,
   body {
-    font: 400 15px/1 "Open Sans", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans", source-han-sans-simplified-c, '宋体', sans-serif;
+    font: 400 15px/1 pt-sans-caption, "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans", source-han-sans-simplified-c, '宋体', sans-serif;
   }
   .nav {
     width: 492px;

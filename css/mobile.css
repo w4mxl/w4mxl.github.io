@@ -1,7 +1,7 @@
 @media screen and (max-width: 1468px) {
   html,
   body {
-    font: 400 15px/1 "Open Sans", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans", source-han-sans-simplified-c, '宋体', sans-serif;
+    font: 400 15px/1 pt-sans-caption, "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans", source-han-sans-simplified-c, '宋体', sans-serif;
   }
   .nav {
     width: 492px;

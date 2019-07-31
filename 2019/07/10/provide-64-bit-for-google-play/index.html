@@ -80,7 +80,7 @@
     
         
             
-            <li><div data-rel="Life&#39;s">Life&#39;s<small> (0)</small></div>
+            <li><div data-rel="Life">Life<small> (170)</small></div>
                 
             </li>
             
@@ -111,14 +111,6 @@
         
     
         
-            
-        
-    
-        
-            
-            <li><div data-rel="Life">Life<small> (170)</small></div>
-                
-            </li>
             
         
     
@@ -353,7 +345,7 @@
         </a>
         
         <a class="Life " href="/2017/02/06/my-2017-reduce-weight-plan/" data-tag data-author>
-            <span class="post-title" title="目标管理(减肥)">目标管理(减肥)</span>
+            <span class="post-title" title="目标管理之减肥篇">目标管理之减肥篇</span>
             <span class="post-date" title="2017-02-06 11:35:00">2017/02/06</span>
         </a>
         
@@ -792,7 +784,7 @@
             <span class="post-date" title="2010-09-14 10:25:00">2010/09/14</span>
         </a>
         
-        <a class="Life " href="/2010/09/10/劈开一切不说，光电影，我说《唐山大地震》是部好电影/" data-tag data-author>
+        <a class="Life " href="/2010/09/10/唐山大地震是部好电影/" data-tag data-author>
             <span class="post-title" title="劈开一切不说，光电影，我说《唐山大地震》是部好电影">劈开一切不说，光电影，我说《唐山大地震》是部好电影</span>
             <span class="post-date" title="2010-09-10 09:47:00">2010/09/10</span>
         </a>
@@ -1163,7 +1155,7 @@
         </a>
         
         <a class="Life " href="/2009/05/14/我的冰心体小诗/" data-tag data-author>
-            <span class="post-title" title="我的冰心体小诗">我的冰心体小诗</span>
+            <span class="post-title" title="冰心体小诗">冰心体小诗</span>
             <span class="post-date" title="2009-05-14 14:34:00">2009/05/14</span>
         </a>
         
@@ -1209,7 +1201,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间: <time class="date" title="更新时间: 2019-07-29 17:44:03">2019-07-10 16:59</time>
+        创建时间: <time class="date" title="更新时间: 2019-07-31 16:37:27">2019-07-10 16:59</time>
         
     </div>
     <div class="article-meta">
@@ -1235,16 +1227,16 @@
 </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Google-play-推进-64位应用"><a href="#Google-play-推进-64位应用" class="headerlink" title="Google play 推进 64位应用"></a>Google play 推进 64位应用</h2><p><img src="/image/111562745745_.pic.jpg" alt></p>
+        <h2 id="Google-play-推进-64位应用"><a href="#Google-play-推进-64位应用" class="headerlink" title="Google play 推进 64位应用"></a>Google play 推进 64位应用</h2><p><img src="/image/111562745745_.pic.jpg" alt="推进时间表"></p>
 <p>从今年1月份开始，Google 就陆续通过邮件等方式发通知，鼓励 Android 开发者尽快将已经上传到 Google play 的 app 对 64 位做兼容处理。并告知开发者，在今年 8 月 1 日开始，将强制要求新上架的 App 或老应用更新，除了提供 32 位的版本之外，还必须要提供 64 位的版本。</p>
-<p><img src="/image/141562750828_.pic.jpg" alt></p>
+<p><img src="/image/141562750828_.pic.jpg" alt="收到的邮件提醒"></p>
 <p>今年 5 月份，我上传了一款用 Flutter 开发的 App（<strong><a href="https://play.google.com/store/apps/details?id=io.github.w4mxl.v2lf" target="_blank" rel="noopener">V2LF</a></strong>）到Google play 上，那时候打包出来的 APK 大小是 9.1 MB，默认只有 armeabi-v7a 一种 CPU 架构。后来陆续有收到通知邮件，提示我再提供一个 64 位的版本。</p>
-<p><img src="/image/121562749707_.pic.jpg" alt></p>
+<p><img src="/image/121562749707_.pic.jpg" alt="只有 armeabi-v7a 一种 CPU 架构"></p>
 <h2 id="Flutter-stable-1-7-支持了-Android-app-bundles-和-64-bit-Android-apps"><a href="#Flutter-stable-1-7-支持了-Android-app-bundles-和-64-bit-Android-apps" class="headerlink" title="Flutter stable 1.7 支持了 Android app bundles 和 64-bit Android apps"></a>Flutter stable 1.7 支持了 Android app bundles 和 64-bit Android apps</h2><p>今天上午看到 Flutter 官方在 medium 上新发布的一篇文章：<a href="https://medium.com/flutter/announcing-flutter-1-7-9cab4f34eacf" target="_blank" rel="noopener">Announcing Flutter 1.7</a>。</p>
 <p><img src="/image/flutter1.7.png" alt="flutter1.7"></p>
 <p>文章在 “Support for Android app bundles and 64-bit Android apps” 一节中也有提到关于 8 月 1 号 Google play 的强制包含 64 位版本的要求，并说这次发布的 Flutter 1.7 的 SDK， Android App Bundles 也已经支持单独创建 32 位和 64 位的包了。</p>
-<p>如果还是使用原先的命令 <code>flutter build apk</code> 来打包 APK，Android studio 会给出下面的提示，告知这种方式会将 android-arm 和 android-arm64 两种CPU架构都打包到一个apk中，app打包出来的apk会是一个 <strong>“fat APK”</strong>。<br><img src="/image/151562812574_.pic_hd.jpg" alt></p>
-<p><img src="/image/131562749760_.pic.jpg" alt></p>
+<p>如果还是使用原先的命令 <code>flutter build apk</code> 来打包 APK，Android studio 会给出下面的提示，告知这种方式会将 android-arm 和 android-arm64 两种CPU架构都打包到一个apk中，app打包出来的apk会是一个 <strong>“fat APK”</strong>。<br><img src="/image/151562812574_.pic_hd.jpg" alt="建议使用 app bundles 的方式或者对不同架构 CPU 分别打包"></p>
+<p><img src="/image/131562749760_.pic.jpg" alt="fat APK"></p>
 <p>也会给出提示告知，如果打包是为了上传到 Google play 上的，建议使用 app bundles 的方式或者对不同架构 CPU 分别打包。提示原文如下：</p>
 <p>To generate an app bundle, run:</p>
 <pre><code>flutter build appbundle --target-platform android-arm,android-arm64
@@ -1279,7 +1271,7 @@
             repo: 'w4mxl.github.io',
             owner: 'w4mxl',
             admin: ['w4mxl'],
-            id: location.pathname,
+            id: decodeURI(location.pathname),
             distractionFreeMode: 'false',
             language: 'zh-CN',
             perPage: parseInt('10',10)

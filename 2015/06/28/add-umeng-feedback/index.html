@@ -80,7 +80,7 @@
     
         
             
-            <li><div data-rel="Life&#39;s">Life&#39;s<small> (0)</small></div>
+            <li><div data-rel="Life">Life<small> (170)</small></div>
                 
             </li>
             
@@ -111,14 +111,6 @@
         
     
         
-            
-        
-    
-        
-            
-            <li><div data-rel="Life">Life<small> (170)</small></div>
-                
-            </li>
             
         
     
@@ -353,7 +345,7 @@
         </a>
         
         <a class="Life " href="/2017/02/06/my-2017-reduce-weight-plan/" data-tag data-author>
-            <span class="post-title" title="目标管理(减肥)">目标管理(减肥)</span>
+            <span class="post-title" title="目标管理之减肥篇">目标管理之减肥篇</span>
             <span class="post-date" title="2017-02-06 11:35:00">2017/02/06</span>
         </a>
         
@@ -792,7 +784,7 @@
             <span class="post-date" title="2010-09-14 10:25:00">2010/09/14</span>
         </a>
         
-        <a class="Life " href="/2010/09/10/劈开一切不说，光电影，我说《唐山大地震》是部好电影/" data-tag data-author>
+        <a class="Life " href="/2010/09/10/唐山大地震是部好电影/" data-tag data-author>
             <span class="post-title" title="劈开一切不说，光电影，我说《唐山大地震》是部好电影">劈开一切不说，光电影，我说《唐山大地震》是部好电影</span>
             <span class="post-date" title="2010-09-10 09:47:00">2010/09/10</span>
         </a>
@@ -1163,7 +1155,7 @@
         </a>
         
         <a class="Life " href="/2009/05/14/我的冰心体小诗/" data-tag data-author>
-            <span class="post-title" title="我的冰心体小诗">我的冰心体小诗</span>
+            <span class="post-title" title="冰心体小诗">冰心体小诗</span>
             <span class="post-date" title="2009-05-14 14:34:00">2009/05/14</span>
         </a>
         
@@ -1209,7 +1201,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间: <time class="date" title="更新时间: 2019-07-29 16:43:16">2015-06-28 19:58</time>
+        创建时间: <time class="date" title="更新时间: 2019-07-31 16:24:24">2015-06-28 19:58</time>
         
     </div>
     <div class="article-meta">
@@ -1240,7 +1232,7 @@
 <blockquote>
 <p>注: 友盟用户反馈SDK中默认的用户反馈页，功能大而全(联系方式可以选择电话、QQ、邮箱;用户可以用发送语音反馈;可发图片;回复后推送消息给用户…)，可这设计实在是丑到没朋友，且友盟集成的方式很难在原基础上对UI进行自定义…</p>
 </blockquote>
-<center><img src="https://i.loli.net/2019/07/29/5d3e5f5f66f3e61612.png" width="220">  <img src="https://i.loli.net/2019/07/29/5d3e5f76c88c199819.png" width="220"></center>
+<div class="div_img"><img src="https://i.loli.net/2019/07/29/5d3e5f5f66f3e61612.png" width="220">  <img src="https://i.loli.net/2019/07/29/5d3e5f76c88c199819.png" width="220"></div>
 
 <blockquote>
 <p>注: app中”用户反馈”功能常见的页面是长这个样子的: 图1 截自大众点评   图2 截自豆瓣FM</p>
@@ -1310,7 +1302,7 @@ dependencies {
             repo: 'w4mxl.github.io',
             owner: 'w4mxl',
             admin: ['w4mxl'],
-            id: location.pathname,
+            id: decodeURI(location.pathname),
             distractionFreeMode: 'false',
             language: 'zh-CN',
             perPage: parseInt('10',10)

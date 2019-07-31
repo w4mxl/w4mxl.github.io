@@ -80,7 +80,7 @@
     
         
             
-            <li><div data-rel="Life&#39;s">Life&#39;s<small> (0)</small></div>
+            <li><div data-rel="Life">Life<small> (170)</small></div>
                 
             </li>
             
@@ -111,14 +111,6 @@
         
     
         
-            
-        
-    
-        
-            
-            <li><div data-rel="Life">Life<small> (170)</small></div>
-                
-            </li>
             
         
     
@@ -353,7 +345,7 @@
         </a>
         
         <a class="Life " href="/2017/02/06/my-2017-reduce-weight-plan/" data-tag data-author>
-            <span class="post-title" title="目标管理(减肥)">目标管理(减肥)</span>
+            <span class="post-title" title="目标管理之减肥篇">目标管理之减肥篇</span>
             <span class="post-date" title="2017-02-06 11:35:00">2017/02/06</span>
         </a>
         
@@ -792,7 +784,7 @@
             <span class="post-date" title="2010-09-14 10:25:00">2010/09/14</span>
         </a>
         
-        <a class="Life " href="/2010/09/10/劈开一切不说，光电影，我说《唐山大地震》是部好电影/" data-tag data-author>
+        <a class="Life " href="/2010/09/10/唐山大地震是部好电影/" data-tag data-author>
             <span class="post-title" title="劈开一切不说，光电影，我说《唐山大地震》是部好电影">劈开一切不说，光电影，我说《唐山大地震》是部好电影</span>
             <span class="post-date" title="2010-09-10 09:47:00">2010/09/10</span>
         </a>
@@ -1163,7 +1155,7 @@
         </a>
         
         <a class="Life " href="/2009/05/14/我的冰心体小诗/" data-tag data-author>
-            <span class="post-title" title="我的冰心体小诗">我的冰心体小诗</span>
+            <span class="post-title" title="冰心体小诗">冰心体小诗</span>
             <span class="post-date" title="2009-05-14 14:34:00">2009/05/14</span>
         </a>
         
@@ -1209,7 +1201,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间: <time class="date" title="更新时间: 2019-07-29 11:45:55">2016-03-10 11:07</time>
+        创建时间: <time class="date" title="更新时间: 2019-07-31 15:53:17">2016-03-10 11:07</time>
         
     </div>
     <div class="article-meta">
@@ -1266,7 +1258,9 @@ Reboot to bootloader and flash the following:
    fastboot flash cache cache.img
    fastboot reboot
 </code></pre><p>最后是随手拍的几张图：</p>
-<center><img src="https://i.loli.net/2019/07/29/5d3e6aeb1888562687.png" width="280"> <img src="https://i.loli.net/2019/07/29/5d3e6b22c6beb59558.png" width="280"><br><br><img src="https://i.loli.net/2019/07/29/5d3e6b629daf987850.png" width="280"> <img src="https://i.loli.net/2019/07/29/5d3e6b7c6ea5e57120.png" width="280"></center>
+<div class="div_img"><img src="https://i.loli.net/2019/07/29/5d3e6aeb1888562687.png" width="280"> <img src="https://i.loli.net/2019/07/29/5d3e6b22c6beb59558.png" width="280"></div>
+
+<div class="div_img"><img src="https://i.loli.net/2019/07/29/5d3e6b629daf987850.png" width="280"> <img src="https://i.loli.net/2019/07/29/5d3e6b7c6ea5e57120.png" width="280"></div>
 
 
       
@@ -1289,7 +1283,7 @@ Reboot to bootloader and flash the following:
             repo: 'w4mxl.github.io',
             owner: 'w4mxl',
             admin: ['w4mxl'],
-            id: location.pathname,
+            id: decodeURI(location.pathname),
             distractionFreeMode: 'false',
             language: 'zh-CN',
             perPage: parseInt('10',10)

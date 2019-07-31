@@ -80,7 +80,7 @@
     
         
             
-            <li><div data-rel="Life&#39;s">Life&#39;s<small> (0)</small></div>
+            <li><div data-rel="Life">Life<small> (170)</small></div>
                 
             </li>
             
@@ -111,14 +111,6 @@
         
     
         
-            
-        
-    
-        
-            
-            <li><div data-rel="Life">Life<small> (170)</small></div>
-                
-            </li>
             
         
     
@@ -353,7 +345,7 @@
         </a>
         
         <a class="Life " href="/2017/02/06/my-2017-reduce-weight-plan/" data-tag data-author>
-            <span class="post-title" title="目标管理(减肥)">目标管理(减肥)</span>
+            <span class="post-title" title="目标管理之减肥篇">目标管理之减肥篇</span>
             <span class="post-date" title="2017-02-06 11:35:00">2017/02/06</span>
         </a>
         
@@ -792,7 +784,7 @@
             <span class="post-date" title="2010-09-14 10:25:00">2010/09/14</span>
         </a>
         
-        <a class="Life " href="/2010/09/10/劈开一切不说，光电影，我说《唐山大地震》是部好电影/" data-tag data-author>
+        <a class="Life " href="/2010/09/10/唐山大地震是部好电影/" data-tag data-author>
             <span class="post-title" title="劈开一切不说，光电影，我说《唐山大地震》是部好电影">劈开一切不说，光电影，我说《唐山大地震》是部好电影</span>
             <span class="post-date" title="2010-09-10 09:47:00">2010/09/10</span>
         </a>
@@ -1163,7 +1155,7 @@
         </a>
         
         <a class="Life " href="/2009/05/14/我的冰心体小诗/" data-tag data-author>
-            <span class="post-title" title="我的冰心体小诗">我的冰心体小诗</span>
+            <span class="post-title" title="冰心体小诗">冰心体小诗</span>
             <span class="post-date" title="2009-05-14 14:34:00">2009/05/14</span>
         </a>
         
@@ -1209,7 +1201,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间: <time class="date" title="更新时间: 2019-07-29 14:53:54">2015-05-31 21:59</time>
+        创建时间: <time class="date" title="更新时间: 2019-07-31 16:27:31">2015-05-31 21:59</time>
         
     </div>
     <div class="article-meta">
@@ -1236,17 +1228,20 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Volley 是 Android 开发中跟网络操作相关的一个开源库，这个库的官方介绍是：</p>
-<blockquote>
-<p>Volley is a library that makes networking for Android apps<br>easier and most importantly, faster.</p>
-</blockquote>
+<p><code>Volley is a library that makes networking for Android apps easier and most importantly, faster.</code></p>
 <p>Android 几乎所有项目在开发中都会涉及到网络操作（基于 HTTP 协议发送和接收网络数据）。系统提供的通信方式有两种: HttpURLConnection 、HttpClient 。关于HttpURLConnection及HttpClient对比可见： <a href="http://android-developers.blogspot.com/2011/09/androids-http-clients.html" target="_blank" rel="noopener">Android’s HTTP Clients</a></p>
 <p>Android 网络通信相关的框架（开源库）有:<br>有轻量的<a href="http://loopj.com/android-async-http/" target="_blank" rel="noopener">android-async-http</a><br>Universal-Image-Loader<br>谷歌官方的<a href="https://android.googlesource.com/platform/frameworks/volley/" target="_blank" rel="noopener">volley</a>。集合了前面两个的优点。<br>Square提供的<a href="http://square.github.io/retrofit/" target="_blank" rel="noopener">Retrofit</a><br>基于Volley实现的http <a href="https://github.com/vince-styling/Netroid" target="_blank" rel="noopener">Netroid</a></p>
-<p>Volley 的使用可以简述为三步:<br>1.建一个请求队列对象<br>2.建一个请求对象 StringRuester、JsonRequest -&gt; JsonObjectRequest 和 JsonArrayRequest、ImageRequest<br>3.将请求对象add到请求队列中</p>
+<p>Volley 的使用可以简述为三步:</p>
+<ol>
+<li>建一个请求队列对象</li>
+<li>建一个请求对象 StringRuester、JsonRequest -&gt; JsonObjectRequest 和 JsonArrayRequest、ImageRequest</li>
+<li>将请求对象add到请求队列中</li>
+</ol>
 <p>至于项目中volley的具体使用方法我就不在这里分步骤贴代码了。我推荐下面两个github开源实例，囊括了volley大部分使用方法，fork后仔细看代码学习下，就很好在自己的项目中上手volley了。<br><a href="https://github.com/ogrebgr/android_volley_examples" target="_blank" rel="noopener">ogrebgr/android_volley_examples</a><br><a href="https://github.com/smanikandan14/Volley-demo" target="_blank" rel="noopener">smanikandan14/Volley-demo</a></p>
 <blockquote>
 <p>计划</p>
 </blockquote>
-<p>我在之前项目使用volley的过程中，遇到过一些坑还有就是为了满足实际需求对volley库进行了增强，我后续会陆续整理添加到这篇博客中…</p>
+<p>我在之前项目使用 volley 的过程中，遇到过一些坑还有就是为了满足实际需求对 volley 库进行了增强，我后续会陆续整理添加到这篇博客中…</p>
 
       
        
@@ -1268,7 +1263,7 @@
             repo: 'w4mxl.github.io',
             owner: 'w4mxl',
             admin: ['w4mxl'],
-            id: location.pathname,
+            id: decodeURI(location.pathname),
             distractionFreeMode: 'false',
             language: 'zh-CN',
             perPage: parseInt('10',10)
