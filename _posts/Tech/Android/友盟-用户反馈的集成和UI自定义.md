@@ -13,7 +13,7 @@ permalink: add-umeng-feedback
 
 > 注: 友盟用户反馈SDK中默认的用户反馈页，功能大而全(联系方式可以选择电话、QQ、邮箱;用户可以用发送语音反馈;可发图片;回复后推送消息给用户...)，可这设计实在是丑到没朋友，且友盟集成的方式很难在原基础上对UI进行自定义...
 
-<center><img src="https://i.loli.net/2019/07/29/5d3e5f5f66f3e61612.png" width="220" />  <img src="https://i.loli.net/2019/07/29/5d3e5f76c88c199819.png" width="220" /></center>
+<div class='div_img'><img src="https://i.loli.net/2019/07/29/5d3e5f5f66f3e61612.png" width="220" />  <img src="https://i.loli.net/2019/07/29/5d3e5f76c88c199819.png" width="220" /></div>
 
 > 注: app中"用户反馈"功能常见的页面是长这个样子的: 图1 截自大众点评   图2 截自豆瓣FM
 

@@ -15,8 +15,7 @@ permalink: fragment-overlay-problem
 1. 手机的 "设置" - "开发者选项" - 打开"不保留活动"（主要用于模拟Activity被及时回收）
 2. 把 app 切换到后台，再重新打开，通过点按不同的 tab 来切换 Fragment
 
-<center><img src="https://i.loli.net/2019/07/29/5d3e90bb2629751126.png" width="280" />
-▲ 重现 Fragment 的重叠</center>
+<center><img src="https://i.loli.net/2019/07/29/5d3e90bb2629751126.png" width="280" alt="重现 Fragment 的重叠"/></center>
 
 
 起初我以为是我在使用add()、hide() 、show() 切换 Fragment 的时候有什么地方使用的不对，尝试去解决重叠的 bug，无果后，还是通过 google 找出了原因和解决方案。

@@ -1,7 +1,7 @@
 ---
 title: 小记,在2018年选购一台iPhone SE
 date: 2018-9-18 13:53
-categories: Life's
+categories: Life
 permalink:  buy-an-iphone-se-at-2018
 layout: draft
 ---

@@ -7,7 +7,7 @@ categories:
 permalink: Combination-Lock-And-HotDog
 ---
 
-<center><img src="/image/62ed8609gw1eruvbdcpgdj20ku112dq6.jpg" width="300" /> <img src="/image/62ed8609gw1eruv82lkk6j20ku1127ds.jpg" width="300" /></center>
+<div class='div_img'><img src="/image/62ed8609gw1eruvbdcpgdj20ku112dq6.jpg" width="300" /> <img src="/image/62ed8609gw1eruv82lkk6j20ku1127ds.jpg" width="300" /></div>
 
 - Combination Lock 插件安装后没有设置项，直接起效。通过转动轮盘选择密码数字，有点怀旧的感觉。最近刚上架cydia，好像还有点bug(转动时有时数字选不上，但是可以像原始那样使用直接点击数字的方式)，不过一点没影响我对它的喜欢。    
 

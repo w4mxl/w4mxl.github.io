@@ -21,8 +21,7 @@ permalink: Android-setEmptyview
 
 下面以一个简单实例的描述 setEmptyview() 的两种常见的使用方法。
 
-<center><img src='https://i.loli.net/2019/07/29/5d3e8e6bb5f8075733.png' width="280"/>
-▲ 实例的最终效果。“暂无常用回答哦”这个 TextView 就是我们设定好的 empty view 。</center>
+<center><img src='https://i.loli.net/2019/07/29/5d3e8e6bb5f8075733.png' width="280" alt="实例的最终效果。“暂无常用回答哦”这个 TextView 就是我们设定好的 empty view"/></center>
 
 **方法一**
 

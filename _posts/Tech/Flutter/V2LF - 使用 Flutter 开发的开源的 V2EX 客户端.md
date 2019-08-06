@@ -26,7 +26,7 @@ GitHub 地址：https://github.com/w4mxl/V2LF
 
 我原本是打算上架了App Store 和 Google play 之后就开源出来的，play那边很快搞定，奈何 App Store 那边审核遇到些阻碍，和审核人员来回沟通了几次。目前账号审核状态，迟迟没有进展，只能等等看了 ¯\\_(ツ)_/¯ 。我希望能早点审核好，然后顺利上架。
 
-!["App Store 审核过程（左） & 最近一次 reject （右）"](https://i.loli.net/2019/05/14/5cda1b956a21156246.jpeg)
+![App Store 审核过程（左） & 最近一次 reject （右）](https://i.loli.net/2019/05/14/5cda1b956a21156246.jpeg)
 
 App Store 和 Google play 我都是定价 ¥12 的。当然我没有指望从这个 app 可以赚钱，我很清楚它的受众群其实很有限的。之所以设置付费，纯粹是好奇，想试试看会有多少用户真的喜欢这个app到愿意付费支持的程度。如果有，哪怕个位数，我也会很开心。当然我也提供了完全免费使用的途径，酷安、TestFlight，或者直接编译运行源码。
 

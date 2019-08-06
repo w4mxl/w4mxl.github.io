@@ -55,7 +55,7 @@ Reboot to bootloader and flash the following:
 
 最后是随手拍的几张图：
 
-<center><img src="https://i.loli.net/2019/07/29/5d3e6aeb1888562687.png" width="280"/> <img src='https://i.loli.net/2019/07/29/5d3e6b22c6beb59558.png' width="280"/>
+<div class='div_img'><img src="https://i.loli.net/2019/07/29/5d3e6aeb1888562687.png" width="280"/> <img src='https://i.loli.net/2019/07/29/5d3e6b22c6beb59558.png' width="280"/></div>
 
-<img src='https://i.loli.net/2019/07/29/5d3e6b629daf987850.png' width="280"/> <img src='https://i.loli.net/2019/07/29/5d3e6b7c6ea5e57120.png' width="280"/></center>
+<div class='div_img'><img src='https://i.loli.net/2019/07/29/5d3e6b629daf987850.png' width="280"/> <img src='https://i.loli.net/2019/07/29/5d3e6b7c6ea5e57120.png' width="280"/></div>
 

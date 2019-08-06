@@ -8,15 +8,15 @@ permalink: provide-64-bit-for-google-play
 ---
 
 ## Google play 推进 64位应用
-![](/image/111562745745_.pic.jpg)
+![推进时间表](/image/111562745745_.pic.jpg)
 
 从今年1月份开始，Google 就陆续通过邮件等方式发通知，鼓励 Android 开发者尽快将已经上传到 Google play 的 app 对 64 位做兼容处理。并告知开发者，在今年 8 月 1 日开始，将强制要求新上架的 App 或老应用更新，除了提供 32 位的版本之外，还必须要提供 64 位的版本。
 
-![](/image/141562750828_.pic.jpg)
+![收到的邮件提醒](/image/141562750828_.pic.jpg)
 
 今年 5 月份，我上传了一款用 Flutter 开发的 App（**[V2LF](https://play.google.com/store/apps/details?id=io.github.w4mxl.v2lf)**）到Google play 上，那时候打包出来的 APK 大小是 9.1 MB，默认只有 armeabi-v7a 一种 CPU 架构。后来陆续有收到通知邮件，提示我再提供一个 64 位的版本。
 
-![](/image/121562749707_.pic.jpg)
+![只有 armeabi-v7a 一种 CPU 架构](/image/121562749707_.pic.jpg)
 
 ## Flutter stable 1.7 支持了 Android app bundles 和 64-bit Android apps
 
@@ -27,9 +27,9 @@ permalink: provide-64-bit-for-google-play
 文章在 “Support for Android app bundles and 64-bit Android apps” 一节中也有提到关于 8 月 1 号 Google play 的强制包含 64 位版本的要求，并说这次发布的 Flutter 1.7 的 SDK， Android App Bundles 也已经支持单独创建 32 位和 64 位的包了。
 
 如果还是使用原先的命令 `flutter build apk` 来打包 APK，Android studio 会给出下面的提示，告知这种方式会将 android-arm 和 android-arm64 两种CPU架构都打包到一个apk中，app打包出来的apk会是一个 **“fat APK”**。
-![](/image/151562812574_.pic_hd.jpg)
+![建议使用 app bundles 的方式或者对不同架构 CPU 分别打包](/image/151562812574_.pic_hd.jpg)
 
-![](/image/131562749760_.pic.jpg)
+![fat APK](/image/131562749760_.pic.jpg)
 
 也会给出提示告知，如果打包是为了上传到 Google play 上的，建议使用 app bundles 的方式或者对不同架构 CPU 分别打包。提示原文如下：
 
