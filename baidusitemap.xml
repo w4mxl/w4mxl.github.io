@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://w4mxl.github.io/2019/08/07/flutter_route_manager/</loc>
+    <lastmod>2019-08-12</lastmod>
+  </url>  <url>
+    <loc>https://w4mxl.github.io/2019/02/12/flutter-shortcuts-for-fast-development/</loc>
+    <lastmod>2019-08-07</lastmod>
+  </url>  <url>
     <loc>https://w4mxl.github.io/2019/08/01/flutter-bottom-bar/</loc>
     <lastmod>2019-08-02</lastmod>
   </url>  <url>
@@ -542,9 +548,6 @@
     <lastmod>2019-07-30</lastmod>
   </url>  <url>
     <loc>https://w4mxl.github.io/2019/01/26/flutter-Intl-Localizations/</loc>
-    <lastmod>2019-07-29</lastmod>
-  </url>  <url>
-    <loc>https://w4mxl.github.io/2019/02/12/flutter-shortcuts-for-fast-development/</loc>
     <lastmod>2019-07-29</lastmod>
   </url>  <url>
     <loc>https://w4mxl.github.io/2014/11/21/insert-author-date-in-new-file/</loc>

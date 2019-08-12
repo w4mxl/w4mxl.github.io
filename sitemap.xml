@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://w4mxl.github.io/2019/08/07/flutter_route_manager/</loc>
+    
+    <lastmod>2019-08-12T06:32:47.235Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://w4mxl.github.io/2019/02/12/flutter-shortcuts-for-fast-development/</loc>
+    
+    <lastmod>2019-08-07T07:55:10.823Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://w4mxl.github.io/2019/08/01/flutter-bottom-bar/</loc>
     
     <lastmod>2019-08-02T10:49:09.127Z</lastmod>
@@ -1265,13 +1279,6 @@
     <loc>https://w4mxl.github.io/2019/01/26/flutter-Intl-Localizations/</loc>
     
     <lastmod>2019-07-29T09:59:02.535Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://w4mxl.github.io/2019/02/12/flutter-shortcuts-for-fast-development/</loc>
-    
-    <lastmod>2019-07-29T09:49:40.235Z</lastmod>
     
   </url>
   
