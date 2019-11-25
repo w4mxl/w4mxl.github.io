@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://w4mxl.github.io/"/>
-  <updated>2019-11-25T08:33:18.661Z</updated>
+  <updated>2019-11-25T10:08:17.085Z</updated>
   <id>https://w4mxl.github.io/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>在 VS Code 上显示 Flutter icons 和 color 预览</title>
-    <link href="https://w4mxl.github.io/2019/11/25/Show-Flutter-icons-in-the-editor-gutter/"/>
-    <id>https://w4mxl.github.io/2019/11/25/Show-Flutter-icons-in-the-editor-gutter/</id>
+    <link href="https://w4mxl.github.io/2019/11/25/show-flutter-icons-in-vscode/"/>
+    <id>https://w4mxl.github.io/2019/11/25/show-flutter-icons-in-vscode/</id>
     <published>2019-11-25T07:55:56.849Z</published>
-    <updated>2019-11-25T08:33:18.661Z</updated>
+    <updated>2019-11-25T10:08:17.085Z</updated>
     
     <content type="html"><![CDATA[<p>之前在用 Android Studio 开发 Flutter 的时候，有个比较好用的功能是，在代码中引用的颜色和图标会在代码编辑器左边缘相应的显示出对应的颜色和图标预览。就像下面截图中那样。</p>
 <p><img src="https://i.loli.net/2019/11/25/fnCoJmHchazSWEZ.png" alt="Android Studio 上引用颜色和图标会自动显示预览"></p>
@@ -1080,10 +1080,10 @@ class _CupertinoTabBarDemoState extends State&lt;CupertinoTabBarDemo&gt; {
   
   <entry>
     <title>提升 Flutter 开发效率的快捷键</title>
-    <link href="https://w4mxl.github.io/2019/02/12/flutter-shortcuts-for-fast-development/"/>
-    <id>https://w4mxl.github.io/2019/02/12/flutter-shortcuts-for-fast-development/</id>
+    <link href="https://w4mxl.github.io/2019/02/12/flutter-shortcuts-for-fast-develop/"/>
+    <id>https://w4mxl.github.io/2019/02/12/flutter-shortcuts-for-fast-develop/</id>
     <published>2019-02-12T03:14:12.000Z</published>
-    <updated>2019-08-07T07:55:10.823Z</updated>
+    <updated>2019-11-25T10:08:13.485Z</updated>
     
     <content type="html"><![CDATA[<h2 id="创建一个新的-Stateless-或者-Stateful-widget"><a href="#创建一个新的-Stateless-或者-Stateful-widget" class="headerlink" title="创建一个新的 Stateless 或者 Stateful widget"></a>创建一个新的 Stateless 或者 Stateful widget</h2><p>只需输入<code>stless</code>即可创建一个像这样的Stateless widget：</p>
 <p><img src="https://i.loli.net/2019/02/12/5c623f4ea52fb.gif" alt="快速创建一个 Stateless Widget"></p>

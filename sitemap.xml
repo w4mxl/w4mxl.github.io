@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://w4mxl.github.io/2019/11/25/Show-Flutter-icons-in-the-editor-gutter/</loc>
+    <loc>https://w4mxl.github.io/2019/11/25/show-flutter-icons-in-vscode/</loc>
     
-    <lastmod>2019-11-25T08:33:18.661Z</lastmod>
+    <lastmod>2019-11-25T10:08:17.085Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://w4mxl.github.io/2019/02/12/flutter-shortcuts-for-fast-develop/</loc>
+    
+    <lastmod>2019-11-25T10:08:13.485Z</lastmod>
     
   </url>
   
@@ -19,13 +26,6 @@
     <loc>https://w4mxl.github.io/2019/08/07/flutter_route_manager/</loc>
     
     <lastmod>2019-08-12T06:32:47.235Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://w4mxl.github.io/2019/02/12/flutter-shortcuts-for-fast-development/</loc>
-    
-    <lastmod>2019-08-07T07:55:10.823Z</lastmod>
     
   </url>
   
