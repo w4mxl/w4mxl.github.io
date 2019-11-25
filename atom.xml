@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://w4mxl.github.io/"/>
-  <updated>2019-09-02T10:42:29.791Z</updated>
+  <updated>2019-11-25T08:33:18.661Z</updated>
   <id>https://w4mxl.github.io/</id>
   
   <author>
@@ -14,6 +14,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在 VS Code 上显示 Flutter icons 和 color 预览</title>
+    <link href="https://w4mxl.github.io/2019/11/25/Show-Flutter-icons-in-the-editor-gutter/"/>
+    <id>https://w4mxl.github.io/2019/11/25/Show-Flutter-icons-in-the-editor-gutter/</id>
+    <published>2019-11-25T07:55:56.849Z</published>
+    <updated>2019-11-25T08:33:18.661Z</updated>
+    
+    <content type="html"><![CDATA[<p>之前在用 Android Studio 开发 Flutter 的时候，有个比较好用的功能是，在代码中引用的颜色和图标会在代码编辑器左边缘相应的显示出对应的颜色和图标预览。就像下面截图中那样。</p>
+<p><img src="https://i.loli.net/2019/11/25/fnCoJmHchazSWEZ.png" alt="Android Studio 上引用颜色和图标会自动显示预览"></p>
+<p>但是在切换到 VS code 后发现默认并不会这样了。经过 Google，发现有人已经在 Dart 仓库下提了 issue，并有开发者合并了解决方案。所以如果你的 Dart 插件已经更新到 3.6.0 版本，只需要在 VS code 设置中搜索 “Flutter gutter”，勾选上 Dart: Preview Flutter Gutter Icons 选项后重启一下 VS code 就好。这样，熟悉的颜色和图标预览功能就又回来了～</p>
+<p><img src="https://i.loli.net/2019/11/25/SYA2tmO5QVrP7Z6.png" alt="勾选上 Dart: Preview Flutter Gutter Icons 选项"></p>
+<p>相关链接：</p>
+<ul>
+<li><a href="https://github.com/Dart-Code/Dart-Code/issues/1181" target="_blank" rel="noopener">color and icon preview extension in VSCode for Flutter #1181</a></li>
+<li><a href="https://github.com/Dart-Code/Dart-Code/issues/807" target="_blank" rel="noopener">Show Flutter icons in the editor gutter #807</a></li>
+<li><a href="https://github.com/Dart-Code/Dart-Code/pull/2040" target="_blank" rel="noopener">Show Flutter icons in the gutter #2040</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;之前在用 Android Studio 开发 Flutter 的时候，有个比较好用的功能是，在代码中引用的颜色和图标会在代码编辑器左边缘相应的显示出对应的颜色和图标预览。就像下面截图中那样。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2019/
+    
+    </summary>
+    
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
+    
+      <category term="Flutter" scheme="https://w4mxl.github.io/categories/Tech/Flutter/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>紧追猛赶后的跑步新高</title>
@@ -5363,27 +5396,6 @@ ImageView photo = ButterKnife.findById(view, R.id.photo);
   </entry>
   
   <entry>
-    <title>Back to School</title>
-    <link href="https://w4mxl.github.io/2011/02/20/Back-to-School/"/>
-    <id>https://w4mxl.github.io/2011/02/20/Back-to-School/</id>
-    <published>2011-02-19T16:00:00.000Z</published>
-    <updated>2019-07-30T11:19:18.267Z</updated>
-    
-    <content type="html"><![CDATA[<p>　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的，快乐的长大。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的
-    
-    </summary>
-    
-      <category term="Life" scheme="https://w4mxl.github.io/categories/Life/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>安慰</title>
     <link href="https://w4mxl.github.io/2011/02/20/%E5%AE%89%E6%85%B0/"/>
     <id>https://w4mxl.github.io/2011/02/20/安慰/</id>
@@ -5398,6 +5410,27 @@ ImageView photo = ButterKnife.findById(view, R.id.photo);
     
       &lt;p&gt;电影总让我想起些我似乎忘了的东西！&lt;/p&gt;
 &lt;p&gt;明明钥匙在手上，却寻不到钥匙把门打开。看完《天若有情Ⅰ》，我就奇怪，那时吊儿郎当的我，现在怎么这么“乖”。在古惑仔横扫我整个初中那时，我们凡事只讲义气，只够买一根冰棒那分着吃，兄弟喜欢的女生不能有‘想法‘-_-#。那时候也是
+    
+    </summary>
+    
+      <category term="Life" scheme="https://w4mxl.github.io/categories/Life/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Back to School</title>
+    <link href="https://w4mxl.github.io/2011/02/20/Back-to-School/"/>
+    <id>https://w4mxl.github.io/2011/02/20/Back-to-School/</id>
+    <published>2011-02-19T16:00:00.000Z</published>
+    <updated>2019-07-30T11:19:18.267Z</updated>
+    
+    <content type="html"><![CDATA[<p>　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的，快乐的长大。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的
     
     </summary>
     
