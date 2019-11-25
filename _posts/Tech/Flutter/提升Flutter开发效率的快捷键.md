@@ -4,7 +4,7 @@ date: 2019-02-12 11:14:12
 categories: 
     - Tech
     - Flutter
-permalink: flutter-shortcuts-for-fast-development
+permalink: flutter-shortcuts-for-fast-develop
 ---
 
 
@@ -62,9 +62,9 @@ permalink: flutter-shortcuts-for-fast-development
 
 ## 快速选择整个widget
 
-![](https://i.loli.net/2019/02/12/5c626567c0175.gif "一般操作。如果widget包含的代码比较多，嵌套深的话这样操作就会显得很麻烦且容易错")
+![一般操作。如果widget包含的代码比较多，嵌套深的话这样操作就会显得很麻烦且容易错](https://i.loli.net/2019/02/12/5c626567c0175.gif)
 
-![](https://i.loli.net/2019/02/12/5c62656805b00.gif "推荐使用快捷键操作。`Ctrl + W`（Windows）或`Option + Up`（Mac）")
+![推荐使用快捷键操作。`Ctrl + W`（Windows）或`Option + Up`（Mac）](https://i.loli.net/2019/02/12/5c62656805b00.gif)
 
 ## 代码格式化
 
