@@ -176,6 +176,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
   <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
 
@@ -262,16 +263,11 @@
 <p>前提: 下面的 Activity A B C D 都没有显式的指明launchMode 和 taskAffinity 属性。</p>
 </blockquote>
 <p>已经启动了四个 Activity: A，B，C和D。在 D Activity里，我们想要跳到 B Activity，同时希望C Activity finish掉。<br><strong>实现:</strong>: FLAG_ACTIVITY_CLEAR_TOP</p>
-<pre><code class="JAVA">Intent intent = new Intent(this, B.class);
-intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);// D Activity
-startActivity(intent);</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Intent intent = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, B<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);<span class="comment">// D Activity</span></span><br><span class="line">startActivity(intent);</span><br></pre></td></tr></table></figure>
 <p><strong>结果:</strong><br>D、C、B Activity 依次调用各自的 onDestroy 方法出栈 －&gt; B Activity 重新启动(onCreate)<br>栈中为: A B</p>
 <hr>
 <p><strong>需求2:</strong><br>在需求1的基础上，只是不想重新再创建一个新的B Activity，而是重用原来的实例。<br><strong>实现:</strong>: Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP</p>
-<pre><code class="JAVA">Intent intent = new Intent(this, B.class);
-// intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);// D Activity
-intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);// D Activity
-startActivity(intent);</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Intent intent = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, B<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line"><span class="comment">// intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);// D Activity</span></span><br><span class="line">intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);<span class="comment">// D Activity</span></span><br><span class="line">startActivity(intent);</span><br></pre></td></tr></table></figure>
 <p><strong>结果:</strong><br>依次，C onDestroy -&gt; B Activity onNewIntent onRestart -&gt; D onDestroy<br>栈中为: A B</p>
 <hr>
 <p><strong>需求3:</strong></p>
@@ -279,9 +275,7 @@ startActivity(intent);</code></pre>
 <p>前提: 下面的 Activity A B C D 都没有显式的指明 launchMode 和 taskAffinity 属性。</p>
 </blockquote>
 <p>已经启动了四个Activity：A，B，C和D。在D Activity里，想再启动一个Actvity B，但不变成A,B,C,D,B，而是希望是A,C,D,B。<br><strong>实现:</strong>: Intent.FLAG_ACTIVITY_REORDER_TO_FRONT</p>
-<pre><code class="JAVA">Intent intent = new Intent(this, B.class);
-intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);// D Activity
-startActivity(intent);</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Intent intent = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, B<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);<span class="comment">// D Activity</span></span><br><span class="line">startActivity(intent);</span><br></pre></td></tr></table></figure>
 <p><strong>结果:</strong><br>依次，B Activity onNewIntent onRestart<br>栈中为: A C D B</p>
 <hr>
 <h3 id="其他常见-FLAG-说明"><a href="#其他常见-FLAG-说明" class="headerlink" title="其他常见 FLAG 说明"></a>其他常见 FLAG 说明</h3><p><strong>FLAG_ACTIVITY_NO_HISTORY</strong><br>例如现在栈情况为：A B C。C 通过 intent 跳转到 D，这个intent添加 FLAG_ACTIVITY_NO_HISTORY 标志，则此时界面显示D的内容，如果此时D中又跳转到E，栈的情况变为: A B C E，此时按返回键会回到C，因为D根本就没有被压入栈中。</p>
@@ -445,11 +439,17 @@ startActivity(intent);</code></pre>
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/w4mxl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;w4mxl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <a href="https://github.com/w4mxl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;w4mxl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i></a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:mxl1989@gmail.com" title="E-Mail → mailto:mxl1989@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:mxl1989@gmail.com" title="E-Mail → mailto:mxl1989@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
       </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i></a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
 

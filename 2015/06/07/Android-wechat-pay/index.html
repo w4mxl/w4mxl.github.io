@@ -182,6 +182,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
   <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
 
@@ -283,16 +284,8 @@
 <p>在上面两个链接中可以下载到要集成进项目的SDK、开发文档、和两个demo(一个接入demo和一个支付demo)，前期应好好根据文档学习demo，demo是eclipse下开发的，导入后还需将其改为GBK编码，以解决demo中文注释乱码问题。<br>另外开放平台提供的<a href="https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&lang=zh_CN&token=1be847c3b5d715b3705ae6d7dbd243bd2c7d5a43" target="_blank" rel="noopener">Android接入指南</a>应该好好看。</p>
 <h3 id="3-开发步骤"><a href="#3-开发步骤" class="headerlink" title="3.开发步骤"></a>3.开发步骤</h3><p><img src="https://i.loli.net/2019/07/29/5d3e90031a96753276.png" alt=""></p>
 <p>我的项目中，在需要用到微信支付的activity中处理逻辑如下：</p>
-<pre><code class="JAVA">// TODO: 1.请求后台生成支付订单
-GetPrepayIdTask getPrepayId = new GetPrepayIdTask();
-getPrepayId.execute();
-// 后台
-// -&gt;调微信统一下单API
-// -&gt;将从微信拿到的预付单信息(prepay_id)
-// -&gt;生成带签名的客户端支付信息
-// -&gt;返回信息给app(prepay_id,sign等)
-// TODO: 2.根据后台返回的信息生成支付请求
-// TODO: 3.发起微信支付请求</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// <span class="doctag">TODO:</span> 1.请求后台生成支付订单</span></span><br><span class="line">GetPrepayIdTask getPrepayId = <span class="keyword">new</span> GetPrepayIdTask();</span><br><span class="line">getPrepayId.execute();</span><br><span class="line"><span class="comment">// 后台</span></span><br><span class="line"><span class="comment">// -&gt;调微信统一下单API</span></span><br><span class="line"><span class="comment">// -&gt;将从微信拿到的预付单信息(prepay_id)</span></span><br><span class="line"><span class="comment">// -&gt;生成带签名的客户端支付信息</span></span><br><span class="line"><span class="comment">// -&gt;返回信息给app(prepay_id,sign等)</span></span><br><span class="line"><span class="comment">// <span class="doctag">TODO:</span> 2.根据后台返回的信息生成支付请求</span></span><br><span class="line"><span class="comment">// <span class="doctag">TODO:</span> 3.发起微信支付请求</span></span><br></pre></td></tr></table></figure>
+
 <p>微信处理完返回给app的返回码对应关系：<br><img src="https://i.loli.net/2019/07/29/5d3e9038af3f453623.png" alt=""></p>
 <p>不过注意<strong>“如果支付成功则去后台查询支付结果再展示用户实际支付结果。注意一定不能以客户端返回作为用户支付的结果，应以服务器端的接收的支付通知或查询API返回的结果为准。”</strong></p>
 <p>其实只要你能将开始申请拿到的那几个字段替换到微信官方提供的<a href="http://pay.weixin.qq.com/wiki/doc/api/download/wechat_sdk_sample_android_v3_pay.zip" target="_blank" rel="noopener">微信支付demo:wechat_sdk_sample_android_v3_pay.zip</a>里的，然后成功跑通，流程就清楚了。不过需注意的是，官方文档里说的<strong>“商户服务器生成支付订单，先调用统一下单API生成预付单，获取到prepay_id后将参数再次签名传输给APP发起支付。”</strong>这一步，在demo中是在app端模拟实现的，实际开发中还是建议按文档中的来，会更加安全性。</p>
@@ -458,11 +451,17 @@ getPrepayId.execute();
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/w4mxl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;w4mxl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <a href="https://github.com/w4mxl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;w4mxl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i></a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:mxl1989@gmail.com" title="E-Mail → mailto:mxl1989@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:mxl1989@gmail.com" title="E-Mail → mailto:mxl1989@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
       </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i></a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
 

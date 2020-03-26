@@ -179,6 +179,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
   <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
 
@@ -267,36 +268,8 @@
 <p>SparseArray是android里为&lt;Interger,Object&gt;这样的Hashmap而专门写的类，目的是提高效率，其核心是折半查找函数（binarySearch）。</p>
 </blockquote>
 <p>我这里就结合我自己项目说下当我知道了SparseArray优势后是怎么用SparseArray替代HashMap的。至于SparseArray更具体的原理介绍网络上写的很好的已经很多，比如<a href="http://liuzhichao.com/p/832.html" target="_blank" rel="noopener">这篇</a>。</p>
-<h4 id="修改之前-HosBuildingFloorAdapter-java-："><a href="#修改之前-HosBuildingFloorAdapter-java-：" class="headerlink" title="修改之前(HosBuildingFloorAdapter.java)："></a>修改之前(HosBuildingFloorAdapter.java)：</h4><pre><code class="JAVA">HashMap&lt;Integer, String&gt; hashMap;//buildingId、buildingName的捆绑
-
-// Adapter构造方法中对hashMap实例化
-hashMap =  new HashMap&lt;Integer, String&gt;();
-for (int i = 0; i &lt; buildings; i++) {
-    hashMap.put(buildingListEntities.get(i).getBuildingId(), buildingListEntities.get(i).getBuildingName());
-}
-
-// Adapter的getHeaderView中取值
-for (Map.Entry&lt;Integer, String&gt; entry : hashMap.entrySet()) {
-    if (floorListEntities.get(position).getBuildingId() == entry.getKey()) {
-        holder.text.setText(entry.getValue());
-    }
-}</code></pre>
-<h4 id="修改之后"><a href="#修改之后" class="headerlink" title="修改之后:"></a>修改之后:</h4><pre><code class="JAVA">SparseArray&lt;String&gt; stringSparseArray;
-
-// Adapter构造方法中对stringSparseArray实例化
-stringSparseArray = new SparseArray&lt;&gt;();
-for (int i = 0; i &lt; buildings; i++) {
-    stringSparseArray.put(buildingListEntities.get(i).getBuildingId(), buildingListEntities.get(i).getBuildingName());
-}
-
-// Adapter的getHeaderView中取值
-for (int i = 0; i &lt; stringSparseArray.size(); i++) {
-    int key = stringSparseArray.keyAt(i);
-    if (floorListEntities.get(position).getBuildingId() == key) {
-        holder.text.setText(stringSparseArray.get(key));
-    }
-}</code></pre>
-
+<h4 id="修改之前-HosBuildingFloorAdapter-java-："><a href="#修改之前-HosBuildingFloorAdapter-java-：" class="headerlink" title="修改之前(HosBuildingFloorAdapter.java)："></a>修改之前(HosBuildingFloorAdapter.java)：</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">HashMap&lt;Integer, String&gt; hashMap;<span class="comment">//buildingId、buildingName的捆绑</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Adapter构造方法中对hashMap实例化</span></span><br><span class="line">hashMap =  <span class="keyword">new</span> HashMap&lt;Integer, String&gt;();</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; buildings; i++) &#123;</span><br><span class="line">    hashMap.put(buildingListEntities.get(i).getBuildingId(), buildingListEntities.get(i).getBuildingName());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Adapter的getHeaderView中取值</span></span><br><span class="line"><span class="keyword">for</span> (Map.Entry&lt;Integer, String&gt; entry : hashMap.entrySet()) &#123;</span><br><span class="line">    <span class="keyword">if</span> (floorListEntities.get(position).getBuildingId() == entry.getKey()) &#123;</span><br><span class="line">        holder.text.setText(entry.getValue());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="修改之后"><a href="#修改之后" class="headerlink" title="修改之后:"></a>修改之后:</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">SparseArray&lt;String&gt; stringSparseArray;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Adapter构造方法中对stringSparseArray实例化</span></span><br><span class="line">stringSparseArray = <span class="keyword">new</span> SparseArray&lt;&gt;();</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; buildings; i++) &#123;</span><br><span class="line">    stringSparseArray.put(buildingListEntities.get(i).getBuildingId(), buildingListEntities.get(i).getBuildingName());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Adapter的getHeaderView中取值</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; stringSparseArray.size(); i++) &#123;</span><br><span class="line">    <span class="keyword">int</span> key = stringSparseArray.keyAt(i);</span><br><span class="line">    <span class="keyword">if</span> (floorListEntities.get(position).getBuildingId() == key) &#123;</span><br><span class="line">        holder.text.setText(stringSparseArray.get(key));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -454,11 +427,17 @@ for (int i = 0; i &lt; stringSparseArray.size(); i++) {
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/w4mxl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;w4mxl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <a href="https://github.com/w4mxl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;w4mxl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i></a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:mxl1989@gmail.com" title="E-Mail → mailto:mxl1989@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:mxl1989@gmail.com" title="E-Mail → mailto:mxl1989@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
       </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i></a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
 

@@ -176,6 +176,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
   <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
 
@@ -269,44 +270,19 @@
 <blockquote>
 <p>2 是嵌套 ListView 示例，嵌套 GridView 等类似</p>
 </blockquote>
-<pre><code class="java">public class ScrollViewWithListView extends ListView {
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ScrollViewWithListView</span> <span class="keyword">extends</span> <span class="title">ListView</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">ScrollViewWithListView</span><span class="params">(android.content.Context context, android.util.AttributeSet attrs)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(context, attrs);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 设置不滚动</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onMeasure</span><span class="params">(<span class="keyword">int</span> widthMeasureSpec, <span class="keyword">int</span> heightMeasureSpec)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> expandSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE &gt;&gt; <span class="number">2</span>,</span><br><span class="line">                MeasureSpec.AT_MOST);</span><br><span class="line">        <span class="keyword">super</span>.onMeasure(widthMeasureSpec, expandSpec);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-    public ScrollViewWithListView(android.content.Context context, android.util.AttributeSet attrs) {
-        super(context, attrs);
-    }
 
-    /**
-     * 设置不滚动
-     */
-    public void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        int expandSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE &gt;&gt; 2,
-                MeasureSpec.AT_MOST);
-        super.onMeasure(widthMeasureSpec, expandSpec);
-    }
-}</code></pre>
 <h3 id="2-自动滚动"><a href="#2-自动滚动" class="headerlink" title="2. 自动滚动"></a>2. 自动滚动</h3><p>场景1:</p>
 <blockquote>
 <p>ScrollView 中嵌套的组件 RecyclerView（ListView） 在内容加载之后，ScrollView 会自动下滚。</p>
 </blockquote>
 <p>解决方法：</p>
 <p>在 ScrollView 包裹的 LinearLayout 中添加：</p>
-<pre><code class="xml">android:focusable=&quot;true&quot;
-android:focusableInTouchMode=&quot;true&quot;</code></pre>
-<pre><code class="xml">&lt;ScrollView xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
-        android:layout_width=&quot;match_parent&quot;
-        android:layout_height=&quot;match_parent&quot;
-        android:scrollbars=&quot;none&quot;&gt;
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">android:focusable="true"</span><br><span class="line">android:focusableInTouchMode="true"</span><br></pre></td></tr></table></figure>
 
-        &lt;LinearLayout
-            android:layout_width=&quot;match_parent&quot;
-            android:layout_height=&quot;match_parent&quot;
-            android:orientation=&quot;vertical&quot;
-            android:focusable=&quot;true&quot;
-            android:focusableInTouchMode=&quot;true&quot;&gt;
-            ...
-            ...
-        &lt;/LinearLayout&gt;
-&lt;/ScrollView&gt;</code></pre>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ScrollView</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:scrollbars</span>=<span class="string">"none"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">LinearLayout</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:orientation</span>=<span class="string">"vertical"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:focusable</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:focusableInTouchMode</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line">            ...</span><br><span class="line">            ...</span><br><span class="line">        <span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ScrollView</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p><a href="http://blog.csdn.net/icyfox_bupt/article/details/15026299" target="_blank" rel="noopener">更多描述请查看这篇</a></p>
 <p>场景2:</p>
 <blockquote>
@@ -314,23 +290,9 @@ android:focusableInTouchMode=&quot;true&quot;</code></pre>
 </blockquote>
 <p>解决方法：</p>
 <p>在 ScrollView 包裹的 LinearLayout 中多添加：</p>
-<pre><code class="xml">android:focusableInTouchMode=&quot;true&quot;</code></pre>
-<pre><code class="xml">&lt;ScrollView xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
-        android:layout_width=&quot;match_parent&quot;
-        android:layout_height=&quot;match_parent&quot;
-        android:scrollbars=&quot;none&quot;&gt;
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android:focusableInTouchMode="true"</span><br></pre></td></tr></table></figure>
 
-        &lt;LinearLayout
-            android:layout_width=&quot;match_parent&quot;
-            android:layout_height=&quot;match_parent&quot;
-            android:orientation=&quot;vertical&quot;
-            android:focusable=&quot;true&quot;
-            android:focusableInTouchMode=&quot;true&quot;
-            android:focusableInTouchMode=&quot;true&quot;&gt;
-            ...
-            ...
-        &lt;/LinearLayout&gt;
-&lt;/ScrollView&gt;</code></pre>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ScrollView</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:scrollbars</span>=<span class="string">"none"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">LinearLayout</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:orientation</span>=<span class="string">"vertical"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:focusable</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:focusableInTouchMode</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:focusableInTouchMode</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line">            ...</span><br><span class="line">            ...</span><br><span class="line">        <span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ScrollView</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p><a href="http://stackoverflow.com/questions/9842494/how-to-prevent-a-scrollview-from-scrolling-to-a-webview-after-data-is-loaded" target="_blank" rel="noopener">是从这里知道的</a></p>
 
     </div>
@@ -490,11 +452,17 @@ android:focusableInTouchMode=&quot;true&quot;</code></pre>
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/w4mxl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;w4mxl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <a href="https://github.com/w4mxl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;w4mxl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i></a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:mxl1989@gmail.com" title="E-Mail → mailto:mxl1989@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:mxl1989@gmail.com" title="E-Mail → mailto:mxl1989@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
       </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i></a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
 

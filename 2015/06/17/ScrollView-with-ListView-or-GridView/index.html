@@ -176,6 +176,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
   <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
 
@@ -258,94 +259,14 @@
       
         <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>为了满足功能需求，界面布局中常常需要用到 ScrollView 下嵌套 ListView(GridView) 的情况，ScrollView 可以滚动，而 ListView(GridView) 只作数据展示不能滚动。而写完调试时会发现，ListView(GridView) 只显示了一行数据，自身滚动后能看到剩余数据。原因是ScrollView 中嵌套 ListView(GridView)，无法正确的计算ListView(GridView)的高度。</p>
 <h2 id="解决方法一"><a href="#解决方法一" class="headerlink" title="解决方法一"></a>解决方法一</h2><p>原理:<code>setAdapter后，获取到每一项item的高度，再动态设置listview或者gridview的高度。</code></p>
-<pre><code class="Java">    /**
-     * 解决scrollview 嵌套 gridview
-     *
-     * @param gridView
-     * @param columns  gridview的列数
-     */
-    public static void setGridViewHeightBasedOnChildren(GridView gridView, int columns) {
-        ListAdapter listAdapter = gridView.getAdapter();
-        if (listAdapter == null) {
-            return;
-        }
-        int totalHeight = 0;
-        int count = listAdapter.getCount();
-        View listItem = listAdapter.getView(0, null, gridView);
-        listItem.measure(0, 0);
-        totalHeight = listItem.getMeasuredHeight() + 9;
-
-        int yu = count % columns;
-
-        ViewGroup.LayoutParams params = gridView.getLayoutParams();
-
-        if (yu &gt; 0) {
-            params.height = (count - yu) / columns * (totalHeight + 9) + totalHeight;
-        } else {
-            params.height = count / columns * totalHeight + (count / columns - 1) * 9;
-        }
-
-        gridView.setLayoutParams(params);
-    }
-
-    /**
-     * 解决scrollview 嵌套 listview
-     *
-     * @param listView
-     */
-    public static void setListViewHeightBasedOnChildren(ListView listView) {
-        ListAdapter listAdapter = listView.getAdapter();
-        if (listAdapter == null) {
-            return;
-        }
-        int totalHeight = 0;
-        int count = listAdapter.getCount();
-        for (int i = 0; i &lt; count; i++) {
-            View listItem = listAdapter.getView(i, null, listView);
-            listItem.measure(0, 0);
-            totalHeight += listItem.getMeasuredHeight();
-        }
-        ViewGroup.LayoutParams params = listView.getLayoutParams();
-        params.height = totalHeight + (listView.getDividerHeight() * (count - 1));
-        // listView.getDividerHeight()获取子项间分隔符占用的高度
-        // params.height最后得到整个ListView完整显示需要的高度
-        listView.setLayoutParams(params);
-    }</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 解决scrollview 嵌套 gridview</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> gridView</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> columns  gridview的列数</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">setGridViewHeightBasedOnChildren</span><span class="params">(GridView gridView, <span class="keyword">int</span> columns)</span> </span>&#123;</span><br><span class="line">    ListAdapter listAdapter = gridView.getAdapter();</span><br><span class="line">    <span class="keyword">if</span> (listAdapter == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> totalHeight = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> count = listAdapter.getCount();</span><br><span class="line">    View listItem = listAdapter.getView(<span class="number">0</span>, <span class="keyword">null</span>, gridView);</span><br><span class="line">    listItem.measure(<span class="number">0</span>, <span class="number">0</span>);</span><br><span class="line">    totalHeight = listItem.getMeasuredHeight() + <span class="number">9</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> yu = count % columns;</span><br><span class="line"></span><br><span class="line">    ViewGroup.LayoutParams params = gridView.getLayoutParams();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (yu &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        params.height = (count - yu) / columns * (totalHeight + <span class="number">9</span>) + totalHeight;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        params.height = count / columns * totalHeight + (count / columns - <span class="number">1</span>) * <span class="number">9</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    gridView.setLayoutParams(params);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 解决scrollview 嵌套 listview</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> listView</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">setListViewHeightBasedOnChildren</span><span class="params">(ListView listView)</span> </span>&#123;</span><br><span class="line">    ListAdapter listAdapter = listView.getAdapter();</span><br><span class="line">    <span class="keyword">if</span> (listAdapter == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> totalHeight = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> count = listAdapter.getCount();</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; count; i++) &#123;</span><br><span class="line">        View listItem = listAdapter.getView(i, <span class="keyword">null</span>, listView);</span><br><span class="line">        listItem.measure(<span class="number">0</span>, <span class="number">0</span>);</span><br><span class="line">        totalHeight += listItem.getMeasuredHeight();</span><br><span class="line">    &#125;</span><br><span class="line">    ViewGroup.LayoutParams params = listView.getLayoutParams();</span><br><span class="line">    params.height = totalHeight + (listView.getDividerHeight() * (count - <span class="number">1</span>));</span><br><span class="line">    <span class="comment">// listView.getDividerHeight()获取子项间分隔符占用的高度</span></span><br><span class="line">    <span class="comment">// params.height最后得到整个ListView完整显示需要的高度</span></span><br><span class="line">    listView.setLayoutParams(params);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>此方法需要注意:<br>一、是Adapter中getView方法返回的View的必须由LinearLayout组成，因为只有LinearLayout才有measure()方法。<br>二、有时是需要手动把ScrollView滚动至最顶端。</p>
 <h2 id="解决方法二"><a href="#解决方法二" class="headerlink" title="解决方法二"></a>解决方法二</h2><p>原理:<code>重写 ListView、GridView 的 onMeasure 方法</code></p>
-<pre><code class="Java">public class MyListView extends ListView {
-    public MyListView(Context context) {
-        super(context);
-    }
-
-    @Override
-    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        int expandSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE &gt;&gt; 2,
-                MeasureSpec.AT_MOST);
-
-        super.onMeasure(widthMeasureSpec, expandSpec);
-    }
-
-} 
-- - - - - - - -
-public class MyGridView extends GridView{
-    public MyGridView(Context paramContext, AttributeSet paramAttributeSet) {
-        super(paramContext, paramAttributeSet);
-    }
-
-    @Override
-    public void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        int expandSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE &gt;&gt; 2,MeasureSpec.AT_MOST);
-        super.onMeasure(widthMeasureSpec, expandSpec);
-    }
-}</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyListView</span> <span class="keyword">extends</span> <span class="title">ListView</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MyListView</span><span class="params">(Context context)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(context);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onMeasure</span><span class="params">(<span class="keyword">int</span> widthMeasureSpec, <span class="keyword">int</span> heightMeasureSpec)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> expandSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE &gt;&gt; <span class="number">2</span>,</span><br><span class="line">                MeasureSpec.AT_MOST);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">super</span>.onMeasure(widthMeasureSpec, expandSpec);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125; </span><br><span class="line">- - - - - - - -</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyGridView</span> <span class="keyword">extends</span> <span class="title">GridView</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MyGridView</span><span class="params">(Context paramContext, AttributeSet paramAttributeSet)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(paramContext, paramAttributeSet);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onMeasure</span><span class="params">(<span class="keyword">int</span> widthMeasureSpec, <span class="keyword">int</span> heightMeasureSpec)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> expandSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE &gt;&gt; <span class="number">2</span>,MeasureSpec.AT_MOST);</span><br><span class="line">        <span class="keyword">super</span>.onMeasure(widthMeasureSpec, expandSpec);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>修改xml布局文件，代码中不用改动:</p>
-<pre><code class="Xml">&lt;xx..MyGridView(MyListView)
-    xxx
-    xxx
-&lt;/xx..MyGridView(MyListView)&gt;</code></pre>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">xx..MyGridView(MyListView)</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xxx</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xxx</span></span></span><br><span class="line">&lt;/xx..MyGridView(MyListView)&gt;</span><br></pre></td></tr></table></figure>
 <p>这种方法虽然能够显示完整，但是ListView(GridView)边缘滑动仍会有阴影，如果需要去掉边缘滑动阴影（这些效果耗内存）:</p>
-<pre><code class="Xml">android:overScrollMode=&quot;never&quot;</code></pre>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android:overScrollMode="never"</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>此方法更详细的理论分析可以参见:<br><a href="http://blog.csdn.net/aqswde35025/article/details/41863203" target="_blank" rel="noopener">http://blog.csdn.net/aqswde35025/article/details/41863203</a></p>
 </blockquote>
@@ -507,11 +428,17 @@ public class MyGridView extends GridView{
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/w4mxl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;w4mxl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <a href="https://github.com/w4mxl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;w4mxl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i></a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:mxl1989@gmail.com" title="E-Mail → mailto:mxl1989@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:mxl1989@gmail.com" title="E-Mail → mailto:mxl1989@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
       </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i></a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
 

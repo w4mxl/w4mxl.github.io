@@ -174,6 +174,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
   <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
 
@@ -448,56 +449,15 @@
 
 <p>代码：</p>
 <p><code>page_first.dart</code>: 页面很简单，在中间显示一个按钮，用于点击后跳转到下一页。</p>
-<pre><code class="dart">import &#39;package:flutter/material.dart&#39;;
-
-import &#39;page_two.dart&#39;;
-
-class PageFirst extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(&#39;Page one&#39;),
-      ),
-      body: Center(
-        child: RaisedButton(
-          onPressed: () =&gt; Navigator.push(context, MaterialPageRoute(builder: (context) =&gt; PageTwo())),
-          child: Text(&#39;下一页&#39;),
-        ),
-      ),
-    );
-  }
-}</code></pre>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">'page_two.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">PageFirst</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">return</span> Scaffold(</span><br><span class="line">      appBar: AppBar(</span><br><span class="line">        title: Text(<span class="string">'Page one'</span>),</span><br><span class="line">      ),</span><br><span class="line">      body: Center(</span><br><span class="line">        child: RaisedButton(</span><br><span class="line">          onPressed: () =&gt; Navigator.push(context, MaterialPageRoute(builder: (context) =&gt; PageTwo())),</span><br><span class="line">          child: Text(<span class="string">'下一页'</span>),</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><code>page_two.dart</code>：点击中间按钮，返回上一页。</p>
-<pre><code class="dart">import &#39;package:flutter/material.dart&#39;;
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">PageTwo</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">return</span> Scaffold(</span><br><span class="line">      appBar: AppBar(</span><br><span class="line">        title: Text(<span class="string">'Page two'</span>),</span><br><span class="line">      ),</span><br><span class="line">      body: Center(</span><br><span class="line">        child: RaisedButton(</span><br><span class="line">          onPressed: () =&gt; Navigator.pop(context),</span><br><span class="line">          child: Text(<span class="string">'返回'</span>),</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-class PageTwo extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(&#39;Page two&#39;),
-      ),
-      body: Center(
-        child: RaisedButton(
-          onPressed: () =&gt; Navigator.pop(context),
-          child: Text(&#39;返回&#39;),
-        ),
-      ),
-    );
-  }
-}</code></pre>
 <h2 id="2-1-Navigator"><a href="#2-1-Navigator" class="headerlink" title="2.1 Navigator"></a>2.1 Navigator</h2><p>我们在页面1中间的 <code>RaisedButton</code> 的点击事件是 <code>Navigator.push(context, MaterialPageRoute(builder: (context) =&gt; PageTwo()))</code>。通过查看<code>Navigator.push</code>的源码知道，下面这两种写法效果是一样的。其实不但是 <code>push</code>，Navigator 类中第一个参数为 context 的静态方法都对应有一个 Navigator 的实例方法。比如，<code>Navigator.of(context).pop()</code> 也等价于 <code>Navigator.pop(context)</code>。</p>
-<pre><code class="dart">// push 源码
-// navigator.dart 
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// push 源码</span></span><br><span class="line"><span class="comment">// navigator.dart </span></span><br><span class="line"></span><br><span class="line">  <span class="meta">@optionalTypeArgs</span></span><br><span class="line">  <span class="keyword">static</span> Future&lt;T&gt; push&lt;T <span class="keyword">extends</span> <span class="built_in">Object</span>&gt;(BuildContext context, Route&lt;T&gt; route) &#123;</span><br><span class="line">    <span class="keyword">return</span> Navigator.of(context).push(route);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
 
-  @optionalTypeArgs
-  static Future&lt;T&gt; push&lt;T extends Object&gt;(BuildContext context, Route&lt;T&gt; route) {
-    return Navigator.of(context).push(route);
-  }</code></pre>
-<pre><code class="dart">Navigator.push(context, MaterialPageRoute(builder: (context) =&gt; PageTwo()))
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Navigator.push(context, MaterialPageRoute(builder: (context) =&gt; PageTwo()))</span><br><span class="line"></span><br><span class="line">Navigator.of(context).push(MaterialPageRoute(builder: (context) =&gt; PageTwo()))</span><br></pre></td></tr></table></figure>
 
-Navigator.of(context).push(MaterialPageRoute(builder: (context) =&gt; PageTwo()))</code></pre>
 <p><code>Navigator</code> 是一个路由管理的组件，它提供了打开和退出路由页方法。<code>Navigator</code>通过一个栈来管理活动路由集合。Navigator 提供了一系列方法来管理路由栈，这里只介绍其最常用的两个方法：</p>
 <ul>
 <li><code>Future&lt;T&gt; push&lt;T extends Object&gt;(BuildContext context, Route&lt;T&gt; route)</code><ul>
@@ -511,12 +471,8 @@ Navigator.of(context).push(MaterialPageRoute(builder: (context) =&gt; PageTwo())
 </ul>
 <h2 id="2-2-MaterialPageRoute"><a href="#2-2-MaterialPageRoute" class="headerlink" title="2.2 MaterialPageRoute"></a>2.2 MaterialPageRoute</h2><p>它们都需要传入一个<code>Route</code>对象，在 Flutter 中我们可以使用 PageRouteBuilder 来构建这个 Route 对象，或者直接使用整合好了的 MaterialPageRoute。 MaterialPageRoute 很方便，因为它会使用平台特定的动画跳转到新的页面（Android和IOS屏幕切换动画会不同）。</p>
 <p>下面我们看一下 MaterialPageRoute 构造函数及其各个参数的意义：</p>
-<pre><code class="dart">MaterialPageRoute({
-    @required this.builder,
-    RouteSettings settings,
-    this.maintainState = true,
-    bool fullscreenDialog = false,
-})</code></pre>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">MaterialPageRoute(&#123;</span><br><span class="line">    <span class="meta">@required</span> <span class="keyword">this</span>.builder,</span><br><span class="line">    RouteSettings settings,</span><br><span class="line">    <span class="keyword">this</span>.maintainState = <span class="keyword">true</span>,</span><br><span class="line">    <span class="built_in">bool</span> fullscreenDialog = <span class="keyword">false</span>,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li><code>builder</code> ：是一个 WidgetBuilder 类型的回调函数，它的作用是构建路由页面的具体内容，返回值是一个 widget。我们通常要实现此回调，返回新路由的实例。</li>
 <li><code>settings</code>：包含路由的配置信息，如路由名称、是否初始路由（首页）。</li>
@@ -530,71 +486,10 @@ Navigator.of(context).push(MaterialPageRoute(builder: (context) =&gt; PageTwo())
 
 <p>代码：</p>
 <p><code>page_first.dart</code>: 点击后跳转到下一页，并传递一个参数：“我是来自p1的参数”。当接收到返回结果时打印到控制台上。</p>
-<pre><code class="dart">import &#39;package:flutter/material.dart&#39;;
-import &#39;page_two.dart&#39;;
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'page_two.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">PageFirst</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">return</span> Scaffold(</span><br><span class="line">      appBar: AppBar(</span><br><span class="line">        title: Text(<span class="string">'Page one'</span>),</span><br><span class="line">      ),</span><br><span class="line">      body: Center(</span><br><span class="line">        child: Column(</span><br><span class="line">          mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">          children: &lt;Widget&gt;[</span><br><span class="line">            RaisedButton(</span><br><span class="line">              onPressed: () <span class="keyword">async</span> &#123;</span><br><span class="line">                <span class="comment">// 跳转到 page two，等待返回结果</span></span><br><span class="line">                <span class="keyword">var</span> result = <span class="keyword">await</span> Navigator.push(</span><br><span class="line">                  context,</span><br><span class="line">                  MaterialPageRoute(</span><br><span class="line">                    builder: (context) =&gt; PageTwo(</span><br><span class="line">                      text: <span class="string">'我是来自p1的参数'</span>,</span><br><span class="line">                    ),</span><br><span class="line">                  ),</span><br><span class="line">                );</span><br><span class="line">                <span class="comment">// 输出 page two 返回来的结果</span></span><br><span class="line">                <span class="built_in">print</span>(result);</span><br><span class="line">              &#125;,</span><br><span class="line">              child: Text(<span class="string">'下一页：传参数'</span>),</span><br><span class="line">            ),</span><br><span class="line">          ],</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-class PageFirst extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(&#39;Page one&#39;),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: &lt;Widget&gt;[
-            RaisedButton(
-              onPressed: () async {
-                // 跳转到 page two，等待返回结果
-                var result = await Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) =&gt; PageTwo(
-                      text: &#39;我是来自p1的参数&#39;,
-                    ),
-                  ),
-                );
-                // 输出 page two 返回来的结果
-                print(result);
-              },
-              child: Text(&#39;下一页：传参数&#39;),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}</code></pre>
 <p><code>page_two.dart</code>: 接收上一页过来的参数显示。点击“返回”按钮回到上一页带上结果：“我是来自p2的返回值”。</p>
-<pre><code class="dart">import &#39;package:flutter/material.dart&#39;;
-
-class PageTwo extends StatelessWidget {
-  final String text;
-
-  const PageTwo({Key key, this.text}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(&#39;Page two&#39;),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: &lt;Widget&gt;[
-            Text(text != null ? text : &#39;&#39;),
-            RaisedButton(
-              onPressed: () =&gt; Navigator.pop(context, &#39;我是来自p2的返回值&#39;),
-              child: Text(&#39;返回&#39;),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}</code></pre>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">PageTwo</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="keyword">final</span> <span class="built_in">String</span> text;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> PageTwo(&#123;Key key, <span class="keyword">this</span>.text&#125;) : <span class="keyword">super</span>(key: key);</span><br><span class="line"></span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">return</span> Scaffold(</span><br><span class="line">      appBar: AppBar(</span><br><span class="line">        title: Text(<span class="string">'Page two'</span>),</span><br><span class="line">      ),</span><br><span class="line">      body: Center(</span><br><span class="line">        child: Column(</span><br><span class="line">          mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">          children: &lt;Widget&gt;[</span><br><span class="line">            Text(text != <span class="keyword">null</span> ? text : <span class="string">''</span>),</span><br><span class="line">            RaisedButton(</span><br><span class="line">              onPressed: () =&gt; Navigator.pop(context, <span class="string">'我是来自p2的返回值'</span>),</span><br><span class="line">              child: Text(<span class="string">'返回'</span>),</span><br><span class="line">            ),</span><br><span class="line">          ],</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>这里有一点需要注意的是，page two 有两种方式可以返回到上一页；第一种方式是直接点击状态栏返回箭头（iOS 的侧滑返回和 Android 底部虚拟返回按钮也属于这一种），第二种方式是点击页面中的“返回”按钮。这两种返回方式的区别是，前者不会返回数据给上一个路由（接收到的是 <code>null</code>），而后者会。</p>
 <h1 id="3-命名式路由"><a href="#3-命名式路由" class="headerlink" title="3. 命名式路由"></a>3. 命名式路由</h1><p>”命名式路由“是指我们可以先给路由页面起一个名字，然后把这个”名字“注册到路由表中，后面就可以通过路由名字直接打开新的路由页面了。这种路由管理的方式会显得更统一些。</p>
 <p>下面我们还是先通过一个示例看下效果：</p>
@@ -602,158 +497,21 @@ class PageTwo extends StatelessWidget {
 <img src='https://i.loli.net/2019/08/12/GY4nX8BCZ2euPqU.gif' width='300' alt='命名式路由'/>
 
 <p>代码：</p>
-<pre><code class="dart">
-/// main.dart
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/// <span class="markdown">main.dart</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 已省略其它无关代码</span></span><br><span class="line">MaterialApp(</span><br><span class="line">    home: HomePage(),</span><br><span class="line">    routes: &lt;<span class="built_in">String</span>, WidgetBuilder&gt;&#123;</span><br><span class="line">        <span class="comment">// 已省略其它路由注册</span></span><br><span class="line">        <span class="comment">// 把 PageTwo2()  路由页面注册到路由表中，名字设为 'page_two_2'</span></span><br><span class="line">        <span class="string">'page_two_2'</span>: (BuildContext context) =&gt; PageTwo2(),</span><br><span class="line">    &#125;,</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="comment">/// <span class="markdown">page_first.dart </span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">PageFirst</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">return</span> Scaffold(</span><br><span class="line">      appBar: AppBar(</span><br><span class="line">        title: Text(<span class="string">'Page one'</span>),</span><br><span class="line">      ),</span><br><span class="line">      body: Center(</span><br><span class="line">        child: Column(</span><br><span class="line">          mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">          children: &lt;Widget&gt;[</span><br><span class="line">            RaisedButton(</span><br><span class="line">              onPressed: () &#123;</span><br><span class="line">                Navigator.pushNamed(context, <span class="string">'page_two_2'</span>);</span><br><span class="line">              &#125;,</span><br><span class="line">              child: Text(<span class="string">'下一页：命名式路由'</span>),</span><br><span class="line">            ),</span><br><span class="line">          ],</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/// <span class="markdown">page<span class="emphasis">_two_</span>2.dart</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">PageTwo2</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> Scaffold(</span><br><span class="line">      appBar: AppBar(</span><br><span class="line">        title: Text(<span class="string">'Page two'</span>),</span><br><span class="line">      ),</span><br><span class="line">      body: Center(</span><br><span class="line">        child: Column(</span><br><span class="line">          mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">          children: &lt;Widget&gt;[</span><br><span class="line">            RaisedButton(</span><br><span class="line">              onPressed: () =&gt; Navigator.pop(context),</span><br><span class="line">              child: Text(<span class="string">'返回'</span>),</span><br><span class="line">            ),</span><br><span class="line">          ],</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-// 已省略其它无关代码
-MaterialApp(
-    home: HomePage(),
-    routes: &lt;String, WidgetBuilder&gt;{
-        // 已省略其它路由注册
-        // 把 PageTwo2()  路由页面注册到路由表中，名字设为 &#39;page_two_2&#39;
-        &#39;page_two_2&#39;: (BuildContext context) =&gt; PageTwo2(),
-    },
-);
-
-/// page_first.dart 
-
-import &#39;package:flutter/material.dart&#39;;
-
-class PageFirst extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(&#39;Page one&#39;),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: &lt;Widget&gt;[
-            RaisedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, &#39;page_two_2&#39;);
-              },
-              child: Text(&#39;下一页：命名式路由&#39;),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-/// page_two_2.dart
-
-import &#39;package:flutter/material.dart&#39;;
-
-class PageTwo2 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(&#39;Page two&#39;),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: &lt;Widget&gt;[
-            RaisedButton(
-              onPressed: () =&gt; Navigator.pop(context),
-              child: Text(&#39;返回&#39;),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-</code></pre>
 <h2 id="3-1-注册路由表，打开注册好的页面"><a href="#3-1-注册路由表，打开注册好的页面" class="headerlink" title="3.1 注册路由表，打开注册好的页面"></a>3.1 注册路由表，打开注册好的页面</h2><p>可以看见效果和上面的构建式路由没什么区别。在 <code>main.dart</code> 代码中，我们把 PageTwo2()  路由页面注册到路由表中，名字设为 ‘page_two_2’。</p>
 <p>我们在 page_first.dart 中通过路由名字 ‘page_two_2’ ，使用 <code>Navigator</code> 的 <code>pushNamed</code> 方法打开新路由时，应用会根据路由名字在路由表中查找到对应的 WidgetBuilder 回调函数，然后调用该回调函数生成路由 widget 并返回。</p>
 <p>在上面 <code>main.dart</code> 代码中，HomePage() 没有使用命名式路由，而是使用的 <code>MaterialApp</code> 的 <code>home</code> 属性指定的，如果我们也想将它注册为命名式路由应该怎么做呢？其实很简单，代码如下：</p>
-<pre><code class="dart">
-/// main.dart
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/// <span class="markdown">main.dart</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 已省略其它无关代码</span></span><br><span class="line">MaterialApp(</span><br><span class="line">    initialRoute:<span class="string">"/"</span>, <span class="comment">// 名为"/"的路由作为应用的首页</span></span><br><span class="line">    home: HomePage(),</span><br><span class="line">    routes: &lt;<span class="built_in">String</span>, WidgetBuilder&gt;&#123;</span><br><span class="line">        <span class="string">'/'</span>: (BuildContext context) =&gt; HomePage(),</span><br><span class="line">        <span class="comment">// 已省略其它路由注册</span></span><br><span class="line">        <span class="comment">// 把 PageTwo2()  路由页面注册到路由表中，名字设为 'page_two_2'</span></span><br><span class="line">        <span class="string">'page_two_2'</span>: (BuildContext context) =&gt; PageTwo2(),</span><br><span class="line">    &#125;,</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
 
-// 已省略其它无关代码
-MaterialApp(
-    initialRoute:&quot;/&quot;, // 名为&quot;/&quot;的路由作为应用的首页
-    home: HomePage(),
-    routes: &lt;String, WidgetBuilder&gt;{
-        &#39;/&#39;: (BuildContext context) =&gt; HomePage(),
-        // 已省略其它路由注册
-        // 把 PageTwo2()  路由页面注册到路由表中，名字设为 &#39;page_two_2&#39;
-        &#39;page_two_2&#39;: (BuildContext context) =&gt; PageTwo2(),
-    },
-);</code></pre>
 <p>另外，因为 <code>initialRoute</code> 默认值即为 “/“，所以如果下面 <code>routes</code> 中的首页命名也设为 “/“时，可以省略<code>initialRoute:&quot;/&quot;,</code>。</p>
 <h2 id="3-2-命名式路由参数传递"><a href="#3-2-命名式路由参数传递" class="headerlink" title="3.2 命名式路由参数传递"></a>3.2 命名式路由参数传递</h2><p><strong>在 Flutter 最初的版本中，命名式路由是不能传递参数的。</strong> 其实在 Flutter 的 Issues 中16年就有人提出<a href="https://github.com/flutter/flutter/issues/6225" target="_blank" rel="noopener">这个问题</a>，但是这个Issue一直到今年才有 <a href="https://github.com/flutter/flutter/pull/27058" target="_blank" rel="noopener">PR</a> 被提交，后来命名式路由才支持了传参。下面我们演示一下命名式路由如何传递并获取路由参数：</p>
 <p>预览：</p>
 <img src='https://i.loli.net/2019/08/12/TNMyBbYFAOmj1ln.gif' width='300' alt='命名式路由 & 传参'/>
 
 <p>代码：</p>
-<pre><code class="dart">
-/// page_first.dart
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/// <span class="markdown">page_first.dart</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">PageFirst</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">return</span> Scaffold(</span><br><span class="line">      appBar: AppBar(</span><br><span class="line">        title: Text(<span class="string">'Page one'</span>),</span><br><span class="line">      ),</span><br><span class="line">      body: Center(</span><br><span class="line">        child: Column(</span><br><span class="line">          mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">          children: &lt;Widget&gt;[</span><br><span class="line">            RaisedButton(</span><br><span class="line">              onPressed: () <span class="keyword">async</span> &#123;</span><br><span class="line">                <span class="comment">// 跳转到 page two 2，等待返回结果</span></span><br><span class="line">                <span class="keyword">var</span> result = <span class="keyword">await</span> Navigator.pushNamed(context, <span class="string">'page_two_2'</span>, arguments: <span class="string">'我是来自p1的命名式路由的参数'</span>);</span><br><span class="line">                <span class="comment">// 输出 page two 返回来的结果</span></span><br><span class="line">                <span class="built_in">print</span>(result);</span><br><span class="line">              &#125;,</span><br><span class="line">              child: Text(<span class="string">'下一页：命名式路由 &amp; 传参'</span>),</span><br><span class="line">            ),</span><br><span class="line">          ],</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/// <span class="markdown">page<span class="emphasis">_two_</span>2.dart</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">PageTwo2</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="comment">//获取路由参数</span></span><br><span class="line">    <span class="keyword">var</span> text = ModalRoute.of(context).settings.arguments;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> Scaffold(</span><br><span class="line">      appBar: AppBar(</span><br><span class="line">        title: Text(<span class="string">'Page two'</span>),</span><br><span class="line">      ),</span><br><span class="line">      body: Center(</span><br><span class="line">        child: Column(</span><br><span class="line">          mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">          children: &lt;Widget&gt;[</span><br><span class="line">            Text(text != <span class="keyword">null</span> ? text : <span class="string">''</span>),</span><br><span class="line">            RaisedButton(</span><br><span class="line">              onPressed: () =&gt; Navigator.pop(context, <span class="string">'我是来自p2的返回值'</span>),</span><br><span class="line">              child: Text(<span class="string">'返回'</span>),</span><br><span class="line">            ),</span><br><span class="line">          ],</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-import &#39;package:flutter/material.dart&#39;;
-
-class PageFirst extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(&#39;Page one&#39;),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: &lt;Widget&gt;[
-            RaisedButton(
-              onPressed: () async {
-                // 跳转到 page two 2，等待返回结果
-                var result = await Navigator.pushNamed(context, &#39;page_two_2&#39;, arguments: &#39;我是来自p1的命名式路由的参数&#39;);
-                // 输出 page two 返回来的结果
-                print(result);
-              },
-              child: Text(&#39;下一页：命名式路由 &amp; 传参&#39;),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-/// page_two_2.dart
-
-import &#39;package:flutter/material.dart&#39;;
-
-class PageTwo2 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    //获取路由参数
-    var text = ModalRoute.of(context).settings.arguments;
-
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(&#39;Page two&#39;),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: &lt;Widget&gt;[
-            Text(text != null ? text : &#39;&#39;),
-            RaisedButton(
-              onPressed: () =&gt; Navigator.pop(context, &#39;我是来自p2的返回值&#39;),
-              child: Text(&#39;返回&#39;),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}</code></pre>
 <p>逻辑很简单，page_first 跳转时通过 <code>arguments</code> 传参（上面示例是一个文本，也可以是任意自定义的数据对象），page_two_2 接收参数。和 Android 中通过 Intent 传递参数类似。</p>
 <p>另外我们也可以将 onGenerateRoute() 函数中的参数并将它们传递给路由页面，而不必直接在路由页面中手动提取参数。这里不再细说，可以看下<a href="https://flutter.dev/docs/cookbook/navigation/navigate-with-arguments" target="_blank" rel="noopener">官方的示例</a>。</p>
 <h1 id="4-总结"><a href="#4-总结" class="headerlink" title="4. 总结"></a>4. 总结</h1><p>本文分别介绍了构建式路由和命名式路由的使用方式，包括如何传递参数和接收返回参数。大家在实际项目使用过程中，可以根据自己的喜好选择。如果纠结到底该选择哪种方式好，我这里会更推荐在项目中统一都使用命名式这种路由管理方式。这样的好处是：</p>
@@ -850,27 +608,8 @@ class PageTwo2 extends StatelessWidget {
 <h1 id="2-实现"><a href="#2-实现" class="headerlink" title="2.实现"></a>2.实现</h1><p><code>Flutter</code> 中创建底部导航栏，最常见的做法就是在 <code>Scaffold</code> 中使用 <code>bottomNavigationBar</code> 属性去实现。其中 <code>bottomNavigationBar</code> 属性可以传 <code>BottomNavigationBar</code> 和 <code>BottomAppBar</code> 两个组件。 <code>BottomNavigationBar</code> 效果比较常规一点，而 <code>BottomAppBar</code> 集合 <code>FloatingActionButton</code> 可以做出更多的自定义效果。</p>
 <h2 id="2-1-BottomNavigationBar"><a href="#2-1-BottomNavigationBar" class="headerlink" title="2.1 BottomNavigationBar"></a>2.1 BottomNavigationBar</h2><p>第一种方式是基于 <code>BottomNavigationBar</code> 组件来实现。</p>
 <p>先看下 <code>BottomNavigationBar</code> 组件的构造函数：</p>
-<pre><code class="dart">BottomNavigationBar({
-    Key key,
-    @required this.items,
-    this.onTap,
-    this.currentIndex = 0,
-    this.elevation = 8.0,
-    BottomNavigationBarType type,
-    Color fixedColor,
-    this.backgroundColor,
-    this.iconSize = 24.0,
-    Color selectedItemColor,
-    this.unselectedItemColor,
-    this.selectedIconTheme = const IconThemeData(),
-    this.unselectedIconTheme = const IconThemeData(),
-    this.selectedFontSize = 14.0,
-    this.unselectedFontSize = 12.0,
-    this.selectedLabelStyle,
-    this.unselectedLabelStyle,
-    this.showSelectedLabels = true,
-    bool showUnselectedLabels,
-  })</code></pre>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">BottomNavigationBar(&#123;</span><br><span class="line">    Key key,</span><br><span class="line">    <span class="meta">@required</span> <span class="keyword">this</span>.items,</span><br><span class="line">    <span class="keyword">this</span>.onTap,</span><br><span class="line">    <span class="keyword">this</span>.currentIndex = <span class="number">0</span>,</span><br><span class="line">    <span class="keyword">this</span>.elevation = <span class="number">8.0</span>,</span><br><span class="line">    BottomNavigationBarType type,</span><br><span class="line">    Color fixedColor,</span><br><span class="line">    <span class="keyword">this</span>.backgroundColor,</span><br><span class="line">    <span class="keyword">this</span>.iconSize = <span class="number">24.0</span>,</span><br><span class="line">    Color selectedItemColor,</span><br><span class="line">    <span class="keyword">this</span>.unselectedItemColor,</span><br><span class="line">    <span class="keyword">this</span>.selectedIconTheme = <span class="keyword">const</span> IconThemeData(),</span><br><span class="line">    <span class="keyword">this</span>.unselectedIconTheme = <span class="keyword">const</span> IconThemeData(),</span><br><span class="line">    <span class="keyword">this</span>.selectedFontSize = <span class="number">14.0</span>,</span><br><span class="line">    <span class="keyword">this</span>.unselectedFontSize = <span class="number">12.0</span>,</span><br><span class="line">    <span class="keyword">this</span>.selectedLabelStyle,</span><br><span class="line">    <span class="keyword">this</span>.unselectedLabelStyle,</span><br><span class="line">    <span class="keyword">this</span>.showSelectedLabels = <span class="keyword">true</span>,</span><br><span class="line">    <span class="built_in">bool</span> showUnselectedLabels,</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>items：这是一个 <code>BottomNavigationBarItem</code> 数组，<code>@required</code> 修饰符表明此参数是默认一定要传的，<strong>而且至少2个</strong>。官方有建议底栏数目<strong>最好是3～5个</strong>。关于 <code>BottomNavigationBarItem</code> 组件下面还会说到。</li>
 <li>onTap：导航栏的点击事件，通过它来切换页面</li>
@@ -892,12 +631,8 @@ class PageTwo2 extends StatelessWidget {
 <li>showUnselectedLabels：是否要展示未选中 item 的 label</li>
 </ul>
 <p>前面提到 <code>BottomNavigationBar</code> 有一个必传的参数是 <code>items</code>，它是一个 BottomNavigationBarItem 数组。我们也来看下<code>BottomNavigationBarItem</code> 的构造函数：</p>
-<pre><code class="dart">const BottomNavigationBarItem({
-    @required this.icon,
-    this.title,
-    Widget activeIcon,
-    this.backgroundColor,
-  })</code></pre>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> BottomNavigationBarItem(&#123;</span><br><span class="line">    <span class="meta">@required</span> <span class="keyword">this</span>.icon,</span><br><span class="line">    <span class="keyword">this</span>.title,</span><br><span class="line">    Widget activeIcon,</span><br><span class="line">    <span class="keyword">this</span>.backgroundColor,</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>icon：导航栏item的图标，一定要设置的</li>
 <li>title：item的label，虽然没有加<code>@required</code> 修饰符，但是也是一定要设置的，否则会报：<code>Every item must have a non-null title</code></li>
@@ -909,78 +644,20 @@ class PageTwo2 extends StatelessWidget {
 <img src="https://i.loli.net/2019/08/01/5d42b8f0f1ccc69070.gif" width="300" alt="BottomNavigationBar Sample"/>
 
 <p>代码：（其中 <code>import</code> 进来的三个页面可以<a href="https://github.com/w4mxl/FlutterStudyJourney/tree/3d0fbd350c1fc64f8907a2fcb8ed61bf3fedfd60/lib/demos/BottomBar" target="_blank" rel="noopener">在这里</a>查看）</p>
-<pre><code class="dart">import &#39;package:flutter/material.dart&#39;;
-import &#39;page_business.dart&#39;;
-import &#39;page_home.dart&#39;;
-import &#39;page_school.dart&#39;;
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'page_business.dart'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'page_home.dart'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'page_school.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BottomNavigationBarDemo</span> <span class="keyword">extends</span> <span class="title">StatefulWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  _BottomNavigationBarDemoState createState() =&gt; _BottomNavigationBarDemoState();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">_BottomNavigationBarDemoState</span> <span class="keyword">extends</span> <span class="title">State</span>&lt;<span class="title">BottomNavigationBarDemo</span>&gt; </span>&#123;</span><br><span class="line">  <span class="built_in">int</span> _selectedIndex = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">void</span> _onItemTapped(<span class="built_in">int</span> index) &#123;</span><br><span class="line">    setState(() &#123;</span><br><span class="line">      _selectedIndex = index;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">List</span>&lt;Widget&gt; _bottomNavPages = <span class="built_in">List</span>(); <span class="comment">// 底部导航栏各个可切换页面组</span></span><br><span class="line"></span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="keyword">void</span> initState() &#123;</span><br><span class="line">    <span class="keyword">super</span>.initState();</span><br><span class="line">    _bottomNavPages..add(PageHome(<span class="string">'首页'</span>))..add(PageBusiness(<span class="string">'商城'</span>))..add(PageSchool(<span class="string">'课程'</span>));</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">return</span> Scaffold(</span><br><span class="line">      body: _bottomNavPages[_selectedIndex],</span><br><span class="line">      bottomNavigationBar: BottomNavigationBar(</span><br><span class="line">        items: &lt;BottomNavigationBarItem&gt;[</span><br><span class="line">          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text(<span class="string">'首页'</span>)),</span><br><span class="line">          BottomNavigationBarItem(icon: Icon(Icons.business), title: Text(<span class="string">'商城'</span>)),</span><br><span class="line">          BottomNavigationBarItem(icon: Icon(Icons.school), title: Text(<span class="string">'课程'</span>)),</span><br><span class="line">        ],</span><br><span class="line">        currentIndex: _selectedIndex,</span><br><span class="line">        selectedItemColor: Colors.teal,</span><br><span class="line">        onTap: _onItemTapped,</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-class BottomNavigationBarDemo extends StatefulWidget {
-  @override
-  _BottomNavigationBarDemoState createState() =&gt; _BottomNavigationBarDemoState();
-}
-
-class _BottomNavigationBarDemoState extends State&lt;BottomNavigationBarDemo&gt; {
-  int _selectedIndex = 0;
-
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
-
-  List&lt;Widget&gt; _bottomNavPages = List(); // 底部导航栏各个可切换页面组
-
-  @override
-  void initState() {
-    super.initState();
-    _bottomNavPages..add(PageHome(&#39;首页&#39;))..add(PageBusiness(&#39;商城&#39;))..add(PageSchool(&#39;课程&#39;));
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: _bottomNavPages[_selectedIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        items: &lt;BottomNavigationBarItem&gt;[
-          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text(&#39;首页&#39;)),
-          BottomNavigationBarItem(icon: Icon(Icons.business), title: Text(&#39;商城&#39;)),
-          BottomNavigationBarItem(icon: Icon(Icons.school), title: Text(&#39;课程&#39;)),
-        ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.teal,
-        onTap: _onItemTapped,
-      ),
-    );
-  }
-}</code></pre>
 <p>预览：</p>
 <img src='https://i.loli.net/2019/08/01/5d42bacb684a257067.gif' width="300" alt="BottomNavigationBar Shifting Sample"/>
 
 <p>代码： 在上面的代码修改 <code>BottomNavigationBar</code> 如下</p>
-<pre><code class="dart">bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.shifting,
-        items: &lt;BottomNavigationBarItem&gt;[
-          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text(&#39;首页&#39;), backgroundColor: Colors.red),
-          BottomNavigationBarItem(icon: Icon(Icons.business), title: Text(&#39;商城&#39;), backgroundColor: Colors.blueGrey),
-          BottomNavigationBarItem(icon: Icon(Icons.school), title: Text(&#39;课程&#39;), backgroundColor: Colors.orange),
-        ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.teal,
-        onTap: _onItemTapped,
-      ),</code></pre>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">bottomNavigationBar: BottomNavigationBar(</span><br><span class="line">        type: BottomNavigationBarType.shifting,</span><br><span class="line">        items: &lt;BottomNavigationBarItem&gt;[</span><br><span class="line">          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text(<span class="string">'首页'</span>), backgroundColor: Colors.red),</span><br><span class="line">          BottomNavigationBarItem(icon: Icon(Icons.business), title: Text(<span class="string">'商城'</span>), backgroundColor: Colors.blueGrey),</span><br><span class="line">          BottomNavigationBarItem(icon: Icon(Icons.school), title: Text(<span class="string">'课程'</span>), backgroundColor: Colors.orange),</span><br><span class="line">        ],</span><br><span class="line">        currentIndex: _selectedIndex,</span><br><span class="line">        selectedItemColor: Colors.teal,</span><br><span class="line">        onTap: _onItemTapped,</span><br><span class="line">      ),</span><br></pre></td></tr></table></figure>
+
 <p>小结：</p>
 <p>使用 <code>Scaffold</code> ，在其提供的 <code>bottomNavigationBar</code> 的属性中 传入 <code>BottomNavigationBar</code>，然后 items 设置<code>BottomNavigationBarItem</code> 类型的数组，再按需设定其它一些属性，提供的可配置属性也基本能满足常规 app 的需求。总体看来，通过 <code>BottomNavigationBar</code> 组件来实现底部导航栏还是很方便的。</p>
 <h2 id="2-2-BottomAppBar"><a href="#2-2-BottomAppBar" class="headerlink" title="2.2 BottomAppBar"></a>2.2 BottomAppBar</h2><p>接下来我们再看一下如何通过 <code>BottomAppBar</code> 来做底部导航栏。<code>BottomAppBar</code> 也是通过 <code>Scaffold.bottomNavigationBar</code> 属性传入使用，相比 <code>BottomNavigationBar</code> 属性少了但灵活度更高。通常还会在上部留一个缺口（notch）配合 <code>FloatingActionButton</code> 实现一些更漂亮的效果。</p>
 <p>也先看下 <code>BottomAppBar</code> 组件的构造函数：</p>
-<pre><code class="dart">BottomAppBar({
-    Key key,
-    this.color,
-    this.elevation,
-    this.shape,
-    this.clipBehavior = Clip.none,
-    this.notchMargin = 4.0,
-    this.child,
-  })</code></pre>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">BottomAppBar(&#123;</span><br><span class="line">    Key key,</span><br><span class="line">    <span class="keyword">this</span>.color,</span><br><span class="line">    <span class="keyword">this</span>.elevation,</span><br><span class="line">    <span class="keyword">this</span>.shape,</span><br><span class="line">    <span class="keyword">this</span>.clipBehavior = Clip.none,</span><br><span class="line">    <span class="keyword">this</span>.notchMargin = <span class="number">4.0</span>,</span><br><span class="line">    <span class="keyword">this</span>.child,</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>color：底部导航栏颜色</li>
 <li>elevation：阴影高度</li>
@@ -994,139 +671,21 @@ class _BottomNavigationBarDemoState extends State&lt;BottomNavigationBarDemo&gt;
 <img src='https://i.loli.net/2019/08/02/5d4407dfab32e61973.gif' width="300" alt="BottomAppBar with FloatingActionButton" />
 
 <p>代码：</p>
-<pre><code class="dart">import &#39;package:flutter/material.dart&#39;;
-import &#39;page_home.dart&#39;;
-import &#39;page_business.dart&#39;;
-import &#39;page_school.dart&#39;;
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'page_home.dart'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'page_business.dart'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'page_school.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BottomAppBarDemo</span> <span class="keyword">extends</span> <span class="title">StatefulWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  _BottomAppBarDemoState createState() =&gt; _BottomAppBarDemoState();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">_BottomAppBarDemoState</span> <span class="keyword">extends</span> <span class="title">State</span>&lt;<span class="title">BottomAppBarDemo</span>&gt; </span>&#123;</span><br><span class="line">  <span class="built_in">int</span> _selectedIndex = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">void</span> _onItemTapped(<span class="built_in">int</span> index) &#123;</span><br><span class="line">    setState(() &#123;</span><br><span class="line">      _selectedIndex = index;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">List</span>&lt;Widget&gt; _bottomNavPages = <span class="built_in">List</span>(); <span class="comment">// 底部导航栏各个可切换页面组</span></span><br><span class="line"></span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="keyword">void</span> initState() &#123;</span><br><span class="line">    <span class="keyword">super</span>.initState();</span><br><span class="line"></span><br><span class="line">    _bottomNavPages..add(PageHome(<span class="string">'首页'</span>))..add(PageBusiness(<span class="string">'商城'</span>))..add(PageSchool(<span class="string">'课程'</span>))..add(PageBusiness(<span class="string">'搜索'</span>));</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">return</span> Scaffold(</span><br><span class="line">      body: _bottomNavPages[_selectedIndex],</span><br><span class="line">      bottomNavigationBar: BottomAppBar(</span><br><span class="line">        color: Colors.teal,</span><br><span class="line">        child: Row(</span><br><span class="line">          children: &lt;Widget&gt;[</span><br><span class="line">            IconButton(</span><br><span class="line">              icon: Icon(</span><br><span class="line">                Icons.home,</span><br><span class="line">                color: Colors.white,</span><br><span class="line">              ),</span><br><span class="line">              onPressed: () =&gt; _onItemTapped(<span class="number">0</span>),</span><br><span class="line">            ),</span><br><span class="line">            IconButton(</span><br><span class="line">              icon: Icon(</span><br><span class="line">                Icons.business,</span><br><span class="line">                color: Colors.white,</span><br><span class="line">              ),</span><br><span class="line">              onPressed: () =&gt; _onItemTapped(<span class="number">1</span>),</span><br><span class="line">            ),</span><br><span class="line">            SizedBox(), <span class="comment">// 增加一些间隔</span></span><br><span class="line">            IconButton(</span><br><span class="line">              icon: Icon(</span><br><span class="line">                Icons.school,</span><br><span class="line">                color: Colors.white,</span><br><span class="line">              ),</span><br><span class="line">              onPressed: () =&gt; _onItemTapped(<span class="number">3</span>),</span><br><span class="line">            ),</span><br><span class="line">            IconButton(</span><br><span class="line">              icon: Icon(</span><br><span class="line">                Icons.search,</span><br><span class="line">                color: Colors.white,</span><br><span class="line">              ),</span><br><span class="line">              onPressed: () =&gt; _onItemTapped(<span class="number">2</span>),</span><br><span class="line">            ),</span><br><span class="line">          ],</span><br><span class="line">          mainAxisAlignment: MainAxisAlignment.spaceAround,</span><br><span class="line">        ),</span><br><span class="line">        shape: CircularNotchedRectangle(),</span><br><span class="line">      ),</span><br><span class="line">      floatingActionButton: FloatingActionButton(</span><br><span class="line">        onPressed: () &#123;&#125;,</span><br><span class="line">        child: Icon(Icons.add),</span><br><span class="line">      ),</span><br><span class="line">      <span class="comment">// 设置 floatingActionButton 在底部导航栏中间</span></span><br><span class="line">      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-class BottomAppBarDemo extends StatefulWidget {
-  @override
-  _BottomAppBarDemoState createState() =&gt; _BottomAppBarDemoState();
-}
-
-class _BottomAppBarDemoState extends State&lt;BottomAppBarDemo&gt; {
-  int _selectedIndex = 0;
-
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
-
-  List&lt;Widget&gt; _bottomNavPages = List(); // 底部导航栏各个可切换页面组
-
-  @override
-  void initState() {
-    super.initState();
-
-    _bottomNavPages..add(PageHome(&#39;首页&#39;))..add(PageBusiness(&#39;商城&#39;))..add(PageSchool(&#39;课程&#39;))..add(PageBusiness(&#39;搜索&#39;));
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: _bottomNavPages[_selectedIndex],
-      bottomNavigationBar: BottomAppBar(
-        color: Colors.teal,
-        child: Row(
-          children: &lt;Widget&gt;[
-            IconButton(
-              icon: Icon(
-                Icons.home,
-                color: Colors.white,
-              ),
-              onPressed: () =&gt; _onItemTapped(0),
-            ),
-            IconButton(
-              icon: Icon(
-                Icons.business,
-                color: Colors.white,
-              ),
-              onPressed: () =&gt; _onItemTapped(1),
-            ),
-            SizedBox(), // 增加一些间隔
-            IconButton(
-              icon: Icon(
-                Icons.school,
-                color: Colors.white,
-              ),
-              onPressed: () =&gt; _onItemTapped(3),
-            ),
-            IconButton(
-              icon: Icon(
-                Icons.search,
-                color: Colors.white,
-              ),
-              onPressed: () =&gt; _onItemTapped(2),
-            ),
-          ],
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-        ),
-        shape: CircularNotchedRectangle(),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Icon(Icons.add),
-      ),
-      // 设置 floatingActionButton 在底部导航栏中间
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-    );
-  }
-}</code></pre>
 <p>小结：</p>
 <p>可以看出，相对于 <code>BottomNavigationBar</code> 来说，<code>BottomAppBar</code> 优势是对导航栏更能自由发挥。如果界面中会用到 <code>FloatingActionButtonLocation</code> 组件，那导航栏肯定首选 <code>BottomAppBar</code>。</p>
 <h2 id="2-3-CupertinoTabBar"><a href="#2-3-CupertinoTabBar" class="headerlink" title="2.3 CupertinoTabBar"></a>2.3 CupertinoTabBar</h2><p><code>CupertinoTabBar</code> 从名字就可以猜出，它是iOS 风格的底部导航栏组件。通常与 <code>CupertinoTabScaffold</code> 一起使用。</p>
 <p>来看下 <code>CupertinoTabBar</code> 组件的构造函数：</p>
-<pre><code class="dart">CupertinoTabBar({
-    Key key, 
-    @required List&lt;BottomNavigationBarItem&gt; items, 
-    ValueChanged&lt;int&gt; onTap, 
-    int currentIndex: 0, 
-    Color backgroundColor, 
-    Color activeColor, 
-    Color inactiveColor: CupertinoColors.inactiveGray, 
-    double iconSize: 30.0, 
-    Border border: const Border(
-      top: BorderSide(color: _kDefaultTabBarBorderColor, width: 0.0, style: BorderStyle.solid)) 
-  })</code></pre>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">CupertinoTabBar(&#123;</span><br><span class="line">    Key key, </span><br><span class="line">    <span class="meta">@required</span> <span class="built_in">List</span>&lt;BottomNavigationBarItem&gt; items, </span><br><span class="line">    ValueChanged&lt;<span class="built_in">int</span>&gt; onTap, </span><br><span class="line">    <span class="built_in">int</span> currentIndex: <span class="number">0</span>, </span><br><span class="line">    Color backgroundColor, </span><br><span class="line">    Color activeColor, </span><br><span class="line">    Color inactiveColor: CupertinoColors.inactiveGray, </span><br><span class="line">    <span class="built_in">double</span> iconSize: <span class="number">30.0</span>, </span><br><span class="line">    Border border: <span class="keyword">const</span> Border(</span><br><span class="line">      top: BorderSide(color: _kDefaultTabBarBorderColor, width: <span class="number">0.0</span>, style: BorderStyle.solid)) </span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure>
+
 <p>观察一下会发现，其实和我们最开始介绍的 <code>BottomNavigationBar</code> 构造函数的参数挺像的，都有 items、onTap、currentIndex 等。实际使用的时候，集合 <code>CupertinoTabScaffold</code> 一起用，个人觉得甚至要比 <code>BottomNavigationBar</code> 更简单些。这里就不对属性一一介绍了，直接看示例。</p>
 <p>预览：</p>
 <img src='https://i.loli.net/2019/08/02/5d4407f0a3d5c12590.gif' width="300" alt="CupertinoTabBar with CupertinoTabScaffold"/>
 
 <p>代码：</p>
-<pre><code class="dart">import &#39;package:flutter/cupertino.dart&#39;;
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/cupertino.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CupertinoTabBarDemo</span> <span class="keyword">extends</span> <span class="title">StatefulWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  _CupertinoTabBarDemoState createState() =&gt; _CupertinoTabBarDemoState();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">_CupertinoTabBarDemoState</span> <span class="keyword">extends</span> <span class="title">State</span>&lt;<span class="title">CupertinoTabBarDemo</span>&gt; </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">return</span> CupertinoTabScaffold(</span><br><span class="line">      tabBar: CupertinoTabBar(</span><br><span class="line">        items: &lt;BottomNavigationBarItem&gt;[</span><br><span class="line">          BottomNavigationBarItem(icon: Icon(CupertinoIcons.home), title: Text(<span class="string">'首页'</span>)),</span><br><span class="line">          BottomNavigationBarItem(icon: Icon(CupertinoIcons.conversation_bubble), title: Text(<span class="string">'消息'</span>)),</span><br><span class="line">          BottomNavigationBarItem(icon: Icon(CupertinoIcons.profile_circled), title: Text(<span class="string">'我的'</span>)),</span><br><span class="line">        ],</span><br><span class="line">      ),</span><br><span class="line">      tabBuilder: (BuildContext context, <span class="built_in">int</span> index) &#123;</span><br><span class="line">        <span class="keyword">return</span> CupertinoTabView(</span><br><span class="line">          builder: (BuildContext context) &#123;</span><br><span class="line">            <span class="keyword">return</span> CupertinoPageScaffold(</span><br><span class="line">              navigationBar: CupertinoNavigationBar(</span><br><span class="line">                middle: Text(<span class="string">'Page 1 of tab <span class="subst">$index</span>'</span>),</span><br><span class="line">              ),</span><br><span class="line">              child: Center(), <span class="comment">// 这里有省略一些代码</span></span><br><span class="line">            );</span><br><span class="line">          &#125;,</span><br><span class="line">        );</span><br><span class="line">      &#125;,</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-class CupertinoTabBarDemo extends StatefulWidget {
-  @override
-  _CupertinoTabBarDemoState createState() =&gt; _CupertinoTabBarDemoState();
-}
-
-class _CupertinoTabBarDemoState extends State&lt;CupertinoTabBarDemo&gt; {
-  @override
-  Widget build(BuildContext context) {
-    return CupertinoTabScaffold(
-      tabBar: CupertinoTabBar(
-        items: &lt;BottomNavigationBarItem&gt;[
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.home), title: Text(&#39;首页&#39;)),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.conversation_bubble), title: Text(&#39;消息&#39;)),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.profile_circled), title: Text(&#39;我的&#39;)),
-        ],
-      ),
-      tabBuilder: (BuildContext context, int index) {
-        return CupertinoTabView(
-          builder: (BuildContext context) {
-            return CupertinoPageScaffold(
-              navigationBar: CupertinoNavigationBar(
-                middle: Text(&#39;Page 1 of tab $index&#39;),
-              ),
-              child: Center(), // 这里有省略一些代码
-            );
-          },
-        );
-      },
-    );
-  }
-}</code></pre>
 <p>小结：</p>
 <p>根据官方推荐，想实现 iOS 风格的底部导航栏，最推荐的就是将 <code>CupertinoTabBar</code> 和 <code>CupertinoTabScaffold</code> 组合使用，使用起来也很方便。当然，虽然也能把 <code>CupertinoTabBar</code> 用在 material 风格中，比如传入 <code>Scaffold.bottomNavigationBar</code> 属性中使用，但总归会显得有点怪异。</p>
 <h1 id="3-其它实现方式"><a href="#3-其它实现方式" class="headerlink" title="3.其它实现方式"></a>3.其它实现方式</h1><p>上面介绍了通过使用3个官方提供的组件实现底部导航栏效果的方法，我也有看到一些人通过自定义实现了一些很漂亮的底部导航栏功能。这里也罗列出来，有兴趣的朋友可以去看他们的源码或文章学习。</p>
@@ -1336,9 +895,11 @@ https://medium.com/@tonyowen/flutter-bottom-tab-bar-animation-75d1ca58c096
 <p><img src="/image/131562749760_.pic.jpg" alt="fat APK"></p>
 <p>也会给出提示告知，如果打包是为了上传到 Google play 上的，建议使用 app bundles 的方式或者对不同架构 CPU 分别打包。提示原文如下：</p>
 <p>To generate an app bundle, run:</p>
-<pre><code>flutter build appbundle --target-platform android-arm,android-arm64</code></pre><p>Learn more on: <a href="https://developer.android.com/guide/app-bundle" target="_blank" rel="noopener">https://developer.android.com/guide/app-bundle</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter build appbundle --target-platform android-arm,android-arm64</span><br></pre></td></tr></table></figure>
+<p>Learn more on: <a href="https://developer.android.com/guide/app-bundle" target="_blank" rel="noopener">https://developer.android.com/guide/app-bundle</a></p>
 <p>To split the APKs per ABI, run:</p>
-<pre><code>flutter build apk --target-platform android-arm,android-arm64 --split-per-abi</code></pre><p><a href="https://developer.android.com/studio/build/configure-apk-splits#configure-abi-split" target="_blank" rel="noopener">https://developer.android.com/studio/build/configure-apk-splits#configure-abi-split</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter build apk --target-platform android-arm,android-arm64 --split-per-abi</span><br></pre></td></tr></table></figure>
+<p><a href="https://developer.android.com/studio/build/configure-apk-splits#configure-abi-split" target="_blank" rel="noopener">https://developer.android.com/studio/build/configure-apk-splits#configure-abi-split</a></p>
 <h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><ul>
 <li><a href="https://github.com/flutter/flutter/issues/31922#issuecomment-490185953" target="_blank" rel="noopener">https://github.com/flutter/flutter/issues/31922#issuecomment-490185953</a></li>
 <li><a href="https://github.com/flutter/flutter/issues/18494#issuecomment-489807239" target="_blank" rel="noopener">https://github.com/flutter/flutter/issues/18494#issuecomment-489807239</a></li>
@@ -1832,11 +1393,17 @@ https://medium.com/@tonyowen/flutter-bottom-tab-bar-animation-75d1ca58c096
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/w4mxl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;w4mxl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <a href="https://github.com/w4mxl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;w4mxl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i></a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:mxl1989@gmail.com" title="E-Mail → mailto:mxl1989@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:mxl1989@gmail.com" title="E-Mail → mailto:mxl1989@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
       </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i></a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
 

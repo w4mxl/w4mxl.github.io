@@ -181,6 +181,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
   <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
 
@@ -277,38 +278,10 @@
 <p><strong>注: “联系方式 (EditText) ＋ 反馈内容 (EditText) ＋ 发送 (Button)”这种意见反馈实现起来很简单，也满足大部分app的反馈的需求了，可目前在做的项目因为产品定位上需要，希望对用户的反馈的及时性还是高一点好，所以集成了友盟的意见反馈(它提供了一个后台回复平台)，且对原始页面进行UI自定义，初步样式如上</strong></p>
 </blockquote>
 <h3 id="2-集成-只介绍Android-Studio方式"><a href="#2-集成-只介绍Android-Studio方式" class="headerlink" title="2.集成(只介绍Android Studio方式)"></a>2.集成(只介绍Android Studio方式)</h3><p>1) 一贯的申请开发者账号，注册应用，下载 SDK、Demo<br>2) 在应用对应module下的 <code>build.gradle</code> 文件中添加:</p>
-<pre><code class="Java">repositories {
-        // others
-        jcenter()
-        maven { url &quot;https://raw.githubusercontent.com/umeng/mvn-repo-umeng/master/repository&quot; }
-    }
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">repositories &#123;</span><br><span class="line">        <span class="comment">// others</span></span><br><span class="line">        jcenter()</span><br><span class="line">        maven &#123; url <span class="string">"https://raw.githubusercontent.com/umeng/mvn-repo-umeng/master/repository"</span> &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">dependencies &#123;</span><br><span class="line">    <span class="comment">// others</span></span><br><span class="line">    compile <span class="string">'com.umeng:fb:5.3.0'</span></span><br><span class="line">    compile <span class="string">'com.android.support:support-v4:21.+'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-dependencies {
-    // others
-    compile &#39;com.umeng:fb:5.3.0&#39;
-    compile &#39;com.android.support:support-v4:21.+&#39;
-}</code></pre>
 <p>3) “AndroidManifest.xml”, 在<application>标签中添加对应的 Activity, APPKEY, 和权限，注意替换其中的 <code>YOUR_APP_KEY</code>  和 <code>Channel ID</code> 。</p>
-<pre><code class="Java">&lt;manifest&gt;
-    // others
-    &lt;uses-permission android:name=&quot;android.permission.INTERNET&quot;/&gt;
-    &lt;uses-permission android:name=&quot;android.permission.READ_PHONE_STATE&quot;/&gt;
-    &lt;uses-permission android:name=&quot;android.permission.ACCESS_NETWORK_STATE&quot;/&gt;
-    &lt;uses-permission android:name=&quot;android.permission.ACCESS_WIFI_STATE&quot; /&gt;
-    &lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot; /&gt;
-    &lt;application&gt;
-        // others
-        &lt;activity
-            android:name=&quot;.x.me.FeedBackActivity&quot;
-            android:screenOrientation=&quot;portrait&quot;/&gt;
-        &lt;meta-data
-        android:value=&quot;YOUR_APP_KEY&quot;
-        android:name=&quot;UMENG_APPKEY&quot;/&gt;
-        &lt;meta-data
-        android:value=&quot;Channel ID&quot;
-        android:name=&quot;UMENG_CHANNEL&quot;/&gt;
-    &lt;/application&gt;
-&lt;/manifest&gt;</code></pre>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;manifest&gt;</span><br><span class="line">    <span class="comment">// others</span></span><br><span class="line">    &lt;uses-permission android:name=<span class="string">"android.permission.INTERNET"</span>/&gt;</span><br><span class="line">    &lt;uses-permission android:name=<span class="string">"android.permission.READ_PHONE_STATE"</span>/&gt;</span><br><span class="line">    &lt;uses-permission android:name=<span class="string">"android.permission.ACCESS_NETWORK_STATE"</span>/&gt;</span><br><span class="line">    &lt;uses-permission android:name=<span class="string">"android.permission.ACCESS_WIFI_STATE"</span> /&gt;</span><br><span class="line">    &lt;uses-permission android:name=<span class="string">"android.permission.WRITE_EXTERNAL_STORAGE"</span> /&gt;</span><br><span class="line">    &lt;application&gt;</span><br><span class="line">        <span class="comment">// others</span></span><br><span class="line">        &lt;activity</span><br><span class="line">            android:name=<span class="string">".x.me.FeedBackActivity"</span></span><br><span class="line">            android:screenOrientation=<span class="string">"portrait"</span>/&gt;</span><br><span class="line">        &lt;meta-data</span><br><span class="line">        android:value=<span class="string">"YOUR_APP_KEY"</span></span><br><span class="line">        android:name=<span class="string">"UMENG_APPKEY"</span>/&gt;</span><br><span class="line">        &lt;meta-data</span><br><span class="line">        android:value=<span class="string">"Channel ID"</span></span><br><span class="line">        android:name=<span class="string">"UMENG_CHANNEL"</span>/&gt;</span><br><span class="line">    &lt;/application&gt;</span><br><span class="line">&lt;/manifest&gt;</span><br></pre></td></tr></table></figure>
 <p>4) 自定义页面布局、参照开发文档和官方 demo 实现页面功能</p>
 <blockquote>
 <p>这里不细讲实现细节了，待当前项目完成后我将我的意见反馈模块抽出来做成 demo 放到 github上，看 demo会更清楚。</p>
@@ -471,11 +444,17 @@ dependencies {
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/w4mxl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;w4mxl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <a href="https://github.com/w4mxl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;w4mxl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i></a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:mxl1989@gmail.com" title="E-Mail → mailto:mxl1989@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:mxl1989@gmail.com" title="E-Mail → mailto:mxl1989@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
       </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i></a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
 

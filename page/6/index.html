@@ -174,6 +174,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
   <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
 
@@ -352,37 +353,17 @@
 
 <p><strong>方法一</strong></p>
 <p>如果页面是继承 ListActivity，只要在布局文件中这样:</p>
-<pre><code class="java">...
-&lt;ListView android:id=&quot;@id/android:list&quot;.../&gt; 
-&lt;TextView 
-    android:id=&quot;@id/android:empty 
-    android:text=&quot;暂无常用回答哦&quot;
-    .../&gt;
-...</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">&lt;ListView android:id=<span class="string">"@id/android:list"</span>.../&gt; </span><br><span class="line">&lt;TextView </span><br><span class="line">    android:id=<span class="string">"@id/android:empty </span></span><br><span class="line"><span class="string">    android:text="</span>暂无常用回答哦<span class="string">"</span></span><br><span class="line"><span class="string">    .../&gt;</span></span><br><span class="line"><span class="string">...</span></span><br></pre></td></tr></table></figure>
 <p>这样当列表为空时就会自动显示这个 TextView 了。</p>
 <p>如果页面不是继承 ListActivity 的话，</p>
-<pre><code class="java">...
-&lt;ListView android:id=&quot;@+id/list&quot;.../&gt; 
-&lt;TextView 
-    android:id=&quot;@+id/empty 
-    android:text=&quot;暂无常用回答哦&quot;
-    .../&gt;
-...
-ListView listView = (ListView)findViewById(R.id.list);
-listView.setEmptyView(findViewById(R.id.empty));</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">&lt;ListView android:id=<span class="string">"@+id/list"</span>.../&gt; </span><br><span class="line">&lt;TextView </span><br><span class="line">    android:id=<span class="string">"@+id/empty </span></span><br><span class="line"><span class="string">    android:text="</span>暂无常用回答哦<span class="string">"</span></span><br><span class="line"><span class="string">    .../&gt;</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line"><span class="string">ListView listView = (ListView)findViewById(R.id.list);</span></span><br><span class="line"><span class="string">listView.setEmptyView(findViewById(R.id.empty));</span></span><br></pre></td></tr></table></figure>
+
 <p><strong>方法二</strong></p>
 <p>setEmptyView()这个方法是有限制的，这个 empty view 必须在当前的 View hierarchy 的节点上，所以需要把empty view 添加到当前的 View hierarchy 的节点上。布局文件中不作额外配置，在页面中实现如下:</p>
-<pre><code class="java">TextView emptyView = new TextView(activity);
-emptyView.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));
-emptyView.setText(&quot;暂无常用回答哦&quot;);
-emptyView.setVisibility(View.GONE);
-((ViewGroup) list.getParent()).addView(emptyView);
-list.setEmptyView(emptyView);</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">TextView emptyView = <span class="keyword">new</span> TextView(activity);</span><br><span class="line">emptyView.setLayoutParams(<span class="keyword">new</span> LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));</span><br><span class="line">emptyView.setText(<span class="string">"暂无常用回答哦"</span>);</span><br><span class="line">emptyView.setVisibility(View.GONE);</span><br><span class="line">((ViewGroup) list.getParent()).addView(emptyView);</span><br><span class="line">list.setEmptyView(emptyView);</span><br></pre></td></tr></table></figure>
 <p>同理，如果 empty view 不简单是一个 TextView 而是其他一个较复杂的自定义 View，则可以通过 inflate:</p>
-<pre><code class="java">View emptyView = View.inflate(R.layout.empty_view, null);
-emptyView.setVisibility(View.GONE);
-((ViewGroup) list.getParent()).addView(emptyView);
-list.setEmptyView(emptyView);</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">View emptyView = View.inflate(R.layout.empty_view, <span class="keyword">null</span>);</span><br><span class="line">emptyView.setVisibility(View.GONE);</span><br><span class="line">((ViewGroup) list.getParent()).addView(emptyView);</span><br><span class="line">list.setEmptyView(emptyView);</span><br></pre></td></tr></table></figure>
+
 <h3 id="3-尾巴"><a href="#3-尾巴" class="headerlink" title="3. 尾巴"></a>3. 尾巴</h3><p>ViewStub 在很多时候也是可以实现我们空页面的需求，在页面中的数据不是动态变化的情况下，使用 ViewStub 也是不错的选择。</p>
 
       
@@ -878,42 +859,9 @@ list.setEmptyView(emptyView);</code></pre>
 
 
 <p>MeInfoActivity.java 中对应的代码:</p>
-<pre><code class="java">    @OnClick(R.id.rl_set_head)
-    public void setHeadImage() {
-        CustomDialog.showSetPicDialog(activity, new CustomDialog.OnDialogTakePic() {
-            @Override
-            public void onClick() {// 拍照
-                actionProfilePic(Constants.IntentExtras.ACTION_CAMERA);
-            }
-        }, new CustomDialog.OnDialogSelectPic() {
-            @Override
-            public void onClick() {// 本地图片
-                actionProfilePic(Constants.IntentExtras.ACTION_GALLERY);
-            }
-        });
-    }</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@OnClick</span>(R.id.rl_set_head)</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setHeadImage</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    CustomDialog.showSetPicDialog(activity, <span class="keyword">new</span> CustomDialog.OnDialogTakePic() &#123;</span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">()</span> </span>&#123;<span class="comment">// 拍照</span></span><br><span class="line">            actionProfilePic(Constants.IntentExtras.ACTION_CAMERA);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;, <span class="keyword">new</span> CustomDialog.OnDialogSelectPic() &#123;</span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">()</span> </span>&#123;<span class="comment">// 本地图片</span></span><br><span class="line">            actionProfilePic(Constants.IntentExtras.ACTION_GALLERY);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="2-实现头像的选择-拍照-及裁剪"><a href="#2-实现头像的选择-拍照-及裁剪" class="headerlink" title="2.实现头像的选择(拍照)及裁剪"></a>2.实现头像的选择(拍照)及裁剪</h3><p>MeInfoActivity.java 中对应的代码:</p>
-<pre><code class="java">    private void actionProfilePic(String action) {
-        Intent intent = new Intent(this, ImageCropActivity.class);
-        intent.putExtra(&quot;ACTION&quot;, action);
-        intent.putExtra(&quot;FROM&quot;, &quot;MeInfoActivity&quot;);
-        startActivityForResult(intent, REQUEST_CODE_UPDATE_PIC);
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent result) {
-        if (requestCode == REQUEST_CODE_UPDATE_PIC) {
-            if (resultCode == RESULT_OK) {
-                String imagePath = result.getStringExtra(Constants.IntentExtras.IMAGE_PATH);
-                showCroppedImage(imagePath);
-            } else if (resultCode == RESULT_CANCELED) {
-
-            } else {
-                String errorMsg = result.getStringExtra(ImageCropActivity.ERROR_MSG);
-                Toast.makeText(this, errorMsg, Toast.LENGTH_LONG).show();
-            }
-        }
-    }</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">actionProfilePic</span><span class="params">(String action)</span> </span>&#123;</span><br><span class="line">    Intent intent = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, ImageCropActivity<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">    intent.putExtra(<span class="string">"ACTION"</span>, action);</span><br><span class="line">    intent.putExtra(<span class="string">"FROM"</span>, <span class="string">"MeInfoActivity"</span>);</span><br><span class="line">    startActivityForResult(intent, REQUEST_CODE_UPDATE_PIC);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onActivityResult</span><span class="params">(<span class="keyword">int</span> requestCode, <span class="keyword">int</span> resultCode, Intent result)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (requestCode == REQUEST_CODE_UPDATE_PIC) &#123;</span><br><span class="line">        <span class="keyword">if</span> (resultCode == RESULT_OK) &#123;</span><br><span class="line">            String imagePath = result.getStringExtra(Constants.IntentExtras.IMAGE_PATH);</span><br><span class="line">            showCroppedImage(imagePath);</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (resultCode == RESULT_CANCELED) &#123;</span><br><span class="line"></span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            String errorMsg = result.getStringExtra(ImageCropActivity.ERROR_MSG);</span><br><span class="line">            Toast.makeText(<span class="keyword">this</span>, errorMsg, Toast.LENGTH_LONG).show();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>在 MeInfoActivity.java 中只是按照用户的选择发出相对应的 action，选择、拍照、裁剪的响应都是放到 ImageCropActivity.java 中处理的。<br>ImageCropActivity.java 中对应的代码我是参见的开源项目，<a href="https://github.com/albinmathew/PhotoCrop/blob/master/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Falbinmathew%2Fsamples%2Fphotocrop%2FImageCropActivity.java" target="_blank" rel="noopener">地址</a>。</p>
 <h3 id="3-将裁剪后的本地图片上传到服务器"><a href="#3-将裁剪后的本地图片上传到服务器" class="headerlink" title="3.将裁剪后的本地图片上传到服务器"></a>3.将裁剪后的本地图片上传到服务器</h3><p>通常上传 app 本地文件(如图片)到后台 server，需要 app 开发人员与后台接口人员定义一种方式。</p>
 
@@ -1114,16 +1062,11 @@ list.setEmptyView(emptyView);</code></pre>
 <p>前提: 下面的 Activity A B C D 都没有显式的指明launchMode 和 taskAffinity 属性。</p>
 </blockquote>
 <p>已经启动了四个 Activity: A，B，C和D。在 D Activity里，我们想要跳到 B Activity，同时希望C Activity finish掉。<br><strong>实现:</strong>: FLAG_ACTIVITY_CLEAR_TOP</p>
-<pre><code class="JAVA">Intent intent = new Intent(this, B.class);
-intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);// D Activity
-startActivity(intent);</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Intent intent = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, B<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);<span class="comment">// D Activity</span></span><br><span class="line">startActivity(intent);</span><br></pre></td></tr></table></figure>
 <p><strong>结果:</strong><br>D、C、B Activity 依次调用各自的 onDestroy 方法出栈 －&gt; B Activity 重新启动(onCreate)<br>栈中为: A B</p>
 <hr>
 <p><strong>需求2:</strong><br>在需求1的基础上，只是不想重新再创建一个新的B Activity，而是重用原来的实例。<br><strong>实现:</strong>: Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP</p>
-<pre><code class="JAVA">Intent intent = new Intent(this, B.class);
-// intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);// D Activity
-intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);// D Activity
-startActivity(intent);</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Intent intent = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, B<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line"><span class="comment">// intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);// D Activity</span></span><br><span class="line">intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);<span class="comment">// D Activity</span></span><br><span class="line">startActivity(intent);</span><br></pre></td></tr></table></figure>
 <p><strong>结果:</strong><br>依次，C onDestroy -&gt; B Activity onNewIntent onRestart -&gt; D onDestroy<br>栈中为: A B</p>
 <hr>
 <p><strong>需求3:</strong></p>
@@ -1131,9 +1074,7 @@ startActivity(intent);</code></pre>
 <p>前提: 下面的 Activity A B C D 都没有显式的指明 launchMode 和 taskAffinity 属性。</p>
 </blockquote>
 <p>已经启动了四个Activity：A，B，C和D。在D Activity里，想再启动一个Actvity B，但不变成A,B,C,D,B，而是希望是A,C,D,B。<br><strong>实现:</strong>: Intent.FLAG_ACTIVITY_REORDER_TO_FRONT</p>
-<pre><code class="JAVA">Intent intent = new Intent(this, B.class);
-intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);// D Activity
-startActivity(intent);</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Intent intent = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, B<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);<span class="comment">// D Activity</span></span><br><span class="line">startActivity(intent);</span><br></pre></td></tr></table></figure>
 <p><strong>结果:</strong><br>依次，B Activity onNewIntent onRestart<br>栈中为: A C D B</p>
 <hr>
 <h3 id="其他常见-FLAG-说明"><a href="#其他常见-FLAG-说明" class="headerlink" title="其他常见 FLAG 说明"></a>其他常见 FLAG 说明</h3><p><strong>FLAG_ACTIVITY_NO_HISTORY</strong><br>例如现在栈情况为：A B C。C 通过 intent 跳转到 D，这个intent添加 FLAG_ACTIVITY_NO_HISTORY 标志，则此时界面显示D的内容，如果此时D中又跳转到E，栈的情况变为: A B C E，此时按返回键会回到C，因为D根本就没有被压入栈中。</p>
@@ -1359,11 +1300,17 @@ startActivity(intent);</code></pre>
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/w4mxl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;w4mxl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <a href="https://github.com/w4mxl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;w4mxl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i></a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:mxl1989@gmail.com" title="E-Mail → mailto:mxl1989@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:mxl1989@gmail.com" title="E-Mail → mailto:mxl1989@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
       </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i></a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
 

@@ -178,6 +178,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
   <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
 
@@ -270,37 +271,17 @@
 
 <p><strong>方法一</strong></p>
 <p>如果页面是继承 ListActivity，只要在布局文件中这样:</p>
-<pre><code class="java">...
-&lt;ListView android:id=&quot;@id/android:list&quot;.../&gt; 
-&lt;TextView 
-    android:id=&quot;@id/android:empty 
-    android:text=&quot;暂无常用回答哦&quot;
-    .../&gt;
-...</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">&lt;ListView android:id=<span class="string">"@id/android:list"</span>.../&gt; </span><br><span class="line">&lt;TextView </span><br><span class="line">    android:id=<span class="string">"@id/android:empty </span></span><br><span class="line"><span class="string">    android:text="</span>暂无常用回答哦<span class="string">"</span></span><br><span class="line"><span class="string">    .../&gt;</span></span><br><span class="line"><span class="string">...</span></span><br></pre></td></tr></table></figure>
 <p>这样当列表为空时就会自动显示这个 TextView 了。</p>
 <p>如果页面不是继承 ListActivity 的话，</p>
-<pre><code class="java">...
-&lt;ListView android:id=&quot;@+id/list&quot;.../&gt; 
-&lt;TextView 
-    android:id=&quot;@+id/empty 
-    android:text=&quot;暂无常用回答哦&quot;
-    .../&gt;
-...
-ListView listView = (ListView)findViewById(R.id.list);
-listView.setEmptyView(findViewById(R.id.empty));</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">&lt;ListView android:id=<span class="string">"@+id/list"</span>.../&gt; </span><br><span class="line">&lt;TextView </span><br><span class="line">    android:id=<span class="string">"@+id/empty </span></span><br><span class="line"><span class="string">    android:text="</span>暂无常用回答哦<span class="string">"</span></span><br><span class="line"><span class="string">    .../&gt;</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line"><span class="string">ListView listView = (ListView)findViewById(R.id.list);</span></span><br><span class="line"><span class="string">listView.setEmptyView(findViewById(R.id.empty));</span></span><br></pre></td></tr></table></figure>
+
 <p><strong>方法二</strong></p>
 <p>setEmptyView()这个方法是有限制的，这个 empty view 必须在当前的 View hierarchy 的节点上，所以需要把empty view 添加到当前的 View hierarchy 的节点上。布局文件中不作额外配置，在页面中实现如下:</p>
-<pre><code class="java">TextView emptyView = new TextView(activity);
-emptyView.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));
-emptyView.setText(&quot;暂无常用回答哦&quot;);
-emptyView.setVisibility(View.GONE);
-((ViewGroup) list.getParent()).addView(emptyView);
-list.setEmptyView(emptyView);</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">TextView emptyView = <span class="keyword">new</span> TextView(activity);</span><br><span class="line">emptyView.setLayoutParams(<span class="keyword">new</span> LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));</span><br><span class="line">emptyView.setText(<span class="string">"暂无常用回答哦"</span>);</span><br><span class="line">emptyView.setVisibility(View.GONE);</span><br><span class="line">((ViewGroup) list.getParent()).addView(emptyView);</span><br><span class="line">list.setEmptyView(emptyView);</span><br></pre></td></tr></table></figure>
 <p>同理，如果 empty view 不简单是一个 TextView 而是其他一个较复杂的自定义 View，则可以通过 inflate:</p>
-<pre><code class="java">View emptyView = View.inflate(R.layout.empty_view, null);
-emptyView.setVisibility(View.GONE);
-((ViewGroup) list.getParent()).addView(emptyView);
-list.setEmptyView(emptyView);</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">View emptyView = View.inflate(R.layout.empty_view, <span class="keyword">null</span>);</span><br><span class="line">emptyView.setVisibility(View.GONE);</span><br><span class="line">((ViewGroup) list.getParent()).addView(emptyView);</span><br><span class="line">list.setEmptyView(emptyView);</span><br></pre></td></tr></table></figure>
+
 <h3 id="3-尾巴"><a href="#3-尾巴" class="headerlink" title="3. 尾巴"></a>3. 尾巴</h3><p>ViewStub 在很多时候也是可以实现我们空页面的需求，在页面中的数据不是动态变化的情况下，使用 ViewStub 也是不错的选择。</p>
 
     </div>
@@ -460,11 +441,17 @@ list.setEmptyView(emptyView);</code></pre>
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/w4mxl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;w4mxl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <a href="https://github.com/w4mxl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;w4mxl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i></a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:mxl1989@gmail.com" title="E-Mail → mailto:mxl1989@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:mxl1989@gmail.com" title="E-Mail → mailto:mxl1989@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
       </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i></a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
 

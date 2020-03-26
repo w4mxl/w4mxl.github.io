@@ -176,6 +176,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
   <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
 
@@ -269,29 +270,14 @@
 <p><strong><code>flutter packages pub run intl_translation:extract_to_arb --output-dir=i10n-arb lib/i10n/localization_intl.dart</code></strong></p>
 <image src="https://i.loli.net/2019/05/24/5ce80d83bf01468384.jpg" width="200"/>
 
-<pre><code class="json">{
-  &quot;@@last_modified&quot;: &quot;2019-01-26T11:14:10.582986&quot;,
-  &quot;login&quot;: &quot;Login&quot;,
-  &quot;@login&quot;: {
-    &quot;description&quot;: &quot;Title for left drawer login text&quot;,
-    &quot;type&quot;: &quot;text&quot;,
-    &quot;placeholders&quot;: {}
-  }
-}</code></pre>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"@@last_modified"</span>: <span class="string">"2019-01-26T11:14:10.582986"</span>,</span><br><span class="line">  <span class="attr">"login"</span>: <span class="string">"Login"</span>,</span><br><span class="line">  <span class="attr">"@login"</span>: &#123;</span><br><span class="line">    <span class="attr">"description"</span>: <span class="string">"Title for left drawer login text"</span>,</span><br><span class="line">    <span class="attr">"type"</span>: <span class="string">"text"</span>,</span><br><span class="line">    <span class="attr">"placeholders"</span>: &#123;&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>这个是生成的默认的Locale资源文件，如果我们现在要支持中文简体，只需要在该文件同级目录创建一个”intl_zh_Hans.arb”文件。</p>
 <image src="https://i.loli.net/2019/05/24/5ce80d83c5b4b31093.jpg" width="200"/>
 
 <p>然后将”intl_messages.arb”的内容拷贝到”intl_zh_Hans.arb”文件，接下来将英文翻译为中文即可，翻译后的”intl_zh_Hans.arb”文件内容如下：</p>
-<pre><code class="json">{
-  &quot;@@last_modified&quot;: &quot;2019-01-26T11:27:30.905630&quot;,
-  &quot;@@locale&quot;:&quot;zh-Hans&quot;,
-  &quot;login&quot;: &quot;登录&quot;,
-  &quot;@login&quot;: {
-    &quot;description&quot;: &quot;Title for left drawer login text&quot;,
-    &quot;type&quot;: &quot;text&quot;,
-    &quot;placeholders&quot;: {}
-  }
-}</code></pre>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"@@last_modified"</span>: <span class="string">"2019-01-26T11:27:30.905630"</span>,</span><br><span class="line">  <span class="attr">"@@locale"</span>:<span class="string">"zh-Hans"</span>,</span><br><span class="line">  <span class="attr">"login"</span>: <span class="string">"登录"</span>,</span><br><span class="line">  <span class="attr">"@login"</span>: &#123;</span><br><span class="line">    <span class="attr">"description"</span>: <span class="string">"Title for left drawer login text"</span>,</span><br><span class="line">    <span class="attr">"type"</span>: <span class="string">"text"</span>,</span><br><span class="line">    <span class="attr">"placeholders"</span>: &#123;&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <hr>
 <p><strong><code>flutter pub pub run intl_translation:generate_from_arb --output-dir=lib/i10n --no-use-deferred-loading lib/i10n/localization_intl.dart i10n-arb/intl_*.arb</code></strong></p>
 <image src="https://i.loli.net/2019/05/24/5ce80d83d464086681.jpg" width="300" />
@@ -470,11 +456,17 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/w4mxl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;w4mxl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <a href="https://github.com/w4mxl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;w4mxl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i></a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:mxl1989@gmail.com" title="E-Mail → mailto:mxl1989@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:mxl1989@gmail.com" title="E-Mail → mailto:mxl1989@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
       </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i></a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
 
