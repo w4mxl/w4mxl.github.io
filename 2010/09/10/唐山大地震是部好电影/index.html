@@ -24,7 +24,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="劈开一切不说，光电影，我说《唐山大地震》是部好电影">
 <meta property="og:url" content="https://w4mxl.github.io/2010/09/10/%E5%94%90%E5%B1%B1%E5%A4%A7%E5%9C%B0%E9%9C%87%E6%98%AF%E9%83%A8%E5%A5%BD%E7%94%B5%E5%BD%B1/index.html">
-<meta property="og:site_name" content="Wml&#39;Blog">
+<meta property="og:site_name" content="魏木林的博客">
 <meta property="og:description" content="《唐山大地震》：01:42 2010-9-10 看的很巧，片子里放到毛主席去世，天安门广场和人民大会堂人山人海时，想刚刚好今天就是9,9号（当时还没过零点）（记得毛主席就是9,9号逝世的），听着哀悼的音乐，会觉得好巧啊！ 那时候的人们多好啊，70、80年代的人，日子里透入出单纯，远没现代人精明，远比现代人真诚。爸爸给两孩子六分钱，然后就可以买到冰棍吃，心里觉着真好。我跟同看的舍友说我小时候也吃过一">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2010-09-10T01:47:00.000Z">
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>劈开一切不说，光电影，我说《唐山大地震》是部好电影 | Wml'Blog</title>
+  <title>劈开一切不说，光电影，我说《唐山大地震》是部好电影 | 魏木林的博客</title>
   
 
 
@@ -76,7 +76,7 @@
   </style>
 </noscript>
 
-<link rel="alternate" href="/atom.xml" title="Wml'Blog" type="application/atom+xml">
+<link rel="alternate" href="/atom.xml" title="魏木林的博客" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -97,9 +97,10 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Wml'Blog</h1>
+      <h1 class="site-title">魏木林的博客</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
+      <p class="site-subtitle" itemprop="description">Work smart. Have fun.</p>
   </div>
 
   <div class="site-nav-right">
@@ -194,13 +195,13 @@
     <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2010/09/10/%E5%94%90%E5%B1%B1%E5%A4%A7%E5%9C%B0%E9%9C%87%E6%98%AF%E9%83%A8%E5%A5%BD%E7%94%B5%E5%BD%B1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="魏木林">
-      <meta itemprop="description" content="Work smart. Have fun.">
+      <meta itemprop="description" content="记录生活，总结技术<br />流水不腐，户枢不蠹">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wml'Blog">
+      <meta itemprop="name" content="魏木林的博客">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -294,9 +295,12 @@
           </div>
           
       <div class="comment-button-group">
-          <a class="btn comment-button disqus">disqus</a>
           <a class="btn comment-button gitalk">gitalk</a>
+          <a class="btn comment-button disqus">disqus</a>
       </div>
+        <div class="comment-position gitalk">
+          <div class="comments" id="gitalk-container"></div>
+        </div>
         <div class="comment-position disqus">
           
   <div class="comments">
@@ -305,9 +309,6 @@
     </div>
   </div>
   
-        </div>
-        <div class="comment-position gitalk">
-          <div class="comments" id="gitalk-container"></div>
         </div>
       <script>
         (function() {
@@ -387,8 +388,10 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="魏木林"
+      src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">魏木林</p>
-  <div class="site-description" itemprop="description">Work smart. Have fun.</div>
+  <div class="site-description" itemprop="description">记录生活，总结技术<br />流水不腐，户枢不蠹</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -509,6 +512,26 @@
 
   
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '72e551d37e031a6846d4',
+      clientSecret: '9f935e54f68c62feb810fea42435c7a7ff5301e7',
+      repo        : 'w4mxl.github.io',
+      owner       : 'w4mxl',
+      admin       : ['w4mxl'],
+      id          : '27fc7b9870ce75b56264974f028e2765',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
 <script>
   function loadCount() {
     var d = document, s = d.createElement('script');
@@ -538,26 +561,6 @@
       (d.head || d.body).appendChild(s);
     }
   });
-</script>
-
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
-
-<script>
-NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
-    var gitalk = new Gitalk({
-      clientID    : '72e551d37e031a6846d4',
-      clientSecret: '9f935e54f68c62feb810fea42435c7a7ff5301e7',
-      repo        : 'w4mxl.github.io',
-      owner       : 'w4mxl',
-      admin       : ['w4mxl'],
-      id          : '27fc7b9870ce75b56264974f028e2765',
-        language: '',
-      distractionFreeMode: true
-    });
-    gitalk.render('gitalk-container');
-  }, window.Gitalk);
-});
 </script>
 
 </body>

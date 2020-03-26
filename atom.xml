@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Wml&#39;Blog</title>
+  <title>魏木林的博客</title>
   
-  
+  <subtitle>Work smart. Have fun.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://w4mxl.github.io/"/>

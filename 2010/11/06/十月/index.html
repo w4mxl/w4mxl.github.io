@@ -24,7 +24,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="十月">
 <meta property="og:url" content="https://w4mxl.github.io/2010/11/06/%E5%8D%81%E6%9C%88/index.html">
-<meta property="og:site_name" content="Wml&#39;Blog">
+<meta property="og:site_name" content="魏木林的博客">
 <meta property="og:description" content="Last October 1. 月初，国庆长假，舍友们各施各事，留我一人当个伪霍尔顿的“宿舍守望者”。我倒挺乐意的。其实是我不想冒着黄金周出去捡黄金，到哪儿哪儿是人海会使我很痛苦。至于那几日，白天，就学些编些程序看些书；下午泛读点杂书；晚上看电影和把小音箱调到最大放歌；一天吃两顿；学校没什么人，食堂自然也没什么好菜。然后到了夜里常常会很饿，饿到痛，所以没辙只好在阳台上留下些抽干寂寞余下的烟头^#^">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2010-11-05T16:00:00.000Z">
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>十月 | Wml'Blog</title>
+  <title>十月 | 魏木林的博客</title>
   
 
 
@@ -76,7 +76,7 @@
   </style>
 </noscript>
 
-<link rel="alternate" href="/atom.xml" title="Wml'Blog" type="application/atom+xml">
+<link rel="alternate" href="/atom.xml" title="魏木林的博客" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -97,9 +97,10 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Wml'Blog</h1>
+      <h1 class="site-title">魏木林的博客</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
+      <p class="site-subtitle" itemprop="description">Work smart. Have fun.</p>
   </div>
 
   <div class="site-nav-right">
@@ -194,13 +195,13 @@
     <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2010/11/06/%E5%8D%81%E6%9C%88/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="魏木林">
-      <meta itemprop="description" content="Work smart. Have fun.">
+      <meta itemprop="description" content="记录生活，总结技术<br />流水不腐，户枢不蠹">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wml'Blog">
+      <meta itemprop="name" content="魏木林的博客">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -304,9 +305,12 @@
           </div>
           
       <div class="comment-button-group">
-          <a class="btn comment-button disqus">disqus</a>
           <a class="btn comment-button gitalk">gitalk</a>
+          <a class="btn comment-button disqus">disqus</a>
       </div>
+        <div class="comment-position gitalk">
+          <div class="comments" id="gitalk-container"></div>
+        </div>
         <div class="comment-position disqus">
           
   <div class="comments">
@@ -315,9 +319,6 @@
     </div>
   </div>
   
-        </div>
-        <div class="comment-position gitalk">
-          <div class="comments" id="gitalk-container"></div>
         </div>
       <script>
         (function() {
@@ -397,8 +398,10 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="魏木林"
+      src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">魏木林</p>
-  <div class="site-description" itemprop="description">Work smart. Have fun.</div>
+  <div class="site-description" itemprop="description">记录生活，总结技术<br />流水不腐，户枢不蠹</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -519,6 +522,26 @@
 
   
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '72e551d37e031a6846d4',
+      clientSecret: '9f935e54f68c62feb810fea42435c7a7ff5301e7',
+      repo        : 'w4mxl.github.io',
+      owner       : 'w4mxl',
+      admin       : ['w4mxl'],
+      id          : 'fc89a14d5a0fc13565b5dc7293a1664b',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
 <script>
   function loadCount() {
     var d = document, s = d.createElement('script');
@@ -548,26 +571,6 @@
       (d.head || d.body).appendChild(s);
     }
   });
-</script>
-
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
-
-<script>
-NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
-    var gitalk = new Gitalk({
-      clientID    : '72e551d37e031a6846d4',
-      clientSecret: '9f935e54f68c62feb810fea42435c7a7ff5301e7',
-      repo        : 'w4mxl.github.io',
-      owner       : 'w4mxl',
-      admin       : ['w4mxl'],
-      id          : 'fc89a14d5a0fc13565b5dc7293a1664b',
-        language: '',
-      distractionFreeMode: true
-    });
-    gitalk.render('gitalk-container');
-  }, window.Gitalk);
-});
 </script>
 
 </body>

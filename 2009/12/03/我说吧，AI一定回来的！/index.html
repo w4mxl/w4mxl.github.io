@@ -24,7 +24,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="我说吧，AI一定回来的！">
 <meta property="og:url" content="https://w4mxl.github.io/2009/12/03/%E6%88%91%E8%AF%B4%E5%90%A7%EF%BC%8CAI%E4%B8%80%E5%AE%9A%E5%9B%9E%E6%9D%A5%E7%9A%84%EF%BC%81/index.html">
-<meta property="og:site_name" content="Wml&#39;Blog">
+<meta property="og:site_name" content="魏木林的博客">
 <meta property="og:description" content="AI今天宣布接受了费城76人的合同（一年老将底薪无保障合同），虽然合同不怎么可观薪水才130万多，可毕竟有了归属。 艾弗森去76人，在我看来真的是个很不错的契机。一来，最近76人大将威廉姆斯因病休战且球队卷进连败漩涡真缺人率队重整旗鼓呢。再者，76人是艾弗森职业生涯的第一个东家，在费城艾弗森有过太多的美好记忆，不管是故地重起亦或是善始善终对AI来说都是最好的。 作为无数热爱你的艾迷中的一员，我衷心">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://w4mxl.github.io/image/%E5%9B%BE/%E8%89%BE%E5%BC%97%E6%A3%AE%EF%BC%8C%E6%88%91%E8%A7%89%E5%BE%97%E4%BD%A0%E4%B8%80%E5%AE%9A%E8%BF%98%E4%BC%9A%E5%9B%9E%E6%9D%A5%E7%9A%8401.jpg">
@@ -47,7 +47,7 @@
   };
 </script>
 
-  <title>我说吧，AI一定回来的！ | Wml'Blog</title>
+  <title>我说吧，AI一定回来的！ | 魏木林的博客</title>
   
 
 
@@ -78,7 +78,7 @@
   </style>
 </noscript>
 
-<link rel="alternate" href="/atom.xml" title="Wml'Blog" type="application/atom+xml">
+<link rel="alternate" href="/atom.xml" title="魏木林的博客" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -99,9 +99,10 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Wml'Blog</h1>
+      <h1 class="site-title">魏木林的博客</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
+      <p class="site-subtitle" itemprop="description">Work smart. Have fun.</p>
   </div>
 
   <div class="site-nav-right">
@@ -196,13 +197,13 @@
     <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/2009/12/03/%E6%88%91%E8%AF%B4%E5%90%A7%EF%BC%8CAI%E4%B8%80%E5%AE%9A%E5%9B%9E%E6%9D%A5%E7%9A%84%EF%BC%81/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="魏木林">
-      <meta itemprop="description" content="Work smart. Have fun.">
+      <meta itemprop="description" content="记录生活，总结技术<br />流水不腐，户枢不蠹">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wml'Blog">
+      <meta itemprop="name" content="魏木林的博客">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -293,9 +294,12 @@
           </div>
           
       <div class="comment-button-group">
-          <a class="btn comment-button disqus">disqus</a>
           <a class="btn comment-button gitalk">gitalk</a>
+          <a class="btn comment-button disqus">disqus</a>
       </div>
+        <div class="comment-position gitalk">
+          <div class="comments" id="gitalk-container"></div>
+        </div>
         <div class="comment-position disqus">
           
   <div class="comments">
@@ -304,9 +308,6 @@
     </div>
   </div>
   
-        </div>
-        <div class="comment-position gitalk">
-          <div class="comments" id="gitalk-container"></div>
         </div>
       <script>
         (function() {
@@ -386,8 +387,10 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="魏木林"
+      src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">魏木林</p>
-  <div class="site-description" itemprop="description">Work smart. Have fun.</div>
+  <div class="site-description" itemprop="description">记录生活，总结技术<br />流水不腐，户枢不蠹</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -508,6 +511,26 @@
 
   
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '72e551d37e031a6846d4',
+      clientSecret: '9f935e54f68c62feb810fea42435c7a7ff5301e7',
+      repo        : 'w4mxl.github.io',
+      owner       : 'w4mxl',
+      admin       : ['w4mxl'],
+      id          : '3a9556eff71cb9f8fb2e4ee382515956',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
 <script>
   function loadCount() {
     var d = document, s = d.createElement('script');
@@ -537,26 +560,6 @@
       (d.head || d.body).appendChild(s);
     }
   });
-</script>
-
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
-
-<script>
-NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
-    var gitalk = new Gitalk({
-      clientID    : '72e551d37e031a6846d4',
-      clientSecret: '9f935e54f68c62feb810fea42435c7a7ff5301e7',
-      repo        : 'w4mxl.github.io',
-      owner       : 'w4mxl',
-      admin       : ['w4mxl'],
-      id          : '3a9556eff71cb9f8fb2e4ee382515956',
-        language: '',
-      distractionFreeMode: true
-    });
-    gitalk.render('gitalk-container');
-  }, window.Gitalk);
-});
 </script>
 
 </body>
