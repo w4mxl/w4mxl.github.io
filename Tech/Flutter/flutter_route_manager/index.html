@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.loli.net/css?family=PT Sans Caption:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"w4mxl.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"buttons","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":"enable","trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="1. 概述Flutter 中的路由管理（页面跳转）其实和原生是类似的，无论是 Android 还是 iOS（Android 中的页面通常指一个 Activity，在 iOS 中指一个 ViewController），路由管理都会维护一个路由栈，路由入栈（push）操作对应打开一个新页面，路由出栈（pop）操作对应关闭一个页面，而路由管理主要是指如何来管理路由栈。 Flutter 中的页面跳转有两种">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Flutter 路由管理（页面跳转）">
+<meta property="og:url" content="https://w4mxl.github.io/Tech/Flutter/flutter_route_manager/index.html">
+<meta property="og:site_name" content="mu&#39;s blog">
+<meta property="og:description" content="1. 概述Flutter 中的路由管理（页面跳转）其实和原生是类似的，无论是 Android 还是 iOS（Android 中的页面通常指一个 Activity，在 iOS 中指一个 ViewController），路由管理都会维护一个路由栈，路由入栈（push）操作对应打开一个新页面，路由出栈（pop）操作对应关闭一个页面，而路由管理主要是指如何来管理路由栈。 Flutter 中的页面跳转有两种">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2019/08/09/DxF9trOzUfGiNHu.gif">
+<meta property="og:image" content="https://i.loli.net/2019/08/09/bWIVc3ixMUl1Q2t.gif">
+<meta property="og:image" content="https://i.loli.net/2019/08/12/GY4nX8BCZ2euPqU.gif">
+<meta property="og:image" content="https://i.loli.net/2019/08/12/TNMyBbYFAOmj1ln.gif">
+<meta property="article:published_time" content="2019-08-07T07:06:44.000Z">
+<meta property="article:modified_time" content="2020-04-01T06:22:11.797Z">
+<meta property="article:author" content="魏木林">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2019/08/09/DxF9trOzUfGiNHu.gif">
+
+<link rel="canonical" href="https://w4mxl.github.io/Tech/Flutter/flutter_route_manager/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Flutter 路由管理（页面跳转） | mu's blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="mu's blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">mu's blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Work smart. Have fun.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-life">
+
+    <a href="/categories/Life/" rel="section"><i class="fa fa-angle-double-right fa-fw"></i>Life</a>
+
+  </li>
+        <li class="menu-item menu-item-tech">
+
+    <a href="/categories/Tech/" rel="section"><i class="fa fa-angle-double-right fa-fw"></i>Tech</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/Tech/Flutter/flutter_route_manager/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="魏木林">
+      <meta itemprop="description" content="记录生活，总结技术<br />流水不腐，户枢不蠹">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mu's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Flutter 路由管理（页面跳转）
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-08-07 15:06:44" itemprop="dateCreated datePublished" datetime="2019-08-07T15:06:44+08:00">2019-08-07</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Tech/" itemprop="url" rel="index"><span itemprop="name">Tech</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Tech/Flutter/" itemprop="url" rel="index"><span itemprop="name">Flutter</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/Tech/Flutter/flutter_route_manager/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="Tech/Flutter/flutter_route_manager/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h1><p>Flutter 中的路由管理（页面跳转）其实和原生是类似的，无论是 Android 还是 iOS（Android 中的页面通常指一个 <code>Activity</code>，在 iOS 中指一个 <code>ViewController</code>），路由管理都会维护一个路由栈，路由入栈（push）操作对应打开一个新页面，路由出栈（pop）操作对应关闭一个页面，而路由管理主要是指如何来管理<strong>路由栈</strong>。</p>
+<p>Flutter 中的页面跳转有两种方式，一种是构建式路由，另一种是命名式路由。下面我们结合实际例子来介绍一下这两种路由的使用方式和它们的异同。</p>
+<a id="more"></a>
+
+<h1 id="2-构建式路由"><a href="#2-构建式路由" class="headerlink" title="2. 构建式路由"></a>2. 构建式路由</h1><p>先介绍一下构建式路由。所谓构建式路由，是指通过我们自定义构建出来一个路由来供页面跳转使用。下面通过一个简单的示例先看下效果：</p>
+<p>预览：</p>
+<img src='https://i.loli.net/2019/08/09/DxF9trOzUfGiNHu.gif' width='300' alt='使用构建式路由进行页面跳转' />
+
+<p>代码：</p>
+<p><code>page_first.dart</code>: 页面很简单，在中间显示一个按钮，用于点击后跳转到下一页。</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">'page_two.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">PageFirst</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">return</span> Scaffold(</span><br><span class="line">      appBar: AppBar(</span><br><span class="line">        title: Text(<span class="string">'Page one'</span>),</span><br><span class="line">      ),</span><br><span class="line">      body: Center(</span><br><span class="line">        child: RaisedButton(</span><br><span class="line">          onPressed: () =&gt; Navigator.push(context, MaterialPageRoute(builder: (context) =&gt; PageTwo())),</span><br><span class="line">          child: Text(<span class="string">'下一页'</span>),</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>page_two.dart</code>：点击中间按钮，返回上一页。</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">PageTwo</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">return</span> Scaffold(</span><br><span class="line">      appBar: AppBar(</span><br><span class="line">        title: Text(<span class="string">'Page two'</span>),</span><br><span class="line">      ),</span><br><span class="line">      body: Center(</span><br><span class="line">        child: RaisedButton(</span><br><span class="line">          onPressed: () =&gt; Navigator.pop(context),</span><br><span class="line">          child: Text(<span class="string">'返回'</span>),</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-1-Navigator"><a href="#2-1-Navigator" class="headerlink" title="2.1 Navigator"></a>2.1 Navigator</h2><p>我们在页面1中间的 <code>RaisedButton</code> 的点击事件是 <code>Navigator.push(context, MaterialPageRoute(builder: (context) =&gt; PageTwo()))</code>。通过查看<code>Navigator.push</code>的源码知道，下面这两种写法效果是一样的。其实不但是 <code>push</code>，Navigator 类中第一个参数为 context 的静态方法都对应有一个 Navigator 的实例方法。比如，<code>Navigator.of(context).pop()</code> 也等价于 <code>Navigator.pop(context)</code>。</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// push 源码</span></span><br><span class="line"><span class="comment">// navigator.dart </span></span><br><span class="line"></span><br><span class="line">  <span class="meta">@optionalTypeArgs</span></span><br><span class="line">  <span class="keyword">static</span> Future&lt;T&gt; push&lt;T <span class="keyword">extends</span> <span class="built_in">Object</span>&gt;(BuildContext context, Route&lt;T&gt; route) &#123;</span><br><span class="line">    <span class="keyword">return</span> Navigator.of(context).push(route);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Navigator.push(context, MaterialPageRoute(builder: (context) =&gt; PageTwo()))</span><br><span class="line"></span><br><span class="line">Navigator.of(context).push(MaterialPageRoute(builder: (context) =&gt; PageTwo()))</span><br></pre></td></tr></table></figure>
+
+<p><code>Navigator</code> 是一个路由管理的组件，它提供了打开和退出路由页方法。<code>Navigator</code>通过一个栈来管理活动路由集合。Navigator 提供了一系列方法来管理路由栈，这里只介绍其最常用的两个方法：</p>
+<ul>
+<li><code>Future&lt;T&gt; push&lt;T extends Object&gt;(BuildContext context, Route&lt;T&gt; route)</code><ul>
+<li>将给定的路由入栈（即打开新的页面），返回值是一个 <code>Future</code> 对象，用以接收新路由出栈（即关闭）时的返回数据。</li>
+</ul>
+</li>
+<li>bool pop<T extends Object>(BuildContext context, [ T result ])<ul>
+<li>将栈顶路由出栈，<code>result</code> 为页面关闭时返回给上一个页面的数据。</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-2-MaterialPageRoute"><a href="#2-2-MaterialPageRoute" class="headerlink" title="2.2 MaterialPageRoute"></a>2.2 MaterialPageRoute</h2><p>它们都需要传入一个<code>Route</code>对象，在 Flutter 中我们可以使用 PageRouteBuilder 来构建这个 Route 对象，或者直接使用整合好了的 MaterialPageRoute。 MaterialPageRoute 很方便，因为它会使用平台特定的动画跳转到新的页面（Android和IOS屏幕切换动画会不同）。</p>
+<p>下面我们看一下 MaterialPageRoute 构造函数及其各个参数的意义：</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">MaterialPageRoute(&#123;</span><br><span class="line">    <span class="meta">@required</span> <span class="keyword">this</span>.builder,</span><br><span class="line">    RouteSettings settings,</span><br><span class="line">    <span class="keyword">this</span>.maintainState = <span class="keyword">true</span>,</span><br><span class="line">    <span class="built_in">bool</span> fullscreenDialog = <span class="keyword">false</span>,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>builder</code> ：是一个 WidgetBuilder 类型的回调函数，它的作用是构建路由页面的具体内容，返回值是一个 widget。我们通常要实现此回调，返回新路由的实例。</li>
+<li><code>settings</code>：包含路由的配置信息，如路由名称、是否初始路由（首页）。</li>
+<li><code>maintainState</code>：默认情况下，当入栈一个新路由时，原来的路由仍然会被保存在内存中，如果想在路由没用的时候释放其所占用的所有资源，可以设置 maintainState 为 false。</li>
+<li><code>fullscreenDialog</code>：表示新的路由页面是否是一个全屏的模态对话框，在 iOS 中，如果 <code>fullscreenDialog</code>为 true，新页面将会从屏幕底部滑入（而不是水平方向）。</li>
+</ul>
+<h2 id="2-3-构建式路由的参数传递"><a href="#2-3-构建式路由的参数传递" class="headerlink" title="2.3 构建式路由的参数传递"></a>2.3 构建式路由的参数传递</h2><p>页面跳转很多时候是伴随着参数传递的，比如从话题列表跳到话题详情页，需要传一个话题id。又比如购买电影票跳转到选择城市页，选择城市后要把选好的城市带回上一页作为过滤条件。</p>
+<p>下面在前面代码基础上扩展一个传参示例，Page one 跳转到 Page two 时带一个参数，同时当从 Page two 返回时也带上一个返回参数。我们看下效果：</p>
+<p>预览：</p>
+<img src='https://i.loli.net/2019/08/09/bWIVc3ixMUl1Q2t.gif' width='440' alt='使用构建式路由进行页面跳转并传参' />
+
+<p>代码：</p>
+<p><code>page_first.dart</code>: 点击后跳转到下一页，并传递一个参数：“我是来自p1的参数”。当接收到返回结果时打印到控制台上。</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'page_two.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">PageFirst</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">return</span> Scaffold(</span><br><span class="line">      appBar: AppBar(</span><br><span class="line">        title: Text(<span class="string">'Page one'</span>),</span><br><span class="line">      ),</span><br><span class="line">      body: Center(</span><br><span class="line">        child: Column(</span><br><span class="line">          mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">          children: &lt;Widget&gt;[</span><br><span class="line">            RaisedButton(</span><br><span class="line">              onPressed: () <span class="keyword">async</span> &#123;</span><br><span class="line">                <span class="comment">// 跳转到 page two，等待返回结果</span></span><br><span class="line">                <span class="keyword">var</span> result = <span class="keyword">await</span> Navigator.push(</span><br><span class="line">                  context,</span><br><span class="line">                  MaterialPageRoute(</span><br><span class="line">                    builder: (context) =&gt; PageTwo(</span><br><span class="line">                      text: <span class="string">'我是来自p1的参数'</span>,</span><br><span class="line">                    ),</span><br><span class="line">                  ),</span><br><span class="line">                );</span><br><span class="line">                <span class="comment">// 输出 page two 返回来的结果</span></span><br><span class="line">                <span class="built_in">print</span>(result);</span><br><span class="line">              &#125;,</span><br><span class="line">              child: Text(<span class="string">'下一页：传参数'</span>),</span><br><span class="line">            ),</span><br><span class="line">          ],</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>page_two.dart</code>: 接收上一页过来的参数显示。点击“返回”按钮回到上一页带上结果：“我是来自p2的返回值”。</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">PageTwo</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="keyword">final</span> <span class="built_in">String</span> text;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> PageTwo(&#123;Key key, <span class="keyword">this</span>.text&#125;) : <span class="keyword">super</span>(key: key);</span><br><span class="line"></span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">return</span> Scaffold(</span><br><span class="line">      appBar: AppBar(</span><br><span class="line">        title: Text(<span class="string">'Page two'</span>),</span><br><span class="line">      ),</span><br><span class="line">      body: Center(</span><br><span class="line">        child: Column(</span><br><span class="line">          mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">          children: &lt;Widget&gt;[</span><br><span class="line">            Text(text != <span class="keyword">null</span> ? text : <span class="string">''</span>),</span><br><span class="line">            RaisedButton(</span><br><span class="line">              onPressed: () =&gt; Navigator.pop(context, <span class="string">'我是来自p2的返回值'</span>),</span><br><span class="line">              child: Text(<span class="string">'返回'</span>),</span><br><span class="line">            ),</span><br><span class="line">          ],</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这里有一点需要注意的是，page two 有两种方式可以返回到上一页；第一种方式是直接点击状态栏返回箭头（iOS 的侧滑返回和 Android 底部虚拟返回按钮也属于这一种），第二种方式是点击页面中的“返回”按钮。这两种返回方式的区别是，前者不会返回数据给上一个路由（接收到的是 <code>null</code>），而后者会。</p>
+<h1 id="3-命名式路由"><a href="#3-命名式路由" class="headerlink" title="3. 命名式路由"></a>3. 命名式路由</h1><p>”命名式路由“是指我们可以先给路由页面起一个名字，然后把这个”名字“注册到路由表中，后面就可以通过路由名字直接打开新的路由页面了。这种路由管理的方式会显得更统一些。</p>
+<p>下面我们还是先通过一个示例看下效果：</p>
+<p>预览：</p>
+<img src='https://i.loli.net/2019/08/12/GY4nX8BCZ2euPqU.gif' width='300' alt='命名式路由'/>
+
+<p>代码：</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/// <span class="markdown">main.dart</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 已省略其它无关代码</span></span><br><span class="line">MaterialApp(</span><br><span class="line">    home: HomePage(),</span><br><span class="line">    routes: &lt;<span class="built_in">String</span>, WidgetBuilder&gt;&#123;</span><br><span class="line">        <span class="comment">// 已省略其它路由注册</span></span><br><span class="line">        <span class="comment">// 把 PageTwo2()  路由页面注册到路由表中，名字设为 'page_two_2'</span></span><br><span class="line">        <span class="string">'page_two_2'</span>: (BuildContext context) =&gt; PageTwo2(),</span><br><span class="line">    &#125;,</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="comment">/// <span class="markdown">page_first.dart </span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">PageFirst</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">return</span> Scaffold(</span><br><span class="line">      appBar: AppBar(</span><br><span class="line">        title: Text(<span class="string">'Page one'</span>),</span><br><span class="line">      ),</span><br><span class="line">      body: Center(</span><br><span class="line">        child: Column(</span><br><span class="line">          mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">          children: &lt;Widget&gt;[</span><br><span class="line">            RaisedButton(</span><br><span class="line">              onPressed: () &#123;</span><br><span class="line">                Navigator.pushNamed(context, <span class="string">'page_two_2'</span>);</span><br><span class="line">              &#125;,</span><br><span class="line">              child: Text(<span class="string">'下一页：命名式路由'</span>),</span><br><span class="line">            ),</span><br><span class="line">          ],</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/// <span class="markdown">page<span class="emphasis">_two_</span>2.dart</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">PageTwo2</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> Scaffold(</span><br><span class="line">      appBar: AppBar(</span><br><span class="line">        title: Text(<span class="string">'Page two'</span>),</span><br><span class="line">      ),</span><br><span class="line">      body: Center(</span><br><span class="line">        child: Column(</span><br><span class="line">          mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">          children: &lt;Widget&gt;[</span><br><span class="line">            RaisedButton(</span><br><span class="line">              onPressed: () =&gt; Navigator.pop(context),</span><br><span class="line">              child: Text(<span class="string">'返回'</span>),</span><br><span class="line">            ),</span><br><span class="line">          ],</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-1-注册路由表，打开注册好的页面"><a href="#3-1-注册路由表，打开注册好的页面" class="headerlink" title="3.1 注册路由表，打开注册好的页面"></a>3.1 注册路由表，打开注册好的页面</h2><p>可以看见效果和上面的构建式路由没什么区别。在 <code>main.dart</code> 代码中，我们把 PageTwo2()  路由页面注册到路由表中，名字设为 ‘page_two_2’。</p>
+<p>我们在 page_first.dart 中通过路由名字 ‘page_two_2’ ，使用 <code>Navigator</code> 的 <code>pushNamed</code> 方法打开新路由时，应用会根据路由名字在路由表中查找到对应的 WidgetBuilder 回调函数，然后调用该回调函数生成路由 widget 并返回。</p>
+<p>在上面 <code>main.dart</code> 代码中，HomePage() 没有使用命名式路由，而是使用的 <code>MaterialApp</code> 的 <code>home</code> 属性指定的，如果我们也想将它注册为命名式路由应该怎么做呢？其实很简单，代码如下：</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/// <span class="markdown">main.dart</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 已省略其它无关代码</span></span><br><span class="line">MaterialApp(</span><br><span class="line">    initialRoute:<span class="string">"/"</span>, <span class="comment">// 名为"/"的路由作为应用的首页</span></span><br><span class="line">    home: HomePage(),</span><br><span class="line">    routes: &lt;<span class="built_in">String</span>, WidgetBuilder&gt;&#123;</span><br><span class="line">        <span class="string">'/'</span>: (BuildContext context) =&gt; HomePage(),</span><br><span class="line">        <span class="comment">// 已省略其它路由注册</span></span><br><span class="line">        <span class="comment">// 把 PageTwo2()  路由页面注册到路由表中，名字设为 'page_two_2'</span></span><br><span class="line">        <span class="string">'page_two_2'</span>: (BuildContext context) =&gt; PageTwo2(),</span><br><span class="line">    &#125;,</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<p>另外，因为 <code>initialRoute</code> 默认值即为 “/“，所以如果下面 <code>routes</code> 中的首页命名也设为 “/“时，可以省略<code>initialRoute:&quot;/&quot;,</code>。</p>
+<h2 id="3-2-命名式路由参数传递"><a href="#3-2-命名式路由参数传递" class="headerlink" title="3.2 命名式路由参数传递"></a>3.2 命名式路由参数传递</h2><p><strong>在 Flutter 最初的版本中，命名式路由是不能传递参数的。</strong> 其实在 Flutter 的 Issues 中16年就有人提出<a href="https://github.com/flutter/flutter/issues/6225" target="_blank" rel="noopener">这个问题</a>，但是这个Issue一直到今年才有 <a href="https://github.com/flutter/flutter/pull/27058" target="_blank" rel="noopener">PR</a> 被提交，后来命名式路由才支持了传参。下面我们演示一下命名式路由如何传递并获取路由参数：</p>
+<p>预览：</p>
+<img src='https://i.loli.net/2019/08/12/TNMyBbYFAOmj1ln.gif' width='300' alt='命名式路由 & 传参'/>
+
+<p>代码：</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/// <span class="markdown">page_first.dart</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">PageFirst</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="keyword">return</span> Scaffold(</span><br><span class="line">      appBar: AppBar(</span><br><span class="line">        title: Text(<span class="string">'Page one'</span>),</span><br><span class="line">      ),</span><br><span class="line">      body: Center(</span><br><span class="line">        child: Column(</span><br><span class="line">          mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">          children: &lt;Widget&gt;[</span><br><span class="line">            RaisedButton(</span><br><span class="line">              onPressed: () <span class="keyword">async</span> &#123;</span><br><span class="line">                <span class="comment">// 跳转到 page two 2，等待返回结果</span></span><br><span class="line">                <span class="keyword">var</span> result = <span class="keyword">await</span> Navigator.pushNamed(context, <span class="string">'page_two_2'</span>, arguments: <span class="string">'我是来自p1的命名式路由的参数'</span>);</span><br><span class="line">                <span class="comment">// 输出 page two 返回来的结果</span></span><br><span class="line">                <span class="built_in">print</span>(result);</span><br><span class="line">              &#125;,</span><br><span class="line">              child: Text(<span class="string">'下一页：命名式路由 &amp; 传参'</span>),</span><br><span class="line">            ),</span><br><span class="line">          ],</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/// <span class="markdown">page<span class="emphasis">_two_</span>2.dart</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">PageTwo2</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="comment">//获取路由参数</span></span><br><span class="line">    <span class="keyword">var</span> text = ModalRoute.of(context).settings.arguments;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> Scaffold(</span><br><span class="line">      appBar: AppBar(</span><br><span class="line">        title: Text(<span class="string">'Page two'</span>),</span><br><span class="line">      ),</span><br><span class="line">      body: Center(</span><br><span class="line">        child: Column(</span><br><span class="line">          mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">          children: &lt;Widget&gt;[</span><br><span class="line">            Text(text != <span class="keyword">null</span> ? text : <span class="string">''</span>),</span><br><span class="line">            RaisedButton(</span><br><span class="line">              onPressed: () =&gt; Navigator.pop(context, <span class="string">'我是来自p2的返回值'</span>),</span><br><span class="line">              child: Text(<span class="string">'返回'</span>),</span><br><span class="line">            ),</span><br><span class="line">          ],</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>逻辑很简单，page_first 跳转时通过 <code>arguments</code> 传参（上面示例是一个文本，也可以是任意自定义的数据对象），page_two_2 接收参数。和 Android 中通过 Intent 传递参数类似。</p>
+<p>另外我们也可以将 onGenerateRoute() 函数中的参数并将它们传递给路由页面，而不必直接在路由页面中手动提取参数。这里不再细说，可以看下<a href="https://flutter.dev/docs/cookbook/navigation/navigate-with-arguments" target="_blank" rel="noopener">官方的示例</a>。</p>
+<h1 id="4-总结"><a href="#4-总结" class="headerlink" title="4. 总结"></a>4. 总结</h1><p>本文分别介绍了构建式路由和命名式路由的使用方式，包括如何传递参数和接收返回参数。大家在实际项目使用过程中，可以根据自己的喜好选择。如果纠结到底该选择哪种方式好，我这里会更推荐在项目中统一都使用命名式这种路由管理方式。这样的好处是：</p>
+<ol>
+<li>写在一处很清晰，方便统一管理</li>
+<li>可以通过 <code>onGenerateRoute</code> 做一些全局的页面跳转前置处理逻辑</li>
+</ol>
+<h1 id="5-参考链接"><a href="#5-参考链接" class="headerlink" title="5. 参考链接"></a>5. 参考链接</h1><p><a href="flutter.dev/docs/cookbook/navigation/navigate-with-arguments">flutter.dev/docs/cookbook/navigation/navigate-with-arguments</a><br><a href="flutter.dev/docs/cookbook/navigation/returning-data">flutter.dev/docs/cookbook/navigation/returning-data</a></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/Tech/Flutter/flutter-bottom-bar/" rel="prev" title="Flutter 底部导航栏的多种实现">
+      <i class="fa fa-chevron-left"></i> Flutter 底部导航栏的多种实现
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/Life/run-201908/" rel="next" title="紧追猛赶后的跑步新高">
+      紧追猛赶后的跑步新高 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-概述"><span class="nav-number">1.</span> <span class="nav-text">1. 概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-构建式路由"><span class="nav-number">2.</span> <span class="nav-text">2. 构建式路由</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-Navigator"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 Navigator</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-MaterialPageRoute"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 MaterialPageRoute</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-构建式路由的参数传递"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 构建式路由的参数传递</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-命名式路由"><span class="nav-number">3.</span> <span class="nav-text">3. 命名式路由</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-注册路由表，打开注册好的页面"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 注册路由表，打开注册好的页面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-命名式路由参数传递"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 命名式路由参数传递</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-总结"><span class="nav-number">4.</span> <span class="nav-text">4. 总结</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-参考链接"><span class="nav-number">5.</span> <span class="nav-text">5. 参考链接</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="魏木林"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">魏木林</p>
+  <div class="site-description" itemprop="description">记录生活，总结技术<br />流水不腐，户枢不蠹</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">201</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/w4mxl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;w4mxl" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:mxl1989@gmail.com" title="E-Mail → mailto:mxl1989@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">魏木林</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://w4mxl.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://w4mxl.github.io/Tech/Flutter/flutter_route_manager/";
+    this.page.identifier = "Tech/Flutter/flutter_route_manager/";
+    this.page.title = "Flutter 路由管理（页面跳转）";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://w4mxl.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

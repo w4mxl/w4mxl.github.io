@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.loli.net/css?family=PT Sans Caption:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"w4mxl.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"buttons","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":"enable","trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="一般做 app，只要存在用户系统，跑不了都会有设置用户头像的需求。设置用户头像一般都提供拍照和从相册选择两种方式，得到图片后，让用户对图片进行裁剪，然后上传服务器。 关于拍照和从相册选取，都是向系统发送特定的 Intent，唤起对应的系统程序，然后在onActivityResult 里面，获取我们的图片数据。关于图像裁剪，一般有两种方式，第一种是我们可以直接利用系统提供的裁剪功能，实现图像的裁剪。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用户头像：拍照、选择和裁剪">
+<meta property="og:url" content="https://w4mxl.github.io/Tech/Android/set-user-avatar/index.html">
+<meta property="og:site_name" content="mu&#39;s blog">
+<meta property="og:description" content="一般做 app，只要存在用户系统，跑不了都会有设置用户头像的需求。设置用户头像一般都提供拍照和从相册选择两种方式，得到图片后，让用户对图片进行裁剪，然后上传服务器。 关于拍照和从相册选取，都是向系统发送特定的 Intent，唤起对应的系统程序，然后在onActivityResult 里面，获取我们的图片数据。关于图像裁剪，一般有两种方式，第一种是我们可以直接利用系统提供的裁剪功能，实现图像的裁剪。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2019/07/29/5d3e6d4a4dabb15916.png">
+<meta property="article:published_time" content="2015-07-19T13:52:00.000Z">
+<meta property="article:modified_time" content="2020-03-20T07:16:24.477Z">
+<meta property="article:author" content="魏木林">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2019/07/29/5d3e6d4a4dabb15916.png">
+
+<link rel="canonical" href="https://w4mxl.github.io/Tech/Android/set-user-avatar/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>用户头像：拍照、选择和裁剪 | mu's blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="mu's blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">mu's blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Work smart. Have fun.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-life">
+
+    <a href="/categories/Life/" rel="section"><i class="fa fa-angle-double-right fa-fw"></i>Life</a>
+
+  </li>
+        <li class="menu-item menu-item-tech">
+
+    <a href="/categories/Tech/" rel="section"><i class="fa fa-angle-double-right fa-fw"></i>Tech</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://w4mxl.github.io/Tech/Android/set-user-avatar/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="魏木林">
+      <meta itemprop="description" content="记录生活，总结技术<br />流水不腐，户枢不蠹">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mu's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          用户头像：拍照、选择和裁剪
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2015-07-19 21:52:00" itemprop="dateCreated datePublished" datetime="2015-07-19T21:52:00+08:00">2015-07-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Tech/" itemprop="url" rel="index"><span itemprop="name">Tech</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Tech/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/Tech/Android/set-user-avatar/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="Tech/Android/set-user-avatar/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>一般做 app，只要存在用户系统，跑不了都会有设置用户头像的需求。设置用户头像一般都提供拍照和从相册选择两种方式，得到图片后，让用户对图片进行裁剪，然后上传服务器。</p>
+<p>关于拍照和从相册选取，都是向系统发送特定的 Intent，唤起对应的系统程序，然后在onActivityResult 里面，获取我们的图片数据。关于图像裁剪，一般有两种方式，第一种是我们可以直接利用系统提供的裁剪功能，实现图像的裁剪。另外一种是自己处理，比如利用一些第三方的开源项目，如<a href="https://github.com/edmodo/cropper" target="_blank" rel="noopener">cropper</a> 和 <a href="https://github.com/jdamcd/android-crop" target="_blank" rel="noopener">android-crop</a>，来完成我们的需求。</p>
+<p>以前做过的项目中碰到设置用户头像这个需求，裁剪都是用的上面说到的第一种方式，即通过 Intent intent = new Intent(“com.android.camera.action.CROP”); 语句来调用系统的裁剪功能，但是自从推出 android lollipop(5.0) 之后，用之前的那套代码会有 bug，通过 stackoverflow 了解到因为 “Camera’s crop activity doesn’t return anything for onActivityResult() method. ”。所以这次项目中尝试选择了第二方式来解决这个问题。</p>
+<h3 id="1-按设计完成从底部弹出选择对话框"><a href="#1-按设计完成从底部弹出选择对话框" class="headerlink" title="1.按设计完成从底部弹出选择对话框"></a>1.按设计完成从底部弹出选择对话框</h3><center><img src='https://i.loli.net/2019/07/29/5d3e6d4a4dabb15916.png' width="400" alt="最终完成效果如上"/></center>
+
+
+<p>MeInfoActivity.java 中对应的代码:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@OnClick</span>(R.id.rl_set_head)</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setHeadImage</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    CustomDialog.showSetPicDialog(activity, <span class="keyword">new</span> CustomDialog.OnDialogTakePic() &#123;</span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">()</span> </span>&#123;<span class="comment">// 拍照</span></span><br><span class="line">            actionProfilePic(Constants.IntentExtras.ACTION_CAMERA);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;, <span class="keyword">new</span> CustomDialog.OnDialogSelectPic() &#123;</span><br><span class="line">        <span class="meta">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">()</span> </span>&#123;<span class="comment">// 本地图片</span></span><br><span class="line">            actionProfilePic(Constants.IntentExtras.ACTION_GALLERY);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-实现头像的选择-拍照-及裁剪"><a href="#2-实现头像的选择-拍照-及裁剪" class="headerlink" title="2.实现头像的选择(拍照)及裁剪"></a>2.实现头像的选择(拍照)及裁剪</h3><p>MeInfoActivity.java 中对应的代码:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">actionProfilePic</span><span class="params">(String action)</span> </span>&#123;</span><br><span class="line">    Intent intent = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, ImageCropActivity<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">    intent.putExtra(<span class="string">"ACTION"</span>, action);</span><br><span class="line">    intent.putExtra(<span class="string">"FROM"</span>, <span class="string">"MeInfoActivity"</span>);</span><br><span class="line">    startActivityForResult(intent, REQUEST_CODE_UPDATE_PIC);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onActivityResult</span><span class="params">(<span class="keyword">int</span> requestCode, <span class="keyword">int</span> resultCode, Intent result)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (requestCode == REQUEST_CODE_UPDATE_PIC) &#123;</span><br><span class="line">        <span class="keyword">if</span> (resultCode == RESULT_OK) &#123;</span><br><span class="line">            String imagePath = result.getStringExtra(Constants.IntentExtras.IMAGE_PATH);</span><br><span class="line">            showCroppedImage(imagePath);</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (resultCode == RESULT_CANCELED) &#123;</span><br><span class="line"></span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            String errorMsg = result.getStringExtra(ImageCropActivity.ERROR_MSG);</span><br><span class="line">            Toast.makeText(<span class="keyword">this</span>, errorMsg, Toast.LENGTH_LONG).show();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在 MeInfoActivity.java 中只是按照用户的选择发出相对应的 action，选择、拍照、裁剪的响应都是放到 ImageCropActivity.java 中处理的。<br>ImageCropActivity.java 中对应的代码我是参见的开源项目，<a href="https://github.com/albinmathew/PhotoCrop/blob/master/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Falbinmathew%2Fsamples%2Fphotocrop%2FImageCropActivity.java" target="_blank" rel="noopener">地址</a>。</p>
+<h3 id="3-将裁剪后的本地图片上传到服务器"><a href="#3-将裁剪后的本地图片上传到服务器" class="headerlink" title="3.将裁剪后的本地图片上传到服务器"></a>3.将裁剪后的本地图片上传到服务器</h3><p>通常上传 app 本地文件(如图片)到后台 server，需要 app 开发人员与后台接口人员定义一种方式。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/Tech/Android/activity-launchMode/" rel="prev" title="Activity 的启动模式">
+      <i class="fa fa-chevron-left"></i> Activity 的启动模式
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/Life/%E5%9C%A8%E5%86%AC%E5%A4%A9%E5%92%8C%E5%A5%B6%E5%A5%B6%E4%B8%80%E8%B5%B7%E6%99%92%E5%A4%AA%E9%98%B3/" rel="next" title="在冬天和奶奶一起晒太阳">
+      在冬天和奶奶一起晒太阳 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-按设计完成从底部弹出选择对话框"><span class="nav-number">1.</span> <span class="nav-text">1.按设计完成从底部弹出选择对话框</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-实现头像的选择-拍照-及裁剪"><span class="nav-number">2.</span> <span class="nav-text">2.实现头像的选择(拍照)及裁剪</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-将裁剪后的本地图片上传到服务器"><span class="nav-number">3.</span> <span class="nav-text">3.将裁剪后的本地图片上传到服务器</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="魏木林"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">魏木林</p>
+  <div class="site-description" itemprop="description">记录生活，总结技术<br />流水不腐，户枢不蠹</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">201</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/w4mxl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;w4mxl" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:mxl1989@gmail.com" title="E-Mail → mailto:mxl1989@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">魏木林</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://w4mxl.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://w4mxl.github.io/Tech/Android/set-user-avatar/";
+    this.page.identifier = "Tech/Android/set-user-avatar/";
+    this.page.title = "用户头像：拍照、选择和裁剪";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://w4mxl.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
