@@ -2,6 +2,7 @@
 title: 赵雷的MV《理想》
 date: 2015-07-03 22:23
 categories: Life
+permalink: zhao-lei-mv
 ---
 
 分享赵雷的MV《理想》，以前这首歌也一直听，昨夜里敲罢代码，在网易云音乐里看到这首MV，喜欢。

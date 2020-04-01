@@ -2,6 +2,7 @@
 title: running
 date: 2014-7-16 02:13
 categories: Life
+permalink: running
 ---
 
 

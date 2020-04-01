@@ -11,6 +11,8 @@ permalink: show-flutter-icons-in-vscode
 
 ![Android Studio 上引用颜色和图标会自动显示预览](https://i.loli.net/2019/11/25/fnCoJmHchazSWEZ.png)
 
+<!-- more -->
+
 但是在切换到 VS code 后发现默认并不会这样了。经过 Google，发现有人已经在 Dart 仓库下提了 issue，并有开发者合并了解决方案。所以如果你的 Dart 插件已经更新到 3.6.0 版本，只需要在 VS code 设置中搜索 "Flutter gutter"，勾选上 Dart: Preview Flutter Gutter Icons 选项后重启一下 VS code 就好。这样，熟悉的颜色和图标预览功能就又回来了～
 
 ![勾选上 Dart: Preview Flutter Gutter Icons 选项](https://i.loli.net/2019/11/25/SYA2tmO5QVrP7Z6.png)

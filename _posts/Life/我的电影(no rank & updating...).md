@@ -2,7 +2,6 @@
 title: 我的电影(no rank & updating)
 date: 2015-05-09 13:13
 categories: Life
-tags: movie
 permalink: my-movie
 ---
 

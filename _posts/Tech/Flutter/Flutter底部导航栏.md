@@ -16,6 +16,8 @@ permalink: flutter-bottom-bar
 
 `Flutter` 中创建底部导航栏，最常见的做法就是在 `Scaffold` 中使用 `bottomNavigationBar` 属性去实现。其中 `bottomNavigationBar` 属性可以传 `BottomNavigationBar` 和 `BottomAppBar` 两个组件。 `BottomNavigationBar` 效果比较常规一点，而 `BottomAppBar` 集合 `FloatingActionButton` 可以做出更多的自定义效果。
 
+<!-- more -->
+
 ## 2.1 BottomNavigationBar
 
 第一种方式是基于 `BottomNavigationBar` 组件来实现。

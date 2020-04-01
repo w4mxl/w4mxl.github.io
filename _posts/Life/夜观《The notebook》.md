@@ -2,7 +2,6 @@
 title: 夜观 《The notebook》
 date: 2009-12-09 00:54
 categories: Life
-tags: movie
 permalink: 夜观《The notebook》
 ---
 

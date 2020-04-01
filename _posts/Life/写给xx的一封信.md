@@ -2,6 +2,7 @@
 title: 写给xx的一封信 
 date: 2013-3-22 17:52
 categories: Life
+permalink: a-letter-to-xx
 ---
 
 xx，你好。

@@ -12,6 +12,8 @@ permalink: provide-64-bit-for-google-play
 
 从今年1月份开始，Google 就陆续通过邮件等方式发通知，鼓励 Android 开发者尽快将已经上传到 Google play 的 app 对 64 位做兼容处理。并告知开发者，在今年 8 月 1 日开始，将强制要求新上架的 App 或老应用更新，除了提供 32 位的版本之外，还必须要提供 64 位的版本。
 
+<!-- more -->
+
 ![收到的邮件提醒](/image/141562750828_.pic.jpg)
 
 今年 5 月份，我上传了一款用 Flutter 开发的 App（**[V2LF](https://play.google.com/store/apps/details?id=io.github.w4mxl.v2lf)**）到Google play 上，那时候打包出来的 APK 大小是 9.1 MB，默认只有 armeabi-v7a 一种 CPU 架构。后来陆续有收到通知邮件，提示我再提供一个 64 位的版本。
