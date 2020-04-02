@@ -629,6 +629,36 @@
   </entry>
   
   <entry>
+    <title>Flutter 起源与发展（timeline）</title>
+    <link href="https://w4mxl.github.io/Tech/Flutter/flutter-timeline/"/>
+    <id>https://w4mxl.github.io/Tech/Flutter/flutter-timeline/</id>
+    <published>2018-09-07T06:00:00.000Z</published>
+    <updated>2020-04-02T01:56:59.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>我们在学习一门技术的时候有必要了解其起源与发展的过程，这对我们从宏观角度去理解这门技术会有一定的帮助。我搜集整理了 Flutter 起源与发展的时间线，之后不定期在这篇博客中更新。</p><ul><li><p>2015</p><ul><li>Google 内部有一个团队用 Dart 语言去开发 Android app，旨在完全脱离 Java，专注于速度以及与 Web 的深度集成。内部称作 <a href="https://github.com/domokit/sky_sdk" target="_blank" rel="noopener"><code>sky</code></a> 项目，其目标为实现 120 FPS 的渲染性能。</li></ul></li><li><p>2017</p><ul><li><strong>05.17</strong>: Google I/O 2017 – Flutter 首次公布，Alpha (v0.0.6)</li></ul></li><li><p>2018</p><ul><li><strong>02.27</strong>: MWC 2018 – Flutter 首个 beta 版本发布</li><li><strong>05.08</strong>: Google I/O 2018 – Flutter 更新到 beta3， Material Design 进一步与 Flutter 深度整合以实现更好的跨平台适用性</li><li><strong>06.21</strong>: 北京 GMTC 全球大前端技术大会 – Google Flutter 高级工程师于潇宣布 Flutter Release Preview 1(v0.6.0) 发布，并宣布与阿里巴巴闲鱼团队在 Flutter 上合作，这标志着 Flutter 进入了一个新阶段</li><li><strong>09.20</strong>: GDD China（上海）– 发布了Flutter Release Preview 2</li><li><strong>12.04</strong>: Flutter Live 2018 – Google 宣布 <strong>Flutter 1.0</strong> 正式发布</li></ul></li><li><p>2019</p><ul><li><strong>02.27</strong>: MWC 2019 – Flutter 1.2 发布<ul><li>完整的 release notes 可见 <a href="https://flutter.dev/docs/development/tools/sdk/release-notes/release-notes-1.2.1" target="_blank" rel="noopener">release-notes-1.2.1</a></li></ul></li><li><strong>05.07</strong>: Google I/O 2019 – Flutter for Web 技术预览版发布</li><li><strong>09.10</strong>: GDD China（上海）– Flutter 1.9 发布：Flutter for web 合并至 Flutter 主仓库、支持 macOS Catalina 和 iOS 13</li><li><strong>12.11</strong>: Flutter Interact 2019 – Flutter 1.12 发布：Flutter for web 的支持来到了 Beta；对 macOS desktop 对支持从 tech preview 来到 alpha 版本<ul><li>完整的新功能介绍可见 <a href="https://medium.com/flutter/announcing-flutter-1-12-what-a-year-22c256ba525d" target="_blank" rel="noopener">Announcing Flutter 1.12: What a year!</a></li><li>完整的 release notes 可见 <a href="https://flutter.dev/docs/development/tools/sdk/release-notes/release-notes-1.12.13" target="_blank" rel="noopener">release-notes-1.12.13</a></li></ul></li></ul></li><li><p>2020</p><ul><li><a href="https://github.com/flutter/flutter/wiki/Roadmap" target="_blank" rel="noopener">Roadmap（年度路线图）</a></li><li><a href="https://github.com/flutter/flutter/milestones?direction=asc&sort=due_date&state=open" target="_blank" rel="noopener">Milestones（月度里程碑计划）</a></li></ul></li></ul><p>CHANGELOG:</p><ul><li>20200402: 调整排版，补充一些更新</li><li>20191122: 准备内部另一次分享时做了新资料的补充</li><li>20180907: 准备在团队内部做一次 Flutter 分享时搜集整理</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;我们在学习一门技术的时候有必要了解其起源与发展的过程，这对我们从宏观角度去理解这门技术会有一定的帮助。我搜集整理了 Flutter 起源与发展的时间线，之后不定期在这篇博客中更新。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;2015&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Google 内部有一个
+      
+    
+    </summary>
+    
+    
+      <category term="Tech" scheme="https://w4mxl.github.io/categories/Tech/"/>
+    
+      <category term="Flutter" scheme="https://w4mxl.github.io/categories/Tech/Flutter/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>WWDC 2018 中关于 watchOS 5 的笔记</title>
     <link href="https://w4mxl.github.io/Life/a-summary-of-the-watchOS-5/"/>
     <id>https://w4mxl.github.io/Life/a-summary-of-the-watchOS-5/</id>
@@ -2767,6 +2797,30 @@ Simple and easy to use.
   </entry>
   
   <entry>
+    <title>Back to School</title>
+    <link href="https://w4mxl.github.io/Life/Back-to-School/"/>
+    <id>https://w4mxl.github.io/Life/Back-to-School/</id>
+    <published>2011-02-19T16:00:00.000Z</published>
+    <updated>2020-03-20T07:16:24.425Z</updated>
+    
+    <content type="html"><![CDATA[<p>　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的，快乐的长大。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的
+      
+    
+    </summary>
+    
+    
+      <category term="Life" scheme="https://w4mxl.github.io/categories/Life/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>安慰</title>
     <link href="https://w4mxl.github.io/Life/%E5%AE%89%E6%85%B0/"/>
     <id>https://w4mxl.github.io/Life/%E5%AE%89%E6%85%B0/</id>
@@ -2781,30 +2835,6 @@ Simple and easy to use.
       
         &lt;p&gt;电影总让我想起些我似乎忘了的东西！&lt;/p&gt;
 &lt;p&gt;明明钥匙在手上，却寻不到钥匙把门打开。看完《天若有情Ⅰ》，我就奇怪，那时吊儿郎当的我，现在怎么这么“乖”。在古惑仔横扫我整个初中那时，我们凡事只讲义气，只够买一根冰棒那分着吃，兄弟喜欢的女生不能有‘想法‘-_-#。那时候也是
-      
-    
-    </summary>
-    
-    
-      <category term="Life" scheme="https://w4mxl.github.io/categories/Life/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Back to School</title>
-    <link href="https://w4mxl.github.io/Life/Back-to-School/"/>
-    <id>https://w4mxl.github.io/Life/Back-to-School/</id>
-    <published>2011-02-19T16:00:00.000Z</published>
-    <updated>2020-03-20T07:16:24.425Z</updated>
-    
-    <content type="html"><![CDATA[<p>　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的，快乐的长大。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;　　在回学校前的这几天，我待在大姐家，常需要替她抱她5个月大的儿子，让她腾出手来做些它事。我便直直的看着孩子直直看着我，我不觉会笑，为他眼都不眨一下的认真样子Q_Q。我好喜爱孩子啊，我也不太明白为什么。/P现在在回学校的长途车里，打下这些短短的文字，只想祝愿所有的孩子好好的
       
     
     </summary>
